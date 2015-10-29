@@ -1898,13 +1898,11 @@ class Mission
 		class Item2
 		{
 			position[]={17473.096,14.546212,13134.565};
-			azimut=-74.878555;
-			offsetY=0.000377655;
 			id=83;
 			side="EMPTY";
 			vehicle="SignAd_SponsorS_ARMEX_F";
 			skill=0.60000002;
-			init="this setObjectTexture [0, ""img\ALPHA-2.paa""]";
+			init="this setDir random 360; this setObjectTexture [0, ""img\ALPHA-2.paa""]";
 		};
 		class Item3
 		{
@@ -1984,13 +1982,11 @@ class Mission
 		class Item10
 		{
 			position[]={17341.887,15.321589,13157.313};
-			azimut=118.39771;
-			offsetY=0.000377655;
 			id=91;
 			side="EMPTY";
 			vehicle="SignAd_SponsorS_ARMEX_F";
 			skill=0.60000002;
-			init="this setObjectTexture [0, ""img\ALPHA-3.paa""]";
+			init="this setDir random 360; this setObjectTexture [0, ""img\ALPHA-3.paa""]";
 		};
 		class Item11
 		{
@@ -2270,13 +2266,11 @@ class Mission
 		class Item38
 		{
 			position[]={17416.805,15.149468,13097.775};
-			azimut=211.3839;
-			offsetY=0.000377655;
 			id=119;
 			side="EMPTY";
 			vehicle="SignAd_SponsorS_ARMEX_F";
 			skill=0.60000002;
-			init="this setObjectTexture [0, ""img\BRAVO-1.paa""]";
+			init="this setDir random 360; this setObjectTexture [0, ""img\BRAVO-1.paa""]";
 		};
 		class Item39
 		{
@@ -2314,13 +2308,11 @@ class Mission
 		class Item42
 		{
 			position[]={17461.768,15.507556,13077.379};
-			azimut=118.398;
-			offsetY=0.000377655;
 			id=123;
 			side="EMPTY";
 			vehicle="SignAd_SponsorS_ARMEX_F";
 			skill=0.60000002;
-			init="this setObjectTexture [0, ""img\BRAVO-2.paa""]";
+			init="this setDir random 360; this setObjectTexture [0, ""img\BRAVO-2.paa""]";
 		};
 		class Item43
 		{
@@ -2358,13 +2350,11 @@ class Mission
 		class Item46
 		{
 			position[]={17536.99,14.159141,13132.57};
-			azimut=118.398;
-			offsetY=0.000377655;
 			id=127;
 			side="EMPTY";
 			vehicle="SignAd_SponsorS_ARMEX_F";
 			skill=0.60000002;
-			init="this setObjectTexture [0, ""img\BRAVO-3.paa""]";
+			init="this setDir random 360; this setObjectTexture [0, ""img\BRAVO-3.paa""]";
 		};
 		class Item47
 		{
