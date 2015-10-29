@@ -8,7 +8,7 @@
 LOG("Begin");
 enableSaving [false,false];
 missionNamespace setVariable ["boxes",[]];
+missionNamespace setVariable ["m1025s",[]];
 ["Preload"] call BIS_fnc_arsenal;
-ALEF_forcerespawn = false;
 CP_defaultGroups = ["=15BN="];
 LOG("End");

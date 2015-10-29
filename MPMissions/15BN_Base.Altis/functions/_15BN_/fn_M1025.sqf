@@ -26,6 +26,6 @@ if (isServer) then {
 			[1]
 		],
 		[[],[]]
-	] remoteExec ["MCC_fnc_boxGenerator",_this,false];
+	] remoteExecCall ["MCC_fnc_boxGenerator",2,false];
 };
 LOG("End");

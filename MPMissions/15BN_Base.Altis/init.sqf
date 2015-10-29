@@ -6,13 +6,9 @@
 
 LOG("Begin");
 
-{ _x call ALEF_fnc_fillBox; } forEach boxes;
-
 if (isClass (configfile >> "CfgPatches" >> "mcc_sandbox")) then
 {
 	call ALEF_fnc_MCC_Init; 
 };
-
-private ["_t"];
 
 LOG("End");
