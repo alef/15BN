@@ -11,5 +11,8 @@ if (isMultiplayer) then {
 { _x call ALEF_fnc_fillBox; } forEach boxes;
 { _x call ALEF_fnc_M1025; } forEach m1025s;
 
+// waitUntil {!isNil "ALiVE_STATIC_DATA_LOADED"};
+// call ALEF_fnc_ALiVE_RHS_mapping;
+
 LOG("End");
 

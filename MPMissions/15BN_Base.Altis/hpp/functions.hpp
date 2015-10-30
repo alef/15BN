@@ -17,6 +17,10 @@ class _15BN_
 	{
 		description = "Save templates into players Arsenal.";
 	};
+	class ALiVE_RHS_mapping
+	{
+		description = "Maps RHS to ALiVE";
+	};
 	class preInit
 	{
 		description = "Things to do before mission inits.";
