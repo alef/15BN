@@ -13,7 +13,6 @@ removeGoggles this;
 comment "Add containers";
 this forceAddUniform "U_B_CombatUniform_mcam";
 this addItemToUniform "ACE_EarPlugs";
-this addItemToUniform "MCC_multiTool";
 this addItemToUniform "ACRE_PRC343";
 for "_i" from 1 to 5 do {this addItemToUniform "SmokeShell";};
 this addVest "V_HarnessOGL_brn";

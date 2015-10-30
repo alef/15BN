@@ -13,10 +13,6 @@ class _15BN_
 	{
 		description = "Load the M1025";
 	};
-	class MCC_init
-	{
-		description = "Init the MCC options.";
-	};
 	class saveTemplates
 	{
 		description = "Save templates into players Arsenal.";
