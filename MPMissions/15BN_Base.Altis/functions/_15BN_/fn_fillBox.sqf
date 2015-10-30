@@ -28,4 +28,5 @@ if (isServer) then
 	_box addItemCargoGlobal ["ACRE_PRC117F", 2];
 	_box addItemCargoGlobal ["ACRE_PRC77",   2];
 	_box addItemCargoGlobal ["ACE_EarPlugs",  8]; 
+	_box addItemCargoGlobal ["alive_tablet", 5];
 };
