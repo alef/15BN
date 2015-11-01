@@ -21,6 +21,10 @@ class _15BN_
 	{
 		description = "Maps RHS to ALiVE";
 	};
+	class ALiVE_RHS_blacklists
+	{
+		description = "Custom unit blacklists";
+	};
 	class preInit
 	{
 		description = "Things to do before mission inits.";
