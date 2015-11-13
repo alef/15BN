@@ -1,4 +1,4 @@
-comment "15BN Rifleman Template";
+comment "Exported from Arsenal by alef";
 
 comment "Remove existing items";
 removeAllWeapons this;
@@ -29,7 +29,7 @@ for "_i" from 1 to 5 do {this addItemToBackpack "rhs_mag_30Rnd_556x45_Mk262_Stan
 this addHeadgear "rhsusf_lwh_helmet_marpatwd";
 
 comment "Add weapons";
-this addWeapon "rhs_weap_m16a4_carryhandle";
+this addWeapon "rhs_weap_m4_carryhandle";
 this addPrimaryWeaponItem "rhsusf_acc_ACOG_USMC";
 this addWeapon "rhsusf_weap_m1911a1";
 

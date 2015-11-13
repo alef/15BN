@@ -29,7 +29,7 @@ for "_i" from 1 to 6 do {this addItemToBackpack "ACE_bloodIV_250";};
 this addHeadgear "rhsusf_lwh_helmet_marpatwd";
 
 comment "Add weapons";
-this addWeapon "rhs_weap_m16a4_carryhandle";
+this addWeapon "rhs_weap_m4_carryhandle";
 this addPrimaryWeaponItem "rhsusf_acc_ACOG_USMC";
 this addWeapon "rhsusf_weap_m1911a1";
 

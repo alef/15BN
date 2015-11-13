@@ -1,4 +1,4 @@
-comment "15BN Grenadier Template";
+comment "Exported from Arsenal by alef";
 
 comment "Remove existing items";
 removeAllWeapons this;
@@ -32,7 +32,7 @@ for "_i" from 1 to 6 do {this addItemToBackpack "rhs_mag_m714_White";};
 this addHeadgear "rhsusf_lwh_helmet_marpatwd";
 
 comment "Add weapons";
-this addWeapon "rhs_weap_m16a4_carryhandle_M203";
+this addWeapon "rhs_weap_m4_m203";
 this addPrimaryWeaponItem "rhsusf_acc_ACOG_USMC";
 this addWeapon "rhsusf_weap_m1911a1";
 
