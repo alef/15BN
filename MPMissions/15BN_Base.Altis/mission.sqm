@@ -1609,7 +1609,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={17389.703,13.016531,13486.767};
+					position[]={17391.811,13.165461,13484.659};
 					class args
 					{
 						items=10;
@@ -1692,7 +1692,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={17411,12.989374,13487.226};
+					position[]={17413.107,12.958465,13485.118};
 					class args
 					{
 						items=8;
@@ -1762,7 +1762,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={17441.07,11.853203,13488.227};
+					position[]={17443.178,11.917834,13486.119};
 					class args
 					{
 						items=29;
@@ -2383,7 +2383,7 @@ class Mission
 						};
 						class Item6
 						{
-							value="800";
+							value="1200";
 							parentCls="ALiVE_mil_placement";
 							typeName="size";
 						};
@@ -2413,7 +2413,7 @@ class Mission
 						};
 						class Item11
 						{
-							value="0";
+							value="";
 							parentCls="ALiVE_mil_placement";
 							typeName="customMotorisedCount";
 						};
@@ -2425,7 +2425,7 @@ class Mission
 						};
 						class Item13
 						{
-							value="0";
+							value="";
 							parentCls="ALiVE_mil_placement";
 							typeName="customArmourCount";
 						};
@@ -2594,13 +2594,13 @@ class Mission
 						};
 						class Item3
 						{
-							value="100";
+							value="0";
 							parentCls="ALiVE_mil_placement";
 							typeName="sizeFilter";
 						};
 						class Item4
 						{
-							value="30";
+							value="0";
 							parentCls="ALiVE_mil_placement";
 							typeName="priorityFilter";
 						};
@@ -2612,7 +2612,7 @@ class Mission
 						};
 						class Item6
 						{
-							value="800";
+							value="400";
 							parentCls="ALiVE_mil_placement";
 							typeName="size";
 						};
@@ -2648,7 +2648,7 @@ class Mission
 						};
 						class Item12
 						{
-							value="";
+							value="0";
 							parentCls="ALiVE_mil_placement";
 							typeName="customMechanisedCount";
 						};
@@ -2955,7 +2955,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={17388.775,12.81965,13515.429};
+					position[]={17390.883,12.902445,13513.321};
 					class args
 					{
 						items=8;
@@ -3109,7 +3109,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={17414.717,12.90207,13515.117};
+					position[]={17416.824,12.810099,13513.01};
 					class args
 					{
 						items=35;
@@ -3145,7 +3145,7 @@ class Mission
 						};
 						class Item5
 						{
-							value="1";
+							value="2";
 							parentCls="ALiVE_SYS_playeroptions";
 							typeName="minTG";
 						};
