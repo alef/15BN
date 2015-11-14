@@ -2343,7 +2343,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={9423.6055,15.749907,21549.016};
+					position[]={9420.3496,15.692529,21561.225};
 					class args
 					{
 						items=20;
@@ -2703,7 +2703,7 @@ class Mission
 					leader=1;
 					lock="UNLOCKED";
 					skill=0.60000002;
-					text="OPFOR_OBJECTIVES";
+					text="OPFOR_MIL_OBJECTIVES";
 					syncId=9;
 					synchronizations[]={8,10};
 				};
@@ -2837,7 +2837,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={9550.9717,23.279577,21773.619};
+					position[]={9612.0313,31.593523,21685.693};
 					class args
 					{
 						items=16;
@@ -3027,7 +3027,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={9417.2959,16.863894,21694.455};
+					position[]={9419.7383,16.957109,21683.871};
 					class args
 					{
 						items=10;
@@ -3343,7 +3343,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={9468.5605,16.507153,21774.057};
+					position[]={9529.6201,22.031599,21686.131};
 					class args
 					{
 						items=18;
@@ -3462,6 +3462,7 @@ class Mission
 					leader=1;
 					lock="UNLOCKED";
 					skill=0.60000002;
+					text="OPFOR_CIV_OBJECTIVES";
 					syncId=13;
 					synchronizations[]={8,11};
 				};
