@@ -9,6 +9,10 @@ private ["_p", "_didJIP"];
 _p = param [0, objNull];
 _didJIP = param [1, false];
 
+for "_i" from 1 to 6 do {
+	(format ["ZONE_%1", _i]) setMarkerAlpha 0;
+};
+
 [] call ALEF_fnc_saveTemplates; 
 
 [["_15BN_","Istruzioni"],35,"",35,"",true,false,false,true] call BIS_fnc_advHint;
