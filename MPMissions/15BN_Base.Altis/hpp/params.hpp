@@ -3,7 +3,7 @@ class Loadout
 	title = "Armamento predefinito";
 	values[] = {0, 1};
 	texts[] = {"No", "Sì"};
-	default = 1;
+	default = 0;
 };
 class CheckPBOs
 {
