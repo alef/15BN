@@ -45,13 +45,14 @@ _u hideObject true; _u enableSimulation false;
 		[] call _code;
 		this = nil;
 	};
-	[_u, [profilenamespace, _name], [], true] call BIS_fnc_saveInventory; // delete player's Arsenal slot
+	[_u, [profilenamespace, _name]] call BIS_fnc_deleteInventory; // delete player's Arsenal slot
 	[_u, [profilenamespace, _name]] call BIS_fnc_saveInventory; // save into player's Arsenal slot
 } forEach ([(missionConfigFile >> "CfgRespawnInventory"), 0, true] call BIS_fnc_returnChildren);
 
 // removes templates from old versions
 [_u, [profilenamespace, "[=15BN=] Lanciagranate"], [], true] call BIS_fnc_saveInventory;
 
-deleteVehicle _u;
 saveProfileNamespace;
+
+deleteVehicle _u;
 LOG("End");
