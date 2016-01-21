@@ -48,14 +48,13 @@ class Equipaggiamenti
 	image = "img\15logo_BW.paa";
 	description = "\
 Carica un equipaggiamento predefinito dall'Arsenale Virtuale.<br/>\
-%2 Vai alla cassa<br/>\
-%2 Con la rotella seleziona <t color='#cc0000'>Arsenale Virtuale</t><br/>\
+%2 Con la rotellina del mouse seleziona <t color='#cc0000'>Arsenale Virtuale</t><br/>\
 %2 Clicca <t color='#c48214'>CARICA</t><br/>\
 %2 Seleziona un equipaggiamento marcato %3[=15BN=]%4<br/>\
 %2 Clicca <t color='#c48214'>CARICA</t><br/>\
 ";
 	tip = "\
-Puoi anche salvare, ma la prossima volta verrà sovrascritto.\
+Puoi anche salvare, ma la prossima volta verrà sovrascritto.<br/>\
 ";
 };
 class RadioTruppa
