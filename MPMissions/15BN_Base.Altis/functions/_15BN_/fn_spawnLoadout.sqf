@@ -1,4 +1,3 @@
-#define DEBUG_MODE_FULL
 /*
 	Description:
 	Load a gear base on unit class
@@ -13,7 +12,7 @@
 		Nothing
 
 */
-
+#define DEBUG_MODE_FULL
 #define PREFIX ALEF
 #define COMPONENT base
 #define THIS_FILE fn_spawn_loadout.sqf
