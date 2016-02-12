@@ -26,3 +26,7 @@ class TL
 {
 	displayName = "TL";
 };
+class TL_Granatiere
+{
+	displayName = "TL-Granatiere";
+};

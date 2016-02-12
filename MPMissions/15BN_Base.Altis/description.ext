@@ -41,8 +41,9 @@ onLoadMission = "Da usare con ALiVE";
 
 // Respawn
 respawn = 4; // 0=NONE, 1=BIRD, 2=INSTANT, 3=BASE, 4=GROUP, 5=SIDE
+respawnTemplates[] = {"ace_spectator"};
 
 // Debug
 allowFunctionsLog = 0; //
 enableDebugConsole = 1; // admin
-disabledAI = 1; // 0: enable to debug AI slots positions
+disabledAI = 1; // 0: enable to debug AI slots positions in MP
