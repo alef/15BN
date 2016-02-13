@@ -1431,7 +1431,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={17391.811,13.165461,13484.659};
+					position[]={17389.98,13.04339,13484.659};
 					class args
 					{
 						items=10;
@@ -1520,7 +1520,7 @@ class Mission
 						items=8;
 						class Item0
 						{
-							value="true";
+							value="false";
 							parentCls="ALiVE_sys_profile";
 							typeName="debug";
 						};
@@ -2336,7 +2336,7 @@ class Mission
 						};
 						class Item15
 						{
-							value="0";
+							value="rhs_faction_msv";
 							parentCls="ALiVE_mil_placement";
 							typeName="faction";
 						};
@@ -2660,7 +2660,7 @@ class Mission
 						};
 						class Item17
 						{
-							value="";
+							value="rhs_faction_msv";
 							parentCls="ALiVE_civ_placement";
 							typeName="faction";
 						};
@@ -4512,14 +4512,14 @@ class Mission
 		items=7;
 		class Item0
 		{
-			position[]={17840.402,20.254187,12971.976};
+			position[]={17753.943,15.498477,13262.755};
 			name="BLUFOR";
 			markerType="ELLIPSE";
 			type="Empty";
-			colorName="ColorWEST";
+			colorName="ColorBlue";
 			fillName="Border";
-			a=1500;
-			b=1500;
+			a=500;
+			b=500;
 			drawBorder=1;
 		};
 		class Item1
