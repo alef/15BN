@@ -4632,7 +4632,7 @@ class Mission
 		{
 			position[]={17753.943,15.498477,13262.755};
 			name="BLUFOR";
-			markerType="RECTANGLE";
+			markerType="ELLIPSE";
 			type="Empty";
 			colorName="ColorEAST";
 			fillName="Border";
