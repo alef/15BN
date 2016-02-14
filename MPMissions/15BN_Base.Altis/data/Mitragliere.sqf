@@ -1,4 +1,4 @@
-comment "Exported from Arsenal by alef";
+comment "29.89kg";
 
 comment "Remove existing items";
 removeAllWeapons this;
