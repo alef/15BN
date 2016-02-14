@@ -1,0 +1,9 @@
+case $1 in
+	clean)	sed 's/briefingName="Base.*/briefingName="Base";/'  ;;
+	smudge) sed 's/briefingName="Base.*/briefingName="Base '$(git describe --tags|cut -d- -f2,3)'";/g;
+s/year=.*;/year='$(date +%Y)';/g;
+s/month=.*;/month='$(date +%m)';/g;
+s/day=.*;/day='$(date +%d)';/g;
+s/hour=.*;/hour='$(date +%H)';/g;
+s/minute=.*;/minute='$(date +%M)';/' ;;
+esac
