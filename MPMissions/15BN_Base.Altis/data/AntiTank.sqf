@@ -1,4 +1,4 @@
-comment "Exported from Arsenal by alef";
+comment "34.56kg";
 
 comment "Remove existing items";
 removeAllWeapons this;
@@ -11,38 +11,35 @@ removeHeadgear this;
 removeGoggles this;
 
 comment "Add containers";
-this forceAddUniform "U_B_CombatUniform_mcam";
+this forceAddUniform "rhs_uniform_FROG01_wd";
 this addItemToUniform "ACE_EarPlugs";
-for "_i" from 1 to 5 do {this addItemToUniform "SmokeShell";};
-this addVest "V_HarnessO_gry";
-this addItemToVest "ACRE_PRC343";
-this addItemToVest "SmokeShellRed";
-this addItemToVest "SmokeShellGreen";
-for "_i" from 1 to 2 do {this addItemToVest "HandGrenade";};
-for "_i" from 1 to 5 do {this addItemToVest "30Rnd_65x39_caseless_mag";};
-for "_i" from 1 to 3 do {this addItemToVest "16Rnd_9x21_Mag";};
-this addBackpack "B_Carryall_mcamo";
-for "_i" from 1 to 3 do {this addItemToBackpack "ACE_morphine";};
-for "_i" from 1 to 10 do {this addItemToBackpack "ACE_fieldDressing";};
-this addItemToBackpack "ACE_epinephrine";
-for "_i" from 1 to 2 do {this addItemToBackpack "Titan_AT";};
-this addHeadgear "H_HelmetB";
+for "_i" from 1 to 10 do {this addItemToUniform "ACE_fieldDressing";};
+for "_i" from 1 to 3 do {this addItemToUniform "ACE_morphine";};
+this addItemToUniform "ACE_epinephrine";
+this addItemToUniform "ACRE_PRC343";
+this addVest "rhsusf_spc_rifleman";
+for "_i" from 1 to 5 do {this addItemToVest "rhs_mag_an_m8hc";};
+for "_i" from 1 to 10 do {this addItemToVest "rhs_mag_30Rnd_556x45_Mk262_Stanag";};
+this addItemToVest "rhs_mag_m18_red";
+this addItemToVest "rhs_mag_m18_green";
+for "_i" from 1 to 2 do {this addItemToVest "rhs_mag_m67";};
+for "_i" from 1 to 2 do {this addItemToVest "rhsusf_mag_7x45acp_MHP";};
+this addBackpack "rhsusf_assault_eagleaiii_coy";
+this addItemToBackpack "rhs_fgm148_magazine_AT";
+this addHeadgear "rhsusf_lwh_helmet_marpatwd";
 
 comment "Add weapons";
-this addWeapon "arifle_MX_F";
-this addPrimaryWeaponItem "muzzle_snds_H";
-this addPrimaryWeaponItem "acc_flashlight";
-this addPrimaryWeaponItem "optic_Hamr";
-this addPrimaryWeaponItem "bipod_01_F_snd";
-this addWeapon "launch_B_Titan_short_F";
-this addWeapon "hgun_P07_F";
+this addWeapon "rhs_weap_m4_carryhandle";
+this addPrimaryWeaponItem "rhsusf_acc_ACOG_USMC";
+this addWeapon "rhs_weap_fgm148";
+this addWeapon "rhsusf_weap_m1911a1";
 
 comment "Add items";
 this linkItem "ItemMap";
 this linkItem "ItemCompass";
-this linkItem "ACE_Altimeter";
+this linkItem "ItemWatch";
+this linkItem "ItemRadioAcreFlagged";
 this linkItem "ItemGPS";
-this linkItem "ACE_NVG_Wide";
 
 comment "Set identity";
 this setSpeaker "ACE_NoVoice";
