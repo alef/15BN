@@ -12,6 +12,7 @@ _didJIP = param [1, false];
 for "_i" from 1 to 6 do {
 	(format ["ZONE_%1", _i]) setMarkerAlpha 0;
 };
+"BLUFOR" setMarkerAlpha 0;
 
 [] call ALEF_fnc_saveTemplates; 
 
