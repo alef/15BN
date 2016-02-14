@@ -164,7 +164,7 @@ class Mission
 		month=02;
 		day=14;
 		hour=20;
-		minute=31;
+		minute=50;
 		startFogDecay=0.013;
 		forecastFogDecay=0.013;
 	};
@@ -207,7 +207,7 @@ class Mission
 				};
 				class Item2
 				{
-					presenceCondition="isMultiplayer";
+					presenceCondition="false";
 					position[]={17410.699,13.430596,13210.694};
 					azimut=270;
 					special="NONE";
@@ -4627,14 +4627,14 @@ class Mission
 	};
 	class Markers
 	{
-		items=7;
+		items=8;
 		class Item0
 		{
 			position[]={17753.943,15.498477,13262.755};
 			name="BLUFOR";
-			markerType="ELLIPSE";
+			markerType="RECTANGLE";
 			type="Empty";
-			colorName="ColorBlue";
+			colorName="ColorEAST";
 			fillName="Border";
 			a=500;
 			b=500;
@@ -4712,6 +4712,18 @@ class Mission
 			b=4500;
 			drawBorder=1;
 		};
+		class Item7
+		{
+			position[]={18071.395,62.599621,15789.729};
+			name="HIC SUNT LEONES";
+			markerType="RECTANGLE";
+			type="Empty";
+			colorName="ColorRed";
+			fillName="BDiagonal";
+			a=2000;
+			b=300;
+			angle=-30;
+		};
 	};
 	class Sensors
 	{
@@ -4759,7 +4771,7 @@ class Intro
 		month=02;
 		day=14;
 		hour=20;
-		minute=31;
+		minute=50;
 		startFogDecay=0.013;
 		forecastFogDecay=0.013;
 	};
@@ -4789,7 +4801,7 @@ class OutroWin
 		month=02;
 		day=14;
 		hour=20;
-		minute=31;
+		minute=50;
 		startFogDecay=0.013;
 		forecastFogDecay=0.013;
 	};
@@ -4819,7 +4831,7 @@ class OutroLoose
 		month=02;
 		day=14;
 		hour=20;
-		minute=31;
+		minute=50;
 		startFogDecay=0.013;
 		forecastFogDecay=0.013;
 	};
