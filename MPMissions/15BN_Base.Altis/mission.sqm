@@ -2342,7 +2342,7 @@ class Mission
 						};
 						class Item6
 						{
-							value="800";
+							value="1200";
 							parentCls="ALiVE_mil_placement";
 							typeName="size";
 						};
@@ -2402,7 +2402,7 @@ class Mission
 						};
 						class Item16
 						{
-							value="true";
+							value="false";
 							parentCls="ALiVE_mil_placement";
 							typeName="createHQ";
 						};
@@ -2660,7 +2660,7 @@ class Mission
 						};
 						class Item7
 						{
-							value="200";
+							value="30";
 							parentCls="ALiVE_civ_placement";
 							typeName="size";
 						};
@@ -2678,7 +2678,7 @@ class Mission
 						};
 						class Item10
 						{
-							value="0";
+							value="50";
 							parentCls="ALiVE_civ_placement";
 							typeName="roadblocks";
 						};
@@ -2720,7 +2720,7 @@ class Mission
 						};
 						class Item17
 						{
-							value="rhs_faction_msv";
+							value="";
 							parentCls="ALiVE_civ_placement";
 							typeName="faction";
 						};
