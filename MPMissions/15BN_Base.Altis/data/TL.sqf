@@ -29,6 +29,7 @@ this addItemToBackpack "ACRE_PRC148";
 for "_i" from 1 to 10 do {this addItemToBackpack "ACE_CableTie";};
 this addItemToBackpack "ALIVE_Tablet";
 this addItemToBackpack "ACE_MapTools";
+this addItemToBackpack "ACE_Flashlight_XL50";
 for "_i" from 1 to 5 do {this addItemToBackpack "rhs_mag_30Rnd_556x45_Mk262_Stanag";};
 this addHeadgear "rhsusf_lwh_helmet_marpatwd_headset";
 

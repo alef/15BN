@@ -23,14 +23,12 @@ for "_i" from 1 to 10 do {this addItemToVest "rhs_mag_30Rnd_556x45_Mk262_Stanag"
 this addItemToVest "rhs_mag_m18_red";
 this addItemToVest "rhs_mag_m18_green";
 for "_i" from 1 to 2 do {this addItemToVest "rhs_mag_m67";};
-for "_i" from 1 to 4 do {this addItemToVest "rhs_mag_M441_HE";};
+for "_i" from 1 to 2 do {this addItemToVest "rhsusf_mag_7x45acp_MHP";};
 this addBackpack "rhsusf_assault_eagleaiii_coy";
 this addItemToBackpack "ACRE_PRC148";
 for "_i" from 1 to 10 do {this addItemToBackpack "ACE_CableTie";};
 this addItemToBackpack "ALIVE_Tablet";
 this addItemToBackpack "ACE_MapTools";
-this addItemToBackpack "ALIVE_Tablet";
-for "_i" from 1 to 10 do {this addItemToBackpack "ACE_CableTie";};
 this addItemToBackpack "ACE_Flashlight_XL50";
 for "_i" from 1 to 5 do {this addItemToBackpack "rhs_mag_30Rnd_556x45_Mk262_Stanag";};
 for "_i" from 1 to 8 do {this addItemToBackpack "rhs_mag_M441_HE";};
@@ -41,6 +39,7 @@ comment "Add weapons";
 this addWeapon "rhs_weap_m4_m203";
 this addPrimaryWeaponItem "rhsusf_acc_ACOG_USMC";
 this addWeapon "rhsusf_weap_m1911a1";
+this addWeapon "Binocular";
 
 comment "Add items";
 this linkItem "ItemMap";

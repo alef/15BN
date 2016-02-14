@@ -27,6 +27,7 @@ for "_i" from 1 to 2 do {this addItemToVest "rhsusf_mag_7x45acp_MHP";};
 this addBackpack "rhsusf_assault_eagleaiii_coy";
 for "_i" from 1 to 10 do {this addItemToBackpack "ACE_CableTie";};
 for "_i" from 1 to 5 do {this addItemToBackpack "rhs_mag_30Rnd_556x45_Mk262_Stanag";};
+this addItemToBackpack "ACE_Flashlight_XL50";
 for "_i" from 1 to 7 do {this addItemToBackpack "rhs_mag_M441_HE";};
 for "_i" from 1 to 6 do {this addItemToBackpack "rhs_mag_m714_White";};
 this addHeadgear "rhsusf_lwh_helmet_marpatwd";
