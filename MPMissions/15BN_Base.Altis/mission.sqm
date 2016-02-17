@@ -1107,7 +1107,7 @@ class Mission
 					position[]={17387.975,12.213642,13376.483};
 					class args
 					{
-						items=5;
+						items=6;
 						class Item0
 						{
 							value="1";
@@ -1137,6 +1137,12 @@ class Mission
 							value="0";
 							parentCls="ACE_ModuleMap";
 							typeName="MapShowCursorCoordinates";
+						};
+						class Item5
+						{
+							value="1";
+							parentCls="ACE_ModuleMap";
+							typeName="DefaultChannel";
 						};
 					};
 					id=52;
