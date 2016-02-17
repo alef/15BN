@@ -14,9 +14,9 @@ for "_i" from 1 to 6 do {
 };
 "BLUFOR" setMarkerAlpha 0;
 
-[] call ALEF_fnc_saveTemplates; 
+waitUntil {(player getVariable ["alive_sys_player_playerloaded", false])}
 
-[["_15BN_","Istruzioni"],35,"",35,"",true,false,false,true] call BIS_fnc_advHint;
+[] call ALEF_fnc_saveTemplates; 
 
 if (hasInterface) then { player createDiaryRecord ["Log", ["Sistema medico", 
 	// (if (AGM_Medical_CoefDamage   != 1.0) then {format ["Il danno viene moltiplicato per %1<br/>",AGM_Medical_CoefDamage]} else {""}) +
@@ -58,5 +58,8 @@ safeZone_trg setTriggerArea [108, 78, 47, true]; // rectangle
 safeZone_trg setTriggerActivation ["WEST", "PRESENT", true];
 safeZone_trg triggerAttachVehicle [player];
 safeZone_trg setTriggerStatements ["this", "call enterSafeZone", "call leaveSafeZone"];
+
+[["_15BN_","Istruzioni"],35,"",35,"",true,false,false,true] call BIS_fnc_advHint;
+
 
 LOG("End");
