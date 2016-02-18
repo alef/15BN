@@ -14,7 +14,7 @@ for "_i" from 1 to 6 do {
 };
 "BLUFOR" setMarkerAlpha 0;
 
-waitUntil {(player getVariable ["alive_sys_player_playerloaded", false])}
+// waitUntil {(player getVariable ["alive_sys_player_playerloaded", false])};
 
 [] call ALEF_fnc_saveTemplates; 
 
