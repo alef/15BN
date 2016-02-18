@@ -17,9 +17,9 @@ class EditorData
 	class Camera
 	{
 		pos[]={17409.01,38.542843,13181.394};
-		dir[]={0,-0.70710683,0.70710683};
-		up[]={0,0.70710677,0.70710677};
-		aside[]={0.99999994,0,-0};
+		dir[]={0.9898718,-0.087839879,0.11154383};
+		up[]={0.087288909,0.99613428,0.0098361792};
+		aside[]={0.11197665,3.7718564e-008,-0.99371284};
 	};
 };
 binarizationWanted=0;
@@ -84,6 +84,106 @@ addons[]=
 	"alive_civ_placement"
 };
 randomSeed=5747245;
+class ScenarioData
+{
+	briefing=0;
+	debriefing=0;
+	saving=0;
+	disabledAI=1;
+	class Header
+	{
+		gameType="RPG";
+		minPlayers=1;
+		maxPlayers=54;
+	};
+};
+class CustomAttributes
+{
+	class Category0
+	{
+		name="Multiplayer";
+		class Attribute0
+		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
+					class value
+					{
+						items=1;
+						class Item0
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="ace_spectator";
+							};
+						};
+					};
+				};
+			};
+		};
+		class Attribute1
+		{
+			property="RespawnButton";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=1;
+				};
+			};
+		};
+		nAttributes=2;
+	};
+	class Category1
+	{
+		name="Scenario";
+		class Attribute0
+		{
+			property="EnableDebugConsole";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=1;
+				};
+			};
+		};
+		nAttributes=1;
+	};
+};
 class Mission
 {
 	class Intel
@@ -211,14 +311,14 @@ class Mission
 		class Item7
 		{
 			dataType="Trigger";
-			position[]={19358.73,194.37981,9663.3926};
+			position[]={18717.225,0,22710.162};
 			class Attributes
 			{
 				name="BLUFOR";
 				onActivation="0 call ALEF_fnc_ALiVE_unpause";
 				onDeactivation="0 call ALEF_fnc_ALiVE_pause";
-				sizeA=5000;
-				sizeB=5000;
+				sizeA=12000;
+				sizeB=8000;
 				interuptable=1;
 				repeatable=1;
 				activationBy="WEST";
