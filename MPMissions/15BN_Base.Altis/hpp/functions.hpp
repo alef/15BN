@@ -17,13 +17,17 @@ class _15BN_
 	{
 		description = "Save templates into players Arsenal.";
 	};
-	class ALiVE_RHS_mapping
-	{
-		description = "Maps RHS to ALiVE";
-	};
 	class ALiVE_RHS_blacklists
 	{
 		description = "Custom unit blacklists";
+	};
+	class ALiVE_pause
+	{
+		description = "Pause ALiVE modules";
+	};
+	class ALiVE_unpause
+	{
+		description = "Unpause ALiVE modules";
 	};
 	class preInit
 	{
