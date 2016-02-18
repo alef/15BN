@@ -35,7 +35,7 @@ class Header
 // Mission
 author = "alef [=15BN=]";
 overviewText = "Base per le nostre partite";
-onLoadName = "15BN_Base_002.Altis";
+onLoadName = "15BN_Base_003.Altis";
 loadScreen = img\15bn_512x256.paa;
 onLoadMission = "Da usare con ALiVE";
 
