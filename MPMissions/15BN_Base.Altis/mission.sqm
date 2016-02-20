@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=1312;
+		nextID=1313;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=69;
+		nextID=78;
 	};
 	class Camera
 	{
-		pos[]={17409.01,38.542843,13181.394};
-		dir[]={0,-0.70710683,0.70710683};
-		up[]={0,0.70710677,0.70710677};
-		aside[]={0.99999994,0,-0};
+		pos[]={17474.297,148.95129,13076.687};
+		dir[]={0.94290507,-0.23197995,0.23927595};
+		up[]={0.22489208,0.9727149,0.057070676};
+		aside[]={0.24598414,7.9686288e-008,-0.9693383};
 	};
 };
 binarizationWanted=0;
@@ -87,7 +87,9 @@ addons[]=
 	"A3_Signs_F_AD",
 	"A3_Structures_F_EPA_Civ_Constructions",
 	"A3_Weapons_F_Ammoboxes",
-	"A3_Structures_F_EPA_Items_Food"
+	"A3_Structures_F_EPA_Items_Food",
+	"A3_Weapons_F_Headgear",
+	"a3_weapons_f"
 };
 randomSeed=5747245;
 class ScenarioData
@@ -117,6 +119,25 @@ class CustomAttributes
 	{
 		name="Multiplayer";
 		class Attribute0
+		{
+			property="RespawnButton";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=0;
+				};
+			};
+		};
+		class Attribute1
 		{
 			property="RespawnTemplates";
 			expression="true";
@@ -163,25 +184,6 @@ class CustomAttributes
 							};
 						};
 					};
-				};
-			};
-		};
-		class Attribute1
-		{
-			property="RespawnButton";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"SCALAR"
-						};
-					};
-					value=0;
 				};
 			};
 		};
@@ -234,7 +236,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=16;
+		items=17;
 		class Item0
 		{
 			dataType="Marker";
@@ -321,7 +323,6 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
-						description="Alfa 1 - TL";
 						isPlayer=1;
 						isPlayable=1;
 					};
@@ -9510,8 +9511,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={17514.385,16.192053,13279.323};
-						angles[]={0.0026520467,2.3420398,0.0013372133};
+						position[]={17550.766,16.623573,13239.018};
+						angles[]={0.012000273,2.3420398,0.0026520467};
 					};
 					side="Empty";
 					class Attributes
@@ -10291,7 +10292,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={17437.6,14.33496,13208.101};
+						position[]={17437.553,14.334531,13208.151};
 						angles[]={0.0010918301,5.5019755,0.0011451211};
 					};
 					side="Empty";
@@ -10933,7 +10934,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={17398.545,14.768949,13148.445};
-						angles[]={0.0026520467,0.77690542,6.2698536};
+						angles[]={0.010169903,0.12789334,6.2741699};
 					};
 					side="Empty";
 					class Attributes
@@ -10950,7 +10951,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={17402.613,14.731419,13152.51};
-						angles[]={0.0053265258,0.77690542,6.2778587};
+						angles[]={0.0074997023,0.083893672,6.282496};
 					};
 					side="Empty";
 					class Attributes
@@ -10966,7 +10967,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={17406.75,14.678979,13156.582};
+						position[]={17406.512,14.689355,13155.994};
 						angles[]={0.013332055,0.77690542,6.272521};
 					};
 					side="Empty";
@@ -10984,7 +10985,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={17390.877,16.796387,13141.514};
-						angles[]={0.0093350215,0.77690542,6.2645216};
+						angles[]={0.01840041,0.16103946,6.2733474};
 					};
 					side="Empty";
 					class Attributes
@@ -11000,8 +11001,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={17375.117,16.857891,13158.7};
-						angles[]={0.011995304,0.77690542,6.2738566};
+						position[]={17375.529,16.858265,13158.349};
+						angles[]={0.011995304,1.5307938,6.2738566};
 					};
 					side="Empty";
 					class Attributes
@@ -11018,7 +11019,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={17394.516,16.684624,13145.089};
-						angles[]={0.0093350215,0.77690542,6.259192};
+						angles[]={0.022697577,0.068520457,6.2710419};
 					};
 					side="Empty";
 					class Attributes
@@ -11305,7 +11306,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={17387.322,17.037205,13170.941};
-						angles[]={0.017332481,0.80073261,6.2738504};
+						angles[]={0.006126693,1.5613434,6.2644882};
 					};
 					side="Empty";
 					class Attributes
@@ -11321,7 +11322,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={17380.59,17.190983,13164.504};
-						angles[]={0.014664836,0.80073261,6.2751918};
+						angles[]={0.0061730607,1.4939373,6.2676687};
 					};
 					side="Empty";
 					class Attributes
@@ -11750,8 +11751,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={17497.262,15.492764,13259.933};
-						angles[]={0.0053265258,2.3271697,6.2765174};
+						position[]={17539.072,15.911801,13225.288};
+						angles[]={0.022662206,2.3271697,0.010664274};
 					};
 					side="Empty";
 					class Attributes
@@ -11815,6 +11816,82 @@ class Mission
 				};
 			};
 			id=274;
+		};
+		class Item16
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={17443.961,14.487103,13211.814};
+				angles[]={5.9253926,2.7443209,6.0177732};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1312;
+			type="Headgear_H_HelmetB_camo";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="enableSimulation";
+					expression="if !(is3DEN) then {_this enablesimulation _value;};";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="enableStamina";
+					expression="_this enablestamina _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=3;
+			};
 		};
 	};
 	class Connections
