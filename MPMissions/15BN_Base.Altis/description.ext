@@ -25,26 +25,10 @@ class Params
 	#include "hpp\params.hpp"
 };
 
-class Header
-{
-	gameType = Coop;
-	minPlayers = 1;
-	maxPlayers = 64;
-};
-
 // Mission
 author = "alef [=15BN=]";
-overviewText = "Base per le nostre partite";
 onLoadName = "15BN_Base_003.Altis";
-loadScreen = img\15bn_512x256.paa;
-onLoadMission = "Da usare con ALiVE";
-
 // Respawn
-respawn = 4; // 0=NONE, 1=BIRD, 2=INSTANT, 3=BASE, 4=GROUP, 5=SIDE
-respawnOnStart = -1; // ALiVE, only for rewpawn INSTANT and BASE
-respawnTemplates[] = {"ace_spectator"};
-
+// respawnOnStart = -1; // ALiVE, only for rewpawn INSTANT and BASE
 // Debug
 allowFunctionsLog = 0; //
-enableDebugConsole = 1; // admin
-disabledAI = 1; // 0: enable to debug AI slots positions in MP
