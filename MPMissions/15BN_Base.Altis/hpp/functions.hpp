@@ -42,4 +42,12 @@ class _15BN_
 	{
 		description = "Load a gear based on unit class";
 	};
+	class enterSafeZone
+	{
+		description = "Delete projectiles and add Arsenal";
+	};
+	class leaveSafeZone
+	{
+		description = "Cancel Arsenal and restore projectiles";
+	};
 };

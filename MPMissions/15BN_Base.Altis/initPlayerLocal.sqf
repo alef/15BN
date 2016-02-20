@@ -23,29 +23,12 @@ if (hasInterface) then { player createDiaryRecord ["Log", ["Sistema medico",
 };
 if ( (1 == ["Loadout",1] call BIS_fnc_getParamValue) && (east != side player) ) then { player call ALEF_fnc_spawnLoadout; };
 
-enterSafeZone = {
-	// Removes fired object as they leave weapons
-	// Doesn't work for vehicles other than players
-	safeZone_EH = player addEventHandler [
-		"Fired",
-		{ deleteVehicle (_this select 6); hint "Auguri Marvin!"; }
-	];
-	arsenal_ID = player addAction ['<t color=''#cc0000''>Arsenale Virtuale</t>', '["Open",true] call BIS_fnc_arsenal',
-		nil, 1.5, false];
-};
-
-leaveSafeZone = {
-	player removeEventHandler ["Fired", safeZone_EH];
-	player removeAction arsenal_ID;
-};
-
 safeZone_trg = createTrigger ["EmptyDetector", [17430.176,13161.32], false]; // Pygros base. 'false' means local
 safeZone_trg setTriggerArea [108, 78, 47, true]; // rectangle
 safeZone_trg setTriggerActivation ["WEST", "PRESENT", true];
 safeZone_trg triggerAttachVehicle [player];
-safeZone_trg setTriggerStatements ["this", "call enterSafeZone", "call leaveSafeZone"];
+safeZone_trg setTriggerStatements ["this", "call ALEF_fnc_enterSafeZone", "call ALEF_fnc_leaveSafeZone"];
 
 [["_15BN_","Istruzioni"],35,"",35,"",true,false,false,true] call BIS_fnc_advHint;
-
 
 LOG("End");
