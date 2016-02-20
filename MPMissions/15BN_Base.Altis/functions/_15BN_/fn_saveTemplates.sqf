@@ -27,9 +27,9 @@
 LOG("Begin");
 private ["_u","_i","_cname","_fromConfig"];
 _fromConfig = param [0, false, [true]];
+
 // loop over the configured inventories
-_u = "Underwear_F" createVehicleLocal [10,10,10];
-_u hideObject true; _u enableSimulation false;
+_u = "Underwear_F" createVehicleLocal [8460, 25080];
 {
 	removeAllWeapons _u; removeAllItems _u; removeAllAssignedItems _u; 
 	removeUniform _u; removeVest _u; removeBackpack _u; 
