@@ -15,7 +15,7 @@ if (isMultiplayer) then {
 
 ["ALEF_ALiVE_save", "onPlayerDisconnected", {
 	if (count allPlayers == 0) then {
-		[] call ALEF_ALiVE_save;
+		[] call ALEF_fnc_ALiVE_save;
 	};
 }] call BIS_fnc_addStackedEventhandler;
 LOG("End");
