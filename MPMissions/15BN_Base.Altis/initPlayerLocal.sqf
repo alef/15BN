@@ -14,19 +14,10 @@ _didJIP = param [1, false];
 [] call ALEF_fnc_saveTemplates; 
 
 if (hasInterface) then { player createDiaryRecord ["Log", ["Sistema medico", 
-	// (if (AGM_Medical_CoefDamage   != 1.0) then {format ["Il danno viene moltiplicato per %1<br/>",AGM_Medical_CoefDamage]} else {""}) +
 	(if (ACE_Medical_bleedingCoefficient != 1.0) then {format ["Il dissanguamento è %1 volte più veloce<br/>",ACE_Medical_bleedingCoefficient]} else {""}) +
 	(if (ACE_Medical_painCoefficient     != 1.0) then {format ["L'effetto dolore è moltiplicato per %1<br/>",ACE_Medical_painCoefficient]} else {""}) +
-	// (if (AGM_Medical_CoefNonMedic != 1.0) then {format ["Chi non è medico sarà %1 volte più lento<br/>",AGM_Medical_CoefNonMedic]} else {""}) +
-	// (if (AGM_Medical_AllowNonMedics) then {"Chiunque può usare epinefrina e fare trasfusioni"} else {"Solo i medici possono usare epinefrina e fare trasfusioni"}) + "<br/>" +
-	// (if (AGM_Medical_RequireDiagnosis) then {"Bisogna fare la diagnosi prima di qualsiasi cura"} else {"Non serve fare diagnosi per curare"}) + "<br/>" +
 	(if (ACE_Medical_preventInstaDeath) then {"Non si morirà sul colpo"} else {"Sarà possibile morire sul colpo"}) + "<br/>" +
-	// (if (AGM_Medical_PreventDeathWhileUnconscious) then {"Non si morirà durante il coma se colpiti"} else {"Si potrà morire durante il coma se colpiti"}) + "<br/>" +
-	// (if (AGM_Medical_SingleBandage) then {"Basta una benda per tutto il corpo"} else {"Servono bende per le singole parti del corpo"}) + "<br/>" +
-	// (if (AGM_Medical_AllowChatWhileUnconscious) then {"Si può chattare mentre in coma"} else {"Non si può chattare mentre in coma"}) + "<br/>" +
 	(if (ACE_Medical_enableOverdosing) then {"Si può andare in overdose di morfina"} else {"Non ci sarà overdose di morfina"}) + "<br/>" +
-	// (if (AGM_Medical_RequireMEDEVAC) then {"Serve un veicolo per curare (?)"} else {"Non serve un veicolo per curare"}) + "<br/>" +
-	// (if (AGM_Medical_AutomaticWakeup) then {"Si può tornare dal coma a caso"} else {"Non ci si risveglia dal coma a caso"}) + "<br/>" +
 	(if (ACE_Medical_enableScreams) then {"Ci saranno urla"} else {"Non ci saranno urla"} )
 	]];
 };
@@ -37,7 +28,7 @@ enterSafeZone = {
 	// Doesn't work for vehicles other than players
 	safeZone_EH = player addEventHandler [
 		"Fired",
-		{ deleteVehicle (_this select 6); }
+		{ deleteVehicle (_this select 6); hint "Auguri Marvin!"; }
 	];
 	arsenal_ID = player addAction ['<t color=''#cc0000''>Arsenale Virtuale</t>', '["Open",true] call BIS_fnc_arsenal',
 		nil, 1.5, false];
