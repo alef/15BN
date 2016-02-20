@@ -47,5 +47,5 @@ if (["ALiVE_mil_C2ISTAR"] call ALiVE_fnc_isModuleAvailable) then {
 	_result = [] call ALiVE_fnc_taskHandlerSaveData;
 	TRACE_1("ALiVE_mil_C2ISTAR", _result);
 };
-["ALIVE_AMB_CIV_POPULATION","ALIVE_MIL_LOGISTICS","ALIVE_SYS_AISKILL"] call ALiVE_fnc_unPauseModule;
+["ALIVE_AMB_CIV_POPULATION","ALIVE_MIL_LOGISTICS"] call ALiVE_fnc_unPauseModule;
 LOG("End");
