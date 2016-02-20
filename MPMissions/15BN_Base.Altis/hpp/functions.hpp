@@ -29,6 +29,10 @@ class _15BN_
 	{
 		description = "Unpause ALiVE modules";
 	};
+	class ALiVE_save
+	{
+		description = "Save ALiVE modules";
+	};
 	class preInit
 	{
 		description = "Things to do before mission inits.";
