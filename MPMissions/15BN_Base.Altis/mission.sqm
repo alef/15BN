@@ -108,7 +108,7 @@ class ScenarioData
 	disabledAI=1;
 	class Header
 	{
-		gameType="RPG";
+		gameType="Coop";
 		minPlayers=1;
 		maxPlayers=58;
 	};
@@ -219,7 +219,7 @@ class Mission
 	class Intel
 	{
 		briefingName="Base";
-		overviewText="Base";
+		overviewText="15BN_Base_004.Altis";
 		startFog=0.099999994;
 		startWind=0;
 		startWaves=0.099999994;
