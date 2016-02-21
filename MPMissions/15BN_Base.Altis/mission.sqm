@@ -12263,6 +12263,22 @@ class Mission
 				nAttributes=18;
 			};
 		};
+		class Item28
+		{
+			dataType="Trigger";
+			position[]={21091.369,24.242165,7169.2251};
+			angle=0.27345824;
+			class Attributes
+			{
+				onActivation="[thistrigger, thislist] call ALEF_fnc_ALiVE_fixTakeoff";
+				sizeA=30;
+				sizeB=30;
+				repeatable=1;
+				activationBy="WEST";
+			};
+			id=1349;
+			type="EmptyDetector";
+		};
 	};
 	class Connections
 	{

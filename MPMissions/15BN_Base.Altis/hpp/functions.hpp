@@ -50,4 +50,8 @@ class _15BN_
 	{
 		description = "Cancel Arsenal and restore projectiles";
 	};
+	class ALiVE_fixTakeoff
+	{
+		description = "Lift airplanes mid-air when cross the trigger";
+	};
 };
