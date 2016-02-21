@@ -11,12 +11,13 @@ if (isMultiplayer) then {
 { _x call ALEF_fnc_fillBox; } forEach boxes;
 { _x call ALEF_fnc_M1025; } forEach m1025s;
 
-[] call ALEF_fnc_ALiVE_pause;
-
 ["ALEF_ALiVE_save", "onPlayerDisconnected", {
 	if (count allPlayers == 0) then {
 		[] call ALEF_fnc_ALiVE_save;
 	};
 }] call BIS_fnc_addStackedEventhandler;
+
+[] call ALEF_fnc_ALiVE_pause;
+
 LOG("End");
 
