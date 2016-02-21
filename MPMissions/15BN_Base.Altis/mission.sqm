@@ -8,19 +8,19 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=1351;
+		nextID=1354;
 	};
 	class MarkerIDProvider
 	{
-		nextID=12;
+		nextID=15;
 	};
 	class LayerIndexProvider
 	{
-		nextID=99;
+		nextID=105;
 	};
 	class Camera
 	{
-		pos[]={20425.508,606.9303,7036.1611};
+		pos[]={20377.281,785.85883,6984.249};
 		dir[]={0.2258755,-0.91667175,0.32979098};
 		up[]={0.51800066,0.39959815,0.75631583};
 		aside[]={0.82507175,3.5669655e-007,-0.5650959};
@@ -240,7 +240,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=30;
+		items=32;
 		class Item0
 		{
 			dataType="Marker";
@@ -7372,8 +7372,8 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={20787.566,27.706987,7291.6777};
-						angles[]={0.0053265258,0,6.272521};
+						position[]={20787.566,27.706985,7291.6782};
+						angles[]={0.0053232545,0,6.2725215};
 					};
 					name="BLUF_HQ";
 					id=273;
@@ -7661,7 +7661,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="true";
+									value="false";
 								};
 							};
 						};
@@ -12819,6 +12819,23 @@ class Mission
 			};
 			id=1350;
 			type="Land_HelipadCircle_F";
+		};
+		class Item30
+		{
+			dataType="Marker";
+			position[]={20958.793,27.714832,7190.1436};
+			name="marker_13";
+			type="b_hq";
+			id=1352;
+		};
+		class Item31
+		{
+			dataType="Marker";
+			position[]={17455.076,13.147578,13221.59};
+			name="BLUFOR_FOB_FLAG";
+			type="mil_flag";
+			colorName="ColorWEST";
+			id=1353;
 		};
 	};
 	class Connections
