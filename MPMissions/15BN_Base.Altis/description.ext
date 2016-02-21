@@ -31,4 +31,5 @@ onLoadName = "15BN_Base_003.Altis";
 // Respawn
 // respawnOnStart = -1; // ALiVE, only for rewpawn INSTANT and BASE
 // Debug
+enableDebugConsole = 1; // admin
 allowFunctionsLog = 0; //
