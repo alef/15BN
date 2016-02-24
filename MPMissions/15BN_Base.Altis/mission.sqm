@@ -8,7 +8,7 @@ class EditorData
 	toggles=5;
 	class ItemIDProvider
 	{
-		nextID=1416;
+		nextID=1435;
 	};
 	class MarkerIDProvider
 	{
@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={17681.656,612.27686,12575.333};
-		dir[]={0,-0.70710677,0.70710683};
-		up[]={0,0.70710677,0.70710671};
-		aside[]={0.99999994,0,0};
+		pos[]={17534.795,93.527252,13386.167};
+		dir[]={0.17045435,-0.8857618,0.43171194};
+		up[]={0.32529116,0.46413672,0.82386839};
+		aside[]={0.93012553,5.5879354e-008,-0.36724433};
 	};
 };
 binarizationWanted=0;
@@ -93,7 +93,8 @@ addons[]=
 	"rhsusf_c_hmmwv",
 	"rhsusf_vehicles",
 	"rhsusf_c_m1a1",
-	"A3_Modules_F"
+	"A3_Modules_F",
+	"ace_cargo"
 };
 randomSeed=5747245;
 class ScenarioData
@@ -226,7 +227,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=45;
+		items=46;
 		class Item0
 		{
 			dataType="Marker";
@@ -13115,8 +13116,8 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={18013,14.266211,13335};
-				angles[]={6.1453919,0,0.17032668};
+				position[]={17457,14.051973,13158};
+				angles[]={0.015998369,0,6.2698536};
 			};
 			name="serverChat";
 			id=1411;
@@ -13135,6 +13136,40 @@ class Mission
 			b=78;
 			angle=46.999992;
 			id=1414;
+		};
+		class Item45
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={17411,12.100015,13392};
+				angles[]={6.2578607,0,6.2791882};
+			};
+			id=1416;
+			type="ACE_moduleCargoSettings";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ACE_moduleCargoSettings_enable";
+					expression="_this setVariable ['enable',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 	};
 	class Connections
