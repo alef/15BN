@@ -29,7 +29,7 @@ class Params
 author = "alef [=15BN=]";
 onLoadName = "15BN_Base_004.Altis";
 // Respawn
-// respawnOnStart = -1; // ALiVE, only for rewpawn INSTANT and BASE
+respawnOnStart = -1; // ALiVE, only for rewpawn INSTANT and BASE
 // Debug
 enableDebugConsole = 1; // admin
 allowFunctionsLog = 0; //
