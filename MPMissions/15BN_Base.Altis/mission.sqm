@@ -8,7 +8,7 @@ class EditorData
 	toggles=5;
 	class ItemIDProvider
 	{
-		nextID=1415;
+		nextID=1416;
 	};
 	class MarkerIDProvider
 	{
@@ -61,7 +61,6 @@ addons[]=
 	"ace_mk6mortar",
 	"ace_nametags",
 	"ace_finger",
-	"ace_respawn",
 	"ace_sitting",
 	"ace_weather",
 	"ace_viewdistance",
@@ -8616,7 +8615,7 @@ class Mission
 			name="ACE";
 			class Entities
 			{
-				items=15;
+				items=13;
 				class Item0
 				{
 					dataType="Logic";
@@ -9246,7 +9245,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=1;
+									value=0.75;
 								};
 							};
 						};
@@ -9353,7 +9352,7 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={17389.281,13.25863,13429.796};
+						position[]={17389.281,13.258631,13429.796};
 					};
 					id=228;
 					type="ace_microdagr_dagrModule";
@@ -9618,129 +9617,6 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={17440.041,12.126266,13393.921};
-					};
-					id=223;
-					type="ACE_ModuleRespawn";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="ACE_ModuleRespawn_RemoveDeadBodiesDisconnected";
-							expression="_this setVariable ['RemoveDeadBodiesDisconnected',_value,true];";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="ACE_ModuleRespawn_SavePreDeathGear";
-							expression="_this setVariable ['SavePreDeathGear',_value,true];";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						nAttributes=2;
-					};
-				};
-				class Item11
-				{
-					dataType="Logic";
-					class PositionInfo
-					{
-						position[]={17410.252,12.153548,13393.995};
-					};
-					id=221;
-					type="ACE_moduleReviveSettings";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="ACE_moduleReviveSettings_amountOfReviveLives";
-							expression="_this setVariable ['amountOfReviveLives',_value,true];";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=-1;
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="ACE_moduleReviveSettings_enableRevive";
-							expression="_this setVariable ['enableRevive',_value,true];";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=-1;
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="ACE_moduleReviveSettings_maxReviveTime";
-							expression="_this setVariable ['maxReviveTime',_value,true];";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=600;
-								};
-							};
-						};
-						nAttributes=3;
-					};
-				};
-				class Item12
-				{
-					dataType="Logic";
-					class PositionInfo
-					{
 						position[]={17440.779,13.680073,13429.626};
 					};
 					id=230;
@@ -9769,7 +9645,7 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item13
+				class Item11
 				{
 					dataType="Logic";
 					class PositionInfo
@@ -9897,7 +9773,7 @@ class Mission
 						nAttributes=6;
 					};
 				};
-				class Item14
+				class Item12
 				{
 					dataType="Logic";
 					class PositionInfo
