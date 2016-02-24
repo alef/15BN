@@ -99,7 +99,7 @@ addons[]=
 randomSeed=5747245;
 class ScenarioData
 {
-	overviewText="15BN_Base_005.Altis";
+	overviewText="15BN_Base_004.Altis";
 	onLoadMission="Da usare con ALiVE";
 	loadScreen="img\15bn_512x256.paa";
 	briefing=0;
@@ -159,7 +159,7 @@ class CustomAttributes
 					};
 					class value
 					{
-						items=2;
+						items=1;
 						class Item0
 						{
 							class data
@@ -172,20 +172,6 @@ class CustomAttributes
 									};
 								};
 								value="ace_spectator";
-							};
-						};
-						class Item1
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="None";
 							};
 						};
 					};
@@ -224,7 +210,7 @@ class Mission
 	class Intel
 	{
 		briefingName="Base";
-		overviewText="15BN_Base_005.Altis";
+		overviewText="15BN_Base_004.Altis";
 		startFog=0.099999994;
 		startWind=0;
 		startWaves=0.099999994;
@@ -744,7 +730,7 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={17429.814,13.72257,13180.285};
+				position[]={17429.814,13.722569,13180.285};
 			};
 			id=191;
 			type="ModuleAI_F";
@@ -784,7 +770,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="0";
+							value="-1";
 						};
 					};
 				};
@@ -822,7 +808,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="0";
+							value="-1";
 						};
 					};
 				};
@@ -841,7 +827,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="0";
+							value="-1";
 						};
 					};
 				};
@@ -860,7 +846,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="0";
+							value="-1";
 						};
 					};
 				};
