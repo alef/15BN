@@ -30,3 +30,7 @@ class TL_Granatiere
 {
 	displayName = "TL-Granatiere";
 };
+class Ricognitore
+{
+	displayName = "Ricognitore";
+};
