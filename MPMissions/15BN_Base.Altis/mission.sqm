@@ -237,14 +237,14 @@ class Mission
 			type="Empty";
 			colorName="ColorRed";
 			fillName="BDiagonal";
-			a=3000;
+			a=10000;
 			b=300;
 			id=5;
 		};
 		class Item1
 		{
 			dataType="Trigger";
-			position[]={15176,103.98391,22901};
+			position[]={15115,108,22672};
 			class Attributes
 			{
 				name="UNPAUSE";
@@ -7084,7 +7084,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={20788.881,29.062212,7200.123};
-						angles[]={0.0013372133,0,6.2631893};
+						angles[]={0.0013439035,0,6.2631841};
 					};
 					name="BLUF_LOGCOM";
 					id=267;
