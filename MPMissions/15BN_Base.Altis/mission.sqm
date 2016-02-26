@@ -12572,21 +12572,6 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={20838.719,27.929689,7256.4541};
-						angles[]={0.0026520467,5.6744447,6.2751846};
-					};
-					side="Empty";
-					class Attributes
-					{
-					};
-					id=1350;
-					type="Land_HelipadCircle_F";
-				};
-				class Item141
-				{
-					dataType="Object";
-					class PositionInfo
-					{
 						position[]={17443.961,14.487103,13211.814};
 						angles[]={5.9253926,2.7443209,6.0177732};
 					};
