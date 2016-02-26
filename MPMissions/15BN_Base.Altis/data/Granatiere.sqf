@@ -31,6 +31,7 @@ this addItemToBackpack "ACE_Flashlight_XL50";
 for "_i" from 1 to 7 do {this addItemToBackpack "rhs_mag_M441_HE";};
 for "_i" from 1 to 6 do {this addItemToBackpack "rhs_mag_m714_White";};
 this addHeadgear "rhsusf_lwh_helmet_marpatwd";
+for "_i" from 1 to 2 do {this addItemToBackpack "B_IR_Grenade";};
 
 comment "Add weapons";
 this addWeapon "rhs_weap_m4_m203";
