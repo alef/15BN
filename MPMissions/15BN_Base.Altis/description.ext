@@ -25,6 +25,11 @@ class Params
 	#include "hpp\params.hpp"
 };
 
+class Header
+{
+	gameType  = Coop;
+};
+
 // Mission
 author = "alef [=15BN=]";
 onLoadName = "15BN_Base_004.Altis";
