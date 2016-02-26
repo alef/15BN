@@ -12,3 +12,10 @@ class CheckPBOs
 	texts[] = {"No", "Sì"};
 	default = 0;
 };
+class ALiVE
+{
+	title = "Spegni ALiVE";
+	values[] = {0, 1};
+	texts[] = {"Spento", "Attivo"};
+	default = 1;
+};
