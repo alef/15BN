@@ -5,7 +5,7 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=5;
+	toggles=1;
 	class ItemIDProvider
 	{
 		nextID=1435;
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=129;
+		nextID=135;
 	};
 	class Camera
 	{
-		pos[]={17534.795,93.527252,13386.167};
-		dir[]={0.17045435,-0.8857618,0.43171194};
-		up[]={0.32529116,0.46413672,0.82386839};
-		aside[]={0.93012553,5.5879354e-008,-0.36724433};
+		pos[]={20736.496,1341.1659,6832.2842};
+		dir[]={-0.096059933,-0.9642517,0.24699354};
+		up[]={-0.3495166,0.26492968,0.89869225};
+		aside[]={0.93200094,1.5704427e-007,0.3624709};
 	};
 };
 binarizationWanted=0;
@@ -7083,8 +7083,8 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={20788.881,29.062212,7200.123};
-						angles[]={0.0013439035,0,6.2631841};
+						position[]={20778.801,29.186085,7214.0327};
+						angles[]={0.0013372133,0,6.2791886};
 					};
 					name="BLUF_LOGCOM";
 					id=267;
@@ -8136,7 +8136,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="3";
+									value="9999";
 								};
 							};
 						};
@@ -8155,7 +8155,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="3";
+									value="9999";
 								};
 							};
 						};
@@ -8174,7 +8174,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="3";
+									value="9999";
 								};
 							};
 						};
@@ -8521,8 +8521,8 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={20829.781,27.91297,7269.729};
-						angles[]={0.0066682254,0,6.2778587};
+						position[]={20832.307,27.950001,7254.3638};
+						angles[]={0,5.6213393,0};
 					};
 					id=1330;
 					type="ALiVE_SUP_TRANSPORT";
@@ -9833,10 +9833,9 @@ class Mission
 		{
 			dataType="Layer";
 			name="Empty";
-			state=2;
 			class Entities
 			{
-				items=142;
+				items=141;
 				class Item0
 				{
 					dataType="Object";
