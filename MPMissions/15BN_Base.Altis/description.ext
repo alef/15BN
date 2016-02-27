@@ -28,6 +28,8 @@ class Params
 class Header
 {
 	gameType  = Coop;
+	minPlayers = 1;
+	maxPlayers = 64;
 };
 
 #include "hpp\CfgEventHandlers.hpp"
