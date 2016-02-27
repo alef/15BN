@@ -54,4 +54,8 @@ class _15BN_
 	{
 		description = "Lift airplanes mid-air when cross the trigger";
 	};
+	class hcSetGroup
+	{
+		description = "Units can be added to High Command";
+	};
 };
