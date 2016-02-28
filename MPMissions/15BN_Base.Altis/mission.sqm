@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={17410.869,42.779594,13179.466};
-		dir[]={-0.13118637,-0.73238546,0.66813689};
-		up[]={-0.14110687,0.6808908,0.7186625};
-		aside[]={0.98126584,1.3038516e-008,0.1926682};
+		pos[]={17389.98,38.043388,13459.66};
+		dir[]={0,-0.70710683,0.70710683};
+		up[]={0,0.70710677,0.70710677};
+		aside[]={0.99999994,0,-0};
 	};
 };
 binarizationWanted=0;
@@ -1532,7 +1532,7 @@ class Mission
 						position[]={18154.432,23.229742,17381.307};
 					};
 					name="OPF";
-					presenceCondition="1 == (""ALiVE"" call BIS_fnc_getParamValue)";
+					presenceCondition="1 == ([""ALiVE"",1] call BIS_fnc_getParamValue)";
 					id=250;
 					type="ALiVE_mil_OPCOM";
 					class CustomAttributes
@@ -1739,7 +1739,7 @@ class Mission
 						angles[]={6.2671809,0,6.2631841};
 					};
 					name="OPF_CQB_STR";
-					presenceCondition="1 == (""ALiVE"" call BIS_fnc_getParamValue)";
+					presenceCondition="1 == ([""ALiVE"",1] call BIS_fnc_getParamValue)";
 					id=255;
 					type="ALiVE_mil_cqb";
 					class CustomAttributes
@@ -2060,7 +2060,7 @@ class Mission
 						angles[]={6.2166185,0,6.2645278};
 					};
 					name="OPF_CQB_CIVILIAN";
-					presenceCondition="1 == (""ALiVE"" call BIS_fnc_getParamValue)";
+					presenceCondition="1 == ([""ALiVE"",1] call BIS_fnc_getParamValue)";
 					id=257;
 					type="ALiVE_mil_cqb";
 					class CustomAttributes
@@ -2381,7 +2381,7 @@ class Mission
 						angles[]={6.2805147,0,6.2431998};
 					};
 					name="OPF_CQB_CIV_5";
-					presenceCondition="1 == (""ALiVE"" call BIS_fnc_getParamValue)";
+					presenceCondition="1 == ([""ALiVE"",1] call BIS_fnc_getParamValue)";
 					id=259;
 					type="ALiVE_mil_cqb";
 					class CustomAttributes
@@ -2702,7 +2702,7 @@ class Mission
 						angles[]={6.2685246,0,6.2551899};
 					};
 					name="OPF_CQB_STR_5";
-					presenceCondition="1 == (""ALiVE"" call BIS_fnc_getParamValue)";
+					presenceCondition="1 == ([""ALiVE"",1] call BIS_fnc_getParamValue)";
 					id=261;
 					type="ALiVE_mil_cqb";
 					class CustomAttributes
@@ -3022,7 +3022,7 @@ class Mission
 						position[]={14777.258,17.91,16654.469};
 					};
 					name="OPF_LOGCOM";
-					presenceCondition="1 == (""ALiVE"" call BIS_fnc_getParamValue)";
+					presenceCondition="1 == ([""ALiVE"",1] call BIS_fnc_getParamValue)";
 					id=251;
 					type="ALiVE_mil_logistics";
 					class CustomAttributes
@@ -3228,7 +3228,7 @@ class Mission
 						position[]={14189.507,28.283466,18677.828};
 					};
 					name="OPF_CIV_OBJS_1";
-					presenceCondition="1 == (""ALiVE"" call BIS_fnc_getParamValue)";
+					presenceCondition="1 == ([""ALiVE"",1] call BIS_fnc_getParamValue)";
 					id=256;
 					type="ALiVE_civ_placement";
 					class CustomAttributes
@@ -3586,7 +3586,7 @@ class Mission
 						position[]={22517.965,16.669062,20381.924};
 					};
 					name="OPF_OBJS_5";
-					presenceCondition="1 == (""ALiVE"" call BIS_fnc_getParamValue)";
+					presenceCondition="1 == ([""ALiVE"",1] call BIS_fnc_getParamValue)";
 					id=260;
 					type="ALiVE_civ_placement";
 					class CustomAttributes
@@ -3945,7 +3945,7 @@ class Mission
 						angles[]={0,0,6.281981};
 					};
 					name="OPF_HQ";
-					presenceCondition="1 == (""ALiVE"" call BIS_fnc_getParamValue)";
+					presenceCondition="1 == ([""ALiVE"",1] call BIS_fnc_getParamValue)";
 					id=252;
 					type="ALiVE_mil_placement_custom";
 					class CustomAttributes
@@ -4246,7 +4246,7 @@ class Mission
 						position[]={14688.425,17.91,16706.955};
 					};
 					name="OPF_UNITS_1";
-					presenceCondition="1 == (""ALiVE"" call BIS_fnc_getParamValue)";
+					presenceCondition="1 == ([""ALiVE"",1] call BIS_fnc_getParamValue)";
 					id=249;
 					type="ALiVE_mil_placement";
 					class CustomAttributes
@@ -4642,7 +4642,7 @@ class Mission
 						position[]={21686.355,17.566633,18113.27};
 					};
 					name="OPF_UNITS_5";
-					presenceCondition="1 == (""ALiVE"" call BIS_fnc_getParamValue)";
+					presenceCondition="1 == ([""ALiVE"",1] call BIS_fnc_getParamValue)";
 					id=258;
 					type="ALiVE_mil_placement";
 					class CustomAttributes
@@ -5037,7 +5037,7 @@ class Mission
 					{
 						position[]={17438.268,12.119951,13513.86};
 					};
-					presenceCondition="1 == (""ALiVE"" call BIS_fnc_getParamValue)";
+					presenceCondition="1 == ([""ALiVE"",1] call BIS_fnc_getParamValue)";
 					id=234;
 					type="ALiVE_MIL_C2ISTAR";
 					class CustomAttributes
@@ -5604,7 +5604,7 @@ class Mission
 						position[]={17389.98,13.043387,13484.66};
 					};
 					init="call ALEF_fnc_ALiVE_RHS_blacklists";
-					presenceCondition="1 == (""ALiVE"" call BIS_fnc_getParamValue)";
+					presenceCondition="1 == ([""ALiVE"",1] call BIS_fnc_getParamValue)";
 					id=232;
 					type="ALiVE_require";
 					class CustomAttributes
@@ -5809,7 +5809,7 @@ class Mission
 					{
 						position[]={17390.883,12.902445,13513.321};
 					};
-					presenceCondition="1 == (""ALiVE"" call BIS_fnc_getParamValue)";
+					presenceCondition="1 == ([""ALiVE"",1] call BIS_fnc_getParamValue)";
 					id=247;
 					type="ALiVE_sys_data";
 					class CustomAttributes
@@ -5976,7 +5976,7 @@ class Mission
 					{
 						position[]={17416.824,12.810099,13513.01};
 					};
-					presenceCondition="1 == (""ALiVE"" call BIS_fnc_getParamValue)";
+					presenceCondition="1 == ([""ALiVE"",1] call BIS_fnc_getParamValue)";
 					id=248;
 					type="ALiVE_SYS_playeroptions";
 					class CustomAttributes
@@ -6656,7 +6656,7 @@ class Mission
 					{
 						position[]={17413.107,12.958465,13485.118};
 					};
-					presenceCondition="1 == (""ALiVE"" call BIS_fnc_getParamValue)";
+					presenceCondition="1 == ([""ALiVE"",1] call BIS_fnc_getParamValue)";
 					id=233;
 					type="ALiVE_sys_profile";
 					class CustomAttributes
@@ -6825,7 +6825,7 @@ class Mission
 						angles[]={0.042638395,0,0.047961645};
 					};
 					name="BLUF";
-					presenceCondition="1 == (""ALiVE"" call BIS_fnc_getParamValue)";
+					presenceCondition="1 == ([""ALiVE"",1] call BIS_fnc_getParamValue)";
 					id=266;
 					type="ALiVE_mil_OPCOM";
 					class CustomAttributes
@@ -7032,7 +7032,7 @@ class Mission
 						angles[]={0.0013439035,0,6.2791882};
 					};
 					name="BLUF_LOGCOM";
-					presenceCondition="1 == (""ALiVE"" call BIS_fnc_getParamValue)";
+					presenceCondition="1 == ([""ALiVE"",1] call BIS_fnc_getParamValue)";
 					id=267;
 					type="ALiVE_mil_logistics";
 					class CustomAttributes
@@ -7239,7 +7239,7 @@ class Mission
 						angles[]={0.0053232545,0,6.2725215};
 					};
 					name="BLUF_HQ";
-					presenceCondition="1 == (""ALiVE"" call BIS_fnc_getParamValue)";
+					presenceCondition="1 == ([""ALiVE"",1] call BIS_fnc_getParamValue)";
 					id=273;
 					type="ALiVE_mil_placement_custom";
 					class CustomAttributes
@@ -7540,7 +7540,7 @@ class Mission
 						position[]={20997.422,26.76552,6945.5049};
 						angles[]={6.2778621,0,0.0066671576};
 					};
-					presenceCondition="1 == (""ALiVE"" call BIS_fnc_getParamValue)";
+					presenceCondition="1 == ([""ALiVE"",1] call BIS_fnc_getParamValue)";
 					id=265;
 					type="ALiVE_SUP_PLAYER_RESUPPLY";
 					class CustomAttributes
@@ -7689,7 +7689,7 @@ class Mission
 						position[]={21803.316,4.5699172,6021.5171};
 						angles[]={6.2725215,0,6.2591867};
 					};
-					presenceCondition="1 == (""ALiVE"" call BIS_fnc_getParamValue)";
+					presenceCondition="1 == ([""ALiVE"",1] call BIS_fnc_getParamValue)";
 					id=1326;
 					type="ALiVE_civ_placement";
 					class CustomAttributes
@@ -8047,7 +8047,7 @@ class Mission
 						position[]={20964.76,19.548922,7750.8052};
 						angles[]={6.2618575,0,0.034644786};
 					};
-					presenceCondition="1 == (""ALiVE"" call BIS_fnc_getParamValue)";
+					presenceCondition="1 == ([""ALiVE"",1] call BIS_fnc_getParamValue)";
 					id=1327;
 					type="ALiVE_sup_combatsupport";
 					class CustomAttributes
@@ -8158,7 +8158,7 @@ class Mission
 						position[]={21435.176,15.994538,7039.2368};
 						angles[]={0.28778735,0,0.10494665};
 					};
-					presenceCondition="1 == (""ALiVE"" call BIS_fnc_getParamValue)";
+					presenceCondition="1 == ([""ALiVE"",1] call BIS_fnc_getParamValue)";
 					id=1328;
 					type="ALiVE_sup_artillery";
 					class CustomAttributes
@@ -8384,7 +8384,7 @@ class Mission
 						angles[]={0,2.3338716,0};
 					};
 					name="RHS_A10";
-					presenceCondition="1 == (""ALiVE"" call BIS_fnc_getParamValue)";
+					presenceCondition="1 == ([""ALiVE"",1] call BIS_fnc_getParamValue)";
 					id=1329;
 					type="ALiVE_sup_cas";
 					class CustomAttributes
@@ -8476,7 +8476,7 @@ class Mission
 						position[]={20832.307,27.950001,7254.3638};
 						angles[]={0,5.6213393,0};
 					};
-					presenceCondition="1 == (""ALiVE"" call BIS_fnc_getParamValue)";
+					presenceCondition="1 == ([""ALiVE"",1] call BIS_fnc_getParamValue)";
 					id=1330;
 					type="ALiVE_SUP_TRANSPORT";
 					class CustomAttributes
