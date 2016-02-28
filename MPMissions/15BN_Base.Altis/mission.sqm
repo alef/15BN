@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=1436;
+		nextID=1438;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=144;
+		nextID=147;
 	};
 	class Camera
 	{
-		pos[]={17389.98,38.043388,13459.66};
-		dir[]={0,-0.70710683,0.70710683};
-		up[]={0,0.70710677,0.70710677};
-		aside[]={0.99999994,0,-0};
+		pos[]={20893.576,537.77466,7094.3555};
+		dir[]={-0.059342209,-0.76172793,0.64518929};
+		up[]={-0.069770776,0.64783716,0.75857621};
+		aside[]={0.99580467,-2.5855843e-007,0.091589957};
 	};
 };
 binarizationWanted=0;
@@ -124,25 +124,6 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
-			property="RespawnButton";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"SCALAR"
-						};
-					};
-					value=0;
-				};
-			};
-		};
-		class Attribute1
-		{
 			property="RespawnTemplates";
 			expression="true";
 			class Value
@@ -174,6 +155,25 @@ class CustomAttributes
 							};
 						};
 					};
+				};
+			};
+		};
+		class Attribute1
+		{
+			property="RespawnButton";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=0;
 				};
 			};
 		};
@@ -226,7 +226,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=46;
+		items=48;
 		class Item0
 		{
 			dataType="Marker";
@@ -1314,7 +1314,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=2;
+							value=3;
 						};
 					};
 				};
@@ -7028,8 +7028,8 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={20778.801,29.186085,7214.0332};
-						angles[]={0.0013439035,0,6.2791882};
+						position[]={20808.115,28.426855,7247.7373};
+						angles[]={0.027990974,0,6.2618566};
 					};
 					name="BLUF_LOGCOM";
 					presenceCondition="1 == ([""ALiVE"",1] call BIS_fnc_getParamValue)";
@@ -7537,8 +7537,8 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={20997.422,26.76552,6945.5049};
-						angles[]={6.2778621,0,0.0066671576};
+						position[]={20777.82,32.114616,6985.2139};
+						angles[]={6.2791882,0,0.0013439035};
 					};
 					presenceCondition="1 == ([""ALiVE"",1] call BIS_fnc_getParamValue)";
 					id=265;
@@ -8473,8 +8473,8 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={20832.307,27.950001,7254.3638};
-						angles[]={0,5.6213393,0};
+						position[]={20780.84,29.176792,7214.8828};
+						angles[]={0.0013372133,5.698256,6.2791886};
 					};
 					presenceCondition="1 == ([""ALiVE"",1] call BIS_fnc_getParamValue)";
 					id=1330;
@@ -13137,11 +13137,41 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={17477.324,12.04434,13393.167};
-				angles[]={0.078505196,0,0.055941612};
+				position[]={17464.82,13.242438,13457.771};
+				angles[]={0.050623242,0,0.021331646};
 			};
 			id=1435;
 			type="HighCommand";
+		};
+		class Item46
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={20815.268,28.575859,7239.9097};
+				angles[]={0.025325486,5.6437402,0.013332055};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1436;
+			type="Land_HelipadCircle_F";
+		};
+		class Item47
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={20831.984,27.9533,7251.8647};
+				angles[]={0.025325486,5.6437402,0.013332055};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=1437;
+			type="Land_HelipadCircle_F";
 		};
 	};
 	class Connections
