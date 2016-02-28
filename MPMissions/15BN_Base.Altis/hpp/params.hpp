@@ -14,7 +14,7 @@ class CheckPBOs
 };
 class ALiVE
 {
-	title = "Spegni ALiVE";
+	title = "Abilita ALiVE";
 	values[] = {0, 1};
 	texts[] = {"Spento", "Attivo"};
 	default = 1;
