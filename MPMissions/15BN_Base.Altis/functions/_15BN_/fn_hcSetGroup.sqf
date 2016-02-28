@@ -32,7 +32,6 @@ initializedClasses pushBack _type;
 
 private ["_a"];
 
-// "y\ace\addons\interaction\UI\team\team_management_ca.paa"
 _a = [
 	"hcSetGroup",
 	"Add to HC",
@@ -49,8 +48,8 @@ _a = [
 _a = [
 	"hcRemoveGroup",
 	"Remove from HC",
-	"",
-	{player hcRemoveGroup [group (_this select 0)]},
+	"\z\ace\addons\interaction\UI\team\team_management_ca.paa",
+	{player hcRemoveGroup group (_this select 0)},
 	{(group (_this select 0)) in (hcAllGroups player)}
 ] call ace_interact_menu_fnc_createAction;
 [
