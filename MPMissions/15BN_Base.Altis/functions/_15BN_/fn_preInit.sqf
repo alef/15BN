@@ -6,9 +6,9 @@
 #include "\x\cba\addons\main\script_macros_common.hpp"
 
 LOG("Begin");
-enableSaving [false,false];
 missionNamespace setVariable ["boxes",[]];
 missionNamespace setVariable ["m1025s",[]];
 ["Preload"] call BIS_fnc_arsenal;
 CP_defaultGroups = ["=15BN="];
+initializedClasses = [];
 LOG("End");

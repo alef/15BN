@@ -13,13 +13,25 @@ class _15BN_
 	{
 		description = "Load the M1025";
 	};
-	class MCC_init
-	{
-		description = "Init the MCC options.";
-	};
 	class saveTemplates
 	{
 		description = "Save templates into players Arsenal.";
+	};
+	class ALiVE_RHS_blacklists
+	{
+		description = "Custom unit blacklists";
+	};
+	class ALiVE_pause
+	{
+		description = "Pause ALiVE modules";
+	};
+	class ALiVE_unpause
+	{
+		description = "Unpause ALiVE modules";
+	};
+	class ALiVE_save
+	{
+		description = "Save ALiVE modules";
 	};
 	class preInit
 	{
@@ -29,5 +41,21 @@ class _15BN_
 	class spawnLoadout
 	{
 		description = "Load a gear based on unit class";
+	};
+	class enterSafeZone
+	{
+		description = "Delete projectiles and add Arsenal";
+	};
+	class leaveSafeZone
+	{
+		description = "Cancel Arsenal and restore projectiles";
+	};
+	class ALiVE_fixTakeoff
+	{
+		description = "Lift airplanes mid-air when cross the trigger";
+	};
+	class hcSetGroup
+	{
+		description = "Units can be added to High Command";
 	};
 };
