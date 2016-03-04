@@ -32,6 +32,8 @@ class Header
 	maxPlayers = 58;
 };
 
+#include "hpp\CfgEventHandlers.hpp"
+
 // Mission
 author = "alef [=15BN=]";
 overviewText = "Base per le nostre partite";
