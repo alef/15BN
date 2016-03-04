@@ -1,4 +1,4 @@
-comment "TBD";
+comment "24.04kg";
 
 comment "Remove existing items";
 removeAllWeapons this;
@@ -30,6 +30,7 @@ for "_i" from 1 to 10 do {this addItemToBackpack "ACE_CableTie";};
 this addItemToBackpack "ACE_MapTools";
 this addItemToBackpack "ACE_Flashlight_XL50";
 for "_i" from 1 to 5 do {this addItemToBackpack "rhs_mag_30Rnd_556x45_Mk262_Stanag";};
+for "_i" from 1 to 2 do {this addItemToBackpack "B_IR_Grenade";};
 this addHeadgear "rhsusf_lwh_helmet_marpatwd_headset";
 
 comment "Add weapons";

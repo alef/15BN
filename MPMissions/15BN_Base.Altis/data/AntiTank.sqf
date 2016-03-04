@@ -27,6 +27,7 @@ for "_i" from 1 to 2 do {this addItemToVest "rhsusf_mag_7x45acp_MHP";};
 this addBackpack "rhsusf_assault_eagleaiii_coy";
 this addItemToBackpack "rhs_fgm148_magazine_AT";
 this addHeadgear "rhsusf_lwh_helmet_marpatwd";
+for "_i" from 1 to 2 do {this addItemToBackpack "B_IR_Grenade";};
 
 comment "Add weapons";
 this addWeapon "rhs_weap_m4_carryhandle";
