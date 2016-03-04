@@ -8,14 +8,14 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=374;
+		nextID=375;
 	};
 	class Camera
 	{
 		pos[]={17456.934,29.293543,13157.734};
-		dir[]={-0.90376562,-0.27011314,0.33227763};
-		up[]={-0.25360027,0.96281081,0.093238868};
-		aside[]={0.34509736,-2.8638169e-007,0.93864322};
+		dir[]={-0.34990224,-0.23141773,0.90784258};
+		up[]={-0.083257072,0.9728393,0.21601702};
+		aside[]={0.93315989,-2.1676533e-007,0.35966298};
 	};
 };
 binarizationWanted=0;
@@ -75,7 +75,8 @@ addons[]=
 	"A3_Structures_F_EPA_Civ_Camping",
 	"A3_Modules_F_Curator_Mines",
 	"a3_weapons_f_explosives",
-	"ace_explosives"
+	"ace_explosives",
+	"A3_Modules_F_HC"
 };
 randomSeed=11490128;
 class ScenarioData
@@ -196,7 +197,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=196;
+		items=197;
 		class Item0
 		{
 			dataType="Object";
@@ -9839,6 +9840,16 @@ class Mission
 				};
 				nAttributes=3;
 			};
+		};
+		class Item196
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={17411.688,13.010281,13481.785};
+			};
+			id=374;
+			type="HighCommand";
 		};
 	};
 };
