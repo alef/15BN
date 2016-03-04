@@ -8,14 +8,14 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=242;
+		nextID=250;
 	};
 	class Camera
 	{
-		pos[]={17409.01,38.542843,13181.394};
-		dir[]={-0.7984333,-0.36711979,0.47721076};
-		up[]={-0.31512475,0.93017375,0.18834496};
-		aside[]={0.51303327,-9.4994903e-008,0.85837042};
+		pos[]={17436.41,55.667255,13138.742};
+		dir[]={0.033268366,-0.67632157,0.73591059};
+		up[]={0.03054429,0.73657954,0.67566371};
+		aside[]={0.99901628,4.0850136e-007,-0.045164961};
 	};
 };
 binarizationWanted=0;
@@ -51,7 +51,6 @@ addons[]=
 	"A3_Structures_F_EPA_Items_Food",
 	"A3_Characters_F_BLUFOR",
 	"a3_characters_f",
-	"A3_Modules_F_ObjectModifiers",
 	"mcc_sandbox",
 	"ace_nametags",
 	"ace_medical",
@@ -67,7 +66,8 @@ addons[]=
 	"rhs_c_troops",
 	"ace_advanced_ballistics",
 	"ace_winddeflection",
-	"ace_map_gestures"
+	"ace_map_gestures",
+	"rhsusf_c_ch53"
 };
 randomSeed=11490128;
 class ScenarioData
@@ -187,26 +187,8 @@ class Mission
 	};
 	class Entities
 	{
-		items=184;
+		items=185;
 		class Item0
-		{
-			dataType="Trigger";
-			position[]={17430.176,14.41041,13161.32};
-			angle=0.82030469;
-			class Attributes
-			{
-				name="safe_zone";
-				sizeA=108;
-				sizeB=78;
-				interuptable=1;
-				repeatable=1;
-				activationBy="WEST";
-				isRectangle=1;
-			};
-			id=0;
-			type="EmptyDetector";
-		};
-		class Item1
 		{
 			dataType="Object";
 			class PositionInfo
@@ -224,7 +206,7 @@ class Mission
 			id=1;
 			type="B_supplyCrate_F";
 		};
-		class Item2
+		class Item1
 		{
 			dataType="Object";
 			class PositionInfo
@@ -240,7 +222,7 @@ class Mission
 			id=2;
 			type="Land_Bucket_clean_F";
 		};
-		class Item3
+		class Item2
 		{
 			dataType="Object";
 			class PositionInfo
@@ -257,7 +239,7 @@ class Mission
 			id=3;
 			type="SignAd_SponsorS_ARMEX_F";
 		};
-		class Item4
+		class Item3
 		{
 			dataType="Object";
 			class PositionInfo
@@ -274,7 +256,7 @@ class Mission
 			id=4;
 			type="Land_Garbage_square5_F";
 		};
-		class Item5
+		class Item4
 		{
 			dataType="Object";
 			class PositionInfo
@@ -292,7 +274,7 @@ class Mission
 			id=5;
 			type="B_supplyCrate_F";
 		};
-		class Item6
+		class Item5
 		{
 			dataType="Object";
 			class PositionInfo
@@ -308,7 +290,7 @@ class Mission
 			id=6;
 			type="Land_Bucket_clean_F";
 		};
-		class Item7
+		class Item6
 		{
 			dataType="Object";
 			class PositionInfo
@@ -325,7 +307,7 @@ class Mission
 			id=7;
 			type="SignAd_SponsorS_ARMEX_F";
 		};
-		class Item8
+		class Item7
 		{
 			dataType="Object";
 			class PositionInfo
@@ -342,7 +324,7 @@ class Mission
 			id=8;
 			type="Land_Garbage_square5_F";
 		};
-		class Item9
+		class Item8
 		{
 			dataType="Object";
 			class PositionInfo
@@ -360,7 +342,7 @@ class Mission
 			id=9;
 			type="B_supplyCrate_F";
 		};
-		class Item10
+		class Item9
 		{
 			dataType="Object";
 			class PositionInfo
@@ -376,7 +358,7 @@ class Mission
 			id=10;
 			type="Land_Bucket_clean_F";
 		};
-		class Item11
+		class Item10
 		{
 			dataType="Object";
 			class PositionInfo
@@ -393,7 +375,7 @@ class Mission
 			id=11;
 			type="SignAd_SponsorS_ARMEX_F";
 		};
-		class Item12
+		class Item11
 		{
 			dataType="Object";
 			class PositionInfo
@@ -410,7 +392,7 @@ class Mission
 			id=12;
 			type="Land_Garbage_square5_F";
 		};
-		class Item13
+		class Item12
 		{
 			dataType="Object";
 			class PositionInfo
@@ -426,7 +408,7 @@ class Mission
 			id=13;
 			type="Land_HelipadSquare_F";
 		};
-		class Item14
+		class Item13
 		{
 			dataType="Object";
 			class PositionInfo
@@ -443,7 +425,7 @@ class Mission
 			id=14;
 			type="Flag_White_F";
 		};
-		class Item15
+		class Item14
 		{
 			dataType="Object";
 			class PositionInfo
@@ -460,7 +442,7 @@ class Mission
 			id=15;
 			type="Land_Garbage_square3_F";
 		};
-		class Item16
+		class Item15
 		{
 			dataType="Object";
 			class PositionInfo
@@ -476,7 +458,7 @@ class Mission
 			id=16;
 			type="B_Boat_Transport_01_F";
 		};
-		class Item17
+		class Item16
 		{
 			dataType="Object";
 			class PositionInfo
@@ -492,7 +474,7 @@ class Mission
 			id=17;
 			type="B_Boat_Transport_01_F";
 		};
-		class Item18
+		class Item17
 		{
 			dataType="Object";
 			class PositionInfo
@@ -508,7 +490,7 @@ class Mission
 			id=18;
 			type="B_Boat_Transport_01_F";
 		};
-		class Item19
+		class Item18
 		{
 			dataType="Object";
 			class PositionInfo
@@ -524,7 +506,7 @@ class Mission
 			id=19;
 			type="B_Boat_Transport_01_F";
 		};
-		class Item20
+		class Item19
 		{
 			dataType="Object";
 			class PositionInfo
@@ -540,7 +522,7 @@ class Mission
 			id=20;
 			type="B_Boat_Transport_01_F";
 		};
-		class Item21
+		class Item20
 		{
 			dataType="Object";
 			class PositionInfo
@@ -556,7 +538,7 @@ class Mission
 			id=21;
 			type="B_Boat_Transport_01_F";
 		};
-		class Item22
+		class Item21
 		{
 			dataType="Object";
 			class PositionInfo
@@ -572,7 +554,7 @@ class Mission
 			id=22;
 			type="B_Boat_Transport_01_F";
 		};
-		class Item23
+		class Item22
 		{
 			dataType="Object";
 			class PositionInfo
@@ -588,7 +570,7 @@ class Mission
 			id=23;
 			type="B_Boat_Transport_01_F";
 		};
-		class Item24
+		class Item23
 		{
 			dataType="Object";
 			class PositionInfo
@@ -604,7 +586,7 @@ class Mission
 			id=24;
 			type="B_Boat_Transport_01_F";
 		};
-		class Item25
+		class Item24
 		{
 			dataType="Object";
 			class PositionInfo
@@ -620,13 +602,13 @@ class Mission
 			id=25;
 			type="B_Boat_Transport_01_F";
 		};
-		class Item26
+		class Item25
 		{
 			dataType="Object";
 			class PositionInfo
 			{
 				position[]={17390.877,16.796387,13141.514};
-				angles[]={0.0093350215,0.77690542,6.2645216};
+				angles[]={0,0.17453292,0};
 			};
 			side="Empty";
 			class Attributes
@@ -636,14 +618,37 @@ class Mission
 			};
 			id=26;
 			type="rhsusf_m1025_d_s";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[""rhs_weap_m4_carryhandle"",""rhs_weap_M136_hedp"",""FirstAidKit""],[2,2,4]],[[""rhs_m136_hedp_mag"",""rhs_mag_30Rnd_556x45_M855A1_Stanag"",""rhsusf_100Rnd_556x45_soft_pouch"",""rhs_mag_M441_HE"",""rhs_mag_m714_White"",""rhs_mag_m662_red"",""rhs_mag_m67"",""rhs_mag_m18_green"",""rhs_mag_m18_red"",""rhs_mag_an_m8hc""],[2,20,8,16,4,2,4,2,2,4]],[[],[]],[[""rhsusf_falconii""],[2]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
-		class Item27
+		class Item26
 		{
 			dataType="Object";
 			class PositionInfo
 			{
 				position[]={17387.322,17.037205,13170.941};
-				angles[]={0.017332481,0.80073261,6.2738504};
+				angles[]={0,1.3962634,0};
 			};
 			side="Empty";
 			class Attributes
@@ -653,7 +658,7 @@ class Mission
 			id=27;
 			type="rhsusf_rg33_usmc_d";
 		};
-		class Item28
+		class Item27
 		{
 			dataType="Object";
 			class PositionInfo
@@ -669,7 +674,7 @@ class Mission
 			id=28;
 			type="RHS_CH_47F_10";
 		};
-		class Item29
+		class Item28
 		{
 			dataType="Object";
 			class PositionInfo
@@ -685,7 +690,7 @@ class Mission
 			id=29;
 			type="Land_HelipadSquare_F";
 		};
-		class Item30
+		class Item29
 		{
 			dataType="Object";
 			class PositionInfo
@@ -702,7 +707,7 @@ class Mission
 			id=30;
 			type="RHS_UH60M_d";
 		};
-		class Item31
+		class Item30
 		{
 			dataType="Object";
 			class PositionInfo
@@ -718,7 +723,7 @@ class Mission
 			id=31;
 			type="Land_HelipadSquare_F";
 		};
-		class Item32
+		class Item31
 		{
 			dataType="Object";
 			class PositionInfo
@@ -735,7 +740,7 @@ class Mission
 			id=32;
 			type="RHS_UH1Y_FFAR_d";
 		};
-		class Item33
+		class Item32
 		{
 			dataType="Object";
 			class PositionInfo
@@ -751,7 +756,7 @@ class Mission
 			id=33;
 			type="Land_HelipadSquare_F";
 		};
-		class Item34
+		class Item33
 		{
 			dataType="Object";
 			class PositionInfo
@@ -767,7 +772,7 @@ class Mission
 			id=34;
 			type="RHS_AH64D";
 		};
-		class Item35
+		class Item34
 		{
 			dataType="Object";
 			class PositionInfo
@@ -783,7 +788,7 @@ class Mission
 			id=35;
 			type="Land_HelipadSquare_F";
 		};
-		class Item36
+		class Item35
 		{
 			dataType="Object";
 			class PositionInfo
@@ -800,7 +805,7 @@ class Mission
 			id=36;
 			type="RHS_UH1Y_FFAR_d";
 		};
-		class Item37
+		class Item36
 		{
 			dataType="Object";
 			class PositionInfo
@@ -818,7 +823,7 @@ class Mission
 			id=37;
 			type="B_supplyCrate_F";
 		};
-		class Item38
+		class Item37
 		{
 			dataType="Object";
 			class PositionInfo
@@ -834,7 +839,7 @@ class Mission
 			id=38;
 			type="Land_Bucket_clean_F";
 		};
-		class Item39
+		class Item38
 		{
 			dataType="Object";
 			class PositionInfo
@@ -851,7 +856,7 @@ class Mission
 			id=39;
 			type="SignAd_SponsorS_ARMEX_F";
 		};
-		class Item40
+		class Item39
 		{
 			dataType="Object";
 			class PositionInfo
@@ -868,7 +873,7 @@ class Mission
 			id=40;
 			type="Land_Garbage_square5_F";
 		};
-		class Item41
+		class Item40
 		{
 			dataType="Object";
 			class PositionInfo
@@ -886,7 +891,7 @@ class Mission
 			id=41;
 			type="B_supplyCrate_F";
 		};
-		class Item42
+		class Item41
 		{
 			dataType="Object";
 			class PositionInfo
@@ -902,7 +907,7 @@ class Mission
 			id=42;
 			type="Land_Bucket_clean_F";
 		};
-		class Item43
+		class Item42
 		{
 			dataType="Object";
 			class PositionInfo
@@ -919,7 +924,7 @@ class Mission
 			id=43;
 			type="SignAd_SponsorS_ARMEX_F";
 		};
-		class Item44
+		class Item43
 		{
 			dataType="Object";
 			class PositionInfo
@@ -936,7 +941,7 @@ class Mission
 			id=44;
 			type="Land_Garbage_square5_F";
 		};
-		class Item45
+		class Item44
 		{
 			dataType="Object";
 			class PositionInfo
@@ -954,7 +959,7 @@ class Mission
 			id=45;
 			type="B_supplyCrate_F";
 		};
-		class Item46
+		class Item45
 		{
 			dataType="Object";
 			class PositionInfo
@@ -970,7 +975,7 @@ class Mission
 			id=46;
 			type="Land_Bucket_clean_F";
 		};
-		class Item47
+		class Item46
 		{
 			dataType="Object";
 			class PositionInfo
@@ -987,7 +992,7 @@ class Mission
 			id=47;
 			type="SignAd_SponsorS_ARMEX_F";
 		};
-		class Item48
+		class Item47
 		{
 			dataType="Object";
 			class PositionInfo
@@ -1004,7 +1009,7 @@ class Mission
 			id=48;
 			type="Land_Garbage_square5_F";
 		};
-		class Item49
+		class Item48
 		{
 			dataType="Object";
 			class PositionInfo
@@ -1021,7 +1026,7 @@ class Mission
 			id=49;
 			type="Land_Billboard_F";
 		};
-		class Item50
+		class Item49
 		{
 			dataType="Object";
 			class PositionInfo
@@ -1038,13 +1043,13 @@ class Mission
 			id=50;
 			type="RHS_UH1Y_FFAR_d";
 		};
-		class Item51
+		class Item50
 		{
 			dataType="Object";
 			class PositionInfo
 			{
 				position[]={17380.59,17.190983,13164.504};
-				angles[]={0.014664836,0.80073261,6.2751918};
+				angles[]={0,1.3962634,0};
 			};
 			side="Empty";
 			class Attributes
@@ -1054,13 +1059,13 @@ class Mission
 			id=51;
 			type="rhsusf_rg33_usmc_d";
 		};
-		class Item52
+		class Item51
 		{
 			dataType="Object";
 			class PositionInfo
 			{
 				position[]={17375.117,16.857891,13158.7};
-				angles[]={0.011995304,0.77690542,6.2738566};
+				angles[]={0,1.3962634,0};
 			};
 			side="Empty";
 			class Attributes
@@ -1071,13 +1076,13 @@ class Mission
 			id=52;
 			type="rhsusf_m1025_d_s";
 		};
-		class Item53
+		class Item52
 		{
 			dataType="Object";
 			class PositionInfo
 			{
 				position[]={17394.516,16.684624,13145.089};
-				angles[]={0.0093350215,0.77690542,6.259192};
+				angles[]={0,0.17453292,0};
 			};
 			side="Empty";
 			class Attributes
@@ -1087,14 +1092,37 @@ class Mission
 			};
 			id=53;
 			type="rhsusf_m1025_d_s";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[""rhs_weap_m4_carryhandle"",""rhs_weap_M136_hedp"",""FirstAidKit""],[2,2,4]],[[""rhs_m136_hedp_mag"",""rhs_mag_30Rnd_556x45_M855A1_Stanag"",""rhsusf_100Rnd_556x45_soft_pouch"",""rhs_mag_M441_HE"",""rhs_mag_m714_White"",""rhs_mag_m662_red"",""rhs_mag_m67"",""rhs_mag_m18_green"",""rhs_mag_m18_red"",""rhs_mag_an_m8hc""],[2,20,8,16,4,2,4,2,2,4]],[[],[]],[[""rhsusf_falconii""],[2]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
-		class Item54
+		class Item53
 		{
 			dataType="Object";
 			class PositionInfo
 			{
 				position[]={17398.545,14.768949,13148.445};
-				angles[]={0.0026520467,0.77690542,6.2698536};
+				angles[]={0,0.17453292,0};
 			};
 			side="Empty";
 			class Attributes
@@ -1104,14 +1132,37 @@ class Mission
 			};
 			id=54;
 			type="rhsusf_m1025_d_s_m2";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[""rhs_weap_m4_carryhandle"",""rhs_weap_M136_hedp"",""FirstAidKit""],[2,2,4]],[[""rhs_m136_hedp_mag"",""rhs_mag_30Rnd_556x45_M855A1_Stanag"",""rhsusf_100Rnd_556x45_soft_pouch"",""rhs_mag_M441_HE"",""rhs_mag_m714_White"",""rhs_mag_m662_red"",""rhs_mag_m67"",""rhs_mag_m18_green"",""rhs_mag_m18_red"",""rhs_mag_an_m8hc""],[2,20,8,16,4,2,4,2,2,4]],[[],[]],[[""rhsusf_falconii""],[2]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
-		class Item55
+		class Item54
 		{
 			dataType="Object";
 			class PositionInfo
 			{
 				position[]={17402.613,14.731419,13152.51};
-				angles[]={0.0053265258,0.77690542,6.2778587};
+				angles[]={0,0.17453292,0};
 			};
 			side="Empty";
 			class Attributes
@@ -1121,14 +1172,37 @@ class Mission
 			};
 			id=55;
 			type="rhsusf_m1025_d_s_m2";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[""rhs_weap_m4_carryhandle"",""rhs_weap_M136_hedp"",""FirstAidKit""],[2,2,4]],[[""rhs_m136_hedp_mag"",""rhs_mag_30Rnd_556x45_M855A1_Stanag"",""rhsusf_100Rnd_556x45_soft_pouch"",""rhs_mag_M441_HE"",""rhs_mag_m714_White"",""rhs_mag_m662_red"",""rhs_mag_m67"",""rhs_mag_m18_green"",""rhs_mag_m18_red"",""rhs_mag_an_m8hc""],[2,20,8,16,4,2,4,2,2,4]],[[],[]],[[""rhsusf_falconii""],[2]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
-		class Item56
+		class Item55
 		{
 			dataType="Object";
 			class PositionInfo
 			{
 				position[]={17406.75,14.678979,13156.582};
-				angles[]={0.013332055,0.77690542,6.272521};
+				angles[]={0,0.17453292,0};
 			};
 			side="Empty";
 			class Attributes
@@ -1138,8 +1212,31 @@ class Mission
 			};
 			id=56;
 			type="rhsusf_m1025_d_s_m2";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[""rhs_weap_m4_carryhandle"",""rhs_weap_M136_hedp"",""FirstAidKit""],[2,2,4]],[[""rhs_m136_hedp_mag"",""rhs_mag_30Rnd_556x45_M855A1_Stanag"",""rhsusf_100Rnd_556x45_soft_pouch"",""rhs_mag_M441_HE"",""rhs_mag_m714_White"",""rhs_mag_m662_red"",""rhs_mag_m67"",""rhs_mag_m18_green"",""rhs_mag_m18_red"",""rhs_mag_an_m8hc""],[2,20,8,16,4,2,4,2,2,4]],[[],[]],[[""rhsusf_falconii""],[2]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
-		class Item57
+		class Item56
 		{
 			dataType="Object";
 			class PositionInfo
@@ -1155,7 +1252,7 @@ class Mission
 			id=57;
 			type="rhsusf_m1a1fep_d";
 		};
-		class Item58
+		class Item57
 		{
 			dataType="Object";
 			class PositionInfo
@@ -1171,7 +1268,7 @@ class Mission
 			id=58;
 			type="rhsusf_m1a1fep_d";
 		};
-		class Item59
+		class Item58
 		{
 			dataType="Object";
 			class PositionInfo
@@ -1188,7 +1285,7 @@ class Mission
 			id=59;
 			type="Land_Sign_WarningMilitaryArea_F";
 		};
-		class Item60
+		class Item59
 		{
 			dataType="Object";
 			class PositionInfo
@@ -1205,7 +1302,7 @@ class Mission
 			id=60;
 			type="Land_Sign_WarningMilitaryArea_F";
 		};
-		class Item61
+		class Item60
 		{
 			dataType="Object";
 			class PositionInfo
@@ -1222,7 +1319,7 @@ class Mission
 			id=61;
 			type="Land_ClutterCutter_large_F";
 		};
-		class Item62
+		class Item61
 		{
 			dataType="Object";
 			class PositionInfo
@@ -1239,7 +1336,7 @@ class Mission
 			id=62;
 			type="Land_CncWall4_F";
 		};
-		class Item63
+		class Item62
 		{
 			dataType="Object";
 			class PositionInfo
@@ -1256,7 +1353,7 @@ class Mission
 			id=63;
 			type="Land_CncWall4_F";
 		};
-		class Item64
+		class Item63
 		{
 			dataType="Object";
 			class PositionInfo
@@ -1273,7 +1370,7 @@ class Mission
 			id=64;
 			type="Land_CncWall4_F";
 		};
-		class Item65
+		class Item64
 		{
 			dataType="Object";
 			class PositionInfo
@@ -1290,7 +1387,7 @@ class Mission
 			id=65;
 			type="Land_Sign_WarningMilAreaSmall_F";
 		};
-		class Item66
+		class Item65
 		{
 			dataType="Object";
 			class PositionInfo
@@ -1307,7 +1404,7 @@ class Mission
 			id=66;
 			type="Land_ClutterCutter_large_F";
 		};
-		class Item67
+		class Item66
 		{
 			dataType="Object";
 			class PositionInfo
@@ -1324,7 +1421,7 @@ class Mission
 			id=67;
 			type="Land_ClutterCutter_large_F";
 		};
-		class Item68
+		class Item67
 		{
 			dataType="Object";
 			class PositionInfo
@@ -1341,7 +1438,7 @@ class Mission
 			id=68;
 			type="Land_ClutterCutter_large_F";
 		};
-		class Item69
+		class Item68
 		{
 			dataType="Object";
 			class PositionInfo
@@ -1358,7 +1455,7 @@ class Mission
 			id=69;
 			type="Land_ClutterCutter_large_F";
 		};
-		class Item70
+		class Item69
 		{
 			dataType="Object";
 			class PositionInfo
@@ -1375,7 +1472,7 @@ class Mission
 			id=70;
 			type="Land_ClutterCutter_large_F";
 		};
-		class Item71
+		class Item70
 		{
 			dataType="Object";
 			class PositionInfo
@@ -1392,7 +1489,7 @@ class Mission
 			id=71;
 			type="Land_ClutterCutter_large_F";
 		};
-		class Item72
+		class Item71
 		{
 			dataType="Object";
 			class PositionInfo
@@ -1409,7 +1506,7 @@ class Mission
 			id=72;
 			type="Land_CncWall4_F";
 		};
-		class Item73
+		class Item72
 		{
 			dataType="Object";
 			class PositionInfo
@@ -1426,7 +1523,7 @@ class Mission
 			id=73;
 			type="Land_CncWall4_F";
 		};
-		class Item74
+		class Item73
 		{
 			dataType="Object";
 			class PositionInfo
@@ -1443,7 +1540,7 @@ class Mission
 			id=74;
 			type="Land_CncWall4_F";
 		};
-		class Item75
+		class Item74
 		{
 			dataType="Object";
 			class PositionInfo
@@ -1460,7 +1557,7 @@ class Mission
 			id=75;
 			type="Land_CncWall4_F";
 		};
-		class Item76
+		class Item75
 		{
 			dataType="Object";
 			class PositionInfo
@@ -1477,7 +1574,7 @@ class Mission
 			id=76;
 			type="Land_Obstacle_Saddle_F";
 		};
-		class Item77
+		class Item76
 		{
 			dataType="Object";
 			class PositionInfo
@@ -1494,7 +1591,7 @@ class Mission
 			id=77;
 			type="Land_Pallet_MilBoxes_F";
 		};
-		class Item78
+		class Item77
 		{
 			dataType="Object";
 			class PositionInfo
@@ -1511,7 +1608,7 @@ class Mission
 			id=78;
 			type="Land_Sign_WarningMilAreaSmall_F";
 		};
-		class Item79
+		class Item78
 		{
 			dataType="Object";
 			class PositionInfo
@@ -1527,7 +1624,7 @@ class Mission
 			id=79;
 			type="ACE_Box_Misc";
 		};
-		class Item80
+		class Item79
 		{
 			dataType="Object";
 			class PositionInfo
@@ -1544,7 +1641,7 @@ class Mission
 			id=80;
 			type="Land_ChairPlastic_F";
 		};
-		class Item81
+		class Item80
 		{
 			dataType="Object";
 			class PositionInfo
@@ -1561,7 +1658,7 @@ class Mission
 			id=81;
 			type="Land_ChairPlastic_F";
 		};
-		class Item82
+		class Item81
 		{
 			dataType="Object";
 			class PositionInfo
@@ -1578,7 +1675,7 @@ class Mission
 			id=82;
 			type="Land_ClutterCutter_large_F";
 		};
-		class Item83
+		class Item82
 		{
 			dataType="Object";
 			class PositionInfo
@@ -1595,7 +1692,7 @@ class Mission
 			id=83;
 			type="Land_Target_Oval_F";
 		};
-		class Item84
+		class Item83
 		{
 			dataType="Object";
 			class PositionInfo
@@ -1612,7 +1709,7 @@ class Mission
 			id=84;
 			type="FlagSmall_F";
 		};
-		class Item85
+		class Item84
 		{
 			dataType="Object";
 			class PositionInfo
@@ -1629,7 +1726,7 @@ class Mission
 			id=85;
 			type="TargetP_Inf_F";
 		};
-		class Item86
+		class Item85
 		{
 			dataType="Object";
 			class PositionInfo
@@ -1646,7 +1743,7 @@ class Mission
 			id=86;
 			type="FlagSmall_F";
 		};
-		class Item87
+		class Item86
 		{
 			dataType="Object";
 			class PositionInfo
@@ -1663,7 +1760,7 @@ class Mission
 			id=87;
 			type="FlagSmall_F";
 		};
-		class Item88
+		class Item87
 		{
 			dataType="Object";
 			class PositionInfo
@@ -1680,7 +1777,7 @@ class Mission
 			id=88;
 			type="TargetP_Inf_F";
 		};
-		class Item89
+		class Item88
 		{
 			dataType="Object";
 			class PositionInfo
@@ -1697,7 +1794,7 @@ class Mission
 			id=89;
 			type="FlagSmall_F";
 		};
-		class Item90
+		class Item89
 		{
 			dataType="Object";
 			class PositionInfo
@@ -1714,7 +1811,7 @@ class Mission
 			id=90;
 			type="FlagSmall_F";
 		};
-		class Item91
+		class Item90
 		{
 			dataType="Object";
 			class PositionInfo
@@ -1731,7 +1828,7 @@ class Mission
 			id=91;
 			type="FlagSmall_F";
 		};
-		class Item92
+		class Item91
 		{
 			dataType="Object";
 			class PositionInfo
@@ -1748,7 +1845,7 @@ class Mission
 			id=92;
 			type="FlagSmall_F";
 		};
-		class Item93
+		class Item92
 		{
 			dataType="Object";
 			class PositionInfo
@@ -1765,7 +1862,7 @@ class Mission
 			id=93;
 			type="TargetP_Inf_F";
 		};
-		class Item94
+		class Item93
 		{
 			dataType="Object";
 			class PositionInfo
@@ -1782,7 +1879,7 @@ class Mission
 			id=94;
 			type="FlagSmall_F";
 		};
-		class Item95
+		class Item94
 		{
 			dataType="Object";
 			class PositionInfo
@@ -1799,7 +1896,7 @@ class Mission
 			id=95;
 			type="FlagSmall_F";
 		};
-		class Item96
+		class Item95
 		{
 			dataType="Object";
 			class PositionInfo
@@ -1816,7 +1913,7 @@ class Mission
 			id=96;
 			type="FlagSmall_F";
 		};
-		class Item97
+		class Item96
 		{
 			dataType="Object";
 			class PositionInfo
@@ -1833,7 +1930,7 @@ class Mission
 			id=97;
 			type="TargetP_Inf_F";
 		};
-		class Item98
+		class Item97
 		{
 			dataType="Object";
 			class PositionInfo
@@ -1850,7 +1947,7 @@ class Mission
 			id=98;
 			type="FlagSmall_F";
 		};
-		class Item99
+		class Item98
 		{
 			dataType="Object";
 			class PositionInfo
@@ -1867,7 +1964,7 @@ class Mission
 			id=99;
 			type="FlagSmall_F";
 		};
-		class Item100
+		class Item99
 		{
 			dataType="Object";
 			class PositionInfo
@@ -1884,7 +1981,7 @@ class Mission
 			id=100;
 			type="FlagSmall_F";
 		};
-		class Item101
+		class Item100
 		{
 			dataType="Object";
 			class PositionInfo
@@ -1901,7 +1998,7 @@ class Mission
 			id=101;
 			type="FlagSmall_F";
 		};
-		class Item102
+		class Item101
 		{
 			dataType="Object";
 			class PositionInfo
@@ -1918,7 +2015,7 @@ class Mission
 			id=102;
 			type="FlagSmall_F";
 		};
-		class Item103
+		class Item102
 		{
 			dataType="Object";
 			class PositionInfo
@@ -1935,7 +2032,7 @@ class Mission
 			id=103;
 			type="TargetP_Inf_F";
 		};
-		class Item104
+		class Item103
 		{
 			dataType="Object";
 			class PositionInfo
@@ -1952,7 +2049,7 @@ class Mission
 			id=104;
 			type="FlagSmall_F";
 		};
-		class Item105
+		class Item104
 		{
 			dataType="Object";
 			class PositionInfo
@@ -1969,7 +2066,7 @@ class Mission
 			id=105;
 			type="FlagSmall_F";
 		};
-		class Item106
+		class Item105
 		{
 			dataType="Object";
 			class PositionInfo
@@ -1986,7 +2083,7 @@ class Mission
 			id=106;
 			type="FlagSmall_F";
 		};
-		class Item107
+		class Item106
 		{
 			dataType="Object";
 			class PositionInfo
@@ -2003,7 +2100,7 @@ class Mission
 			id=107;
 			type="FlagSmall_F";
 		};
-		class Item108
+		class Item107
 		{
 			dataType="Object";
 			class PositionInfo
@@ -2020,7 +2117,7 @@ class Mission
 			id=108;
 			type="FlagSmall_F";
 		};
-		class Item109
+		class Item108
 		{
 			dataType="Object";
 			class PositionInfo
@@ -2037,7 +2134,7 @@ class Mission
 			id=109;
 			type="FlagSmall_F";
 		};
-		class Item110
+		class Item109
 		{
 			dataType="Object";
 			class PositionInfo
@@ -2054,7 +2151,7 @@ class Mission
 			id=110;
 			type="Land_Pallets_stack_F";
 		};
-		class Item111
+		class Item110
 		{
 			dataType="Object";
 			class PositionInfo
@@ -2071,7 +2168,7 @@ class Mission
 			id=111;
 			type="Land_Pallets_stack_F";
 		};
-		class Item112
+		class Item111
 		{
 			dataType="Object";
 			class PositionInfo
@@ -2088,7 +2185,7 @@ class Mission
 			id=112;
 			type="Land_Pallets_stack_F";
 		};
-		class Item113
+		class Item112
 		{
 			dataType="Object";
 			class PositionInfo
@@ -2105,7 +2202,7 @@ class Mission
 			id=113;
 			type="TargetP_Inf_F";
 		};
-		class Item114
+		class Item113
 		{
 			dataType="Object";
 			class PositionInfo
@@ -2122,7 +2219,7 @@ class Mission
 			id=114;
 			type="FlagSmall_F";
 		};
-		class Item115
+		class Item114
 		{
 			dataType="Object";
 			class PositionInfo
@@ -2139,7 +2236,7 @@ class Mission
 			id=115;
 			type="FlagSmall_F";
 		};
-		class Item116
+		class Item115
 		{
 			dataType="Object";
 			class PositionInfo
@@ -2156,7 +2253,7 @@ class Mission
 			id=116;
 			type="FlagSmall_F";
 		};
-		class Item117
+		class Item116
 		{
 			dataType="Object";
 			class PositionInfo
@@ -2173,7 +2270,7 @@ class Mission
 			id=117;
 			type="FlagSmall_F";
 		};
-		class Item118
+		class Item117
 		{
 			dataType="Object";
 			class PositionInfo
@@ -2190,7 +2287,7 @@ class Mission
 			id=118;
 			type="FlagSmall_F";
 		};
-		class Item119
+		class Item118
 		{
 			dataType="Object";
 			class PositionInfo
@@ -2207,7 +2304,7 @@ class Mission
 			id=119;
 			type="FlagSmall_F";
 		};
-		class Item120
+		class Item119
 		{
 			dataType="Object";
 			class PositionInfo
@@ -2224,7 +2321,7 @@ class Mission
 			id=120;
 			type="FlagSmall_F";
 		};
-		class Item121
+		class Item120
 		{
 			dataType="Object";
 			class PositionInfo
@@ -2241,7 +2338,7 @@ class Mission
 			id=121;
 			type="MapBoard_altis_F";
 		};
-		class Item122
+		class Item121
 		{
 			dataType="Object";
 			class PositionInfo
@@ -2258,7 +2355,7 @@ class Mission
 			id=122;
 			type="Land_MapBoard_F";
 		};
-		class Item123
+		class Item122
 		{
 			dataType="Object";
 			class PositionInfo
@@ -2275,7 +2372,7 @@ class Mission
 			id=123;
 			type="Land_CampingTable_F";
 		};
-		class Item124
+		class Item123
 		{
 			dataType="Object";
 			class PositionInfo
@@ -2292,7 +2389,7 @@ class Mission
 			id=124;
 			type="Land_CampingChair_V1_F";
 		};
-		class Item125
+		class Item124
 		{
 			dataType="Object";
 			class PositionInfo
@@ -2309,7 +2406,7 @@ class Mission
 			id=125;
 			type="Land_CampingChair_V1_F";
 		};
-		class Item126
+		class Item125
 		{
 			dataType="Object";
 			class PositionInfo
@@ -2326,7 +2423,7 @@ class Mission
 			id=126;
 			type="Land_CampingChair_V1_F";
 		};
-		class Item127
+		class Item126
 		{
 			dataType="Object";
 			class PositionInfo
@@ -2343,7 +2440,7 @@ class Mission
 			id=127;
 			type="Land_CampingChair_V1_F";
 		};
-		class Item128
+		class Item127
 		{
 			dataType="Object";
 			class PositionInfo
@@ -2360,7 +2457,7 @@ class Mission
 			id=128;
 			type="Land_CampingChair_V1_F";
 		};
-		class Item129
+		class Item128
 		{
 			dataType="Object";
 			class PositionInfo
@@ -2377,7 +2474,7 @@ class Mission
 			id=129;
 			type="Land_CampingChair_V1_F";
 		};
-		class Item130
+		class Item129
 		{
 			dataType="Object";
 			class PositionInfo
@@ -2394,7 +2491,7 @@ class Mission
 			id=130;
 			type="Land_CampingChair_V1_F";
 		};
-		class Item131
+		class Item130
 		{
 			dataType="Object";
 			class PositionInfo
@@ -2411,7 +2508,7 @@ class Mission
 			id=131;
 			type="Land_CampingChair_V1_F";
 		};
-		class Item132
+		class Item131
 		{
 			dataType="Object";
 			class PositionInfo
@@ -2428,7 +2525,7 @@ class Mission
 			id=132;
 			type="Land_CampingChair_V1_F";
 		};
-		class Item133
+		class Item132
 		{
 			dataType="Object";
 			class PositionInfo
@@ -2445,7 +2542,7 @@ class Mission
 			id=133;
 			type="Land_CampingChair_V1_F";
 		};
-		class Item134
+		class Item133
 		{
 			dataType="Object";
 			class PositionInfo
@@ -2462,7 +2559,7 @@ class Mission
 			id=134;
 			type="Land_CampingChair_V1_F";
 		};
-		class Item135
+		class Item134
 		{
 			dataType="Object";
 			class PositionInfo
@@ -2479,7 +2576,7 @@ class Mission
 			id=135;
 			type="Land_CampingChair_V1_F";
 		};
-		class Item136
+		class Item135
 		{
 			dataType="Object";
 			class PositionInfo
@@ -2496,7 +2593,7 @@ class Mission
 			id=136;
 			type="Land_CampingChair_V1_F";
 		};
-		class Item137
+		class Item136
 		{
 			dataType="Object";
 			class PositionInfo
@@ -2513,7 +2610,7 @@ class Mission
 			id=137;
 			type="Land_CampingChair_V1_F";
 		};
-		class Item138
+		class Item137
 		{
 			dataType="Object";
 			class PositionInfo
@@ -2530,7 +2627,7 @@ class Mission
 			id=138;
 			type="Land_CampingChair_V1_F";
 		};
-		class Item139
+		class Item138
 		{
 			dataType="Object";
 			class PositionInfo
@@ -2547,7 +2644,7 @@ class Mission
 			id=139;
 			type="Land_CampingChair_V1_F";
 		};
-		class Item140
+		class Item139
 		{
 			dataType="Object";
 			class PositionInfo
@@ -2564,7 +2661,7 @@ class Mission
 			id=140;
 			type="Land_CampingChair_V1_F";
 		};
-		class Item141
+		class Item140
 		{
 			dataType="Object";
 			class PositionInfo
@@ -2581,7 +2678,7 @@ class Mission
 			id=141;
 			type="Land_CampingChair_V1_F";
 		};
-		class Item142
+		class Item141
 		{
 			dataType="Object";
 			class PositionInfo
@@ -2598,7 +2695,7 @@ class Mission
 			id=142;
 			type="Land_CampingChair_V1_F";
 		};
-		class Item143
+		class Item142
 		{
 			dataType="Object";
 			class PositionInfo
@@ -2615,7 +2712,7 @@ class Mission
 			id=143;
 			type="Land_CampingChair_V1_F";
 		};
-		class Item144
+		class Item143
 		{
 			dataType="Object";
 			class PositionInfo
@@ -2632,7 +2729,7 @@ class Mission
 			id=144;
 			type="Land_CampingChair_V1_F";
 		};
-		class Item145
+		class Item144
 		{
 			dataType="Object";
 			class PositionInfo
@@ -2649,7 +2746,7 @@ class Mission
 			id=145;
 			type="Land_CampingChair_V1_F";
 		};
-		class Item146
+		class Item145
 		{
 			dataType="Object";
 			class PositionInfo
@@ -2666,7 +2763,7 @@ class Mission
 			id=146;
 			type="Land_CampingChair_V1_F";
 		};
-		class Item147
+		class Item146
 		{
 			dataType="Object";
 			class PositionInfo
@@ -2683,7 +2780,7 @@ class Mission
 			id=147;
 			type="Land_CampingChair_V1_F";
 		};
-		class Item148
+		class Item147
 		{
 			dataType="Object";
 			class PositionInfo
@@ -2700,7 +2797,7 @@ class Mission
 			id=148;
 			type="Land_Map_altis_F";
 		};
-		class Item149
+		class Item148
 		{
 			dataType="Object";
 			class PositionInfo
@@ -2717,7 +2814,7 @@ class Mission
 			id=149;
 			type="Land_Laptop_unfolded_F";
 		};
-		class Item150
+		class Item149
 		{
 			dataType="Object";
 			class PositionInfo
@@ -2734,7 +2831,7 @@ class Mission
 			id=150;
 			type="Land_PensAndPencils_F";
 		};
-		class Item151
+		class Item150
 		{
 			dataType="Object";
 			class PositionInfo
@@ -2751,7 +2848,7 @@ class Mission
 			id=151;
 			type="Land_BottlePlastic_V1_F";
 		};
-		class Item152
+		class Item151
 		{
 			dataType="Object";
 			class PositionInfo
@@ -2768,7 +2865,7 @@ class Mission
 			id=152;
 			type="Land_Notepad_F";
 		};
-		class Item153
+		class Item152
 		{
 			dataType="Object";
 			class PositionInfo
@@ -2785,7 +2882,7 @@ class Mission
 			id=153;
 			type="Land_PenBlack_F";
 		};
-		class Item154
+		class Item153
 		{
 			dataType="Object";
 			class PositionInfo
@@ -2802,7 +2899,7 @@ class Mission
 			id=154;
 			type="Land_PenRed_F";
 		};
-		class Item155
+		class Item154
 		{
 			dataType="Object";
 			class PositionInfo
@@ -2819,7 +2916,7 @@ class Mission
 			id=155;
 			type="Land_Map_F";
 		};
-		class Item156
+		class Item155
 		{
 			dataType="Object";
 			class PositionInfo
@@ -2836,7 +2933,7 @@ class Mission
 			id=156;
 			type="Land_BottlePlastic_V2_F";
 		};
-		class Item157
+		class Item156
 		{
 			dataType="Group";
 			side="West";
@@ -2849,7 +2946,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={17409.01,13.544281,13206.443};
-						angles[]={0.022662206,5.5191169,6.2618566};
+						angles[]={0.022654373,5.519115,6.2618575};
 					};
 					side="West";
 					flags=2;
@@ -2861,6 +2958,48 @@ class Mission
 					};
 					id=158;
 					type="B_Soldier_SL_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 				class Item1
 				{
@@ -2874,10 +3013,53 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						init="if (not isMultiplayer) then {deleteVehicle this;}";
 						isPlayable=1;
 					};
 					id=159;
 					type="B_soldier_AR_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 				class Item2
 				{
@@ -2891,10 +3073,53 @@ class Mission
 					class Attributes
 					{
 						rank="CORPORAL";
+						init="if (not isMultiplayer) then {deleteVehicle this;}";
 						isPlayable=1;
 					};
 					id=160;
 					type="B_soldier_AAR_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 				class Item3
 				{
@@ -2908,10 +3133,53 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						init="if (not isMultiplayer) then {deleteVehicle this;}";
 						isPlayable=1;
 					};
 					id=161;
 					type="B_soldier_AT_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 				class Item4
 				{
@@ -2925,10 +3193,53 @@ class Mission
 					class Attributes
 					{
 						rank="CORPORAL";
+						init="if (not isMultiplayer) then {deleteVehicle this;}";
 						isPlayable=1;
 					};
 					id=162;
 					type="B_soldier_AAT_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 				class Item5
 				{
@@ -2941,10 +3252,53 @@ class Mission
 					side="West";
 					class Attributes
 					{
+						init="if (not isMultiplayer) then {deleteVehicle this;}";
 						isPlayable=1;
 					};
 					id=163;
 					type="B_Soldier_A_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 				class Item6
 				{
@@ -2957,10 +3311,53 @@ class Mission
 					side="West";
 					class Attributes
 					{
+						init="if (not isMultiplayer) then {deleteVehicle this;}";
 						isPlayable=1;
 					};
 					id=164;
 					type="B_Soldier_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 				class Item7
 				{
@@ -2973,18 +3370,84 @@ class Mission
 					side="West";
 					class Attributes
 					{
+						init="if (not isMultiplayer) then {deleteVehicle this;}";
 						isPlayable=1;
 					};
 					id=165;
 					type="B_medic_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 			};
 			class Attributes
 			{
 			};
 			id=157;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="groupID";
+					expression="_this setGroupID [_value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Alpha 1";
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
-		class Item158
+		class Item157
 		{
 			dataType="Group";
 			side="West";
@@ -3004,10 +3467,53 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						init="if (not isMultiplayer) then {deleteVehicle this;}";
 						isPlayable=1;
 					};
 					id=167;
 					type="B_Soldier_SL_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 				class Item1
 				{
@@ -3021,10 +3527,53 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						init="if (not isMultiplayer) then {deleteVehicle this;}";
 						isPlayable=1;
 					};
 					id=168;
 					type="B_soldier_AR_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 				class Item2
 				{
@@ -3038,10 +3587,53 @@ class Mission
 					class Attributes
 					{
 						rank="CORPORAL";
+						init="if (not isMultiplayer) then {deleteVehicle this;}";
 						isPlayable=1;
 					};
 					id=169;
 					type="B_soldier_AAR_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 				class Item3
 				{
@@ -3055,10 +3647,53 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						init="if (not isMultiplayer) then {deleteVehicle this;}";
 						isPlayable=1;
 					};
 					id=170;
 					type="B_soldier_AT_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 				class Item4
 				{
@@ -3072,10 +3707,53 @@ class Mission
 					class Attributes
 					{
 						rank="CORPORAL";
+						init="if (not isMultiplayer) then {deleteVehicle this;}";
 						isPlayable=1;
 					};
 					id=171;
 					type="B_soldier_AAT_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 				class Item5
 				{
@@ -3088,10 +3766,53 @@ class Mission
 					side="West";
 					class Attributes
 					{
+						init="if (not isMultiplayer) then {deleteVehicle this;}";
 						isPlayable=1;
 					};
 					id=172;
 					type="B_Soldier_A_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 				class Item6
 				{
@@ -3104,10 +3825,53 @@ class Mission
 					side="West";
 					class Attributes
 					{
+						init="if (not isMultiplayer) then {deleteVehicle this;}";
 						isPlayable=1;
 					};
 					id=173;
 					type="B_Soldier_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 				class Item7
 				{
@@ -3120,18 +3884,84 @@ class Mission
 					side="West";
 					class Attributes
 					{
+						init="if (not isMultiplayer) then {deleteVehicle this;}";
 						isPlayable=1;
 					};
 					id=174;
 					type="B_medic_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 			};
 			class Attributes
 			{
 			};
 			id=166;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="groupID";
+					expression="_this setGroupID [_value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Alpha 2";
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
-		class Item159
+		class Item158
 		{
 			dataType="Group";
 			side="West";
@@ -3151,10 +3981,53 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						init="if (not isMultiplayer) then {deleteVehicle this;}";
 						isPlayable=1;
 					};
 					id=176;
 					type="B_Soldier_SL_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 				class Item1
 				{
@@ -3168,10 +4041,53 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						init="if (not isMultiplayer) then {deleteVehicle this;}";
 						isPlayable=1;
 					};
 					id=177;
 					type="B_soldier_AR_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 				class Item2
 				{
@@ -3185,10 +4101,53 @@ class Mission
 					class Attributes
 					{
 						rank="CORPORAL";
+						init="if (not isMultiplayer) then {deleteVehicle this;}";
 						isPlayable=1;
 					};
 					id=178;
 					type="B_soldier_AAR_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 				class Item3
 				{
@@ -3202,10 +4161,53 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						init="if (not isMultiplayer) then {deleteVehicle this;}";
 						isPlayable=1;
 					};
 					id=179;
 					type="B_soldier_AT_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 				class Item4
 				{
@@ -3219,10 +4221,53 @@ class Mission
 					class Attributes
 					{
 						rank="CORPORAL";
+						init="if (not isMultiplayer) then {deleteVehicle this;}";
 						isPlayable=1;
 					};
 					id=180;
 					type="B_soldier_AAT_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 				class Item5
 				{
@@ -3235,10 +4280,53 @@ class Mission
 					side="West";
 					class Attributes
 					{
+						init="if (not isMultiplayer) then {deleteVehicle this;}";
 						isPlayable=1;
 					};
 					id=181;
 					type="B_Soldier_A_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 				class Item6
 				{
@@ -3251,10 +4339,53 @@ class Mission
 					side="West";
 					class Attributes
 					{
+						init="if (not isMultiplayer) then {deleteVehicle this;}";
 						isPlayable=1;
 					};
 					id=182;
 					type="B_Soldier_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 				class Item7
 				{
@@ -3267,32 +4398,65 @@ class Mission
 					side="West";
 					class Attributes
 					{
+						init="if (not isMultiplayer) then {deleteVehicle this;}";
 						isPlayable=1;
 					};
 					id=183;
 					type="B_medic_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 			};
 			class Attributes
 			{
 			};
 			id=175;
-		};
-		class Item160
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={17429.814,13.72257,13180.285};
-			};
-			id=184;
-			type="ModuleAI_F";
 			class CustomAttributes
 			{
 				class Attribute0
 				{
-					property="ModuleAI_F_Anim";
-					expression="_this setVariable ['Anim',_value,true];";
+					property="groupID";
+					expression="_this setGroupID [_value];";
 					class Value
 					{
 						class data
@@ -3304,109 +4468,14 @@ class Mission
 									"STRING"
 								};
 							};
-							value="-1";
+							value="Alpha 3";
 						};
 					};
 				};
-				class Attribute1
-				{
-					property="ModuleAI_F_Target";
-					expression="_this setVariable ['Target',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="0";
-						};
-					};
-				};
-				class Attribute2
-				{
-					property="ModuleAI_F_Units";
-					expression="_this setVariable ['Units',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="1";
-						};
-					};
-				};
-				class Attribute3
-				{
-					property="ModuleAI_F_AutoTarget";
-					expression="_this setVariable ['AutoTarget',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="0";
-						};
-					};
-				};
-				class Attribute4
-				{
-					property="ModuleAI_F_FSM";
-					expression="_this setVariable ['FSM',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="0";
-						};
-					};
-				};
-				class Attribute5
-				{
-					property="ModuleAI_F_Move";
-					expression="_this setVariable ['Move',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="0";
-						};
-					};
-				};
-				nAttributes=6;
+				nAttributes=1;
 			};
 		};
-		class Item161
+		class Item159
 		{
 			dataType="Group";
 			side="West";
@@ -3426,10 +4495,53 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						init="if (not isMultiplayer) then {deleteVehicle this;}";
 						isPlayable=1;
 					};
 					id=186;
 					type="B_Soldier_SL_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 				class Item1
 				{
@@ -3443,10 +4555,53 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						init="if (not isMultiplayer) then {deleteVehicle this;}";
 						isPlayable=1;
 					};
 					id=187;
 					type="B_soldier_AR_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 				class Item2
 				{
@@ -3460,10 +4615,53 @@ class Mission
 					class Attributes
 					{
 						rank="CORPORAL";
+						init="if (not isMultiplayer) then {deleteVehicle this;}";
 						isPlayable=1;
 					};
 					id=188;
 					type="B_soldier_AAR_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 				class Item3
 				{
@@ -3477,10 +4675,53 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						init="if (not isMultiplayer) then {deleteVehicle this;}";
 						isPlayable=1;
 					};
 					id=189;
 					type="B_soldier_AT_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 				class Item4
 				{
@@ -3494,10 +4735,53 @@ class Mission
 					class Attributes
 					{
 						rank="CORPORAL";
+						init="if (not isMultiplayer) then {deleteVehicle this;}";
 						isPlayable=1;
 					};
 					id=190;
 					type="B_soldier_AAT_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 				class Item5
 				{
@@ -3510,10 +4794,53 @@ class Mission
 					side="West";
 					class Attributes
 					{
+						init="if (not isMultiplayer) then {deleteVehicle this;}";
 						isPlayable=1;
 					};
 					id=191;
 					type="B_Soldier_A_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 				class Item6
 				{
@@ -3526,10 +4853,53 @@ class Mission
 					side="West";
 					class Attributes
 					{
+						init="if (not isMultiplayer) then {deleteVehicle this;}";
 						isPlayable=1;
 					};
 					id=192;
 					type="B_Soldier_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 				class Item7
 				{
@@ -3542,18 +4912,84 @@ class Mission
 					side="West";
 					class Attributes
 					{
+						init="if (not isMultiplayer) then {deleteVehicle this;}";
 						isPlayable=1;
 					};
 					id=193;
 					type="B_medic_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 			};
 			class Attributes
 			{
 			};
 			id=185;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="groupID";
+					expression="_this setGroupID [_value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Bravo 1";
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
-		class Item162
+		class Item160
 		{
 			dataType="Group";
 			side="West";
@@ -3573,10 +5009,53 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						init="if (not isMultiplayer) then {deleteVehicle this;}";
 						isPlayable=1;
 					};
 					id=195;
 					type="B_Soldier_SL_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 				class Item1
 				{
@@ -3590,10 +5069,53 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						init="if (not isMultiplayer) then {deleteVehicle this;}";
 						isPlayable=1;
 					};
 					id=196;
 					type="B_soldier_AR_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 				class Item2
 				{
@@ -3607,10 +5129,53 @@ class Mission
 					class Attributes
 					{
 						rank="CORPORAL";
+						init="if (not isMultiplayer) then {deleteVehicle this;}";
 						isPlayable=1;
 					};
 					id=197;
 					type="B_soldier_AAR_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 				class Item3
 				{
@@ -3624,10 +5189,53 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						init="if (not isMultiplayer) then {deleteVehicle this;}";
 						isPlayable=1;
 					};
 					id=198;
 					type="B_soldier_AT_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 				class Item4
 				{
@@ -3641,10 +5249,53 @@ class Mission
 					class Attributes
 					{
 						rank="CORPORAL";
+						init="if (not isMultiplayer) then {deleteVehicle this;}";
 						isPlayable=1;
 					};
 					id=199;
 					type="B_soldier_AAT_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 				class Item5
 				{
@@ -3657,10 +5308,53 @@ class Mission
 					side="West";
 					class Attributes
 					{
+						init="if (not isMultiplayer) then {deleteVehicle this;}";
 						isPlayable=1;
 					};
 					id=200;
 					type="B_Soldier_A_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 				class Item6
 				{
@@ -3673,10 +5367,53 @@ class Mission
 					side="West";
 					class Attributes
 					{
+						init="if (not isMultiplayer) then {deleteVehicle this;}";
 						isPlayable=1;
 					};
 					id=201;
 					type="B_Soldier_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 				class Item7
 				{
@@ -3689,18 +5426,84 @@ class Mission
 					side="West";
 					class Attributes
 					{
+						init="if (not isMultiplayer) then {deleteVehicle this;}";
 						isPlayable=1;
 					};
 					id=202;
 					type="B_medic_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 			};
 			class Attributes
 			{
 			};
 			id=194;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="groupID";
+					expression="_this setGroupID [_value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Bravo 2";
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
-		class Item163
+		class Item161
 		{
 			dataType="Group";
 			side="West";
@@ -3720,10 +5523,53 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						init="if (not isMultiplayer) then {deleteVehicle this;}";
 						isPlayable=1;
 					};
 					id=204;
 					type="B_Soldier_SL_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 				class Item1
 				{
@@ -3737,10 +5583,53 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						init="if (not isMultiplayer) then {deleteVehicle this;}";
 						isPlayable=1;
 					};
 					id=205;
 					type="B_soldier_AR_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 				class Item2
 				{
@@ -3754,10 +5643,53 @@ class Mission
 					class Attributes
 					{
 						rank="CORPORAL";
+						init="if (not isMultiplayer) then {deleteVehicle this;}";
 						isPlayable=1;
 					};
 					id=206;
 					type="B_soldier_AAR_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 				class Item3
 				{
@@ -3771,10 +5703,53 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						init="if (not isMultiplayer) then {deleteVehicle this;}";
 						isPlayable=1;
 					};
 					id=207;
 					type="B_soldier_AT_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 				class Item4
 				{
@@ -3788,10 +5763,53 @@ class Mission
 					class Attributes
 					{
 						rank="CORPORAL";
+						init="if (not isMultiplayer) then {deleteVehicle this;}";
 						isPlayable=1;
 					};
 					id=208;
 					type="B_soldier_AAT_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 				class Item5
 				{
@@ -3804,10 +5822,53 @@ class Mission
 					side="West";
 					class Attributes
 					{
+						init="if (not isMultiplayer) then {deleteVehicle this;}";
 						isPlayable=1;
 					};
 					id=209;
 					type="B_Soldier_A_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 				class Item6
 				{
@@ -3820,10 +5881,53 @@ class Mission
 					side="West";
 					class Attributes
 					{
+						init="if (not isMultiplayer) then {deleteVehicle this;}";
 						isPlayable=1;
 					};
 					id=210;
 					type="B_Soldier_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 				class Item7
 				{
@@ -3836,18 +5940,84 @@ class Mission
 					side="West";
 					class Attributes
 					{
+						init="if (not isMultiplayer) then {deleteVehicle this;}";
 						isPlayable=1;
 					};
 					id=211;
 					type="B_medic_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 			};
 			class Attributes
 			{
 			};
 			id=203;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="groupID";
+					expression="_this setGroupID [_value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Bravo 3";
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
-		class Item164
+		class Item162
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -4260,7 +6430,7 @@ class Mission
 				nAttributes=21;
 			};
 		};
-		class Item165
+		class Item163
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -4426,7 +6596,7 @@ class Mission
 				nAttributes=8;
 			};
 		};
-		class Item166
+		class Item164
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -4535,7 +6705,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item167
+		class Item165
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -4815,7 +6985,7 @@ class Mission
 				nAttributes=14;
 			};
 		};
-		class Item168
+		class Item166
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -4886,7 +7056,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item169
+		class Item167
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -5014,7 +7184,7 @@ class Mission
 				nAttributes=6;
 			};
 		};
-		class Item170
+		class Item168
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -5066,7 +7236,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item171
+		class Item169
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -5232,7 +7402,7 @@ class Mission
 				nAttributes=8;
 			};
 		};
-		class Item172
+		class Item170
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -5304,7 +7474,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item173
+		class Item171
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -5356,7 +7526,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item174
+		class Item172
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -5408,7 +7578,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item175
+		class Item173
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -5479,7 +7649,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item176
+		class Item174
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -5512,7 +7682,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item177
+		class Item175
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -5602,7 +7772,7 @@ class Mission
 				nAttributes=4;
 			};
 		};
-		class Item178
+		class Item176
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -5635,7 +7805,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item179
+		class Item177
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -5725,7 +7895,7 @@ class Mission
 				nAttributes=4;
 			};
 		};
-		class Item180
+		class Item178
 		{
 			dataType="Group";
 			side="East";
@@ -5745,130 +7915,474 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						init="if (not isMultiplayer) then {deleteVehicle this;}";
 						isPlayable=1;
 					};
 					id=229;
 					type="rhs_msv_emr_sergeant";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 				class Item1
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={17456.857,14.87078,13117.722};
-						angles[]={0.022662206,2.0867765,0.0053265258};
+						position[]={17454.471,14.865973,13117.248};
+						angles[]={0.013332055,2.0867765,0.0053265258};
 					};
 					side="East";
 					class Attributes
 					{
 						rank="SERGEANT";
+						init="if (not isMultiplayer) then {deleteVehicle this;}";
 						isPlayable=1;
 					};
 					id=230;
 					type="rhs_msv_emr_junior_sergeant";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 				class Item2
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={17446.857,14.708063,13117.722};
-						angles[]={0.0026744273,1.3411498,0.025327841};
+						position[]={17448.098,14.743936,13117.349};
+						angles[]={0.019999012,1.3411498,0.025327841};
 					};
 					side="East";
 					class Attributes
 					{
 						skill=0.40000001;
+						init="if (not isMultiplayer) then {deleteVehicle this;}";
 						isPlayable=1;
 					};
 					id=231;
 					type="rhs_msv_emr_grenadier";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 				class Item3
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={17461.857,14.918234,13114.982};
-						angles[]={0.013332055,0.73931515,6.2791886};
+						position[]={17457.154,14.917242,13114.476};
+						angles[]={0.013332055,0.73931515,0.0053265258};
 					};
 					side="East";
 					class Attributes
 					{
 						skill=0.44999999;
 						rank="CORPORAL";
+						init="if (not isMultiplayer) then {deleteVehicle this;}";
 						isPlayable=1;
 					};
 					id=232;
 					type="rhs_msv_emr_rifleman";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 				class Item4
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={17441.857,14.711248,13114.982};
-						angles[]={0.022662206,0,0.0026520467};
+						position[]={17446.357,14.801929,13112.71};
+						angles[]={0.022662206,0,0.022662206};
 					};
 					side="East";
 					class Attributes
 					{
 						skill=0.40000001;
+						init="if (not isMultiplayer) then {deleteVehicle this;}";
 						isPlayable=1;
 					};
 					id=233;
 					type="rhs_msv_emr_machinegunner";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 				class Item5
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={17466.857,14.958851,13110.436};
-						angles[]={0.013332055,0,6.2791886};
+						position[]={17456.037,14.983648,13110.703};
+						angles[]={0.019996032,0,6.2818484};
 					};
 					side="East";
 					class Attributes
 					{
 						skill=0.40000001;
+						init="if (not isMultiplayer) then {deleteVehicle this;}";
 						isPlayable=1;
 					};
 					id=234;
 					type="rhs_msv_emr_at";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 				class Item6
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={17436.857,14.641439,13110.436};
-						angles[]={0,5.2577877,0};
+						position[]={17446.697,14.922411,13107.334};
+						angles[]={0.022664838,5.2577877,0.017332481};
 					};
 					side="East";
 					class Attributes
 					{
 						skill=0.40000001;
+						init="if (not isMultiplayer) then {deleteVehicle this;}";
 						isPlayable=1;
 					};
 					id=235;
 					type="rhs_msv_emr_strelok_rpg_assist";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 				class Item7
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={17471.857,15.03501,13105.485};
-						angles[]={0.018663859,4.9249649,6.2805109};
+						position[]={17452.992,15.039668,13107.844};
+						angles[]={0.017329043,4.9249649,0};
 					};
 					side="East";
 					class Attributes
 					{
 						skill=0.40000001;
+						init="if (not isMultiplayer) then {deleteVehicle this;}";
 						isPlayable=1;
 					};
 					id=236;
 					type="rhs_msv_emr_rifleman";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 				class Item8
 				{
@@ -5882,10 +8396,53 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						init="if (not isMultiplayer) then {deleteVehicle this;}";
 						isPlayable=1;
 					};
 					id=237;
 					type="rhs_msv_emr_rifleman";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 				class Item9
 				{
@@ -5899,10 +8456,53 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						init="if (not isMultiplayer) then {deleteVehicle this;}";
 						isPlayable=1;
 					};
 					id=238;
 					type="rhs_msv_emr_medic";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
 				};
 			};
 			class Attributes
@@ -5910,7 +8510,7 @@ class Mission
 			};
 			id=228;
 		};
-		class Item181
+		class Item179
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -6114,7 +8714,7 @@ class Mission
 				nAttributes=10;
 			};
 		};
-		class Item182
+		class Item180
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -6204,7 +8804,7 @@ class Mission
 				nAttributes=4;
 			};
 		};
-		class Item183
+		class Item181
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -6313,86 +8913,54 @@ class Mission
 				nAttributes=5;
 			};
 		};
-	};
-	class Connections
-	{
-		class LinkIDProvider
+		class Item182
 		{
-			nextID=7;
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={17564.785,12.946126,13255.058};
+				angles[]={0.0093286335,0.72754574,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+				skill=0.60000002;
+			};
+			id=244;
+			type="Land_HelipadSquare_F";
 		};
-		class Links
+		class Item183
 		{
-			items=7;
-			class Item0
+			dataType="Object";
+			class PositionInfo
 			{
-				linkID=0;
-				item0=184;
-				item1=158;
-				class CustomData
-				{
-					type="Sync";
-				};
+				position[]={17563.285,15.061122,13254.677};
+				angles[]={0.0093286335,2.3920665,0.0013372133};
 			};
-			class Item1
+			side="Empty";
+			class Attributes
 			{
-				linkID=1;
-				item0=184;
-				item1=167;
-				class CustomData
-				{
-					type="Sync";
-				};
 			};
-			class Item2
+			id=249;
+			type="rhsusf_CH53E_USMC";
+		};
+		class Item184
+		{
+			dataType="Trigger";
+			position[]={17430.176,14.41041,13161.32};
+			angle=0.82030463;
+			class Attributes
 			{
-				linkID=2;
-				item0=184;
-				item1=176;
-				class CustomData
-				{
-					type="Sync";
-				};
+				name="safe_zone";
+				sizeA=108;
+				sizeB=78;
+				interuptable=1;
+				repeatable=1;
+				activationBy="WEST";
+				isRectangle=1;
 			};
-			class Item3
-			{
-				linkID=3;
-				item0=186;
-				item1=184;
-				class CustomData
-				{
-					type="Sync";
-				};
-			};
-			class Item4
-			{
-				linkID=4;
-				item0=195;
-				item1=184;
-				class CustomData
-				{
-					type="Sync";
-				};
-			};
-			class Item5
-			{
-				linkID=5;
-				item0=204;
-				item1=184;
-				class CustomData
-				{
-					type="Sync";
-				};
-			};
-			class Item6
-			{
-				linkID=6;
-				item0=229;
-				item1=184;
-				class CustomData
-				{
-					type="Sync";
-				};
-			};
+			id=0;
+			type="EmptyDetector";
 		};
 	};
 };
