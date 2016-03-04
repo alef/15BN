@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=250;
+		nextID=290;
 	};
 	class Camera
 	{
@@ -51,6 +51,7 @@ addons[]=
 	"A3_Structures_F_EPA_Items_Food",
 	"A3_Characters_F_BLUFOR",
 	"a3_characters_f",
+	"rhsusf_c_troops",
 	"mcc_sandbox",
 	"ace_nametags",
 	"ace_medical",
@@ -67,7 +68,8 @@ addons[]=
 	"ace_advanced_ballistics",
 	"ace_winddeflection",
 	"ace_map_gestures",
-	"rhsusf_c_ch53"
+	"rhsusf_c_ch53",
+	"ace_weather"
 };
 randomSeed=11490128;
 class ScenarioData
@@ -187,7 +189,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=185;
+		items=186;
 		class Item0
 		{
 			dataType="Object";
@@ -2945,366 +2947,6 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={17409.01,13.544281,13206.443};
-						angles[]={0.022654373,5.519115,6.2618575};
-					};
-					side="West";
-					flags=2;
-					class Attributes
-					{
-						rank="SERGEANT";
-						isPlayer=1;
-						isPlayable=1;
-					};
-					id=158;
-					type="B_Soldier_SL_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="ace_isSurrendered";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="ace_isHandcuffed";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						nAttributes=2;
-					};
-				};
-				class Item1
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={17410.064,13.378799,13216.498};
-						angles[]={0.0079935296,3.7524579,6.2671871};
-					};
-					side="West";
-					class Attributes
-					{
-						rank="SERGEANT";
-						init="if (not isMultiplayer) then {deleteVehicle this;}";
-						isPlayable=1;
-					};
-					id=159;
-					type="B_soldier_AR_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="ace_isSurrendered";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="ace_isHandcuffed";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						nAttributes=2;
-					};
-				};
-				class Item2
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={17410.699,13.432035,13210.744};
-						angles[]={0.015998369,4.712389,6.2618566};
-					};
-					side="West";
-					class Attributes
-					{
-						rank="CORPORAL";
-						init="if (not isMultiplayer) then {deleteVehicle this;}";
-						isPlayable=1;
-					};
-					id=160;
-					type="B_soldier_AAR_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="ace_isSurrendered";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="ace_isHandcuffed";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						nAttributes=2;
-					};
-				};
-				class Item3
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={17404.371,13.680743,13205.156};
-						angles[]={0.022662206,6.1959186,6.259192};
-					};
-					side="West";
-					class Attributes
-					{
-						rank="SERGEANT";
-						init="if (not isMultiplayer) then {deleteVehicle this;}";
-						isPlayable=1;
-					};
-					id=161;
-					type="B_soldier_AT_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="ace_isSurrendered";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="ace_isHandcuffed";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						nAttributes=2;
-					};
-				};
-				class Item4
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={17399.293,13.603006,13216.342};
-						angles[]={0.015998369,2.2408807,6.2658563};
-					};
-					side="West";
-					class Attributes
-					{
-						rank="CORPORAL";
-						init="if (not isMultiplayer) then {deleteVehicle this;}";
-						isPlayable=1;
-					};
-					id=162;
-					type="B_soldier_AAT_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="ace_isSurrendered";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="ace_isHandcuffed";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						nAttributes=2;
-					};
-				};
-				class Item5
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={17404.656,13.455844,13217.789};
-						angles[]={0.015998369,3.1611927,6.2591896};
-					};
-					side="West";
-					class Attributes
-					{
-						init="if (not isMultiplayer) then {deleteVehicle this;}";
-						isPlayable=1;
-					};
-					id=163;
-					type="B_Soldier_A_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="ace_isSurrendered";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="ace_isHandcuffed";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						nAttributes=2;
-					};
-				};
-				class Item6
-				{
-					dataType="Object";
-					class PositionInfo
-					{
 						position[]={17399.871,13.763178,13206.475};
 						angles[]={0.02666023,0.98658574,6.2591896};
 					};
@@ -3359,7 +3001,7 @@ class Mission
 						nAttributes=2;
 					};
 				};
-				class Item7
+				class Item1
 				{
 					dataType="Object";
 					class PositionInfo
@@ -3375,6 +3017,366 @@ class Mission
 					};
 					id=165;
 					type="B_medic_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={17409.01,13.544281,13206.443};
+						angles[]={0.022654373,5.519115,6.2618575};
+					};
+					side="West";
+					flags=2;
+					class Attributes
+					{
+						rank="SERGEANT";
+						isPlayer=1;
+						isPlayable=1;
+					};
+					id=254;
+					type="rhsusf_usmc_recon_marpat_wd_teamleader_lite";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+				class Item3
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={17404.656,13.455844,13217.789};
+						angles[]={0.015998369,3.1611927,6.2591896};
+					};
+					side="West";
+					class Attributes
+					{
+						init="if (not isMultiplayer) then {deleteVehicle this;}";
+						isPlayable=1;
+					};
+					id=260;
+					type="rhsusf_usmc_recon_marpat_wd_rifleman";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+				class Item4
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={17410.699,13.432035,13210.744};
+						angles[]={0.015998369,4.712389,6.2618566};
+					};
+					side="West";
+					class Attributes
+					{
+						rank="CORPORAL";
+						init="if (not isMultiplayer) then {deleteVehicle this;}";
+						isPlayable=1;
+					};
+					id=266;
+					type="rhsusf_usmc_marpat_wd_autorifleman_m249_ass";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+				class Item5
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={17410.064,13.378799,13216.498};
+						angles[]={0.0079935296,3.7524579,6.2671871};
+					};
+					side="West";
+					class Attributes
+					{
+						rank="SERGEANT";
+						init="if (not isMultiplayer) then {deleteVehicle this;}";
+						isPlayable=1;
+					};
+					id=272;
+					type="rhsusf_usmc_marpat_wd_autorifleman_m249";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+				class Item6
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={17404.371,13.680743,13205.156};
+						angles[]={0.022662206,6.1959186,6.259192};
+					};
+					side="West";
+					class Attributes
+					{
+						rank="SERGEANT";
+						init="if (not isMultiplayer) then {deleteVehicle this;}";
+						isPlayable=1;
+					};
+					id=278;
+					type="rhsusf_usmc_marpat_wd_javelin";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+				class Item7
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={17399.293,13.603006,13216.342};
+						angles[]={0.015998369,2.2408807,6.2658563};
+					};
+					side="West";
+					class Attributes
+					{
+						rank="CORPORAL";
+						init="if (not isMultiplayer) then {deleteVehicle this;}";
+						isPlayable=1;
+					};
+					id=284;
+					type="rhsusf_usmc_recon_marpat_wd_rifleman_at";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -3459,366 +3461,6 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={17467.971,14.728488,13129.459};
-						angles[]={0.018663859,0.94060534,6.2818484};
-					};
-					side="West";
-					flags=2;
-					class Attributes
-					{
-						rank="SERGEANT";
-						init="if (not isMultiplayer) then {deleteVehicle this;}";
-						isPlayable=1;
-					};
-					id=167;
-					type="B_Soldier_SL_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="ace_isSurrendered";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="ace_isHandcuffed";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						nAttributes=2;
-					};
-				};
-				class Item1
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={17467.598,14.37487,13139.277};
-						angles[]={0.043970551,2.3078156,6.2778587};
-					};
-					side="West";
-					class Attributes
-					{
-						rank="SERGEANT";
-						init="if (not isMultiplayer) then {deleteVehicle this;}";
-						isPlayable=1;
-					};
-					id=168;
-					type="B_soldier_AR_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="ace_isSurrendered";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="ace_isHandcuffed";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						nAttributes=2;
-					};
-				};
-				class Item2
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={17476.367,14.695552,13129.398};
-						angles[]={0.022662206,5.4339852,6.2778587};
-					};
-					side="West";
-					class Attributes
-					{
-						rank="CORPORAL";
-						init="if (not isMultiplayer) then {deleteVehicle this;}";
-						isPlayable=1;
-					};
-					id=169;
-					type="B_soldier_AAR_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="ace_isSurrendered";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="ace_isHandcuffed";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						nAttributes=2;
-					};
-				};
-				class Item3
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={17476.836,14.185802,13139.079};
-						angles[]={0.067895547,4.0377216,6.2605205};
-					};
-					side="West";
-					class Attributes
-					{
-						rank="SERGEANT";
-						init="if (not isMultiplayer) then {deleteVehicle this;}";
-						isPlayable=1;
-					};
-					id=170;
-					type="B_soldier_AT_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="ace_isSurrendered";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="ace_isHandcuffed";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						nAttributes=2;
-					};
-				};
-				class Item4
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={17478.689,14.456642,13134.318};
-						angles[]={0.062584557,4.997653,6.2658563};
-					};
-					side="West";
-					class Attributes
-					{
-						rank="CORPORAL";
-						init="if (not isMultiplayer) then {deleteVehicle this;}";
-						isPlayable=1;
-					};
-					id=171;
-					type="B_soldier_AAT_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="ace_isSurrendered";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="ace_isHandcuffed";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						nAttributes=2;
-					};
-				};
-				class Item5
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={17465.643,14.626886,13134.068};
-						angles[]={0.029324362,1.5069941,0};
-					};
-					side="West";
-					class Attributes
-					{
-						init="if (not isMultiplayer) then {deleteVehicle this;}";
-						isPlayable=1;
-					};
-					id=172;
-					type="B_Soldier_A_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="ace_isSurrendered";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="ace_isHandcuffed";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						nAttributes=2;
-					};
-				};
-				class Item6
-				{
-					dataType="Object";
-					class PositionInfo
-					{
 						position[]={17472.295,14.752943,13127.825};
 						angles[]={0.022662206,0.041898567,6.2778587};
 					};
@@ -3873,7 +3515,7 @@ class Mission
 						nAttributes=2;
 					};
 				};
-				class Item7
+				class Item1
 				{
 					dataType="Object";
 					class PositionInfo
@@ -3889,6 +3531,366 @@ class Mission
 					};
 					id=174;
 					type="B_medic_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={17467.971,14.728488,13129.459};
+						angles[]={0.018663859,0.94060534,6.2818484};
+					};
+					side="West";
+					flags=2;
+					class Attributes
+					{
+						rank="SERGEANT";
+						init="if (not isMultiplayer) then {deleteVehicle this;}";
+						isPlayable=1;
+					};
+					id=255;
+					type="rhsusf_usmc_recon_marpat_wd_teamleader_lite";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+				class Item3
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={17465.643,14.626886,13134.068};
+						angles[]={0.029324362,1.5069941,0};
+					};
+					side="West";
+					class Attributes
+					{
+						init="if (not isMultiplayer) then {deleteVehicle this;}";
+						isPlayable=1;
+					};
+					id=261;
+					type="rhsusf_usmc_recon_marpat_wd_rifleman";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+				class Item4
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={17476.367,14.695552,13129.398};
+						angles[]={0.022662206,5.4339852,6.2778587};
+					};
+					side="West";
+					class Attributes
+					{
+						rank="CORPORAL";
+						init="if (not isMultiplayer) then {deleteVehicle this;}";
+						isPlayable=1;
+					};
+					id=267;
+					type="rhsusf_usmc_marpat_wd_autorifleman_m249_ass";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+				class Item5
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={17467.598,14.37487,13139.277};
+						angles[]={0.043970551,2.3078156,6.2778587};
+					};
+					side="West";
+					class Attributes
+					{
+						rank="SERGEANT";
+						init="if (not isMultiplayer) then {deleteVehicle this;}";
+						isPlayable=1;
+					};
+					id=273;
+					type="rhsusf_usmc_marpat_wd_autorifleman_m249";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+				class Item6
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={17476.836,14.185802,13139.079};
+						angles[]={0.067895547,4.0377216,6.2605205};
+					};
+					side="West";
+					class Attributes
+					{
+						rank="SERGEANT";
+						init="if (not isMultiplayer) then {deleteVehicle this;}";
+						isPlayable=1;
+					};
+					id=279;
+					type="rhsusf_usmc_marpat_wd_javelin";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+				class Item7
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={17478.689,14.456642,13134.318};
+						angles[]={0.062584557,4.997653,6.2658563};
+					};
+					side="West";
+					class Attributes
+					{
+						rank="CORPORAL";
+						init="if (not isMultiplayer) then {deleteVehicle this;}";
+						isPlayable=1;
+					};
+					id=285;
+					type="rhsusf_usmc_recon_marpat_wd_rifleman_at";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -3973,366 +3975,6 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={17342.885,15.408724,13151.211};
-						angles[]={0.017329043,6.1323724,6.276526};
-					};
-					side="West";
-					flags=2;
-					class Attributes
-					{
-						rank="SERGEANT";
-						init="if (not isMultiplayer) then {deleteVehicle this;}";
-						isPlayable=1;
-					};
-					id=176;
-					type="B_Soldier_SL_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="ace_isSurrendered";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="ace_isHandcuffed";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						nAttributes=2;
-					};
-				};
-				class Item1
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={17348.32,15.177567,13163.66};
-						angles[]={0.018663859,3.9087667,6.2671871};
-					};
-					side="West";
-					class Attributes
-					{
-						rank="SERGEANT";
-						init="if (not isMultiplayer) then {deleteVehicle this;}";
-						isPlayable=1;
-					};
-					id=177;
-					type="B_soldier_AR_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="ace_isSurrendered";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="ace_isHandcuffed";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						nAttributes=2;
-					};
-				};
-				class Item2
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={17336.951,15.313161,13158.365};
-						angles[]={0.013332055,1.5458078,0.0013372133};
-					};
-					side="West";
-					class Attributes
-					{
-						rank="CORPORAL";
-						init="if (not isMultiplayer) then {deleteVehicle this;}";
-						isPlayable=1;
-					};
-					id=178;
-					type="B_soldier_AAR_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="ace_isSurrendered";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="ace_isHandcuffed";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						nAttributes=2;
-					};
-				};
-				class Item3
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={17337.902,15.247253,13163.77};
-						angles[]={0.0093286335,2.3201358,0.0013372133};
-					};
-					side="West";
-					class Attributes
-					{
-						rank="SERGEANT";
-						init="if (not isMultiplayer) then {deleteVehicle this;}";
-						isPlayable=1;
-					};
-					id=179;
-					type="B_soldier_AT_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="ace_isSurrendered";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="ace_isHandcuffed";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						nAttributes=2;
-					};
-				};
-				class Item4
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={17349.057,15.345669,13152.662};
-						angles[]={0.014664836,5.3181605,6.2698536};
-					};
-					side="West";
-					class Attributes
-					{
-						rank="CORPORAL";
-						init="if (not isMultiplayer) then {deleteVehicle this;}";
-						isPlayable=1;
-					};
-					id=180;
-					type="B_soldier_AAT_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="ace_isSurrendered";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="ace_isHandcuffed";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						nAttributes=2;
-					};
-				};
-				class Item5
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={17349.406,15.25098,13158.488};
-						angles[]={0.015998369,4.712389,6.2698536};
-					};
-					side="West";
-					class Attributes
-					{
-						init="if (not isMultiplayer) then {deleteVehicle this;}";
-						isPlayable=1;
-					};
-					id=181;
-					type="B_Soldier_A_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="ace_isSurrendered";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="ace_isHandcuffed";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						nAttributes=2;
-					};
-				};
-				class Item6
-				{
-					dataType="Object";
-					class PositionInfo
-					{
 						position[]={17342.957,15.183366,13166.196};
 						angles[]={0.015998369,3.2288592,6.276526};
 					};
@@ -4387,7 +4029,7 @@ class Mission
 						nAttributes=2;
 					};
 				};
-				class Item7
+				class Item1
 				{
 					dataType="Object";
 					class PositionInfo
@@ -4403,6 +4045,366 @@ class Mission
 					};
 					id=183;
 					type="B_medic_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={17342.885,15.408724,13151.211};
+						angles[]={0.017329043,6.1323724,6.276526};
+					};
+					side="West";
+					flags=2;
+					class Attributes
+					{
+						rank="SERGEANT";
+						init="if (not isMultiplayer) then {deleteVehicle this;}";
+						isPlayable=1;
+					};
+					id=256;
+					type="rhsusf_usmc_recon_marpat_wd_teamleader_lite";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+				class Item3
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={17349.406,15.25098,13158.488};
+						angles[]={0.015998369,4.712389,6.2698536};
+					};
+					side="West";
+					class Attributes
+					{
+						init="if (not isMultiplayer) then {deleteVehicle this;}";
+						isPlayable=1;
+					};
+					id=262;
+					type="rhsusf_usmc_recon_marpat_wd_rifleman";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+				class Item4
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={17336.951,15.313161,13158.365};
+						angles[]={0.013332055,1.5458078,0.0013372133};
+					};
+					side="West";
+					class Attributes
+					{
+						rank="CORPORAL";
+						init="if (not isMultiplayer) then {deleteVehicle this;}";
+						isPlayable=1;
+					};
+					id=268;
+					type="rhsusf_usmc_marpat_wd_autorifleman_m249_ass";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+				class Item5
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={17348.32,15.177567,13163.66};
+						angles[]={0.018663859,3.9087667,6.2671871};
+					};
+					side="West";
+					class Attributes
+					{
+						rank="SERGEANT";
+						init="if (not isMultiplayer) then {deleteVehicle this;}";
+						isPlayable=1;
+					};
+					id=274;
+					type="rhsusf_usmc_marpat_wd_autorifleman_m249";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+				class Item6
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={17337.902,15.247253,13163.77};
+						angles[]={0.0093286335,2.3201358,0.0013372133};
+					};
+					side="West";
+					class Attributes
+					{
+						rank="SERGEANT";
+						init="if (not isMultiplayer) then {deleteVehicle this;}";
+						isPlayable=1;
+					};
+					id=280;
+					type="rhsusf_usmc_marpat_wd_javelin";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+				class Item7
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={17349.057,15.345669,13152.662};
+						angles[]={0.014664836,5.3181605,6.2698536};
+					};
+					side="West";
+					class Attributes
+					{
+						rank="CORPORAL";
+						init="if (not isMultiplayer) then {deleteVehicle this;}";
+						isPlayable=1;
+					};
+					id=286;
+					type="rhsusf_usmc_recon_marpat_wd_rifleman_at";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -4487,366 +4489,6 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={17417.303,15.214952,13090.839};
-						angles[]={0.0026520467,6.2338581,0.0053265258};
-					};
-					side="West";
-					flags=2;
-					class Attributes
-					{
-						rank="SERGEANT";
-						init="if (not isMultiplayer) then {deleteVehicle this;}";
-						isPlayable=1;
-					};
-					id=186;
-					type="B_Soldier_SL_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="ace_isSurrendered";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="ace_isHandcuffed";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						nAttributes=2;
-					};
-				};
-				class Item1
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={17422.559,15.042027,13101.012};
-						angles[]={0.019996032,4.0102596,6.2805109};
-					};
-					side="West";
-					class Attributes
-					{
-						rank="SERGEANT";
-						init="if (not isMultiplayer) then {deleteVehicle this;}";
-						isPlayable=1;
-					};
-					id=187;
-					type="B_soldier_AR_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="ace_isSurrendered";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="ace_isHandcuffed";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						nAttributes=2;
-					};
-				};
-				class Item2
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={17410.965,15.174532,13097.585};
-						angles[]={0.0066592805,1.6472979,0};
-					};
-					side="West";
-					class Attributes
-					{
-						rank="CORPORAL";
-						init="if (not isMultiplayer) then {deleteVehicle this;}";
-						isPlayable=1;
-					};
-					id=188;
-					type="B_soldier_AAR_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="ace_isSurrendered";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="ace_isHandcuffed";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						nAttributes=2;
-					};
-				};
-				class Item3
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={17413.188,15.112899,13102.399};
-						angles[]={0.011995304,2.4216259,6.2778587};
-					};
-					side="West";
-					class Attributes
-					{
-						rank="SERGEANT";
-						init="if (not isMultiplayer) then {deleteVehicle this;}";
-						isPlayable=1;
-					};
-					id=189;
-					type="B_soldier_AT_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="ace_isSurrendered";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="ace_isHandcuffed";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						nAttributes=2;
-					};
-				};
-				class Item4
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={17422.551,15.196002,13092.22};
-						angles[]={0.011995304,5.4196463,0.011995304};
-					};
-					side="West";
-					class Attributes
-					{
-						rank="CORPORAL";
-						init="if (not isMultiplayer) then {deleteVehicle this;}";
-						isPlayable=1;
-					};
-					id=190;
-					type="B_soldier_AAT_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="ace_isSurrendered";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="ace_isHandcuffed";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						nAttributes=2;
-					};
-				};
-				class Item5
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={17423.947,15.1311,13096.373};
-						angles[]={0.019996032,4.813879,6.2805109};
-					};
-					side="West";
-					class Attributes
-					{
-						init="if (not isMultiplayer) then {deleteVehicle this;}";
-						isPlayable=1;
-					};
-					id=191;
-					type="B_Soldier_A_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="ace_isSurrendered";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="ace_isHandcuffed";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						nAttributes=2;
-					};
-				};
-				class Item6
-				{
-					dataType="Object";
-					class PositionInfo
-					{
 						position[]={17417.896,15.031386,13103.567};
 						angles[]={0.034652505,3.3303494,6.2711854};
 					};
@@ -4901,7 +4543,7 @@ class Mission
 						nAttributes=2;
 					};
 				};
-				class Item7
+				class Item1
 				{
 					dataType="Object";
 					class PositionInfo
@@ -4917,6 +4559,366 @@ class Mission
 					};
 					id=193;
 					type="B_medic_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={17417.303,15.214952,13090.839};
+						angles[]={0.0026520467,6.2338581,0.0053265258};
+					};
+					side="West";
+					flags=2;
+					class Attributes
+					{
+						rank="SERGEANT";
+						init="if (not isMultiplayer) then {deleteVehicle this;}";
+						isPlayable=1;
+					};
+					id=257;
+					type="rhsusf_usmc_recon_marpat_wd_teamleader_lite";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+				class Item3
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={17423.947,15.1311,13096.373};
+						angles[]={0.019996032,4.813879,6.2805109};
+					};
+					side="West";
+					class Attributes
+					{
+						init="if (not isMultiplayer) then {deleteVehicle this;}";
+						isPlayable=1;
+					};
+					id=263;
+					type="rhsusf_usmc_recon_marpat_wd_rifleman";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+				class Item4
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={17410.965,15.174532,13097.585};
+						angles[]={0.0066592805,1.6472979,0};
+					};
+					side="West";
+					class Attributes
+					{
+						rank="CORPORAL";
+						init="if (not isMultiplayer) then {deleteVehicle this;}";
+						isPlayable=1;
+					};
+					id=269;
+					type="rhsusf_usmc_marpat_wd_autorifleman_m249_ass";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+				class Item5
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={17422.559,15.042027,13101.012};
+						angles[]={0.019996032,4.0102596,6.2805109};
+					};
+					side="West";
+					class Attributes
+					{
+						rank="SERGEANT";
+						init="if (not isMultiplayer) then {deleteVehicle this;}";
+						isPlayable=1;
+					};
+					id=275;
+					type="rhsusf_usmc_marpat_wd_autorifleman_m249";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+				class Item6
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={17413.188,15.112899,13102.399};
+						angles[]={0.011995304,2.4216259,6.2778587};
+					};
+					side="West";
+					class Attributes
+					{
+						rank="SERGEANT";
+						init="if (not isMultiplayer) then {deleteVehicle this;}";
+						isPlayable=1;
+					};
+					id=283;
+					type="rhsusf_usmc_marpat_wd_javelin";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+				class Item7
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={17422.551,15.196002,13092.22};
+						angles[]={0.011995304,5.4196463,0.011995304};
+					};
+					side="West";
+					class Attributes
+					{
+						rank="CORPORAL";
+						init="if (not isMultiplayer) then {deleteVehicle this;}";
+						isPlayable=1;
+					};
+					id=287;
+					type="rhsusf_usmc_recon_marpat_wd_rifleman_at";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -5001,366 +5003,6 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={17461.436,15.399829,13083.458};
-						angles[]={0.027993103,2.8866177,0.0026744273};
-					};
-					side="West";
-					flags=2;
-					class Attributes
-					{
-						rank="SERGEANT";
-						init="if (not isMultiplayer) then {deleteVehicle this;}";
-						isPlayable=1;
-					};
-					id=195;
-					type="B_Soldier_SL_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="ace_isSurrendered";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="ace_isHandcuffed";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						nAttributes=2;
-					};
-				};
-				class Item1
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={17458.355,15.520218,13072.403};
-						angles[]={0.0066682254,0.6630069,0.0013372133};
-					};
-					side="West";
-					class Attributes
-					{
-						rank="SERGEANT";
-						init="if (not isMultiplayer) then {deleteVehicle this;}";
-						isPlayable=1;
-					};
-					id=196;
-					type="B_soldier_AR_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="ace_isSurrendered";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="ace_isHandcuffed";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						nAttributes=2;
-					};
-				};
-				class Item2
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={17469.012,15.533617,13078.159};
-						angles[]={0.0053265258,4.5832329,0.0080009829};
-					};
-					side="West";
-					class Attributes
-					{
-						rank="CORPORAL";
-						init="if (not isMultiplayer) then {deleteVehicle this;}";
-						isPlayable=1;
-					};
-					id=197;
-					type="B_soldier_AAR_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="ace_isSurrendered";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="ace_isHandcuffed";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						nAttributes=2;
-					};
-				};
-				class Item3
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={17467.807,15.551551,13072.989};
-						angles[]={0.0053265258,5.3575606,0.0080009829};
-					};
-					side="West";
-					class Attributes
-					{
-						rank="SERGEANT";
-						init="if (not isMultiplayer) then {deleteVehicle this;}";
-						isPlayable=1;
-					};
-					id=198;
-					type="B_soldier_AT_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="ace_isSurrendered";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="ace_isHandcuffed";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						nAttributes=2;
-					};
-				};
-				class Item4
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={17456.559,15.465699,13081.041};
-						angles[]={0.021328852,2.0724039,0.0013372133};
-					};
-					side="West";
-					class Attributes
-					{
-						rank="CORPORAL";
-						init="if (not isMultiplayer) then {deleteVehicle this;}";
-						isPlayable=1;
-					};
-					id=199;
-					type="B_soldier_AAT_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="ace_isSurrendered";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="ace_isHandcuffed";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						nAttributes=2;
-					};
-				};
-				class Item5
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={17456.049,15.499631,13076.685};
-						angles[]={0.0039967569,1.4666264,0.0013372133};
-					};
-					side="West";
-					class Attributes
-					{
-						init="if (not isMultiplayer) then {deleteVehicle this;}";
-						isPlayable=1;
-					};
-					id=200;
-					type="B_Soldier_A_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="ace_isSurrendered";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="ace_isHandcuffed";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						nAttributes=2;
-					};
-				};
-				class Item6
-				{
-					dataType="Object";
-					class PositionInfo
-					{
 						position[]={17463.445,15.553115,13070.872};
 						angles[]={0.010664274,6.2662835,0.0039967569};
 					};
@@ -5415,7 +5057,7 @@ class Mission
 						nAttributes=2;
 					};
 				};
-				class Item7
+				class Item1
 				{
 					dataType="Object";
 					class PositionInfo
@@ -5431,6 +5073,366 @@ class Mission
 					};
 					id=202;
 					type="B_medic_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={17461.436,15.399829,13083.458};
+						angles[]={0.027993103,2.8866177,0.0026744273};
+					};
+					side="West";
+					flags=2;
+					class Attributes
+					{
+						rank="SERGEANT";
+						init="if (not isMultiplayer) then {deleteVehicle this;}";
+						isPlayable=1;
+					};
+					id=258;
+					type="rhsusf_usmc_recon_marpat_wd_teamleader_lite";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+				class Item3
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={17456.049,15.499631,13076.685};
+						angles[]={0.0039967569,1.4666264,0.0013372133};
+					};
+					side="West";
+					class Attributes
+					{
+						init="if (not isMultiplayer) then {deleteVehicle this;}";
+						isPlayable=1;
+					};
+					id=264;
+					type="rhsusf_usmc_recon_marpat_wd_rifleman";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+				class Item4
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={17469.012,15.533617,13078.159};
+						angles[]={0.0053265258,4.5832329,0.0080009829};
+					};
+					side="West";
+					class Attributes
+					{
+						rank="CORPORAL";
+						init="if (not isMultiplayer) then {deleteVehicle this;}";
+						isPlayable=1;
+					};
+					id=270;
+					type="rhsusf_usmc_marpat_wd_autorifleman_m249_ass";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+				class Item5
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={17458.355,15.520218,13072.403};
+						angles[]={0.0066682254,0.6630069,0.0013372133};
+					};
+					side="West";
+					class Attributes
+					{
+						rank="SERGEANT";
+						init="if (not isMultiplayer) then {deleteVehicle this;}";
+						isPlayable=1;
+					};
+					id=276;
+					type="rhsusf_usmc_marpat_wd_autorifleman_m249";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+				class Item6
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={17467.807,15.551551,13072.989};
+						angles[]={0.0053265258,5.3575606,0.0080009829};
+					};
+					side="West";
+					class Attributes
+					{
+						rank="SERGEANT";
+						init="if (not isMultiplayer) then {deleteVehicle this;}";
+						isPlayable=1;
+					};
+					id=281;
+					type="rhsusf_usmc_marpat_wd_javelin";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+				class Item7
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={17456.559,15.465699,13081.041};
+						angles[]={0.021328852,2.0724039,0.0013372133};
+					};
+					side="West";
+					class Attributes
+					{
+						rank="CORPORAL";
+						init="if (not isMultiplayer) then {deleteVehicle this;}";
+						isPlayable=1;
+					};
+					id=288;
+					type="rhsusf_usmc_recon_marpat_wd_rifleman_at";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -5515,366 +5517,6 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={17536.605,14.089005,13138.92};
-						angles[]={0.019996032,2.8866177,0.0093350215};
-					};
-					side="West";
-					flags=2;
-					class Attributes
-					{
-						rank="SERGEANT";
-						init="if (not isMultiplayer) then {deleteVehicle this;}";
-						isPlayable=1;
-					};
-					id=204;
-					type="B_Soldier_SL_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="ace_isSurrendered";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="ace_isHandcuffed";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						nAttributes=2;
-					};
-				};
-				class Item1
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={17533.525,14.230269,13127.865};
-						angles[]={0.025327841,0.6630069,0.0066682254};
-					};
-					side="West";
-					class Attributes
-					{
-						rank="SERGEANT";
-						init="if (not isMultiplayer) then {deleteVehicle this;}";
-						isPlayable=1;
-					};
-					id=205;
-					type="B_soldier_AR_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="ace_isSurrendered";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="ace_isHandcuffed";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						nAttributes=2;
-					};
-				};
-				class Item2
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={17544.182,14.267947,13133.621};
-						angles[]={0.019996032,4.5832329,0.010664274};
-					};
-					side="West";
-					class Attributes
-					{
-						rank="CORPORAL";
-						init="if (not isMultiplayer) then {deleteVehicle this;}";
-						isPlayable=1;
-					};
-					id=206;
-					type="B_soldier_AAR_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="ace_isSurrendered";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="ace_isHandcuffed";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						nAttributes=2;
-					};
-				};
-				class Item3
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={17542.977,14.36141,13128.451};
-						angles[]={0.021328852,5.3575606,0.0053377044};
-					};
-					side="West";
-					class Attributes
-					{
-						rank="SERGEANT";
-						init="if (not isMultiplayer) then {deleteVehicle this;}";
-						isPlayable=1;
-					};
-					id=207;
-					type="B_soldier_AT_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="ace_isSurrendered";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="ace_isHandcuffed";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						nAttributes=2;
-					};
-				};
-				class Item4
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={17531.729,14.06274,13136.502};
-						angles[]={0.0093286335,2.0724039,0.0066682254};
-					};
-					side="West";
-					class Attributes
-					{
-						rank="CORPORAL";
-						init="if (not isMultiplayer) then {deleteVehicle this;}";
-						isPlayable=1;
-					};
-					id=208;
-					type="B_soldier_AAT_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="ace_isSurrendered";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="ace_isHandcuffed";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						nAttributes=2;
-					};
-				};
-				class Item5
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={17531.219,14.106437,13132.146};
-						angles[]={0.025327841,1.4666264,0.0066682254};
-					};
-					side="West";
-					class Attributes
-					{
-						init="if (not isMultiplayer) then {deleteVehicle this;}";
-						isPlayable=1;
-					};
-					id=209;
-					type="B_Soldier_A_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="ace_isSurrendered";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="ace_isHandcuffed";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						nAttributes=2;
-					};
-				};
-				class Item6
-				{
-					dataType="Object";
-					class PositionInfo
-					{
 						position[]={17538.615,14.336761,13126.334};
 						angles[]={0.025327841,6.2662835,0.015998369};
 					};
@@ -5929,7 +5571,7 @@ class Mission
 						nAttributes=2;
 					};
 				};
-				class Item7
+				class Item1
 				{
 					dataType="Object";
 					class PositionInfo
@@ -5945,6 +5587,366 @@ class Mission
 					};
 					id=211;
 					type="B_medic_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={17536.605,14.089005,13138.92};
+						angles[]={0.019996032,2.8866177,0.0093350215};
+					};
+					side="West";
+					flags=2;
+					class Attributes
+					{
+						rank="SERGEANT";
+						init="if (not isMultiplayer) then {deleteVehicle this;}";
+						isPlayable=1;
+					};
+					id=259;
+					type="rhsusf_usmc_recon_marpat_wd_teamleader_lite";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+				class Item3
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={17531.219,14.106437,13132.146};
+						angles[]={0.025327841,1.4666264,0.0066682254};
+					};
+					side="West";
+					class Attributes
+					{
+						init="if (not isMultiplayer) then {deleteVehicle this;}";
+						isPlayable=1;
+					};
+					id=265;
+					type="rhsusf_usmc_recon_marpat_wd_rifleman";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+				class Item4
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={17544.182,14.267947,13133.621};
+						angles[]={0.019996032,4.5832329,0.010664274};
+					};
+					side="West";
+					class Attributes
+					{
+						rank="CORPORAL";
+						init="if (not isMultiplayer) then {deleteVehicle this;}";
+						isPlayable=1;
+					};
+					id=271;
+					type="rhsusf_usmc_marpat_wd_autorifleman_m249_ass";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+				class Item5
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={17533.525,14.230269,13127.865};
+						angles[]={0.025327841,0.6630069,0.0066682254};
+					};
+					side="West";
+					class Attributes
+					{
+						rank="SERGEANT";
+						init="if (not isMultiplayer) then {deleteVehicle this;}";
+						isPlayable=1;
+					};
+					id=277;
+					type="rhsusf_usmc_marpat_wd_autorifleman_m249";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+				class Item6
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={17542.977,14.36141,13128.451};
+						angles[]={0.021328852,5.3575606,0.0053377044};
+					};
+					side="West";
+					class Attributes
+					{
+						rank="SERGEANT";
+						init="if (not isMultiplayer) then {deleteVehicle this;}";
+						isPlayable=1;
+					};
+					id=282;
+					type="rhsusf_usmc_marpat_wd_javelin";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+				class Item7
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={17531.729,14.06274,13136.502};
+						angles[]={0.0093286335,2.0724039,0.0066682254};
+					};
+					side="West";
+					class Attributes
+					{
+						rank="CORPORAL";
+						init="if (not isMultiplayer) then {deleteVehicle this;}";
+						isPlayable=1;
+					};
+					id=289;
+					type="rhsusf_usmc_recon_marpat_wd_rifleman_at";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -7120,7 +7122,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=-1;
+							value=1;
 						};
 					};
 				};
@@ -8961,6 +8963,134 @@ class Mission
 			};
 			id=0;
 			type="EmptyDetector";
+		};
+		class Item185
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={17437.213,12.137031,13483};
+			};
+			id=250;
+			type="ace_weather_ModuleSettings";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ace_weather_ModuleSettings_useACEWeather";
+					expression="_this setVariable ['useACEWeather',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ace_weather_ModuleSettings_serverUpdateInterval";
+					expression="_this setVariable ['serverUpdateInterval',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=60;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ace_weather_ModuleSettings_syncMisc";
+					expression="_this setVariable ['syncMisc',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="ace_weather_ModuleSettings_syncRain";
+					expression="_this setVariable ['syncRain',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="ace_weather_ModuleSettings_enableServerController";
+					expression="_this setVariable ['enableServerController',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute5
+				{
+					property="ace_weather_ModuleSettings_syncWind";
+					expression="_this setVariable ['syncWind',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				nAttributes=6;
+			};
 		};
 	};
 };
