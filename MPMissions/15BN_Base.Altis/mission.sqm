@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=153;
+		nextID=156;
 	};
 	class Camera
 	{
-		pos[]={17442.955,43.7813,13170.561};
-		dir[]={-0.66620868,-0.61876625,0.41632894};
-		up[]={-0.52474368,0.78556216,0.3279247};
-		aside[]={0.52995986,-2.2863969e-007,0.84803993};
+		pos[]={17406.484,22.312651,13179.193};
+		dir[]={-0.57436442,-0.3347947,-0.74705869};
+		up[]={-0.20409058,0.94227642,-0.26545495};
+		aside[]={-0.7928046,1.2014061e-007,0.60953498};
 	};
 };
 binarizationWanted=0;
@@ -125,6 +125,25 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
+			property="RespawnButton";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=0;
+				};
+			};
+		};
+		class Attribute1
+		{
 			property="RespawnTemplates";
 			expression="true";
 			class Value
@@ -156,25 +175,6 @@ class CustomAttributes
 							};
 						};
 					};
-				};
-			};
-		};
-		class Attribute1
-		{
-			property="RespawnButton";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"SCALAR"
-						};
-					};
-					value=0;
 				};
 			};
 		};
@@ -7930,6 +7930,29 @@ class Mission
 			};
 			id=1369;
 			type="rhsusf_rg33_m2_d";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[],[]],[[""rhs_m136_hedp_mag"",""rhs_mag_m714_White"",""rhs_mag_m67"",""rhs_mag_m18_red"",""rhs_mag_an_m8hc"",""rhs_mag_30Rnd_556x45_M855A1_Stanag_No_Tracer"",""rhs_mag_30Rnd_556x45_Mk262_Stanag"",""rhs_mag_30Rnd_556x45_Mk318_Stanag"",""rhsusf_200Rnd_556x45_soft_pouch"",""rhsusf_100Rnd_762x51_m80a1epr"",""SmokeShellGreen"",""rhs_mag_M433_HEDP""],[2,30,15,5,15,15,15,15,5,5,5,30]],[[""ACRE_PRC77"",""ACE_fieldDressing"",""ALIVE_Tablet"",""ACE_EarPlugs"",""ACE_microDAGR"",""ACE_morphine""],[1,50,5,5,5,20]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 		class Item24
 		{
@@ -7945,6 +7968,29 @@ class Mission
 			};
 			id=1372;
 			type="rhsusf_rg33_m2_d";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[],[]],[[""rhs_m136_hedp_mag"",""rhs_mag_m714_White"",""rhs_mag_m67"",""rhs_mag_m18_red"",""rhs_mag_an_m8hc"",""rhs_mag_30Rnd_556x45_M855A1_Stanag_No_Tracer"",""rhs_mag_30Rnd_556x45_Mk262_Stanag"",""rhs_mag_30Rnd_556x45_Mk318_Stanag"",""rhsusf_200Rnd_556x45_soft_pouch"",""rhsusf_100Rnd_762x51_m80a1epr"",""SmokeShellGreen"",""rhs_mag_M433_HEDP""],[2,30,15,5,15,15,15,15,5,5,5,30]],[[""ACRE_PRC77"",""ACE_fieldDressing"",""ALIVE_Tablet"",""ACE_EarPlugs"",""ACE_microDAGR"",""ACE_morphine""],[1,50,5,5,5,20]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 		class Item25
 		{
@@ -8061,6 +8107,29 @@ class Mission
 			};
 			id=34;
 			type="rhsusf_rg33_usmc_d";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[],[]],[[""rhs_m136_hedp_mag"",""rhs_mag_m714_White"",""rhs_mag_m67"",""rhs_mag_m18_red"",""rhs_mag_an_m8hc"",""rhs_mag_30Rnd_556x45_M855A1_Stanag_No_Tracer"",""rhs_mag_30Rnd_556x45_Mk262_Stanag"",""rhs_mag_30Rnd_556x45_Mk318_Stanag"",""rhsusf_200Rnd_556x45_soft_pouch"",""rhsusf_100Rnd_762x51_m80a1epr"",""SmokeShellGreen"",""rhs_mag_M433_HEDP""],[2,30,15,5,15,15,15,15,5,5,5,30]],[[""ACRE_PRC77"",""ACE_fieldDressing"",""ALIVE_Tablet"",""ACE_EarPlugs"",""ACE_microDAGR"",""ACE_morphine""],[1,50,5,5,5,20]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 		class Item32
 		{
@@ -8077,6 +8146,29 @@ class Mission
 			};
 			id=58;
 			type="rhsusf_rg33_usmc_d";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[],[]],[[""rhs_m136_hedp_mag"",""rhs_mag_m714_White"",""rhs_mag_m67"",""rhs_mag_m18_red"",""rhs_mag_an_m8hc"",""rhs_mag_30Rnd_556x45_M855A1_Stanag_No_Tracer"",""rhs_mag_30Rnd_556x45_Mk262_Stanag"",""rhs_mag_30Rnd_556x45_Mk318_Stanag"",""rhsusf_200Rnd_556x45_soft_pouch"",""rhsusf_100Rnd_762x51_m80a1epr"",""SmokeShellGreen"",""rhs_mag_M433_HEDP""],[2,30,15,5,15,15,15,15,5,5,5,30]],[[""ACRE_PRC77"",""ACE_fieldDressing"",""ALIVE_Tablet"",""ACE_EarPlugs"",""ACE_microDAGR"",""ACE_morphine""],[1,50,5,5,5,20]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 		class Item33
 		{
@@ -8091,9 +8183,33 @@ class Mission
 			{
 				skill=0.60000002;
 				init="[m1025s, this] call BIS_fnc_arrayPush";
+				textures="Desert";
 			};
 			id=61;
 			type="rhsusf_m1025_d_s_m2";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[],[]],[[""rhs_m136_hedp_mag"",""rhs_mag_m714_White"",""rhs_mag_m67"",""rhs_mag_m18_red"",""rhs_mag_an_m8hc"",""rhs_mag_30Rnd_556x45_M855A1_Stanag_No_Tracer"",""rhs_mag_30Rnd_556x45_Mk262_Stanag"",""rhs_mag_30Rnd_556x45_Mk318_Stanag"",""rhsusf_200Rnd_556x45_soft_pouch"",""rhsusf_100Rnd_762x51_m80a1epr"",""SmokeShellGreen"",""rhs_mag_M433_HEDP""],[2,30,15,5,15,15,15,15,5,5,5,30]],[[""ACRE_PRC77"",""ACE_fieldDressing"",""ALIVE_Tablet"",""ACE_EarPlugs"",""ACE_microDAGR"",""ACE_morphine""],[1,50,5,5,5,20]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 		class Item34
 		{
@@ -8108,9 +8224,33 @@ class Mission
 			{
 				skill=0.60000002;
 				init="[m1025s, this] call BIS_fnc_arrayPush";
+				textures="Desert";
 			};
 			id=62;
 			type="rhsusf_m1025_d_s_m2";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[],[]],[[""rhs_m136_hedp_mag"",""rhs_mag_m714_White"",""rhs_mag_m67"",""rhs_mag_m18_red"",""rhs_mag_an_m8hc"",""rhs_mag_30Rnd_556x45_M855A1_Stanag_No_Tracer"",""rhs_mag_30Rnd_556x45_Mk262_Stanag"",""rhs_mag_30Rnd_556x45_Mk318_Stanag"",""rhsusf_200Rnd_556x45_soft_pouch"",""rhsusf_100Rnd_762x51_m80a1epr"",""SmokeShellGreen"",""rhs_mag_M433_HEDP""],[2,30,15,5,15,15,15,15,5,5,5,30]],[[""ACRE_PRC77"",""ACE_fieldDressing"",""ALIVE_Tablet"",""ACE_EarPlugs"",""ACE_microDAGR"",""ACE_morphine""],[1,50,5,5,5,20]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 		class Item35
 		{
@@ -8125,9 +8265,33 @@ class Mission
 			{
 				skill=0.60000002;
 				init="[m1025s, this] call BIS_fnc_arrayPush";
+				textures="Desert";
 			};
 			id=63;
 			type="rhsusf_m1025_d_s_m2";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[],[]],[[""rhs_m136_hedp_mag"",""rhs_mag_m714_White"",""rhs_mag_m67"",""rhs_mag_m18_red"",""rhs_mag_an_m8hc"",""rhs_mag_30Rnd_556x45_M855A1_Stanag_No_Tracer"",""rhs_mag_30Rnd_556x45_Mk262_Stanag"",""rhs_mag_30Rnd_556x45_Mk318_Stanag"",""rhsusf_200Rnd_556x45_soft_pouch"",""rhsusf_100Rnd_762x51_m80a1epr"",""SmokeShellGreen"",""rhs_mag_M433_HEDP""],[2,30,15,5,15,15,15,15,5,5,5,30]],[[""ACRE_PRC77"",""ACE_fieldDressing"",""ALIVE_Tablet"",""ACE_EarPlugs"",""ACE_microDAGR"",""ACE_morphine""],[1,50,5,5,5,20]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 		class Item36
 		{
@@ -8142,9 +8306,33 @@ class Mission
 			{
 				skill=0.60000002;
 				init="[m1025s, this] call BIS_fnc_arrayPush";
+				textures="Desert";
 			};
 			id=33;
 			type="rhsusf_m1025_d_s";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[],[]],[[""rhs_m136_hedp_mag"",""rhs_mag_m714_White"",""rhs_mag_m67"",""rhs_mag_m18_red"",""rhs_mag_an_m8hc"",""rhs_mag_30Rnd_556x45_M855A1_Stanag_No_Tracer"",""rhs_mag_30Rnd_556x45_Mk262_Stanag"",""rhs_mag_30Rnd_556x45_Mk318_Stanag"",""rhsusf_200Rnd_556x45_soft_pouch"",""rhsusf_100Rnd_762x51_m80a1epr"",""SmokeShellGreen"",""rhs_mag_M433_HEDP""],[2,30,15,5,15,15,15,15,5,5,5,30]],[[""ACRE_PRC77"",""ACE_fieldDressing"",""ALIVE_Tablet"",""ACE_EarPlugs"",""ACE_microDAGR"",""ACE_morphine""],[1,50,5,5,5,20]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 		class Item37
 		{
@@ -8159,9 +8347,33 @@ class Mission
 			{
 				skill=0.60000002;
 				init="[m1025s, this] call BIS_fnc_arrayPush";
+				textures="Desert";
 			};
 			id=59;
 			type="rhsusf_m1025_d_s";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[],[]],[[""rhs_m136_hedp_mag"",""rhs_mag_m714_White"",""rhs_mag_m67"",""rhs_mag_m18_red"",""rhs_mag_an_m8hc"",""rhs_mag_30Rnd_556x45_M855A1_Stanag_No_Tracer"",""rhs_mag_30Rnd_556x45_Mk262_Stanag"",""rhs_mag_30Rnd_556x45_Mk318_Stanag"",""rhsusf_200Rnd_556x45_soft_pouch"",""rhsusf_100Rnd_762x51_m80a1epr"",""SmokeShellGreen"",""rhs_mag_M433_HEDP""],[2,30,15,5,15,15,15,15,5,5,5,30]],[[""ACRE_PRC77"",""ACE_fieldDressing"",""ALIVE_Tablet"",""ACE_EarPlugs"",""ACE_microDAGR"",""ACE_morphine""],[1,50,5,5,5,20]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 		class Item38
 		{
@@ -8176,9 +8388,33 @@ class Mission
 			{
 				skill=0.60000002;
 				init="[m1025s, this] call BIS_fnc_arrayPush";
+				textures="Desert";
 			};
 			id=60;
 			type="rhsusf_m1025_d_s";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[],[]],[[""rhs_m136_hedp_mag"",""rhs_mag_m714_White"",""rhs_mag_m67"",""rhs_mag_m18_red"",""rhs_mag_an_m8hc"",""rhs_mag_30Rnd_556x45_M855A1_Stanag_No_Tracer"",""rhs_mag_30Rnd_556x45_Mk262_Stanag"",""rhs_mag_30Rnd_556x45_Mk318_Stanag"",""rhsusf_200Rnd_556x45_soft_pouch"",""rhsusf_100Rnd_762x51_m80a1epr"",""SmokeShellGreen"",""rhs_mag_M433_HEDP""],[2,30,15,5,15,15,15,15,5,5,5,30]],[[""ACRE_PRC77"",""ACE_fieldDressing"",""ALIVE_Tablet"",""ACE_EarPlugs"",""ACE_microDAGR"",""ACE_morphine""],[1,50,5,5,5,20]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 		class Item39
 		{

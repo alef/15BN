@@ -9,10 +9,6 @@ class _15BN_
 	{
 		description = "Clear and install Arsenal.";
 	};
-	class M1025
-	{
-		description = "Load the M1025";
-	};
 	class saveTemplates
 	{
 		description = "Save templates into players Arsenal.";
