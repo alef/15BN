@@ -8,9 +8,6 @@ if (isMultiplayer) then {
 	0=0 spawn { while {true} do { sleep 30 ; call  ALEF_fnc_medicsAvailable; };};
 };
 
-{ _x call ALEF_fnc_fillBox; } forEach boxes;
-{ _x call ALEF_fnc_M1025; } forEach m1025s;
-
 ["ALEF_ALiVE_save", "onPlayerDisconnected", {
 	if (count allPlayers == 0) then {
 		[] call ALEF_fnc_ALiVE_save;

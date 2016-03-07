@@ -5,10 +5,6 @@ class _15BN_
 	{
 		description = "Check if all medics are alive.";
 	};
-	class fillBox
-	{
-		description = "Clear and install Arsenal.";
-	};
 	class saveTemplates
 	{
 		description = "Save templates into players Arsenal.";
