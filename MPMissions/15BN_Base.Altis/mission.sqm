@@ -1,7 +1,7 @@
 version=51;
 class EditorData
 {
-	moveGridStep=1;
+	moveGridStep=4;
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
@@ -20,9 +20,9 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={17472.875,39.475437,13110.784};
-		dir[]={0,-0.70710683,0.70710683};
-		up[]={0,0.70710677,0.70710677};
+		pos[]={17446.797,48.246979,12829.855};
+		dir[]={0,-0.70710677,0.70710683};
+		up[]={0,0.70710677,0.70710671};
 		aside[]={0.99999994,0,-0};
 	};
 };
@@ -3349,7 +3349,8 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={17440.303,13.187934,13457.963};
+				position[]={17432,12.362639,13480};
+				angles[]={0.0080009829,0,6.2645216};
 			};
 			id=235;
 			type="ModuleCurator_F";
@@ -3661,7 +3662,8 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={17440.986,13.242541,13412.575};
+						position[]={17432,13.459929,13448};
+						angles[]={0.066567369,0,6.2698536};
 					};
 					id=227;
 					type="ace_captives_moduleSettings";
@@ -3732,7 +3734,8 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={17387.732,12.650264,13393.731};
+						position[]={17392,13.259998,13432};
+						angles[]={0.0026520467,0,0.0026520467};
 					};
 					presenceCondition="1 == ([""CheckPBOs"",1] call BIS_fnc_getParamValue)";
 					id=224;
@@ -3804,7 +3807,8 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={17389.758,13.130114,13455.066};
+						position[]={17392,13.196673,13480};
+						angles[]={0.0039967569,0,0.066567369};
 					};
 					id=231;
 					type="ACE_ModuleHearing";
@@ -3894,7 +3898,8 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={17387.975,12.213642,13376.483};
+						position[]={17392,13.135339,13416};
+						angles[]={6.2631893,0,6.272521};
 					};
 					id=222;
 					type="ACE_ModuleMap";
@@ -4022,7 +4027,8 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={17411.482,13.280156,13456.584};
+						position[]={17412,13.002644,13480};
+						angles[]={0.0013372133,0,6.2511969};
 					};
 					id=253;
 					type="ace_map_gestures_moduleSettings";
@@ -4131,7 +4137,8 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={17410.455,11.610771,13376.769};
+						position[]={17412,13.293996,13416};
+						angles[]={6.2658563,0,6.2698536};
 					};
 					id=220;
 					type="ACE_moduleMedicalSettings";
@@ -4411,7 +4418,8 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={17389.281,13.258631,13429.796};
+						position[]={17392,13.139337,13464};
+						angles[]={6.2818484,0,0.025327841};
 					};
 					id=228;
 					type="ace_microdagr_dagrModule";
@@ -4444,7 +4452,8 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={17410.67,13.257065,13429.626};
+						position[]={17412,13.18798,13464};
+						angles[]={0.017329043,0,6.2685208};
 					};
 					id=229;
 					type="ace_mk6mortar_module";
@@ -4534,7 +4543,8 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={17441.049,11.441153,13376.663};
+						position[]={17432,13.236721,13416};
+						angles[]={6.2418756,0,0.029324362};
 					};
 					id=219;
 					type="ACE_ModuleNameTags";
@@ -4643,7 +4653,8 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={17411.262,13.158611,13411.528};
+						position[]={17412,13.308009,13448};
+						angles[]={0,0,0.010664274};
 					};
 					id=226;
 					type="ace_finger_moduleSettings";
@@ -4695,7 +4706,8 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={17440.779,13.680073,13429.626};
+						position[]={17432,12.90867,13464};
+						angles[]={0.025325486,0,0.013332055};
 					};
 					id=230;
 					type="ACE_ModuleSitting";
@@ -4728,7 +4740,8 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={17440.936,12.013869,13484.741};
+						position[]={17432,13.656009,13432};
+						angles[]={6.2791886,0,0.0039967569};
 					};
 					id=254;
 					type="ace_weather_ModuleSettings";
@@ -4856,7 +4869,8 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={17388.887,13.101804,13412.03};
+						position[]={17392,13.227984,13448};
+						angles[]={0.018663859,0,6.2685208};
 					};
 					id=225;
 					type="ace_viewdistance_ModuleSettings";
@@ -4908,8 +4922,8 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={17411,12.100015,13392};
-						angles[]={6.2578607,0,6.2791882};
+						position[]={17412,13.299354,13432};
+						angles[]={6.2698536,0,0.0079935296};
 					};
 					id=1416;
 					type="ACE_moduleCargoSettings";
@@ -8154,8 +8168,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={20913.682,27.227966,7294.25};
-				angles[]={6.2658529,3.3713133,6.2432079};
+				position[]={20930.518,28.851072,7192.9629};
+				angles[]={0.08247932,0.6401248,0.025327841};
 			};
 			side="Empty";
 			class Attributes
@@ -8169,8 +8183,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={20937.803,26.531481,7284.2939};
-				angles[]={0.067895547,3.1750076,6.2020311};
+				position[]={20958.014,28.900764,7173.334};
+				angles[]={0.0039967569,0.5768953,0};
 			};
 			side="Empty";
 			class Attributes
@@ -8446,7 +8460,6 @@ class Mission
 			{
 				skill=0.60000002;
 				init="[m1025s, this] call BIS_fnc_arrayPush";
-				textures="Desert";
 			};
 			id=61;
 			type="rhsusf_m1025_d_s_m2";
@@ -8487,7 +8500,6 @@ class Mission
 			{
 				skill=0.60000002;
 				init="[m1025s, this] call BIS_fnc_arrayPush";
-				textures="Desert";
 			};
 			id=62;
 			type="rhsusf_m1025_d_s_m2";
@@ -8528,7 +8540,6 @@ class Mission
 			{
 				skill=0.60000002;
 				init="[m1025s, this] call BIS_fnc_arrayPush";
-				textures="Desert";
 			};
 			id=63;
 			type="rhsusf_m1025_d_s_m2";
@@ -8569,7 +8580,6 @@ class Mission
 			{
 				skill=0.60000002;
 				init="[m1025s, this] call BIS_fnc_arrayPush";
-				textures="Desert";
 			};
 			id=33;
 			type="rhsusf_m1025_d_s";
@@ -8610,7 +8620,6 @@ class Mission
 			{
 				skill=0.60000002;
 				init="[m1025s, this] call BIS_fnc_arrayPush";
-				textures="Desert";
 			};
 			id=59;
 			type="rhsusf_m1025_d_s";
@@ -8651,7 +8660,6 @@ class Mission
 			{
 				skill=0.60000002;
 				init="[m1025s, this] call BIS_fnc_arrayPush";
-				textures="Desert";
 			};
 			id=60;
 			type="rhsusf_m1025_d_s";
@@ -8742,8 +8750,8 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={17464.82,13.242438,13457.771};
-				angles[]={0.050623242,0,0.021331646};
+				position[]={17432,12.083936,13496};
+				angles[]={6.2685208,0,6.2245865};
 			};
 			id=1435;
 			type="HighCommand";
@@ -12311,9 +12319,9 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={17438.268,12.119951,13513.86};
+						position[]={17432,12.358618,13512};
+						angles[]={6.2711854,0,6.2405448};
 					};
-					presenceCondition="1 == ([""ALiVE"",1] call BIS_fnc_getParamValue)";
 					id=234;
 					type="ALiVE_MIL_C2ISTAR";
 					class CustomAttributes
@@ -12877,10 +12885,10 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={17389.98,13.043387,13484.66};
+						position[]={17392,13.005296,13496};
+						angles[]={0.043971907,0,0.041309625};
 					};
 					init="call ALEF_fnc_ALiVE_RHS_blacklists";
-					presenceCondition="1 == ([""ALiVE"",1] call BIS_fnc_getParamValue)";
 					id=232;
 					type="ALiVE_require";
 					class CustomAttributes
@@ -13083,9 +13091,9 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={17390.883,12.902445,13513.321};
+						position[]={17392,12.937354,13512};
+						angles[]={6.2645216,0,0.053282689};
 					};
-					presenceCondition="1 == ([""ALiVE"",1] call BIS_fnc_getParamValue)";
 					id=247;
 					type="ALiVE_sys_data";
 					class CustomAttributes
@@ -13250,9 +13258,9 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={17416.824,12.810099,13513.01};
+						position[]={17412,13.055957,13512};
+						angles[]={6.272521,0,6.213963};
 					};
-					presenceCondition="1 == ([""ALiVE"",1] call BIS_fnc_getParamValue)";
 					id=248;
 					type="ALiVE_SYS_playeroptions";
 					class CustomAttributes
@@ -13930,9 +13938,9 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={17413.107,12.958465,13485.118};
+						position[]={17412,12.83934,13496};
+						angles[]={6.2645216,0,6.2685208};
 					};
-					presenceCondition="1 == ([""ALiVE"",1] call BIS_fnc_getParamValue)";
 					id=233;
 					type="ALiVE_sys_profile";
 					class CustomAttributes
@@ -14101,7 +14109,6 @@ class Mission
 						angles[]={0.042638395,0,0.047961645};
 					};
 					name="BLUF";
-					presenceCondition="1 == ([""ALiVE"",1] call BIS_fnc_getParamValue)";
 					id=266;
 					type="ALiVE_mil_OPCOM";
 					class CustomAttributes
@@ -14304,11 +14311,10 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={20808.115,28.426855,7247.7373};
-						angles[]={0.027990974,0,6.2618566};
+						position[]={20794.951,28.605211,7244.77};
+						angles[]={0.022654373,0,0};
 					};
 					name="BLUF_LOGCOM";
-					presenceCondition="1 == ([""ALiVE"",1] call BIS_fnc_getParamValue)";
 					id=267;
 					type="ALiVE_mil_logistics";
 					class CustomAttributes
@@ -14515,7 +14521,6 @@ class Mission
 						angles[]={0.0053232545,0,6.2725215};
 					};
 					name="BLUF_HQ";
-					presenceCondition="1 == ([""ALiVE"",1] call BIS_fnc_getParamValue)";
 					id=273;
 					type="ALiVE_mil_placement_custom";
 					class CustomAttributes
@@ -14813,10 +14818,9 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={20777.82,32.114616,6985.2139};
-						angles[]={6.2791882,0,0.0013439035};
+						position[]={20798.76,29.11035,7228.5371};
+						angles[]={0.0026744273,0,6.2645216};
 					};
-					presenceCondition="1 == ([""ALiVE"",1] call BIS_fnc_getParamValue)";
 					id=265;
 					type="ALiVE_SUP_PLAYER_RESUPPLY";
 					class CustomAttributes
@@ -14965,7 +14969,7 @@ class Mission
 						position[]={21803.316,4.5699172,6021.5171};
 						angles[]={6.2725215,0,6.2591867};
 					};
-					presenceCondition="1 == ([""ALiVE"",1] call BIS_fnc_getParamValue)";
+					name="BLUF_DOCK";
 					id=1326;
 					type="ALiVE_civ_placement";
 					class CustomAttributes
@@ -15251,7 +15255,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=-1;
+									value=0;
 								};
 							};
 						};
@@ -15323,7 +15327,6 @@ class Mission
 						position[]={20964.76,19.548922,7750.8052};
 						angles[]={6.2618575,0,0.034644786};
 					};
-					presenceCondition="1 == ([""ALiVE"",1] call BIS_fnc_getParamValue)";
 					id=1327;
 					type="ALiVE_sup_combatsupport";
 					class CustomAttributes
@@ -15434,7 +15437,6 @@ class Mission
 						position[]={21435.176,15.994538,7039.2368};
 						angles[]={0.28778735,0,0.10494665};
 					};
-					presenceCondition="1 == ([""ALiVE"",1] call BIS_fnc_getParamValue)";
 					id=1328;
 					type="ALiVE_sup_artillery";
 					class CustomAttributes
@@ -15660,7 +15662,6 @@ class Mission
 						angles[]={0,2.3338716,0};
 					};
 					name="RHS_A10";
-					presenceCondition="1 == ([""ALiVE"",1] call BIS_fnc_getParamValue)";
 					id=1329;
 					type="ALiVE_sup_cas";
 					class CustomAttributes
@@ -15749,10 +15750,9 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={20780.84,29.176792,7214.8828};
-						angles[]={0.0013372133,5.698256,6.2791886};
+						position[]={20832.248,27.955807,7251.4111};
+						angles[]={0.0053265258,5.698256,0};
 					};
-					presenceCondition="1 == ([""ALiVE"",1] call BIS_fnc_getParamValue)";
 					id=1330;
 					type="ALiVE_SUP_TRANSPORT";
 					class CustomAttributes
