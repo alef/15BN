@@ -27,7 +27,7 @@ class Params
 
 class Header
 {
-	gameType = Coop;
+	gameType  = Coop;
 	minPlayers = 1;
 	maxPlayers = 58;
 };

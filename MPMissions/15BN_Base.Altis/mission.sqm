@@ -12,10 +12,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={17456.934,29.293543,13157.734};
-		dir[]={-0.34990224,-0.23141773,0.90784258};
-		up[]={-0.083257072,0.9728393,0.21601702};
-		aside[]={0.93315989,-2.1676533e-007,0.35966298};
+		pos[]={17387.301,39.642902,13145.9};
+		dir[]={0,-0.70710683,0.70710683};
+		up[]={0,0.70710677,0.70710677};
+		aside[]={0.99999994,0,-0};
 	};
 };
 binarizationWanted=0;
@@ -211,10 +211,51 @@ class Mission
 			{
 				skill=0.60000002;
 				ammo=0;
-				init="[boxes, this] call BIS_fnc_arrayPush";
 			};
 			id=1;
 			type="B_supplyCrate_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[],[]],[[""ACE_10Rnd_762x51_M118LR_Mag"",""ACE_10Rnd_762x51_Mk316_Mod_0_Mag"",""ACE_10Rnd_762x51_Mk319_Mod_0_Mag"",""ACE_30Rnd_556x45_Stanag_Mk262_mag"",""rhs_200rnd_556x45_M_SAW""],[4,4,4,10,10]],[[""ACE_EarPlugs"",""ACRE_PRC117F"",""ACRE_PRC148"",""ACRE_PRC152"",""ACRE_PRC343"",""ACRE_PRC77""],[8,2,2,2,4,2]],[[],[]]],false]";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ace_isMedicalFacility";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=2;
+			};
 		};
 		class Item1
 		{
@@ -279,10 +320,51 @@ class Mission
 			{
 				skill=0.60000002;
 				ammo=0;
-				init="[boxes, this] call BIS_fnc_arrayPush";
 			};
 			id=5;
 			type="B_supplyCrate_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[],[]],[[""ACE_10Rnd_762x51_M118LR_Mag"",""ACE_10Rnd_762x51_Mk316_Mod_0_Mag"",""ACE_10Rnd_762x51_Mk319_Mod_0_Mag"",""ACE_30Rnd_556x45_Stanag_Mk262_mag"",""rhs_200rnd_556x45_M_SAW""],[4,4,4,10,10]],[[""ACE_EarPlugs"",""ACRE_PRC117F"",""ACRE_PRC148"",""ACRE_PRC152"",""ACRE_PRC343"",""ACRE_PRC77""],[8,2,2,2,4,2]],[[],[]]],false]";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ace_isMedicalFacility";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=2;
+			};
 		};
 		class Item5
 		{
@@ -347,10 +429,51 @@ class Mission
 			{
 				skill=0.60000002;
 				ammo=0;
-				init="[boxes, this] call BIS_fnc_arrayPush";
 			};
 			id=9;
 			type="B_supplyCrate_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[],[]],[[""ACE_10Rnd_762x51_M118LR_Mag"",""ACE_10Rnd_762x51_Mk316_Mod_0_Mag"",""ACE_10Rnd_762x51_Mk319_Mod_0_Mag"",""ACE_30Rnd_556x45_Stanag_Mk262_mag"",""rhs_200rnd_556x45_M_SAW""],[4,4,4,10,10]],[[""ACE_EarPlugs"",""ACRE_PRC117F"",""ACRE_PRC148"",""ACRE_PRC152"",""ACRE_PRC343"",""ACRE_PRC77""],[8,2,2,2,4,2]],[[],[]]],false]";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ace_isMedicalFacility";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=2;
+			};
 		};
 		class Item9
 		{
@@ -624,7 +747,6 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="[m1025s, this] call BIS_fnc_arrayPush";
 			};
 			id=26;
 			type="rhsusf_m1025_d_s";
@@ -645,7 +767,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="[[[[""rhs_weap_m4_carryhandle"",""rhs_weap_M136_hedp"",""FirstAidKit""],[2,2,4]],[[""rhs_m136_hedp_mag"",""rhs_mag_30Rnd_556x45_M855A1_Stanag"",""rhsusf_100Rnd_556x45_soft_pouch"",""rhs_mag_M441_HE"",""rhs_mag_m714_White"",""rhs_mag_m662_red"",""rhs_mag_m67"",""rhs_mag_m18_green"",""rhs_mag_m18_red"",""rhs_mag_an_m8hc""],[2,20,8,16,4,2,4,2,2,4]],[[],[]],[[""rhsusf_falconii""],[2]]],false]";
+							value="[[[[],[]],[[""rhs_m136_hedp_mag"",""rhs_mag_m714_White"",""rhs_mag_m67"",""rhs_mag_m18_red"",""rhs_mag_an_m8hc"",""rhs_mag_30Rnd_556x45_M855A1_Stanag_No_Tracer"",""rhs_mag_30Rnd_556x45_Mk262_Stanag"",""rhs_mag_30Rnd_556x45_Mk318_Stanag"",""rhsusf_200Rnd_556x45_soft_pouch"",""rhsusf_100Rnd_762x51_m80a1epr"",""SmokeShellGreen"",""rhs_mag_M433_HEDP""],[2,30,15,5,15,15,15,15,5,5,5,30]],[[""ACRE_PRC77"",""ACE_fieldDressing"",""ACE_EarPlugs"",""ACE_microDAGR"",""ACE_morphine""],[1,50,5,5,20]],[[],[]]],false]";
 						};
 					};
 				};
@@ -828,10 +950,51 @@ class Mission
 			{
 				skill=0.60000002;
 				ammo=0;
-				init="[boxes, this] call BIS_fnc_arrayPush";
 			};
 			id=37;
 			type="B_supplyCrate_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[],[]],[[""ACE_10Rnd_762x51_M118LR_Mag"",""ACE_10Rnd_762x51_Mk316_Mod_0_Mag"",""ACE_10Rnd_762x51_Mk319_Mod_0_Mag"",""ACE_30Rnd_556x45_Stanag_Mk262_mag"",""rhs_200rnd_556x45_M_SAW""],[4,4,4,10,10]],[[""ACE_EarPlugs"",""ACRE_PRC117F"",""ACRE_PRC148"",""ACRE_PRC152"",""ACRE_PRC343"",""ACRE_PRC77""],[8,2,2,2,4,2]],[[],[]]],false]";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ace_isMedicalFacility";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=2;
+			};
 		};
 		class Item37
 		{
@@ -896,10 +1059,51 @@ class Mission
 			{
 				skill=0.60000002;
 				ammo=0;
-				init="[boxes, this] call BIS_fnc_arrayPush";
 			};
 			id=41;
 			type="B_supplyCrate_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[],[]],[[""ACE_10Rnd_762x51_M118LR_Mag"",""ACE_10Rnd_762x51_Mk316_Mod_0_Mag"",""ACE_10Rnd_762x51_Mk319_Mod_0_Mag"",""ACE_30Rnd_556x45_Stanag_Mk262_mag"",""rhs_200rnd_556x45_M_SAW""],[4,4,4,10,10]],[[""ACE_EarPlugs"",""ACRE_PRC117F"",""ACRE_PRC148"",""ACRE_PRC152"",""ACRE_PRC343"",""ACRE_PRC77""],[8,2,2,2,4,2]],[[],[]]],false]";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ace_isMedicalFacility";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=2;
+			};
 		};
 		class Item41
 		{
@@ -964,10 +1168,51 @@ class Mission
 			{
 				skill=0.60000002;
 				ammo=0;
-				init="[boxes, this] call BIS_fnc_arrayPush";
 			};
 			id=45;
 			type="B_supplyCrate_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[],[]],[[""ACE_10Rnd_762x51_M118LR_Mag"",""ACE_10Rnd_762x51_Mk316_Mod_0_Mag"",""ACE_10Rnd_762x51_Mk319_Mod_0_Mag"",""ACE_30Rnd_556x45_Stanag_Mk262_mag"",""rhs_200rnd_556x45_M_SAW""],[4,4,4,10,10]],[[""ACE_EarPlugs"",""ACRE_PRC117F"",""ACRE_PRC148"",""ACRE_PRC152"",""ACRE_PRC343"",""ACRE_PRC77""],[8,2,2,2,4,2]],[[],[]]],false]";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ace_isMedicalFacility";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=2;
+			};
 		};
 		class Item45
 		{
@@ -1081,10 +1326,32 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="[m1025s, this] call BIS_fnc_arrayPush";
 			};
 			id=52;
 			type="rhsusf_m1025_d_s";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[],[]],[[""rhs_m136_hedp_mag"",""rhs_mag_m714_White"",""rhs_mag_m67"",""rhs_mag_m18_red"",""rhs_mag_an_m8hc"",""rhs_mag_30Rnd_556x45_M855A1_Stanag_No_Tracer"",""rhs_mag_30Rnd_556x45_Mk262_Stanag"",""rhs_mag_30Rnd_556x45_Mk318_Stanag"",""rhsusf_200Rnd_556x45_soft_pouch"",""rhsusf_100Rnd_762x51_m80a1epr"",""SmokeShellGreen"",""rhs_mag_M433_HEDP""],[2,30,15,5,15,15,15,15,5,5,5,30]],[[""ACRE_PRC77"",""ACE_fieldDressing"",""ACE_EarPlugs"",""ACE_microDAGR"",""ACE_morphine""],[1,50,5,5,20]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 		class Item52
 		{
@@ -1098,7 +1365,6 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="[m1025s, this] call BIS_fnc_arrayPush";
 			};
 			id=53;
 			type="rhsusf_m1025_d_s";
@@ -1119,7 +1385,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="[[[[""rhs_weap_m4_carryhandle"",""rhs_weap_M136_hedp"",""FirstAidKit""],[2,2,4]],[[""rhs_m136_hedp_mag"",""rhs_mag_30Rnd_556x45_M855A1_Stanag"",""rhsusf_100Rnd_556x45_soft_pouch"",""rhs_mag_M441_HE"",""rhs_mag_m714_White"",""rhs_mag_m662_red"",""rhs_mag_m67"",""rhs_mag_m18_green"",""rhs_mag_m18_red"",""rhs_mag_an_m8hc""],[2,20,8,16,4,2,4,2,2,4]],[[],[]],[[""rhsusf_falconii""],[2]]],false]";
+							value="[[[[],[]],[[""rhs_m136_hedp_mag"",""rhs_mag_m714_White"",""rhs_mag_m67"",""rhs_mag_m18_red"",""rhs_mag_an_m8hc"",""rhs_mag_30Rnd_556x45_M855A1_Stanag_No_Tracer"",""rhs_mag_30Rnd_556x45_Mk262_Stanag"",""rhs_mag_30Rnd_556x45_Mk318_Stanag"",""rhsusf_200Rnd_556x45_soft_pouch"",""rhsusf_100Rnd_762x51_m80a1epr"",""SmokeShellGreen"",""rhs_mag_M433_HEDP""],[2,30,15,5,15,15,15,15,5,5,5,30]],[[""ACRE_PRC77"",""ACE_fieldDressing"",""ACE_EarPlugs"",""ACE_microDAGR"",""ACE_morphine""],[1,50,5,5,20]],[[],[]]],false]";
 						};
 					};
 				};
@@ -1138,7 +1404,6 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="[m1025s, this] call BIS_fnc_arrayPush";
 			};
 			id=54;
 			type="rhsusf_m1025_d_s_m2";
@@ -1159,7 +1424,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="[[[[""rhs_weap_m4_carryhandle"",""rhs_weap_M136_hedp"",""FirstAidKit""],[2,2,4]],[[""rhs_m136_hedp_mag"",""rhs_mag_30Rnd_556x45_M855A1_Stanag"",""rhsusf_100Rnd_556x45_soft_pouch"",""rhs_mag_M441_HE"",""rhs_mag_m714_White"",""rhs_mag_m662_red"",""rhs_mag_m67"",""rhs_mag_m18_green"",""rhs_mag_m18_red"",""rhs_mag_an_m8hc""],[2,20,8,16,4,2,4,2,2,4]],[[],[]],[[""rhsusf_falconii""],[2]]],false]";
+							value="[[[[],[]],[[""rhs_m136_hedp_mag"",""rhs_mag_m714_White"",""rhs_mag_m67"",""rhs_mag_m18_red"",""rhs_mag_an_m8hc"",""rhs_mag_30Rnd_556x45_M855A1_Stanag_No_Tracer"",""rhs_mag_30Rnd_556x45_Mk262_Stanag"",""rhs_mag_30Rnd_556x45_Mk318_Stanag"",""rhsusf_200Rnd_556x45_soft_pouch"",""rhsusf_100Rnd_762x51_m80a1epr"",""SmokeShellGreen"",""rhs_mag_M433_HEDP""],[2,30,15,5,15,15,15,15,5,5,5,30]],[[""ACRE_PRC77"",""ACE_fieldDressing"",""ACE_EarPlugs"",""ACE_microDAGR"",""ACE_morphine""],[1,50,5,5,20]],[[],[]]],false]";
 						};
 					};
 				};
@@ -1178,7 +1443,6 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="[m1025s, this] call BIS_fnc_arrayPush";
 			};
 			id=55;
 			type="rhsusf_m1025_d_s_m2";
@@ -1199,7 +1463,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="[[[[""rhs_weap_m4_carryhandle"",""rhs_weap_M136_hedp"",""FirstAidKit""],[2,2,4]],[[""rhs_m136_hedp_mag"",""rhs_mag_30Rnd_556x45_M855A1_Stanag"",""rhsusf_100Rnd_556x45_soft_pouch"",""rhs_mag_M441_HE"",""rhs_mag_m714_White"",""rhs_mag_m662_red"",""rhs_mag_m67"",""rhs_mag_m18_green"",""rhs_mag_m18_red"",""rhs_mag_an_m8hc""],[2,20,8,16,4,2,4,2,2,4]],[[],[]],[[""rhsusf_falconii""],[2]]],false]";
+							value="[[[[],[]],[[""rhs_m136_hedp_mag"",""rhs_mag_m714_White"",""rhs_mag_m67"",""rhs_mag_m18_red"",""rhs_mag_an_m8hc"",""rhs_mag_30Rnd_556x45_M855A1_Stanag_No_Tracer"",""rhs_mag_30Rnd_556x45_Mk262_Stanag"",""rhs_mag_30Rnd_556x45_Mk318_Stanag"",""rhsusf_200Rnd_556x45_soft_pouch"",""rhsusf_100Rnd_762x51_m80a1epr"",""SmokeShellGreen"",""rhs_mag_M433_HEDP""],[2,30,15,5,15,15,15,15,5,5,5,30]],[[""ACRE_PRC77"",""ACE_fieldDressing"",""ACE_EarPlugs"",""ACE_microDAGR"",""ACE_morphine""],[1,50,5,5,20]],[[],[]]],false]";
 						};
 					};
 				};
@@ -1218,7 +1482,6 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				init="[m1025s, this] call BIS_fnc_arrayPush";
 			};
 			id=56;
 			type="rhsusf_m1025_d_s_m2";
@@ -1239,7 +1502,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="[[[[""rhs_weap_m4_carryhandle"",""rhs_weap_M136_hedp"",""FirstAidKit""],[2,2,4]],[[""rhs_m136_hedp_mag"",""rhs_mag_30Rnd_556x45_M855A1_Stanag"",""rhsusf_100Rnd_556x45_soft_pouch"",""rhs_mag_M441_HE"",""rhs_mag_m714_White"",""rhs_mag_m662_red"",""rhs_mag_m67"",""rhs_mag_m18_green"",""rhs_mag_m18_red"",""rhs_mag_an_m8hc""],[2,20,8,16,4,2,4,2,2,4]],[[],[]],[[""rhsusf_falconii""],[2]]],false]";
+							value="[[[[],[]],[[""rhs_m136_hedp_mag"",""rhs_mag_m714_White"",""rhs_mag_m67"",""rhs_mag_m18_red"",""rhs_mag_an_m8hc"",""rhs_mag_30Rnd_556x45_M855A1_Stanag_No_Tracer"",""rhs_mag_30Rnd_556x45_Mk262_Stanag"",""rhs_mag_30Rnd_556x45_Mk318_Stanag"",""rhsusf_200Rnd_556x45_soft_pouch"",""rhsusf_100Rnd_762x51_m80a1epr"",""SmokeShellGreen"",""rhs_mag_M433_HEDP""],[2,30,15,5,15,15,15,15,5,5,5,30]],[[""ACRE_PRC77"",""ACE_fieldDressing"",""ACE_EarPlugs"",""ACE_microDAGR"",""ACE_morphine""],[1,50,5,5,20]],[[],[]]],false]";
 						};
 					};
 				};

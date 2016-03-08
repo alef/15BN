@@ -5,14 +5,6 @@ class _15BN_
 	{
 		description = "Check if all medics are alive.";
 	};
-	class fillBox
-	{
-		description = "Clear and install Arsenal.";
-	};
-	class M1025
-	{
-		description = "Load the M1025";
-	};
 	class MCC_init
 	{
 		description = "Init the MCC options.";
