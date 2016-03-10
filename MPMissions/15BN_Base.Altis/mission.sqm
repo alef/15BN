@@ -83,6 +83,7 @@ class ScenarioData
 {
 	author="alef";
 	saving=0;
+	disabledAI=1;
 	class Header
 	{
 		gameType="Coop";
