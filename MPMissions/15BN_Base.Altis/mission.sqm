@@ -7268,80 +7268,8 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={17404,13.303352,13416};
-				angles[]={6.2352223,0,0.0013372133};
-			};
-			id=216;
-			type="ACE_moduleReviveSettings";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ACE_moduleReviveSettings_amountOfReviveLives";
-					expression="_this setVariable ['amountOfReviveLives',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=-1;
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="ACE_moduleReviveSettings_enableRevive";
-					expression="_this setVariable ['enableRevive',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=1;
-						};
-					};
-				};
-				class Attribute2
-				{
-					property="ACE_moduleReviveSettings_maxReviveTime";
-					expression="_this setVariable ['maxReviveTime',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=600;
-						};
-					};
-				};
-				nAttributes=3;
-			};
-		};
-		class Item167
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
 				position[]={17388,12.796697,13400};
-				angles[]={6.2458706,0,0.0066682254};
+				angles[]={6.2458701,0,0.0066671576};
 			};
 			id=217;
 			type="ACE_ModuleMap";
