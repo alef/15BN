@@ -16,7 +16,6 @@ this addItemToUniform "ACE_EarPlugs";
 for "_i" from 1 to 10 do {this addItemToUniform "ACE_fieldDressing";};
 for "_i" from 1 to 3 do {this addItemToUniform "ACE_morphine";};
 this addItemToUniform "ACE_epinephrine";
-this addItemToUniform "ACRE_PRC343";
 this addVest "rhsusf_spc_rifleman";
 for "_i" from 1 to 5 do {this addItemToVest "rhs_mag_an_m8hc";};
 for "_i" from 1 to 10 do {this addItemToVest "rhs_mag_30Rnd_556x45_Mk262_Stanag";};
@@ -40,7 +39,6 @@ comment "Add items";
 this linkItem "ItemMap";
 this linkItem "ItemCompass";
 this linkItem "ItemWatch";
-this linkItem "ItemRadioAcreFlagged";
 this linkItem "ItemGPS";
 
 comment "Set identity";
