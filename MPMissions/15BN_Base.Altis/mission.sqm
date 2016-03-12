@@ -12,10 +12,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={17527.543,38.70871,13517.414};
-		dir[]={0,-0.70710683,0.70710683};
-		up[]={0,0.70710677,0.70710677};
-		aside[]={0.99999994,0,-0};
+		pos[]={17399.342,30.534719,13206.395};
+		dir[]={0.50593317,-0.77764243,0.3732616};
+		up[]={0.62576514,0.62870818,0.46166945};
+		aside[]={0.59368604,5.2736141e-008,-0.8047055};
 	};
 };
 binarizationWanted=0;
@@ -97,25 +97,6 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
-			property="RespawnButton";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"SCALAR"
-						};
-					};
-					value=1;
-				};
-			};
-		};
-		class Attribute1
-		{
 			property="RespawnTemplates";
 			expression="true";
 			class Value
@@ -147,6 +128,25 @@ class CustomAttributes
 							};
 						};
 					};
+				};
+			};
+		};
+		class Attribute1
+		{
+			property="RespawnButton";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=1;
 				};
 			};
 		};
@@ -232,7 +232,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="[[[[],[]],[[""ACE_10Rnd_762x51_M118LR_Mag"",""ACE_10Rnd_762x51_Mk316_Mod_0_Mag"",""ACE_10Rnd_762x51_Mk319_Mod_0_Mag"",""ACE_30Rnd_556x45_Stanag_Mk262_mag"",""rhs_200rnd_556x45_M_SAW""],[4,4,4,10,10]],[[""ACE_EarPlugs"",""ACRE_PRC117F"",""ACRE_PRC148"",""ACRE_PRC152"",""ACRE_PRC343"",""ACRE_PRC77""],[8,2,2,2,4,2]],[[],[]]],false]";
+							value="[[[[],[]],[[""ACE_10Rnd_762x51_M118LR_Mag"",""ACE_10Rnd_762x51_Mk316_Mod_0_Mag"",""ACE_10Rnd_762x51_Mk319_Mod_0_Mag"",""ACE_30Rnd_556x45_Stanag_Mk262_mag"",""rhs_200rnd_556x45_M_SAW""],[4,4,4,10,10]],[[""ACE_EarPlugs"",""ACRE_PRC117F"",""ACRE_PRC148"",""ACRE_PRC152"",""ACRE_PRC343"",""ACRE_PRC77""],[8,2,4,2,10,2]],[[],[]]],false]";
 						};
 					};
 				};
@@ -341,7 +341,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="[[[[],[]],[[""ACE_10Rnd_762x51_M118LR_Mag"",""ACE_10Rnd_762x51_Mk316_Mod_0_Mag"",""ACE_10Rnd_762x51_Mk319_Mod_0_Mag"",""ACE_30Rnd_556x45_Stanag_Mk262_mag"",""rhs_200rnd_556x45_M_SAW""],[4,4,4,10,10]],[[""ACE_EarPlugs"",""ACRE_PRC117F"",""ACRE_PRC148"",""ACRE_PRC152"",""ACRE_PRC343"",""ACRE_PRC77""],[8,2,2,2,4,2]],[[],[]]],false]";
+							value="[[[[],[]],[[""ACE_10Rnd_762x51_M118LR_Mag"",""ACE_10Rnd_762x51_Mk316_Mod_0_Mag"",""ACE_10Rnd_762x51_Mk319_Mod_0_Mag"",""ACE_30Rnd_556x45_Stanag_Mk262_mag"",""rhs_200rnd_556x45_M_SAW""],[4,4,4,10,10]],[[""ACE_EarPlugs"",""ACRE_PRC117F"",""ACRE_PRC148"",""ACRE_PRC152"",""ACRE_PRC343"",""ACRE_PRC77""],[8,2,4,2,10,2]],[[],[]]],false]";
 						};
 					};
 				};
@@ -450,7 +450,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="[[[[],[]],[[""ACE_10Rnd_762x51_M118LR_Mag"",""ACE_10Rnd_762x51_Mk316_Mod_0_Mag"",""ACE_10Rnd_762x51_Mk319_Mod_0_Mag"",""ACE_30Rnd_556x45_Stanag_Mk262_mag"",""rhs_200rnd_556x45_M_SAW""],[4,4,4,10,10]],[[""ACE_EarPlugs"",""ACRE_PRC117F"",""ACRE_PRC148"",""ACRE_PRC152"",""ACRE_PRC343"",""ACRE_PRC77""],[8,2,2,2,4,2]],[[],[]]],false]";
+							value="[[[[],[]],[[""ACE_10Rnd_762x51_M118LR_Mag"",""ACE_10Rnd_762x51_Mk316_Mod_0_Mag"",""ACE_10Rnd_762x51_Mk319_Mod_0_Mag"",""ACE_30Rnd_556x45_Stanag_Mk262_mag"",""rhs_200rnd_556x45_M_SAW""],[4,4,4,10,10]],[[""ACE_EarPlugs"",""ACRE_PRC117F"",""ACRE_PRC148"",""ACRE_PRC152"",""ACRE_PRC343"",""ACRE_PRC77""],[8,2,4,2,10,2]],[[],[]]],false]";
 						};
 					};
 				};
@@ -971,7 +971,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="[[[[],[]],[[""ACE_10Rnd_762x51_M118LR_Mag"",""ACE_10Rnd_762x51_Mk316_Mod_0_Mag"",""ACE_10Rnd_762x51_Mk319_Mod_0_Mag"",""ACE_30Rnd_556x45_Stanag_Mk262_mag"",""rhs_200rnd_556x45_M_SAW""],[4,4,4,10,10]],[[""ACE_EarPlugs"",""ACRE_PRC117F"",""ACRE_PRC148"",""ACRE_PRC152"",""ACRE_PRC343"",""ACRE_PRC77""],[8,2,2,2,4,2]],[[],[]]],false]";
+							value="[[[[],[]],[[""ACE_10Rnd_762x51_M118LR_Mag"",""ACE_10Rnd_762x51_Mk316_Mod_0_Mag"",""ACE_10Rnd_762x51_Mk319_Mod_0_Mag"",""ACE_30Rnd_556x45_Stanag_Mk262_mag"",""rhs_200rnd_556x45_M_SAW""],[4,4,4,10,10]],[[""ACE_EarPlugs"",""ACRE_PRC117F"",""ACRE_PRC148"",""ACRE_PRC152"",""ACRE_PRC343"",""ACRE_PRC77""],[8,2,4,2,10,2]],[[],[]]],false]";
 						};
 					};
 				};
@@ -1080,7 +1080,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="[[[[],[]],[[""ACE_10Rnd_762x51_M118LR_Mag"",""ACE_10Rnd_762x51_Mk316_Mod_0_Mag"",""ACE_10Rnd_762x51_Mk319_Mod_0_Mag"",""ACE_30Rnd_556x45_Stanag_Mk262_mag"",""rhs_200rnd_556x45_M_SAW""],[4,4,4,10,10]],[[""ACE_EarPlugs"",""ACRE_PRC117F"",""ACRE_PRC148"",""ACRE_PRC152"",""ACRE_PRC343"",""ACRE_PRC77""],[8,2,2,2,4,2]],[[],[]]],false]";
+							value="[[[[],[]],[[""ACE_10Rnd_762x51_M118LR_Mag"",""ACE_10Rnd_762x51_Mk316_Mod_0_Mag"",""ACE_10Rnd_762x51_Mk319_Mod_0_Mag"",""ACE_30Rnd_556x45_Stanag_Mk262_mag"",""rhs_200rnd_556x45_M_SAW""],[4,4,4,10,10]],[[""ACE_EarPlugs"",""ACRE_PRC117F"",""ACRE_PRC148"",""ACRE_PRC152"",""ACRE_PRC343"",""ACRE_PRC77""],[8,2,4,2,10,2]],[[],[]]],false]";
 						};
 					};
 				};
@@ -1189,7 +1189,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="[[[[],[]],[[""ACE_10Rnd_762x51_M118LR_Mag"",""ACE_10Rnd_762x51_Mk316_Mod_0_Mag"",""ACE_10Rnd_762x51_Mk319_Mod_0_Mag"",""ACE_30Rnd_556x45_Stanag_Mk262_mag"",""rhs_200rnd_556x45_M_SAW""],[4,4,4,10,10]],[[""ACE_EarPlugs"",""ACRE_PRC117F"",""ACRE_PRC148"",""ACRE_PRC152"",""ACRE_PRC343"",""ACRE_PRC77""],[8,2,2,2,4,2]],[[],[]]],false]";
+							value="[[[[],[]],[[""ACE_10Rnd_762x51_M118LR_Mag"",""ACE_10Rnd_762x51_Mk316_Mod_0_Mag"",""ACE_10Rnd_762x51_Mk319_Mod_0_Mag"",""ACE_30Rnd_556x45_Stanag_Mk262_mag"",""rhs_200rnd_556x45_M_SAW""],[4,4,4,10,10]],[[""ACE_EarPlugs"",""ACRE_PRC117F"",""ACRE_PRC148"",""ACRE_PRC152"",""ACRE_PRC343"",""ACRE_PRC77""],[8,2,4,2,10,2]],[[],[]]],false]";
 						};
 					};
 				};
