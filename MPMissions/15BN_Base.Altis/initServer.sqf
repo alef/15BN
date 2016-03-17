@@ -14,10 +14,12 @@ if (isMultiplayer) then {
 	};
 }] call BIS_fnc_addStackedEventhandler;
 
-[] call ALEF_fnc_ALiVE_pause;
-
 waitUntil {!isNil "ALiVE_STATIC_DATA_LOADED"};
 serverChat globalChat "ALiVE Static Data Loaded";
+
+[] call ALEF_fnc_ALiVE_pause;
+
 diag_log "ALiVE Static Data Loaded";
+
 LOG("End");
 
