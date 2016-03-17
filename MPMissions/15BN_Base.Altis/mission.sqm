@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=156;
+		nextID=159;
 	};
 	class Camera
 	{
-		pos[]={17446.797,48.246979,12829.855};
-		dir[]={0,-0.70710677,0.70710683};
-		up[]={0,0.70710677,0.70710671};
-		aside[]={0.99999994,0,-0};
+		pos[]={17430.354,128.78883,13229.597};
+		dir[]={-0.13391769,-0.55385584,0.82177538};
+		up[]={-0.089082107,0.83261192,0.54664552};
+		aside[]={0.98698312,-1.2031524e-007,0.16084012};
 	};
 };
 binarizationWanted=0;
@@ -125,25 +125,6 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
-			property="RespawnButton";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"SCALAR"
-						};
-					};
-					value=0;
-				};
-			};
-		};
-		class Attribute1
-		{
 			property="RespawnTemplates";
 			expression="true";
 			class Value
@@ -175,6 +156,25 @@ class CustomAttributes
 							};
 						};
 					};
+				};
+			};
+		};
+		class Attribute1
+		{
+			property="RespawnButton";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=0;
 				};
 			};
 		};
@@ -11670,6 +11670,25 @@ class Mission
 						};
 						class Attribute7
 						{
+							property="ALiVE_mil_placement_createFieldHQ";
+							expression="_this setVariable ['createFieldHQ',_value,true];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="true";
+								};
+							};
+						};
+						class Attribute8
+						{
 							property="ALiVE_mil_placement_debug";
 							expression="_this setVariable ['debug',_value,true];";
 							class Value
@@ -11687,7 +11706,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute8
+						class Attribute9
 						{
 							property="ALiVE_mil_placement_size";
 							expression="_this setVariable ['size',_value,true];";
@@ -11706,7 +11725,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute9
+						class Attribute10
 						{
 							property="ALiVE_mil_placement_placeHelis";
 							expression="_this setVariable ['placeHelis',_value,true];";
@@ -11725,7 +11744,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute10
+						class Attribute11
 						{
 							property="ALiVE_mil_placement_customMotorisedCount";
 							expression="_this setVariable ['customMotorisedCount',_value,true];";
@@ -11744,7 +11763,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute11
+						class Attribute12
 						{
 							property="ALiVE_mil_placement_createHQ";
 							expression="_this setVariable ['createHQ',_value,true];";
@@ -11763,7 +11782,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute12
+						class Attribute13
 						{
 							property="ALiVE_mil_placement_priorityFilter";
 							expression="_this setVariable ['priorityFilter',_value,true];";
@@ -11782,7 +11801,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute13
+						class Attribute14
 						{
 							property="ALiVE_mil_placement_customArmourCount";
 							expression="_this setVariable ['customArmourCount',_value,true];";
@@ -11801,7 +11820,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute14
+						class Attribute15
 						{
 							property="ALiVE_mil_placement_readinessLevel";
 							expression="_this setVariable ['readinessLevel',_value,true];";
@@ -11820,7 +11839,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute15
+						class Attribute16
 						{
 							property="ALiVE_mil_placement_type";
 							expression="_this setVariable ['type',_value,true];";
@@ -11839,7 +11858,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute16
+						class Attribute17
 						{
 							property="ALiVE_mil_placement_customSpecOpsCount";
 							expression="_this setVariable ['customSpecOpsCount',_value,true];";
@@ -11858,7 +11877,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute17
+						class Attribute18
 						{
 							property="ALiVE_mil_placement_randomcamps";
 							expression="_this setVariable ['randomcamps',_value,true];";
@@ -11877,7 +11896,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute18
+						class Attribute19
 						{
 							property="ALiVE_mil_placement_placeSupplies";
 							expression="_this setVariable ['placeSupplies',_value,true];";
@@ -11896,7 +11915,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute19
+						class Attribute20
 						{
 							property="ALiVE_mil_placement_customInfantryCount";
 							expression="_this setVariable ['customInfantryCount',_value,true];";
@@ -11915,7 +11934,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=20;
+						nAttributes=21;
 					};
 				};
 				class Item10
@@ -12066,6 +12085,25 @@ class Mission
 						};
 						class Attribute7
 						{
+							property="ALiVE_mil_placement_createFieldHQ";
+							expression="_this setVariable ['createFieldHQ',_value,true];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="true";
+								};
+							};
+						};
+						class Attribute8
+						{
 							property="ALiVE_mil_placement_debug";
 							expression="_this setVariable ['debug',_value,true];";
 							class Value
@@ -12083,7 +12121,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute8
+						class Attribute9
 						{
 							property="ALiVE_mil_placement_size";
 							expression="_this setVariable ['size',_value,true];";
@@ -12102,7 +12140,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute9
+						class Attribute10
 						{
 							property="ALiVE_mil_placement_placeHelis";
 							expression="_this setVariable ['placeHelis',_value,true];";
@@ -12121,7 +12159,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute10
+						class Attribute11
 						{
 							property="ALiVE_mil_placement_customMotorisedCount";
 							expression="_this setVariable ['customMotorisedCount',_value,true];";
@@ -12140,7 +12178,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute11
+						class Attribute12
 						{
 							property="ALiVE_mil_placement_createHQ";
 							expression="_this setVariable ['createHQ',_value,true];";
@@ -12159,7 +12197,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute12
+						class Attribute13
 						{
 							property="ALiVE_mil_placement_priorityFilter";
 							expression="_this setVariable ['priorityFilter',_value,true];";
@@ -12178,7 +12216,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute13
+						class Attribute14
 						{
 							property="ALiVE_mil_placement_customArmourCount";
 							expression="_this setVariable ['customArmourCount',_value,true];";
@@ -12197,7 +12235,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute14
+						class Attribute15
 						{
 							property="ALiVE_mil_placement_readinessLevel";
 							expression="_this setVariable ['readinessLevel',_value,true];";
@@ -12216,7 +12254,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute15
+						class Attribute16
 						{
 							property="ALiVE_mil_placement_type";
 							expression="_this setVariable ['type',_value,true];";
@@ -12235,7 +12273,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute16
+						class Attribute17
 						{
 							property="ALiVE_mil_placement_customSpecOpsCount";
 							expression="_this setVariable ['customSpecOpsCount',_value,true];";
@@ -12254,7 +12292,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute17
+						class Attribute18
 						{
 							property="ALiVE_mil_placement_randomcamps";
 							expression="_this setVariable ['randomcamps',_value,true];";
@@ -12273,7 +12311,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute18
+						class Attribute19
 						{
 							property="ALiVE_mil_placement_placeSupplies";
 							expression="_this setVariable ['placeSupplies',_value,true];";
@@ -12292,7 +12330,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute19
+						class Attribute20
 						{
 							property="ALiVE_mil_placement_customInfantryCount";
 							expression="_this setVariable ['customInfantryCount',_value,true];";
@@ -12311,7 +12349,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=20;
+						nAttributes=21;
 					};
 				};
 				class Item11
