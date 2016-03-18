@@ -16,11 +16,11 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=162;
+		nextID=168;
 	};
 	class Camera
 	{
-		pos[]={21686.355,42.566635,18088.27};
+		pos[]={21687.082,46.427818,18084.018};
 		dir[]={0,-0.70710683,0.70710683};
 		up[]={0,0.70710677,0.70710677};
 		aside[]={0.99999994,0,0};
@@ -4138,7 +4138,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={17412,13.293996,13416};
-						angles[]={6.2658563,0,6.2698536};
+						angles[]={6.2658539,0,6.2698507};
 					};
 					id=220;
 					type="ACE_moduleMedicalSettings";
@@ -4254,7 +4254,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=2;
+									value=1;
 								};
 							};
 						};
@@ -4311,7 +4311,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=0.5;
+									value=1;
 								};
 							};
 						};
