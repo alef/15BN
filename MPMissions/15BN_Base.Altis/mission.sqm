@@ -5,10 +5,10 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=1;
+	toggles=5;
 	class ItemIDProvider
 	{
-		nextID=1440;
+		nextID=1442;
 	};
 	class MarkerIDProvider
 	{
@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={21687.082,46.427818,18084.018};
+		pos[]={17517.049,38.775928,13397.984};
 		dir[]={0,-0.70710683,0.70710683};
 		up[]={0,0.70710677,0.70710677};
-		aside[]={0.99999994,0,0};
+		aside[]={0.99999994,0,-0};
 	};
 };
 binarizationWanted=0;
@@ -95,7 +95,9 @@ addons[]=
 	"alive_sup_combatsupport",
 	"alive_sup_artillery",
 	"alive_sup_cas",
-	"alive_sup_transport"
+	"alive_sup_transport",
+	"alive_amb_civ_population",
+	"alive_amb_civ_placement"
 };
 randomSeed=5747245;
 class ScenarioData
@@ -8807,7 +8809,7 @@ class Mission
 			name="ALiVE";
 			class Entities
 			{
-				items=25;
+				items=27;
 				class Item0
 				{
 					dataType="Logic";
@@ -13977,7 +13979,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={17412,12.83934,13496};
-						angles[]={6.2645216,0,6.2685208};
+						angles[]={6.2645278,0,6.2685246};
 					};
 					id=233;
 					type="ALiVE_sys_profile";
@@ -15872,6 +15874,380 @@ class Mission
 							};
 						};
 						nAttributes=4;
+					};
+				};
+				class Item25
+				{
+					dataType="Logic";
+					class PositionInfo
+					{
+						position[]={17392,13.00001,13528};
+						angles[]={0.0040142573,0,0.095713861};
+					};
+					presenceCondition="false";
+					id=1440;
+					type="ALiVE_amb_civ_population";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ALiVE_amb_civ_population_ambientCivilianRoles";
+							expression="_this setVariable ['ambientCivilianRoles',_value,true];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="[]";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ALiVE_amb_civ_population_debug";
+							expression="_this setVariable ['debug',_value,true];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="false";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="ALiVE_amb_civ_population_hostilityEast";
+							expression="_this setVariable ['hostilityEast',_value,true];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="0";
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="ALiVE_amb_civ_population_spawnTypeJetRadius";
+							expression="_this setVariable ['spawnTypeJetRadius',_value,true];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="0";
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="ALiVE_amb_civ_population_hostilityWest";
+							expression="_this setVariable ['hostilityWest',_value,true];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="0";
+								};
+							};
+						};
+						class Attribute5
+						{
+							property="ALiVE_amb_civ_population_spawnTypeHeliRadius";
+							expression="_this setVariable ['spawnTypeHeliRadius',_value,true];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="900";
+								};
+							};
+						};
+						class Attribute6
+						{
+							property="ALiVE_amb_civ_population_activeLimiter";
+							expression="_this setVariable ['activeLimiter',_value,true];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="50";
+								};
+							};
+						};
+						class Attribute7
+						{
+							property="ALiVE_amb_civ_population_spawnRadius";
+							expression="_this setVariable ['spawnRadius',_value,true];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="900";
+								};
+							};
+						};
+						class Attribute8
+						{
+							property="ALiVE_amb_civ_population_hostilityIndep";
+							expression="_this setVariable ['hostilityIndep',_value,true];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="0";
+								};
+							};
+						};
+						nAttributes=9;
+					};
+				};
+				class Item26
+				{
+					dataType="Logic";
+					class PositionInfo
+					{
+						position[]={17412,13.131308,13528};
+						angles[]={0.030647982,0,6.2698507};
+					};
+					presenceCondition="false";
+					id=1441;
+					type="ALiVE_amb_civ_placement";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ALiVE_amb_civ_placement_taor";
+							expression="_this setVariable ['taor',_value,true];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ALiVE_amb_civ_placement_sizeFilter";
+							expression="_this setVariable ['sizeFilter',_value,true];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="250";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="ALiVE_amb_civ_placement_blacklist";
+							expression="_this setVariable ['blacklist',_value,true];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="";
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="ALiVE_amb_civ_placement_debug";
+							expression="_this setVariable ['debug',_value,true];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="false";
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="ALiVE_amb_civ_placement_ambientVehicleFaction";
+							expression="_this setVariable ['ambientVehicleFaction',_value,true];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="CIV_F";
+								};
+							};
+						};
+						class Attribute5
+						{
+							property="ALiVE_amb_civ_placement_faction";
+							expression="_this setVariable ['faction',_value,true];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="CIV_F";
+								};
+							};
+						};
+						class Attribute6
+						{
+							property="ALiVE_amb_civ_placement_placementMultiplier";
+							expression="_this setVariable ['placementMultiplier',_value,true];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="0.5";
+								};
+							};
+						};
+						class Attribute7
+						{
+							property="ALiVE_amb_civ_placement_ambientVehicleAmount";
+							expression="_this setVariable ['ambientVehicleAmount',_value,true];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="1";
+								};
+							};
+						};
+						class Attribute8
+						{
+							property="ALiVE_amb_civ_placement_priorityFilter";
+							expression="_this setVariable ['priorityFilter',_value,true];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="0";
+								};
+							};
+						};
+						nAttributes=9;
 					};
 				};
 			};
