@@ -1,3 +1,4 @@
+class _15BN_ {
 class Istruzioni
 {
 	displayName = "15° Ricognitori Bande Nere";
@@ -116,4 +117,5 @@ Clicca per aprire il thread dal tuo browser Internet.<br/>\
 	tip = "\
 Premi <t color='#c48214'>[Alt+Tab]</t> per tornare al gioco.<br/>\
 ";
+};
 };
