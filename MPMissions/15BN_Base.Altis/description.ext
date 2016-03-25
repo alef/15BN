@@ -1,5 +1,5 @@
-class CfgParams {
-	#include "CfgParams.hpp"
+class Params {
+	#include "Params.hpp"
 };
 
 class CfgFunctions {
