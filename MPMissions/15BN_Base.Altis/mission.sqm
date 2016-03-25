@@ -11179,7 +11179,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={17410.773,14.494779,13162.787};
-				angles[]={0.0093286335,0,0.0053265258};
+				angles[]={0.0093200579,0,0.0053232545};
 			};
 			id=401;
 			type="ACE_moduleMedicalSettings";
@@ -11295,7 +11295,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=0;
+							value=1;
 						};
 					};
 				};
@@ -11352,7 +11352,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=1;
+							value=0.25;
 						};
 					};
 				};
@@ -11371,7 +11371,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=1;
+							value=2;
 						};
 					};
 				};
