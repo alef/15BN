@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=720;
+		nextID=723;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=8;
+		nextID=10;
 	};
 	class Camera
 	{
 		pos[]={17487.555,39.583599,13150.668};
 		dir[]={0,-0.70710683,0.70710683};
 		up[]={0,0.70710677,0.70710677};
-		aside[]={0.99999994,0,-0};
+		aside[]={0.99999994,0,0};
 	};
 };
 binarizationWanted=0;
@@ -105,6 +105,25 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
+			property="RespawnButton";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=1;
+				};
+			};
+		};
+		class Attribute1
+		{
 			property="RespawnTemplates";
 			expression="true";
 			class Value
@@ -136,25 +155,6 @@ class CustomAttributes
 							};
 						};
 					};
-				};
-			};
-		};
-		class Attribute1
-		{
-			property="RespawnButton";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"SCALAR"
-						};
-					};
-					value=1;
 				};
 			};
 		};
@@ -209,7 +209,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=80;
+		items=81;
 		class Item0
 		{
 			dataType="Object";
@@ -18876,6 +18876,22 @@ class Mission
 				};
 				nAttributes=1;
 			};
+		};
+		class Item80
+		{
+			dataType="Trigger";
+			position[]={21091.369,24.242165,7169.2251};
+			angle=0.27345824;
+			class Attributes
+			{
+				onActivation="[thistrigger, thislist] call ALEF_fnc_ALiVE_fixTakeoff";
+				sizeA=30;
+				sizeB=30;
+				repeatable=1;
+				activationBy="WEST";
+			};
+			id=720;
+			type="EmptyDetector";
 		};
 	};
 	class Connections
