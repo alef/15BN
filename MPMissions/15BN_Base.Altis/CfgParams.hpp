@@ -19,3 +19,10 @@ class ALiVE
 	texts[] = {"Spento", "Attivo"};
 	default = 1;
 };
+class ALiVE_CIV
+{
+	title = "Civili";
+	values[] = {0, 1};
+	texts[] = {"Spento", "Attivo"};
+	default = 1;
+};
