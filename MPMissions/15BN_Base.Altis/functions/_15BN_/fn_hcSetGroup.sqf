@@ -34,7 +34,7 @@ private ["_a"];
 
 _a = [
 	"hcSetGroup",
-	"Add to HC",
+	"Sotto Comando",
 	"\z\ace\addons\interaction\UI\team\team_management_ca.paa",
 	{player hcSetGroup [group (_this select 0)]},
 	{not ((group (_this select 0)) in (hcAllGroups player))}
@@ -47,7 +47,7 @@ _a = [
 ] call ace_interact_menu_fnc_addActionToClass;
 _a = [
 	"hcRemoveGroup",
-	"Remove from HC",
+	"Lascia Comando",
 	"\z\ace\addons\interaction\UI\team\team_management_ca.paa",
 	{player hcRemoveGroup group (_this select 0)},
 	{(group (_this select 0)) in (hcAllGroups player)}
