@@ -7,14 +7,14 @@ class Loadout
 };
 class CheckPBOs
 {
-	title = "Abilita controllo mod";
+	title = "Controllo mod";
 	values[] = {0, 1};
 	texts[] = {"No", "Sì"};
 	default = 0;
 };
 class ALiVE
 {
-	title = "Abilita ALiVE";
+	title = "OPFOR";
 	values[] = {0, 1};
 	texts[] = {"Spento", "Attivo"};
 	default = 1;
