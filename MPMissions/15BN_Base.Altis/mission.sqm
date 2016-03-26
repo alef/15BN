@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=724;
+		nextID=725;
 	};
 	class MarkerIDProvider
 	{
@@ -16,7 +16,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=18;
+		nextID=20;
 	};
 	class Camera
 	{
@@ -76,7 +76,8 @@ addons[]=
 	"rhs_c_a2port_armor",
 	"rhsusf_c_hmmwv",
 	"rhsusf_vehicles",
-	"rhsusf_c_rg33"
+	"rhsusf_c_rg33",
+	"A3_Modules_F_HC"
 };
 randomSeed=12630307;
 class ScenarioData
@@ -104,25 +105,6 @@ class CustomAttributes
 	{
 		name="Multiplayer";
 		class Attribute0
-		{
-			property="RespawnButton";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"SCALAR"
-						};
-					};
-					value=1;
-				};
-			};
-		};
-		class Attribute1
 		{
 			property="RespawnTemplates";
 			expression="true";
@@ -155,6 +137,25 @@ class CustomAttributes
 							};
 						};
 					};
+				};
+			};
+		};
+		class Attribute1
+		{
+			property="RespawnButton";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=1;
 				};
 			};
 		};
@@ -209,7 +210,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=81;
+		items=82;
 		class Item0
 		{
 			dataType="Object";
@@ -16192,8 +16193,8 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={20778.824,29.18634,7213.7686};
-						angles[]={0.0013372133,0,6.2791886};
+						position[]={20778.824,29.18634,7213.769};
+						angles[]={0.0013439035,0,6.2791882};
 					};
 					id=411;
 					type="ALiVE_SUP_PLAYER_RESUPPLY";
@@ -18916,6 +18917,17 @@ class Mission
 			};
 			id=720;
 			type="EmptyDetector";
+		};
+		class Item81
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={17412.193,13.571824,13202.118};
+				angles[]={0.022662206,0,6.2618566};
+			};
+			id=724;
+			type="HighCommand";
 		};
 	};
 	class Connections
