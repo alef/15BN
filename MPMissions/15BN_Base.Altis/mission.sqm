@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=723;
+		nextID=724;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=12;
+		nextID=18;
 	};
 	class Camera
 	{
-		pos[]={21473.334,56.43972,6830.1309};
-		dir[]={0.11232385,-0.46504188,0.87813544};
-		up[]={0.059003599,0.88528877,0.46128365};
-		aside[]={0.9919191,-1.094304e-008,-0.12687814};
+		pos[]={20824.236,189.9509,7230.2544};
+		dir[]={-0.13440385,-0.93860525,0.3177743};
+		up[]={-0.36562753,0.3449944,0.8644622};
+		aside[]={0.92101723,-1.2654345e-006,0.38954967};
 	};
 };
 binarizationWanted=0;
@@ -105,6 +105,25 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
+			property="RespawnButton";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=1;
+				};
+			};
+		};
+		class Attribute1
+		{
 			property="RespawnTemplates";
 			expression="true";
 			class Value
@@ -136,25 +155,6 @@ class CustomAttributes
 							};
 						};
 					};
-				};
-			};
-		};
-		class Attribute1
-		{
-			property="RespawnButton";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"SCALAR"
-						};
-					};
-					value=1;
 				};
 			};
 		};
@@ -190,7 +190,7 @@ class Mission
 	class Intel
 	{
 		briefingName="Base";
-		overviewText="Lobby_Summary";
+		overviewText="15BN parte da Pyrgos per ripulire il settore nord-est di Altis.";
 		timeOfChanges=1800.0002;
 		startWeather=0.30000001;
 		startWind=0.1;
@@ -14980,7 +14980,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="";
+									value="[this ] call ace_fastroping_fnc_equipFRIES";
 								};
 							};
 						};
@@ -16192,8 +16192,8 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={17413.141,13.163359,13235.519};
-						angles[]={0.0093286335,0,6.2751846};
+						position[]={20778.824,29.18634,7213.7686};
+						angles[]={0.0013372133,0,6.2791886};
 					};
 					id=411;
 					type="ALiVE_SUP_PLAYER_RESUPPLY";
@@ -18485,6 +18485,7 @@ class Mission
 			markerType="ELLIPSE";
 			type="ellipse";
 			colorName="ColorWEST";
+			alpha=0;
 			fillName="Border";
 			a=1000;
 			b=1000;
