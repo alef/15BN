@@ -89,7 +89,6 @@ class ScenarioData
 	debriefing=0;
 	showCompass=0;
 	showGPS=0;
-	showMap=0;
 	showWatch=0;
 	saving=0;
 	disabledAI=1;
