@@ -20,7 +20,7 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={20824.236,189.9509,7230.2544};
+		pos[]={20855.447,325.64828,7221.7153};
 		dir[]={-0.13440385,-0.93860525,0.3177743};
 		up[]={-0.36562753,0.3449944,0.8644622};
 		aside[]={0.92101723,-1.2654345e-006,0.38954967};
@@ -83,8 +83,8 @@ randomSeed=12630307;
 class ScenarioData
 {
 	author="alef";
-	overviewText="Overview_Text";
-	onLoadMission="Loading_Screen_Text";
+	overviewText="OPFOR sta conquistando la zona centro orientale dell'isola e bisogna fermarlo ed occupare il territorio.";
+	onLoadMission="ALiVE";
 	briefing=0;
 	debriefing=0;
 	showCompass=0;
