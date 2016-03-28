@@ -7,7 +7,7 @@ class Loadout
 };
 class CheckPBOs
 {
-	title = "Abilita controllo mod";
+	title = "Controllo mod";
 	values[] = {0, 1};
 	texts[] = {"No", "Sì"};
 	default = 0;
