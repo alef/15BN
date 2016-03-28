@@ -46,7 +46,7 @@ _u = "Underwear_F" createVehicleLocal [8460, 25080];
 		this = nil;
 	};
 	[_u, [profilenamespace, _name]] call BIS_fnc_deleteInventory; // delete player's Arsenal slot
-	[_u, [profilenamespace, _name], ["speciality TBD"]] call BIS_fnc_saveInventory; // save into player's Arsenal slot
+	[_u, [profilenamespace, _name]] call BIS_fnc_saveInventory; // save into player's Arsenal slot
 } forEach ([(missionConfigFile >> "CfgRespawnInventory"), 0, true] call BIS_fnc_returnChildren);
 
 // removes templates from old versions
