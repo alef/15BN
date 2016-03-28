@@ -1,53 +1,20 @@
-class CfgFunctions
-{
-	class ALEF
-	{
-		#include "hpp\functions.hpp"
-	};
+class Params {
+	#include "Params.hpp"
 };
 
-
-class CfgHints
-{
-	class _15BN_
-	{
-		#include "hpp\hints.hpp"
-	};
+class CfgFunctions {
+	#include "CfgFunctions.hpp"
 };
 
-class CfgRespawnInventory
-{
-	#include "hpp\inventory.hpp"
+#include "CfgEventHandlers.hpp"
+
+class CfgHints {
+	#include "CfgHints.hpp"
 };
 
-class Params
-{
-	#include "hpp\params.hpp"
+class CfgRespawnInventory {
+	#include "CfgRespawnInventory.hpp"
 };
 
-class Header
-{
-	gameType  = Coop;
-	minPlayers = 1;
-	maxPlayers = 58;
-};
-
-#include "hpp\CfgEventHandlers.hpp"
-
-// Mission
-author = "alef [=15BN=]";
-overviewText = "Base per le nostre partite";
+briefing = 0;
 onLoadName = "Base";
-loadScreen = img\15bn_512x256.paa;
-onLoadMission = "Da usare con MCC";
-
-// Respawn
-respawnOnStart = -1;
-respawn = 4; // 0=NONE, 1=BIRD, 2=INSTANT, 3=BASE, 4=GROUP, 5=SIDE
-respawnTemplates[] = {"ace_spectator"};
-respawnButton = 0;
-
-// Debug
-allowFunctionsLog = 0;
-enableDebugConsole = 1; // admin
-disabledAI = 1; // 0: enable to debug AI slots positions in MP
