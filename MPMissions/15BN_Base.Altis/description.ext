@@ -5,9 +5,6 @@ class Params {
 class CfgFunctions {
 	#include "CfgFunctions.hpp"
 };
-
-#include "CfgEventHandlers.hpp"
-
 class CfgHints {
 	#include "CfgHints.hpp"
 };
