@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=781;
+		nextID=786;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=32;
+		nextID=34;
 	};
 	class Camera
 	{
-		pos[]={17404.768,39.112507,13162.439};
-		dir[]={0,-0.70710683,0.70710683};
-		up[]={0,0.70710677,0.70710677};
-		aside[]={0.99999994,0,-0};
+		pos[]={17396.309,49.200012,13196.896};
+		dir[]={-0.0063802986,-0.99994999,0.0076998314};
+		up[]={-0.63801199,0.00999978,0.7699616};
+		aside[]={0.7700001,0,0.63804388};
 	};
 };
 binarizationWanted=0;
@@ -100,7 +100,6 @@ class ScenarioData
 	respawnDialog=0;
 	disabledAI=1;
 	respawn=3;
-	respawnDelay=300;
 	class Header
 	{
 		gameType="Coop";
@@ -113,24 +112,6 @@ class CustomAttributes
 	{
 		name="Multiplayer";
 		class Attribute0
-		{
-			property="RespawnTemplates";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"ARRAY"
-						};
-					};
-				};
-			};
-		};
-		class Attribute1
 		{
 			property="RespawnButton";
 			expression="true";
@@ -146,6 +127,24 @@ class CustomAttributes
 						};
 					};
 					value=0;
+				};
+			};
+		};
+		class Attribute1
+		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
 				};
 			};
 		};
@@ -19318,6 +19317,7 @@ class Mission
 			name="ALiVE_SUP_MULTISPAWN_DESTINATION_rhs_faction_usmc_wd";
 			type="mil_end";
 			colorName="ColorWEST";
+			alpha=0;
 			id=779;
 		};
 		class Item95
@@ -19326,14 +19326,37 @@ class Mission
 			class PositionInfo
 			{
 				position[]={17395.834,14.178555,13193.855};
-				angles[]={0.02399601,5.5543461,6.2685165};
+				angles[]={0.02399601,4.0032797,6.2685165};
 			};
 			side="Empty";
 			class Attributes
 			{
 			};
-			id=780;
-			type="Land_HelipadRescue_F";
+			id=785;
+			type="Land_HelipadSquare_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ace_isMedicalFacility";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 	};
 	class Connections
