@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=772;
+		nextID=773;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=30;
+		nextID=32;
 	};
 	class Camera
 	{
 		pos[]={17452.664,39.287445,13160.657};
 		dir[]={0,-0.70710683,0.70710683};
 		up[]={0,0.70710677,0.70710677};
-		aside[]={0.99999994,0,-0};
+		aside[]={0.99999994,0,0};
 	};
 };
 binarizationWanted=0;
@@ -81,7 +81,7 @@ addons[]=
 	"A3_Structures_F_Mil_Helipads",
 	"A3_Soft_F_Gamma_Quadbike",
 	"a3_soft_f_quadbike",
-	"rhsusf_c_statics"
+	"rhsusf_c_statics",
 	"alive_sys_data"
 };
 randomSeed=12630307;
@@ -109,25 +109,6 @@ class CustomAttributes
 	{
 		name="Multiplayer";
 		class Attribute0
-		{
-			property="RespawnButton";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"SCALAR"
-						};
-					};
-					value=1;
-				};
-			};
-		};
-		class Attribute1
 		{
 			property="RespawnTemplates";
 			expression="true";
@@ -160,6 +141,25 @@ class CustomAttributes
 							};
 						};
 					};
+				};
+			};
+		};
+		class Attribute1
+		{
+			property="RespawnButton";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=1;
 				};
 			};
 		};
@@ -214,7 +214,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=89;
+		items=90;
 		class Item0
 		{
 			dataType="Object";
@@ -11370,7 +11370,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=0.25;
+							value=0.5;
 						};
 					};
 				};
@@ -11389,7 +11389,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=2;
+							value=1;
 						};
 					};
 				};
