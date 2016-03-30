@@ -8,11 +8,11 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=773;
+		nextID=781;
 	};
 	class MarkerIDProvider
 	{
-		nextID=14;
+		nextID=18;
 	};
 	class LayerIndexProvider
 	{
@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={17452.664,39.287445,13160.657};
+		pos[]={17404.768,39.112507,13162.439};
 		dir[]={0,-0.70710683,0.70710683};
 		up[]={0,0.70710677,0.70710677};
-		aside[]={0.99999994,0,0};
+		aside[]={0.99999994,0,-0};
 	};
 };
 binarizationWanted=0;
@@ -82,7 +82,8 @@ addons[]=
 	"A3_Soft_F_Gamma_Quadbike",
 	"a3_soft_f_quadbike",
 	"rhsusf_c_statics",
-	"alive_sys_data"
+	"alive_sys_data",
+	"alive_sup_multispawn"
 };
 randomSeed=12630307;
 class ScenarioData
@@ -96,7 +97,10 @@ class ScenarioData
 	showGPS=0;
 	showWatch=0;
 	saving=0;
+	respawnDialog=0;
 	disabledAI=1;
+	respawn=3;
+	respawnDelay=300;
 	class Header
 	{
 		gameType="Coop";
@@ -123,24 +127,6 @@ class CustomAttributes
 							"ARRAY"
 						};
 					};
-					class value
-					{
-						items=1;
-						class Item0
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="ace_spectator";
-							};
-						};
-					};
 				};
 			};
 		};
@@ -159,7 +145,7 @@ class CustomAttributes
 							"SCALAR"
 						};
 					};
-					value=1;
+					value=0;
 				};
 			};
 		};
@@ -214,7 +200,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=90;
+		items=96;
 		class Item0
 		{
 			dataType="Object";
@@ -16826,8 +16812,8 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={17429.152,13.65635,13191.424};
-				angles[]={0.0079936078,0,0.0026529003};
+				position[]={17442.252,13.221075,13211.271};
+				angles[]={0.012000273,0,0.0013372133};
 			};
 			name="serverChat";
 			id=553;
@@ -19203,6 +19189,151 @@ class Mission
 				};
 				nAttributes=8;
 			};
+		};
+		class Item90
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={17419.527,13.764911,13182.098};
+				angles[]={0.0079936078,0,6.2725215};
+			};
+			id=775;
+			type="ALiVE_sup_multispawn";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ALiVE_sup_multispawn_spawntype";
+					expression="_this setVariable ['spawntype',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="insertion";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ALiVE_sup_multispawn_timeout";
+					expression="_this setVariable ['timeout',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="0";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ALiVE_sup_multispawn_spawningnearenemiesallowed";
+					expression="_this setVariable ['spawningnearenemiesallowed',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="false";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="ALiVE_sup_multispawn_debug";
+					expression="_this setVariable ['debug',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="false";
+						};
+					};
+				};
+				nAttributes=4;
+			};
+		};
+		class Item91
+		{
+			dataType="Marker";
+			position[]={17441.66,13.242159,13209.274};
+			name="respawn_west";
+			type="respawn_inf";
+			colorName="ColorWEST";
+			alpha=0;
+			id=776;
+		};
+		class Item92
+		{
+			dataType="Marker";
+			position[]={17179.393,12.585464,13306.513};
+			name="respawn_east";
+			type="respawn_inf";
+			colorName="ColorEAST";
+			alpha=0;
+			id=777;
+		};
+		class Item93
+		{
+			dataType="Marker";
+			position[]={20770.52,27.491911,7385.1782};
+			name="ALiVE_SUP_MULTISPAWN_INSERTION_rhs_faction_usmc_wd";
+			type="mil_start";
+			colorName="ColorWEST";
+			alpha=0;
+			id=778;
+		};
+		class Item94
+		{
+			dataType="Marker";
+			position[]={17395.836,14.178373,13193.861};
+			name="ALiVE_SUP_MULTISPAWN_DESTINATION_rhs_faction_usmc_wd";
+			type="mil_end";
+			colorName="ColorWEST";
+			id=779;
+		};
+		class Item95
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={17395.834,14.178555,13193.855};
+				angles[]={0.02399601,5.5543461,6.2685165};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=780;
+			type="Land_HelipadRescue_F";
 		};
 	};
 	class Connections
