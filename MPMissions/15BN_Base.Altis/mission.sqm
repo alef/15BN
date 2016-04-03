@@ -103,7 +103,7 @@ class ScenarioData
 	class Header
 	{
 		gameType="Coop";
-		maxPlayers=64;
+		maxPlayers=68;
 	};
 };
 class CustomAttributes
