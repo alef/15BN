@@ -20,6 +20,7 @@ if (hasInterface) then { player createDiaryRecord ["Log", ["Sistema medico",
 	(if (ACE_Medical_enableOverdosing) then {"Si può andare in overdose di morfina"} else {"Non ci sarà overdose di morfina"}) + "<br/>" +
 	(if (ACE_Medical_enableScreams) then {"Ci saranno urla"} else {"Non ci saranno urla"} )
 	]];
+	ace_maptools_mapGpsShow = false;
 };
 if ( (1 == ["Loadout",1] call BIS_fnc_getParamValue) && (east != side player) ) then { player call ALEF_fnc_spawnLoadout; };
 
