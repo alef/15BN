@@ -24,8 +24,8 @@ if (hasInterface) then { player createDiaryRecord ["Log", ["Sistema medico",
 };
 if ( (1 == ["Loadout",1] call BIS_fnc_getParamValue) && (east != side player) ) then { player call ALEF_fnc_spawnLoadout; };
 
-safeZone_trg = createTrigger ["EmptyDetector", [17430.176,13161.32], false]; // Pygros base. 'false' means local
-safeZone_trg setTriggerArea [108, 78, 47, true]; // rectangle
+safeZone_trg = createTrigger ["EmptyDetector", [17430,13161], false]; // Pygros base. 'false' means local
+safeZone_trg setTriggerArea [90, 60, 47, true]; // rectangle
 safeZone_trg setTriggerActivation ["WEST", "PRESENT", true];
 safeZone_trg triggerAttachVehicle [player];
 safeZone_trg setTriggerStatements ["this", "call ALEF_fnc_enterSafeZone", "call ALEF_fnc_leaveSafeZone"];
