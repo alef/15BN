@@ -19508,6 +19508,16 @@ class Mission
 					type="Sync";
 				};
 			};
+			class Item14
+			{
+				linkID=14;
+				item0=725;
+				item1=733;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
 		};
 	};
 };
