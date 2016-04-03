@@ -19473,16 +19473,122 @@ class Mission
 				nAttributes=1;
 			};
 		};
+		class Item96
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=2;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={20674.965,33.300106,7160.9263};
+						angles[]={0.0093286335,0,6.2778587};
+					};
+					side="West";
+					flags=2;
+					class Attributes
+					{
+					};
+					id=796;
+					type="rhsusf_usmc_marpat_wd_helipilot";
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={20674.965,33.300106,7160.9263};
+						angles[]={0.0093286335,0,6.2778587};
+					};
+					side="West";
+					class Attributes
+					{
+					};
+					id=797;
+					type="rhsusf_usmc_marpat_wd_helipilot";
+				};
+			};
+			class Attributes
+			{
+			};
+			class CrewLinks
+			{
+				class LinkIDProvider
+				{
+					nextID=2;
+				};
+				class Links
+				{
+					items=2;
+					class Item0
+					{
+						linkID=0;
+						item0=796;
+						item1=795;
+						class CustomData
+						{
+							role=1;
+						};
+					};
+					class Item1
+					{
+						linkID=1;
+						item0=797;
+						item1=795;
+						class CustomData
+						{
+							role=2;
+						};
+					};
+				};
+			};
+			id=794;
+		};
+		class Item97
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={20674.988,35.485142,7160.9258};
+				angles[]={0.0093286335,0,6.2778587};
+			};
+			side="West";
+			flags=2;
+			class Attributes
+			{
+			};
+			id=795;
+			type="RHS_UH1Y_UNARMED";
+		};
+		class Item98
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={20674.176,33.287445,7162.7407};
+				angles[]={0.0013372133,0,6.2778587};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=798;
+			type="Land_HelipadCircle_F";
+		};
 	};
 	class Connections
 	{
 		class LinkIDProvider
 		{
-			nextID=15;
+			nextID=16;
 		};
 		class Links
 		{
-			items=15;
+			items=16;
 			class Item0
 			{
 				linkID=0;
@@ -19628,6 +19734,16 @@ class Mission
 				linkID=14;
 				item0=725;
 				item1=733;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item15
+			{
+				linkID=15;
+				item0=796;
+				item1=775;
 				class CustomData
 				{
 					type="Sync";
