@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=786;
+		nextID=794;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=34;
+		nextID=40;
 	};
 	class Camera
 	{
-		pos[]={17396.309,49.200012,13196.896};
-		dir[]={-0.0063802986,-0.99994999,0.0076998314};
-		up[]={-0.63801199,0.00999978,0.7699616};
-		aside[]={0.7700001,0,0.63804388};
+		pos[]={17378.906,234.13824,13042.468};
+		dir[]={0.11475685,-0.91705084,0.38191351};
+		up[]={0.26389751,0.39877445,0.8782571};
+		aside[]={0.95770347,-2.4726614e-007,-0.28776902};
 	};
 };
 binarizationWanted=0;
@@ -113,6 +113,24 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
+				};
+			};
+		};
+		class Attribute1
+		{
 			property="RespawnButton";
 			expression="true";
 			class Value
@@ -127,24 +145,6 @@ class CustomAttributes
 						};
 					};
 					value=0;
-				};
-			};
-		};
-		class Attribute1
-		{
-			property="RespawnTemplates";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"ARRAY"
-						};
-					};
 				};
 			};
 		};
@@ -1228,200 +1228,6 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={17466.715,14.048465,13198.563};
-						angles[]={0,2.3858302,0};
-					};
-					side="West";
-					flags=1;
-					class Attributes
-					{
-						description="Alfa 1 - Medico";
-						isPlayable=1;
-						class Inventory
-						{
-							class primaryWeapon
-							{
-								name="rhs_weap_m4_carryhandle";
-								optics="rhsusf_acc_ACOG_USMC";
-								class primaryMuzzleMag
-								{
-									name="rhs_mag_30Rnd_556x45_Mk262_Stanag";
-									ammoLeft=30;
-								};
-							};
-							class handgun
-							{
-								name="rhsusf_weap_m1911a1";
-							};
-							class uniform
-							{
-								typeName="rhs_uniform_FROG01_wd";
-								isBackpack=0;
-								class ItemCargo
-								{
-									items=4;
-									class Item0
-									{
-										name="ACE_EarPlugs";
-										count=1;
-									};
-									class Item1
-									{
-										name="ACE_fieldDressing";
-										count=10;
-									};
-									class Item2
-									{
-										name="ACE_morphine";
-										count=3;
-									};
-									class Item3
-									{
-										name="ACE_epinephrine";
-										count=1;
-									};
-								};
-							};
-							class vest
-							{
-								typeName="rhsusf_spc_corpsman";
-								isBackpack=0;
-								class MagazineCargo
-								{
-									items=5;
-									class Item0
-									{
-										name="rhs_mag_an_m8hc";
-										count=5;
-										ammoLeft=1;
-									};
-									class Item1
-									{
-										name="rhs_mag_30Rnd_556x45_Mk262_Stanag";
-										count=9;
-										ammoLeft=30;
-									};
-									class Item2
-									{
-										name="rhs_mag_m18_red";
-										count=1;
-										ammoLeft=1;
-									};
-									class Item3
-									{
-										name="rhs_mag_m18_green";
-										count=1;
-										ammoLeft=1;
-									};
-									class Item4
-									{
-										name="rhs_mag_m67";
-										count=2;
-										ammoLeft=1;
-									};
-								};
-							};
-							class backpack
-							{
-								typeName="rhsusf_assault_eagleaiii_coy";
-								isBackpack=1;
-								class MagazineCargo
-								{
-									items=1;
-									class Item0
-									{
-										name="B_IR_Grenade";
-										count=2;
-										ammoLeft=1;
-									};
-								};
-								class ItemCargo
-								{
-									items=5;
-									class Item0
-									{
-										name="ACE_fieldDressing";
-										count=25;
-									};
-									class Item1
-									{
-										name="ACE_morphine";
-										count=13;
-									};
-									class Item2
-									{
-										name="ACE_epinephrine";
-										count=13;
-									};
-									class Item3
-									{
-										name="ACE_bloodIV_250";
-										count=6;
-									};
-									class Item4
-									{
-										name="ACE_Flashlight_XL50";
-										count=1;
-									};
-								};
-							};
-							map="ItemMap";
-							compass="ItemCompass";
-							watch="ItemWatch";
-							gps="ItemGPS";
-							headgear="rhsusf_lwh_helmet_marpatwd";
-						};
-					};
-					id=181;
-					type="B_medic_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="ace_isSurrendered";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="ace_isHandcuffed";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						nAttributes=2;
-					};
-				};
-				class Item6
-				{
-					dataType="Object";
-					class PositionInfo
-					{
 						position[]={17459.67,14.072004,13191.84};
 						angles[]={6.2812943,2.3636262,0.001381068};
 					};
@@ -1612,7 +1418,7 @@ class Mission
 						nAttributes=2;
 					};
 				};
-				class Item7
+				class Item6
 				{
 					dataType="Object";
 					class PositionInfo
@@ -1794,6 +1600,219 @@ class Mission
 							};
 						};
 						nAttributes=2;
+					};
+				};
+				class Item7
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={17466.715,14.048465,13198.563};
+						angles[]={0,2.3858302,0};
+					};
+					side="West";
+					class Attributes
+					{
+						rank="CORPORAL";
+						description="Alfa 1 - Medico";
+						isPlayable=1;
+						class Inventory
+						{
+							class primaryWeapon
+							{
+								name="rhs_weap_m4_carryhandle";
+								optics="rhsusf_acc_ACOG_USMC";
+								class primaryMuzzleMag
+								{
+									name="rhs_mag_30Rnd_556x45_Mk262_Stanag";
+									ammoLeft=30;
+								};
+							};
+							class handgun
+							{
+								name="rhsusf_weap_m1911a1";
+							};
+							class uniform
+							{
+								typeName="rhs_uniform_FROG01_wd";
+								isBackpack=0;
+								class ItemCargo
+								{
+									items=4;
+									class Item0
+									{
+										name="ACE_EarPlugs";
+										count=1;
+									};
+									class Item1
+									{
+										name="ACE_fieldDressing";
+										count=10;
+									};
+									class Item2
+									{
+										name="ACE_morphine";
+										count=3;
+									};
+									class Item3
+									{
+										name="ACE_epinephrine";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="rhsusf_spc_corpsman";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=5;
+									class Item0
+									{
+										name="rhs_mag_an_m8hc";
+										count=5;
+										ammoLeft=1;
+									};
+									class Item1
+									{
+										name="rhs_mag_30Rnd_556x45_Mk262_Stanag";
+										count=9;
+										ammoLeft=30;
+									};
+									class Item2
+									{
+										name="rhs_mag_m18_red";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item3
+									{
+										name="rhs_mag_m18_green";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item4
+									{
+										name="rhs_mag_m67";
+										count=2;
+										ammoLeft=1;
+									};
+								};
+							};
+							class backpack
+							{
+								typeName="rhsusf_assault_eagleaiii_coy";
+								isBackpack=1;
+								class MagazineCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="B_IR_Grenade";
+										count=2;
+										ammoLeft=1;
+									};
+								};
+								class ItemCargo
+								{
+									items=5;
+									class Item0
+									{
+										name="ACE_fieldDressing";
+										count=25;
+									};
+									class Item1
+									{
+										name="ACE_morphine";
+										count=13;
+									};
+									class Item2
+									{
+										name="ACE_epinephrine";
+										count=13;
+									};
+									class Item3
+									{
+										name="ACE_bloodIV_250";
+										count=6;
+									};
+									class Item4
+									{
+										name="ACE_Flashlight_XL50";
+										count=1;
+									};
+								};
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							gps="ItemGPS";
+							headgear="rhsusf_lwh_helmet_marpatwd";
+						};
+					};
+					id=788;
+					type="rhsusf_usmc_recon_marpat_wd_rifleman_fast";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isMedic";
+							expression="if (_value != -1) then {_this setVariable [""ace_medical_medicClass"",_value,true];};";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=3;
 					};
 				};
 			};
@@ -2882,200 +2901,6 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={17353.322,15.239051,13202.113};
-						angles[]={0,0.85446084,0};
-					};
-					side="West";
-					flags=1;
-					class Attributes
-					{
-						description="Alfa 2 - Medico";
-						isPlayable=1;
-						class Inventory
-						{
-							class primaryWeapon
-							{
-								name="rhs_weap_m4_carryhandle";
-								optics="rhsusf_acc_ACOG_USMC";
-								class primaryMuzzleMag
-								{
-									name="rhs_mag_30Rnd_556x45_Mk262_Stanag";
-									ammoLeft=30;
-								};
-							};
-							class handgun
-							{
-								name="rhsusf_weap_m1911a1";
-							};
-							class uniform
-							{
-								typeName="rhs_uniform_FROG01_wd";
-								isBackpack=0;
-								class ItemCargo
-								{
-									items=4;
-									class Item0
-									{
-										name="ACE_EarPlugs";
-										count=1;
-									};
-									class Item1
-									{
-										name="ACE_fieldDressing";
-										count=10;
-									};
-									class Item2
-									{
-										name="ACE_morphine";
-										count=3;
-									};
-									class Item3
-									{
-										name="ACE_epinephrine";
-										count=1;
-									};
-								};
-							};
-							class vest
-							{
-								typeName="rhsusf_spc_corpsman";
-								isBackpack=0;
-								class MagazineCargo
-								{
-									items=5;
-									class Item0
-									{
-										name="rhs_mag_an_m8hc";
-										count=5;
-										ammoLeft=1;
-									};
-									class Item1
-									{
-										name="rhs_mag_30Rnd_556x45_Mk262_Stanag";
-										count=9;
-										ammoLeft=30;
-									};
-									class Item2
-									{
-										name="rhs_mag_m18_red";
-										count=1;
-										ammoLeft=1;
-									};
-									class Item3
-									{
-										name="rhs_mag_m18_green";
-										count=1;
-										ammoLeft=1;
-									};
-									class Item4
-									{
-										name="rhs_mag_m67";
-										count=2;
-										ammoLeft=1;
-									};
-								};
-							};
-							class backpack
-							{
-								typeName="rhsusf_assault_eagleaiii_coy";
-								isBackpack=1;
-								class MagazineCargo
-								{
-									items=1;
-									class Item0
-									{
-										name="B_IR_Grenade";
-										count=2;
-										ammoLeft=1;
-									};
-								};
-								class ItemCargo
-								{
-									items=5;
-									class Item0
-									{
-										name="ACE_fieldDressing";
-										count=25;
-									};
-									class Item1
-									{
-										name="ACE_morphine";
-										count=13;
-									};
-									class Item2
-									{
-										name="ACE_epinephrine";
-										count=13;
-									};
-									class Item3
-									{
-										name="ACE_bloodIV_250";
-										count=6;
-									};
-									class Item4
-									{
-										name="ACE_Flashlight_XL50";
-										count=1;
-									};
-								};
-							};
-							map="ItemMap";
-							compass="ItemCompass";
-							watch="ItemWatch";
-							gps="ItemGPS";
-							headgear="rhsusf_lwh_helmet_marpatwd";
-						};
-					};
-					id=193;
-					type="B_medic_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="ace_isSurrendered";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="ace_isHandcuffed";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						nAttributes=2;
-					};
-				};
-				class Item6
-				{
-					dataType="Object";
-					class PositionInfo
-					{
 						position[]={17365.672,15.313899,13187.824};
 						angles[]={0.0010995574,0.83290601,0.0010995574};
 					};
@@ -3266,7 +3091,7 @@ class Mission
 						nAttributes=2;
 					};
 				};
-				class Item7
+				class Item6
 				{
 					dataType="Object";
 					class PositionInfo
@@ -3448,6 +3273,219 @@ class Mission
 							};
 						};
 						nAttributes=2;
+					};
+				};
+				class Item7
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={17353.322,15.239051,13202.113};
+						angles[]={0,0.85446084,0};
+					};
+					side="West";
+					class Attributes
+					{
+						rank="CORPORAL";
+						description="Alfa 2 - Medico";
+						isPlayable=1;
+						class Inventory
+						{
+							class primaryWeapon
+							{
+								name="rhs_weap_m4_carryhandle";
+								optics="rhsusf_acc_ACOG_USMC";
+								class primaryMuzzleMag
+								{
+									name="rhs_mag_30Rnd_556x45_Mk262_Stanag";
+									ammoLeft=30;
+								};
+							};
+							class handgun
+							{
+								name="rhsusf_weap_m1911a1";
+							};
+							class uniform
+							{
+								typeName="rhs_uniform_FROG01_wd";
+								isBackpack=0;
+								class ItemCargo
+								{
+									items=4;
+									class Item0
+									{
+										name="ACE_EarPlugs";
+										count=1;
+									};
+									class Item1
+									{
+										name="ACE_fieldDressing";
+										count=10;
+									};
+									class Item2
+									{
+										name="ACE_morphine";
+										count=3;
+									};
+									class Item3
+									{
+										name="ACE_epinephrine";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="rhsusf_spc_corpsman";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=5;
+									class Item0
+									{
+										name="rhs_mag_an_m8hc";
+										count=5;
+										ammoLeft=1;
+									};
+									class Item1
+									{
+										name="rhs_mag_30Rnd_556x45_Mk262_Stanag";
+										count=9;
+										ammoLeft=30;
+									};
+									class Item2
+									{
+										name="rhs_mag_m18_red";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item3
+									{
+										name="rhs_mag_m18_green";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item4
+									{
+										name="rhs_mag_m67";
+										count=2;
+										ammoLeft=1;
+									};
+								};
+							};
+							class backpack
+							{
+								typeName="rhsusf_assault_eagleaiii_coy";
+								isBackpack=1;
+								class MagazineCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="B_IR_Grenade";
+										count=2;
+										ammoLeft=1;
+									};
+								};
+								class ItemCargo
+								{
+									items=5;
+									class Item0
+									{
+										name="ACE_fieldDressing";
+										count=25;
+									};
+									class Item1
+									{
+										name="ACE_morphine";
+										count=13;
+									};
+									class Item2
+									{
+										name="ACE_epinephrine";
+										count=13;
+									};
+									class Item3
+									{
+										name="ACE_bloodIV_250";
+										count=6;
+									};
+									class Item4
+									{
+										name="ACE_Flashlight_XL50";
+										count=1;
+									};
+								};
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							gps="ItemGPS";
+							headgear="rhsusf_lwh_helmet_marpatwd";
+						};
+					};
+					id=789;
+					type="rhsusf_usmc_recon_marpat_wd_rifleman_fast";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isMedic";
+							expression="if (_value != -1) then {_this setVariable [""ace_medical_medicClass"",_value,true];};";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=3;
 					};
 				};
 			};
@@ -4468,200 +4506,6 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={17341.705,15.28311,13209.882};
-						angles[]={0,3.9730341,0};
-					};
-					side="West";
-					flags=1;
-					class Attributes
-					{
-						description="Alfa 3 - Medico";
-						isPlayable=1;
-						class Inventory
-						{
-							class primaryWeapon
-							{
-								name="rhs_weap_m4_carryhandle";
-								optics="rhsusf_acc_ACOG_USMC";
-								class primaryMuzzleMag
-								{
-									name="rhs_mag_30Rnd_556x45_Mk262_Stanag";
-									ammoLeft=30;
-								};
-							};
-							class handgun
-							{
-								name="rhsusf_weap_m1911a1";
-							};
-							class uniform
-							{
-								typeName="rhs_uniform_FROG01_wd";
-								isBackpack=0;
-								class ItemCargo
-								{
-									items=4;
-									class Item0
-									{
-										name="ACE_EarPlugs";
-										count=1;
-									};
-									class Item1
-									{
-										name="ACE_fieldDressing";
-										count=10;
-									};
-									class Item2
-									{
-										name="ACE_morphine";
-										count=3;
-									};
-									class Item3
-									{
-										name="ACE_epinephrine";
-										count=1;
-									};
-								};
-							};
-							class vest
-							{
-								typeName="rhsusf_spc_corpsman";
-								isBackpack=0;
-								class MagazineCargo
-								{
-									items=5;
-									class Item0
-									{
-										name="rhs_mag_an_m8hc";
-										count=5;
-										ammoLeft=1;
-									};
-									class Item1
-									{
-										name="rhs_mag_30Rnd_556x45_Mk262_Stanag";
-										count=9;
-										ammoLeft=30;
-									};
-									class Item2
-									{
-										name="rhs_mag_m18_red";
-										count=1;
-										ammoLeft=1;
-									};
-									class Item3
-									{
-										name="rhs_mag_m18_green";
-										count=1;
-										ammoLeft=1;
-									};
-									class Item4
-									{
-										name="rhs_mag_m67";
-										count=2;
-										ammoLeft=1;
-									};
-								};
-							};
-							class backpack
-							{
-								typeName="rhsusf_assault_eagleaiii_coy";
-								isBackpack=1;
-								class MagazineCargo
-								{
-									items=1;
-									class Item0
-									{
-										name="B_IR_Grenade";
-										count=2;
-										ammoLeft=1;
-									};
-								};
-								class ItemCargo
-								{
-									items=5;
-									class Item0
-									{
-										name="ACE_fieldDressing";
-										count=25;
-									};
-									class Item1
-									{
-										name="ACE_morphine";
-										count=13;
-									};
-									class Item2
-									{
-										name="ACE_epinephrine";
-										count=13;
-									};
-									class Item3
-									{
-										name="ACE_bloodIV_250";
-										count=6;
-									};
-									class Item4
-									{
-										name="ACE_Flashlight_XL50";
-										count=1;
-									};
-								};
-							};
-							map="ItemMap";
-							compass="ItemCompass";
-							watch="ItemWatch";
-							gps="ItemGPS";
-							headgear="rhsusf_lwh_helmet_marpatwd";
-						};
-					};
-					id=203;
-					type="B_medic_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="ace_isSurrendered";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="ace_isHandcuffed";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						nAttributes=2;
-					};
-				};
-				class Item6
-				{
-					dataType="Object";
-					class PositionInfo
-					{
 						position[]={17353.92,15.446474,13194.952};
 						angles[]={0.001381068,3.986706,0.0018911054};
 					};
@@ -4852,7 +4696,7 @@ class Mission
 						nAttributes=2;
 					};
 				};
-				class Item7
+				class Item6
 				{
 					dataType="Object";
 					class PositionInfo
@@ -5034,6 +4878,219 @@ class Mission
 							};
 						};
 						nAttributes=2;
+					};
+				};
+				class Item7
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={17341.705,15.28311,13209.882};
+						angles[]={0,3.9730341,0};
+					};
+					side="West";
+					class Attributes
+					{
+						rank="CORPORAL";
+						description="Alfa 3 - Medico";
+						isPlayable=1;
+						class Inventory
+						{
+							class primaryWeapon
+							{
+								name="rhs_weap_m4_carryhandle";
+								optics="rhsusf_acc_ACOG_USMC";
+								class primaryMuzzleMag
+								{
+									name="rhs_mag_30Rnd_556x45_Mk262_Stanag";
+									ammoLeft=30;
+								};
+							};
+							class handgun
+							{
+								name="rhsusf_weap_m1911a1";
+							};
+							class uniform
+							{
+								typeName="rhs_uniform_FROG01_wd";
+								isBackpack=0;
+								class ItemCargo
+								{
+									items=4;
+									class Item0
+									{
+										name="ACE_EarPlugs";
+										count=1;
+									};
+									class Item1
+									{
+										name="ACE_fieldDressing";
+										count=10;
+									};
+									class Item2
+									{
+										name="ACE_morphine";
+										count=3;
+									};
+									class Item3
+									{
+										name="ACE_epinephrine";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="rhsusf_spc_corpsman";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=5;
+									class Item0
+									{
+										name="rhs_mag_an_m8hc";
+										count=5;
+										ammoLeft=1;
+									};
+									class Item1
+									{
+										name="rhs_mag_30Rnd_556x45_Mk262_Stanag";
+										count=9;
+										ammoLeft=30;
+									};
+									class Item2
+									{
+										name="rhs_mag_m18_red";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item3
+									{
+										name="rhs_mag_m18_green";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item4
+									{
+										name="rhs_mag_m67";
+										count=2;
+										ammoLeft=1;
+									};
+								};
+							};
+							class backpack
+							{
+								typeName="rhsusf_assault_eagleaiii_coy";
+								isBackpack=1;
+								class MagazineCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="B_IR_Grenade";
+										count=2;
+										ammoLeft=1;
+									};
+								};
+								class ItemCargo
+								{
+									items=5;
+									class Item0
+									{
+										name="ACE_fieldDressing";
+										count=25;
+									};
+									class Item1
+									{
+										name="ACE_morphine";
+										count=13;
+									};
+									class Item2
+									{
+										name="ACE_epinephrine";
+										count=13;
+									};
+									class Item3
+									{
+										name="ACE_bloodIV_250";
+										count=6;
+									};
+									class Item4
+									{
+										name="ACE_Flashlight_XL50";
+										count=1;
+									};
+								};
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							gps="ItemGPS";
+							headgear="rhsusf_lwh_helmet_marpatwd";
+						};
+					};
+					id=790;
+					type="rhsusf_usmc_recon_marpat_wd_rifleman_fast";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isMedic";
+							expression="if (_value != -1) then {_this setVariable [""ace_medical_medicClass"",_value,true];};";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=3;
 					};
 				};
 			};
@@ -6054,200 +6111,6 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={17425.156,16.118591,13063.865};
-						angles[]={0,0.81594765,0};
-					};
-					side="West";
-					flags=1;
-					class Attributes
-					{
-						description="Bravo 1 - Medico";
-						isPlayable=1;
-						class Inventory
-						{
-							class primaryWeapon
-							{
-								name="rhs_weap_m4_carryhandle";
-								optics="rhsusf_acc_ACOG_USMC";
-								class primaryMuzzleMag
-								{
-									name="rhs_mag_30Rnd_556x45_Mk262_Stanag";
-									ammoLeft=30;
-								};
-							};
-							class handgun
-							{
-								name="rhsusf_weap_m1911a1";
-							};
-							class uniform
-							{
-								typeName="rhs_uniform_FROG01_wd";
-								isBackpack=0;
-								class ItemCargo
-								{
-									items=4;
-									class Item0
-									{
-										name="ACE_EarPlugs";
-										count=1;
-									};
-									class Item1
-									{
-										name="ACE_fieldDressing";
-										count=10;
-									};
-									class Item2
-									{
-										name="ACE_morphine";
-										count=3;
-									};
-									class Item3
-									{
-										name="ACE_epinephrine";
-										count=1;
-									};
-								};
-							};
-							class vest
-							{
-								typeName="rhsusf_spc_corpsman";
-								isBackpack=0;
-								class MagazineCargo
-								{
-									items=5;
-									class Item0
-									{
-										name="rhs_mag_an_m8hc";
-										count=5;
-										ammoLeft=1;
-									};
-									class Item1
-									{
-										name="rhs_mag_30Rnd_556x45_Mk262_Stanag";
-										count=9;
-										ammoLeft=30;
-									};
-									class Item2
-									{
-										name="rhs_mag_m18_red";
-										count=1;
-										ammoLeft=1;
-									};
-									class Item3
-									{
-										name="rhs_mag_m18_green";
-										count=1;
-										ammoLeft=1;
-									};
-									class Item4
-									{
-										name="rhs_mag_m67";
-										count=2;
-										ammoLeft=1;
-									};
-								};
-							};
-							class backpack
-							{
-								typeName="rhsusf_assault_eagleaiii_coy";
-								isBackpack=1;
-								class MagazineCargo
-								{
-									items=1;
-									class Item0
-									{
-										name="B_IR_Grenade";
-										count=2;
-										ammoLeft=1;
-									};
-								};
-								class ItemCargo
-								{
-									items=5;
-									class Item0
-									{
-										name="ACE_fieldDressing";
-										count=25;
-									};
-									class Item1
-									{
-										name="ACE_morphine";
-										count=13;
-									};
-									class Item2
-									{
-										name="ACE_epinephrine";
-										count=13;
-									};
-									class Item3
-									{
-										name="ACE_bloodIV_250";
-										count=6;
-									};
-									class Item4
-									{
-										name="ACE_Flashlight_XL50";
-										count=1;
-									};
-								};
-							};
-							map="ItemMap";
-							compass="ItemCompass";
-							watch="ItemWatch";
-							gps="ItemGPS";
-							headgear="rhsusf_lwh_helmet_marpatwd";
-						};
-					};
-					id=212;
-					type="B_medic_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="ace_isSurrendered";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="ace_isHandcuffed";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						nAttributes=2;
-					};
-				};
-				class Item6
-				{
-					dataType="Object";
-					class PositionInfo
-					{
 						position[]={17418.475,16.028755,13070.788};
 						angles[]={0.0012918708,0.78854614,0.0017605233};
 					};
@@ -6438,7 +6301,7 @@ class Mission
 						nAttributes=2;
 					};
 				};
-				class Item7
+				class Item6
 				{
 					dataType="Object";
 					class PositionInfo
@@ -6620,6 +6483,219 @@ class Mission
 							};
 						};
 						nAttributes=2;
+					};
+				};
+				class Item7
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={17425.156,16.118591,13063.865};
+						angles[]={0,0.81594765,0};
+					};
+					side="West";
+					class Attributes
+					{
+						rank="CORPORAL";
+						description="Bravo 1 - Medico";
+						isPlayable=1;
+						class Inventory
+						{
+							class primaryWeapon
+							{
+								name="rhs_weap_m4_carryhandle";
+								optics="rhsusf_acc_ACOG_USMC";
+								class primaryMuzzleMag
+								{
+									name="rhs_mag_30Rnd_556x45_Mk262_Stanag";
+									ammoLeft=30;
+								};
+							};
+							class handgun
+							{
+								name="rhsusf_weap_m1911a1";
+							};
+							class uniform
+							{
+								typeName="rhs_uniform_FROG01_wd";
+								isBackpack=0;
+								class ItemCargo
+								{
+									items=4;
+									class Item0
+									{
+										name="ACE_EarPlugs";
+										count=1;
+									};
+									class Item1
+									{
+										name="ACE_fieldDressing";
+										count=10;
+									};
+									class Item2
+									{
+										name="ACE_morphine";
+										count=3;
+									};
+									class Item3
+									{
+										name="ACE_epinephrine";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="rhsusf_spc_corpsman";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=5;
+									class Item0
+									{
+										name="rhs_mag_an_m8hc";
+										count=5;
+										ammoLeft=1;
+									};
+									class Item1
+									{
+										name="rhs_mag_30Rnd_556x45_Mk262_Stanag";
+										count=9;
+										ammoLeft=30;
+									};
+									class Item2
+									{
+										name="rhs_mag_m18_red";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item3
+									{
+										name="rhs_mag_m18_green";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item4
+									{
+										name="rhs_mag_m67";
+										count=2;
+										ammoLeft=1;
+									};
+								};
+							};
+							class backpack
+							{
+								typeName="rhsusf_assault_eagleaiii_coy";
+								isBackpack=1;
+								class MagazineCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="B_IR_Grenade";
+										count=2;
+										ammoLeft=1;
+									};
+								};
+								class ItemCargo
+								{
+									items=5;
+									class Item0
+									{
+										name="ACE_fieldDressing";
+										count=25;
+									};
+									class Item1
+									{
+										name="ACE_morphine";
+										count=13;
+									};
+									class Item2
+									{
+										name="ACE_epinephrine";
+										count=13;
+									};
+									class Item3
+									{
+										name="ACE_bloodIV_250";
+										count=6;
+									};
+									class Item4
+									{
+										name="ACE_Flashlight_XL50";
+										count=1;
+									};
+								};
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							gps="ItemGPS";
+							headgear="rhsusf_lwh_helmet_marpatwd";
+						};
+					};
+					id=791;
+					type="rhsusf_usmc_recon_marpat_wd_rifleman_fast";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isMedic";
+							expression="if (_value != -1) then {_this setVariable [""ace_medical_medicClass"",_value,true];};";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=3;
 					};
 				};
 			};
@@ -7640,200 +7716,6 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={17485.875,16.347149,13082.384};
-						angles[]={0,3.9670289,0};
-					};
-					side="West";
-					flags=1;
-					class Attributes
-					{
-						description="Bravo 2 - Medico";
-						isPlayable=1;
-						class Inventory
-						{
-							class primaryWeapon
-							{
-								name="rhs_weap_m4_carryhandle";
-								optics="rhsusf_acc_ACOG_USMC";
-								class primaryMuzzleMag
-								{
-									name="rhs_mag_30Rnd_556x45_Mk262_Stanag";
-									ammoLeft=30;
-								};
-							};
-							class handgun
-							{
-								name="rhsusf_weap_m1911a1";
-							};
-							class uniform
-							{
-								typeName="rhs_uniform_FROG01_wd";
-								isBackpack=0;
-								class ItemCargo
-								{
-									items=4;
-									class Item0
-									{
-										name="ACE_EarPlugs";
-										count=1;
-									};
-									class Item1
-									{
-										name="ACE_fieldDressing";
-										count=10;
-									};
-									class Item2
-									{
-										name="ACE_morphine";
-										count=3;
-									};
-									class Item3
-									{
-										name="ACE_epinephrine";
-										count=1;
-									};
-								};
-							};
-							class vest
-							{
-								typeName="rhsusf_spc_corpsman";
-								isBackpack=0;
-								class MagazineCargo
-								{
-									items=5;
-									class Item0
-									{
-										name="rhs_mag_an_m8hc";
-										count=5;
-										ammoLeft=1;
-									};
-									class Item1
-									{
-										name="rhs_mag_30Rnd_556x45_Mk262_Stanag";
-										count=9;
-										ammoLeft=30;
-									};
-									class Item2
-									{
-										name="rhs_mag_m18_red";
-										count=1;
-										ammoLeft=1;
-									};
-									class Item3
-									{
-										name="rhs_mag_m18_green";
-										count=1;
-										ammoLeft=1;
-									};
-									class Item4
-									{
-										name="rhs_mag_m67";
-										count=2;
-										ammoLeft=1;
-									};
-								};
-							};
-							class backpack
-							{
-								typeName="rhsusf_assault_eagleaiii_coy";
-								isBackpack=1;
-								class MagazineCargo
-								{
-									items=1;
-									class Item0
-									{
-										name="B_IR_Grenade";
-										count=2;
-										ammoLeft=1;
-									};
-								};
-								class ItemCargo
-								{
-									items=5;
-									class Item0
-									{
-										name="ACE_fieldDressing";
-										count=25;
-									};
-									class Item1
-									{
-										name="ACE_morphine";
-										count=13;
-									};
-									class Item2
-									{
-										name="ACE_epinephrine";
-										count=13;
-									};
-									class Item3
-									{
-										name="ACE_bloodIV_250";
-										count=6;
-									};
-									class Item4
-									{
-										name="ACE_Flashlight_XL50";
-										count=1;
-									};
-								};
-							};
-							map="ItemMap";
-							compass="ItemCompass";
-							watch="ItemWatch";
-							gps="ItemGPS";
-							headgear="rhsusf_lwh_helmet_marpatwd";
-						};
-					};
-					id=221;
-					type="B_medic_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="ace_isSurrendered";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="ace_isHandcuffed";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						nAttributes=2;
-					};
-				};
-				class Item6
-				{
-					dataType="Object";
-					class PositionInfo
-					{
 						position[]={17440.785,15.600966,13093.572};
 						angles[]={0,3.8939166,6.2824869};
 					};
@@ -8024,7 +7906,7 @@ class Mission
 						nAttributes=2;
 					};
 				};
-				class Item7
+				class Item6
 				{
 					dataType="Object";
 					class PositionInfo
@@ -8206,6 +8088,219 @@ class Mission
 							};
 						};
 						nAttributes=2;
+					};
+				};
+				class Item7
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={17485.875,16.347149,13082.384};
+						angles[]={0,3.9670289,0};
+					};
+					side="West";
+					class Attributes
+					{
+						rank="CORPORAL";
+						description="Bravo 2 - Medico";
+						isPlayable=1;
+						class Inventory
+						{
+							class primaryWeapon
+							{
+								name="rhs_weap_m4_carryhandle";
+								optics="rhsusf_acc_ACOG_USMC";
+								class primaryMuzzleMag
+								{
+									name="rhs_mag_30Rnd_556x45_Mk262_Stanag";
+									ammoLeft=30;
+								};
+							};
+							class handgun
+							{
+								name="rhsusf_weap_m1911a1";
+							};
+							class uniform
+							{
+								typeName="rhs_uniform_FROG01_wd";
+								isBackpack=0;
+								class ItemCargo
+								{
+									items=4;
+									class Item0
+									{
+										name="ACE_EarPlugs";
+										count=1;
+									};
+									class Item1
+									{
+										name="ACE_fieldDressing";
+										count=10;
+									};
+									class Item2
+									{
+										name="ACE_morphine";
+										count=3;
+									};
+									class Item3
+									{
+										name="ACE_epinephrine";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="rhsusf_spc_corpsman";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=5;
+									class Item0
+									{
+										name="rhs_mag_an_m8hc";
+										count=5;
+										ammoLeft=1;
+									};
+									class Item1
+									{
+										name="rhs_mag_30Rnd_556x45_Mk262_Stanag";
+										count=9;
+										ammoLeft=30;
+									};
+									class Item2
+									{
+										name="rhs_mag_m18_red";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item3
+									{
+										name="rhs_mag_m18_green";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item4
+									{
+										name="rhs_mag_m67";
+										count=2;
+										ammoLeft=1;
+									};
+								};
+							};
+							class backpack
+							{
+								typeName="rhsusf_assault_eagleaiii_coy";
+								isBackpack=1;
+								class MagazineCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="B_IR_Grenade";
+										count=2;
+										ammoLeft=1;
+									};
+								};
+								class ItemCargo
+								{
+									items=5;
+									class Item0
+									{
+										name="ACE_fieldDressing";
+										count=25;
+									};
+									class Item1
+									{
+										name="ACE_morphine";
+										count=13;
+									};
+									class Item2
+									{
+										name="ACE_epinephrine";
+										count=13;
+									};
+									class Item3
+									{
+										name="ACE_bloodIV_250";
+										count=6;
+									};
+									class Item4
+									{
+										name="ACE_Flashlight_XL50";
+										count=1;
+									};
+								};
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							gps="ItemGPS";
+							headgear="rhsusf_lwh_helmet_marpatwd";
+						};
+					};
+					id=792;
+					type="rhsusf_usmc_recon_marpat_wd_rifleman_fast";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isMedic";
+							expression="if (_value != -1) then {_this setVariable [""ace_medical_medicClass"",_value,true];};";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=3;
 					};
 				};
 			};
@@ -9226,200 +9321,6 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={17517.781,14.491265,13171.336};
-						angles[]={0,3.9433539,0};
-					};
-					side="West";
-					flags=1;
-					class Attributes
-					{
-						description="Bravo 3 - Medico";
-						isPlayable=1;
-						class Inventory
-						{
-							class primaryWeapon
-							{
-								name="rhs_weap_m4_carryhandle";
-								optics="rhsusf_acc_ACOG_USMC";
-								class primaryMuzzleMag
-								{
-									name="rhs_mag_30Rnd_556x45_Mk262_Stanag";
-									ammoLeft=30;
-								};
-							};
-							class handgun
-							{
-								name="rhsusf_weap_m1911a1";
-							};
-							class uniform
-							{
-								typeName="rhs_uniform_FROG01_wd";
-								isBackpack=0;
-								class ItemCargo
-								{
-									items=4;
-									class Item0
-									{
-										name="ACE_EarPlugs";
-										count=1;
-									};
-									class Item1
-									{
-										name="ACE_fieldDressing";
-										count=10;
-									};
-									class Item2
-									{
-										name="ACE_morphine";
-										count=3;
-									};
-									class Item3
-									{
-										name="ACE_epinephrine";
-										count=1;
-									};
-								};
-							};
-							class vest
-							{
-								typeName="rhsusf_spc_corpsman";
-								isBackpack=0;
-								class MagazineCargo
-								{
-									items=5;
-									class Item0
-									{
-										name="rhs_mag_an_m8hc";
-										count=5;
-										ammoLeft=1;
-									};
-									class Item1
-									{
-										name="rhs_mag_30Rnd_556x45_Mk262_Stanag";
-										count=9;
-										ammoLeft=30;
-									};
-									class Item2
-									{
-										name="rhs_mag_m18_red";
-										count=1;
-										ammoLeft=1;
-									};
-									class Item3
-									{
-										name="rhs_mag_m18_green";
-										count=1;
-										ammoLeft=1;
-									};
-									class Item4
-									{
-										name="rhs_mag_m67";
-										count=2;
-										ammoLeft=1;
-									};
-								};
-							};
-							class backpack
-							{
-								typeName="rhsusf_assault_eagleaiii_coy";
-								isBackpack=1;
-								class MagazineCargo
-								{
-									items=1;
-									class Item0
-									{
-										name="B_IR_Grenade";
-										count=2;
-										ammoLeft=1;
-									};
-								};
-								class ItemCargo
-								{
-									items=5;
-									class Item0
-									{
-										name="ACE_fieldDressing";
-										count=25;
-									};
-									class Item1
-									{
-										name="ACE_morphine";
-										count=13;
-									};
-									class Item2
-									{
-										name="ACE_epinephrine";
-										count=13;
-									};
-									class Item3
-									{
-										name="ACE_bloodIV_250";
-										count=6;
-									};
-									class Item4
-									{
-										name="ACE_Flashlight_XL50";
-										count=1;
-									};
-								};
-							};
-							map="ItemMap";
-							compass="ItemCompass";
-							watch="ItemWatch";
-							gps="ItemGPS";
-							headgear="rhsusf_lwh_helmet_marpatwd";
-						};
-					};
-					id=230;
-					type="B_medic_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="ace_isSurrendered";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="ace_isHandcuffed";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						nAttributes=2;
-					};
-				};
-				class Item6
-				{
-					dataType="Object";
-					class PositionInfo
-					{
 						position[]={17508.928,17.831196,13182.546};
 						angles[]={0,0.78853977,6.282495};
 					};
@@ -9610,7 +9511,7 @@ class Mission
 						nAttributes=2;
 					};
 				};
-				class Item7
+				class Item6
 				{
 					dataType="Object";
 					class PositionInfo
@@ -9792,6 +9693,219 @@ class Mission
 							};
 						};
 						nAttributes=2;
+					};
+				};
+				class Item7
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={17517.781,14.491265,13171.336};
+						angles[]={0,3.9433539,0};
+					};
+					side="West";
+					class Attributes
+					{
+						rank="CORPORAL";
+						description="Bravo 3 - Medico";
+						isPlayable=1;
+						class Inventory
+						{
+							class primaryWeapon
+							{
+								name="rhs_weap_m4_carryhandle";
+								optics="rhsusf_acc_ACOG_USMC";
+								class primaryMuzzleMag
+								{
+									name="rhs_mag_30Rnd_556x45_Mk262_Stanag";
+									ammoLeft=30;
+								};
+							};
+							class handgun
+							{
+								name="rhsusf_weap_m1911a1";
+							};
+							class uniform
+							{
+								typeName="rhs_uniform_FROG01_wd";
+								isBackpack=0;
+								class ItemCargo
+								{
+									items=4;
+									class Item0
+									{
+										name="ACE_EarPlugs";
+										count=1;
+									};
+									class Item1
+									{
+										name="ACE_fieldDressing";
+										count=10;
+									};
+									class Item2
+									{
+										name="ACE_morphine";
+										count=3;
+									};
+									class Item3
+									{
+										name="ACE_epinephrine";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="rhsusf_spc_corpsman";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=5;
+									class Item0
+									{
+										name="rhs_mag_an_m8hc";
+										count=5;
+										ammoLeft=1;
+									};
+									class Item1
+									{
+										name="rhs_mag_30Rnd_556x45_Mk262_Stanag";
+										count=9;
+										ammoLeft=30;
+									};
+									class Item2
+									{
+										name="rhs_mag_m18_red";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item3
+									{
+										name="rhs_mag_m18_green";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item4
+									{
+										name="rhs_mag_m67";
+										count=2;
+										ammoLeft=1;
+									};
+								};
+							};
+							class backpack
+							{
+								typeName="rhsusf_assault_eagleaiii_coy";
+								isBackpack=1;
+								class MagazineCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="B_IR_Grenade";
+										count=2;
+										ammoLeft=1;
+									};
+								};
+								class ItemCargo
+								{
+									items=5;
+									class Item0
+									{
+										name="ACE_fieldDressing";
+										count=25;
+									};
+									class Item1
+									{
+										name="ACE_morphine";
+										count=13;
+									};
+									class Item2
+									{
+										name="ACE_epinephrine";
+										count=13;
+									};
+									class Item3
+									{
+										name="ACE_bloodIV_250";
+										count=6;
+									};
+									class Item4
+									{
+										name="ACE_Flashlight_XL50";
+										count=1;
+									};
+								};
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							gps="ItemGPS";
+							headgear="rhsusf_lwh_helmet_marpatwd";
+						};
+					};
+					id=793;
+					type="rhsusf_usmc_recon_marpat_wd_rifleman_fast";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isMedic";
+							expression="if (_value != -1) then {_this setVariable [""ace_medical_medicClass"",_value,true];};";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=3;
 					};
 				};
 			};
@@ -11128,8 +11242,8 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={17398.059,14.474112,13175.757};
-				angles[]={0.010664274,0,6.2751846};
+				position[]={17398.061,14.474096,13175.757};
+				angles[]={0.010663962,0,6.2751913};
 			};
 			id=399;
 			type="ACE_moduleBasicMedicalSettings";
@@ -14840,7 +14954,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="false";
+									value="true";
 								};
 							};
 						};
@@ -18913,7 +19027,8 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={17567.982,13.431559,13222.813};
+				position[]={17502.131,14.369618,13131.217};
+				angles[]={0.0093286335,0,6.2805333};
 			};
 			id=725;
 			type="ACE_moduleEquipFRIES";
@@ -19144,7 +19259,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="true";
+							value="false";
 						};
 					};
 				};
@@ -19363,11 +19478,11 @@ class Mission
 	{
 		class LinkIDProvider
 		{
-			nextID=14;
+			nextID=15;
 		};
 		class Links
 		{
-			items=14;
+			items=15;
 			class Item0
 			{
 				linkID=0;
