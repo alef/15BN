@@ -22,7 +22,6 @@ if (hasInterface) then { player createDiaryRecord ["Log", ["Sistema medico",
 	]];
 	ace_maptools_mapGpsShow = false;
 };
-if ( (1 == ["Loadout",1] call BIS_fnc_getParamValue) && (east != side player) ) then { player call ALEF_fnc_spawnLoadout; };
 
 safeZone_trg = createTrigger ["EmptyDetector", [17430,13161], false]; // Pygros base. 'false' means local
 safeZone_trg setTriggerArea [90, 60, 47, true]; // rectangle

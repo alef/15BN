@@ -35,10 +35,6 @@ class ALEF {
 		description = "Clicks on CONTINUE";
 		preInit = 1;
 	};
-	class spawnLoadout
-	{
-		description = "Load a gear based on unit class";
-	};
 	class enterSafeZone
 	{
 		description = "Delete projectiles and add Arsenal";
