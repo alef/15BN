@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=794;
+		nextID=815;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=40;
+		nextID=42;
 	};
 	class Camera
 	{
-		pos[]={17378.906,234.13824,13042.468};
-		dir[]={0.11475685,-0.91705084,0.38191351};
-		up[]={0.26389751,0.39877445,0.8782571};
-		aside[]={0.95770347,-2.4726614e-007,-0.28776902};
+		pos[]={17435.059,45.997189,13192.568};
+		dir[]={-0.39936048,-0.69046712,-0.60318512};
+		up[]={-0.38118964,0.72334313,-0.57574016};
+		aside[]={-0.83383471,-5.0314702e-007,0.55207229};
 	};
 };
 binarizationWanted=0;
@@ -83,7 +83,9 @@ addons[]=
 	"a3_soft_f_quadbike",
 	"rhsusf_c_statics",
 	"alive_sys_data",
-	"alive_sup_multispawn"
+	"alive_sup_multispawn",
+	"A3_Structures_F_Walls",
+	"A3_Structures_F_Mil_Fortification"
 };
 randomSeed=12630307;
 class ScenarioData
@@ -113,24 +115,6 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
-			property="RespawnTemplates";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"ARRAY"
-						};
-					};
-				};
-			};
-		};
-		class Attribute1
-		{
 			property="RespawnButton";
 			expression="true";
 			class Value
@@ -145,6 +129,24 @@ class CustomAttributes
 						};
 					};
 					value=0;
+				};
+			};
+		};
+		class Attribute1
+		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
 				};
 			};
 		};
@@ -182,10 +184,10 @@ class Mission
 		briefingName="Base";
 		overviewText="15BN parte da Pyrgos per ripulire il settore nord-est di Altis.";
 		timeOfChanges=1800.0002;
-		startWeather=0.30000001;
+		startWeather=0;
 		startWind=0.1;
 		startWaves=0.1;
-		forecastWeather=0.30000001;
+		forecastWeather=0;
 		forecastWind=0.1;
 		forecastWaves=0.1;
 		forecastLightnings=0.1;
@@ -199,7 +201,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=96;
+		items=101;
 		class Item0
 		{
 			dataType="Object";
@@ -3096,8 +3098,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={17347.303,15.113077,13210.09};
-						angles[]={0.0010995574,0.82271332,0.0010995574};
+						position[]={17371.473,14.6431,13218.588};
+						angles[]={0.00069053395,0.85638058,0.0010918301};
 					};
 					side="West";
 					class Attributes
@@ -4885,8 +4887,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={17341.705,15.28311,13209.882};
-						angles[]={0,3.9730341,0};
+						position[]={17377.359,14.714924,13211.482};
+						angles[]={0.0012918708,0.8412863,0.0016914561};
 					};
 					side="West";
 					class Attributes
@@ -16925,8 +16927,8 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={17442.252,13.221075,13211.271};
-				angles[]={0.012000273,0,0.0013372133};
+				position[]={17424.402,14.443769,13163.257};
+				angles[]={0.079829417,0,6.2591896};
 			};
 			name="serverChat";
 			id=553;
@@ -19002,6 +19004,7 @@ class Mission
 			angle=0.27345824;
 			class Attributes
 			{
+				name="FIXTAKEOFF";
 				onActivation="[thistrigger, thislist] call ALEF_fnc_ALiVE_fixTakeoff";
 				sizeA=30;
 				sizeB=30;
@@ -19143,7 +19146,8 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={17401.953,13.145012,13243.088};
+				position[]={17392.436,13.215299,13240.884};
+				angles[]={0.013334315,0,6.2765183};
 			};
 			id=772;
 			type="ALiVE_sys_data";
@@ -19309,8 +19313,8 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={17419.527,13.764911,13182.098};
-				angles[]={0.0079936078,0,6.2725215};
+				position[]={17411.801,14.053175,13177.313};
+				angles[]={0.035985984,0,6.2405448};
 			};
 			id=775;
 			type="ALiVE_sup_multispawn";
@@ -19398,7 +19402,7 @@ class Mission
 		class Item91
 		{
 			dataType="Marker";
-			position[]={17441.66,13.242159,13209.274};
+			position[]={17402.713,13.145478,13242.711};
 			name="respawn_west";
 			type="respawn_inf";
 			colorName="ColorWEST";
@@ -19440,8 +19444,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={17395.834,14.178555,13193.855};
-				angles[]={0.02399601,4.0032797,6.2685165};
+				position[]={17411.994,14.146046,13174.504};
+				angles[]={0.035985984,3.9610963,6.2405448};
 			};
 			side="Empty";
 			class Attributes
@@ -19475,96 +19479,20 @@ class Mission
 		};
 		class Item96
 		{
-			dataType="Group";
-			side="West";
-			class Entities
-			{
-				items=2;
-				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={20674.965,33.300106,7160.9263};
-						angles[]={0.0093286335,0,6.2778587};
-					};
-					side="West";
-					flags=2;
-					class Attributes
-					{
-					};
-					id=796;
-					type="rhsusf_usmc_marpat_wd_helipilot";
-				};
-				class Item1
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={20674.965,33.300106,7160.9263};
-						angles[]={0.0093286335,0,6.2778587};
-					};
-					side="West";
-					class Attributes
-					{
-					};
-					id=797;
-					type="rhsusf_usmc_marpat_wd_helipilot";
-				};
-			};
-			class Attributes
-			{
-			};
-			class CrewLinks
-			{
-				class LinkIDProvider
-				{
-					nextID=2;
-				};
-				class Links
-				{
-					items=2;
-					class Item0
-					{
-						linkID=0;
-						item0=796;
-						item1=795;
-						class CustomData
-						{
-							role=1;
-						};
-					};
-					class Item1
-					{
-						linkID=1;
-						item0=797;
-						item1=795;
-						class CustomData
-						{
-							role=2;
-						};
-					};
-				};
-			};
-			id=794;
-		};
-		class Item97
-		{
 			dataType="Object";
 			class PositionInfo
 			{
 				position[]={20674.988,35.485142,7160.9258};
 				angles[]={0.0093286335,0,6.2778587};
 			};
-			side="West";
-			flags=2;
+			side="Empty";
 			class Attributes
 			{
 			};
 			id=795;
 			type="RHS_UH1Y_UNARMED";
 		};
-		class Item98
+		class Item97
 		{
 			dataType="Object";
 			class PositionInfo
@@ -19578,6 +19506,52 @@ class Mission
 			};
 			id=798;
 			type="Land_HelipadCircle_F";
+		};
+		class Item98
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={17500.594,17.393286,13196.014};
+				angles[]={0,0.78372318,0};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=803;
+			type="Land_BarGate_F";
+		};
+		class Item99
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={17494.65,14.068095,13202.379};
+				angles[]={0.0013372133,0.76502198,0.0013372133};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=813;
+			type="Land_Razorwire_F";
+		};
+		class Item100
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={17507.188,14.180596,13189.569};
+				angles[]={0.0079935296,0.79601169,0.014664836};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=814;
+			type="Land_Razorwire_F";
 		};
 	};
 	class Connections
@@ -19742,7 +19716,7 @@ class Mission
 			class Item15
 			{
 				linkID=15;
-				item0=796;
+				item0=795;
 				item1=775;
 				class CustomData
 				{
