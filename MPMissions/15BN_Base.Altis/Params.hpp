@@ -1,3 +1,10 @@
+class Intel
+{
+	title = "Mostra intelligence";
+	values[] = {0, 1};
+	texts[] = {"No", "Sì"};
+	default = 0;
+};
 class CheckPBOs
 {
 	title = "Controllo mod";
