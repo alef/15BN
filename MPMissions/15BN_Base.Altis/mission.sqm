@@ -16,11 +16,11 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=42;
+		nextID=46;
 	};
 	class Camera
 	{
-		pos[]={17421.1,39.639999,13114.998};
+		pos[]={17408.746,37.914066,13226.473};
 		dir[]={0,-0.70710683,0.70710683};
 		up[]={0,0.70710677,0.70710677};
 		aside[]={0.99999994,0,-0};
@@ -19433,7 +19433,7 @@ class Mission
 		class Item94
 		{
 			dataType="Marker";
-			position[]={17395.836,14.178373,13193.861};
+			position[]={17411.986,14.145072,13174.539};
 			name="ALiVE_SUP_MULTISPAWN_DESTINATION_rhs_faction_usmc_wd";
 			type="mil_end";
 			colorName="ColorWEST";
