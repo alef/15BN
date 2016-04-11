@@ -34,6 +34,7 @@ this addHeadgear "rhsusf_lwh_helmet_marpatwd_headset";
 
 comment "Add weapons";
 this addWeapon "rhs_weap_m4_carryhandle";
+this addPrimaryWeaponItem "rhsusf_acc_anpeq15_light";
 this addPrimaryWeaponItem "rhsusf_acc_ACOG_USMC";
 this addWeapon "rhsusf_weap_m1911a1";
 this addWeapon "Binocular";

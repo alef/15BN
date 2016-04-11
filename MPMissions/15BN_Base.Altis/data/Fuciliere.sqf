@@ -1,4 +1,4 @@
-comment "24.63kg";
+comment "Exported from Arsenal by alef";
 
 comment "Remove existing items";
 removeAllWeapons this;
@@ -32,6 +32,7 @@ this addHeadgear "rhsusf_lwh_helmet_marpatwd";
 
 comment "Add weapons";
 this addWeapon "rhs_weap_m4_carryhandle";
+this addPrimaryWeaponItem "rhsusf_acc_anpeq15_light";
 this addPrimaryWeaponItem "rhsusf_acc_ACOG_USMC";
 this addWeapon "rhsusf_weap_m1911a1";
 
