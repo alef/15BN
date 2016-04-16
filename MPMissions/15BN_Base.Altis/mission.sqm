@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=822;
+		nextID=824;
 	};
 	class MarkerIDProvider
 	{
@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={17404.324,37.989788,13226.228};
-		dir[]={0,-0.70710683,0.70710683};
-		up[]={0,0.70710677,0.70710677};
-		aside[]={0.99999994,0,0};
+		pos[]={17488.68,46.447289,13164.156};
+		dir[]={-0.094071463,-0.51684642,-0.85091859};
+		up[]={-0.056793462,0.85607934,-0.51371878};
+		aside[]={-0.99396545,4.5925844e-007,0.10988677};
 	};
 };
 binarizationWanted=0;
@@ -19093,7 +19093,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="[[[[""rhs_weap_m4_carryhandle"",""FirstAidKit"",""Medikit""],[2,10,2]],[[""rhs_mag_30Rnd_556x45_M855A1_Stanag"",""rhs_mag_m67"",""rhs_mag_m18_green"",""rhs_mag_m18_red"",""rhs_mag_an_m8hc""],[12,4,2,2,4]],[[],[]],[[""B_Parachute""],[4]]],false]";
+							value="[[[[],[]],[[],[]],[[""ACRE_PRC148"",""ACRE_PRC343"",""ACRE_PRC77"",""ACE_fieldDressing"",""ACE_bloodIV_250"",""ALIVE_Tablet"",""ItemMap"",""ACE_MapTools"",""ACE_microDAGR"",""ACE_morphine""],[2,5,2,20,4,2,5,5,2,10]],[[],[]]],false]";
 						};
 					};
 				};
@@ -19554,8 +19554,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={20674.988,35.485142,7160.9258};
-				angles[]={0.0093286335,0,6.2778587};
+				position[]={20674.988,35.485374,7160.9253};
+				angles[]={0.0093200579,0,6.2778621};
 			};
 			side="Empty";
 			class Attributes
@@ -19563,6 +19563,48 @@ class Mission
 			};
 			id=795;
 			type="RHS_UH1Y_UNARMED";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[],[]],[[],[]],[[""ACRE_PRC148"",""ACRE_PRC343"",""ACRE_PRC77""],[2,5,2]],[[""B_Parachute""],[15]]],false]";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ace_fastroping_equipFRIES";
+					expression="[_this] call ace_fastroping_fnc_equipFRIES";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=2;
+			};
 		};
 		class Item96
 		{
