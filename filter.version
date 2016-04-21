@@ -9,6 +9,6 @@ s/minute=.*;/minute=50;/' ;;
 s/year=.*;/year='$(date +%Y)';/g;
 s/month=.*;/month='$(date +%m)';/g;
 s/day=.*;/day='$(date +%d)';/g;
-s/hour=.*;/hour='$(date +%H)';/g;
-s/minute=.*;/minute='$(date +%M)';/' ;;
+s/hour=.*;/hour=12;/g;
+s/minute=.*;/minute=00;/' ;;
 esac
