@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=824;
+		nextID=825;
 	};
 	class MarkerIDProvider
 	{
@@ -202,7 +202,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=103;
+		items=104;
 		class Item0
 		{
 			dataType="Object";
@@ -11513,7 +11513,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=1;
+							value=0;
 						};
 					};
 				};
@@ -19167,7 +19167,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={21091.369,24.242165,7169.2251};
-			angle=0.27345821;
+			angle=0.27345818;
 			class Attributes
 			{
 				name="FIXTAKEOFF";
@@ -21129,6 +21129,78 @@ class Mission
 					};
 				};
 				nAttributes=1;
+			};
+		};
+		class Item103
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={17386.873,14.422406,13185.475};
+				angles[]={0.015998369,0,6.2778587};
+			};
+			id=824;
+			type="ACE_moduleReviveSettings";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ACE_moduleReviveSettings_amountOfReviveLives";
+					expression="_this setVariable ['amountOfReviveLives',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=-1;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ACE_moduleReviveSettings_enableRevive";
+					expression="_this setVariable ['enableRevive',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ACE_moduleReviveSettings_maxReviveTime";
+					expression="_this setVariable ['maxReviveTime',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=120;
+						};
+					};
+				};
+				nAttributes=3;
 			};
 		};
 	};
