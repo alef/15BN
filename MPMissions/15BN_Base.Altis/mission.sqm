@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=1581;
+		nextID=1584;
 	};
 	class MarkerIDProvider
 	{
@@ -16,7 +16,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=64;
+		nextID=66;
 	};
 	class Camera
 	{
@@ -86,7 +86,8 @@ addons[]=
 	"ace_cargo",
 	"A3_Characters_F_BLUFOR",
 	"a3_characters_f",
-	"rhsusf_c_troops"
+	"rhsusf_c_troops",
+	"mcc_sandbox"
 };
 randomSeed=12630307;
 class ScenarioData
@@ -116,24 +117,6 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
-			property="RespawnTemplates";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"ARRAY"
-						};
-					};
-				};
-			};
-		};
-		class Attribute1
-		{
 			property="RespawnButton";
 			expression="true";
 			class Value
@@ -148,6 +131,24 @@ class CustomAttributes
 						};
 					};
 					value=0;
+				};
+			};
+		};
+		class Attribute1
+		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
 				};
 			};
 		};
@@ -201,7 +202,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=104;
+		items=107;
 		class Item0
 		{
 			dataType="Object";
@@ -257,7 +258,6 @@ class Mission
 			};
 			id=83;
 			type="rhsusf_CH53E_USMC";
-			atlOffset=-0.012288094;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -13070,7 +13070,7 @@ class Mission
 					};
 					id=1535;
 					type="rhsusf_usmc_recon_marpat_wd_rifleman_fast";
-					atlOffset=-0.001666069;
+					atlOffset=-0.0016727448;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -15687,7 +15687,7 @@ class Mission
 					};
 					id=1550;
 					type="rhsusf_usmc_recon_marpat_wd_rifleman";
-					atlOffset=0.076898575;
+					atlOffset=0.07691288;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -17864,7 +17864,7 @@ class Mission
 					};
 					id=1562;
 					type="rhsusf_usmc_recon_marpat_wd_rifleman_fast";
-					atlOffset=1.9073486e-006;
+					atlOffset=2.8610229e-006;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -21130,6 +21130,751 @@ class Mission
 			};
 			id=1572;
 			atlOffset=-0.0013380051;
+		};
+		class Item104
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={17304.383,15.99726,13152.916};
+			};
+			id=1581;
+			type="mcc_sandbox_moduleCover";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="mcc_sandbox_moduleCover_survive";
+					expression="_this setVariable ['survive',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="mcc_sandbox_moduleCover_coverUI";
+					expression="_this setVariable ['coverUI',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="mcc_sandbox_moduleCover_actionMenu";
+					expression="_this setVariable ['actionMenu',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="mcc_sandbox_moduleCover_interaction";
+					expression="_this setVariable ['interaction',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="mcc_sandbox_moduleCover_cover";
+					expression="_this setVariable ['cover',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute5
+				{
+					property="mcc_sandbox_moduleCover_coverVault";
+					expression="_this setVariable ['coverVault',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute6
+				{
+					property="mcc_sandbox_moduleCover_switchWeapons";
+					expression="_this setVariable ['switchWeapons',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute7
+				{
+					property="mcc_sandbox_moduleCover_interactionUI";
+					expression="_this setVariable ['interactionUI',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				nAttributes=8;
+			};
+		};
+		class Item105
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={17292.328,15.508533,13162.71};
+			};
+			id=1582;
+			type="mcc_sandbox_moduleMissionSettings";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="mcc_sandbox_moduleMissionSettings_artilleryComputer";
+					expression="_this setVariable ['artilleryComputer',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="mcc_sandbox_moduleMissionSettings_t2t";
+					expression="_this setVariable ['t2t',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="mcc_sandbox_moduleMissionSettings_commanderConsole";
+					expression="_this setVariable ['commanderConsole',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="mcc_sandbox_moduleMissionSettings_squadDialogPip";
+					expression="_this setVariable ['squadDialogPip',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="mcc_sandbox_moduleMissionSettings_allowRTS";
+					expression="_this setVariable ['allowRTS',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute5
+				{
+					property="mcc_sandbox_moduleMissionSettings_deleteBody";
+					expression="_this setVariable ['deleteBody',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute6
+				{
+					property="mcc_sandbox_moduleMissionSettings_sqlPDA";
+					expression="_this setVariable ['sqlPDA',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute7
+				{
+					property="mcc_sandbox_moduleMissionSettings_commanderConsoleShowGPS";
+					expression="_this setVariable ['commanderConsoleShowGPS',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute8
+				{
+					property="mcc_sandbox_moduleMissionSettings_logistics";
+					expression="_this setVariable ['logistics',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute9
+				{
+					property="mcc_sandbox_moduleMissionSettings_groupMarkers";
+					expression="_this setVariable ['groupMarkers',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute10
+				{
+					property="mcc_sandbox_moduleMissionSettings_nameTags";
+					expression="_this setVariable ['nameTags',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute11
+				{
+					property="mcc_sandbox_moduleMissionSettings_messages";
+					expression="_this setVariable ['messages',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute12
+				{
+					property="mcc_sandbox_moduleMissionSettings_sync";
+					expression="_this setVariable ['sync',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute13
+				{
+					property="mcc_sandbox_moduleMissionSettings_allowKitChange";
+					expression="_this setVariable ['allowKitChange',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute14
+				{
+					property="mcc_sandbox_moduleMissionSettings_saveGear";
+					expression="_this setVariable ['saveGear',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute15
+				{
+					property="mcc_sandbox_moduleMissionSettings_roleSelection";
+					expression="_this setVariable ['roleSelection',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute16
+				{
+					property="mcc_sandbox_moduleMissionSettings_timeAccel";
+					expression="_this setVariable ['timeAccel',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute17
+				{
+					property="mcc_sandbox_moduleMissionSettings_respawnMenu";
+					expression="_this setVariable ['respawnMenu',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute18
+				{
+					property="mcc_sandbox_moduleMissionSettings_squadDialog";
+					expression="_this setVariable ['squadDialog',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute19
+				{
+					property="mcc_sandbox_moduleMissionSettings_commanderConsoleAI";
+					expression="_this setVariable ['commanderConsoleAI',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute20
+				{
+					property="mcc_sandbox_moduleMissionSettings_commanderConsoleWP";
+					expression="_this setVariable ['commanderConsoleWP',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=21;
+			};
+		};
+		class Item106
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={17292.58,15.716218,13149.4};
+			};
+			id=1583;
+			type="mcc_sandbox_moduleGAIASettings";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="mcc_sandbox_moduleGAIASettings_aiSkillSpot";
+					expression="_this setVariable ['aiSkillSpot',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="mcc_sandbox_moduleGAIASettings_gaiacontrol";
+					expression="_this setVariable ['gaiacontrol',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="mcc_sandbox_moduleGAIASettings_aiSmoke";
+					expression="_this setVariable ['aiSmoke',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="mcc_sandbox_moduleGAIASettings_aiSkillGen";
+					expression="_this setVariable ['aiSkillGen',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0.5;
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="mcc_sandbox_moduleGAIASettings_aiSkillCommand";
+					expression="_this setVariable ['aiSkillCommand',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute5
+				{
+					property="mcc_sandbox_moduleGAIASettings_cacheDistance";
+					expression="_this setVariable ['cacheDistance',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=3000;
+						};
+					};
+				};
+				class Attribute6
+				{
+					property="mcc_sandbox_moduleGAIASettings_aiSkillAim";
+					expression="_this setVariable ['aiSkillAim',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0.2;
+						};
+					};
+				};
+				class Attribute7
+				{
+					property="mcc_sandbox_moduleGAIASettings_aiSmokeChance";
+					expression="_this setVariable ['aiSmokeChance',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				nAttributes=8;
+			};
 		};
 	};
 	class Connections
