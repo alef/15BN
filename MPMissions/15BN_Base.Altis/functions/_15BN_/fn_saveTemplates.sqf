@@ -29,11 +29,8 @@ private ["_u","_i","_cname","_fromConfig"];
 _fromConfig = param [0, false, [true]];
 
 // loop over the configured inventories
-_u = "Underwear_F" createVehicleLocal [8460, 25080];
 {
-	removeAllWeapons _u; removeAllItems _u; removeAllAssignedItems _u; 
-	removeUniform _u; removeVest _u; removeBackpack _u; 
-	removeHeadgear _u; removeGoggles _u;
+	_u = "Underwear_F" createVehicleLocal [8460, 25080];
 	_cname = configName _x ;
 	_name = "[=15BN=] "+_cname;
 	if (_fromConfig) then {
@@ -45,14 +42,13 @@ _u = "Underwear_F" createVehicleLocal [8460, 25080];
 		[] call _code;
 		this = nil;
 	};
-	[_u, [profilenamespace, _name]] call BIS_fnc_deleteInventory; // delete player's Arsenal slot
 	[_u, [profilenamespace, _name]] call BIS_fnc_saveInventory; // save into player's Arsenal slot
+	deleteVehicle _u;
 } forEach ([(missionConfigFile >> "CfgRespawnInventory"), 0, true] call BIS_fnc_returnChildren);
 
 // removes templates from old versions
-[_u, [profilenamespace, "[=15BN=] Lanciagranate"], [], true] call BIS_fnc_saveInventory;
+[player, [profilenamespace, "[=15BN=] Lanciagranate"], [], true] call BIS_fnc_saveInventory;
 
 saveProfileNamespace;
 
-deleteVehicle _u;
 LOG("End");
