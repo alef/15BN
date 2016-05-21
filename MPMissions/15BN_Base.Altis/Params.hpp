@@ -26,3 +26,10 @@ class ALiVE_CIV
 	texts[] = {"Spento", "Attivo"};
 	default = 1;
 };
+class ALiVE_Data
+{
+	title = "Persistenza";
+	values[] = {0, 1};
+	texts[] = {"Spenta", "Attiva"};
+	default = 1;
+};

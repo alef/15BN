@@ -13,17 +13,13 @@ class ALEF {
 	{
 		description = "Custom unit blacklists";
 	};
-	class ALiVE_pause
-	{
-		description = "Pause ALiVE modules";
-	};
-	class ALiVE_unpause
-	{
-		description = "Unpause ALiVE modules";
-	};
 	class ALiVE_save
 	{
 		description = "Save ALiVE modules";
+	};
+	class ALiVE_checkPlayers
+	{
+		description = "Checks if some players crossed north red line";
 	};
       	class preInit
       	{
