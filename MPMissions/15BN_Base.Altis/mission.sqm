@@ -5,10 +5,10 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=1;
+	toggles=129;
 	class ItemIDProvider
 	{
-		nextID=1585;
+		nextID=1587;
 	};
 	class MarkerIDProvider
 	{
@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={15423.292,43.612015,17009.711};
-		dir[]={-0.75149149,-0.25532761,0.60833585};
-		up[]={-0.19845425,0.96685529,0.16064955};
-		aside[]={0.62919086,6.9849193e-009,0.77725387};
+		pos[]={17489.799,39.548393,13096.998};
+		dir[]={0,-0.70710677,0.70710683};
+		up[]={0,0.70710677,0.70710671};
+		aside[]={0.99999994,0,-0};
 	};
 };
 binarizationWanted=0;
@@ -87,7 +87,8 @@ addons[]=
 	"A3_Characters_F_BLUFOR",
 	"a3_characters_f",
 	"rhsusf_c_troops",
-	"mcc_sandbox"
+	"mcc_sandbox",
+	"ace_fastroping"
 };
 randomSeed=12630307;
 class ScenarioData
@@ -202,7 +203,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=108;
+		items=109;
 		class Item0
 		{
 			dataType="Object";
@@ -3725,7 +3726,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="1000";
+									value="0";
 								};
 							};
 						};
@@ -4141,7 +4142,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="1000";
+									value="0";
 								};
 							};
 						};
@@ -22043,16 +22044,27 @@ class Mission
 				nAttributes=10;
 			};
 		};
+		class Item108
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={17504.547,14.356848,13131.896};
+			};
+			id=1585;
+			type="ACE_moduleEquipFRIES";
+			atlOffset=9.5367432e-007;
+		};
 	};
 	class Connections
 	{
 		class LinkIDProvider
 		{
-			nextID=16;
+			nextID=17;
 		};
 		class Links
 		{
-			items=16;
+			items=17;
 			class Item0
 			{
 				linkID=0;
@@ -22208,6 +22220,16 @@ class Mission
 				linkID=15;
 				item0=1584;
 				item1=545;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item16
+			{
+				linkID=16;
+				item0=1585;
+				item1=733;
 				class CustomData
 				{
 					type="Sync";
