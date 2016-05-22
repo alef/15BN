@@ -6,7 +6,7 @@
 LOG("Begin");
 if (isMultiplayer) then {
 	0=0 spawn { while {true} do {
-		sleep 10 ;
+		sleep 120 ;
 		call ALEF_fnc_ALiVE_checkPlayers; 
 		call ALEF_fnc_medicsAvailable;
 		};
@@ -15,7 +15,6 @@ if (isMultiplayer) then {
 
 waitUntil {!isNil "ALiVE_STATIC_DATA_LOADED"};
 serverChat globalChat "ALiVE Static Data Loaded";
-
 diag_log "ALiVE Static Data Loaded";
 
 LOG("End");
