@@ -17,4 +17,4 @@ class CfgRespawnInventory {
 };
 
 briefing = 0;
-onLoadName = "15BN_Base_005.Altis";
+onLoadName = "15BN_Base_006.Altis";

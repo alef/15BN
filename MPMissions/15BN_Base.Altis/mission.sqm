@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=66;
+		nextID=72;
 	};
 	class Camera
 	{
-		pos[]={17464.363,35.706177,13092.15};
-		dir[]={0.1284811,-0.56499445,0.81507307};
-		up[]={0.087976202,0.82508856,0.55811691};
-		aside[]={0.98783696,4.642643e-007,-0.15571399};
+		pos[]={17421.1,39.639999,13114.998};
+		dir[]={0,-0.70710683,0.70710683};
+		up[]={0,0.70710677,0.70710677};
+		aside[]={0.99999994,0,-0};
 	};
 };
 binarizationWanted=0;
@@ -117,6 +117,24 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
+				};
+			};
+		};
+		class Attribute1
+		{
 			property="RespawnButton";
 			expression="true";
 			class Value
@@ -131,24 +149,6 @@ class CustomAttributes
 						};
 					};
 					value=0;
-				};
-			};
-		};
-		class Attribute1
-		{
-			property="RespawnTemplates";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"ARRAY"
-						};
-					};
 				};
 			};
 		};
@@ -252,12 +252,12 @@ class Mission
 				angles[]={0.015998369,0.76307327,0.0053265258};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 			};
 			id=83;
 			type="rhsusf_CH53E_USMC";
+			atlOffset=2.0002813;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -314,7 +314,7 @@ class Mission
 			};
 			id=122;
 			type="RHS_A10";
-			atlOffset=-0.0046272278;
+			atlOffset=0.1022644;
 		};
 		class Item4
 		{
@@ -9101,7 +9101,7 @@ class Mission
 			};
 			id=628;
 			type="RHS_Ural_MSV_01";
-			atlOffset=-4.196167e-005;
+			atlOffset=0.0035200119;
 		};
 		class Item60
 		{
@@ -9118,7 +9118,7 @@ class Mission
 			};
 			id=629;
 			type="RHS_Ural_MSV_01";
-			atlOffset=-9.5367432e-006;
+			atlOffset=0.0035514832;
 		};
 		class Item61
 		{
@@ -9152,7 +9152,7 @@ class Mission
 			};
 			id=677;
 			type="rhs_t90a_tv";
-			atlOffset=-9.1552734e-005;
+			atlOffset=-0.016736031;
 		};
 		class Item63
 		{
@@ -9585,26 +9585,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute1
-				{
-					property="ace_fastroping_equipFRIES";
-					expression="[_this] call ace_fastroping_fnc_equipFRIES";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=1;
-						};
-					};
-				};
-				nAttributes=2;
+				nAttributes=1;
 			};
 		};
 		class Item77
@@ -10084,26 +10065,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute1
-				{
-					property="ace_fastroping_equipFRIES";
-					expression="[_this] call ace_fastroping_fnc_equipFRIES";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=2;
+				nAttributes=1;
 			};
 		};
 		class Item90
@@ -21136,10 +21098,11 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={17304.383,15.99726,13152.916};
+				position[]={17304.383,15.997487,13152.916};
 			};
 			id=1581;
 			type="mcc_sandbox_moduleCover";
+			atlOffset=0.00022697449;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -21361,7 +21324,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=0;
+							value=1;
 						};
 					};
 				};
@@ -21437,7 +21400,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=0;
+							value=1;
 						};
 					};
 				};
@@ -21665,7 +21628,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=0;
+							value=1;
 						};
 					};
 				};
@@ -21684,7 +21647,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=0;
+							value=1;
 						};
 					};
 				};
@@ -21703,7 +21666,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=0;
+							value=1;
 						};
 					};
 				};
@@ -21774,7 +21737,7 @@ class Mission
 									"BOOL"
 								};
 							};
-							value=0;
+							value=1;
 						};
 					};
 				};
