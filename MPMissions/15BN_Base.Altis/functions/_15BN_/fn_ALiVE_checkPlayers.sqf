@@ -23,7 +23,7 @@
 LOG("Begin");
 private ["_y","_u","_pause"];
 _pause=true;
-scopeName "allPlayers";
+scopeName "ALEF_allPlayers";
 {
 	_u = _x ; // avoid confusion with the coordinate
 	LOG("");
@@ -39,7 +39,7 @@ scopeName "allPlayers";
 					LOG("");
 					_pause=false;
 					LOG("");
-					breakTo "allPlayers";
+					breakTo "ALEF_allPlayers";
 				};
 			};
 		};
@@ -47,14 +47,14 @@ scopeName "allPlayers";
 } foreach (allPlayers - entities "HeadlessClient_F");
 LOG("");
 //["ALIVE_SYS_PROFILE","ALIVE_MIL_OPCOM","ALIVE_MIL_LOGISTICS"] call ALiVE_fnc_pauseModule;
-scopeName "OPCOM_instances";
+scopeName "ALEF_OPCOM_instances";
 {
 	LOG("");
 	if ("rhs_faction_msv" in ([_x, "factions"] call ALiVE_fnc_hashGet)) then {
 		[_x, "pause", _pause] call ALiVE_fnc_OPCOM;
 		if (_pause) then { LOG("ALiVE paused"); }
 			else { LOG("ALiVE unpaused"); };
-		breakTo "OPCOM_instances";
+		breakTo "ALEF_OPCOM_instances";
 	};
 } foreach OPCOM_instances;
 LOG("End");
