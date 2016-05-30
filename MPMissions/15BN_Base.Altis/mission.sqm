@@ -360,7 +360,7 @@ class ScenarioData
 	saving=0;
 	respawnDialog=0;
 	disabledAI=1;
-	respawn=3;
+	respawn=1;
 	class Header
 	{
 		gameType="Coop";
@@ -406,10 +406,47 @@ class CustomAttributes
 							"ARRAY"
 						};
 					};
+					class value
+					{
+						items=1;
+						class Item0
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="Spectator";
+							};
+						};
+					};
 				};
 			};
 		};
-		nAttributes=2;
+		class Attribute2
+		{
+			property="SharedObjectives";
+			expression="if (isMultiplayer) then {[_value] spawn bis_fnc_sharedObjectives;};";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=0;
+				};
+			};
+		};
+		nAttributes=3;
 	};
 	class Category1
 	{
@@ -441,7 +478,6 @@ class Mission
 	class Intel
 	{
 		briefingName="Base";
-		overviewText="15BN parte da Pyrgos per ripulire il settore nord-est di Altis.";
 		timeOfChanges=1800.0002;
 		startWeather=0;
 		startWind=0.1;
@@ -459,7 +495,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=87;
+		items=85;
 		class Item0
 		{
 			dataType="Object";
@@ -4188,26 +4224,6 @@ class Mission
 		};
 		class Item67
 		{
-			dataType="Marker";
-			position[]={17402.713,13.145478,13242.711};
-			name="respawn_west";
-			type="respawn_inf";
-			colorName="ColorWEST";
-			alpha=0;
-			id=776;
-		};
-		class Item68
-		{
-			dataType="Marker";
-			position[]={17179.393,12.585464,13306.513};
-			name="respawn_east";
-			type="respawn_inf";
-			colorName="ColorEAST";
-			alpha=0;
-			id=777;
-		};
-		class Item69
-		{
 			dataType="Object";
 			class PositionInfo
 			{
@@ -4245,7 +4261,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item70
+		class Item68
 		{
 			dataType="Object";
 			class PositionInfo
@@ -4284,7 +4300,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item71
+		class Item69
 		{
 			dataType="Object";
 			class PositionInfo
@@ -4301,7 +4317,7 @@ class Mission
 			type="Land_HelipadCircle_F";
 			atlOffset=3.8146973e-005;
 		};
-		class Item72
+		class Item70
 		{
 			dataType="Object";
 			class PositionInfo
@@ -4317,7 +4333,7 @@ class Mission
 			id=803;
 			type="Land_BarGate_F";
 		};
-		class Item73
+		class Item71
 		{
 			dataType="Object";
 			class PositionInfo
@@ -4333,7 +4349,7 @@ class Mission
 			id=813;
 			type="Land_Razorwire_F";
 		};
-		class Item74
+		class Item72
 		{
 			dataType="Object";
 			class PositionInfo
@@ -4349,7 +4365,7 @@ class Mission
 			id=814;
 			type="Land_Razorwire_F";
 		};
-		class Item75
+		class Item73
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -4383,7 +4399,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item76
+		class Item74
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -4455,7 +4471,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item77
+		class Item75
 		{
 			dataType="Group";
 			side="West";
@@ -6048,7 +6064,7 @@ class Mission
 			id=1527;
 			atlOffset=-0.0016679764;
 		};
-		class Item78
+		class Item76
 		{
 			dataType="Group";
 			side="West";
@@ -7641,7 +7657,7 @@ class Mission
 			id=1536;
 			atlOffset=0.083360672;
 		};
-		class Item79
+		class Item77
 		{
 			dataType="Group";
 			side="West";
@@ -9234,7 +9250,7 @@ class Mission
 			id=1545;
 			atlOffset=-0.00867939;
 		};
-		class Item80
+		class Item78
 		{
 			dataType="Group";
 			side="West";
@@ -10827,7 +10843,7 @@ class Mission
 			id=1554;
 			atlOffset=-0.00033283234;
 		};
-		class Item81
+		class Item79
 		{
 			dataType="Group";
 			side="West";
@@ -12420,7 +12436,7 @@ class Mission
 			id=1563;
 			atlOffset=-0.0020046234;
 		};
-		class Item82
+		class Item80
 		{
 			dataType="Group";
 			side="West";
@@ -14013,7 +14029,7 @@ class Mission
 			id=1572;
 			atlOffset=-0.0013380051;
 		};
-		class Item83
+		class Item81
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -14180,7 +14196,7 @@ class Mission
 				nAttributes=8;
 			};
 		};
-		class Item84
+		class Item82
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -14593,7 +14609,7 @@ class Mission
 				nAttributes=21;
 			};
 		};
-		class Item85
+		class Item83
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -14759,7 +14775,7 @@ class Mission
 				nAttributes=8;
 			};
 		};
-		class Item86
+		class Item84
 		{
 			dataType="Logic";
 			class PositionInfo
