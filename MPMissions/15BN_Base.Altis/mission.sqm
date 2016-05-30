@@ -4078,7 +4078,7 @@ class Mission
 			};
 			id=733;
 			type="RHS_UH1Y_UNARMED";
-			atlOffset=-0.001999855;
+			atlOffset=-0.0020008087;
 			class CustomAttributes
 			{
 				class Attribute0
