@@ -1,6 +1,7 @@
 /*
 	Description:
 		Clicks the "CONTINUE" button in an MP game
+		Adapted from http://killzonekid.com/arma-scripting-tutorials-how-to-skip-briefing-screen-in-mp/
 
 	Parameter(s):
 		Nothing
@@ -19,7 +20,6 @@
 #include "\x\cba\addons\main\script_macros_common.hpp"
 
 LOG("Begin");
-// Adapted from http://killzonekid.com/arma-scripting-tutorials-how-to-skip-briefing-screen-in-mp/
 if (hasInterface) then {
     if (!isNumber (missionConfigFile >> "briefing")) exitWith {};
     if (getNumber (missionConfigFile >> "briefing") == 1) exitWith {};

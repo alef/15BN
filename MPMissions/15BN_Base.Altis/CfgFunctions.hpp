@@ -19,10 +19,6 @@ class ALEF {
 		description = "Clicks on CONTINUE";
 		preInit = 1;
 	};
-	class spawnLoadout
-	{
-		description = "Load a gear based on unit class";
-	};
 	class enterSafeZone
 	{
 		description = "Delete projectiles and add Arsenal";
@@ -31,5 +27,8 @@ class ALEF {
 	{
 		description = "Cancel Arsenal and restore projectiles";
 	};
+	class hcSetGroup
+	{
+		description = "Units can be added to High Command";
 	};
 };

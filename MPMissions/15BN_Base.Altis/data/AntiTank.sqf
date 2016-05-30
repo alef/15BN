@@ -30,6 +30,7 @@ for "_i" from 1 to 2 do {this addItemToBackpack "B_IR_Grenade";};
 
 comment "Add weapons";
 this addWeapon "rhs_weap_m4_carryhandle";
+this addPrimaryWeaponItem "rhsusf_acc_anpeq15_light";
 this addPrimaryWeaponItem "rhsusf_acc_ACOG_USMC";
 this addWeapon "rhs_weap_fgm148";
 this addWeapon "rhsusf_weap_m1911a1";

@@ -40,8 +40,8 @@ this addHeadgear "rhsusf_lwh_helmet_marpatwd";
 
 comment "Add weapons";
 this addWeapon "rhs_weap_m4_carryhandle";
+this addPrimaryWeaponItem "rhsusf_acc_anpeq15_light";
 this addPrimaryWeaponItem "rhsusf_acc_nt4_black";
-this addPrimaryWeaponItem "rhsusf_acc_anpeq15";
 this addPrimaryWeaponItem "rhsusf_acc_ACOG_USMC";
 this addPrimaryWeaponItem "rhsusf_acc_harris_bipod";
 this addWeapon "rhsusf_weap_m1911a1";

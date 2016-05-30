@@ -20,16 +20,16 @@ if (hasInterface) then { player createDiaryRecord ["Log", ["Sistema medico",
 	(if (ACE_Medical_enableOverdosing) then {"Si può andare in overdose di morfina"} else {"Non ci sarà overdose di morfina"}) + "<br/>" +
 	(if (ACE_Medical_enableScreams) then {"Ci saranno urla"} else {"Non ci saranno urla"} )
 	]];
+	ace_maptools_mapGpsShow = false;
 };
 if ( (1 == ["Loadout",1] call BIS_fnc_getParamValue) && (east != side player) ) then { player call ALEF_fnc_spawnLoadout; };
 
-safeZone_trg = createTrigger ["EmptyDetector", [17430.176,13161.32], false]; // Pygros base. 'false' means local
-safeZone_trg setTriggerArea [108, 78, 47, true]; // rectangle
+safeZone_trg = createTrigger ["EmptyDetector", [17430,13161], false]; // Pygros base. 'false' means local
+safeZone_trg setTriggerArea [90, 60, 47, true]; // rectangle
 safeZone_trg setTriggerActivation ["WEST", "PRESENT", true];
 safeZone_trg triggerAttachVehicle [player];
 safeZone_trg setTriggerStatements ["this", "call ALEF_fnc_enterSafeZone", "call ALEF_fnc_leaveSafeZone"];
 hcRemoveAllGroups player;
 endLoadingScreen;
 [["_15BN_","Istruzioni"],35,"",35,"",true,false,false,true] call BIS_fnc_advHint;
-
 LOG("End");
