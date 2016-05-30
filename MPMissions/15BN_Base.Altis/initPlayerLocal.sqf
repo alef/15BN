@@ -9,8 +9,6 @@ private ["_p", "_didJIP"];
 _p = param [0, objNull];
 _didJIP = param [1, false];
 
-// waitUntil {(player getVariable ["alive_sys_player_playerloaded", false])};
-
 [] call ALEF_fnc_saveTemplates; 
 
 if (hasInterface) then { player createDiaryRecord ["Log", ["Sistema medico", 

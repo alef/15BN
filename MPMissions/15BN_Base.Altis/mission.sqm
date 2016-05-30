@@ -352,8 +352,6 @@ randomSeed=12630307;
 class ScenarioData
 {
 	author="alef";
-	overviewText="OPFOR sta conquistando la zona centro orientale dell'isola e bisogna fermarlo ed occupare il territorio.";
-	onLoadMission="ALiVE";
 	briefing=0;
 	debriefing=0;
 	showCompass=0;
@@ -4080,7 +4078,7 @@ class Mission
 			};
 			id=733;
 			type="RHS_UH1Y_UNARMED";
-			atlOffset=-0.0020008087;
+			atlOffset=-0.001999855;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -4098,7 +4096,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="[[[[],[]],[[],[]],[[""ACRE_PRC148"",""ACRE_PRC343"",""ACRE_PRC77"",""ACE_fieldDressing"",""ACE_bloodIV_250"",""ALIVE_Tablet"",""ItemMap"",""ACE_MapTools"",""ACE_microDAGR"",""ACE_morphine""],[2,5,2,20,4,2,5,5,2,10]],[[],[]]],false]";
+							value="[[[[],[]],[[],[]],[[""ACRE_PRC148"",""ACRE_PRC343"",""ACRE_PRC77"",""ACE_fieldDressing"",""ACE_bloodIV_250"",""ItemMap"",""ACE_MapTools"",""ACE_microDAGR"",""ACE_morphine""],[2,5,2,20,4,5,5,2,10]],[[],[]]],false]";
 						};
 					};
 				};

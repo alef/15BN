@@ -102,19 +102,6 @@ Salvo tasti personalizzati, questi sono quelli più usati per le radio:<br/>\
 Per prima o seconda si intende l'ordine in cui sono state caricate nell'inventario personale.\
 ";
 };
-class IstruzioniALiVE
-{
-	displayName = "Istruzioni ALiVE";
-	noImage = false;
-	image = "img\15logo_BW.paa";
-	description = "\
-Premi <t color='#c48214'>[Menu]</t> per aprire il menu sullo schermo,<t color='#c48214'>[ESC]</t> per chiuderlo.<br/>\
-Ulteriori informazioni sono disponibli sul Forum, vedi la prossima sezione.<br/>\
-";
-	tip = "\
-Alcune voci sono abilitate solo se si è amministratore.\
-";
-};
 class Forum
 {
 	displayName = "Forum";
@@ -126,7 +113,6 @@ Clicca per aprire il thread dal tuo browser Internet.<br/>\
 %2 <a underline='true' href='http://www.15bandenere.com/forum/index.php?threads/determinare-la-distanza-di-un-bersaglio.5/'>Distanza bersaglio</a><br/>\
 %2 <a underline='true' href='http://www.15bandenere.com/forum/index.php?threads/installazione-ed-utilizzo-di-acre-advanced-combat-radio-enviroment.4/'>ACRE</a><br/>\
 %2 <a underline='true' href='http://www.15bandenere.com/forum/index.php?threads/base-per-altis-stratis-e-bornholm.408/'>Questa missione</a><br/>\
-%2 <a underline='true' href='http://www.15bandenere.com/forum/index.php?threads/campagne-alive-in-lavorazione.696/#post-14304'>Istruzioni ALiVE</a><br/>\
 ";
 	tip = "\
 Premi <t color='#c48214'>[Alt+Tab]</t> per tornare al gioco.<br/>\
