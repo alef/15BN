@@ -27,6 +27,9 @@ safeZone_trg setTriggerArea [90, 60, 47, true]; // rectangle
 safeZone_trg setTriggerActivation ["WEST", "PRESENT", true];
 safeZone_trg triggerAttachVehicle [player];
 safeZone_trg setTriggerStatements ["this", "call ALEF_fnc_enterSafeZone", "call ALEF_fnc_leaveSafeZone"];
+
+[] spawn ALEF_fnc_MCC_init;
+
 hcRemoveAllGroups player;
 endLoadingScreen;
 [["_15BN_","Istruzioni"],35,"",35,"",true,false,false,true] call BIS_fnc_advHint;
