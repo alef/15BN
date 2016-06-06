@@ -34,3 +34,7 @@ class Ricognitore
 {
 	displayName = "Ricognitore";
 };
+class Esplosivi
+{
+	displayName = "Esplosivi";
+};
