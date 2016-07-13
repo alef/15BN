@@ -108,19 +108,23 @@ class AddonsMetaData
 		class Item3
 		{
 			className="ace_compat_rhs_usf3";
-			name="ace_compat_rhs_usf3";
+			name="ACE3 - RHS USF Compatibility";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
 		};
 		class Item4
 		{
 			className="A3_Structures_F";
-			name="Arma 3 Alpha - Buildings and structures";
+			name="Arma 3 - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
 		class Item5
 		{
 			className="ace_sitting";
-			name="ace_sitting";
+			name="ACE3 - Sitting";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
 		};
 		class Item6
 		{
@@ -139,57 +143,77 @@ class AddonsMetaData
 		class Item8
 		{
 			className="ace_map";
-			name="ace_map";
+			name="ACE3 - Map";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
 		};
 		class Item9
 		{
 			className="ace_advanced_ballistics";
-			name="ace_advanced_ballistics";
+			name="ACE3 - Advanced Ballistics";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
 		};
 		class Item10
 		{
 			className="ace_captives";
-			name="ace_captives";
+			name="ACE3 - Captives";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
 		};
 		class Item11
 		{
 			className="ace_hearing";
-			name="ace_hearing";
+			name="ACE3 - Hearing";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
 		};
 		class Item12
 		{
 			className="ace_map_gestures";
-			name="ace_map_gestures";
+			name="ACE3 - Map Gestures";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
 		};
 		class Item13
 		{
 			className="ace_finger";
-			name="ace_finger";
+			name="ACE3 - Finger";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
 		};
 		class Item14
 		{
 			className="ace_spectator";
-			name="ace_spectator";
+			name="ACE3 - Spectator";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
 		};
 		class Item15
 		{
 			className="ace_viewdistance";
-			name="ace_viewdistance";
+			name="ACE3 - View Distance";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
 		};
 		class Item16
 		{
 			className="ace_winddeflection";
-			name="ace_winddeflection";
+			name="ACE3 - Wind Deflection";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
 		};
 		class Item17
 		{
 			className="ace_medical";
-			name="ace_medical";
+			name="ACE3 - Medical";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
 		};
 		class Item18
 		{
 			className="A3_Modules_F_Curator";
-			name="Arma 3 Zeus Update - Scripted features";
+			name="Arma 3 Zeus Update - Scripted Modules";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
@@ -211,6 +235,7 @@ class AddonsMetaData
 		{
 			className="asr_ai3_main";
 			name="asr_ai3_main";
+			author="Robalo";
 		};
 		class Item22
 		{
@@ -237,7 +262,9 @@ class AddonsMetaData
 		class Item26
 		{
 			className="ace_optics";
-			name="ace_optics";
+			name="ACE3 - Optics";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
 		};
 		class Item27
 		{
@@ -252,17 +279,23 @@ class AddonsMetaData
 		class Item29
 		{
 			className="ace_attach";
-			name="ace_attach";
+			name="ACE3 - Attach";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
 		};
 		class Item30
 		{
 			className="ace_maptools";
-			name="ace_maptools";
+			name="ACE3 - Map Tools";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
 		};
 		class Item31
 		{
 			className="ace_flashlights";
-			name="ace_flashlights";
+			name="ACE3 - Flashlights";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
 		};
 		class Item32
 		{
@@ -324,17 +357,23 @@ class AddonsMetaData
 		class Item43
 		{
 			className="ace_logistics_wirecutter";
-			name="ace_logistics_wirecutter";
+			name="ACE3 - Logistics Wire Cutter";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
 		};
 		class Item44
 		{
 			className="ace_concertina_wire";
-			name="ace_concertina_wire";
+			name="ACE3 - Concertina Wire";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
 		};
 		class Item45
 		{
 			className="ace_cargo";
-			name="ace_cargo";
+			name="ACE3 - Cargo";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
 		};
 		class Item46
 		{
@@ -344,7 +383,9 @@ class AddonsMetaData
 		class Item47
 		{
 			className="ace_fastroping";
-			name="ace_fastroping";
+			name="ACE3 - Fastroping";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
 		};
 	};
 };
