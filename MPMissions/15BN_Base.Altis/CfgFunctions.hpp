@@ -31,9 +31,5 @@ class ALEF {
 	{
 		description = "Cancel Arsenal and restore projectiles";
 	};
-	class hcSetGroup
-	{
-		description = "Units can be added to High Command";
-	};
 };
 };
