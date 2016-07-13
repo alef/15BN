@@ -6,9 +6,9 @@ class Istruzioni
 	image = "img\15logo_BW.paa";
 	description = "\
 Benvenuto %11.<br/>\
-Premi <t color='#c48214'>[ESC]</t> e scegli <t color='#c48214'>MANUALE OPERATIVO</t>\
+Premi %3[ESC]%4 e scegli %3MANUALE OPERATIVO%4\
  per leggere queste ed ulteriori istruzioni.<br/>\
-L'<t color='#cc0000'>Arsenale Virtuale</t> è disponibile nella base.<br/>\
+L'%3Arsenale Virtuale%4 è disponibile nella base.<br/>\
 Presso ogni cassa sono disponibili :<br/>\
 %2 Radio di ogni tipo<br/>\
 %2 Munizioni\
@@ -49,10 +49,10 @@ class Equipaggiamenti
 	image = "img\15logo_BW.paa";
 	description = "\
 Carica un equipaggiamento predefinito dall'Arsenale Virtuale.<br/>\
-%2 Con la rotellina del mouse seleziona <t color='#cc0000'>Arsenale Virtuale</t><br/>\
-%2 Clicca <t color='#c48214'>CARICA</t><br/>\
+%2 Con la rotellina del mouse seleziona %3Arsenale Virtuale%4<br/>\
+%2 Clicca %3CARICA%4<br/>\
 %2 Seleziona un equipaggiamento marcato %3[=15BN=]%4<br/>\
-%2 Clicca <t color='#c48214'>CARICA</t><br/>\
+%2 Clicca %3CARICA%4<br/>\
 ";
 	tip = "\
 Puoi anche salvare, ma la prossima volta verrà sovrascritto.<br/>\
@@ -89,14 +89,14 @@ class IstruzioniRadio
 	noImage = false;
 	image = "img\15logo_BW.paa";
 	description = "\
-Premi <t color='#c48214'>[Ctrl+Alt+Caps Lock]</t> per aprire la radio sullo schermo,<t color='#c48214'>[ESC]</t> per chiuderla.<br/>\
+Premi %3[Ctrl+Alt+Caps Lock]%4 per aprire la radio sullo schermo,%3[ESC]%4 per chiuderla.<br/>\
 In alternativa, apri l'inventario e fai doppio clic sulla radio.<br/>\
 Puoi girare le manopole cliccandoci col tasto destro o sinistro.<br/>\
 Salvo tasti personalizzati, questi sono quelli più usati per le radio:<br/>\
-%2 <t color='#c48214'>[Shift+Caps Lock]</t> trasmetti dalla prima<br/>\
-%2 <t color='#c48214'>[Ctrl+Caps Lock]</t> trasmetti dalla seconda<br/>\
-%2 <t color='#c48214'>[Alt+Shift+Caps Lock]</t> seleziona un'altra radio<br/>\
-%2 <t color='#c48214'>[Caps Lock]</t> trasmetti dall'ultima selezionata<br/>\
+%2 %3[Shift+Caps Lock]%4 trasmetti dalla prima<br/>\
+%2 %3[Ctrl+Caps Lock]%4 trasmetti dalla seconda<br/>\
+%2 %3[Alt+Shift+Caps Lock]%4 seleziona un'altra radio<br/>\
+%2 %3[Caps Lock]%4 trasmetti dall'ultima selezionata<br/>\
 ";
 	tip = "\
 Per prima o seconda si intende l'ordine in cui sono state caricate nell'inventario personale.\
@@ -115,7 +115,7 @@ Clicca per aprire il thread dal tuo browser Internet.<br/>\
 %2 <a underline='true' href='http://www.15bandenere.com/forum/index.php?threads/base-per-altis-stratis-e-bornholm.408/'>Questa missione</a><br/>\
 ";
 	tip = "\
-Premi <t color='#c48214'>[Alt+Tab]</t> per tornare al gioco.<br/>\
+Premi %3[Alt+Tab]%4 per tornare al gioco.<br/>\
 ";
 };
 };
