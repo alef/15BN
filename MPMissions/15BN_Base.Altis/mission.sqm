@@ -71,7 +71,6 @@ addons[]=
 	"rhs_c_a2port_armor",
 	"rhsusf_vehicles",
 	"rhsusf_c_rg33",
-	"A3_Modules_F_Hc",
 	"A3_Structures_F_Mil_Helipads",
 	"A3_Soft_F_Quadbike_01",
 	"rhsusf_c_statics",
@@ -536,7 +535,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=85;
+		items=84;
 		class Item0
 		{
 			dataType="Object";
@@ -5068,17 +5067,6 @@ class Mission
 		};
 		class Item59
 		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={17412.193,13.571824,13202.118};
-				angles[]={0.022662206,0,6.2618566};
-			};
-			id=724;
-			type="HighCommand";
-		};
-		class Item60
-		{
 			dataType="Object";
 			class PositionInfo
 			{
@@ -5093,7 +5081,7 @@ class Mission
 			id=728;
 			type="Land_HelipadSquare_F";
 		};
-		class Item61
+		class Item60
 		{
 			dataType="Object";
 			class PositionInfo
@@ -5133,7 +5121,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item62
+		class Item61
 		{
 			dataType="Object";
 			class PositionInfo
@@ -5150,7 +5138,7 @@ class Mission
 			type="B_G_Quadbike_01_F";
 			atlOffset=9.5367432e-007;
 		};
-		class Item63
+		class Item62
 		{
 			dataType="Object";
 			class PositionInfo
@@ -5167,7 +5155,7 @@ class Mission
 			type="B_G_Quadbike_01_F";
 			atlOffset=2.0980835e-005;
 		};
-		class Item64
+		class Item63
 		{
 			dataType="Object";
 			class PositionInfo
@@ -5184,7 +5172,7 @@ class Mission
 			type="B_G_Quadbike_01_F";
 			atlOffset=9.5367432e-007;
 		};
-		class Item65
+		class Item64
 		{
 			dataType="Object";
 			class PositionInfo
@@ -5200,7 +5188,7 @@ class Mission
 			type="RHS_M2StaticMG_D";
 			atlOffset=2.4243889;
 		};
-		class Item66
+		class Item65
 		{
 			dataType="Object";
 			class PositionInfo
@@ -5216,7 +5204,7 @@ class Mission
 			id=755;
 			type="RHS_M2StaticMG_WD";
 		};
-		class Item67
+		class Item66
 		{
 			dataType="Object";
 			class PositionInfo
@@ -5255,7 +5243,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item68
+		class Item67
 		{
 			dataType="Object";
 			class PositionInfo
@@ -5294,7 +5282,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item69
+		class Item68
 		{
 			dataType="Object";
 			class PositionInfo
@@ -5311,7 +5299,7 @@ class Mission
 			type="Land_HelipadCircle_F";
 			atlOffset=3.8146973e-005;
 		};
-		class Item70
+		class Item69
 		{
 			dataType="Object";
 			class PositionInfo
@@ -5327,7 +5315,7 @@ class Mission
 			id=803;
 			type="Land_BarGate_F";
 		};
-		class Item71
+		class Item70
 		{
 			dataType="Object";
 			class PositionInfo
@@ -5343,7 +5331,7 @@ class Mission
 			id=813;
 			type="Land_Razorwire_F";
 		};
-		class Item72
+		class Item71
 		{
 			dataType="Object";
 			class PositionInfo
@@ -5359,7 +5347,7 @@ class Mission
 			id=814;
 			type="Land_Razorwire_F";
 		};
-		class Item73
+		class Item72
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -5393,7 +5381,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item74
+		class Item73
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -5465,7 +5453,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item75
+		class Item74
 		{
 			dataType="Group";
 			side="East";
@@ -6105,7 +6093,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item76
+		class Item75
 		{
 			dataType="Group";
 			side="West";
@@ -7698,7 +7686,7 @@ class Mission
 			id=1536;
 			atlOffset=0.083360672;
 		};
-		class Item77
+		class Item76
 		{
 			dataType="Group";
 			side="West";
@@ -9291,7 +9279,7 @@ class Mission
 			id=1545;
 			atlOffset=-0.00867939;
 		};
-		class Item78
+		class Item77
 		{
 			dataType="Group";
 			side="West";
@@ -10884,7 +10872,7 @@ class Mission
 			id=1554;
 			atlOffset=-0.00033283234;
 		};
-		class Item79
+		class Item78
 		{
 			dataType="Group";
 			side="West";
@@ -12477,7 +12465,7 @@ class Mission
 			id=1563;
 			atlOffset=-0.0020046234;
 		};
-		class Item80
+		class Item79
 		{
 			dataType="Group";
 			side="West";
@@ -14070,7 +14058,7 @@ class Mission
 			id=1572;
 			atlOffset=-0.0013380051;
 		};
-		class Item81
+		class Item80
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -14237,7 +14225,7 @@ class Mission
 				nAttributes=8;
 			};
 		};
-		class Item82
+		class Item81
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -14650,7 +14638,7 @@ class Mission
 				nAttributes=21;
 			};
 		};
-		class Item83
+		class Item82
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -14816,7 +14804,7 @@ class Mission
 				nAttributes=8;
 			};
 		};
-		class Item84
+		class Item83
 		{
 			dataType="Logic";
 			class PositionInfo
