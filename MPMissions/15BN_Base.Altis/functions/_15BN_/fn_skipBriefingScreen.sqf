@@ -1,3 +1,4 @@
+// #define DEBUG_MODE_FULL
 /*
 	Description:
 		Clicks the "CONTINUE" button in an MP game
@@ -13,7 +14,6 @@
 		Nothing
 
 */
-#define DEBUG_MODE_FULL
 #define PREFIX BIS
 #define COMPONENT event
 #define THIS_FILE fn_skipBriefingScreen.sqf
