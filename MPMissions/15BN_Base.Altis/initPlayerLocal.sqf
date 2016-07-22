@@ -1,4 +1,4 @@
-#define DEBUG_MODE_FULL
+//#define DEBUG_MODE_FULL
 #define PREFIX BIS
 #define COMPONENT event
 #define THIS_FILE initPlayerLocal.sqf
