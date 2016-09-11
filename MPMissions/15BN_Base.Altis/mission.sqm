@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=1617;
+		nextID=1619;
 	};
 	class MarkerIDProvider
 	{
@@ -80,13 +80,14 @@ addons[]=
 	"ace_spectator",
 	"ace_winddeflection",
 	"ace_viewdistance",
-	"mcc_sandbox"
+	"mcc_sandbox",
+	"acre_api"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=46;
+		items=47;
 		class Item0
 		{
 			className="A3_Structures_F_Mil";
@@ -402,6 +403,12 @@ class AddonsMetaData
 		{
 			className="mcc_sandbox";
 			name="mcc_sandbox";
+		};
+		class Item46
+		{
+			className="acre_api";
+			name="acre_api";
+			author="ACRE2 Team";
 		};
 	};
 };
@@ -723,7 +730,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=72;
+		items=73;
 		class Item0
 		{
 			dataType="Object";
@@ -16896,6 +16903,97 @@ class Mission
 			};
 			id=1615;
 			atlOffset=0.2238636;
+		};
+		class Item72
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={17348.461,14.671843,13199.188};
+			};
+			id=1618;
+			type="acre_api_DifficultySettings";
+			atlOffset=-9.5367432e-007;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="acre_api_DifficultySettings_Interference";
+					expression="_this setVariable ['Interference',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="acre_api_DifficultySettings_SignalLoss";
+					expression="_this setVariable ['SignalLoss',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="acre_api_DifficultySettings_IgnoreAntennaDirection";
+					expression="_this setVariable ['IgnoreAntennaDirection',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="acre_api_DifficultySettings_FullDuplex";
+					expression="_this setVariable ['FullDuplex',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=4;
+			};
 		};
 	};
 	class Connections
