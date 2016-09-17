@@ -12,5 +12,4 @@ MCC_syncOn = true;
 MCC_t2tIndex = 0;
 MCC_medicSystemEnabled = false;
 HW_Arti_CannonNumber = 6;
-MCC_faction_index = 7; // RHS MSV
 LOG("End");
