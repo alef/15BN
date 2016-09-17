@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=1634;
+		nextID=1635;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=112;
+		nextID=115;
 	};
 	class Camera
 	{
 		pos[]={17435.268,35.427689,13190.285};
-		dir[]={0.30298394,-0.66803306,0.67966503};
-		up[]={0.27199939,0.74412704,0.61015838};
-		aside[]={0.91336226,-1.6822014e-007,-0.40716308};
+		dir[]={0.33058631,-0.74301934,0.58192372};
+		up[]={0.36701518,0.6692701,0.64604759};
+		aside[]={0.86949003,-3.4272671e-007,-0.4939509};
 	};
 };
 binarizationWanted=0;
@@ -77,12 +77,12 @@ addons[]=
 	"ace_fastroping",
 	"ace_map_gestures",
 	"ace_finger",
-	"ace_spectator",
 	"ace_winddeflection",
 	"ace_viewdistance",
+	"ace_advanced_throwing",
 	"mcc_sandbox",
 	"acre_api",
-	"ace_advanced_throwing"
+	"ace_respawn"
 };
 class AddonsMetaData
 {
@@ -381,22 +381,22 @@ class AddonsMetaData
 		};
 		class Item42
 		{
-			className="ace_spectator";
-			name="ACE3 - Spectator";
-			author="ACE-Team";
-			url="http://ace3mod.com/";
-		};
-		class Item43
-		{
 			className="ace_winddeflection";
 			name="ACE3 - Wind Deflection";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item44
+		class Item43
 		{
 			className="ace_viewdistance";
 			name="ACE3 - View Distance";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
+		};
+		class Item44
+		{
+			className="ace_advanced_throwing";
+			name="ACE3 - Advanced Throwing";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
@@ -413,8 +413,8 @@ class AddonsMetaData
 		};
 		class Item47
 		{
-			className="ace_advanced_throwing";
-			name="ACE3 - Advanced Throwing";
+			className="ace_respawn";
+			name="ACE3 - Respawn";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
@@ -432,13 +432,11 @@ class ScenarioData
 	saving=0;
 	respawnDialog=0;
 	disabledAI=1;
-	respawn=1;
 	class Header
 	{
 		gameType="Coop";
 		maxPlayers=84;
 	};
-	corpseManagerMode="AddAllButRespawned";
 	corpseLimit=68;
 	corpseRemovalMinTime=3600;
 };
@@ -462,24 +460,6 @@ class CustomAttributes
 							"ARRAY"
 						};
 					};
-					class value
-					{
-						items=1;
-						class Item0
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="Spectator";
-							};
-						};
-					};
 				};
 			};
 		};
@@ -498,7 +478,7 @@ class CustomAttributes
 							"SCALAR"
 						};
 					};
-					value=0;
+					value=1;
 				};
 			};
 		};
@@ -14854,7 +14834,7 @@ class Mission
 			name="ACE";
 			class Entities
 			{
-				items=14;
+				items=13;
 				class Item0
 				{
 					dataType="Logic";
@@ -15895,168 +15875,6 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={17386.873,14.422406,13185.475};
-						angles[]={0.016004669,0,6.2778621};
-					};
-					id=824;
-					type="ACE_moduleReviveSettings";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="ACE_moduleReviveSettings_amountOfReviveLives";
-							expression="_this setVariable ['amountOfReviveLives',_value,true];";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=-1;
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="ACE_moduleReviveSettings_enableRevive";
-							expression="_this setVariable ['enableRevive',_value,true];";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=1;
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="ACE_moduleReviveSettings_maxReviveTime";
-							expression="_this setVariable ['maxReviveTime',_value,true];";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=600;
-								};
-							};
-						};
-						nAttributes=3;
-					};
-				};
-				class Item11
-				{
-					dataType="Logic";
-					class PositionInfo
-					{
-						position[]={17428.779,14.64,13144.28};
-					};
-					id=395;
-					type="ace_spectator_moduleSettings";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="ace_spectator_moduleSettings_sidesFilter";
-							expression="_this setVariable ['sidesFilter',_value,true];";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=3;
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="ace_spectator_moduleSettings_cameraModes";
-							expression="_this setVariable ['cameraModes',_value,true];";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="ace_spectator_moduleSettings_unitsFilter";
-							expression="_this setVariable ['unitsFilter',_value,true];";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=3;
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="ace_spectator_moduleSettings_visionModes";
-							expression="_this setVariable ['visionModes',_value,true];";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						nAttributes=4;
-					};
-				};
-				class Item12
-				{
-					dataType="Logic";
-					class PositionInfo
-					{
 						position[]={17442.629,13.938629,13170.594};
 					};
 					id=397;
@@ -16142,7 +15960,7 @@ class Mission
 						nAttributes=4;
 					};
 				};
-				class Item13
+				class Item11
 				{
 					dataType="Logic";
 					class PositionInfo
@@ -16194,9 +16012,119 @@ class Mission
 						nAttributes=2;
 					};
 				};
+				class Item12
+				{
+					dataType="Logic";
+					class PositionInfo
+					{
+						position[]={17401.311,13.995684,13196.33};
+						angles[]={0.029326396,0,6.251195};
+					};
+					id=1619;
+					type="ace_advanced_throwing_Module";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_advanced_throwing_Module_showMouseControls";
+							expression="_this setVariable ['showMouseControls',_value,true];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ace_advanced_throwing_Module_enabled";
+							expression="_this setVariable ['enabled',_value,true];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="ace_advanced_throwing_Module_showThrowArc";
+							expression="_this setVariable ['showThrowArc',_value,true];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="ace_advanced_throwing_Module_enablePickUpAttached";
+							expression="_this setVariable ['enablePickUpAttached',_value,true];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="ace_advanced_throwing_Module_enablePickUp";
+							expression="_this setVariable ['enablePickUp',_value,true];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						nAttributes=5;
+					};
+				};
 			};
 			id=1612;
-			atlOffset=-0.18740082;
+			atlOffset=0.098118782;
 		};
 		class Item71
 		{
@@ -17051,17 +16979,17 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={17401.311,13.995684,13196.33};
-				angles[]={0.029326396,0,6.251195};
+				position[]={17388.617,14.395039,13186.604};
+				angles[]={0.016004669,0,6.2778621};
 			};
-			id=1619;
-			type="ace_advanced_throwing_Module";
+			id=1634;
+			type="ACE_ModuleRespawn";
 			class CustomAttributes
 			{
 				class Attribute0
 				{
-					property="ace_advanced_throwing_Module_showMouseControls";
-					expression="_this setVariable ['showMouseControls',_value,true];";
+					property="ACE_ModuleRespawn_RemoveDeadBodiesDisconnected";
+					expression="_this setVariable ['RemoveDeadBodiesDisconnected',_value,true];";
 					class Value
 					{
 						class data
@@ -17073,14 +17001,14 @@ class Mission
 									"BOOL"
 								};
 							};
-							value=1;
+							value=0;
 						};
 					};
 				};
 				class Attribute1
 				{
-					property="ace_advanced_throwing_Module_enabled";
-					expression="_this setVariable ['enabled',_value,true];";
+					property="ACE_ModuleRespawn_SavePreDeathGear";
+					expression="_this setVariable ['SavePreDeathGear',_value,true];";
 					class Value
 					{
 						class data
@@ -17092,68 +17020,11 @@ class Mission
 									"BOOL"
 								};
 							};
-							value=1;
+							value=0;
 						};
 					};
 				};
-				class Attribute2
-				{
-					property="ace_advanced_throwing_Module_showThrowArc";
-					expression="_this setVariable ['showThrowArc',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=1;
-						};
-					};
-				};
-				class Attribute3
-				{
-					property="ace_advanced_throwing_Module_enablePickUpAttached";
-					expression="_this setVariable ['enablePickUpAttached',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=1;
-						};
-					};
-				};
-				class Attribute4
-				{
-					property="ace_advanced_throwing_Module_enablePickUp";
-					expression="_this setVariable ['enablePickUp',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=1;
-						};
-					};
-				};
-				nAttributes=5;
+				nAttributes=2;
 			};
 		};
 	};
