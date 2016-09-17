@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=1619;
+		nextID=1634;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=103;
+		nextID=112;
 	};
 	class Camera
 	{
-		pos[]={17388.223,88.688843,13200.586};
-		dir[]={0.37012812,-0.81701028,0.44215813};
-		up[]={0.524427,0.57662278,0.62648493};
-		aside[]={0.76680255,4.6566129e-008,-0.64188671};
+		pos[]={17435.268,35.427689,13190.285};
+		dir[]={0.30298394,-0.66803306,0.67966503};
+		up[]={0.27199939,0.74412704,0.61015838};
+		aside[]={0.91336226,-1.6822014e-007,-0.40716308};
 	};
 };
 binarizationWanted=0;
@@ -81,13 +81,14 @@ addons[]=
 	"ace_winddeflection",
 	"ace_viewdistance",
 	"mcc_sandbox",
-	"acre_api"
+	"acre_api",
+	"ace_advanced_throwing"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=47;
+		items=48;
 		class Item0
 		{
 			className="A3_Structures_F_Mil";
@@ -410,6 +411,13 @@ class AddonsMetaData
 			name="acre_api";
 			author="ACRE2 Team";
 		};
+		class Item47
+		{
+			className="ace_advanced_throwing";
+			name="ACE3 - Advanced Throwing";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
+		};
 	};
 };
 randomSeed=12630307;
@@ -430,6 +438,9 @@ class ScenarioData
 		gameType="Coop";
 		maxPlayers=84;
 	};
+	corpseManagerMode="AddAllButRespawned";
+	corpseLimit=68;
+	corpseRemovalMinTime=3600;
 };
 class CustomAttributes
 {
@@ -722,6 +733,7 @@ class Mission
 		forecastWaves=0.1;
 		forecastLightnings=0.1;
 		year=2016;
+		month=02;
 		day=14;
 		hour=20;
 		minute=50;
@@ -730,7 +742,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=73;
+		items=74;
 		class Item0
 		{
 			dataType="Object";
@@ -1572,6 +1584,8 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						init="if (!isMultiplayer) then {deleteVehicle this}";
+						presenceCondition="isMultiplayer";
 						description="Alfa 1 - MG";
 						isPlayable=1;
 						class Inventory
@@ -1741,6 +1755,8 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						init="if (!isMultiplayer) then {deleteVehicle this}";
+						presenceCondition="isMultiplayer";
 						description="Alfa 1 - GL";
 						isPlayable=1;
 						class Inventory
@@ -1950,6 +1966,8 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						init="if (!isMultiplayer) then {deleteVehicle this}";
+						presenceCondition="isMultiplayer";
 						description="Alfa 1 - RF";
 						isPlayable=1;
 						class Inventory
@@ -2148,6 +2166,8 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						init="if (!isMultiplayer) then {deleteVehicle this}";
+						presenceCondition="isMultiplayer";
 						description="Alfa 1 - RF";
 						isPlayable=1;
 						class Inventory
@@ -2346,6 +2366,8 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						init="if (!isMultiplayer) then {deleteVehicle this}";
+						presenceCondition="isMultiplayer";
 						description="Alfa 1 - RF";
 						isPlayable=1;
 						class Inventory
@@ -2537,13 +2559,15 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={17445.496,13.305799,13203.618};
-						angles[]={0.0093286335,2.2341638,0};
+						position[]={17445.496,13.306131,13203.618};
+						angles[]={0.0093200579,2.2341609,0};
 					};
 					side="West";
 					flags=4;
 					class Attributes
 					{
+						init="if (!isMultiplayer) then {deleteVehicle this}";
+						presenceCondition="";
 						description="Alfa 1 - AT";
 						isPlayable=1;
 						class Inventory
@@ -2675,29 +2699,10 @@ class Mission
 					};
 					id=1534;
 					type="rhsusf_usmc_marpat_wd_javelin";
-					atlOffset=-0.0023326874;
+					atlOffset=-0.001999855;
 					class CustomAttributes
 					{
 						class Attribute0
-						{
-							property="ace_isSurrendered";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute1
 						{
 							property="ace_isHandcuffed";
 							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
@@ -2716,7 +2721,45 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.01;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=3;
 					};
 				};
 				class Item7
@@ -2732,6 +2775,8 @@ class Mission
 					class Attributes
 					{
 						rank="CORPORAL";
+						init="if (!isMultiplayer) then {deleteVehicle this}";
+						presenceCondition="isMultiplayer";
 						description="Alfa 1 - Medico";
 						isPlayable=1;
 						class Inventory
@@ -4957,6 +5002,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						init="if (!isMultiplayer) then {deleteVehicle this}";
 						description="Alfa 2 - TL/SL";
 						isPlayable=1;
 						class Inventory
@@ -5164,6 +5210,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						init="if (!isMultiplayer) then {deleteVehicle this}";
 						description="Alfa 2 - MG";
 						isPlayable=1;
 						class Inventory
@@ -5333,6 +5380,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						init="if (!isMultiplayer) then {deleteVehicle this}";
 						description="Alfa 2 - GL";
 						isPlayable=1;
 						class Inventory
@@ -5542,6 +5590,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						init="if (!isMultiplayer) then {deleteVehicle this}";
 						description="Alfa 2 - RF";
 						isPlayable=1;
 						class Inventory
@@ -5740,6 +5789,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						init="if (!isMultiplayer) then {deleteVehicle this}";
 						description="Alfa 2 - RF";
 						isPlayable=1;
 						class Inventory
@@ -5938,6 +5988,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						init="if (!isMultiplayer) then {deleteVehicle this}";
 						description="Alfa 2 - RF";
 						isPlayable=1;
 						class Inventory
@@ -6136,6 +6187,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						init="if (!isMultiplayer) then {deleteVehicle this}";
 						description="Alfa 2 - AT";
 						isPlayable=1;
 						class Inventory
@@ -6324,6 +6376,7 @@ class Mission
 					class Attributes
 					{
 						rank="CORPORAL";
+						init="if (!isMultiplayer) then {deleteVehicle this}";
 						description="Alfa 2 - Medico";
 						isPlayable=1;
 						class Inventory
@@ -6557,6 +6610,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						init="if (!isMultiplayer) then {deleteVehicle this}";
 						description="Alfa 3 - TL/SL";
 						isPlayable=1;
 						class Inventory
@@ -6764,6 +6818,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						init="if (!isMultiplayer) then {deleteVehicle this}";
 						description="Alfa 3 - MG";
 						isPlayable=1;
 						class Inventory
@@ -6933,6 +6988,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						init="if (!isMultiplayer) then {deleteVehicle this}";
 						description="Alfa 3 - GL";
 						isPlayable=1;
 						class Inventory
@@ -7142,6 +7198,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						init="if (!isMultiplayer) then {deleteVehicle this}";
 						description="Alfa 3 - RF";
 						isPlayable=1;
 						class Inventory
@@ -7340,6 +7397,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						init="if (!isMultiplayer) then {deleteVehicle this}";
 						description="Alfa 3 - RF";
 						isPlayable=1;
 						class Inventory
@@ -7538,6 +7596,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						init="if (!isMultiplayer) then {deleteVehicle this}";
 						description="Alfa 3 - RF";
 						isPlayable=1;
 						class Inventory
@@ -7736,6 +7795,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						init="if (!isMultiplayer) then {deleteVehicle this}";
 						description="Alfa 3 - AT";
 						isPlayable=1;
 						class Inventory
@@ -7924,6 +7984,7 @@ class Mission
 					class Attributes
 					{
 						rank="CORPORAL";
+						init="if (!isMultiplayer) then {deleteVehicle this}";
 						description="Alfa 3 - Medico";
 						isPlayable=1;
 						class Inventory
@@ -8157,6 +8218,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						init="if (!isMultiplayer) then {deleteVehicle this}";
 						description="Bravo 1 - TL/SL";
 						isPlayable=1;
 						class Inventory
@@ -8364,6 +8426,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						init="if (!isMultiplayer) then {deleteVehicle this}";
 						description="Bravo 1 - MG";
 						isPlayable=1;
 						class Inventory
@@ -8533,6 +8596,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						init="if (!isMultiplayer) then {deleteVehicle this}";
 						description="Bravo 1 - GL";
 						isPlayable=1;
 						class Inventory
@@ -8742,6 +8806,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						init="if (!isMultiplayer) then {deleteVehicle this}";
 						description="Bravo 1 - RF";
 						isPlayable=1;
 						class Inventory
@@ -8940,6 +9005,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						init="if (!isMultiplayer) then {deleteVehicle this}";
 						description="Bravo 1 - RF";
 						isPlayable=1;
 						class Inventory
@@ -9138,6 +9204,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						init="if (!isMultiplayer) then {deleteVehicle this}";
 						description="Bravo 1 - RF";
 						isPlayable=1;
 						class Inventory
@@ -9336,6 +9403,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						init="if (!isMultiplayer) then {deleteVehicle this}";
 						description="Bravo 1 - AT";
 						isPlayable=1;
 						class Inventory
@@ -9524,6 +9592,7 @@ class Mission
 					class Attributes
 					{
 						rank="CORPORAL";
+						init="if (!isMultiplayer) then {deleteVehicle this}";
 						description="Bravo 1 - Medico";
 						isPlayable=1;
 						class Inventory
@@ -9757,6 +9826,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						init="if (!isMultiplayer) then {deleteVehicle this}";
 						description="Bravo 2 - TL/SL";
 						isPlayable=1;
 						class Inventory
@@ -9964,6 +10034,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						init="if (!isMultiplayer) then {deleteVehicle this}";
 						description="Bravo 2 - MG";
 						isPlayable=1;
 						class Inventory
@@ -10133,6 +10204,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						init="if (!isMultiplayer) then {deleteVehicle this}";
 						description="Bravo 2 - GL";
 						isPlayable=1;
 						class Inventory
@@ -10342,6 +10414,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						init="if (!isMultiplayer) then {deleteVehicle this}";
 						description="Bravo 2 - RF";
 						isPlayable=1;
 						class Inventory
@@ -10540,6 +10613,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						init="if (!isMultiplayer) then {deleteVehicle this}";
 						description="Bravo 2 - RF";
 						isPlayable=1;
 						class Inventory
@@ -10738,6 +10812,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						init="if (!isMultiplayer) then {deleteVehicle this}";
 						description="Bravo 2 - RF";
 						isPlayable=1;
 						class Inventory
@@ -10936,6 +11011,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						init="if (!isMultiplayer) then {deleteVehicle this}";
 						description="Bravo 2 - AT";
 						isPlayable=1;
 						class Inventory
@@ -11124,6 +11200,7 @@ class Mission
 					class Attributes
 					{
 						rank="CORPORAL";
+						init="if (!isMultiplayer) then {deleteVehicle this}";
 						description="Bravo 2 - Medico";
 						isPlayable=1;
 						class Inventory
@@ -11357,6 +11434,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						init="if (!isMultiplayer) then {deleteVehicle this}";
 						description="Bravo 3 - TL/SL";
 						isPlayable=1;
 						class Inventory
@@ -11564,6 +11642,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						init="if (!isMultiplayer) then {deleteVehicle this}";
 						description="Bravo 3 - MG";
 						isPlayable=1;
 						class Inventory
@@ -11733,6 +11812,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						init="if (!isMultiplayer) then {deleteVehicle this}";
 						description="Bravo 3 - GL";
 						isPlayable=1;
 						class Inventory
@@ -11942,6 +12022,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						init="if (!isMultiplayer) then {deleteVehicle this}";
 						description="Bravo 3 - RF";
 						isPlayable=1;
 						class Inventory
@@ -12140,6 +12221,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						init="if (!isMultiplayer) then {deleteVehicle this}";
 						description="Bravo 3 - RF";
 						isPlayable=1;
 						class Inventory
@@ -12338,6 +12420,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						init="if (!isMultiplayer) then {deleteVehicle this}";
 						description="Bravo 3 - RF";
 						isPlayable=1;
 						class Inventory
@@ -12536,6 +12619,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
+						init="if (!isMultiplayer) then {deleteVehicle this}";
 						description="Bravo 3 - AT";
 						isPlayable=1;
 						class Inventory
@@ -12724,6 +12808,7 @@ class Mission
 					class Attributes
 					{
 						rank="CORPORAL";
+						init="if (!isMultiplayer) then {deleteVehicle this}";
 						description="Bravo 3 - Medico";
 						isPlayable=1;
 						class Inventory
@@ -14769,7 +14854,7 @@ class Mission
 			name="ACE";
 			class Entities
 			{
-				items=15;
+				items=14;
 				class Item0
 				{
 					dataType="Logic";
@@ -15882,40 +15967,6 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={17416.814,15.143001,13129.472};
-					};
-					id=265;
-					type="ACE_ModuleSitting";
-					atlOffset=0.50300026;
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="ACE_ModuleSitting_enable";
-							expression="_this setVariable ['enable',_value,true];";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=1;
-								};
-							};
-						};
-						nAttributes=1;
-					};
-				};
-				class Item12
-				{
-					dataType="Logic";
-					class PositionInfo
-					{
 						position[]={17428.779,14.64,13144.28};
 					};
 					id=395;
@@ -16001,7 +16052,7 @@ class Mission
 						nAttributes=4;
 					};
 				};
-				class Item13
+				class Item12
 				{
 					dataType="Logic";
 					class PositionInfo
@@ -16091,7 +16142,7 @@ class Mission
 						nAttributes=4;
 					};
 				};
-				class Item14
+				class Item13
 				{
 					dataType="Logic";
 					class PositionInfo
@@ -16145,7 +16196,7 @@ class Mission
 				};
 			};
 			id=1612;
-			atlOffset=-0.15035629;
+			atlOffset=-0.18740082;
 		};
 		class Item71
 		{
@@ -16993,6 +17044,116 @@ class Mission
 					};
 				};
 				nAttributes=4;
+			};
+		};
+		class Item73
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={17401.311,13.995684,13196.33};
+				angles[]={0.029326396,0,6.251195};
+			};
+			id=1619;
+			type="ace_advanced_throwing_Module";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ace_advanced_throwing_Module_showMouseControls";
+					expression="_this setVariable ['showMouseControls',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ace_advanced_throwing_Module_enabled";
+					expression="_this setVariable ['enabled',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ace_advanced_throwing_Module_showThrowArc";
+					expression="_this setVariable ['showThrowArc',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="ace_advanced_throwing_Module_enablePickUpAttached";
+					expression="_this setVariable ['enablePickUpAttached',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="ace_advanced_throwing_Module_enablePickUp";
+					expression="_this setVariable ['enablePickUp',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				nAttributes=5;
 			};
 		};
 	};
