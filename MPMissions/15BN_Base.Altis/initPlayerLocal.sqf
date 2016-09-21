@@ -21,12 +21,6 @@ if (hasInterface) then { player createDiaryRecord ["Log", ["Sistema medico",
 	ace_maptools_mapGpsShow = false;
 };
 
-safeZone_trg = createTrigger ["EmptyDetector", [17430,13161], false]; // Pygros base. 'false' means local
-safeZone_trg setTriggerArea [90, 60, 47, true]; // rectangle
-safeZone_trg setTriggerActivation ["WEST", "PRESENT", true];
-safeZone_trg triggerAttachVehicle [player];
-safeZone_trg setTriggerStatements ["this", "call ALEF_fnc_enterSafeZone", "call ALEF_fnc_leaveSafeZone"];
-
 [] spawn ALEF_fnc_MCC_init;
 
 hcRemoveAllGroups player;

@@ -23,13 +23,5 @@ class ALEF {
 		description = "Clicks on CONTINUE";
 		preInit = 1;
 	};
-	class enterSafeZone
-	{
-		description = "Delete projectiles and add Arsenal";
 	};
-	class leaveSafeZone
-	{
-		description = "Cancel Arsenal and restore projectiles";
-	};
-};
 };
