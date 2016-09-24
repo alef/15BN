@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=1673;
+		nextID=1687;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=121;
+		nextID=127;
 	};
 	class Camera
 	{
-		pos[]={17285.154,37.695343,13272.678};
-		dir[]={0,-0.70710683,0.70710683};
-		up[]={0,0.70710677,0.70710677};
-		aside[]={0.99999994,0,0};
+		pos[]={17445.744,31.714403,13196.469};
+		dir[]={-0.19450876,-0.73001051,0.65520793};
+		up[]={-0.20776659,0.68339247,0.69986415};
+		aside[]={0.95866716,-4.1606836e-007,0.28459534};
 	};
 };
 binarizationWanted=0;
@@ -746,7 +746,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=94;
+		items=100;
 		class Item0
 		{
 			dataType="Object";
@@ -792,19 +792,57 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={17549.766,15.192652,13239.261};
-				angles[]={0.015998369,0.76307327,0.0053265258};
+				position[]={17549.766,13.19237,13239.261};
+				angles[]={0.016004669,0.76307541,0.0053232545};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 			};
 			id=83;
 			type="rhsusf_CH53E_USMC";
-			atlOffset=2.0002813;
 			class CustomAttributes
 			{
 				class Attribute0
+				{
+					property="rhs_decalNumber_type";
+					expression="_this setVariable ['rhs_decalNumber_type', _value];[_this,[['Number', cCH53NumberPlaces, _value]]] call rhsusf_fnc_decalsInit";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="USMCGrey";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="rhs_openRamp";
+					expression="_this animate ['ramp_bottom',_value];_this animate ['ramp_top',_value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute2
 				{
 					property="ammoBox";
 					expression="[_this,_value] call bis_fnc_initAmmoBox;";
@@ -823,7 +861,26 @@ class Mission
 						};
 					};
 				};
-				nAttributes=1;
+				class Attribute3
+				{
+					property="rhs_decalNumber";
+					expression="if(parseNumber _value >= 0)then{[_this, [['Number', cCH53NumberPlaces, _this getVariable ['rhs_decalNumber_type','USMCGrey'],parseNumber _value] ] ] call rhsusf_fnc_decalsInit};";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="-1";
+						};
+					};
+				};
+				nAttributes=4;
 			};
 		};
 		class Item2
@@ -1373,8 +1430,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={17447.619,13.290001,13205.457};
-						angles[]={0,3.0128527,0};
+						position[]={17447.619,13.289669,13205.457};
+						angles[]={0,3.012857,0};
 					};
 					side="West";
 					flags=7;
@@ -1532,29 +1589,10 @@ class Mission
 					};
 					id=1528;
 					type="B_Soldier_SL_F";
-					atlOffset=-0.0016679764;
+					atlOffset=-0.001999855;
 					class CustomAttributes
 					{
 						class Attribute0
-						{
-							property="ace_isSurrendered";
-							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute1
 						{
 							property="ace_isHandcuffed";
 							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
@@ -1573,7 +1611,45 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.99000001;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=3;
 					};
 				};
 				class Item1
@@ -2992,7 +3068,7 @@ class Mission
 				speedMode="LIMITED";
 			};
 			id=1527;
-			atlOffset=-0.0016679764;
+			atlOffset=-0.001999855;
 		};
 		class Item31
 		{
@@ -17377,6 +17453,7 @@ class Mission
 			};
 			id=1657;
 			type="SignAd_SponsorS_ARMEX_F";
+			atlOffset=9.5367432e-007;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -17435,6 +17512,7 @@ class Mission
 			};
 			id=1658;
 			type="SignAd_SponsorS_ARMEX_F";
+			atlOffset=9.5367432e-007;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -18067,6 +18145,116 @@ class Mission
 				};
 				nAttributes=1;
 			};
+		};
+		class Item94
+		{
+			dataType="Trigger";
+			position[]={17448.768,13.324619,13201.647};
+			class Attributes
+			{
+				condition="player in thisList";
+				onActivation="ALEF_AV = player addAction [""<t color='#218936'>Arsenale Virtuale</t>"", {[""Open"",true] call BIS_fnc_arsenal}, nil, 1.5, true, false, """", ""true"", 4, false]";
+				onDeactivation="player removeAction ALEF_AV";
+				sizeA=5;
+				sizeB=5;
+				sizeC=5;
+				repeatable=1;
+				activationBy="WEST";
+			};
+			id=1681;
+			type="EmptyDetectorArea10x10";
+		};
+		class Item95
+		{
+			dataType="Trigger";
+			position[]={17394.225,13.75416,13214.171};
+			class Attributes
+			{
+				condition="player in thisList";
+				onActivation="ALEF_AV = player addAction [""<t color='#218936'>Arsenale Virtuale</t>"", {[""Open"",true] call BIS_fnc_arsenal}, nil, 1.5, true, false, """", ""true"", 4, false]";
+				onDeactivation="player removeAction ALEF_AV";
+				sizeA=5;
+				sizeB=5;
+				sizeC=5;
+				repeatable=1;
+				activationBy="WEST";
+			};
+			id=1682;
+			type="EmptyDetectorArea10x10";
+		};
+		class Item96
+		{
+			dataType="Trigger";
+			position[]={17348.207,15.166071,13164.245};
+			class Attributes
+			{
+				condition="player in thisList";
+				onActivation="ALEF_AV = player addAction [""<t color='#218936'>Arsenale Virtuale</t>"", {[""Open"",true] call BIS_fnc_arsenal}, nil, 1.5, true, false, """", ""true"", 4, false]";
+				onDeactivation="player removeAction ALEF_AV";
+				sizeA=5;
+				sizeB=5;
+				sizeC=5;
+				repeatable=1;
+				activationBy="WEST";
+			};
+			id=1683;
+			type="EmptyDetectorArea10x10";
+		};
+		class Item97
+		{
+			dataType="Trigger";
+			position[]={17443.531,15.50549,13068.972};
+			class Attributes
+			{
+				condition="player in thisList";
+				onActivation="ALEF_AV = player addAction [""<t color='#218936'>Arsenale Virtuale</t>"", {[""Open"",true] call BIS_fnc_arsenal}, nil, 1.5, true, false, """", ""true"", 4, false]";
+				onDeactivation="player removeAction ALEF_AV";
+				sizeA=5;
+				sizeB=5;
+				sizeC=5;
+				repeatable=1;
+				activationBy="WEST";
+			};
+			id=1684;
+			type="EmptyDetectorArea10x10";
+			atlOffset=-9.5367432e-007;
+		};
+		class Item98
+		{
+			dataType="Trigger";
+			position[]={17454.836,14.948592,13111.881};
+			class Attributes
+			{
+				condition="player in thisList";
+				onActivation="ALEF_AV = player addAction [""<t color='#218936'>Arsenale Virtuale</t>"", {[""Open"",true] call BIS_fnc_arsenal}, nil, 1.5, true, false, """", ""true"", 4, false]";
+				onDeactivation="player removeAction ALEF_AV";
+				sizeA=5;
+				sizeB=5;
+				sizeC=5;
+				repeatable=1;
+				activationBy="WEST";
+			};
+			id=1685;
+			type="EmptyDetectorArea10x10";
+			atlOffset=-0.010663986;
+		};
+		class Item99
+		{
+			dataType="Trigger";
+			position[]={17500.789,13.621089,13167.678};
+			class Attributes
+			{
+				condition="player in thisList";
+				onActivation="ALEF_AV = player addAction [""<t color='#218936'>Arsenale Virtuale</t>"", {[""Open"",true] call BIS_fnc_arsenal}, nil, 1.5, true, false, """", ""true"", 4, false]";
+				onDeactivation="player removeAction ALEF_AV";
+				sizeA=5;
+				sizeB=5;
+				sizeC=5;
+				repeatable=1;
+				activationBy="WEST";
+			};
+			id=1686;
+			type="EmptyDetectorArea10x10";
 		};
 	};
 	class Connections
