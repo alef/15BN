@@ -12,7 +12,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=6;
+		nextID=9;
 	};
 	class Camera
 	{
@@ -428,6 +428,9 @@ class ScenarioData
 	author="alef";
 	briefing=0;
 	debriefing=0;
+	showCompass=0;
+	showGPS=0;
+	showWatch=0;
 	saving=0;
 	disabledAI=1;
 	respawn=1;
@@ -459,22 +462,8 @@ class CustomAttributes
 					};
 					class value
 					{
-						items=2;
+						items=1;
 						class Item0
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="EndMission";
-							};
-						};
-						class Item1
 						{
 							class data
 							{
@@ -732,18 +721,15 @@ class Mission
 {
 	class Intel
 	{
+		briefingName="Base";
 		timeOfChanges=1800.0002;
-		startWeather=0.30000001;
+		startWeather=0;
 		startWind=0.1;
 		startWaves=0.1;
-		forecastWeather=0.30000001;
+		forecastWeather=0;
 		forecastWind=0.1;
 		forecastWaves=0.1;
 		forecastLightnings=0.1;
-		rainForced=1;
-		lightningsForced=1;
-		wavesForced=1;
-		windForced=1;
 		year=2016;
 		month=02;
 		day=14;
