@@ -1,6 +1,10 @@
 class ALEF {
 	tag = "ALEF";
 	class _15BN_ {
+	class fixACREnuisance
+	{
+		description = "Reset ACRE desync message.";
+	};
 	class medicsAvailable
 	{
 		description = "Check if all medics are alive.";
