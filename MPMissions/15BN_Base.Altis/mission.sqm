@@ -8,22 +8,22 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=1671;
+		nextID=1673;
 	};
 	class MarkerIDProvider
 	{
-		nextID=18;
+		nextID=19;
 	};
 	class LayerIndexProvider
 	{
-		nextID=118;
+		nextID=121;
 	};
 	class Camera
 	{
-		pos[]={17421.336,40.307251,13049.137};
+		pos[]={17285.154,37.695343,13272.678};
 		dir[]={0,-0.70710683,0.70710683};
 		up[]={0,0.70710677,0.70710677};
-		aside[]={0.99999994,0,-0};
+		aside[]={0.99999994,0,0};
 	};
 };
 binarizationWanted=0;
@@ -17062,13 +17062,31 @@ class Mission
 			flags=5;
 			class Attributes
 			{
-				init="this setObjectTextureGlobal [0,'img\ALPHA-1.paa']";
 			};
 			id=1643;
 			type="SignAd_SponsorS_ARMEX_F";
 			class CustomAttributes
 			{
 				class Attribute0
+				{
+					property="ObjectTextureCustom0";
+					expression="_this setObjectTextureGlobal [0,_value]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="img\ALPHA-1.paa";
+						};
+					};
+				};
+				class Attribute1
 				{
 					property="ace_isMedicalFacility";
 					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
@@ -17087,7 +17105,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=1;
+				nAttributes=2;
 			};
 		};
 		class Item75
@@ -17102,13 +17120,31 @@ class Mission
 			flags=5;
 			class Attributes
 			{
-				init="this setObjectTextureGlobal [0,'img\ALPHA-1.paa']";
 			};
 			id=1644;
 			type="SignAd_SponsorS_ARMEX_F";
 			class CustomAttributes
 			{
 				class Attribute0
+				{
+					property="ObjectTextureCustom0";
+					expression="_this setObjectTextureGlobal [0,_value]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="img\ALPHA-1.paa";
+						};
+					};
+				};
+				class Attribute1
 				{
 					property="ace_isMedicalFacility";
 					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
@@ -17127,7 +17163,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=1;
+				nAttributes=2;
 			};
 		};
 		class Item76
@@ -17181,7 +17217,6 @@ class Mission
 			flags=5;
 			class Attributes
 			{
-				init="this setObjectTextureGlobal [0,'img\ALPHA-2.paa']";
 			};
 			id=1654;
 			type="SignAd_SponsorS_ARMEX_F";
@@ -17189,6 +17224,25 @@ class Mission
 			class CustomAttributes
 			{
 				class Attribute0
+				{
+					property="ObjectTextureCustom0";
+					expression="_this setObjectTextureGlobal [0,_value]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="img\ALPHA-2.paa";
+						};
+					};
+				};
+				class Attribute1
 				{
 					property="ace_isMedicalFacility";
 					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
@@ -17207,7 +17261,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=1;
+				nAttributes=2;
 			};
 		};
 		class Item78
@@ -17222,7 +17276,6 @@ class Mission
 			flags=5;
 			class Attributes
 			{
-				init="this setObjectTextureGlobal [0,'img\ALPHA-2.paa']";
 			};
 			id=1655;
 			type="SignAd_SponsorS_ARMEX_F";
@@ -17230,6 +17283,25 @@ class Mission
 			class CustomAttributes
 			{
 				class Attribute0
+				{
+					property="ObjectTextureCustom0";
+					expression="_this setObjectTextureGlobal [0,_value]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="img\ALPHA-2.paa";
+						};
+					};
+				};
+				class Attribute1
 				{
 					property="ace_isMedicalFacility";
 					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
@@ -17248,7 +17320,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=1;
+				nAttributes=2;
 			};
 		};
 		class Item79
@@ -17302,14 +17374,31 @@ class Mission
 			flags=5;
 			class Attributes
 			{
-				init="this setObjectTextureGlobal [0,'img\ALPHA-3.paa']";
 			};
 			id=1657;
 			type="SignAd_SponsorS_ARMEX_F";
-			atlOffset=9.5367432e-007;
 			class CustomAttributes
 			{
 				class Attribute0
+				{
+					property="ObjectTextureCustom0";
+					expression="_this setObjectTextureGlobal [0,_value]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="img\ALPHA-3.paa";
+						};
+					};
+				};
+				class Attribute1
 				{
 					property="ace_isMedicalFacility";
 					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
@@ -17328,7 +17417,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=1;
+				nAttributes=2;
 			};
 		};
 		class Item81
@@ -17343,14 +17432,31 @@ class Mission
 			flags=5;
 			class Attributes
 			{
-				init="this setObjectTextureGlobal [0,'img\ALPHA-3.paa']";
 			};
 			id=1658;
 			type="SignAd_SponsorS_ARMEX_F";
-			atlOffset=9.5367432e-007;
 			class CustomAttributes
 			{
 				class Attribute0
+				{
+					property="ObjectTextureCustom0";
+					expression="_this setObjectTextureGlobal [0,_value]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="img\ALPHA-3.paa";
+						};
+					};
+				};
+				class Attribute1
 				{
 					property="ace_isMedicalFacility";
 					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
@@ -17369,7 +17475,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=1;
+				nAttributes=2;
 			};
 		};
 		class Item82
@@ -17423,7 +17529,6 @@ class Mission
 			flags=5;
 			class Attributes
 			{
-				init="this setObjectTextureGlobal [0,'img\BRAVO-1.paa']";
 			};
 			id=1660;
 			type="SignAd_SponsorS_ARMEX_F";
@@ -17431,6 +17536,25 @@ class Mission
 			class CustomAttributes
 			{
 				class Attribute0
+				{
+					property="ObjectTextureCustom0";
+					expression="_this setObjectTextureGlobal [0,_value]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="img\BRAVO-1.paa";
+						};
+					};
+				};
+				class Attribute1
 				{
 					property="ace_isMedicalFacility";
 					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
@@ -17449,7 +17573,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=1;
+				nAttributes=2;
 			};
 		};
 		class Item84
@@ -17464,7 +17588,6 @@ class Mission
 			flags=5;
 			class Attributes
 			{
-				init="this setObjectTextureGlobal [0,'img\BRAVO-1.paa']";
 			};
 			id=1661;
 			type="SignAd_SponsorS_ARMEX_F";
@@ -17472,6 +17595,25 @@ class Mission
 			class CustomAttributes
 			{
 				class Attribute0
+				{
+					property="ObjectTextureCustom0";
+					expression="_this setObjectTextureGlobal [0,_value]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="img\BRAVO-1.paa";
+						};
+					};
+				};
+				class Attribute1
 				{
 					property="ace_isMedicalFacility";
 					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
@@ -17490,7 +17632,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=1;
+				nAttributes=2;
 			};
 		};
 		class Item85
@@ -17544,13 +17686,31 @@ class Mission
 			flags=5;
 			class Attributes
 			{
-				init="this setObjectTextureGlobal [0,'img\BRAVO-2.paa']";
 			};
 			id=1663;
 			type="SignAd_SponsorS_ARMEX_F";
 			class CustomAttributes
 			{
 				class Attribute0
+				{
+					property="ObjectTextureCustom0";
+					expression="_this setObjectTextureGlobal [0,_value]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="img\BRAVO-2.paa";
+						};
+					};
+				};
+				class Attribute1
 				{
 					property="ace_isMedicalFacility";
 					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
@@ -17569,7 +17729,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=1;
+				nAttributes=2;
 			};
 		};
 		class Item87
@@ -17584,13 +17744,31 @@ class Mission
 			flags=5;
 			class Attributes
 			{
-				init="this setObjectTextureGlobal [0,'img\BRAVO-2.paa']";
 			};
 			id=1664;
 			type="SignAd_SponsorS_ARMEX_F";
 			class CustomAttributes
 			{
 				class Attribute0
+				{
+					property="ObjectTextureCustom0";
+					expression="_this setObjectTextureGlobal [0,_value]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="img\BRAVO-2.paa";
+						};
+					};
+				};
+				class Attribute1
 				{
 					property="ace_isMedicalFacility";
 					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
@@ -17609,7 +17787,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=1;
+				nAttributes=2;
 			};
 		};
 		class Item88
@@ -17704,7 +17882,6 @@ class Mission
 			flags=5;
 			class Attributes
 			{
-				init="this setObjectTextureGlobal [0,'img\BRAVO-3.paa']";
 			};
 			id=1667;
 			type="SignAd_SponsorS_ARMEX_F";
@@ -17712,6 +17889,25 @@ class Mission
 			class CustomAttributes
 			{
 				class Attribute0
+				{
+					property="ObjectTextureCustom0";
+					expression="_this setObjectTextureGlobal [0,_value]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="img\BRAVO-3.paa";
+						};
+					};
+				};
+				class Attribute1
 				{
 					property="ace_isMedicalFacility";
 					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
@@ -17730,7 +17926,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=1;
+				nAttributes=2;
 			};
 		};
 		class Item91
@@ -17745,7 +17941,6 @@ class Mission
 			flags=5;
 			class Attributes
 			{
-				init="this setObjectTextureGlobal [0,'img\BRAVO-3.paa']";
 			};
 			id=1668;
 			type="SignAd_SponsorS_ARMEX_F";
@@ -17753,6 +17948,25 @@ class Mission
 			class CustomAttributes
 			{
 				class Attribute0
+				{
+					property="ObjectTextureCustom0";
+					expression="_this setObjectTextureGlobal [0,_value]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="img\BRAVO-3.paa";
+						};
+					};
+				};
+				class Attribute1
 				{
 					property="ace_isMedicalFacility";
 					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
@@ -17771,7 +17985,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=1;
+				nAttributes=2;
 			};
 		};
 		class Item92
