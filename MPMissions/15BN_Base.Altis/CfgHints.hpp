@@ -64,7 +64,7 @@ class RadioTruppa
 	noImage = false;
 	image = "img\15logo_BW.paa";
 	description = "\
-<img size='8' shadow='1' image='\idi\clients\acre\addons\sys_prc343\Data\343_icon.paa' /><br/>\
+<img size='8' shadow='1' image='\idi\clients\acre\addons\sys_prc343\Data\static\prc343_icon.paa' /><br/>\
 AN/PRC-343, 16 canali / 800m<br/>\
 %2 Alpha-1 sul canale 1<br/>\
 %2 Alpha-2 sul canale 2<br/>\
@@ -78,7 +78,7 @@ class RadioComando
 	noImage = false;
 	image = "img\15logo_BW.paa";
 	description = "\
-<img size='8' shadow='1' image='\idi\clients\acre\addons\sys_prc148\Data\148_icon.paa' /><br/>\
+<img size='8' shadow='1' image='\idi\clients\acre\addons\sys_prc148\Data\static\prc148_icon.paa' /><br/>\
 AN/PRC-148, 30-152MHz / 5 km<br/>\
 %2 Comando squadra sul canale 1<br/>\
 ";
