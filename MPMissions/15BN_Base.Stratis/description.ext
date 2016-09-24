@@ -1,0 +1,18 @@
+class Params {
+	#include "Params.hpp"
+};
+
+class CfgFunctions {
+	#include "CfgFunctions.hpp"
+};
+
+class CfgHints {
+	#include "CfgHints.hpp"
+};
+
+class CfgRespawnInventory {
+	#include "CfgRespawnInventory.hpp"
+};
+
+briefing = 0;
+onLoadName = "Base";
