@@ -12,8 +12,11 @@ Deployment
 ==========
 
 1. Set the mission date to today
-2. Set the binarization on
-2. Export to multiplayer missions
-3. Set the binarization back off
-3. Rename the `15BN_Base.Altis.pbo` file to match `onLoadName` parameter in `description.ext` 
+2. Turn the binarization off
+3. Save and commit
+4. Remove `mission.sqm` and check it out
+5. Open from editor
+6. Turn the binarization back on
+7. Export to multiplayer missions
+8. Rename the `15BN_Base.Altis.pbo` file to match `onLoadName` parameter in `description.ext` 
 4. Stop the server and upload, modify `server.cfg` to match the new file name, start the server
