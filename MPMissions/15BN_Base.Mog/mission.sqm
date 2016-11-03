@@ -12,7 +12,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=2;
+		nextID=6;
 	};
 	class Camera
 	{
@@ -427,9 +427,8 @@ class ScenarioData
 	author="alef";
 	briefing=0;
 	debriefing=0;
-	showCompass=0;
-	showWatch=0;
 	saving=0;
+	respawnDialog=0;
 	disabledAI=1;
 	respawn=1;
 	class Header
@@ -589,7 +588,7 @@ class CustomAttributes
 							"SCALAR"
 						};
 					};
-					value=1;
+					value=0;
 				};
 			};
 		};
@@ -719,18 +718,16 @@ class Mission
 {
 	class Intel
 	{
+		briefingName="Base";
+		overviewText="Bravo 1 = Alpha 2-1. Bravo 2 = Alpha 2-2. Bravo 3 = Alpha 2-3.";
 		timeOfChanges=1800.0002;
-		startWeather=0.30000001;
+		startWeather=0;
 		startWind=0.1;
 		startWaves=0.1;
-		forecastWeather=0.30000001;
+		forecastWeather=0;
 		forecastWind=0.1;
 		forecastWaves=0.1;
 		forecastLightnings=0.1;
-		rainForced=1;
-		lightningsForced=1;
-		wavesForced=1;
-		windForced=1;
 		year=2016;
 		month=02;
 		day=14;
@@ -4080,6 +4077,7 @@ class Mission
 			};
 			id=66;
 			type="RHS_M2StaticMG_D";
+			atlOffset=-0.001543045;
 		};
 		class Item47
 		{
@@ -4096,6 +4094,7 @@ class Mission
 			};
 			id=67;
 			type="RHS_M2StaticMG_WD";
+			atlOffset=-0.00085401535;
 		};
 		class Item48
 		{
