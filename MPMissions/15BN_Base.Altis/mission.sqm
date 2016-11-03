@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=1692;
+		nextID=1693;
 	};
 	class MarkerIDProvider
 	{
@@ -16,7 +16,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=153;
+		nextID=155;
 	};
 	class Camera
 	{
@@ -758,7 +758,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=100;
+		items=101;
 		class Item0
 		{
 			dataType="Object";
@@ -18110,11 +18110,11 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={17389.07,14.443034,13183.144};
+				position[]={17382.752,14.465586,13184.276};
+				angles[]={0.014664836,0,6.276526};
 			};
 			id=1689;
 			type="ACE_moduleBasicMedicalSettings";
-			atlOffset=-9.5367432e-007;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -18163,7 +18163,8 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={17393.84,14.411115,13183.361};
+				position[]={17392.199,14.406642,13184.621};
+				angles[]={0.013332055,0,6.2778587};
 			};
 			id=1690;
 			type="ACE_moduleMedicalSettings";
@@ -18443,11 +18444,11 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={17399.152,14.361918,13183.361};
+				position[]={17408.521,14.0335,13185.308};
+				angles[]={0.022662206,0,6.2445378};
 			};
 			id=1691;
 			type="ACE_ModuleRespawn";
-			atlOffset=9.5367432e-007;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -18489,6 +18490,78 @@ class Mission
 					};
 				};
 				nAttributes=2;
+			};
+		};
+		class Item100
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={17400.447,14.311728,13185.138};
+				angles[]={0.023998277,0,6.249867};
+			};
+			id=1692;
+			type="ACE_moduleReviveSettings";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ACE_moduleReviveSettings_amountOfReviveLives";
+					expression="_this setVariable ['amountOfReviveLives',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=-1;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ACE_moduleReviveSettings_enableRevive";
+					expression="_this setVariable ['enableRevive',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ACE_moduleReviveSettings_maxReviveTime";
+					expression="_this setVariable ['maxReviveTime',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=600;
+						};
+					};
+				};
+				nAttributes=3;
 			};
 		};
 	};
