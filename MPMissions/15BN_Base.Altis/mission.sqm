@@ -21,9 +21,9 @@ class EditorData
 	class Camera
 	{
 		pos[]={17447.627,14.613991,13202.755};
-		dir[]={-1.7484555e-007,0,1};
-		up[]={0,1,0};
-		aside[]={1,0,1.7484555e-007};
+		dir[]={-0.93315703,-0.12665735,0.33642015};
+		up[]={-0.11915111,0.99194628,0.042956222};
+		aside[]={0.33915097,8.5681677e-008,0.9407326};
 	};
 };
 binarizationWanted=0;
@@ -2765,11 +2765,26 @@ class Mission
 							class handgun
 							{
 								name="rhsusf_weap_m1911a1";
+								class primaryMuzzleMag
+								{
+									name="rhsusf_mag_7x45acp_MHP";
+									ammoLeft=7;
+								};
 							};
 							class uniform
 							{
 								typeName="rhs_uniform_FROG01_wd";
 								isBackpack=0;
+								class MagazineCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="rhsusf_mag_7x45acp_MHP";
+										count=2;
+										ammoLeft=7;
+									};
+								};
 								class ItemCargo
 								{
 									items=4;
@@ -2801,7 +2816,7 @@ class Mission
 								isBackpack=0;
 								class MagazineCargo
 								{
-									items=5;
+									items=6;
 									class Item0
 									{
 										name="rhs_mag_an_m8hc";
@@ -2831,6 +2846,12 @@ class Mission
 										name="rhs_mag_m67";
 										count=2;
 										ammoLeft=1;
+									};
+									class Item5
+									{
+										name="rhsusf_mag_7x45acp_MHP";
+										count=1;
+										ammoLeft=7;
 									};
 								};
 							};
@@ -17048,7 +17069,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={17401.311,13.995684,13196.33};
-						angles[]={0.029326396,0,6.251195};
+						angles[]={0.029321531,0,6.251193};
 					};
 					id=1619;
 					type="ace_advanced_throwing_Module";
@@ -18110,11 +18131,12 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={17382.752,14.465586,13184.276};
-				angles[]={0.014664836,0,6.276526};
+				position[]={17382.752,14.465587,13184.276};
+				angles[]={0.014660765,0,6.2765183};
 			};
 			id=1689;
 			type="ACE_moduleBasicMedicalSettings";
+			atlOffset=9.5367432e-007;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -18163,11 +18185,12 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={17392.199,14.406642,13184.621};
-				angles[]={0.013332055,0,6.2778587};
+				position[]={17392.199,14.406641,13184.621};
+				angles[]={0.013334315,0,6.2778621};
 			};
 			id=1690;
 			type="ACE_moduleMedicalSettings";
+			atlOffset=-9.5367432e-007;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -18445,7 +18468,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={17408.521,14.0335,13185.308};
-				angles[]={0.022662206,0,6.2445378};
+				angles[]={0.022654373,0,6.244544};
 			};
 			id=1691;
 			type="ACE_ModuleRespawn";
