@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=1693;
+		nextID=1697;
 	};
 	class MarkerIDProvider
 	{
@@ -16,7 +16,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=155;
+		nextID=161;
 	};
 	class Camera
 	{
@@ -16311,6 +16311,25 @@ class Mission
 						};
 						class Attribute1
 						{
+							property="mcc_sandbox_moduleMissionSettings_respawnOnGroupLeader";
+							expression="_this setVariable ['respawnOnGroupLeader',_value,true];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						class Attribute2
+						{
 							property="mcc_sandbox_moduleMissionSettings_t2t";
 							expression="_this setVariable ['t2t',_value,true];";
 							class Value
@@ -16328,7 +16347,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute2
+						class Attribute3
 						{
 							property="mcc_sandbox_moduleMissionSettings_commanderConsole";
 							expression="_this setVariable ['commanderConsole',_value,true];";
@@ -16347,7 +16366,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute3
+						class Attribute4
 						{
 							property="mcc_sandbox_moduleMissionSettings_squadDialogPip";
 							expression="_this setVariable ['squadDialogPip',_value,true];";
@@ -16366,7 +16385,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute4
+						class Attribute5
 						{
 							property="mcc_sandbox_moduleMissionSettings_allowRTS";
 							expression="_this setVariable ['allowRTS',_value,true];";
@@ -16385,7 +16404,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute5
+						class Attribute6
 						{
 							property="mcc_sandbox_moduleMissionSettings_deleteBody";
 							expression="_this setVariable ['deleteBody',_value,true];";
@@ -16404,7 +16423,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute6
+						class Attribute7
 						{
 							property="mcc_sandbox_moduleMissionSettings_sqlPDA";
 							expression="_this setVariable ['sqlPDA',_value,true];";
@@ -16423,7 +16442,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute7
+						class Attribute8
 						{
 							property="mcc_sandbox_moduleMissionSettings_commanderConsoleShowGPS";
 							expression="_this setVariable ['commanderConsoleShowGPS',_value,true];";
@@ -16442,7 +16461,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute8
+						class Attribute9
 						{
 							property="mcc_sandbox_moduleMissionSettings_logistics";
 							expression="_this setVariable ['logistics',_value,true];";
@@ -16461,45 +16480,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute9
-						{
-							property="mcc_sandbox_moduleMissionSettings_groupMarkers";
-							expression="_this setVariable ['groupMarkers',_value,true];";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=0;
-								};
-							};
-						};
 						class Attribute10
-						{
-							property="mcc_sandbox_moduleMissionSettings_nameTags";
-							expression="_this setVariable ['nameTags',_value,true];";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute11
 						{
 							property="mcc_sandbox_moduleMissionSettings_messages";
 							expression="_this setVariable ['messages',_value,true];";
@@ -16518,7 +16499,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute12
+						class Attribute11
 						{
 							property="mcc_sandbox_moduleMissionSettings_sync";
 							expression="_this setVariable ['sync',_value,true];";
@@ -16537,7 +16518,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute13
+						class Attribute12
 						{
 							property="mcc_sandbox_moduleMissionSettings_allowKitChange";
 							expression="_this setVariable ['allowKitChange',_value,true];";
@@ -16556,7 +16537,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute14
+						class Attribute13
 						{
 							property="mcc_sandbox_moduleMissionSettings_saveGear";
 							expression="_this setVariable ['saveGear',_value,true];";
@@ -16575,7 +16556,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute15
+						class Attribute14
 						{
 							property="mcc_sandbox_moduleMissionSettings_roleSelection";
 							expression="_this setVariable ['roleSelection',_value,true];";
@@ -16594,7 +16575,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute16
+						class Attribute15
 						{
 							property="mcc_sandbox_moduleMissionSettings_timeAccel";
 							expression="_this setVariable ['timeAccel',_value,true];";
@@ -16613,7 +16594,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute17
+						class Attribute16
 						{
 							property="mcc_sandbox_moduleMissionSettings_respawnMenu";
 							expression="_this setVariable ['respawnMenu',_value,true];";
@@ -16632,7 +16613,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute18
+						class Attribute17
 						{
 							property="mcc_sandbox_moduleMissionSettings_squadDialog";
 							expression="_this setVariable ['squadDialog',_value,true];";
@@ -16651,7 +16632,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute19
+						class Attribute18
 						{
 							property="mcc_sandbox_moduleMissionSettings_commanderConsoleAI";
 							expression="_this setVariable ['commanderConsoleAI',_value,true];";
@@ -16670,7 +16651,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute20
+						class Attribute19
 						{
 							property="mcc_sandbox_moduleMissionSettings_commanderConsoleWP";
 							expression="_this setVariable ['commanderConsoleWP',_value,true];";
@@ -16689,7 +16670,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=21;
+						nAttributes=20;
 					};
 				};
 				class Item2
@@ -18525,6 +18506,7 @@ class Mission
 			};
 			id=1692;
 			type="ACE_moduleReviveSettings";
+			atlOffset=-9.5367432e-007;
 			class CustomAttributes
 			{
 				class Attribute0
