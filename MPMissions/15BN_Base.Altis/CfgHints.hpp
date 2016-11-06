@@ -8,10 +8,8 @@ class Istruzioni
 Benvenuto %11.<br/>\
 Premi %3[ESC]%4 e scegli %3MANUALE OPERATIVO%4\
  per leggere queste ed ulteriori istruzioni.<br/>\
-L'%3Arsenale Virtuale%4 è disponibile nella base.<br/>\
-Presso ogni cassa sono disponibili :<br/>\
-%2 Radio di ogni tipo<br/>\
-%2 Munizioni\
+L'%3Arsenale Virtuale%4 è disponibile in base<br/>\
+presso i cartelli delle squadre.\
 ";
 	tip = "\
 Buon divertimento!<br/>\
