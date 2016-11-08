@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=229;
+		nextID=238;
 	};
 	class Camera
 	{
-		pos[]={17433.68,78.186592,13292.962};
-		dir[]={0.088980392,-0.626019,-0.77486014};
-		up[]={0.071413562,0.77938116,-0.62193549};
-		aside[]={-0.99373674,2.8903778e-006,-0.114108};
+		pos[]={18861.414,135.73524,16254.95};
+		dir[]={-0.2650784,-0.63908494,0.72203726};
+		up[]={-0.22025588,0.76912469,0.59994495};
+		aside[]={0.93875527,-9.4575807e-007,0.34464192};
 	};
 };
 binarizationWanted=0;
@@ -577,7 +577,7 @@ class AddonsMetaData
 randomSeed=12630307;
 class ScenarioData
 {
-	author="alef";
+	author="PasinZioCan";
 	briefing=0;
 	debriefing=0;
 	showCompass=0;
@@ -876,7 +876,7 @@ class Mission
 {
 	class Intel
 	{
-		briefingName="Base";
+		briefingName="Injured Eagle";
 		overviewText="Bravo 1 = Alpha 2-1. Bravo 2 = Alpha 2-2. Bravo 3 = Alpha 2-3.";
 		timeOfChanges=1800.0002;
 		startWeather=0;
@@ -1468,6 +1468,7 @@ class Mission
 					{
 						rank="SERGEANT";
 						description="Alfa 1 - TL/SL";
+						isPlayer=1;
 						isPlayable=1;
 						class Inventory
 						{
@@ -20370,7 +20371,7 @@ class Mission
 			};
 			id=2366;
 			type="EmptyDetectorAreaR250";
-			atlOffset=3.3717613;
+			atlOffset=3.3718147;
 		};
 		class Item154
 		{
@@ -21355,7 +21356,7 @@ class Mission
 				};
 			};
 			id=2407;
-			atlOffset=0.54976559;
+			atlOffset=0.5630002;
 		};
 		class Item186
 		{
@@ -21373,7 +21374,7 @@ class Mission
 			};
 			id=2408;
 			type="rhs_Igla_AA_pod_vdv";
-			atlOffset=0.54976559;
+			atlOffset=0.5630002;
 		};
 		class Item187
 		{
@@ -21390,7 +21391,7 @@ class Mission
 			};
 			id=2410;
 			type="rhs_launcher_crate";
-			atlOffset=0.16939735;
+			atlOffset=0.16946936;
 		};
 		class Item188
 		{
@@ -22234,7 +22235,7 @@ class Mission
 			};
 			id=2436;
 			type="rhsusf_m113_usarmy_MK19";
-			atlOffset=-0.00096511841;
+			atlOffset=-0.00091362;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -24210,14 +24211,13 @@ class Mission
 						angles[]={0,3.8352249,0};
 					};
 					side="East";
-					flags=3;
+					flags=7;
 					class Attributes
 					{
 						init="this disableAI ""MOVE"";";
 					};
 					id=2531;
 					type="rhs_vdv_efreitor";
-					atlOffset=0.93528748;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -24270,14 +24270,13 @@ class Mission
 						angles[]={0,2.6159694,0};
 					};
 					side="East";
-					flags=1;
+					flags=5;
 					class Attributes
 					{
 						init="this disableAI ""MOVE"";";
 					};
 					id=2532;
 					type="rhs_vdv_arifleman";
-					atlOffset=4.2827892;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -24326,7 +24325,6 @@ class Mission
 			{
 			};
 			id=2530;
-			atlOffset=0.93528748;
 		};
 		class Item268
 		{
