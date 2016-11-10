@@ -5,10 +5,10 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=1;
+	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=1701;
+		nextID=1709;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=163;
+		nextID=165;
 	};
 	class Camera
 	{
-		pos[]={17447.627,14.613991,13202.755};
-		dir[]={-0.93315703,-0.12665735,0.33642015};
-		up[]={-0.11915111,0.99194628,0.042956222};
-		aside[]={0.33915097,8.5681677e-008,0.9407326};
+		pos[]={17491.365,79.529984,13164.567};
+		dir[]={-0.84904802,-0.50226915,0.16394161};
+		up[]={-0.49315944,0.8647086,0.095223732};
+		aside[]={0.18958911,-1.4610123e-007,0.98187971};
 	};
 };
 binarizationWanted=0;
@@ -750,7 +750,6 @@ class Mission
 		forecastLightnings=0.1;
 		year=2016;
 		month=02;
-		day=14;
 		hour=20;
 		minute=50;
 		startFogDecay=0.013;
@@ -3024,6 +3023,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						init="if (!isMultiplayer) then {deleteVehicle this}";
 						isPlayable=1;
 					};
 					id=596;
@@ -3085,6 +3085,7 @@ class Mission
 					{
 						skill=0.44999999;
 						rank="CORPORAL";
+						init="if (!isMultiplayer) then {deleteVehicle this}";
 						isPlayable=1;
 					};
 					id=597;
@@ -3144,6 +3145,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						init="if (!isMultiplayer) then {deleteVehicle this}";
 						isPlayable=1;
 					};
 					id=598;
@@ -3204,6 +3206,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						init="if (!isMultiplayer) then {deleteVehicle this}";
 						isPlayable=1;
 					};
 					id=599;
@@ -3264,6 +3267,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						init="if (!isMultiplayer) then {deleteVehicle this}";
 						isPlayable=1;
 					};
 					id=600;
@@ -3323,6 +3327,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						init="if (!isMultiplayer) then {deleteVehicle this}";
 						isPlayable=1;
 					};
 					id=601;
@@ -3382,6 +3387,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						init="if (!isMultiplayer) then {deleteVehicle this}";
 						isPlayable=1;
 					};
 					id=602;
@@ -3441,6 +3447,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						init="if (!isMultiplayer) then {deleteVehicle this}";
 						isPlayable=1;
 					};
 					id=603;
@@ -3501,6 +3508,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						init="if (!isMultiplayer) then {deleteVehicle this}";
 						isPlayable=1;
 					};
 					id=604;
@@ -3560,6 +3568,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						init="if (!isMultiplayer) then {deleteVehicle this}";
 						isPlayable=1;
 					};
 					id=605;
@@ -4373,6 +4382,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						init="if (!isMultiplayer) then {deleteVehicle this}";
 						isPlayable=1;
 					};
 					id=585;
@@ -4434,6 +4444,7 @@ class Mission
 					{
 						skill=0.44999999;
 						rank="CORPORAL";
+						init="if (!isMultiplayer) then {deleteVehicle this}";
 						isPlayable=1;
 					};
 					id=586;
@@ -4494,6 +4505,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						init="if (!isMultiplayer) then {deleteVehicle this}";
 						isPlayable=1;
 					};
 					id=587;
@@ -4555,6 +4567,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						init="if (!isMultiplayer) then {deleteVehicle this}";
 						isPlayable=1;
 					};
 					id=588;
@@ -4615,6 +4628,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						init="if (!isMultiplayer) then {deleteVehicle this}";
 						isPlayable=1;
 					};
 					id=589;
@@ -4675,6 +4689,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						init="if (!isMultiplayer) then {deleteVehicle this}";
 						isPlayable=1;
 					};
 					id=590;
@@ -4735,6 +4750,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						init="if (!isMultiplayer) then {deleteVehicle this}";
 						isPlayable=1;
 					};
 					id=591;
@@ -4796,6 +4812,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						init="if (!isMultiplayer) then {deleteVehicle this}";
 						isPlayable=1;
 					};
 					id=592;
@@ -4856,6 +4873,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						init="if (!isMultiplayer) then {deleteVehicle this}";
 						isPlayable=1;
 					};
 					id=593;
@@ -4916,6 +4934,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.40000001;
+						init="if (!isMultiplayer) then {deleteVehicle this}";
 						isPlayable=1;
 					};
 					id=594;
