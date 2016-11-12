@@ -17,6 +17,7 @@ for "_i" from 1 to 10 do {this addItemToUniform "ACE_fieldDressing";};
 for "_i" from 1 to 3 do {this addItemToUniform "ACE_morphine";};
 this addItemToUniform "ACE_epinephrine";
 this addItemToUniform "ACE_Flashlight_XL50";
+this addItemToUniform "ACE_MapTools";
 this addItemToUniform "ACE_microDAGR";
 this addItemToUniform "Leupold_Mk4";
 this addVest "rhsusf_spc_rifleman";
@@ -29,10 +30,8 @@ for "_i" from 1 to 2 do {this addItemToVest "Chemlight_blue";};
 for "_i" from 1 to 2 do {this addItemToVest "Chemlight_yellow";};
 for "_i" from 1 to 2 do {this addItemToVest "Chemlight_red";};
 this addBackpack "rhsusf_assault_eagleaiii_coy";
-this addItemToBackpack "ACE_MapTools";
 this addItemToBackpack "rhsusf_acc_anpeq15_light";
 this addItemToBackpack "Laserdesignator";
-for "_i" from 1 to 2 do {this addItemToBackpack "B_IR_Grenade";};
 for "_i" from 1 to 2 do {this addItemToBackpack "Laserbatteries";};
 this addHeadgear "rhsusf_lwh_helmet_marpatwd";
 

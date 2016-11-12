@@ -29,7 +29,6 @@ for "_i" from 1 to 10 do {this addItemToBackpack "ACE_fieldDressing";};
 for "_i" from 1 to 5 do {this addItemToBackpack "ACE_morphine";};
 for "_i" from 1 to 5 do {this addItemToBackpack "ACE_epinephrine";};
 for "_i" from 1 to 5 do {this addItemToBackpack "ACE_bloodIV_250";};
-for "_i" from 1 to 2 do {this addItemToBackpack "B_IR_Grenade";};
 this addHeadgear "rhsusf_lwh_helmet_marpatwd";
 
 comment "Add weapons";

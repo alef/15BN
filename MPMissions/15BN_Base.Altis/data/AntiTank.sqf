@@ -25,7 +25,7 @@ this addItemToVest "rhs_mag_m18_red";
 this addItemToVest "rhs_mag_m18_green";
 for "_i" from 1 to 2 do {this addItemToVest "rhs_mag_m67";};
 this addBackpack "rhsusf_assault_eagleaiii_coy";
-for "_i" from 1 to 2 do {this addItemToBackpack "B_IR_Grenade";};
+this addItemToBackpack "rhs_fgm148_magazine_AT";
 this addHeadgear "rhsusf_lwh_helmet_marpatwd";
 
 comment "Add weapons";
