@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=1718;
+		nextID=1722;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=167;
+		nextID=171;
 	};
 	class Camera
 	{
-		pos[]={17450.129,15.016215,13205.751};
-		dir[]={0.34230843,-0.29674494,-0.89151675};
-		up[]={0.10636927,0.95495045,-0.27703157};
-		aside[]={-0.93356752,-1.071021e-007,-0.35845268};
+		pos[]={17403.438,39.489124,13142.903};
+		dir[]={0.021498343,-0.59893441,0.80050945};
+		up[]={0.016079092,0.80079758,0.59871882};
+		aside[]={0.99963921,-3.2014214e-010,-0.026846146};
 	};
 };
 binarizationWanted=0;
@@ -86,7 +86,8 @@ addons[]=
 	"acre_api",
 	"A3_Modules_F",
 	"ace_respawn",
-	"RHS_US_A2Port_Armor"
+	"RHS_US_A2Port_Armor",
+	"A3_Weapons_F_Ammoboxes"
 };
 class AddonsMetaData
 {
@@ -773,7 +774,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=103;
+		items=104;
 		class Item0
 		{
 			dataType="Object";
@@ -1472,7 +1473,7 @@ class Mission
 									class Item1
 									{
 										name="rhs_mag_30Rnd_556x45_Mk262_Stanag";
-										count=9;
+										count=10;
 										ammoLeft=30;
 									};
 									class Item2
@@ -1629,6 +1630,7 @@ class Mission
 							{
 								name="rhs_weap_m249_pip_L";
 								optics="rhsusf_acc_ACOG2_USMC";
+								flashlight="rhsusf_acc_anpeq15side_bk";
 								class primaryMuzzleMag
 								{
 									name="rhs_200rnd_556x45_M_SAW";
@@ -1680,7 +1682,7 @@ class Mission
 								isBackpack=0;
 								class MagazineCargo
 								{
-									items=3;
+									items=4;
 									class Item0
 									{
 										name="rhs_mag_an_m8hc";
@@ -1689,14 +1691,20 @@ class Mission
 									};
 									class Item1
 									{
-										name="rhsusf_100Rnd_556x45_soft_pouch";
+										name="rhs_mag_m18_red";
 										count=1;
-										ammoLeft=100;
+										ammoLeft=1;
 									};
 									class Item2
 									{
-										name="rhs_mag_m18_red";
+										name="rhs_mag_m18_green";
 										count=1;
+										ammoLeft=1;
+									};
+									class Item3
+									{
+										name="rhs_mag_m67";
+										count=2;
 										ammoLeft=1;
 									};
 								};
@@ -1858,7 +1866,7 @@ class Mission
 									class Item1
 									{
 										name="rhs_mag_30Rnd_556x45_Mk262_Stanag";
-										count=9;
+										count=10;
 										ammoLeft=30;
 									};
 									class Item2
@@ -1891,7 +1899,7 @@ class Mission
 									class Item0
 									{
 										name="rhs_mag_30Rnd_556x45_Mk262_Stanag";
-										count=5;
+										count=10;
 										ammoLeft=30;
 									};
 									class Item1
@@ -2038,7 +2046,7 @@ class Mission
 									class Item1
 									{
 										name="rhs_mag_30Rnd_556x45_Mk262_Stanag";
-										count=9;
+										count=10;
 										ammoLeft=30;
 									};
 									class Item2
@@ -2071,7 +2079,7 @@ class Mission
 									class Item0
 									{
 										name="rhs_mag_30Rnd_556x45_Mk262_Stanag";
-										count=5;
+										count=10;
 										ammoLeft=30;
 									};
 									class Item1
@@ -2218,7 +2226,7 @@ class Mission
 									class Item1
 									{
 										name="rhs_mag_30Rnd_556x45_Mk262_Stanag";
-										count=9;
+										count=10;
 										ammoLeft=30;
 									};
 									class Item2
@@ -2251,7 +2259,7 @@ class Mission
 									class Item0
 									{
 										name="rhs_mag_30Rnd_556x45_Mk262_Stanag";
-										count=5;
+										count=10;
 										ammoLeft=30;
 									};
 									class Item1
@@ -2346,11 +2354,6 @@ class Mission
 							class secondaryWeapon
 							{
 								name="rhs_weap_fgm148";
-								class primaryMuzzleMag
-								{
-									name="rhs_fgm148_magazine_AT";
-									ammoLeft=1;
-								};
 							};
 							class uniform
 							{
@@ -2407,7 +2410,7 @@ class Mission
 									class Item1
 									{
 										name="rhs_mag_30Rnd_556x45_Mk262_Stanag";
-										count=9;
+										count=5;
 										ammoLeft=30;
 									};
 									class Item2
@@ -2440,7 +2443,7 @@ class Mission
 									class Item0
 									{
 										name="B_IR_Grenade";
-										count=1;
+										count=2;
 										ammoLeft=1;
 									};
 								};
@@ -2601,7 +2604,7 @@ class Mission
 									class Item1
 									{
 										name="rhs_mag_30Rnd_556x45_Mk262_Stanag";
-										count=9;
+										count=6;
 										ammoLeft=30;
 									};
 									class Item2
@@ -2644,22 +2647,22 @@ class Mission
 									class Item0
 									{
 										name="ACE_fieldDressing";
-										count=25;
+										count=10;
 									};
 									class Item1
 									{
 										name="ACE_morphine";
-										count=13;
+										count=5;
 									};
 									class Item2
 									{
 										name="ACE_epinephrine";
-										count=13;
+										count=5;
 									};
 									class Item3
 									{
 										name="ACE_bloodIV_250";
-										count=6;
+										count=5;
 									};
 								};
 							};
@@ -2766,6 +2769,16 @@ class Mission
 							{
 								typeName="rhs_uniform_FROG01_wd";
 								isBackpack=0;
+								class MagazineCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="rhs_mag_m714_White";
+										count=1;
+										ammoLeft=1;
+									};
+								};
 								class ItemCargo
 								{
 									items=6;
@@ -2803,11 +2816,11 @@ class Mission
 							};
 							class vest
 							{
-								typeName="rhsusf_spc_rifleman";
+								typeName="rhsusf_spc_teamleader";
 								isBackpack=0;
 								class MagazineCargo
 								{
-									items=5;
+									items=7;
 									class Item0
 									{
 										name="rhs_mag_an_m8hc";
@@ -2817,7 +2830,7 @@ class Mission
 									class Item1
 									{
 										name="rhs_mag_30Rnd_556x45_Mk262_Stanag";
-										count=9;
+										count=10;
 										ammoLeft=30;
 									};
 									class Item2
@@ -2838,6 +2851,18 @@ class Mission
 										count=2;
 										ammoLeft=1;
 									};
+									class Item5
+									{
+										name="rhs_mag_M441_HE";
+										count=5;
+										ammoLeft=1;
+									};
+									class Item6
+									{
+										name="rhs_mag_m714_White";
+										count=3;
+										ammoLeft=1;
+									};
 								};
 							};
 							class backpack
@@ -2846,7 +2871,7 @@ class Mission
 								isBackpack=1;
 								class MagazineCargo
 								{
-									items=4;
+									items=2;
 									class Item0
 									{
 										name="rhs_mag_30Rnd_556x45_Mk262_Stanag";
@@ -2854,18 +2879,6 @@ class Mission
 										ammoLeft=30;
 									};
 									class Item1
-									{
-										name="rhs_mag_M441_HE";
-										count=6;
-										ammoLeft=1;
-									};
-									class Item2
-									{
-										name="rhs_mag_m714_White";
-										count=6;
-										ammoLeft=1;
-									};
-									class Item3
 									{
 										name="B_IR_Grenade";
 										count=2;
@@ -6851,7 +6864,7 @@ class Mission
 									class Item1
 									{
 										name="rhs_mag_30Rnd_556x45_Mk262_Stanag";
-										count=9;
+										count=10;
 										ammoLeft=30;
 									};
 									class Item2
@@ -6988,6 +7001,7 @@ class Mission
 							{
 								name="rhs_weap_m249_pip_L";
 								optics="rhsusf_acc_ACOG2_USMC";
+								flashlight="rhsusf_acc_anpeq15side_bk";
 								class primaryMuzzleMag
 								{
 									name="rhs_200rnd_556x45_M_SAW";
@@ -7039,7 +7053,7 @@ class Mission
 								isBackpack=0;
 								class MagazineCargo
 								{
-									items=3;
+									items=4;
 									class Item0
 									{
 										name="rhs_mag_an_m8hc";
@@ -7048,14 +7062,20 @@ class Mission
 									};
 									class Item1
 									{
-										name="rhsusf_100Rnd_556x45_soft_pouch";
+										name="rhs_mag_m18_red";
 										count=1;
-										ammoLeft=100;
+										ammoLeft=1;
 									};
 									class Item2
 									{
-										name="rhs_mag_m18_red";
+										name="rhs_mag_m18_green";
 										count=1;
+										ammoLeft=1;
+									};
+									class Item3
+									{
+										name="rhs_mag_m67";
+										count=2;
 										ammoLeft=1;
 									};
 								};
@@ -7216,7 +7236,7 @@ class Mission
 									class Item1
 									{
 										name="rhs_mag_30Rnd_556x45_Mk262_Stanag";
-										count=9;
+										count=10;
 										ammoLeft=30;
 									};
 									class Item2
@@ -7249,7 +7269,7 @@ class Mission
 									class Item0
 									{
 										name="rhs_mag_30Rnd_556x45_Mk262_Stanag";
-										count=5;
+										count=10;
 										ammoLeft=30;
 									};
 									class Item1
@@ -7395,7 +7415,7 @@ class Mission
 									class Item1
 									{
 										name="rhs_mag_30Rnd_556x45_Mk262_Stanag";
-										count=9;
+										count=10;
 										ammoLeft=30;
 									};
 									class Item2
@@ -7428,7 +7448,7 @@ class Mission
 									class Item0
 									{
 										name="rhs_mag_30Rnd_556x45_Mk262_Stanag";
-										count=5;
+										count=10;
 										ammoLeft=30;
 									};
 									class Item1
@@ -7574,7 +7594,7 @@ class Mission
 									class Item1
 									{
 										name="rhs_mag_30Rnd_556x45_Mk262_Stanag";
-										count=9;
+										count=10;
 										ammoLeft=30;
 									};
 									class Item2
@@ -7607,7 +7627,7 @@ class Mission
 									class Item0
 									{
 										name="rhs_mag_30Rnd_556x45_Mk262_Stanag";
-										count=5;
+										count=10;
 										ammoLeft=30;
 									};
 									class Item1
@@ -7701,11 +7721,6 @@ class Mission
 							class secondaryWeapon
 							{
 								name="rhs_weap_fgm148";
-								class primaryMuzzleMag
-								{
-									name="rhs_fgm148_magazine_AT";
-									ammoLeft=1;
-								};
 							};
 							class uniform
 							{
@@ -7762,7 +7777,7 @@ class Mission
 									class Item1
 									{
 										name="rhs_mag_30Rnd_556x45_Mk262_Stanag";
-										count=9;
+										count=5;
 										ammoLeft=30;
 									};
 									class Item2
@@ -7795,7 +7810,7 @@ class Mission
 									class Item0
 									{
 										name="B_IR_Grenade";
-										count=1;
+										count=2;
 										ammoLeft=1;
 									};
 								};
@@ -7936,7 +7951,7 @@ class Mission
 									class Item1
 									{
 										name="rhs_mag_30Rnd_556x45_Mk262_Stanag";
-										count=9;
+										count=6;
 										ammoLeft=30;
 									};
 									class Item2
@@ -7979,22 +7994,22 @@ class Mission
 									class Item0
 									{
 										name="ACE_fieldDressing";
-										count=25;
+										count=10;
 									};
 									class Item1
 									{
 										name="ACE_morphine";
-										count=13;
+										count=5;
 									};
 									class Item2
 									{
 										name="ACE_epinephrine";
-										count=13;
+										count=5;
 									};
 									class Item3
 									{
 										name="ACE_bloodIV_250";
-										count=6;
+										count=5;
 									};
 								};
 							};
@@ -8100,6 +8115,16 @@ class Mission
 							{
 								typeName="rhs_uniform_FROG01_wd";
 								isBackpack=0;
+								class MagazineCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="rhs_mag_m714_White";
+										count=1;
+										ammoLeft=1;
+									};
+								};
 								class ItemCargo
 								{
 									items=6;
@@ -8137,11 +8162,11 @@ class Mission
 							};
 							class vest
 							{
-								typeName="rhsusf_spc_rifleman";
+								typeName="rhsusf_spc_teamleader";
 								isBackpack=0;
 								class MagazineCargo
 								{
-									items=5;
+									items=7;
 									class Item0
 									{
 										name="rhs_mag_an_m8hc";
@@ -8151,7 +8176,7 @@ class Mission
 									class Item1
 									{
 										name="rhs_mag_30Rnd_556x45_Mk262_Stanag";
-										count=9;
+										count=10;
 										ammoLeft=30;
 									};
 									class Item2
@@ -8172,6 +8197,18 @@ class Mission
 										count=2;
 										ammoLeft=1;
 									};
+									class Item5
+									{
+										name="rhs_mag_M441_HE";
+										count=5;
+										ammoLeft=1;
+									};
+									class Item6
+									{
+										name="rhs_mag_m714_White";
+										count=3;
+										ammoLeft=1;
+									};
 								};
 							};
 							class backpack
@@ -8180,7 +8217,7 @@ class Mission
 								isBackpack=1;
 								class MagazineCargo
 								{
-									items=4;
+									items=2;
 									class Item0
 									{
 										name="rhs_mag_30Rnd_556x45_Mk262_Stanag";
@@ -8188,18 +8225,6 @@ class Mission
 										ammoLeft=30;
 									};
 									class Item1
-									{
-										name="rhs_mag_M441_HE";
-										count=6;
-										ammoLeft=1;
-									};
-									class Item2
-									{
-										name="rhs_mag_m714_White";
-										count=6;
-										ammoLeft=1;
-									};
-									class Item3
 									{
 										name="B_IR_Grenade";
 										count=2;
@@ -8396,7 +8421,7 @@ class Mission
 									class Item1
 									{
 										name="rhs_mag_30Rnd_556x45_Mk262_Stanag";
-										count=9;
+										count=10;
 										ammoLeft=30;
 									};
 									class Item2
@@ -8533,6 +8558,7 @@ class Mission
 							{
 								name="rhs_weap_m249_pip_L";
 								optics="rhsusf_acc_ACOG2_USMC";
+								flashlight="rhsusf_acc_anpeq15side_bk";
 								class primaryMuzzleMag
 								{
 									name="rhs_200rnd_556x45_M_SAW";
@@ -8584,7 +8610,7 @@ class Mission
 								isBackpack=0;
 								class MagazineCargo
 								{
-									items=3;
+									items=4;
 									class Item0
 									{
 										name="rhs_mag_an_m8hc";
@@ -8593,14 +8619,20 @@ class Mission
 									};
 									class Item1
 									{
-										name="rhsusf_100Rnd_556x45_soft_pouch";
+										name="rhs_mag_m18_red";
 										count=1;
-										ammoLeft=100;
+										ammoLeft=1;
 									};
 									class Item2
 									{
-										name="rhs_mag_m18_red";
+										name="rhs_mag_m18_green";
 										count=1;
+										ammoLeft=1;
+									};
+									class Item3
+									{
+										name="rhs_mag_m67";
+										count=2;
 										ammoLeft=1;
 									};
 								};
@@ -8761,7 +8793,7 @@ class Mission
 									class Item1
 									{
 										name="rhs_mag_30Rnd_556x45_Mk262_Stanag";
-										count=9;
+										count=10;
 										ammoLeft=30;
 									};
 									class Item2
@@ -8794,7 +8826,7 @@ class Mission
 									class Item0
 									{
 										name="rhs_mag_30Rnd_556x45_Mk262_Stanag";
-										count=5;
+										count=10;
 										ammoLeft=30;
 									};
 									class Item1
@@ -8940,7 +8972,7 @@ class Mission
 									class Item1
 									{
 										name="rhs_mag_30Rnd_556x45_Mk262_Stanag";
-										count=9;
+										count=10;
 										ammoLeft=30;
 									};
 									class Item2
@@ -8973,7 +9005,7 @@ class Mission
 									class Item0
 									{
 										name="rhs_mag_30Rnd_556x45_Mk262_Stanag";
-										count=5;
+										count=10;
 										ammoLeft=30;
 									};
 									class Item1
@@ -9119,7 +9151,7 @@ class Mission
 									class Item1
 									{
 										name="rhs_mag_30Rnd_556x45_Mk262_Stanag";
-										count=9;
+										count=10;
 										ammoLeft=30;
 									};
 									class Item2
@@ -9152,7 +9184,7 @@ class Mission
 									class Item0
 									{
 										name="rhs_mag_30Rnd_556x45_Mk262_Stanag";
-										count=5;
+										count=10;
 										ammoLeft=30;
 									};
 									class Item1
@@ -9246,11 +9278,6 @@ class Mission
 							class secondaryWeapon
 							{
 								name="rhs_weap_fgm148";
-								class primaryMuzzleMag
-								{
-									name="rhs_fgm148_magazine_AT";
-									ammoLeft=1;
-								};
 							};
 							class uniform
 							{
@@ -9307,7 +9334,7 @@ class Mission
 									class Item1
 									{
 										name="rhs_mag_30Rnd_556x45_Mk262_Stanag";
-										count=9;
+										count=5;
 										ammoLeft=30;
 									};
 									class Item2
@@ -9340,7 +9367,7 @@ class Mission
 									class Item0
 									{
 										name="B_IR_Grenade";
-										count=1;
+										count=2;
 										ammoLeft=1;
 									};
 								};
@@ -9481,7 +9508,7 @@ class Mission
 									class Item1
 									{
 										name="rhs_mag_30Rnd_556x45_Mk262_Stanag";
-										count=9;
+										count=6;
 										ammoLeft=30;
 									};
 									class Item2
@@ -9524,22 +9551,22 @@ class Mission
 									class Item0
 									{
 										name="ACE_fieldDressing";
-										count=25;
+										count=10;
 									};
 									class Item1
 									{
 										name="ACE_morphine";
-										count=13;
+										count=5;
 									};
 									class Item2
 									{
 										name="ACE_epinephrine";
-										count=13;
+										count=5;
 									};
 									class Item3
 									{
 										name="ACE_bloodIV_250";
-										count=6;
+										count=5;
 									};
 								};
 							};
@@ -9645,6 +9672,16 @@ class Mission
 							{
 								typeName="rhs_uniform_FROG01_wd";
 								isBackpack=0;
+								class MagazineCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="rhs_mag_m714_White";
+										count=1;
+										ammoLeft=1;
+									};
+								};
 								class ItemCargo
 								{
 									items=6;
@@ -9682,11 +9719,11 @@ class Mission
 							};
 							class vest
 							{
-								typeName="rhsusf_spc_rifleman";
+								typeName="rhsusf_spc_teamleader";
 								isBackpack=0;
 								class MagazineCargo
 								{
-									items=5;
+									items=7;
 									class Item0
 									{
 										name="rhs_mag_an_m8hc";
@@ -9696,7 +9733,7 @@ class Mission
 									class Item1
 									{
 										name="rhs_mag_30Rnd_556x45_Mk262_Stanag";
-										count=9;
+										count=10;
 										ammoLeft=30;
 									};
 									class Item2
@@ -9717,6 +9754,18 @@ class Mission
 										count=2;
 										ammoLeft=1;
 									};
+									class Item5
+									{
+										name="rhs_mag_M441_HE";
+										count=5;
+										ammoLeft=1;
+									};
+									class Item6
+									{
+										name="rhs_mag_m714_White";
+										count=3;
+										ammoLeft=1;
+									};
 								};
 							};
 							class backpack
@@ -9725,7 +9774,7 @@ class Mission
 								isBackpack=1;
 								class MagazineCargo
 								{
-									items=4;
+									items=2;
 									class Item0
 									{
 										name="rhs_mag_30Rnd_556x45_Mk262_Stanag";
@@ -9733,18 +9782,6 @@ class Mission
 										ammoLeft=30;
 									};
 									class Item1
-									{
-										name="rhs_mag_M441_HE";
-										count=6;
-										ammoLeft=1;
-									};
-									class Item2
-									{
-										name="rhs_mag_m714_White";
-										count=6;
-										ammoLeft=1;
-									};
-									class Item3
 									{
 										name="B_IR_Grenade";
 										count=2;
@@ -9941,7 +9978,7 @@ class Mission
 									class Item1
 									{
 										name="rhs_mag_30Rnd_556x45_Mk262_Stanag";
-										count=9;
+										count=10;
 										ammoLeft=30;
 									};
 									class Item2
@@ -10078,6 +10115,7 @@ class Mission
 							{
 								name="rhs_weap_m249_pip_L";
 								optics="rhsusf_acc_ACOG2_USMC";
+								flashlight="rhsusf_acc_anpeq15side_bk";
 								class primaryMuzzleMag
 								{
 									name="rhs_200rnd_556x45_M_SAW";
@@ -10129,7 +10167,7 @@ class Mission
 								isBackpack=0;
 								class MagazineCargo
 								{
-									items=3;
+									items=4;
 									class Item0
 									{
 										name="rhs_mag_an_m8hc";
@@ -10138,14 +10176,20 @@ class Mission
 									};
 									class Item1
 									{
-										name="rhsusf_100Rnd_556x45_soft_pouch";
+										name="rhs_mag_m18_red";
 										count=1;
-										ammoLeft=100;
+										ammoLeft=1;
 									};
 									class Item2
 									{
-										name="rhs_mag_m18_red";
+										name="rhs_mag_m18_green";
 										count=1;
+										ammoLeft=1;
+									};
+									class Item3
+									{
+										name="rhs_mag_m67";
+										count=2;
 										ammoLeft=1;
 									};
 								};
@@ -10306,7 +10350,7 @@ class Mission
 									class Item1
 									{
 										name="rhs_mag_30Rnd_556x45_Mk262_Stanag";
-										count=9;
+										count=10;
 										ammoLeft=30;
 									};
 									class Item2
@@ -10339,7 +10383,7 @@ class Mission
 									class Item0
 									{
 										name="rhs_mag_30Rnd_556x45_Mk262_Stanag";
-										count=5;
+										count=10;
 										ammoLeft=30;
 									};
 									class Item1
@@ -10485,7 +10529,7 @@ class Mission
 									class Item1
 									{
 										name="rhs_mag_30Rnd_556x45_Mk262_Stanag";
-										count=9;
+										count=10;
 										ammoLeft=30;
 									};
 									class Item2
@@ -10518,7 +10562,7 @@ class Mission
 									class Item0
 									{
 										name="rhs_mag_30Rnd_556x45_Mk262_Stanag";
-										count=5;
+										count=10;
 										ammoLeft=30;
 									};
 									class Item1
@@ -10664,7 +10708,7 @@ class Mission
 									class Item1
 									{
 										name="rhs_mag_30Rnd_556x45_Mk262_Stanag";
-										count=9;
+										count=10;
 										ammoLeft=30;
 									};
 									class Item2
@@ -10697,7 +10741,7 @@ class Mission
 									class Item0
 									{
 										name="rhs_mag_30Rnd_556x45_Mk262_Stanag";
-										count=5;
+										count=10;
 										ammoLeft=30;
 									};
 									class Item1
@@ -10791,11 +10835,6 @@ class Mission
 							class secondaryWeapon
 							{
 								name="rhs_weap_fgm148";
-								class primaryMuzzleMag
-								{
-									name="rhs_fgm148_magazine_AT";
-									ammoLeft=1;
-								};
 							};
 							class uniform
 							{
@@ -10852,7 +10891,7 @@ class Mission
 									class Item1
 									{
 										name="rhs_mag_30Rnd_556x45_Mk262_Stanag";
-										count=9;
+										count=5;
 										ammoLeft=30;
 									};
 									class Item2
@@ -10885,7 +10924,7 @@ class Mission
 									class Item0
 									{
 										name="B_IR_Grenade";
-										count=1;
+										count=2;
 										ammoLeft=1;
 									};
 								};
@@ -11026,7 +11065,7 @@ class Mission
 									class Item1
 									{
 										name="rhs_mag_30Rnd_556x45_Mk262_Stanag";
-										count=9;
+										count=6;
 										ammoLeft=30;
 									};
 									class Item2
@@ -11069,22 +11108,22 @@ class Mission
 									class Item0
 									{
 										name="ACE_fieldDressing";
-										count=25;
+										count=10;
 									};
 									class Item1
 									{
 										name="ACE_morphine";
-										count=13;
+										count=5;
 									};
 									class Item2
 									{
 										name="ACE_epinephrine";
-										count=13;
+										count=5;
 									};
 									class Item3
 									{
 										name="ACE_bloodIV_250";
-										count=6;
+										count=5;
 									};
 								};
 							};
@@ -11190,6 +11229,16 @@ class Mission
 							{
 								typeName="rhs_uniform_FROG01_wd";
 								isBackpack=0;
+								class MagazineCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="rhs_mag_m714_White";
+										count=1;
+										ammoLeft=1;
+									};
+								};
 								class ItemCargo
 								{
 									items=6;
@@ -11227,11 +11276,11 @@ class Mission
 							};
 							class vest
 							{
-								typeName="rhsusf_spc_rifleman";
+								typeName="rhsusf_spc_teamleader";
 								isBackpack=0;
 								class MagazineCargo
 								{
-									items=5;
+									items=7;
 									class Item0
 									{
 										name="rhs_mag_an_m8hc";
@@ -11241,7 +11290,7 @@ class Mission
 									class Item1
 									{
 										name="rhs_mag_30Rnd_556x45_Mk262_Stanag";
-										count=9;
+										count=10;
 										ammoLeft=30;
 									};
 									class Item2
@@ -11262,6 +11311,18 @@ class Mission
 										count=2;
 										ammoLeft=1;
 									};
+									class Item5
+									{
+										name="rhs_mag_M441_HE";
+										count=5;
+										ammoLeft=1;
+									};
+									class Item6
+									{
+										name="rhs_mag_m714_White";
+										count=3;
+										ammoLeft=1;
+									};
 								};
 							};
 							class backpack
@@ -11270,7 +11331,7 @@ class Mission
 								isBackpack=1;
 								class MagazineCargo
 								{
-									items=4;
+									items=2;
 									class Item0
 									{
 										name="rhs_mag_30Rnd_556x45_Mk262_Stanag";
@@ -11278,18 +11339,6 @@ class Mission
 										ammoLeft=30;
 									};
 									class Item1
-									{
-										name="rhs_mag_M441_HE";
-										count=6;
-										ammoLeft=1;
-									};
-									class Item2
-									{
-										name="rhs_mag_m714_White";
-										count=6;
-										ammoLeft=1;
-									};
-									class Item3
 									{
 										name="B_IR_Grenade";
 										count=2;
@@ -11486,7 +11535,7 @@ class Mission
 									class Item1
 									{
 										name="rhs_mag_30Rnd_556x45_Mk262_Stanag";
-										count=9;
+										count=10;
 										ammoLeft=30;
 									};
 									class Item2
@@ -11623,6 +11672,7 @@ class Mission
 							{
 								name="rhs_weap_m249_pip_L";
 								optics="rhsusf_acc_ACOG2_USMC";
+								flashlight="rhsusf_acc_anpeq15side_bk";
 								class primaryMuzzleMag
 								{
 									name="rhs_200rnd_556x45_M_SAW";
@@ -11674,7 +11724,7 @@ class Mission
 								isBackpack=0;
 								class MagazineCargo
 								{
-									items=3;
+									items=4;
 									class Item0
 									{
 										name="rhs_mag_an_m8hc";
@@ -11683,14 +11733,20 @@ class Mission
 									};
 									class Item1
 									{
-										name="rhsusf_100Rnd_556x45_soft_pouch";
+										name="rhs_mag_m18_red";
 										count=1;
-										ammoLeft=100;
+										ammoLeft=1;
 									};
 									class Item2
 									{
-										name="rhs_mag_m18_red";
+										name="rhs_mag_m18_green";
 										count=1;
+										ammoLeft=1;
+									};
+									class Item3
+									{
+										name="rhs_mag_m67";
+										count=2;
 										ammoLeft=1;
 									};
 								};
@@ -11851,7 +11907,7 @@ class Mission
 									class Item1
 									{
 										name="rhs_mag_30Rnd_556x45_Mk262_Stanag";
-										count=9;
+										count=10;
 										ammoLeft=30;
 									};
 									class Item2
@@ -11884,7 +11940,7 @@ class Mission
 									class Item0
 									{
 										name="rhs_mag_30Rnd_556x45_Mk262_Stanag";
-										count=5;
+										count=10;
 										ammoLeft=30;
 									};
 									class Item1
@@ -12030,7 +12086,7 @@ class Mission
 									class Item1
 									{
 										name="rhs_mag_30Rnd_556x45_Mk262_Stanag";
-										count=9;
+										count=10;
 										ammoLeft=30;
 									};
 									class Item2
@@ -12063,7 +12119,7 @@ class Mission
 									class Item0
 									{
 										name="rhs_mag_30Rnd_556x45_Mk262_Stanag";
-										count=5;
+										count=10;
 										ammoLeft=30;
 									};
 									class Item1
@@ -12209,7 +12265,7 @@ class Mission
 									class Item1
 									{
 										name="rhs_mag_30Rnd_556x45_Mk262_Stanag";
-										count=9;
+										count=10;
 										ammoLeft=30;
 									};
 									class Item2
@@ -12242,7 +12298,7 @@ class Mission
 									class Item0
 									{
 										name="rhs_mag_30Rnd_556x45_Mk262_Stanag";
-										count=5;
+										count=10;
 										ammoLeft=30;
 									};
 									class Item1
@@ -12336,11 +12392,6 @@ class Mission
 							class secondaryWeapon
 							{
 								name="rhs_weap_fgm148";
-								class primaryMuzzleMag
-								{
-									name="rhs_fgm148_magazine_AT";
-									ammoLeft=1;
-								};
 							};
 							class uniform
 							{
@@ -12397,7 +12448,7 @@ class Mission
 									class Item1
 									{
 										name="rhs_mag_30Rnd_556x45_Mk262_Stanag";
-										count=9;
+										count=5;
 										ammoLeft=30;
 									};
 									class Item2
@@ -12430,7 +12481,7 @@ class Mission
 									class Item0
 									{
 										name="B_IR_Grenade";
-										count=1;
+										count=2;
 										ammoLeft=1;
 									};
 								};
@@ -12571,7 +12622,7 @@ class Mission
 									class Item1
 									{
 										name="rhs_mag_30Rnd_556x45_Mk262_Stanag";
-										count=9;
+										count=6;
 										ammoLeft=30;
 									};
 									class Item2
@@ -12614,22 +12665,22 @@ class Mission
 									class Item0
 									{
 										name="ACE_fieldDressing";
-										count=25;
+										count=10;
 									};
 									class Item1
 									{
 										name="ACE_morphine";
-										count=13;
+										count=5;
 									};
 									class Item2
 									{
 										name="ACE_epinephrine";
-										count=13;
+										count=5;
 									};
 									class Item3
 									{
 										name="ACE_bloodIV_250";
-										count=6;
+										count=5;
 									};
 								};
 							};
@@ -12735,6 +12786,16 @@ class Mission
 							{
 								typeName="rhs_uniform_FROG01_wd";
 								isBackpack=0;
+								class MagazineCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="rhs_mag_m714_White";
+										count=1;
+										ammoLeft=1;
+									};
+								};
 								class ItemCargo
 								{
 									items=6;
@@ -12772,11 +12833,11 @@ class Mission
 							};
 							class vest
 							{
-								typeName="rhsusf_spc_rifleman";
+								typeName="rhsusf_spc_teamleader";
 								isBackpack=0;
 								class MagazineCargo
 								{
-									items=5;
+									items=7;
 									class Item0
 									{
 										name="rhs_mag_an_m8hc";
@@ -12786,7 +12847,7 @@ class Mission
 									class Item1
 									{
 										name="rhs_mag_30Rnd_556x45_Mk262_Stanag";
-										count=9;
+										count=10;
 										ammoLeft=30;
 									};
 									class Item2
@@ -12807,6 +12868,18 @@ class Mission
 										count=2;
 										ammoLeft=1;
 									};
+									class Item5
+									{
+										name="rhs_mag_M441_HE";
+										count=5;
+										ammoLeft=1;
+									};
+									class Item6
+									{
+										name="rhs_mag_m714_White";
+										count=3;
+										ammoLeft=1;
+									};
 								};
 							};
 							class backpack
@@ -12815,7 +12888,7 @@ class Mission
 								isBackpack=1;
 								class MagazineCargo
 								{
-									items=4;
+									items=2;
 									class Item0
 									{
 										name="rhs_mag_30Rnd_556x45_Mk262_Stanag";
@@ -12823,18 +12896,6 @@ class Mission
 										ammoLeft=30;
 									};
 									class Item1
-									{
-										name="rhs_mag_M441_HE";
-										count=6;
-										ammoLeft=1;
-									};
-									class Item2
-									{
-										name="rhs_mag_m714_White";
-										count=6;
-										ammoLeft=1;
-									};
-									class Item3
 									{
 										name="B_IR_Grenade";
 										count=2;
@@ -12982,7 +13043,7 @@ class Mission
 								isBackpack=0;
 								class ItemCargo
 								{
-									items=4;
+									items=6;
 									class Item0
 									{
 										name="ACE_EarPlugs";
@@ -13003,6 +13064,16 @@ class Mission
 										name="ACE_epinephrine";
 										count=1;
 									};
+									class Item4
+									{
+										name="ACE_Flashlight_XL50";
+										count=1;
+									};
+									class Item5
+									{
+										name="ACE_microDAGR";
+										count=1;
+									};
 								};
 							};
 							class vest
@@ -13021,7 +13092,7 @@ class Mission
 									class Item1
 									{
 										name="rhs_mag_30Rnd_556x45_Mk262_Stanag";
-										count=9;
+										count=10;
 										ammoLeft=30;
 									};
 									class Item2
@@ -13072,7 +13143,7 @@ class Mission
 								};
 								class ItemCargo
 								{
-									items=3;
+									items=2;
 									class Item0
 									{
 										name="ACE_CableTie";
@@ -13083,17 +13154,11 @@ class Mission
 										name="ACE_MapTools";
 										count=1;
 									};
-									class Item2
-									{
-										name="ACE_Flashlight_XL50";
-										count=1;
-									};
 								};
 							};
 							map="ItemMap";
 							compass="ItemCompass";
 							watch="ItemWatch";
-							gps="ItemGPS";
 							headgear="rhsusf_lwh_helmet_marpatwd_headset";
 						};
 					};
@@ -13164,6 +13229,7 @@ class Mission
 							{
 								name="rhs_weap_m249_pip_L";
 								optics="rhsusf_acc_ACOG2_USMC";
+								flashlight="rhsusf_acc_anpeq15side_bk";
 								class primaryMuzzleMag
 								{
 									name="rhs_200rnd_556x45_M_SAW";
@@ -13215,7 +13281,7 @@ class Mission
 								isBackpack=0;
 								class MagazineCargo
 								{
-									items=3;
+									items=4;
 									class Item0
 									{
 										name="rhs_mag_an_m8hc";
@@ -13224,14 +13290,20 @@ class Mission
 									};
 									class Item1
 									{
-										name="rhsusf_100Rnd_556x45_soft_pouch";
+										name="rhs_mag_m18_red";
 										count=1;
-										ammoLeft=100;
+										ammoLeft=1;
 									};
 									class Item2
 									{
-										name="rhs_mag_m18_red";
+										name="rhs_mag_m18_green";
 										count=1;
+										ammoLeft=1;
+									};
+									class Item3
+									{
+										name="rhs_mag_m67";
+										count=2;
 										ammoLeft=1;
 									};
 								};
@@ -13392,7 +13464,7 @@ class Mission
 									class Item1
 									{
 										name="rhs_mag_30Rnd_556x45_Mk262_Stanag";
-										count=9;
+										count=10;
 										ammoLeft=30;
 									};
 									class Item2
@@ -13425,7 +13497,7 @@ class Mission
 									class Item0
 									{
 										name="rhs_mag_30Rnd_556x45_Mk262_Stanag";
-										count=5;
+										count=10;
 										ammoLeft=30;
 									};
 									class Item1
@@ -13571,7 +13643,7 @@ class Mission
 									class Item1
 									{
 										name="rhs_mag_30Rnd_556x45_Mk262_Stanag";
-										count=9;
+										count=10;
 										ammoLeft=30;
 									};
 									class Item2
@@ -13604,7 +13676,7 @@ class Mission
 									class Item0
 									{
 										name="rhs_mag_30Rnd_556x45_Mk262_Stanag";
-										count=5;
+										count=10;
 										ammoLeft=30;
 									};
 									class Item1
@@ -13750,7 +13822,7 @@ class Mission
 									class Item1
 									{
 										name="rhs_mag_30Rnd_556x45_Mk262_Stanag";
-										count=9;
+										count=10;
 										ammoLeft=30;
 									};
 									class Item2
@@ -13783,7 +13855,7 @@ class Mission
 									class Item0
 									{
 										name="rhs_mag_30Rnd_556x45_Mk262_Stanag";
-										count=5;
+										count=10;
 										ammoLeft=30;
 									};
 									class Item1
@@ -13877,11 +13949,6 @@ class Mission
 							class secondaryWeapon
 							{
 								name="rhs_weap_fgm148";
-								class primaryMuzzleMag
-								{
-									name="rhs_fgm148_magazine_AT";
-									ammoLeft=1;
-								};
 							};
 							class uniform
 							{
@@ -13938,7 +14005,7 @@ class Mission
 									class Item1
 									{
 										name="rhs_mag_30Rnd_556x45_Mk262_Stanag";
-										count=9;
+										count=5;
 										ammoLeft=30;
 									};
 									class Item2
@@ -13971,7 +14038,7 @@ class Mission
 									class Item0
 									{
 										name="B_IR_Grenade";
-										count=1;
+										count=2;
 										ammoLeft=1;
 									};
 								};
@@ -14112,7 +14179,7 @@ class Mission
 									class Item1
 									{
 										name="rhs_mag_30Rnd_556x45_Mk262_Stanag";
-										count=9;
+										count=6;
 										ammoLeft=30;
 									};
 									class Item2
@@ -14155,22 +14222,22 @@ class Mission
 									class Item0
 									{
 										name="ACE_fieldDressing";
-										count=25;
+										count=10;
 									};
 									class Item1
 									{
 										name="ACE_morphine";
-										count=13;
+										count=5;
 									};
 									class Item2
 									{
 										name="ACE_epinephrine";
-										count=13;
+										count=5;
 									};
 									class Item3
 									{
 										name="ACE_bloodIV_250";
-										count=6;
+										count=5;
 									};
 								};
 							};
@@ -14276,6 +14343,16 @@ class Mission
 							{
 								typeName="rhs_uniform_FROG01_wd";
 								isBackpack=0;
+								class MagazineCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="rhs_mag_m714_White";
+										count=1;
+										ammoLeft=1;
+									};
+								};
 								class ItemCargo
 								{
 									items=6;
@@ -14313,11 +14390,11 @@ class Mission
 							};
 							class vest
 							{
-								typeName="rhsusf_spc_rifleman";
+								typeName="rhsusf_spc_teamleader";
 								isBackpack=0;
 								class MagazineCargo
 								{
-									items=5;
+									items=7;
 									class Item0
 									{
 										name="rhs_mag_an_m8hc";
@@ -14327,7 +14404,7 @@ class Mission
 									class Item1
 									{
 										name="rhs_mag_30Rnd_556x45_Mk262_Stanag";
-										count=9;
+										count=10;
 										ammoLeft=30;
 									};
 									class Item2
@@ -14348,6 +14425,18 @@ class Mission
 										count=2;
 										ammoLeft=1;
 									};
+									class Item5
+									{
+										name="rhs_mag_M441_HE";
+										count=5;
+										ammoLeft=1;
+									};
+									class Item6
+									{
+										name="rhs_mag_m714_White";
+										count=3;
+										ammoLeft=1;
+									};
 								};
 							};
 							class backpack
@@ -14356,7 +14445,7 @@ class Mission
 								isBackpack=1;
 								class MagazineCargo
 								{
-									items=4;
+									items=2;
 									class Item0
 									{
 										name="rhs_mag_30Rnd_556x45_Mk262_Stanag";
@@ -14364,18 +14453,6 @@ class Mission
 										ammoLeft=30;
 									};
 									class Item1
-									{
-										name="rhs_mag_M441_HE";
-										count=6;
-										ammoLeft=1;
-									};
-									class Item2
-									{
-										name="rhs_mag_m714_White";
-										count=6;
-										ammoLeft=1;
-									};
-									class Item3
 									{
 										name="B_IR_Grenade";
 										count=2;
@@ -14528,13 +14605,13 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={17403.305,14.415176,13174.678};
-						angles[]={0.02399601,3.9988451,6.2551923};
+						position[]={17391.965,20.201031,13242.546};
+						angles[]={0,3.9988451,0};
 					};
 					isPlayable=1;
 					id=1595;
 					type="VirtualSpectator_F";
-					atlOffset=-9.5367432e-007;
+					atlOffset=7.0047512;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -14639,13 +14716,13 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={17405.924,14.822987,13171.653};
-						angles[]={0.02399601,3.9988451,6.2551923};
+						position[]={17394.584,20.635262,13239.521};
+						angles[]={0,3.9988451,0};
 					};
 					isPlayable=1;
 					id=1596;
 					type="VirtualSpectator_F";
-					atlOffset=0.4085989;
+					atlOffset=7.4133492;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -14750,13 +14827,13 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={17406.33,14.267587,13177.296};
-						angles[]={0.02399601,3.9988451,6.2551923};
+						position[]={17394.99,20.152151,13245.164};
+						angles[]={0,3.9988451,0};
 					};
 					isPlayable=1;
 					id=1597;
 					type="VirtualSpectator_F";
-					atlOffset=-9.5367432e-007;
+					atlOffset=3.9350319;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -14861,13 +14938,13 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={17408.947,14.580121,13174.272};
-						angles[]={0.02399601,3.9988451,6.2525291};
+						position[]={17397.607,20.495701,13242.141};
+						angles[]={0,3.9988451,0};
 					};
 					isPlayable=1;
 					id=1598;
 					type="VirtualSpectator_F";
-					atlOffset=0.31708431;
+					atlOffset=4.5137043;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -14972,12 +15049,13 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={17408.541,14.42834,13168.63};
-						angles[]={0.0093286335,3.9988451,0.0053265258};
+						position[]={17397.201,20.255697,13236.498};
+						angles[]={0,3.9988451,0};
 					};
 					isPlayable=1;
 					id=1599;
 					type="VirtualSpectator_F";
+					atlOffset=7.0047493;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -15082,12 +15160,13 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={17411.16,14.470529,13165.605};
-						angles[]={0.0093286335,3.9988451,0.0053265258};
+						position[]={17399.82,20.290115,13233.474};
+						angles[]={0,3.9988451,0};
 					};
 					isPlayable=1;
 					id=1600;
 					type="VirtualSpectator_F";
+					atlOffset=7.0047483;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -15192,12 +15271,13 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={17411.566,14.255315,13171.248};
-						angles[]={0.02399601,3.9988451,6.2525291};
+						position[]={17400.227,20.204441,13239.116};
+						angles[]={0,3.9988451,0};
 					};
 					isPlayable=1;
 					id=1601;
 					type="VirtualSpectator_F";
+					atlOffset=7.0047503;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -15302,12 +15382,13 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={17414.184,14.285506,13168.224};
-						angles[]={0.045302324,3.9988451,6.2525291};
+						position[]={17402.844,20.230253,13236.092};
+						angles[]={0,3.9988451,0};
 					};
 					isPlayable=1;
 					id=1602;
 					type="VirtualSpectator_F";
+					atlOffset=7.0047493;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -15412,12 +15493,13 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={17409.354,14.102537,13179.915};
-						angles[]={0.019999012,3.9988451,6.2405448};
+						position[]={17398.014,20.101341,13247.783};
+						angles[]={0,3.9988451,0};
 					};
 					isPlayable=1;
 					id=1603;
 					type="VirtualSpectator_F";
+					atlOffset=3.8443451;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -15522,12 +15604,13 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={17411.973,14.061058,13176.891};
-						angles[]={0.035985984,3.9988451,6.2405448};
+						position[]={17400.633,20.134056,13244.759};
+						angles[]={0,3.9988451,0};
 					};
 					isPlayable=1;
 					id=1604;
 					type="VirtualSpectator_F";
+					atlOffset=3.8806763;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -15632,12 +15715,13 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={17412.377,13.93085,13182.533};
-						angles[]={0.015998369,3.9988451,6.2445378};
+						position[]={17401.037,20.063007,13250.401};
+						angles[]={0,3.9988451,0};
 					};
 					isPlayable=1;
 					id=1605;
 					type="VirtualSpectator_F";
+					atlOffset=3.8101864;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -15742,12 +15826,13 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={17414.996,13.878002,13179.508};
-						angles[]={0.015998369,3.9988451,6.2445378};
+						position[]={17403.656,20.081852,13247.376};
+						angles[]={0,3.9988451,0};
 					};
 					isPlayable=1;
 					id=1606;
 					type="VirtualSpectator_F";
+					atlOffset=3.8326511;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -15852,12 +15937,13 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={17414.59,14.058281,13173.866};
-						angles[]={0.035985984,3.9988451,6.2405448};
+						position[]={17403.25,20.160927,13241.734};
+						angles[]={0,3.9988451,0};
 					};
 					isPlayable=1;
 					id=1607;
 					type="VirtualSpectator_F";
+					atlOffset=3.9111652;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -15962,13 +16048,13 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={17417.209,14.081903,13170.842};
-						angles[]={0.035984326,3.9988451,6.2525291};
+						position[]={17405.869,20.186745,13238.71};
+						angles[]={0,3.9988451,0};
 					};
 					isPlayable=1;
 					id=1608;
 					type="VirtualSpectator_F";
-					atlOffset=9.5367432e-007;
+					atlOffset=7.0047503;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -16073,13 +16159,13 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={17417.615,13.885548,13176.483};
-						angles[]={0.02399601,3.9988451,6.2645216};
+						position[]={17406.275,20.102409,13244.352};
+						angles[]={0,3.9988451,0};
 					};
 					isPlayable=1;
 					id=1609;
 					type="VirtualSpectator_F";
-					atlOffset=9.5367432e-007;
+					atlOffset=3.8568249;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -16184,13 +16270,13 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={17420.232,13.909259,13173.46};
-						angles[]={0.02399601,3.9988451,6.2645216};
+						position[]={17408.893,20.127447,13241.328};
+						angles[]={0,3.9988451,0};
 					};
 					isPlayable=1;
 					id=1610;
 					type="VirtualSpectator_F";
-					atlOffset=9.5367432e-007;
+					atlOffset=7.0047493;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -16292,7 +16378,7 @@ class Mission
 				};
 			};
 			id=1611;
-			atlOffset=0.013751984;
+			atlOffset=6.4090385;
 		};
 		class Item68
 		{
@@ -19960,6 +20046,22 @@ class Mission
 				};
 				nAttributes=2;
 			};
+		};
+		class Item103
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={17388.32,15.309193,13178.084};
+				angles[]={0.014664836,0.75054914,6.276526};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=1721;
+			type="Box_NATO_AmmoVeh_F";
 		};
 	};
 	class Connections

@@ -1,7 +1,6 @@
 comment "Exported from Arsenal by alef";
 
 comment "Remove existing items";
-
 removeAllWeapons this;
 removeAllItems this;
 removeAllAssignedItems this;
@@ -21,19 +20,19 @@ this addItemToUniform "ACE_Flashlight_XL50";
 this addItemToUniform "ACE_microDAGR";
 this addVest "rhsusf_spc_mg";
 for "_i" from 1 to 5 do {this addItemToVest "rhs_mag_an_m8hc";};
-this addItemToVest "rhs_200rnd_556x45_M_SAW";
-this addItemToVest "rhsusf_100Rnd_556x45_soft_pouch";
+this addItemToBackpack "rhs_200rnd_556x45_M_SAW";
 this addItemToVest "rhs_mag_m18_red";
 this addItemToVest "rhs_mag_m18_green";
 for "_i" from 1 to 2 do {this addItemToVest "rhs_mag_m67";};
+this addItemToVest "rhs_200rnd_556x45_M_SAW";
 this addBackpack "rhsusf_assault_eagleaiii_coy";
-for "_i" from 1 to 3 do {this addItemToBackpack "rhs_200rnd_556x45_M_SAW";};
+for "_i" from 1 to 2 do {this addItemToBackpack "rhs_200rnd_556x45_M_SAW";};
 for "_i" from 1 to 2 do {this addItemToBackpack "B_IR_Grenade";};
 this addHeadgear "rhsusf_lwh_helmet_marpatwd";
 
 comment "Add weapons";
 this addWeapon "rhs_weap_m249_pip_L";
-this addPrimaryWeaponItem "rhsusf_acc_anpeq15_bk_light";
+this addPrimaryWeaponItem "rhsusf_acc_anpeq15side_bk";
 this addPrimaryWeaponItem "rhsusf_acc_ACOG2_USMC";
 
 comment "Add items";

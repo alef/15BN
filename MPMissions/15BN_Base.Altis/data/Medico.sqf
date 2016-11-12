@@ -1,7 +1,6 @@
 comment "Exported from Arsenal by alef";
 
 comment "Remove existing items";
-
 removeAllWeapons this;
 removeAllItems this;
 removeAllAssignedItems this;
@@ -21,15 +20,15 @@ this addItemToUniform "ACE_Flashlight_XL50";
 this addItemToUniform "ACE_microDAGR";
 this addVest "rhsusf_spc_corpsman";
 for "_i" from 1 to 5 do {this addItemToVest "rhs_mag_an_m8hc";};
-for "_i" from 1 to 10 do {this addItemToVest "rhs_mag_30Rnd_556x45_Mk262_Stanag";};
+for "_i" from 1 to 7 do {this addItemToVest "rhs_mag_30Rnd_556x45_Mk262_Stanag";};
 this addItemToVest "rhs_mag_m18_red";
 this addItemToVest "rhs_mag_m18_green";
 for "_i" from 1 to 2 do {this addItemToVest "rhs_mag_m67";};
 this addBackpack "rhsusf_assault_eagleaiii_coy";
-for "_i" from 1 to 25 do {this addItemToBackpack "ACE_fieldDressing";};
-for "_i" from 1 to 13 do {this addItemToBackpack "ACE_morphine";};
-for "_i" from 1 to 13 do {this addItemToBackpack "ACE_epinephrine";};
-for "_i" from 1 to 6 do {this addItemToBackpack "ACE_bloodIV_250";};
+for "_i" from 1 to 10 do {this addItemToBackpack "ACE_fieldDressing";};
+for "_i" from 1 to 5 do {this addItemToBackpack "ACE_morphine";};
+for "_i" from 1 to 5 do {this addItemToBackpack "ACE_epinephrine";};
+for "_i" from 1 to 5 do {this addItemToBackpack "ACE_bloodIV_250";};
 for "_i" from 1 to 2 do {this addItemToBackpack "B_IR_Grenade";};
 this addHeadgear "rhsusf_lwh_helmet_marpatwd";
 

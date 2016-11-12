@@ -20,7 +20,7 @@ this addItemToUniform "ACE_Flashlight_XL50";
 this addItemToUniform "ACE_microDAGR";
 this addVest "rhsusf_spc_rifleman";
 for "_i" from 1 to 5 do {this addItemToVest "rhs_mag_an_m8hc";};
-for "_i" from 1 to 10 do {this addItemToVest "rhs_mag_30Rnd_556x45_Mk262_Stanag";};
+for "_i" from 1 to 11 do {this addItemToVest "rhs_mag_30Rnd_556x45_Mk262_Stanag";};
 this addItemToVest "rhs_mag_m18_red";
 this addItemToVest "rhs_mag_m18_green";
 for "_i" from 1 to 2 do {this addItemToVest "rhs_mag_m67";};

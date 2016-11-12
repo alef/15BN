@@ -30,6 +30,10 @@ class TL_Granatiere
 {
 	displayName = "TL-Granatiere";
 };
+class TL_AntiTank
+{
+	displayName = "TL-AntiTank";
+};
 class Ricognitore
 {
 	displayName = "Ricognitore";
