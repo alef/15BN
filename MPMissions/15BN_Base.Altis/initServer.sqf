@@ -10,5 +10,6 @@ if (isMultiplayer) then {
 		call ALEF_fnc_medicsAvailable;
 		};
 	};
+	["Initialize", [true]] call BIS_fnc_dynamicGroups;
 };
 LOG("End");

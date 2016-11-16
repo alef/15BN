@@ -24,6 +24,7 @@ if (hasInterface) then { player createDiaryRecord ["Log", ["Sistema medico",
 [] spawn ALEF_fnc_MCC_init;
 
 hcRemoveAllGroups player;
+["InitializePlayer", [player, true]] call BIS_fnc_dynamicGroups;
 endLoadingScreen;
 [["_15BN_","Istruzioni"],35,"",35,"",true,false,false,true] call BIS_fnc_advHint;
 LOG("End");
