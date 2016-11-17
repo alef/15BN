@@ -16,22 +16,22 @@ this addItemToUniform "ACE_EarPlugs";
 for "_i" from 1 to 10 do {this addItemToUniform "ACE_fieldDressing";};
 for "_i" from 1 to 3 do {this addItemToUniform "ACE_morphine";};
 this addItemToUniform "ACE_epinephrine";
-this addItemToUniform "ACE_Flashlight_XL50";
 this addItemToUniform "ACE_microDAGR";
 this addVest "rhsusf_spc_rifleman";
-for "_i" from 1 to 5 do {this addItemToVest "rhs_mag_an_m8hc";};
-for "_i" from 1 to 6 do {this addItemToVest "rhs_mag_30Rnd_556x45_Mk262_Stanag";};
+this addItemToVest "ACE_Flashlight_MX991";
+for "_i" from 1 to 4 do {this addItemToVest "rhs_mag_an_m8hc";};
 this addItemToVest "rhs_mag_m18_red";
 this addItemToVest "rhs_mag_m18_green";
 for "_i" from 1 to 2 do {this addItemToVest "rhs_mag_m67";};
+for "_i" from 1 to 11 do {this addItemToVest "rhs_mag_30Rnd_556x45_M855A1_Stanag_No_Tracer";};
 this addBackpack "rhsusf_assault_eagleaiii_coy";
 this addItemToBackpack "rhs_fgm148_magazine_AT";
 this addHeadgear "rhsusf_lwh_helmet_marpatwd";
 
 comment "Add weapons";
-this addWeapon "rhs_weap_m4_carryhandle";
-this addPrimaryWeaponItem "rhsusf_acc_anpeq15_bk_light";
+this addWeapon "rhs_weap_m4_carryhandle_grip3";
 this addPrimaryWeaponItem "rhsusf_acc_ACOG2_USMC";
+this addPrimaryWeaponItem "rhsusf_acc_grip3";
 this addWeapon "rhs_weap_fgm148";
 
 comment "Add items";
