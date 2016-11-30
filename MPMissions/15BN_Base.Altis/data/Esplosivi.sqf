@@ -27,7 +27,7 @@ this addItemToVest "rhs_mag_m18_green";
 for "_i" from 1 to 2 do {this addItemToVest "rhs_mag_m67";};
 for "_i" from 1 to 11 do {this addItemToVest "rhs_mag_30Rnd_556x45_M855A1_Stanag_No_Tracer";};
 this addBackpack "rhsusf_assault_eagleaiii_coy";
-for "_i" from 1 to 2 do {this addItemToBackpack "SatchelCharge_Remote_Mag";};
+for "_i" from 1 to 8 do {this addItemToBackpack "DemoCharge_Remote_Mag";};
 this addHeadgear "rhsusf_lwh_helmet_marpatwd";
 
 comment "Add weapons";

@@ -23,13 +23,13 @@ for "_i" from 1 to 4 do {this addItemToVest "rhs_mag_an_m8hc";};
 this addItemToVest "rhs_mag_m18_red";
 this addItemToVest "rhs_mag_m18_green";
 for "_i" from 1 to 2 do {this addItemToVest "rhs_mag_m67";};
-for "_i" from 1 to 7 do {this addItemToVest "rhs_mag_30Rnd_556x45_M855A1_Stanag_No_Tracer";};
+for "_i" from 1 to 11 do {this addItemToVest "rhs_mag_30Rnd_556x45_M855A1_Stanag_No_Tracer";};
 this addBackpack "rhsusf_assault_eagleaiii_coy";
 for "_i" from 1 to 10 do {this addItemToBackpack "ACE_fieldDressing";};
 for "_i" from 1 to 5 do {this addItemToBackpack "ACE_morphine";};
 for "_i" from 1 to 5 do {this addItemToBackpack "ACE_epinephrine";};
-for "_i" from 1 to 5 do {this addItemToBackpack "ACE_bloodIV_500";};
-for "_i" from 1 to 5 do {this addItemToBackpack "rhs_mag_30Rnd_556x45_M855A1_Stanag_No_Tracer";};
+for "_i" from 1 to 5 do {this addItemToBackpack "ACE_bloodIV_250";};
+for "_i" from 1 to 2 do {this addItemToBackpack "rhs_mag_30Rnd_556x45_M855A1_Stanag_No_Tracer";};
 this addHeadgear "rhsusf_lwh_helmet_marpatwd";
 
 comment "Add weapons";
