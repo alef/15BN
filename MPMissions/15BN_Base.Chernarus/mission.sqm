@@ -12,7 +12,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=30;
+		nextID=40;
 	};
 	class Camera
 	{
@@ -417,8 +417,9 @@ class AddonsMetaData
 		class Item47
 		{
 			className="acre_api";
-			name="acre_api";
-			author="ACRE2 Team";
+			name="ACRE2 - API";
+			author="ACRE2Team";
+			url="https://github.com/IDI-Systems/acre2";
 		};
 		class Item48
 		{
@@ -544,6 +545,7 @@ class Mission
 {
 	class Intel
 	{
+		briefingName="Base";
 		timeOfChanges=1800.0002;
 		startWeather=0.25;
 		startWind=0.1;
