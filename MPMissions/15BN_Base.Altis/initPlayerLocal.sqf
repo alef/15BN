@@ -10,6 +10,7 @@ _p = param [0, objNull];
 _didJIP = param [1, false];
 
 [] call ALEF_fnc_saveTemplates; 
+[] call ALEF_fnc_chestpack;
 
 if (hasInterface) then { player createDiaryRecord ["Log", ["Sistema medico", 
 	(if (ACE_Medical_bleedingCoefficient != 1.0) then {format ["Il dissanguamento è %1 volte più veloce<br/>",ACE_Medical_bleedingCoefficient]} else {""}) +

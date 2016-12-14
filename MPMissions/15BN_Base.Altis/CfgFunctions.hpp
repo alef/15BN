@@ -27,5 +27,8 @@ class ALEF {
 		description = "Clicks on CONTINUE";
 		preInit = 1;
 	};
+	class chestpack {
+		description = "Add a chestpack possibility";
+	};
 	};
 };
