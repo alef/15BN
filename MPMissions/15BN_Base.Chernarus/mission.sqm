@@ -12,7 +12,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=40;
+		nextID=60;
 	};
 	class Camera
 	{
@@ -32,6 +32,7 @@ addons[]=
 	"A3_Ui_F",
 	"ace_map",
 	"A3_Characters_F",
+	"asr_ai3_cfgcamouflage",
 	"asr_ai3_cfgvehicles",
 	"rhsusf_c_weapons",
 	"A3_Weapons_F",
@@ -46,6 +47,7 @@ addons[]=
 	"rhsusf_sounds",
 	"rhs_c_troops",
 	"asr_ai3_rhs_ru_c",
+	"asr_ai3_rhs_ru_camo_c",
 	"rhs_c_bmp3",
 	"rhs_c_a2port_car",
 	"rhs_c_a2port_air",
