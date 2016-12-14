@@ -16,7 +16,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=185;
+		nextID=187;
 	};
 	class Camera
 	{
@@ -36,6 +36,7 @@ addons[]=
 	"A3_Ui_F",
 	"ace_map",
 	"A3_Characters_F",
+	"asr_ai3_cfgcamouflage",
 	"asr_ai3_cfgvehicles",
 	"rhsusf_c_weapons",
 	"A3_Weapons_F",
@@ -50,6 +51,7 @@ addons[]=
 	"rhsusf_sounds",
 	"rhs_c_troops",
 	"asr_ai3_rhs_ru_c",
+	"asr_ai3_rhs_ru_camo_c",
 	"rhs_c_bmp3",
 	"rhs_c_a2port_car",
 	"rhs_c_a2port_air",
@@ -434,8 +436,9 @@ class AddonsMetaData
 		class Item47
 		{
 			className="acre_api";
-			name="acre_api";
-			author="ACRE2 Team";
+			name="ACRE2 - API";
+			author="ACRE2Team";
+			url="https://github.com/IDI-Systems/acre2";
 		};
 		class Item48
 		{
@@ -830,6 +833,7 @@ class Mission
 		forecastLightnings=0.1;
 		year=2016;
 		month=02;
+		day=14;
 		hour=20;
 		minute=50;
 		startFogDecay=0.013;
@@ -18406,7 +18410,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={17423.131,15.13549,13161.399};
+				position[]={17423.131,15.135129,13161.399};
 				angles[]={0.010663962,2.2440221,0};
 			};
 			side="Empty";
@@ -18417,7 +18421,7 @@ class Mission
 			};
 			id=1688;
 			type="Land_InfoStand_V1_F";
-			atlOffset=-0.0016384125;
+			atlOffset=-0.001999855;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -20392,7 +20396,7 @@ class Mission
 			};
 			id=1782;
 			type="rhs_magazine_rhs_30Rnd_545x39_7N10_AK";
-			atlOffset=0.00045013428;
+			atlOffset=0.00045108795;
 		};
 		class Item132
 		{
@@ -20845,12 +20849,12 @@ class Mission
 				angles[]={0.0053265258,0,6.2778587};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 			};
 			id=1809;
 			type="rhs_magazine_rhsusf_5Rnd_00Buck";
+			atlOffset=0.81473255;
 		};
 		class Item159
 		{
