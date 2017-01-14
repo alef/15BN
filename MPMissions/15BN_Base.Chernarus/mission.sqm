@@ -17,9 +17,9 @@ class EditorData
 	class Camera
 	{
 		pos[]={11815.734,191.15781,12617.024};
-		dir[]={0.010058619,-0.46868005,0.88332576};
-		up[]={0.0053366227,0.88336557,0.46865296};
-		aside[]={0.99994904,-3.7135032e-007,-0.01138655};
+		dir[]={-0.89109379,-0.10093696,0.44248754};
+		up[]={-0.090413757,0.99489158,0.044896364};
+		aside[]={0.44475934,-3.2968819e-007,0.89566928};
 	};
 };
 binarizationWanted=0;
@@ -575,24 +575,22 @@ class Mission
 		briefingName="Base";
 		overviewText="Bravo 1 = Alpha 2-1. Bravo 2 = Alpha 2-2. Bravo 3 = Alpha 2-3.";
 		timeOfChanges=1800.0002;
-		startWeather=0.25;
+		startWeather=0;
 		startWind=0.1;
 		startWaves=0.1;
-		forecastWeather=0.25;
+		forecastWeather=0;
 		forecastWind=0.1;
 		forecastWaves=0.1;
 		forecastLightnings=0.1;
-		rainForced=1;
-		lightningsForced=1;
-		wavesForced=1;
-		windForced=1;
 		year=2016;
 		month=02;
 		day=14;
 		hour=20;
 		minute=50;
-		startFogDecay=0.014;
-		forecastFogDecay=0.014;
+		startFogBase=-1000;
+		forecastFogBase=-1000;
+		startFogDecay=0;
+		forecastFogDecay=0;
 	};
 	class Entities
 	{
