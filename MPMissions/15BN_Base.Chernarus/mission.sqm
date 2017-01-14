@@ -488,6 +488,9 @@ class ScenarioData
 	author="alef";
 	briefing=0;
 	debriefing=0;
+	showCompass=0;
+	showGPS=0;
+	showWatch=0;
 	saving=0;
 	disabledAI=1;
 	respawn=1;
