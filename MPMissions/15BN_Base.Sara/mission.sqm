@@ -533,6 +533,7 @@ class Mission
 {
 	class Intel
 	{
+		briefingName="Base";
 		timeOfChanges=1800.0002;
 		startWeather=0.1;
 		startWind=0.1;
