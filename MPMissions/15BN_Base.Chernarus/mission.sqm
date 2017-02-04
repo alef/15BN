@@ -12,14 +12,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=84;
+		nextID=88;
 	};
 	class Camera
 	{
-		pos[]={11860.14,163.21495,12667.71};
-		dir[]={-0.73207462,-0.61608893,0.29070193};
-		up[]={-0.57259983,0.78767496,0.22737472};
-		aside[]={0.36906159,2.9988587e-007,0.92940998};
+		pos[]={11912.396,239.57823,12622.512};
+		dir[]={0.91148376,-0.38795736,0.13673417};
+		up[]={0.38367048,0.92167515,0.057556465};
+		aside[]={0.14835468,6.3970219e-007,-0.98894012};
 	};
 };
 binarizationWanted=0;
@@ -32,8 +32,6 @@ addons[]=
 	"A3_Ui_F",
 	"ace_map",
 	"A3_Characters_F",
-	"asr_ai3_cfgcamouflage",
-	"asr_ai3_cfgvehicles",
 	"rhsusf_c_weapons",
 	"A3_Weapons_F",
 	"ace_optics",
@@ -43,11 +41,8 @@ addons[]=
 	"ace_maptools",
 	"ace_microdagr",
 	"ace_flashlights",
-	"asr_ai3_rhs_us_c",
 	"rhsusf_sounds",
 	"rhs_c_troops",
-	"asr_ai3_rhs_ru_c",
-	"asr_ai3_rhs_ru_camo_c",
 	"rhs_c_bmp3",
 	"rhs_c_a2port_car",
 	"rhs_c_a2port_air",
