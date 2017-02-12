@@ -12,14 +12,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=32;
+		nextID=44;
 	};
 	class Camera
 	{
-		pos[]={4421.2031,107.83002,4538.3794};
-		dir[]={0.052746702,-0.50435984,0.86189497};
-		up[]={0.030812845,0.8634519,0.50348824};
-		aside[]={0.99814683,-2.8613431e-007,-0.061084468};
+		pos[]={4384.6631,21.392101,4472.1821};
+		dir[]={0.54176164,-0.55544639,-0.63089031};
+		up[]={0.361911,0.83149999,-0.42145124};
+		aside[]={-0.75868028,-1.6088597e-007,-0.65149856};
 	};
 };
 binarizationWanted=0;
@@ -6537,7 +6537,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="img\ALPHA-1.paa";
+											value="";
 										};
 									};
 								};
@@ -6568,7 +6568,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={4394,6.2454724,4438};
+								position[]={4394,6.2454686,4438};
 								angles[]={0,3.1415927,0};
 							};
 							side="Empty";
@@ -6578,7 +6578,7 @@ class Mission
 							};
 							id=123;
 							type="SignAd_SponsorS_ARMEX_F";
-							atlOffset=0.10400391;
+							atlOffset=0.10400009;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -6596,7 +6596,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="img\ALPHA-1.paa";
+											value="";
 										};
 									};
 								};
@@ -6624,7 +6624,7 @@ class Mission
 						};
 					};
 					id=195;
-					atlOffset=0.078001976;
+					atlOffset=0.078000069;
 				};
 				class Item1
 				{
@@ -11401,7 +11401,7 @@ class Mission
 				};
 			};
 			id=212;
-			atlOffset=0.019500732;
+			atlOffset=0.019499779;
 		};
 		class Item8
 		{
