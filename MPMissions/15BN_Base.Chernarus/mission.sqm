@@ -8,11 +8,11 @@ class EditorData
 	toggles=13;
 	class ItemIDProvider
 	{
-		nextID=948;
+		nextID=952;
 	};
 	class LayerIndexProvider
 	{
-		nextID=94;
+		nextID=98;
 	};
 	class Camera
 	{
@@ -464,7 +464,8 @@ class AddonsMetaData
 		class Item53
 		{
 			className="mcc_sandbox";
-			name="mcc_sandbox";
+			name="MCC Sandbox";
+			author="shay_gman";
 		};
 		class Item54
 		{
@@ -19700,19 +19701,18 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={11712,165.28389,12864};
-				angles[]={0.026668631,0,6.1506276};
+				position[]={11712,166.4039,12928};
+				angles[]={0,0,6.1769123};
 			};
-			init="MCC_AI_Skill = 0.5 ; MCC_AI_Aim = 0.2 ; MCC_AI_Spot = 1.0 ; MCC_AI_Command = 1.0";
-			id=946;
-			type="mcc_sandbox_moduleMissionSettings";
-			atlOffset=-2.3760071;
+			id=948;
+			type="MCC_Module_settings";
+			atlOffset=-0.41601563;
 			class CustomAttributes
 			{
 				class Attribute0
 				{
-					property="mcc_sandbox_moduleMissionSettings_artilleryComputer";
-					expression="_this setVariable ['artilleryComputer',_value,true];";
+					property="MCC_Module_settings_deleteBody";
+					expression="_this setVariable ['deleteBody',_value,true];";
 					class Value
 					{
 						class data
@@ -19724,14 +19724,14 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=1;
+							value=0;
 						};
 					};
 				};
 				class Attribute1
 				{
-					property="mcc_sandbox_moduleMissionSettings_respawnOnGroupLeader";
-					expression="_this setVariable ['respawnOnGroupLeader',_value,true];";
+					property="MCC_Module_settings_timeAccel";
+					expression="_this setVariable ['timeAccel',_value,true];";
 					class Value
 					{
 						class data
@@ -19749,8 +19749,8 @@ class Mission
 				};
 				class Attribute2
 				{
-					property="mcc_sandbox_moduleMissionSettings_t2t";
-					expression="_this setVariable ['t2t',_value,true];";
+					property="MCC_Module_settings_commanderConsoleShowGPS";
+					expression="_this setVariable ['commanderConsoleShowGPS',_value,true];";
 					class Value
 					{
 						class data
@@ -19768,8 +19768,8 @@ class Mission
 				};
 				class Attribute3
 				{
-					property="mcc_sandbox_moduleMissionSettings_commanderConsole";
-					expression="_this setVariable ['commanderConsole',_value,true];";
+					property="MCC_Module_settings_t2t";
+					expression="_this setVariable ['t2t',_value,true];";
 					class Value
 					{
 						class data
@@ -19781,14 +19781,14 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=1;
+							value=0;
 						};
 					};
 				};
 				class Attribute4
 				{
-					property="mcc_sandbox_moduleMissionSettings_squadDialogPip";
-					expression="_this setVariable ['squadDialogPip',_value,true];";
+					property="MCC_Module_settings_messages";
+					expression="_this setVariable ['messages',_value,true];";
 					class Value
 					{
 						class data
@@ -19806,8 +19806,8 @@ class Mission
 				};
 				class Attribute5
 				{
-					property="mcc_sandbox_moduleMissionSettings_allowRTS";
-					expression="_this setVariable ['allowRTS',_value,true];";
+					property="MCC_Module_settings_sync";
+					expression="_this setVariable ['sync',_value,true];";
 					class Value
 					{
 						class data
@@ -19825,27 +19825,8 @@ class Mission
 				};
 				class Attribute6
 				{
-					property="mcc_sandbox_moduleMissionSettings_deleteBody";
-					expression="_this setVariable ['deleteBody',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute7
-				{
-					property="mcc_sandbox_moduleMissionSettings_sqlPDA";
-					expression="_this setVariable ['sqlPDA',_value,true];";
+					property="MCC_Module_settings_commanderConsole";
+					expression="_this setVariable ['commanderConsole',_value,true];";
 					class Value
 					{
 						class data
@@ -19861,10 +19842,29 @@ class Mission
 						};
 					};
 				};
+				class Attribute7
+				{
+					property="MCC_Module_settings_saveGear";
+					expression="_this setVariable ['saveGear',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
 				class Attribute8
 				{
-					property="mcc_sandbox_moduleMissionSettings_commanderConsoleShowGPS";
-					expression="_this setVariable ['commanderConsoleShowGPS',_value,true];";
+					property="MCC_Module_settings_respawnOnGroupLeader";
+					expression="_this setVariable ['respawnOnGroupLeader',_value,true];";
 					class Value
 					{
 						class data
@@ -19882,8 +19882,8 @@ class Mission
 				};
 				class Attribute9
 				{
-					property="mcc_sandbox_moduleMissionSettings_logistics";
-					expression="_this setVariable ['logistics',_value,true];";
+					property="MCC_Module_settings_sqlPDA";
+					expression="_this setVariable ['sqlPDA',_value,true];";
 					class Value
 					{
 						class data
@@ -19895,14 +19895,14 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=0;
+							value=1;
 						};
 					};
 				};
 				class Attribute10
 				{
-					property="mcc_sandbox_moduleMissionSettings_messages";
-					expression="_this setVariable ['messages',_value,true];";
+					property="MCC_Module_settings_commanderConsoleAI";
+					expression="_this setVariable ['commanderConsoleAI',_value,true];";
 					class Value
 					{
 						class data
@@ -19920,8 +19920,8 @@ class Mission
 				};
 				class Attribute11
 				{
-					property="mcc_sandbox_moduleMissionSettings_sync";
-					expression="_this setVariable ['sync',_value,true];";
+					property="MCC_Module_settings_commanderConsoleWP";
+					expression="_this setVariable ['commanderConsoleWP',_value,true];";
 					class Value
 					{
 						class data
@@ -19939,8 +19939,8 @@ class Mission
 				};
 				class Attribute12
 				{
-					property="mcc_sandbox_moduleMissionSettings_allowKitChange";
-					expression="_this setVariable ['allowKitChange',_value,true];";
+					property="MCC_Module_settings_allowRTS";
+					expression="_this setVariable ['allowRTS',_value,true];";
 					class Value
 					{
 						class data
@@ -19958,8 +19958,8 @@ class Mission
 				};
 				class Attribute13
 				{
-					property="mcc_sandbox_moduleMissionSettings_saveGear";
-					expression="_this setVariable ['saveGear',_value,true];";
+					property="MCC_Module_settings_logistics";
+					expression="_this setVariable ['logistics',_value,true];";
 					class Value
 					{
 						class data
@@ -19977,8 +19977,8 @@ class Mission
 				};
 				class Attribute14
 				{
-					property="mcc_sandbox_moduleMissionSettings_roleSelection";
-					expression="_this setVariable ['roleSelection',_value,true];";
+					property="MCC_Module_settings_squadDialog";
+					expression="_this setVariable ['squadDialog',_value,true];";
 					class Value
 					{
 						class data
@@ -19990,14 +19990,14 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=0;
+							value=1;
 						};
 					};
 				};
 				class Attribute15
 				{
-					property="mcc_sandbox_moduleMissionSettings_timeAccel";
-					expression="_this setVariable ['timeAccel',_value,true];";
+					property="MCC_Module_settings_respawnMenu";
+					expression="_this setVariable ['respawnMenu',_value,true];";
 					class Value
 					{
 						class data
@@ -20015,27 +20015,8 @@ class Mission
 				};
 				class Attribute16
 				{
-					property="mcc_sandbox_moduleMissionSettings_respawnMenu";
-					expression="_this setVariable ['respawnMenu',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute17
-				{
-					property="mcc_sandbox_moduleMissionSettings_squadDialog";
-					expression="_this setVariable ['squadDialog',_value,true];";
+					property="MCC_Module_settings_artilleryComputer";
+					expression="_this setVariable ['artilleryComputer',_value,true];";
 					class Value
 					{
 						class data
@@ -20051,45 +20032,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute18
-				{
-					property="mcc_sandbox_moduleMissionSettings_commanderConsoleAI";
-					expression="_this setVariable ['commanderConsoleAI',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute19
-				{
-					property="mcc_sandbox_moduleMissionSettings_commanderConsoleWP";
-					expression="_this setVariable ['commanderConsoleWP',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=20;
+				nAttributes=17;
 			};
 		};
 		class Item93
@@ -20097,18 +20040,18 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={11712,167.12354,12928};
-				angles[]={0,0,6.1769204};
+				position[]={11712,168.00189,12864};
+				angles[]={0.026668631,0,6.1506276};
 			};
-			id=947;
-			type="mcc_sandbox_moduleCover";
-			atlOffset=0.30361938;
+			id=949;
+			type="MCC_Module_settingsMechanics";
+			atlOffset=0.34199524;
 			class CustomAttributes
 			{
 				class Attribute0
 				{
-					property="mcc_sandbox_moduleCover_survive";
-					expression="_this setVariable ['survive',_value,true];";
+					property="MCC_Module_settingsMechanics_coverVault";
+					expression="_this setVariable ['coverVault',_value,true];";
 					class Value
 					{
 						class data
@@ -20126,8 +20069,8 @@ class Mission
 				};
 				class Attribute1
 				{
-					property="mcc_sandbox_moduleCover_coverUI";
-					expression="_this setVariable ['coverUI',_value,true];";
+					property="MCC_Module_settingsMechanics_switchWeapons";
+					expression="_this setVariable ['switchWeapons',_value,true];";
 					class Value
 					{
 						class data
@@ -20145,8 +20088,8 @@ class Mission
 				};
 				class Attribute2
 				{
-					property="mcc_sandbox_moduleCover_actionMenu";
-					expression="_this setVariable ['actionMenu',_value,true];";
+					property="MCC_Module_settingsMechanics_arcadeTanks";
+					expression="_this setVariable ['arcadeTanks',_value,true];";
 					class Value
 					{
 						class data
@@ -20164,7 +20107,26 @@ class Mission
 				};
 				class Attribute3
 				{
-					property="mcc_sandbox_moduleCover_interaction";
+					property="MCC_Module_settingsMechanics_survive";
+					expression="_this setVariable ['survive',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="MCC_Module_settingsMechanics_interaction";
 					expression="_this setVariable ['interaction',_value,true];";
 					class Value
 					{
@@ -20181,29 +20143,10 @@ class Mission
 						};
 					};
 				};
-				class Attribute4
-				{
-					property="mcc_sandbox_moduleCover_cover";
-					expression="_this setVariable ['cover',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
 				class Attribute5
 				{
-					property="mcc_sandbox_moduleCover_coverVault";
-					expression="_this setVariable ['coverVault',_value,true];";
+					property="MCC_Module_settingsMechanics_breachingAmmo";
+					expression="_this setVariable ['breachingAmmo',_value,true];";
 					class Value
 					{
 						class data
@@ -20212,17 +20155,17 @@ class Mission
 							{
 								type[]=
 								{
-									"SCALAR"
+									"STRING"
 								};
 							};
-							value=0;
+							value="";
 						};
 					};
 				};
 				class Attribute6
 				{
-					property="mcc_sandbox_moduleCover_switchWeapons";
-					expression="_this setVariable ['switchWeapons',_value,true];";
+					property="MCC_Module_settingsMechanics_cover";
+					expression="_this setVariable ['cover',_value,true];";
 					class Value
 					{
 						class data
@@ -20240,7 +20183,7 @@ class Mission
 				};
 				class Attribute7
 				{
-					property="mcc_sandbox_moduleCover_interactionUI";
+					property="MCC_Module_settingsMechanics_interactionUI";
 					expression="_this setVariable ['interactionUI',_value,true];";
 					class Value
 					{
@@ -20257,7 +20200,83 @@ class Mission
 						};
 					};
 				};
-				nAttributes=8;
+				class Attribute8
+				{
+					property="MCC_Module_settingsMechanics_coverUI";
+					expression="_this setVariable ['coverUI',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute9
+				{
+					property="MCC_Module_settingsMechanics_fatigue";
+					expression="_this setVariable ['fatigue',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute10
+				{
+					property="MCC_Module_settingsMechanics_nonLeathalAmmo";
+					expression="_this setVariable ['nonLeathalAmmo',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute11
+				{
+					property="MCC_Module_settingsMechanics_actionMenu";
+					expression="_this setVariable ['actionMenu',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=12;
 			};
 		};
 	};
