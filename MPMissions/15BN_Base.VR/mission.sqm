@@ -1,11 +1,11 @@
 version=53;
 class EditorData
 {
-	moveGridStep=64;
+	moveGridStep=2;
 	angleGridStep=0.78539819;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=37;
+	toggles=165;
 	class ItemIDProvider
 	{
 		nextID=255;
@@ -580,7 +580,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=11;
+		items=10;
 		class Item0
 		{
 			dataType="Object";
@@ -2063,16 +2063,16 @@ class Mission
 		class Item6
 		{
 			dataType="Layer";
-			name="Modules";
+			name="Modulei";
 			class Entities
 			{
-				items=23;
+				items=24;
 				class Item0
 				{
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={4479.9995,5,4672};
+						position[]={4464,5,4504};
 					};
 					id=143;
 					type="ace_advanced_ballistics_ModuleSettings";
@@ -2276,7 +2276,7 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={4479.9995,5,4800};
+						position[]={4464,5,4536};
 					};
 					id=144;
 					type="ace_advanced_throwing_Module";
@@ -2385,7 +2385,7 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={4351.9995,5,4736};
+						position[]={4432,5,4504};
 					};
 					id=145;
 					type="ace_captives_moduleSettings";
@@ -2456,7 +2456,7 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={4415.9995,5,4800};
+						position[]={4448,5,4536};
 					};
 					id=146;
 					type="ACE_moduleCargoSettings";
@@ -2489,7 +2489,7 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={4224,5,4800};
+						position[]={4400,5,4520};
 					};
 					id=155;
 					type="acre_api_DifficultySettings";
@@ -2579,7 +2579,7 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={4415.9995,5,4672};
+						position[]={4448,5,4504};
 					};
 					id=147;
 					type="ACE_moduleEquipFRIES";
@@ -2589,7 +2589,7 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={4287.9995,5,4800};
+						position[]={4416,5,4536};
 					};
 					id=154;
 					type="ModuleCurator_F";
@@ -2698,7 +2698,7 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={4351.9995,5,4800};
+						position[]={4432,5,4520};
 					};
 					id=148;
 					type="ACE_ModuleHearing";
@@ -2788,7 +2788,7 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={4543.9995,5,4736};
+						position[]={4480,5,4520};
 					};
 					id=149;
 					type="ACE_ModuleMap";
@@ -2916,7 +2916,7 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={4543.9995,5,4672};
+						position[]={4480,5,4504};
 					};
 					id=150;
 					type="ace_map_gestures_moduleSettings";
@@ -3025,7 +3025,7 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={4544,5,4800};
+						position[]={4480,5,4536};
 					};
 					id=151;
 					type="ace_finger_moduleSettings";
@@ -3077,7 +3077,7 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={4544,5,4864};
+						position[]={4480,5,4552};
 					};
 					id=152;
 					type="ace_viewdistance_ModuleSettings";
@@ -3129,7 +3129,7 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={4479.9995,5,4736};
+						position[]={4464,5,4520};
 					};
 					id=153;
 					type="ace_winddeflection_ModuleSettings";
@@ -3219,7 +3219,7 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={4607.9995,5,4928};
+						position[]={4496,5,4568};
 					};
 					id=170;
 					type="ace_advanced_fatigue_moduleSettings";
@@ -3328,7 +3328,7 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={4607.9995,5,4736};
+						position[]={4496,5,4520};
 					};
 					id=158;
 					type="ACE_moduleBasicMedicalSettings";
@@ -3392,7 +3392,7 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={4607.9995,5,4672};
+						position[]={4496,5,4504};
 					};
 					id=159;
 					type="ACE_moduleMedicalSettings";
@@ -3672,7 +3672,7 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={4415.9995,5,4736};
+						position[]={4448,5,4520};
 					};
 					id=165;
 					type="ace_mk6mortar_module";
@@ -3762,7 +3762,7 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={4224,5,4736};
+						position[]={4400,5,4504};
 					};
 					id=168;
 					type="acre_api_nameChannels";
@@ -3985,7 +3985,7 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={4607.9995,5,4864};
+						position[]={4496,5,4552};
 					};
 					id=160;
 					type="ACE_ModuleRespawn";
@@ -4037,7 +4037,7 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={4607.9995,5,4800};
+						position[]={4496,5,4536};
 					};
 					id=161;
 					type="ACE_moduleReviveSettings";
@@ -4108,7 +4108,7 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={4287.9995,5,4864};
+						position[]={4416,5,4552};
 					};
 					id=169;
 					type="ace_zeus_moduleSettings";
@@ -4236,7 +4236,7 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={4288,5,4736};
+						position[]={4416,5,4520};
 					};
 					id=253;
 					type="MCC_Module_settings";
@@ -4566,6 +4566,248 @@ class Mission
 							};
 						};
 						nAttributes=17;
+					};
+				};
+				class Item23
+				{
+					dataType="Logic";
+					class PositionInfo
+					{
+						position[]={4416,5,4504};
+					};
+					id=254;
+					type="MCC_Module_settingsMechanics";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="MCC_Module_settingsMechanics_coverVault";
+							expression="_this setVariable ['coverVault',_value,true];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="MCC_Module_settingsMechanics_switchWeapons";
+							expression="_this setVariable ['switchWeapons',_value,true];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="MCC_Module_settingsMechanics_arcadeTanks";
+							expression="_this setVariable ['arcadeTanks',_value,true];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="MCC_Module_settingsMechanics_survive";
+							expression="_this setVariable ['survive',_value,true];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="MCC_Module_settingsMechanics_interaction";
+							expression="_this setVariable ['interaction',_value,true];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						class Attribute5
+						{
+							property="MCC_Module_settingsMechanics_breachingAmmo";
+							expression="_this setVariable ['breachingAmmo',_value,true];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="";
+								};
+							};
+						};
+						class Attribute6
+						{
+							property="MCC_Module_settingsMechanics_cover";
+							expression="_this setVariable ['cover',_value,true];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute7
+						{
+							property="MCC_Module_settingsMechanics_interactionUI";
+							expression="_this setVariable ['interactionUI',_value,true];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						class Attribute8
+						{
+							property="MCC_Module_settingsMechanics_coverUI";
+							expression="_this setVariable ['coverUI',_value,true];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute9
+						{
+							property="MCC_Module_settingsMechanics_fatigue";
+							expression="_this setVariable ['fatigue',_value,true];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute10
+						{
+							property="MCC_Module_settingsMechanics_nonLeathalAmmo";
+							expression="_this setVariable ['nonLeathalAmmo',_value,true];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="";
+								};
+							};
+						};
+						class Attribute11
+						{
+							property="MCC_Module_settingsMechanics_actionMenu";
+							expression="_this setVariable ['actionMenu',_value,true];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=12;
 					};
 				};
 			};
@@ -8588,7 +8830,7 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={4384,5.0014391,4456.0996};
+										position[]={4384,5.0014391,4456.0498};
 									};
 									side="Civilian";
 									flags=5;
@@ -8894,7 +9136,7 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={4386,5.0014391,4456.0996};
+										position[]={4386,5.0014391,4456.0498};
 									};
 									side="Civilian";
 									flags=5;
@@ -9206,7 +9448,7 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={4388,5.0014391,4456.0996};
+										position[]={4388,5.0014391,4456.0498};
 									};
 									side="Civilian";
 									flags=5;
@@ -9473,7 +9715,7 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={4390,5.0014391,4456.0996};
+										position[]={4390,5.0014391,4456.0498};
 									};
 									side="Civilian";
 									flags=5;
@@ -9750,7 +9992,7 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={4392,5.0014391,4456.0996};
+										position[]={4392,5.0014391,4456.0498};
 									};
 									side="Civilian";
 									flags=5;
@@ -10031,7 +10273,7 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={4394,5.0014391,4456.0996};
+										position[]={4394,5.0014391,4456.0498};
 									};
 									side="Civilian";
 									flags=5;
@@ -10301,7 +10543,7 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={4396,5.0014391,4456.0996};
+										position[]={4396,5.0014391,4456.0498};
 									};
 									side="Civilian";
 									flags=5;
@@ -10571,7 +10813,7 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={4398,5.0014391,4456.1499};
+										position[]={4398,5.0014391,4456.0498};
 									};
 									side="Civilian";
 									flags=5;
@@ -11197,7 +11439,7 @@ class Mission
 				position[]={4388.75,9,4456};
 			};
 			title="Equipaggiamenti";
-			description="Questo gruppo salva nel tuo arsenale virtuale gli equipaggiamenti del 15BN. Le unità spariranno dopo l'avvio della missione.";
+			description="Questo gruppo salva nel tuo arsenale virtuale gli equipaggiamenti del 15BN. ";
 			id=249;
 			atlOffset=4;
 		};
@@ -11212,248 +11454,6 @@ class Mission
 			description="Copia e incolla questi team per creare Alpha 2, 3, Bravo 1, 2  e 3. Cambia la texture nei due cartelli in ""img\ALPHA-N.paa"" oppure ""img\BRAVO-N.paa"" dove ""N"" è il numero del team.";
 			id=250;
 			atlOffset=5.25;
-		};
-		class Item10
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={4288,5,4672};
-			};
-			id=254;
-			type="MCC_Module_settingsMechanics";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="MCC_Module_settingsMechanics_coverVault";
-					expression="_this setVariable ['coverVault',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=1;
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="MCC_Module_settingsMechanics_switchWeapons";
-					expression="_this setVariable ['switchWeapons',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute2
-				{
-					property="MCC_Module_settingsMechanics_arcadeTanks";
-					expression="_this setVariable ['arcadeTanks',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute3
-				{
-					property="MCC_Module_settingsMechanics_survive";
-					expression="_this setVariable ['survive',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute4
-				{
-					property="MCC_Module_settingsMechanics_interaction";
-					expression="_this setVariable ['interaction',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=1;
-						};
-					};
-				};
-				class Attribute5
-				{
-					property="MCC_Module_settingsMechanics_breachingAmmo";
-					expression="_this setVariable ['breachingAmmo',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="";
-						};
-					};
-				};
-				class Attribute6
-				{
-					property="MCC_Module_settingsMechanics_cover";
-					expression="_this setVariable ['cover',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute7
-				{
-					property="MCC_Module_settingsMechanics_interactionUI";
-					expression="_this setVariable ['interactionUI',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=1;
-						};
-					};
-				};
-				class Attribute8
-				{
-					property="MCC_Module_settingsMechanics_coverUI";
-					expression="_this setVariable ['coverUI',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute9
-				{
-					property="MCC_Module_settingsMechanics_fatigue";
-					expression="_this setVariable ['fatigue',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute10
-				{
-					property="MCC_Module_settingsMechanics_nonLeathalAmmo";
-					expression="_this setVariable ['nonLeathalAmmo',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="";
-						};
-					};
-				};
-				class Attribute11
-				{
-					property="MCC_Module_settingsMechanics_actionMenu";
-					expression="_this setVariable ['actionMenu',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=12;
-			};
 		};
 	};
 	class Connections
