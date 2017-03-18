@@ -669,12 +669,12 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={4378,5,4434};
-						angles[]={0,3.1406851,0};
+						position[]={4377.8774,5,4433.814};
+						angles[]={-0,3.1406851,0};
 					};
 					isPlayable=1;
 					description="Spettatore";
-					id=106;
+					id=257;
 					type="VirtualSpectator_F";
 					class CustomAttributes
 					{
@@ -780,12 +780,12 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={4378,5,4436};
-						angles[]={0,3.1406851,0};
+						position[]={4377.8774,5,4435.814};
+						angles[]={-0,3.1406851,0};
 					};
 					isPlayable=1;
 					description="Spettatore";
-					id=107;
+					id=258;
 					type="VirtualSpectator_F";
 					class CustomAttributes
 					{
@@ -891,12 +891,12 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={4376,5,4436};
-						angles[]={0,3.1406851,0};
+						position[]={4375.8774,5,4435.814};
+						angles[]={-0,3.1406851,0};
 					};
 					isPlayable=1;
 					description="Spettatore";
-					id=108;
+					id=259;
 					type="VirtualSpectator_F";
 					class CustomAttributes
 					{
@@ -1002,12 +1002,12 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={4380,5,4436};
-						angles[]={0,3.1406851,0};
+						position[]={4379.8774,5,4435.814};
+						angles[]={-0,3.1406851,0};
 					};
 					isPlayable=1;
 					description="Spettatore";
-					id=109;
+					id=260;
 					type="VirtualSpectator_F";
 					class CustomAttributes
 					{
@@ -1113,12 +1113,12 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={4376,5,4438};
-						angles[]={0,3.1406851,0};
+						position[]={4375.8774,5,4437.814};
+						angles[]={-0,3.1406851,0};
 					};
 					isPlayable=1;
 					description="Spettatore";
-					id=110;
+					id=261;
 					type="VirtualSpectator_F";
 					class CustomAttributes
 					{
@@ -1224,12 +1224,12 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={4380,5,4438};
-						angles[]={0,3.1406851,0};
+						position[]={4379.8774,5,4437.814};
+						angles[]={-0,3.1406851,0};
 					};
 					isPlayable=1;
 					description="Spettatore";
-					id=111;
+					id=262;
 					type="VirtualSpectator_F";
 					class CustomAttributes
 					{
@@ -1335,12 +1335,12 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={4376,5,4434};
-						angles[]={0,3.1406851,0};
+						position[]={4375.8774,5,4433.814};
+						angles[]={-0,3.1406851,0};
 					};
 					isPlayable=1;
 					description="Spettatore";
-					id=112;
+					id=263;
 					type="VirtualSpectator_F";
 					class CustomAttributes
 					{
@@ -1446,12 +1446,12 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={4378,5,4438};
-						angles[]={0,3.1406851,0};
+						position[]={4377.8774,5,4437.814};
+						angles[]={-0,3.1406851,0};
 					};
 					isPlayable=1;
 					description="Spettatore";
-					id=114;
+					id=264;
 					type="VirtualSpectator_F";
 					class CustomAttributes
 					{
@@ -1557,12 +1557,12 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={4378,5,4432};
-						angles[]={0,3.1406851,0};
+						position[]={4377.8774,5,4431.814};
+						angles[]={-0,3.1406851,0};
 					};
 					isPlayable=1;
 					description="Spettatore";
-					id=115;
+					id=265;
 					type="VirtualSpectator_F";
 					class CustomAttributes
 					{
@@ -1668,12 +1668,12 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={4380,5,4434};
-						angles[]={0,3.1406851,0};
+						position[]={4379.8774,5,4433.814};
+						angles[]={-0,3.1406851,0};
 					};
 					isPlayable=1;
 					description="Spettatore";
-					id=116;
+					id=266;
 					type="VirtualSpectator_F";
 					class CustomAttributes
 					{
@@ -1779,12 +1779,12 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={4376,5,4432};
-						angles[]={0,3.1406851,0};
+						position[]={4375.8774,5,4431.814};
+						angles[]={-0,3.1406851,0};
 					};
 					isPlayable=1;
 					description="Spettatore";
-					id=117;
+					id=267;
 					type="VirtualSpectator_F";
 					class CustomAttributes
 					{
@@ -1890,12 +1890,12 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={4380,5,4432};
-						angles[]={0,3.1406851,0};
+						position[]={4379.8774,5,4431.814};
+						angles[]={-0,3.1406851,0};
 					};
 					isPlayable=1;
 					description="Spettatore";
-					id=120;
+					id=268;
 					type="VirtualSpectator_F";
 					class CustomAttributes
 					{
@@ -11063,7 +11063,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="[=15BN=] TEST_Fuciliere";
+													value="[=15BN=] Fuciliere";
 												};
 											};
 										};
@@ -11550,7 +11550,7 @@ class Mission
 				position[]={4444.9741,5,4558.6201};
 			};
 			title="Moduli";
-			description="Copia ed incolla questi moduli nella mappa. Sincronizza ACE FRIES con gli elicotteri.";
+			description="Copia ed incolla questi moduli nella mappa. Sincronizza ACE FRIES con gli elicotteri che supporteranno il fast roping.";
 			id=255;
 		};
 	};
