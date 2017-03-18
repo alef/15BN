@@ -11455,6 +11455,17 @@ class Mission
 			id=250;
 			atlOffset=5.25;
 		};
+		class Item10
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={4444.9741,5,4558.6201};
+			};
+			title="Moduli";
+			description="Copia ed incolla questi moduli nella mappa. Sincronizza ACE FRIES con gli elicotteri.";
+			id=255;
+		};
 	};
 	class Connections
 	{
