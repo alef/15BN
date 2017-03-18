@@ -589,7 +589,6 @@ class Mission
 			flags=5;
 			class Attributes
 			{
-				init="this setFlagTexture 'img\15bn_flag_512x256.paa'";
 			};
 			id=0;
 			type="Flag_White_F";
