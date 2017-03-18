@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={4369.7021,21.392101,4468.0449};
-		dir[]={0.4514882,-0.53394961,-0.71492404};
-		up[]={0.2851463,0.84546781,-0.45152384};
-		aside[]={-0.84553742,-1.0244548e-007,-0.53397304};
+		pos[]={4341.6514,21.392101,4471.2661};
+		dir[]={0.88309836,-0.437388,0.16997316};
+		up[]={0.42958713,0.89923096,0.082684621};
+		aside[]={0.18901038,-1.420849e-007,-0.98200727};
 	};
 };
 binarizationWanted=0;
@@ -451,7 +451,6 @@ class ScenarioData
 	debriefing=0;
 	showCompass=0;
 	showGPS=0;
-	showMap=0;
 	showWatch=0;
 	saving=0;
 	respawnDialog=0;
@@ -487,22 +486,8 @@ class CustomAttributes
 					};
 					class value
 					{
-						items=2;
+						items=1;
 						class Item0
-						{
-							class data
-							{
-								class type
-								{
-									type[]=
-									{
-										"STRING"
-									};
-								};
-								value="ace_spectator";
-							};
-						};
-						class Item1
 						{
 							class data
 							{
@@ -571,7 +556,7 @@ class Mission
 	class Intel
 	{
 		briefingName="Base";
-		overviewText="15BN Base";
+		overviewText="Bravo 1 = Alpha 2-1. Bravo 2 = Alpha 2-2. Bravo 3 = Alpha 2-3.";
 		timeOfChanges=1800.0002;
 		startWeather=0;
 		startWind=0.1;
