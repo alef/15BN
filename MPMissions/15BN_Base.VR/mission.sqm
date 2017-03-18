@@ -8304,7 +8304,7 @@ class Mission
 									flags=7;
 									class Attributes
 									{
-										init="[this, [profileNamespace, name this]] call BIS_fnc_saveInventory";
+										init="[this, [profileNamespace, ""[=15BN=] TL""]] call BIS_fnc_saveInventory";
 										name="TL";
 										disableSimulation=1;
 										ignoreByDynSimulGrid=1;
@@ -8618,7 +8618,7 @@ class Mission
 									flags=5;
 									class Attributes
 									{
-										init="[this, [profileNamespace, name this]] call BIS_fnc_saveInventory";
+										init="[this, [profileNamespace, ""[=15BN=] TL/AT""]] call BIS_fnc_saveInventory";
 										name="TL_AT";
 										disableSimulation=1;
 										ignoreByDynSimulGrid=1;
@@ -8922,7 +8922,7 @@ class Mission
 									flags=5;
 									class Attributes
 									{
-										init="[this, [profileNamespace, name this]] call BIS_fnc_saveInventory";
+										init="[this, [profileNamespace, ""[=15BN=] TL/GL""]] call BIS_fnc_saveInventory";
 										name="TL_GL";
 										disableSimulation=1;
 										ignoreByDynSimulGrid=1;
@@ -9228,7 +9228,7 @@ class Mission
 									flags=5;
 									class Attributes
 									{
-										init="[this, [profileNamespace, name this]] call BIS_fnc_saveInventory";
+										init="[this, [profileNamespace, ""[=15BN=] Ricognitore""]] call BIS_fnc_saveInventory";
 										name="Ricognitore";
 										disableSimulation=1;
 										ignoreByDynSimulGrid=1;
@@ -9540,7 +9540,7 @@ class Mission
 									flags=5;
 									class Attributes
 									{
-										init="[this, [profileNamespace, name this]] call BIS_fnc_saveInventory";
+										init="[this, [profileNamespace, ""[=15BN=] Mitragliere""]] call BIS_fnc_saveInventory";
 										name="Mitragliere";
 										disableSimulation=1;
 										ignoreByDynSimulGrid=1;
@@ -9807,7 +9807,7 @@ class Mission
 									flags=5;
 									class Attributes
 									{
-										init="[this, [profileNamespace, name this]] call BIS_fnc_saveInventory";
+										init="[this, [profileNamespace, ""[=15BN=] Granatiere""]] call BIS_fnc_saveInventory";
 										name="Granatiere";
 										disableSimulation=1;
 										ignoreByDynSimulGrid=1;
@@ -10084,7 +10084,7 @@ class Mission
 									flags=5;
 									class Attributes
 									{
-										init="[this, [profileNamespace, name this]] call BIS_fnc_saveInventory";
+										init="[this, [profileNamespace, ""[=15BN=] Esplosivi""]] call BIS_fnc_saveInventory";
 										name="Esplosivi";
 										disableSimulation=1;
 										ignoreByDynSimulGrid=1;
@@ -10365,7 +10365,7 @@ class Mission
 									flags=5;
 									class Attributes
 									{
-										init="[this, [profileNamespace, name this]] call BIS_fnc_saveInventory";
+										init="[this, [profileNamespace, ""[=15BN=] AntiTank""]] call BIS_fnc_saveInventory";
 										name="Antitank";
 										disableSimulation=1;
 										ignoreByDynSimulGrid=1;
@@ -10635,7 +10635,7 @@ class Mission
 									flags=5;
 									class Attributes
 									{
-										init="[this, [profileNamespace, name this]] call BIS_fnc_saveInventory";
+										init="[this, [profileNamespace, ""[=15BN=] Antiaereo""]] call BIS_fnc_saveInventory";
 										name="Antiaereo";
 										disableSimulation=1;
 										ignoreByDynSimulGrid=1;
@@ -10905,7 +10905,7 @@ class Mission
 									flags=5;
 									class Attributes
 									{
-										init="[this, [profileNamespace, name this]] call BIS_fnc_saveInventory";
+										init="[this, [profileNamespace, ""[=15BN=] Fuciliere""]] call BIS_fnc_saveInventory";
 										name="Fuciliere";
 										disableSimulation=1;
 										ignoreByDynSimulGrid=1;
@@ -11176,7 +11176,7 @@ class Mission
 									flags=5;
 									class Attributes
 									{
-										init="[this, [profileNamespace, name this]] call BIS_fnc_saveInventory";
+										init="[this, [profileNamespace, ""[=15BN=] Medico""]] call BIS_fnc_saveInventory";
 										name="Medico";
 										disableSimulation=1;
 										ignoreByDynSimulGrid=1;
@@ -11482,6 +11482,7 @@ class Mission
 							};
 							class Attributes
 							{
+								name="ALEF_15BN_equipaggiamenti";
 								combatMode="BLUE";
 								behaviour="CARELESS";
 							};
