@@ -12,7 +12,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=100;
+		nextID=102;
 	};
 	class Camera
 	{
@@ -481,6 +481,10 @@ class AddonsMetaData
 		};
 	};
 };
+class DynamicSimulation
+{
+	enable=0;
+};
 randomSeed=5689619;
 class ScenarioData
 {
@@ -498,6 +502,7 @@ class ScenarioData
 		gameType="Coop";
 		maxPlayers=84;
 	};
+	wreckRemovalMaxTime=3600;
 };
 class CustomAttributes
 {
