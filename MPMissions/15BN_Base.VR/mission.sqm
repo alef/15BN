@@ -623,13 +623,13 @@ class Mission
 		class Item1
 		{
 			dataType="Marker";
-			position[]={4381.5972,8.8628388e+009,4480.3232};
-			name="Base_mkr";
+			position[]={4381.5972,0,4480.3232};
+			name="respawn_west";
 			text="Base";
 			type="b_hq";
 			colorName="ColorWEST";
 			id=4;
-			atlOffset=8.8628388e+009;
+			atlOffset=-5;
 		};
 		class Item2
 		{
