@@ -652,8 +652,9 @@ class Mission
 					class PositionInfo
 					{
 						position[]={4377.8774,5,4433.814};
-						angles[]={-0,3.1406851,0};
+						angles[]={0,3.1406851,0};
 					};
+					init="if (!isMultiplayer) then {deleteVehicle this}";
 					isPlayable=1;
 					description="Spettatore";
 					id=257;
@@ -763,8 +764,9 @@ class Mission
 					class PositionInfo
 					{
 						position[]={4377.8774,5,4435.814};
-						angles[]={-0,3.1406851,0};
+						angles[]={0,3.1406851,0};
 					};
+					init="if (!isMultiplayer) then {deleteVehicle this}";
 					isPlayable=1;
 					description="Spettatore";
 					id=258;
@@ -874,8 +876,9 @@ class Mission
 					class PositionInfo
 					{
 						position[]={4375.8774,5,4435.814};
-						angles[]={-0,3.1406851,0};
+						angles[]={0,3.1406851,0};
 					};
+					init="if (!isMultiplayer) then {deleteVehicle this}";
 					isPlayable=1;
 					description="Spettatore";
 					id=259;
@@ -985,8 +988,9 @@ class Mission
 					class PositionInfo
 					{
 						position[]={4379.8774,5,4435.814};
-						angles[]={-0,3.1406851,0};
+						angles[]={0,3.1406851,0};
 					};
+					init="if (!isMultiplayer) then {deleteVehicle this}";
 					isPlayable=1;
 					description="Spettatore";
 					id=260;
@@ -1096,8 +1100,9 @@ class Mission
 					class PositionInfo
 					{
 						position[]={4375.8774,5,4437.814};
-						angles[]={-0,3.1406851,0};
+						angles[]={0,3.1406851,0};
 					};
+					init="if (!isMultiplayer) then {deleteVehicle this}";
 					isPlayable=1;
 					description="Spettatore";
 					id=261;
@@ -1207,8 +1212,9 @@ class Mission
 					class PositionInfo
 					{
 						position[]={4379.8774,5,4437.814};
-						angles[]={-0,3.1406851,0};
+						angles[]={0,3.1406851,0};
 					};
+					init="if (!isMultiplayer) then {deleteVehicle this}";
 					isPlayable=1;
 					description="Spettatore";
 					id=262;
@@ -1318,8 +1324,9 @@ class Mission
 					class PositionInfo
 					{
 						position[]={4375.8774,5,4433.814};
-						angles[]={-0,3.1406851,0};
+						angles[]={0,3.1406851,0};
 					};
+					init="if (!isMultiplayer) then {deleteVehicle this}";
 					isPlayable=1;
 					description="Spettatore";
 					id=263;
@@ -1429,8 +1436,9 @@ class Mission
 					class PositionInfo
 					{
 						position[]={4377.8774,5,4437.814};
-						angles[]={-0,3.1406851,0};
+						angles[]={0,3.1406851,0};
 					};
+					init="if (!isMultiplayer) then {deleteVehicle this}";
 					isPlayable=1;
 					description="Spettatore";
 					id=264;
@@ -1540,8 +1548,9 @@ class Mission
 					class PositionInfo
 					{
 						position[]={4377.8774,5,4431.814};
-						angles[]={-0,3.1406851,0};
+						angles[]={0,3.1406851,0};
 					};
+					init="if (!isMultiplayer) then {deleteVehicle this}";
 					isPlayable=1;
 					description="Spettatore";
 					id=265;
@@ -1651,8 +1660,9 @@ class Mission
 					class PositionInfo
 					{
 						position[]={4379.8774,5,4433.814};
-						angles[]={-0,3.1406851,0};
+						angles[]={0,3.1406851,0};
 					};
+					init="if (!isMultiplayer) then {deleteVehicle this}";
 					isPlayable=1;
 					description="Spettatore";
 					id=266;
@@ -1762,8 +1772,9 @@ class Mission
 					class PositionInfo
 					{
 						position[]={4375.8774,5,4431.814};
-						angles[]={-0,3.1406851,0};
+						angles[]={0,3.1406851,0};
 					};
+					init="if (!isMultiplayer) then {deleteVehicle this}";
 					isPlayable=1;
 					description="Spettatore";
 					id=267;
@@ -1873,8 +1884,9 @@ class Mission
 					class PositionInfo
 					{
 						position[]={4379.8774,5,4431.814};
-						angles[]={-0,3.1406851,0};
+						angles[]={0,3.1406851,0};
 					};
+					init="if (!isMultiplayer) then {deleteVehicle this}";
 					isPlayable=1;
 					description="Spettatore";
 					id=268;
