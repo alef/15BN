@@ -12,14 +12,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=92;
+		nextID=128;
 	};
 	class Camera
 	{
-		pos[]={4387.3926,19.584698,4475.6025};
-		dir[]={0.15961356,-0.41986704,-0.89350045};
-		up[]={0.07384257,0.90756261,-0.41335592};
-		aside[]={-0.98447084,7.5151911e-007,-0.1758655};
+		pos[]={4390.9409,19.60379,4488.6167};
+		dir[]={0.02569554,-0.20140153,-0.97923136};
+		up[]={0.0052858181,0.97949034,-0.20138969};
+		aside[]={-0.99971783,9.4029383e-007,-0.026234042};
 	};
 };
 binarizationWanted=0;
@@ -8837,7 +8837,7 @@ class Mission
 										{
 											class primaryWeapon
 											{
-												name="rhs_weap_m4_carryhandle";
+												name="rhs_weap_m4a1_carryhandle";
 												optics="rhsusf_acc_ACOG2_USMC";
 												underBarrel="rhsusf_acc_grip3";
 												class primaryMuzzleMag
@@ -8863,107 +8863,106 @@ class Mission
 											{
 												typeName="rhs_uniform_FROG01_wd";
 												isBackpack=0;
-												class MagazineCargo
-												{
-													items=2;
-													class Item0
-													{
-														name="rhs_mag_m18_green";
-														count=1;
-														ammoLeft=1;
-													};
-													class Item1
-													{
-														name="rhs_mag_m18_red";
-														count=1;
-														ammoLeft=1;
-													};
-												};
 												class ItemCargo
 												{
-													items=3;
+													items=8;
 													class Item0
+													{
+														name="ACE_EarPlugs";
+														count=1;
+													};
+													class Item1
 													{
 														name="ACE_fieldDressing";
 														count=10;
 													};
-													class Item1
+													class Item2
 													{
 														name="ACE_morphine";
 														count=3;
 													};
-													class Item2
+													class Item3
 													{
 														name="ACE_epinephrine";
+														count=1;
+													};
+													class Item4
+													{
+														name="ACE_CableTie";
+														count=2;
+													};
+													class Item5
+													{
+														name="ACE_microDAGR";
+														count=1;
+													};
+													class Item6
+													{
+														name="ACE_MapTools";
+														count=1;
+													};
+													class Item7
+													{
+														name="ACRE_PRC343";
 														count=1;
 													};
 												};
 											};
 											class vest
 											{
-												typeName="rhsusf_spc_rifleman";
+												typeName="rhsusf_spc_squadleader";
 												isBackpack=0;
 												class MagazineCargo
 												{
-													items=2;
+													items=6;
 													class Item0
 													{
 														name="rhs_mag_30Rnd_556x45_M855A1_Stanag_No_Tracer";
-														count=10;
+														count=5;
 														ammoLeft=30;
 													};
 													class Item1
 													{
+														name="rhsusf_mag_15Rnd_9x19_JHP";
+														count=2;
+														ammoLeft=15;
+													};
+													class Item2
+													{
 														name="rhs_mag_m67";
+														count=2;
+														ammoLeft=1;
+													};
+													class Item3
+													{
+														name="rhs_mag_m18_green";
+														count=1;
+														ammoLeft=1;
+													};
+													class Item4
+													{
+														name="rhs_mag_m18_red";
+														count=1;
+														ammoLeft=1;
+													};
+													class Item5
+													{
+														name="rhs_mag_an_m8hc";
 														count=2;
 														ammoLeft=1;
 													};
 												};
 												class ItemCargo
 												{
-													items=1;
+													items=2;
 													class Item0
 													{
-														name="ACRE_PRC343_ID_4";
-														count=1;
-													};
-												};
-											};
-											class backpack
-											{
-												typeName="rhsusf_assault_eagleaiii_coy";
-												isBackpack=1;
-												class MagazineCargo
-												{
-													items=1;
-													class Item0
-													{
-														name="rhs_mag_an_m8hc";
-														count=4;
-														ammoLeft=1;
-													};
-												};
-												class ItemCargo
-												{
-													items=4;
-													class Item0
-													{
-														name="ACE_MapTools";
+														name="ACE_Flashlight_MX991";
 														count=1;
 													};
 													class Item1
 													{
-														name="ACE_microDAGR";
-														count=1;
-													};
-													class Item2
-													{
-														name="ACE_EarPlugs";
-														count=1;
-													};
-													class Item3
-													{
-														name="ACRE_PRC148_ID_2";
+														name="ACRE_PRC148";
 														count=1;
 													};
 												};
@@ -9153,7 +9152,7 @@ class Mission
 										{
 											class primaryWeapon
 											{
-												name="rhs_weap_m4_carryhandle";
+												name="rhs_weap_m4a1_carryhandle";
 												optics="rhsusf_acc_ACOG2_USMC";
 												underBarrel="rhsusf_acc_grip3";
 												class primaryMuzzleMag
@@ -9188,9 +9187,19 @@ class Mission
 											{
 												typeName="rhs_uniform_FROG01_wd";
 												isBackpack=0;
+												class MagazineCargo
+												{
+													items=1;
+													class Item0
+													{
+														name="rhs_m136_mag";
+														count=1;
+														ammoLeft=1;
+													};
+												};
 												class ItemCargo
 												{
-													items=6;
+													items=8;
 													class Item0
 													{
 														name="ACE_EarPlugs";
@@ -9213,52 +9222,68 @@ class Mission
 													};
 													class Item4
 													{
-														name="ACE_MapTools";
-														count=1;
+														name="ACE_CableTie";
+														count=2;
 													};
 													class Item5
 													{
 														name="ACE_microDAGR";
 														count=1;
 													};
+													class Item6
+													{
+														name="ACE_MapTools";
+														count=1;
+													};
+													class Item7
+													{
+														name="ACRE_PRC343";
+														count=1;
+													};
 												};
 											};
 											class vest
 											{
-												typeName="rhsusf_spc_rifleman";
+												typeName="rhsusf_spc_squadleader";
 												isBackpack=0;
 												class MagazineCargo
 												{
-													items=5;
+													items=6;
 													class Item0
 													{
-														name="rhs_mag_an_m8hc";
-														count=4;
-														ammoLeft=1;
+														name="rhs_mag_30Rnd_556x45_M855A1_Stanag_No_Tracer";
+														count=5;
+														ammoLeft=30;
 													};
 													class Item1
 													{
-														name="rhs_mag_m18_red";
-														count=1;
-														ammoLeft=1;
+														name="rhsusf_mag_15Rnd_9x19_JHP";
+														count=2;
+														ammoLeft=15;
 													};
 													class Item2
-													{
-														name="rhs_mag_m18_green";
-														count=1;
-														ammoLeft=1;
-													};
-													class Item3
 													{
 														name="rhs_mag_m67";
 														count=2;
 														ammoLeft=1;
 													};
+													class Item3
+													{
+														name="rhs_mag_m18_green";
+														count=1;
+														ammoLeft=1;
+													};
 													class Item4
 													{
-														name="rhs_mag_30Rnd_556x45_M855A1_Stanag_No_Tracer";
-														count=5;
-														ammoLeft=30;
+														name="rhs_mag_m18_red";
+														count=1;
+														ammoLeft=1;
+													};
+													class Item5
+													{
+														name="rhs_mag_an_m8hc";
+														count=2;
+														ammoLeft=1;
 													};
 												};
 												class ItemCargo
@@ -9271,30 +9296,6 @@ class Mission
 													};
 													class Item1
 													{
-														name="ACRE_PRC343";
-														count=1;
-													};
-												};
-											};
-											class backpack
-											{
-												typeName="rhsusf_assault_eagleaiii_coy";
-												isBackpack=1;
-												class MagazineCargo
-												{
-													items=1;
-													class Item0
-													{
-														name="rhs_mag_30Rnd_556x45_M855A1_Stanag_No_Tracer";
-														count=4;
-														ammoLeft=30;
-													};
-												};
-												class ItemCargo
-												{
-													items=1;
-													class Item0
-													{
 														name="ACRE_PRC148";
 														count=1;
 													};
@@ -9303,6 +9304,7 @@ class Mission
 											map="ItemMap";
 											compass="ItemCompass";
 											watch="ItemWatch";
+											radio="ItemRadioAcreFlagged";
 											headgear="rhsusf_lwh_helmet_marpatwd_headset";
 										};
 									};
@@ -9344,7 +9346,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="[=15BN=] TL_Antitank";
+													value="[=15BN=] TL_AntiTank";
 												};
 											};
 										};
@@ -9439,7 +9441,7 @@ class Mission
 															"SCALAR"
 														};
 													};
-													value=1;
+													value=-1;
 												};
 											};
 										};
@@ -9484,17 +9486,13 @@ class Mission
 										{
 											class primaryWeapon
 											{
-												name="rhs_weap_m4_m203";
+												name="rhs_weap_m4a1_carryhandle_m203";
 												optics="rhsusf_acc_ACOG2_USMC";
 												class primaryMuzzleMag
 												{
 													name="rhs_mag_30Rnd_556x45_M855A1_Stanag_No_Tracer";
 													ammoLeft=30;
 												};
-											};
-											class handgun
-											{
-												name="rhsusf_weap_m9";
 											};
 											class binocular
 											{
@@ -9506,7 +9504,7 @@ class Mission
 												isBackpack=0;
 												class ItemCargo
 												{
-													items=6;
+													items=8;
 													class Item0
 													{
 														name="ACE_EarPlugs";
@@ -9529,12 +9527,22 @@ class Mission
 													};
 													class Item4
 													{
-														name="ACE_MapTools";
-														count=1;
+														name="ACE_CableTie";
+														count=2;
 													};
 													class Item5
 													{
 														name="ACE_microDAGR";
+														count=1;
+													};
+													class Item6
+													{
+														name="ACE_MapTools";
+														count=1;
+													};
+													class Item7
+													{
+														name="ACRE_PRC343";
 														count=1;
 													};
 												};
@@ -9545,7 +9553,7 @@ class Mission
 												isBackpack=0;
 												class MagazineCargo
 												{
-													items=7;
+													items=5;
 													class Item0
 													{
 														name="rhs_mag_an_m8hc";
@@ -9554,74 +9562,64 @@ class Mission
 													};
 													class Item1
 													{
-														name="rhs_mag_m18_red";
-														count=1;
-														ammoLeft=1;
-													};
-													class Item2
-													{
-														name="rhs_mag_m18_green";
-														count=1;
-														ammoLeft=1;
-													};
-													class Item3
-													{
 														name="rhs_mag_m67";
 														count=2;
 														ammoLeft=1;
 													};
-													class Item4
+													class Item2
 													{
 														name="rhs_mag_30Rnd_556x45_M855A1_Stanag_No_Tracer";
-														count=2;
+														count=5;
 														ammoLeft=30;
 													};
-													class Item5
-													{
-														name="rhs_mag_m714_White";
-														count=2;
-														ammoLeft=1;
-													};
-													class Item6
+													class Item3
 													{
 														name="rhs_mag_M433_HEDP";
 														count=8;
 														ammoLeft=1;
 													};
+													class Item4
+													{
+														name="rhs_mag_m714_White";
+														count=3;
+														ammoLeft=1;
+													};
 												};
 												class ItemCargo
 												{
-													items=2;
+													items=1;
 													class Item0
 													{
 														name="ACE_Flashlight_MX991";
-														count=1;
-													};
-													class Item1
-													{
-														name="ACRE_PRC343";
 														count=1;
 													};
 												};
 											};
 											class backpack
 											{
-												typeName="rhsusf_assault_eagleaiii_coy";
+												typeName="rhsusf_falconii_coy";
 												isBackpack=1;
 												class MagazineCargo
 												{
-													items=1;
+													items=2;
 													class Item0
 													{
-														name="rhs_mag_30Rnd_556x45_M855A1_Stanag_No_Tracer";
-														count=4;
-														ammoLeft=30;
+														name="rhs_mag_m18_green";
+														count=2;
+														ammoLeft=1;
+													};
+													class Item1
+													{
+														name="rhs_mag_m18_red";
+														count=2;
+														ammoLeft=1;
 													};
 												};
 											};
 											map="ItemMap";
 											compass="ItemCompass";
 											watch="ItemWatch";
+											radio="ItemRadioAcreFlagged";
 											headgear="rhsusf_lwh_helmet_marpatwd_headset";
 										};
 									};
@@ -10396,19 +10394,9 @@ class Mission
 											{
 												typeName="rhs_uniform_FROG01_wd";
 												isBackpack=0;
-												class MagazineCargo
-												{
-													items=1;
-													class Item0
-													{
-														name="rhs_mag_M433_HEDP";
-														count=2;
-														ammoLeft=1;
-													};
-												};
 												class ItemCargo
 												{
-													items=5;
+													items=8;
 													class Item0
 													{
 														name="ACE_EarPlugs";
@@ -10431,7 +10419,22 @@ class Mission
 													};
 													class Item4
 													{
+														name="ACE_CableTie";
+														count=2;
+													};
+													class Item5
+													{
 														name="ACE_microDAGR";
+														count=1;
+													};
+													class Item6
+													{
+														name="ACE_MapTools";
+														count=1;
+													};
+													class Item7
+													{
+														name="ACRE_PRC343";
 														count=1;
 													};
 												};
@@ -10442,7 +10445,7 @@ class Mission
 												isBackpack=0;
 												class MagazineCargo
 												{
-													items=7;
+													items=5;
 													class Item0
 													{
 														name="rhs_mag_an_m8hc";
@@ -10451,68 +10454,57 @@ class Mission
 													};
 													class Item1
 													{
-														name="rhs_mag_m18_red";
-														count=1;
-														ammoLeft=1;
-													};
-													class Item2
-													{
-														name="rhs_mag_m18_green";
-														count=1;
-														ammoLeft=1;
-													};
-													class Item3
-													{
 														name="rhs_mag_m67";
 														count=2;
 														ammoLeft=1;
 													};
-													class Item4
+													class Item2
 													{
-														name="rhs_mag_m714_White";
-														count=1;
-														ammoLeft=1;
+														name="rhs_mag_30Rnd_556x45_M855A1_Stanag_No_Tracer";
+														count=5;
+														ammoLeft=30;
 													};
-													class Item5
+													class Item3
 													{
 														name="rhs_mag_M433_HEDP";
 														count=8;
 														ammoLeft=1;
 													};
-													class Item6
+													class Item4
 													{
-														name="rhs_mag_30Rnd_556x45_M855A1_Stanag_No_Tracer";
+														name="rhs_mag_m714_White";
 														count=3;
-														ammoLeft=30;
+														ammoLeft=1;
 													};
 												};
 												class ItemCargo
 												{
-													items=2;
+													items=1;
 													class Item0
 													{
 														name="ACE_Flashlight_MX991";
-														count=1;
-													};
-													class Item1
-													{
-														name="ACRE_PRC343";
 														count=1;
 													};
 												};
 											};
 											class backpack
 											{
-												typeName="rhsusf_assault_eagleaiii_coy";
+												typeName="rhsusf_falconii_coy";
 												isBackpack=1;
 												class MagazineCargo
 												{
-													items=1;
+													items=2;
 													class Item0
 													{
-														name="rhs_mag_30Rnd_556x45_M855A1_Stanag_No_Tracer";
-														count=4;
-														ammoLeft=30;
+														name="rhs_mag_m18_green";
+														count=2;
+														ammoLeft=1;
+													};
+													class Item1
+													{
+														name="rhs_mag_m18_red";
+														count=2;
+														ammoLeft=1;
 													};
 												};
 											};
@@ -10979,6 +10971,11 @@ class Mission
 											class secondaryWeapon
 											{
 												name="rhs_weap_fgm148";
+												class primaryMuzzleMag
+												{
+													name="rhs_fgm148_magazine_AT";
+													ammoLeft=1;
+												};
 											};
 											class uniform
 											{
@@ -10986,7 +10983,7 @@ class Mission
 												isBackpack=0;
 												class ItemCargo
 												{
-													items=5;
+													items=7;
 													class Item0
 													{
 														name="ACE_EarPlugs";
@@ -11009,43 +11006,41 @@ class Mission
 													};
 													class Item4
 													{
+														name="ACE_CableTie";
+														count=2;
+													};
+													class Item5
+													{
 														name="ACE_microDAGR";
+														count=1;
+													};
+													class Item6
+													{
+														name="ACE_MapTools";
 														count=1;
 													};
 												};
 											};
 											class vest
 											{
-												typeName="rhsusf_spc_rifleman";
+												typeName="rhsusf_spc_light";
 												isBackpack=0;
 												class MagazineCargo
 												{
-													items=5;
+													items=3;
 													class Item0
 													{
 														name="rhs_mag_an_m8hc";
-														count=4;
+														count=3;
 														ammoLeft=1;
 													};
 													class Item1
-													{
-														name="rhs_mag_m18_red";
-														count=1;
-														ammoLeft=1;
-													};
-													class Item2
-													{
-														name="rhs_mag_m18_green";
-														count=1;
-														ammoLeft=1;
-													};
-													class Item3
 													{
 														name="rhs_mag_m67";
 														count=2;
 														ammoLeft=1;
 													};
-													class Item4
+													class Item2
 													{
 														name="rhs_mag_30Rnd_556x45_M855A1_Stanag_No_Tracer";
 														count=5;
@@ -11054,15 +11049,10 @@ class Mission
 												};
 												class ItemCargo
 												{
-													items=2;
+													items=1;
 													class Item0
 													{
 														name="ACE_Flashlight_MX991";
-														count=1;
-													};
-													class Item1
-													{
-														name="ACRE_PRC343";
 														count=1;
 													};
 												};
@@ -11071,20 +11061,11 @@ class Mission
 											{
 												typeName="B_Carryall_cbr";
 												isBackpack=1;
-												class MagazineCargo
-												{
-													items=1;
-													class Item0
-													{
-														name="rhs_fgm148_magazine_AT";
-														count=1;
-														ammoLeft=1;
-													};
-												};
 											};
 											map="ItemMap";
 											compass="ItemCompass";
 											watch="ItemWatch";
+											radio="ItemRadioAcreFlagged";
 											headgear="rhsusf_lwh_helmet_marpatwd";
 										};
 									};
@@ -11537,7 +11518,7 @@ class Mission
 												isBackpack=0;
 												class ItemCargo
 												{
-													items=5;
+													items=8;
 													class Item0
 													{
 														name="ACE_EarPlugs";
@@ -11563,6 +11544,21 @@ class Mission
 														name="ACE_microDAGR";
 														count=1;
 													};
+													class Item5
+													{
+														name="ACE_CableTie";
+														count=2;
+													};
+													class Item6
+													{
+														name="ACE_MapTools";
+														count=1;
+													};
+													class Item7
+													{
+														name="ACRE_PRC343";
+														count=1;
+													};
 												};
 											};
 											class vest
@@ -11571,49 +11567,32 @@ class Mission
 												isBackpack=0;
 												class MagazineCargo
 												{
-													items=5;
+													items=3;
 													class Item0
 													{
 														name="rhs_mag_an_m8hc";
-														count=4;
+														count=2;
 														ammoLeft=1;
 													};
 													class Item1
-													{
-														name="rhs_mag_m18_red";
-														count=1;
-														ammoLeft=1;
-													};
-													class Item2
-													{
-														name="rhs_mag_m18_green";
-														count=1;
-														ammoLeft=1;
-													};
-													class Item3
 													{
 														name="rhs_mag_m67";
 														count=2;
 														ammoLeft=1;
 													};
-													class Item4
+													class Item2
 													{
 														name="rhs_mag_30Rnd_556x45_M855A1_Stanag_No_Tracer";
-														count=5;
+														count=10;
 														ammoLeft=30;
 													};
 												};
 												class ItemCargo
 												{
-													items=2;
+													items=1;
 													class Item0
 													{
 														name="ACE_Flashlight_MX991";
-														count=1;
-													};
-													class Item1
-													{
-														name="ACRE_PRC343";
 														count=1;
 													};
 												};
@@ -11624,18 +11603,25 @@ class Mission
 												isBackpack=1;
 												class MagazineCargo
 												{
-													items=1;
+													items=2;
 													class Item0
 													{
-														name="rhs_mag_30Rnd_556x45_M855A1_Stanag_No_Tracer";
-														count=5;
-														ammoLeft=30;
+														name="rhs_mag_m18_green";
+														count=2;
+														ammoLeft=1;
+													};
+													class Item1
+													{
+														name="rhs_mag_m18_red";
+														count=2;
+														ammoLeft=1;
 													};
 												};
 											};
 											map="ItemMap";
 											compass="ItemCompass";
 											watch="ItemWatch";
+											radio="ItemRadioAcreFlagged";
 											headgear="rhsusf_lwh_helmet_marpatwd";
 										};
 									};
