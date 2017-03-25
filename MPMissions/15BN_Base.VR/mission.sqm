@@ -12,14 +12,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=146;
+		nextID=158;
 	};
 	class Camera
 	{
 		pos[]={4390.9409,19.60379,4488.6167};
-		dir[]={0.02569554,-0.20140153,-0.97923136};
-		up[]={0.0052858181,0.97949034,-0.20138969};
-		aside[]={-0.99971783,9.4029383e-007,-0.026234042};
+		dir[]={0.014571705,-0.4743686,-0.88027316};
+		up[]={0.0078534987,0.88030124,-0.47433749};
+		aside[]={-0.9999271,6.3789776e-007,-0.016553972};
 	};
 };
 binarizationWanted=0;
@@ -8862,7 +8862,6 @@ class Mission
 									flags=7;
 									class Attributes
 									{
-										init="[this, [profileNamespace, ""[=15BN=] TL""]] call BIS_fnc_saveInventory";
 										name="TL";
 										disableSimulation=1;
 										ignoreByDynSimulGrid=1;
@@ -9177,8 +9176,7 @@ class Mission
 									flags=5;
 									class Attributes
 									{
-										init="[this, [profileNamespace, ""[=15BN=] TL_AntiTank""]] call BIS_fnc_saveInventory";
-										name="TL_Antitank";
+										name="TL_AntiTank";
 										disableSimulation=1;
 										ignoreByDynSimulGrid=1;
 										class Inventory
@@ -9511,7 +9509,6 @@ class Mission
 									flags=5;
 									class Attributes
 									{
-										init="[this, [profileNamespace, ""[=15BN=] TL_Granatiere""]] call BIS_fnc_saveInventory";
 										name="TL_Granatiere";
 										disableSimulation=1;
 										ignoreByDynSimulGrid=1;
@@ -9826,7 +9823,6 @@ class Mission
 									flags=5;
 									class Attributes
 									{
-										init="[this, [profileNamespace, ""[=15BN=] Ricognitore""]] call BIS_fnc_saveInventory";
 										name="Ricognitore";
 										disableSimulation=1;
 										ignoreByDynSimulGrid=1;
@@ -10137,7 +10133,6 @@ class Mission
 									flags=5;
 									class Attributes
 									{
-										init="[this, [profileNamespace, ""[=15BN=] Mitragliere""]] call BIS_fnc_saveInventory";
 										name="Mitragliere";
 										disableSimulation=1;
 										ignoreByDynSimulGrid=1;
@@ -10407,7 +10402,6 @@ class Mission
 									flags=5;
 									class Attributes
 									{
-										init="[this, [profileNamespace, ""[=15BN=] Granatiere""]] call BIS_fnc_saveInventory";
 										name="Granatiere";
 										disableSimulation=1;
 										ignoreByDynSimulGrid=1;
@@ -10698,7 +10692,6 @@ class Mission
 									flags=5;
 									class Attributes
 									{
-										init="[this, [profileNamespace, ""[=15BN=] Esplosivi""]] call BIS_fnc_saveInventory";
 										name="Esplosivi";
 										disableSimulation=1;
 										ignoreByDynSimulGrid=1;
@@ -10984,7 +10977,6 @@ class Mission
 									flags=5;
 									class Attributes
 									{
-										init="[this, [profileNamespace, ""[=15BN=] AntiTank""]] call BIS_fnc_saveInventory";
 										name="Antitank";
 										disableSimulation=1;
 										ignoreByDynSimulGrid=1;
@@ -11253,7 +11245,6 @@ class Mission
 									flags=5;
 									class Attributes
 									{
-										init="[this, [profileNamespace, ""[=15BN=] Antiaereo""]] call BIS_fnc_saveInventory";
 										name="Antiaereo";
 										disableSimulation=1;
 										ignoreByDynSimulGrid=1;
@@ -11528,7 +11519,6 @@ class Mission
 									flags=5;
 									class Attributes
 									{
-										init="[this, [profileNamespace, ""[=15BN=] Fuciliere""]] call BIS_fnc_saveInventory";
 										name="Fuciliere";
 										disableSimulation=1;
 										ignoreByDynSimulGrid=1;
@@ -11809,7 +11799,6 @@ class Mission
 									flags=5;
 									class Attributes
 									{
-										init="[this, [profileNamespace, ""[=15BN=] Medico""]] call BIS_fnc_saveInventory";
 										name="Medico";
 										disableSimulation=1;
 										ignoreByDynSimulGrid=1;

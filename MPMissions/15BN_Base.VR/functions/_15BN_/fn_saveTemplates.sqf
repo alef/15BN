@@ -2,17 +2,16 @@
 
 /*
 	Description:
-	Save and overwrites any arsenal template having name starting with a prefix.
-	It loops over CfgRespawnInventory, create a unit and call the
-	respawn menu on it. This is needed because the inventories in respawn and
-	Arsenal have different data formats.
+	Save and overwrites any arsenal template having name starting with [=15BN=].
+	It loops over the group ALEF_15BN_equipaggiamenti and saves each inventory.
+
+	See fn_arsenal.sqf:2201 for data format
 
 	Parameter(s):
-	0: BOOL - load from config
-		true: (default) load from CfgRespawnInventory
-		false: load from data/name_in_CfgRespawnInventory.sqf
+	None required.
 	
 	Example:
+	Node. It's called as postInit.
 
 	Returns:
 	Nothing
@@ -23,32 +22,14 @@
 #define THIS_FILE fn_saveTemplates.sqf
 #include "\x\cba\addons\main\script_macros_common.hpp"
 
-// see fn_arsenal.sqf:2201 for data format
 LOG("Begin");
-private ["_u","_i","_cname","_fromConfig"];
-_fromConfig = param [0, false, [true]];
-
-// loop over the configured inventories
-{
-	_u = "Underwear_F" createVehicleLocal [8460, 25080];
-	_cname = configName _x ;
-	_name = "[=15BN=] "+_cname;
-	if (_fromConfig) then {
-		[_u, _x] call BIS_fnc_loadInventory;
-	} else {
-		private ["_h","_code"];
-		_code = compile loadFile ("data\" + _cname + ".sqf");
-		this = _u ;
-		[] call _code;
-		this = nil;
-	};
-	[_u, [profilenamespace, _name]] call BIS_fnc_saveInventory; // save into player's Arsenal slot
-	deleteVehicle _u;
-} forEach ([(missionConfigFile >> "CfgRespawnInventory"), 0, true] call BIS_fnc_returnChildren);
+params ["_postInit", "_didJIP"];
 
 // removes templates from old versions
 [player, [profilenamespace, "[=15BN=] Lanciagranate"], [], true] call BIS_fnc_saveInventory;
 
-saveProfileNamespace;
+{ [_x, [profileNamespace, name _x]] call BIS_fnc_saveInventory;
+} forEach units ALEF_15BN_equipaggiamenti;
 
+saveProfileNamespace;
 LOG("End");
