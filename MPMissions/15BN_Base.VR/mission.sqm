@@ -9145,7 +9145,7 @@ class Mission
 									flags=5;
 									class Attributes
 									{
-										init="[this, [profileNamespace, ""[=15BN=] TL_Antitank""]] call BIS_fnc_saveInventory";
+										init="[this, [profileNamespace, ""[=15BN=] TL_AntiTank""]] call BIS_fnc_saveInventory";
 										name="TL_Antitank";
 										disableSimulation=1;
 										ignoreByDynSimulGrid=1;
