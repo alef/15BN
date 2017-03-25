@@ -12,6 +12,7 @@ class ALEF {
 	class saveTemplates
 	{
 		description = "Save templates into players Arsenal.";
+		postInit = 1;
 	};
       	class preInit
       	{
@@ -29,6 +30,9 @@ class ALEF {
 	};
 	class chestpack {
 		description = "Add a chestpack possibility";
+	};
+	class dumpInventory {
+		description = "Copy to clipboard a text version of the unit inventory";
 	};
 	};
 };
