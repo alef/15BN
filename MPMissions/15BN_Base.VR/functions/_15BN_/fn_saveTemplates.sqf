@@ -1,4 +1,4 @@
-// #define DEBUG_MODE_FULL
+#define DEBUG_MODE_FULL
 
 /*
 	Description:
@@ -25,11 +25,13 @@
 LOG("Begin");
 params ["_postInit", "_didJIP"];
 
-// removes templates from old versions
-[player, [profilenamespace, "[=15BN=] Lanciagranate"], [], true] call BIS_fnc_saveInventory;
+if (local player) then {
+	// removes templates from old versions
+	[player, [profilenamespace, "[=15BN=] Lanciagranate"], [], true] call BIS_fnc_saveInventory;
 
-{ [_x, [profileNamespace, name _x]] call BIS_fnc_saveInventory;
-} forEach units ALEF_15BN_equipaggiamenti;
+	{ [_x, [profileNamespace, _x getVariable "ALEF_15BN_equipaggiamento"]] call BIS_fnc_saveInventory;
+	} forEach units ALEF_15BN_equipaggiamenti;
 
-saveProfileNamespace;
+	saveProfileNamespace;
+};
 LOG("End");

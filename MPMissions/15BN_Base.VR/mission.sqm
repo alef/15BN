@@ -12,14 +12,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=158;
+		nextID=176;
 	};
 	class Camera
 	{
 		pos[]={4390.9409,19.60379,4488.6167};
-		dir[]={0.014571705,-0.4743686,-0.88027316};
-		up[]={0.0078534987,0.88030124,-0.47433749};
-		aside[]={-0.9999271,6.3789776e-007,-0.016553972};
+		dir[]={0.002988155,-0.4743686,-0.88038874};
+		up[]={0.0016116719,0.88030124,-0.47439978};
+		aside[]={-1.0000584,6.3789776e-007,-0.0033958908};
 	};
 };
 binarizationWanted=0;
@@ -495,6 +495,25 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
+			property="RespawnButton";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=0;
+				};
+			};
+		};
+		class Attribute1
+		{
 			property="RespawnTemplates";
 			expression="true";
 			class Value
@@ -526,25 +545,6 @@ class CustomAttributes
 							};
 						};
 					};
-				};
-			};
-		};
-		class Attribute1
-		{
-			property="RespawnButton";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"SCALAR"
-						};
-					};
-					value=0;
 				};
 			};
 		};
@@ -8862,6 +8862,7 @@ class Mission
 									flags=7;
 									class Attributes
 									{
+										init="this setVariable [""ALEF_15BN_equipaggiamento"", ""[=15BN=] TL"", true]";
 										name="TL";
 										disableSimulation=1;
 										ignoreByDynSimulGrid=1;
@@ -9176,6 +9177,7 @@ class Mission
 									flags=5;
 									class Attributes
 									{
+										init="this setVariable [""ALEF_15BN_equipaggiamento"", ""[=15BN=] TL_AntiTank"", true]";
 										name="TL_AntiTank";
 										disableSimulation=1;
 										ignoreByDynSimulGrid=1;
@@ -9509,6 +9511,7 @@ class Mission
 									flags=5;
 									class Attributes
 									{
+										init="this setVariable [""ALEF_15BN_equipaggiamento"", ""[=15BN=] TL_Granatiere"", true]";
 										name="TL_Granatiere";
 										disableSimulation=1;
 										ignoreByDynSimulGrid=1;
@@ -9786,7 +9789,7 @@ class Mission
 															"SCALAR"
 														};
 													};
-													value=1;
+													value=-1;
 												};
 											};
 										};
@@ -9823,6 +9826,7 @@ class Mission
 									flags=5;
 									class Attributes
 									{
+										init="this setVariable [""ALEF_15BN_equipaggiamento"", ""[=15BN=] Ricognitore"", true]";
 										name="Ricognitore";
 										disableSimulation=1;
 										ignoreByDynSimulGrid=1;
@@ -10133,6 +10137,7 @@ class Mission
 									flags=5;
 									class Attributes
 									{
+										init="this setVariable [""ALEF_15BN_equipaggiamento"", ""[=15BN=] Mitragliere"", true]";
 										name="Mitragliere";
 										disableSimulation=1;
 										ignoreByDynSimulGrid=1;
@@ -10402,6 +10407,7 @@ class Mission
 									flags=5;
 									class Attributes
 									{
+										init="this setVariable [""ALEF_15BN_equipaggiamento"", ""[=15BN=] Granatiere"", true]";
 										name="Granatiere";
 										disableSimulation=1;
 										ignoreByDynSimulGrid=1;
@@ -10692,6 +10698,7 @@ class Mission
 									flags=5;
 									class Attributes
 									{
+										init="this setVariable [""ALEF_15BN_equipaggiamento"", ""[=15BN=] Esplosivi"", true]";
 										name="Esplosivi";
 										disableSimulation=1;
 										ignoreByDynSimulGrid=1;
@@ -10977,6 +10984,7 @@ class Mission
 									flags=5;
 									class Attributes
 									{
+										init="this setVariable [""ALEF_15BN_equipaggiamento"", ""[=15BN=] AntiTank"", true]";
 										name="Antitank";
 										disableSimulation=1;
 										ignoreByDynSimulGrid=1;
@@ -11245,6 +11253,7 @@ class Mission
 									flags=5;
 									class Attributes
 									{
+										init="this setVariable [""ALEF_15BN_equipaggiamento"", ""[=15BN=] Antiaereo"", true]";
 										name="Antiaereo";
 										disableSimulation=1;
 										ignoreByDynSimulGrid=1;
@@ -11519,6 +11528,7 @@ class Mission
 									flags=5;
 									class Attributes
 									{
+										init="this setVariable [""ALEF_15BN_equipaggiamento"", ""[=15BN=] Esplosivi"", true]";
 										name="Fuciliere";
 										disableSimulation=1;
 										ignoreByDynSimulGrid=1;
@@ -11799,6 +11809,7 @@ class Mission
 									flags=5;
 									class Attributes
 									{
+										init="this setVariable [""ALEF_15BN_equipaggiamento"", ""[=15BN=] Medico"", true]";
 										name="Medico";
 										disableSimulation=1;
 										ignoreByDynSimulGrid=1;
@@ -12080,7 +12091,7 @@ class Mission
 															"SCALAR"
 														};
 													};
-													value=-1;
+													value=1;
 												};
 											};
 										};
