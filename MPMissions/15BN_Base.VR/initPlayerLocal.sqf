@@ -9,7 +9,6 @@ private ["_p", "_didJIP"];
 _p = param [0, objNull];
 _didJIP = param [1, false];
 
-[] call ALEF_fnc_saveTemplates; 
 [] call ALEF_fnc_chestpack;
 
 if (hasInterface) then { player createDiaryRecord ["Log", ["Sistema medico", 
