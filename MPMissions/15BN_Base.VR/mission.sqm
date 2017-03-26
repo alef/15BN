@@ -12,14 +12,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=176;
+		nextID=188;
 	};
 	class Camera
 	{
-		pos[]={4390.9409,19.60379,4488.6167};
-		dir[]={0.002988155,-0.4743686,-0.88038874};
-		up[]={0.0016116719,0.88030124,-0.47439978};
-		aside[]={-1.0000584,6.3789776e-007,-0.0033958908};
+		pos[]={4464.0713,46.104843,4597.8047};
+		dir[]={0.052295625,-0.87334347,-0.48441622};
+		up[]={0.093737334,0.48713061,-0.86827636};
+		aside[]={-0.99428952,-4.6216883e-007,-0.10734151};
 	};
 };
 binarizationWanted=0;
@@ -9608,7 +9608,7 @@ class Mission
 													class Item3
 													{
 														name="rhs_mag_M433_HEDP";
-														count=8;
+														count=7;
 														ammoLeft=1;
 													};
 													class Item4
@@ -9620,10 +9620,15 @@ class Mission
 												};
 												class ItemCargo
 												{
-													items=1;
+													items=2;
 													class Item0
 													{
 														name="ACE_Flashlight_MX991";
+														count=1;
+													};
+													class Item1
+													{
+														name="ACRE_PRC148";
 														count=1;
 													};
 												};
