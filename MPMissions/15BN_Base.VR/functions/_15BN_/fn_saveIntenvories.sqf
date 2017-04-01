@@ -27,9 +27,11 @@ params ["_postInit", "_didJIP"];
 
 if (local player) then {
 	// removes templates from old versions
-	[player, [profilenamespace, "[=15BN=] Lanciagranate"], [], true] call BIS_fnc_saveInventory;
+	//[player, [profilenamespace, "[=15BN=] Lanciagranate"], [], true] call BIS_fnc_saveInventory;
+	[player, [profilenamespace, "[=15BN=] Lanciagranate"]] call BIS_fnc_deleteInventory;
 
-	{ [_x, [profileNamespace, _x getVariable "ALEF_15BN_equipaggiamento"]] call BIS_fnc_saveInventory;
+	{ [player, [profilenamespace, _x getVariable "ALEF_15BN_equipaggiamento"]] call BIS_fnc_deleteInventory;
+          [_x,     [profileNamespace, _x getVariable "ALEF_15BN_equipaggiamento"]] call BIS_fnc_saveInventory;
 	} forEach units ALEF_15BN_equipaggiamenti;
 
 	saveProfileNamespace;
