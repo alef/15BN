@@ -8,7 +8,7 @@ class EditorData
 	toggles=33;
 	class ItemIDProvider
 	{
-		nextID=269;
+		nextID=276;
 	};
 	class LayerIndexProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={4464.0713,46.104843,4597.8047};
-		dir[]={0.052295625,-0.87334347,-0.48441622};
-		up[]={0.093737334,0.48713061,-0.86827636};
-		aside[]={-0.99428952,-4.6216883e-007,-0.10734151};
+		pos[]={4398.7334,11.194695,4446.9932};
+		dir[]={-0.48552024,-0.55435288,-0.67600513};
+		up[]={-0.32338986,0.83227289,-0.45026648};
+		aside[]={-0.81222737,2.3283064e-008,0.58335674};
 	};
 };
 binarizationWanted=0;
@@ -66,6 +66,7 @@ addons[]=
 	"acre_sys_prc148",
 	"rhsusf_sounds",
 	"A3_Signs_F_Signs_Ad",
+	"CUP_Misc3_Config",
 	"rhsusf_c_rg33",
 	"RHS_US_A2_AirImport",
 	"A3_Soft_F_Quadbike_01",
@@ -85,7 +86,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=52;
+		items=53;
 		class Item0
 		{
 			className="A3_Structures_F_Mil";
@@ -367,78 +368,83 @@ class AddonsMetaData
 		};
 		class Item40
 		{
+			className="CUP_Misc3_Config";
+			name="CUP_Misc3_Config";
+		};
+		class Item41
+		{
 			className="rhsusf_c_rg33";
 			name="RG-33 MRAP";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item41
+		class Item42
 		{
 			className="RHS_US_A2_AirImport";
 			name="RHSUSF A2 Air Ports";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item42
+		class Item43
 		{
 			className="A3_Soft_F";
 			name="Arma 3 Alpha - Unarmored Land Vehicles";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item43
+		class Item44
 		{
 			className="rhsusf_vehicles";
 			name="rhsusf_vehicles";
 		};
-		class Item44
+		class Item45
 		{
 			className="rhsusf_c_fmtv";
 			name="FMTV Trucks";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item45
+		class Item46
 		{
 			className="RHS_US_A2Port_Armor";
 			name="M2 Bradley IFV";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item46
+		class Item47
 		{
 			className="rhsusf_c_ch53";
 			name="CH-53 Helicopter";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item47
+		class Item48
 		{
 			className="A3_Weapons_F_Mark";
 			name="Arma 3 Marksmen - Weapons and Accessories";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item48
+		class Item49
 		{
 			className="ace_laser";
 			name="ACE3 - Laser";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item49
+		class Item50
 		{
 			className="ace_explosives";
 			name="ACE3 - Explosives";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item50
+		class Item51
 		{
 			className="Desert";
 			name="Desert";
 		};
-		class Item51
+		class Item52
 		{
 			className="A3_Data_F_Exp_A";
 			name="Arma 3 Nexus Update - Main Configuration";
@@ -5825,41 +5831,42 @@ class Mission
 						};
 						class Item1
 						{
-							dataType="Trigger";
-							position[]={4394,5,4438};
-							class Attributes
-							{
-								text="Alpha 1";
-								condition="player in thisList";
-								onActivation="ALEF_AV = player addAction [""<t color='#218936'>Arsenale Virtuale</t>"", {[""Open"",true] call BIS_fnc_arsenal}, nil, 1.5, true, false, """", ""true"", 4, false]";
-								onDeactivation="player removeAction ALEF_AV";
-								sizeA=5;
-								sizeB=5;
-								sizeC=5;
-								repeatable=1;
-								activationBy="WEST";
-							};
-							id=134;
-							type="EmptyDetectorArea10x10";
-						};
-						class Item2
-						{
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={4394,6.2454686,4438};
+								position[]={4394,6.1414685,4438};
 							};
 							side="Empty";
 							flags=5;
 							class Attributes
 							{
+								createAsSimpleObject=1;
+								disableSimulation=1;
 							};
 							id=122;
 							type="SignAd_SponsorS_ARMEX_F";
-							atlOffset=0.10400009;
 							class CustomAttributes
 							{
 								class Attribute0
+								{
+									property="allowDamage";
+									expression="_this allowdamage _value;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"BOOL"
+												};
+											};
+											value=0;
+										};
+									};
+								};
+								class Attribute1
 								{
 									property="ObjectTextureCustom0";
 									expression="_this setObjectTextureGlobal [0,_value]";
@@ -5878,7 +5885,7 @@ class Mission
 										};
 									};
 								};
-								class Attribute1
+								class Attribute2
 								{
 									property="ace_isMedicalFacility";
 									expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
@@ -5897,28 +5904,48 @@ class Mission
 										};
 									};
 								};
-								nAttributes=2;
+								nAttributes=3;
 							};
 						};
-						class Item3
+						class Item2
 						{
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={4394,6.2454686,4438};
+								position[]={4394,6.1414685,4438};
 								angles[]={0,3.1415927,0};
 							};
 							side="Empty";
 							flags=5;
 							class Attributes
 							{
+								createAsSimpleObject=1;
+								disableSimulation=1;
 							};
 							id=123;
 							type="SignAd_SponsorS_ARMEX_F";
-							atlOffset=0.10400009;
 							class CustomAttributes
 							{
 								class Attribute0
+								{
+									property="allowDamage";
+									expression="_this allowdamage _value;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"BOOL"
+												};
+											};
+											value=0;
+										};
+									};
+								};
+								class Attribute1
 								{
 									property="ObjectTextureCustom0";
 									expression="_this setObjectTextureGlobal [0,_value]";
@@ -5933,14 +5960,72 @@ class Mission
 													"STRING"
 												};
 											};
-											value="";
+											value="img\ALPHA-1.paa";
+										};
+									};
+								};
+								class Attribute2
+								{
+									property="ace_isMedicalFacility";
+									expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"BOOL"
+												};
+											};
+											value=0;
+										};
+									};
+								};
+								nAttributes=3;
+							};
+						};
+						class Item3
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={4394,5.2668285,4438};
+							};
+							side="Empty";
+							flags=4;
+							class Attributes
+							{
+								init="this addAction [""<t color='#218936'>Arsenale Virtuale</t>"", {[""Open"",true] call BIS_fnc_arsenal}, nil, 1.5, true, false, """", ""_this == player"", 4, false]";
+							};
+							id=275;
+							type="Misc_Backpackheap";
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="ace_isMedicalFacility";
+									expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"BOOL"
+												};
+											};
+											value=0;
 										};
 									};
 								};
 								class Attribute1
 								{
-									property="ace_isMedicalFacility";
-									expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+									property="allowDamage";
+									expression="_this allowdamage _value;";
 									class Value
 									{
 										class data
@@ -5961,7 +6046,6 @@ class Mission
 						};
 					};
 					id=195;
-					atlOffset=0.078000069;
 				};
 				class Item1
 				{
@@ -10861,7 +10945,6 @@ class Mission
 				};
 			};
 			id=212;
-			atlOffset=0.019499779;
 		};
 		class Item7
 		{
