@@ -1,11 +1,11 @@
 version=53;
 class EditorData
 {
-	moveGridStep=4;
+	moveGridStep=2;
 	angleGridStep=0.78539819;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=33;
+	toggles=37;
 	class ItemIDProvider
 	{
 		nextID=277;
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={4366.7915,20.976078,4424.8833};
-		dir[]={0.4750168,-0.65940982,0.58279121};
-		up[]={0.4166351,0.75174057,0.51116604};
-		aside[]={0.77518117,2.8940849e-007,-0.63182944};
+		pos[]={4371.2954,13.246462,4433.1929};
+		dir[]={0.66482884,-0.37424663,0.64649665};
+		up[]={0.26837489,0.92728895,0.26097339};
+		aside[]={0.69716084,3.2410026e-007,-0.71692884};
 	};
 };
 binarizationWanted=0;
@@ -609,7 +609,7 @@ class Mission
 			dataType="Comment";
 			class PositionInfo
 			{
-				position[]={4393.5,10.25,4439.5};
+				position[]={4395.103,10.25,4430.8887};
 			};
 			title="Gruppi";
 			description="Copia e incolla questi team per creare Alpha 2, 3, Bravo 1, 2  e 3. Cambia la texture nei due cartelli in ""img\ALPHA-N.paa"" oppure ""img\BRAVO-N.paa"" dove ""N"" è il numero del team.";
@@ -633,13 +633,13 @@ class Mission
 			name="Base";
 			class Entities
 			{
-				items=7;
+				items=6;
 				class Item0
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4377.7329,8.9768047,4440.2671};
+						position[]={4388.7329,8.9768047,4433.2671};
 					};
 					side="Empty";
 					flags=5;
@@ -678,7 +678,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4373,6.6786661,4439};
+						position[]={4386,6.6786661,4432};
 					};
 					side="Empty";
 					flags=4;
@@ -693,22 +693,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4383,6.6786661,4439};
-					};
-					side="Empty";
-					flags=4;
-					class Attributes
-					{
-					};
-					id=42;
-					type="RHS_M2StaticMG_WD";
-				};
-				class Item3
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={4525,5.7898083,4448};
+						position[]={4515,5.7898083,4432};
 					};
 					side="Empty";
 					flags=4;
@@ -760,804 +745,20 @@ class Mission
 						nAttributes=2;
 					};
 				};
-				class Item4
+				class Item3
 				{
 					dataType="Layer";
 					name="Spettatori";
 					class Entities
 					{
-						items=12;
+						items=1;
 						class Item0
 						{
 							dataType="Logic";
 							class PositionInfo
 							{
-								position[]={4377.8774,5,4433.814};
-								angles[]={0,3.1406851,0};
-							};
-							init="if (!isMultiplayer) then {deleteVehicle this}";
-							isPlayable=1;
-							description="Spettatore";
-							id=257;
-							type="VirtualSpectator_F";
-							class CustomAttributes
-							{
-								class Attribute0
-								{
-									property="AllowFreeCamera";
-									expression="_this setVariable ['AllowFreeCamera', _value];";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"BOOL"
-												};
-											};
-											value=1;
-										};
-									};
-								};
-								class Attribute1
-								{
-									property="WhitelistedSides";
-									expression="_this setVariable ['WhitelistedSides', _value];";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"ARRAY"
-												};
-											};
-										};
-									};
-								};
-								class Attribute2
-								{
-									property="ShowFocusInfo";
-									expression="_this setVariable ['ShowFocusInfo', _value];";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"BOOL"
-												};
-											};
-											value=1;
-										};
-									};
-								};
-								class Attribute3
-								{
-									property="AllowAi";
-									expression="_this setVariable ['AllowAi', _value];";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"BOOL"
-												};
-											};
-											value=1;
-										};
-									};
-								};
-								class Attribute4
-								{
-									property="Allow3PPCamera";
-									expression="_this setVariable ['Allow3PPCamera', _value];";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"BOOL"
-												};
-											};
-											value=1;
-										};
-									};
-								};
-								nAttributes=5;
-							};
-						};
-						class Item1
-						{
-							dataType="Logic";
-							class PositionInfo
-							{
-								position[]={4377.8774,5,4435.814};
-								angles[]={0,3.1406851,0};
-							};
-							init="if (!isMultiplayer) then {deleteVehicle this}";
-							isPlayable=1;
-							description="Spettatore";
-							id=258;
-							type="VirtualSpectator_F";
-							class CustomAttributes
-							{
-								class Attribute0
-								{
-									property="AllowFreeCamera";
-									expression="_this setVariable ['AllowFreeCamera', _value];";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"BOOL"
-												};
-											};
-											value=1;
-										};
-									};
-								};
-								class Attribute1
-								{
-									property="WhitelistedSides";
-									expression="_this setVariable ['WhitelistedSides', _value];";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"ARRAY"
-												};
-											};
-										};
-									};
-								};
-								class Attribute2
-								{
-									property="ShowFocusInfo";
-									expression="_this setVariable ['ShowFocusInfo', _value];";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"BOOL"
-												};
-											};
-											value=1;
-										};
-									};
-								};
-								class Attribute3
-								{
-									property="AllowAi";
-									expression="_this setVariable ['AllowAi', _value];";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"BOOL"
-												};
-											};
-											value=1;
-										};
-									};
-								};
-								class Attribute4
-								{
-									property="Allow3PPCamera";
-									expression="_this setVariable ['Allow3PPCamera', _value];";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"BOOL"
-												};
-											};
-											value=1;
-										};
-									};
-								};
-								nAttributes=5;
-							};
-						};
-						class Item2
-						{
-							dataType="Logic";
-							class PositionInfo
-							{
-								position[]={4375.8774,5,4435.814};
-								angles[]={0,3.1406851,0};
-							};
-							init="if (!isMultiplayer) then {deleteVehicle this}";
-							isPlayable=1;
-							description="Spettatore";
-							id=259;
-							type="VirtualSpectator_F";
-							class CustomAttributes
-							{
-								class Attribute0
-								{
-									property="AllowFreeCamera";
-									expression="_this setVariable ['AllowFreeCamera', _value];";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"BOOL"
-												};
-											};
-											value=1;
-										};
-									};
-								};
-								class Attribute1
-								{
-									property="WhitelistedSides";
-									expression="_this setVariable ['WhitelistedSides', _value];";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"ARRAY"
-												};
-											};
-										};
-									};
-								};
-								class Attribute2
-								{
-									property="ShowFocusInfo";
-									expression="_this setVariable ['ShowFocusInfo', _value];";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"BOOL"
-												};
-											};
-											value=1;
-										};
-									};
-								};
-								class Attribute3
-								{
-									property="AllowAi";
-									expression="_this setVariable ['AllowAi', _value];";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"BOOL"
-												};
-											};
-											value=1;
-										};
-									};
-								};
-								class Attribute4
-								{
-									property="Allow3PPCamera";
-									expression="_this setVariable ['Allow3PPCamera', _value];";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"BOOL"
-												};
-											};
-											value=1;
-										};
-									};
-								};
-								nAttributes=5;
-							};
-						};
-						class Item3
-						{
-							dataType="Logic";
-							class PositionInfo
-							{
-								position[]={4379.8774,5,4435.814};
-								angles[]={0,3.1406851,0};
-							};
-							init="if (!isMultiplayer) then {deleteVehicle this}";
-							isPlayable=1;
-							description="Spettatore";
-							id=260;
-							type="VirtualSpectator_F";
-							class CustomAttributes
-							{
-								class Attribute0
-								{
-									property="AllowFreeCamera";
-									expression="_this setVariable ['AllowFreeCamera', _value];";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"BOOL"
-												};
-											};
-											value=1;
-										};
-									};
-								};
-								class Attribute1
-								{
-									property="WhitelistedSides";
-									expression="_this setVariable ['WhitelistedSides', _value];";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"ARRAY"
-												};
-											};
-										};
-									};
-								};
-								class Attribute2
-								{
-									property="ShowFocusInfo";
-									expression="_this setVariable ['ShowFocusInfo', _value];";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"BOOL"
-												};
-											};
-											value=1;
-										};
-									};
-								};
-								class Attribute3
-								{
-									property="AllowAi";
-									expression="_this setVariable ['AllowAi', _value];";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"BOOL"
-												};
-											};
-											value=1;
-										};
-									};
-								};
-								class Attribute4
-								{
-									property="Allow3PPCamera";
-									expression="_this setVariable ['Allow3PPCamera', _value];";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"BOOL"
-												};
-											};
-											value=1;
-										};
-									};
-								};
-								nAttributes=5;
-							};
-						};
-						class Item4
-						{
-							dataType="Logic";
-							class PositionInfo
-							{
-								position[]={4375.877,5,4437.814};
-								angles[]={0,3.1406851,0};
-							};
-							init="if (!isMultiplayer) then {deleteVehicle this}";
-							isPlayable=1;
-							description="Spettatore";
-							id=261;
-							type="VirtualSpectator_F";
-							class CustomAttributes
-							{
-								class Attribute0
-								{
-									property="AllowFreeCamera";
-									expression="_this setVariable ['AllowFreeCamera', _value];";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"BOOL"
-												};
-											};
-											value=1;
-										};
-									};
-								};
-								class Attribute1
-								{
-									property="WhitelistedSides";
-									expression="_this setVariable ['WhitelistedSides', _value];";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"ARRAY"
-												};
-											};
-										};
-									};
-								};
-								class Attribute2
-								{
-									property="ShowFocusInfo";
-									expression="_this setVariable ['ShowFocusInfo', _value];";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"BOOL"
-												};
-											};
-											value=1;
-										};
-									};
-								};
-								class Attribute3
-								{
-									property="AllowAi";
-									expression="_this setVariable ['AllowAi', _value];";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"BOOL"
-												};
-											};
-											value=1;
-										};
-									};
-								};
-								class Attribute4
-								{
-									property="Allow3PPCamera";
-									expression="_this setVariable ['Allow3PPCamera', _value];";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"BOOL"
-												};
-											};
-											value=1;
-										};
-									};
-								};
-								nAttributes=5;
-							};
-						};
-						class Item5
-						{
-							dataType="Logic";
-							class PositionInfo
-							{
-								position[]={4379.8774,5,4437.814};
-								angles[]={0,3.1406851,0};
-							};
-							init="if (!isMultiplayer) then {deleteVehicle this}";
-							isPlayable=1;
-							description="Spettatore";
-							id=262;
-							type="VirtualSpectator_F";
-							class CustomAttributes
-							{
-								class Attribute0
-								{
-									property="AllowFreeCamera";
-									expression="_this setVariable ['AllowFreeCamera', _value];";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"BOOL"
-												};
-											};
-											value=1;
-										};
-									};
-								};
-								class Attribute1
-								{
-									property="WhitelistedSides";
-									expression="_this setVariable ['WhitelistedSides', _value];";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"ARRAY"
-												};
-											};
-										};
-									};
-								};
-								class Attribute2
-								{
-									property="ShowFocusInfo";
-									expression="_this setVariable ['ShowFocusInfo', _value];";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"BOOL"
-												};
-											};
-											value=1;
-										};
-									};
-								};
-								class Attribute3
-								{
-									property="AllowAi";
-									expression="_this setVariable ['AllowAi', _value];";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"BOOL"
-												};
-											};
-											value=1;
-										};
-									};
-								};
-								class Attribute4
-								{
-									property="Allow3PPCamera";
-									expression="_this setVariable ['Allow3PPCamera', _value];";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"BOOL"
-												};
-											};
-											value=1;
-										};
-									};
-								};
-								nAttributes=5;
-							};
-						};
-						class Item6
-						{
-							dataType="Logic";
-							class PositionInfo
-							{
-								position[]={4375.8774,5,4433.814};
-								angles[]={0,3.1406851,0};
-							};
-							init="if (!isMultiplayer) then {deleteVehicle this}";
-							isPlayable=1;
-							description="Spettatore";
-							id=263;
-							type="VirtualSpectator_F";
-							class CustomAttributes
-							{
-								class Attribute0
-								{
-									property="AllowFreeCamera";
-									expression="_this setVariable ['AllowFreeCamera', _value];";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"BOOL"
-												};
-											};
-											value=1;
-										};
-									};
-								};
-								class Attribute1
-								{
-									property="WhitelistedSides";
-									expression="_this setVariable ['WhitelistedSides', _value];";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"ARRAY"
-												};
-											};
-										};
-									};
-								};
-								class Attribute2
-								{
-									property="ShowFocusInfo";
-									expression="_this setVariable ['ShowFocusInfo', _value];";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"BOOL"
-												};
-											};
-											value=1;
-										};
-									};
-								};
-								class Attribute3
-								{
-									property="AllowAi";
-									expression="_this setVariable ['AllowAi', _value];";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"BOOL"
-												};
-											};
-											value=1;
-										};
-									};
-								};
-								class Attribute4
-								{
-									property="Allow3PPCamera";
-									expression="_this setVariable ['Allow3PPCamera', _value];";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"BOOL"
-												};
-											};
-											value=1;
-										};
-									};
-								};
-								nAttributes=5;
-							};
-						};
-						class Item7
-						{
-							dataType="Logic";
-							class PositionInfo
-							{
-								position[]={4377.8774,5,4437.814};
-								angles[]={0,3.1406851,0};
+								position[]={4388.8774,5,4430.814};
+								angles[]={-0,3.1406851,0};
 							};
 							init="if (!isMultiplayer) then {deleteVehicle this}";
 							isPlayable=1;
@@ -1663,458 +864,10 @@ class Mission
 								nAttributes=5;
 							};
 						};
-						class Item8
-						{
-							dataType="Logic";
-							class PositionInfo
-							{
-								position[]={4377.8774,5,4431.814};
-								angles[]={0,3.1406851,0};
-							};
-							init="if (!isMultiplayer) then {deleteVehicle this}";
-							isPlayable=1;
-							description="Spettatore";
-							id=265;
-							type="VirtualSpectator_F";
-							class CustomAttributes
-							{
-								class Attribute0
-								{
-									property="AllowFreeCamera";
-									expression="_this setVariable ['AllowFreeCamera', _value];";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"BOOL"
-												};
-											};
-											value=1;
-										};
-									};
-								};
-								class Attribute1
-								{
-									property="WhitelistedSides";
-									expression="_this setVariable ['WhitelistedSides', _value];";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"ARRAY"
-												};
-											};
-										};
-									};
-								};
-								class Attribute2
-								{
-									property="ShowFocusInfo";
-									expression="_this setVariable ['ShowFocusInfo', _value];";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"BOOL"
-												};
-											};
-											value=1;
-										};
-									};
-								};
-								class Attribute3
-								{
-									property="AllowAi";
-									expression="_this setVariable ['AllowAi', _value];";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"BOOL"
-												};
-											};
-											value=1;
-										};
-									};
-								};
-								class Attribute4
-								{
-									property="Allow3PPCamera";
-									expression="_this setVariable ['Allow3PPCamera', _value];";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"BOOL"
-												};
-											};
-											value=1;
-										};
-									};
-								};
-								nAttributes=5;
-							};
-						};
-						class Item9
-						{
-							dataType="Logic";
-							class PositionInfo
-							{
-								position[]={4379.8774,5,4433.814};
-								angles[]={0,3.1406851,0};
-							};
-							init="if (!isMultiplayer) then {deleteVehicle this}";
-							isPlayable=1;
-							description="Spettatore";
-							id=266;
-							type="VirtualSpectator_F";
-							class CustomAttributes
-							{
-								class Attribute0
-								{
-									property="AllowFreeCamera";
-									expression="_this setVariable ['AllowFreeCamera', _value];";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"BOOL"
-												};
-											};
-											value=1;
-										};
-									};
-								};
-								class Attribute1
-								{
-									property="WhitelistedSides";
-									expression="_this setVariable ['WhitelistedSides', _value];";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"ARRAY"
-												};
-											};
-										};
-									};
-								};
-								class Attribute2
-								{
-									property="ShowFocusInfo";
-									expression="_this setVariable ['ShowFocusInfo', _value];";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"BOOL"
-												};
-											};
-											value=1;
-										};
-									};
-								};
-								class Attribute3
-								{
-									property="AllowAi";
-									expression="_this setVariable ['AllowAi', _value];";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"BOOL"
-												};
-											};
-											value=1;
-										};
-									};
-								};
-								class Attribute4
-								{
-									property="Allow3PPCamera";
-									expression="_this setVariable ['Allow3PPCamera', _value];";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"BOOL"
-												};
-											};
-											value=1;
-										};
-									};
-								};
-								nAttributes=5;
-							};
-						};
-						class Item10
-						{
-							dataType="Logic";
-							class PositionInfo
-							{
-								position[]={4375.8774,5,4431.814};
-								angles[]={0,3.1406851,0};
-							};
-							init="if (!isMultiplayer) then {deleteVehicle this}";
-							isPlayable=1;
-							description="Spettatore";
-							id=267;
-							type="VirtualSpectator_F";
-							class CustomAttributes
-							{
-								class Attribute0
-								{
-									property="AllowFreeCamera";
-									expression="_this setVariable ['AllowFreeCamera', _value];";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"BOOL"
-												};
-											};
-											value=1;
-										};
-									};
-								};
-								class Attribute1
-								{
-									property="WhitelistedSides";
-									expression="_this setVariable ['WhitelistedSides', _value];";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"ARRAY"
-												};
-											};
-										};
-									};
-								};
-								class Attribute2
-								{
-									property="ShowFocusInfo";
-									expression="_this setVariable ['ShowFocusInfo', _value];";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"BOOL"
-												};
-											};
-											value=1;
-										};
-									};
-								};
-								class Attribute3
-								{
-									property="AllowAi";
-									expression="_this setVariable ['AllowAi', _value];";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"BOOL"
-												};
-											};
-											value=1;
-										};
-									};
-								};
-								class Attribute4
-								{
-									property="Allow3PPCamera";
-									expression="_this setVariable ['Allow3PPCamera', _value];";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"BOOL"
-												};
-											};
-											value=1;
-										};
-									};
-								};
-								nAttributes=5;
-							};
-						};
-						class Item11
-						{
-							dataType="Logic";
-							class PositionInfo
-							{
-								position[]={4379.8774,5,4431.814};
-								angles[]={0,3.1406851,0};
-							};
-							init="if (!isMultiplayer) then {deleteVehicle this}";
-							isPlayable=1;
-							description="Spettatore";
-							id=268;
-							type="VirtualSpectator_F";
-							class CustomAttributes
-							{
-								class Attribute0
-								{
-									property="AllowFreeCamera";
-									expression="_this setVariable ['AllowFreeCamera', _value];";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"BOOL"
-												};
-											};
-											value=1;
-										};
-									};
-								};
-								class Attribute1
-								{
-									property="WhitelistedSides";
-									expression="_this setVariable ['WhitelistedSides', _value];";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"ARRAY"
-												};
-											};
-										};
-									};
-								};
-								class Attribute2
-								{
-									property="ShowFocusInfo";
-									expression="_this setVariable ['ShowFocusInfo', _value];";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"BOOL"
-												};
-											};
-											value=1;
-										};
-									};
-								};
-								class Attribute3
-								{
-									property="AllowAi";
-									expression="_this setVariable ['AllowAi', _value];";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"BOOL"
-												};
-											};
-											value=1;
-										};
-									};
-								};
-								class Attribute4
-								{
-									property="Allow3PPCamera";
-									expression="_this setVariable ['Allow3PPCamera', _value];";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"BOOL"
-												};
-											};
-											value=1;
-										};
-									};
-								};
-								nAttributes=5;
-							};
-						};
 					};
 					id=105;
 				};
-				class Item5
+				class Item4
 				{
 					dataType="Layer";
 					name="BLUFOR";
@@ -2140,7 +893,7 @@ class Mission
 											dataType="Object";
 											class PositionInfo
 											{
-												position[]={4394,5.0014391,4441.0498};
+												position[]={4395.603,5.0014391,4432.4385};
 												angles[]={0,3.1415927,0};
 											};
 											side="West";
@@ -2417,8 +1170,8 @@ class Mission
 											dataType="Object";
 											class PositionInfo
 											{
-												position[]={4391,5.0014391,4438.0498};
-												angles[]={0,1.5707964,0};
+												position[]={4392.603,5.0014391,4429.4385};
+												angles[]={-0,1.5707964,0};
 											};
 											side="West";
 											flags=4;
@@ -2685,8 +1438,8 @@ class Mission
 											dataType="Object";
 											class PositionInfo
 											{
-												position[]={4392,5.0014391,4436.0498};
-												angles[]={0,0.78539819,0};
+												position[]={4393.603,5.0014391,4427.4385};
+												angles[]={-0,0.78539819,0};
 											};
 											side="West";
 											flags=4;
@@ -2948,8 +1701,8 @@ class Mission
 											dataType="Object";
 											class PositionInfo
 											{
-												position[]={4396,5.0014391,4436.0498};
-												angles[]={0,5.4977875,0};
+												position[]={4397.603,5.0014391,4427.4385};
+												angles[]={-0,5.4977875,0};
 											};
 											side="West";
 											flags=4;
@@ -3211,7 +1964,7 @@ class Mission
 											dataType="Object";
 											class PositionInfo
 											{
-												position[]={4394,5.0014391,4435.0498};
+												position[]={4395.603,5.0014391,4426.4385};
 											};
 											side="West";
 											flags=4;
@@ -3492,8 +2245,8 @@ class Mission
 											dataType="Object";
 											class PositionInfo
 											{
-												position[]={4392,5.0014391,4440.0498};
-												angles[]={0,2.3561945,0};
+												position[]={4393.603,5.0014391,4431.4385};
+												angles[]={-0,2.3561945,0};
 											};
 											side="West";
 											flags=4;
@@ -3764,8 +2517,8 @@ class Mission
 											dataType="Object";
 											class PositionInfo
 											{
-												position[]={4397,5.0014391,4438.0498};
-												angles[]={0,4.712389,0};
+												position[]={4398.603,5.0014391,4429.4385};
+												angles[]={-0,4.712389,0};
 											};
 											side="West";
 											flags=4;
@@ -4070,8 +2823,8 @@ class Mission
 											dataType="Object";
 											class PositionInfo
 											{
-												position[]={4396,5.0014391,4440.0498};
-												angles[]={0,3.926991,0};
+												position[]={4397.603,5.0014391,4431.4385};
+												angles[]={-0,3.926991,0};
 											};
 											side="West";
 											flags=4;
@@ -4375,7 +3128,7 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={4394,6.1414685,4438};
+										position[]={4395.603,6.1414685,4429.3887};
 									};
 									side="Empty";
 									flags=5;
@@ -4453,7 +3206,7 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={4394,6.1414685,4438};
+										position[]={4395.603,6.1414685,4429.3887};
 										angles[]={0,3.1415927,0};
 									};
 									side="Empty";
@@ -4532,7 +3285,7 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={4394,5.2668285,4438};
+										position[]={4395.603,5.2668285,4429.3887};
 									};
 									side="Empty";
 									flags=4;
@@ -4594,52 +3347,13 @@ class Mission
 							name="Veicoli";
 							class Entities
 							{
-								items=18;
+								items=9;
 								class Item0
 								{
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={4418.9727,7.6171122,4437};
-									};
-									side="Empty";
-									flags=4;
-									class Attributes
-									{
-										textures="standard";
-									};
-									id=36;
-									type="rhsusf_rg33_m2_usmc_wd";
-									class CustomAttributes
-									{
-										class Attribute0
-										{
-											property="ammoBox";
-											expression="[_this,_value] call bis_fnc_initAmmoBox;";
-											class Value
-											{
-												class data
-												{
-													class type
-													{
-														type[]=
-														{
-															"STRING"
-														};
-													};
-													value="[[[[""rhs_weap_M136""],[2]],[[""rhs_mag_30Rnd_556x45_M855A1_Stanag_No_Tracer"",""rhsusf_100Rnd_556x45_M200_soft_pouch"",""rhsusf_200Rnd_556x45_soft_pouch"",""rhs_mag_an_m8hc"",""ACE_HandFlare_Green"",""ACE_HandFlare_Red""],[30,10,5,10,1,1]],[[""ACE_bloodIV_500"",""ACE_CableTie"",""ACE_EarPlugs"",""ACE_epinephrine"",""ACE_microDAGR"",""ACE_morphine""],[5,5,5,5,2,10]],[[],[]]],false]";
-												};
-											};
-										};
-										nAttributes=1;
-									};
-								};
-								class Item1
-								{
-									dataType="Object";
-									class PositionInfo
-									{
-										position[]={4414,7.6171122,4437};
+										position[]={4414,7.6171122,4432};
 									};
 									side="Empty";
 									flags=4;
@@ -4673,12 +3387,12 @@ class Mission
 										nAttributes=1;
 									};
 								};
-								class Item2
+								class Item1
 								{
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={4449.7773,7.1871557,4415.2598};
+										position[]={4446,7.1871557,4432};
 									};
 									side="Empty";
 									flags=4;
@@ -4711,50 +3425,12 @@ class Mission
 										nAttributes=1;
 									};
 								};
-								class Item3
+								class Item2
 								{
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={4449.5752,7.1871557,4447.0352};
-									};
-									side="Empty";
-									flags=4;
-									class Attributes
-									{
-									};
-									id=44;
-									type="RHS_UH1Y_UNARMED";
-									class CustomAttributes
-									{
-										class Attribute0
-										{
-											property="ammoBox";
-											expression="[_this,_value] call bis_fnc_initAmmoBox;";
-											class Value
-											{
-												class data
-												{
-													class type
-													{
-														type[]=
-														{
-															"STRING"
-														};
-													};
-													value="[[[[],[]],[[],[]],[[],[]],[[],[]]],true]";
-												};
-											};
-										};
-										nAttributes=1;
-									};
-								};
-								class Item4
-								{
-									dataType="Object";
-									class PositionInfo
-									{
-										position[]={4411,6.6262865,4460};
+										position[]={4404,6.6262865,4432};
 									};
 									side="Empty";
 									flags=4;
@@ -4787,282 +3463,12 @@ class Mission
 										nAttributes=1;
 									};
 								};
-								class Item5
+								class Item3
 								{
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={4415,6.6262865,4460};
-									};
-									side="Empty";
-									flags=4;
-									class Attributes
-									{
-									};
-									id=186;
-									type="B_G_Quadbike_01_F";
-									class CustomAttributes
-									{
-										class Attribute0
-										{
-											property="ammoBox";
-											expression="[_this,_value] call bis_fnc_initAmmoBox;";
-											class Value
-											{
-												class data
-												{
-													class type
-													{
-														type[]=
-														{
-															"STRING"
-														};
-													};
-													value="[[[[],[]],[[],[]],[[],[]],[[],[]]],true]";
-												};
-											};
-										};
-										nAttributes=1;
-									};
-								};
-								class Item6
-								{
-									dataType="Object";
-									class PositionInfo
-									{
-										position[]={4419,6.6262865,4460};
-									};
-									side="Empty";
-									flags=4;
-									class Attributes
-									{
-									};
-									id=187;
-									type="B_G_Quadbike_01_F";
-									class CustomAttributes
-									{
-										class Attribute0
-										{
-											property="ammoBox";
-											expression="[_this,_value] call bis_fnc_initAmmoBox;";
-											class Value
-											{
-												class data
-												{
-													class type
-													{
-														type[]=
-														{
-															"STRING"
-														};
-													};
-													value="[[[[],[]],[[],[]],[[],[]],[[],[]]],true]";
-												};
-											};
-										};
-										nAttributes=1;
-									};
-								};
-								class Item7
-								{
-									dataType="Object";
-									class PositionInfo
-									{
-										position[]={4414.0063,7.2147751,4413.5234};
-									};
-									side="Empty";
-									flags=4;
-									class Attributes
-									{
-									};
-									id=32;
-									type="rhsusf_m1025_w_s_m2";
-									class CustomAttributes
-									{
-										class Attribute0
-										{
-											property="rhs_decalMask";
-											expression="if(_value != 'NoChange')then{ [_this,'unitdecals_1',_value] call rhs_fnc_hmmwv_setDecal}";
-											class Value
-											{
-												class data
-												{
-													class type
-													{
-														type[]=
-														{
-															"STRING"
-														};
-													};
-													value="NoChange";
-												};
-											};
-										};
-										class Attribute1
-										{
-											property="rhs_decalDoors";
-											expression="if(_value != 'NoChange')then{ [_this,'unitdecals_2',_value] call rhs_fnc_hmmwv_setDecal}";
-											class Value
-											{
-												class data
-												{
-													class type
-													{
-														type[]=
-														{
-															"STRING"
-														};
-													};
-													value="NoChange";
-												};
-											};
-										};
-										class Attribute2
-										{
-											property="VehicleCustomization";
-											expression="if (local _this) then {([_this] + _value) call (uinamespace getvariable 'bis_fnc_initVehicle');};";
-											class Value
-											{
-												class data
-												{
-													class type
-													{
-														type[]=
-														{
-															"ARRAY"
-														};
-													};
-													class value
-													{
-														items=2;
-														class Item0
-														{
-															class data
-															{
-																class type
-																{
-																	type[]=
-																	{
-																		"ARRAY"
-																	};
-																};
-															};
-														};
-														class Item1
-														{
-															class data
-															{
-																class type
-																{
-																	type[]=
-																	{
-																		"ARRAY"
-																	};
-																};
-																class value
-																{
-																	items=2;
-																	class Item0
-																	{
-																		class data
-																		{
-																			class type
-																			{
-																				type[]=
-																				{
-																					"STRING"
-																				};
-																			};
-																			value="hide_A2_Parts";
-																		};
-																	};
-																	class Item1
-																	{
-																		class data
-																		{
-																			class type
-																			{
-																				type[]=
-																				{
-																					"SCALAR"
-																				};
-																			};
-																			value=1;
-																		};
-																	};
-																};
-															};
-														};
-													};
-												};
-											};
-										};
-										class Attribute3
-										{
-											property="ammoBox";
-											expression="[_this,_value] call bis_fnc_initAmmoBox;";
-											class Value
-											{
-												class data
-												{
-													class type
-													{
-														type[]=
-														{
-															"STRING"
-														};
-													};
-													value="[[[[""rhs_weap_M136""],[2]],[[""rhs_mag_30Rnd_556x45_M855A1_Stanag_No_Tracer"",""rhsusf_100Rnd_556x45_M200_soft_pouch"",""rhsusf_200Rnd_556x45_soft_pouch"",""rhs_mag_an_m8hc"",""ACE_HandFlare_Green"",""ACE_HandFlare_Red""],[30,10,5,10,1,1]],[[""ACE_bloodIV_500"",""ACE_CableTie"",""ACE_EarPlugs"",""ACE_epinephrine"",""ACE_microDAGR"",""ACE_morphine""],[5,5,5,5,2,10]],[[],[]]],false]";
-												};
-											};
-										};
-										class Attribute4
-										{
-											property="rhs_hideA2Parts";
-											expression="_this animate ['hide_A2_Parts',_value,true]";
-											class Value
-											{
-												class data
-												{
-													class type
-													{
-														type[]=
-														{
-															"SCALAR"
-														};
-													};
-													value=1;
-												};
-											};
-										};
-										class Attribute5
-										{
-											property="rhs_hideBFT";
-											expression="_this animate ['hide_Antenna',_value,true]";
-											class Value
-											{
-												class data
-												{
-													class type
-													{
-														type[]=
-														{
-															"SCALAR"
-														};
-													};
-													value=1;
-												};
-											};
-										};
-										nAttributes=6;
-									};
-								};
-								class Item8
-								{
-									dataType="Object";
-									class PositionInfo
-									{
-										position[]={4414.0249,7.2147751,4405.5234};
+										position[]={4408.0063,7.2147751,4432.0234};
 									};
 									side="Empty";
 									flags=4;
@@ -5251,438 +3657,12 @@ class Mission
 										nAttributes=6;
 									};
 								};
-								class Item9
+								class Item4
 								{
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={4419.0249,7.2147751,4405.5234};
-									};
-									side="Empty";
-									flags=4;
-									class Attributes
-									{
-									};
-									id=34;
-									type="rhsusf_m1025_w_s_m2";
-									class CustomAttributes
-									{
-										class Attribute0
-										{
-											property="rhs_decalMask";
-											expression="if(_value != 'NoChange')then{ [_this,'unitdecals_1',_value] call rhs_fnc_hmmwv_setDecal}";
-											class Value
-											{
-												class data
-												{
-													class type
-													{
-														type[]=
-														{
-															"STRING"
-														};
-													};
-													value="NoChange";
-												};
-											};
-										};
-										class Attribute1
-										{
-											property="rhs_decalDoors";
-											expression="if(_value != 'NoChange')then{ [_this,'unitdecals_2',_value] call rhs_fnc_hmmwv_setDecal}";
-											class Value
-											{
-												class data
-												{
-													class type
-													{
-														type[]=
-														{
-															"STRING"
-														};
-													};
-													value="NoChange";
-												};
-											};
-										};
-										class Attribute2
-										{
-											property="VehicleCustomization";
-											expression="if (local _this) then {([_this] + _value) call (uinamespace getvariable 'bis_fnc_initVehicle');};";
-											class Value
-											{
-												class data
-												{
-													class type
-													{
-														type[]=
-														{
-															"ARRAY"
-														};
-													};
-													class value
-													{
-														items=2;
-														class Item0
-														{
-															class data
-															{
-																class type
-																{
-																	type[]=
-																	{
-																		"ARRAY"
-																	};
-																};
-															};
-														};
-														class Item1
-														{
-															class data
-															{
-																class type
-																{
-																	type[]=
-																	{
-																		"ARRAY"
-																	};
-																};
-																class value
-																{
-																	items=2;
-																	class Item0
-																	{
-																		class data
-																		{
-																			class type
-																			{
-																				type[]=
-																				{
-																					"STRING"
-																				};
-																			};
-																			value="hide_A2_Parts";
-																		};
-																	};
-																	class Item1
-																	{
-																		class data
-																		{
-																			class type
-																			{
-																				type[]=
-																				{
-																					"SCALAR"
-																				};
-																			};
-																			value=1;
-																		};
-																	};
-																};
-															};
-														};
-													};
-												};
-											};
-										};
-										class Attribute3
-										{
-											property="ammoBox";
-											expression="[_this,_value] call bis_fnc_initAmmoBox;";
-											class Value
-											{
-												class data
-												{
-													class type
-													{
-														type[]=
-														{
-															"STRING"
-														};
-													};
-													value="[[[[""rhs_weap_M136""],[2]],[[""rhs_mag_30Rnd_556x45_M855A1_Stanag_No_Tracer"",""rhsusf_100Rnd_556x45_M200_soft_pouch"",""rhsusf_200Rnd_556x45_soft_pouch"",""rhs_mag_an_m8hc"",""ACE_HandFlare_Green"",""ACE_HandFlare_Red""],[30,10,5,10,1,1]],[[""ACE_bloodIV_500"",""ACE_CableTie"",""ACE_EarPlugs"",""ACE_epinephrine"",""ACE_microDAGR"",""ACE_morphine""],[5,5,5,5,2,10]],[[],[]]],false]";
-												};
-											};
-										};
-										class Attribute4
-										{
-											property="rhs_hideA2Parts";
-											expression="_this animate ['hide_A2_Parts',_value,true]";
-											class Value
-											{
-												class data
-												{
-													class type
-													{
-														type[]=
-														{
-															"SCALAR"
-														};
-													};
-													value=1;
-												};
-											};
-										};
-										class Attribute5
-										{
-											property="rhs_hideBFT";
-											expression="_this animate ['hide_Antenna',_value,true]";
-											class Value
-											{
-												class data
-												{
-													class type
-													{
-														type[]=
-														{
-															"SCALAR"
-														};
-													};
-													value=1;
-												};
-											};
-										};
-										nAttributes=6;
-									};
-								};
-								class Item10
-								{
-									dataType="Object";
-									class PositionInfo
-									{
-										position[]={4419.0249,7.2147751,4413.5234};
-									};
-									side="Empty";
-									flags=4;
-									class Attributes
-									{
-									};
-									id=35;
-									type="rhsusf_m1025_w_s_m2";
-									class CustomAttributes
-									{
-										class Attribute0
-										{
-											property="rhs_decalMask";
-											expression="if(_value != 'NoChange')then{ [_this,'unitdecals_1',_value] call rhs_fnc_hmmwv_setDecal}";
-											class Value
-											{
-												class data
-												{
-													class type
-													{
-														type[]=
-														{
-															"STRING"
-														};
-													};
-													value="NoChange";
-												};
-											};
-										};
-										class Attribute1
-										{
-											property="rhs_decalDoors";
-											expression="if(_value != 'NoChange')then{ [_this,'unitdecals_2',_value] call rhs_fnc_hmmwv_setDecal}";
-											class Value
-											{
-												class data
-												{
-													class type
-													{
-														type[]=
-														{
-															"STRING"
-														};
-													};
-													value="NoChange";
-												};
-											};
-										};
-										class Attribute2
-										{
-											property="VehicleCustomization";
-											expression="if (local _this) then {([_this] + _value) call (uinamespace getvariable 'bis_fnc_initVehicle');};";
-											class Value
-											{
-												class data
-												{
-													class type
-													{
-														type[]=
-														{
-															"ARRAY"
-														};
-													};
-													class value
-													{
-														items=2;
-														class Item0
-														{
-															class data
-															{
-																class type
-																{
-																	type[]=
-																	{
-																		"ARRAY"
-																	};
-																};
-															};
-														};
-														class Item1
-														{
-															class data
-															{
-																class type
-																{
-																	type[]=
-																	{
-																		"ARRAY"
-																	};
-																};
-																class value
-																{
-																	items=2;
-																	class Item0
-																	{
-																		class data
-																		{
-																			class type
-																			{
-																				type[]=
-																				{
-																					"STRING"
-																				};
-																			};
-																			value="hide_A2_Parts";
-																		};
-																	};
-																	class Item1
-																	{
-																		class data
-																		{
-																			class type
-																			{
-																				type[]=
-																				{
-																					"SCALAR"
-																				};
-																			};
-																			value=1;
-																		};
-																	};
-																};
-															};
-														};
-													};
-												};
-											};
-										};
-										class Attribute3
-										{
-											property="ammoBox";
-											expression="[_this,_value] call bis_fnc_initAmmoBox;";
-											class Value
-											{
-												class data
-												{
-													class type
-													{
-														type[]=
-														{
-															"STRING"
-														};
-													};
-													value="[[[[""rhs_weap_M136""],[2]],[[""rhs_mag_30Rnd_556x45_M855A1_Stanag_No_Tracer"",""rhsusf_100Rnd_556x45_M200_soft_pouch"",""rhsusf_200Rnd_556x45_soft_pouch"",""rhs_mag_an_m8hc"",""ACE_HandFlare_Green"",""ACE_HandFlare_Red""],[30,10,5,10,1,1]],[[""ACE_bloodIV_500"",""ACE_CableTie"",""ACE_EarPlugs"",""ACE_epinephrine"",""ACE_microDAGR"",""ACE_morphine""],[5,5,5,5,2,10]],[[],[]]],false]";
-												};
-											};
-										};
-										class Attribute4
-										{
-											property="rhs_hideA2Parts";
-											expression="_this animate ['hide_A2_Parts',_value,true]";
-											class Value
-											{
-												class data
-												{
-													class type
-													{
-														type[]=
-														{
-															"SCALAR"
-														};
-													};
-													value=1;
-												};
-											};
-										};
-										class Attribute5
-										{
-											property="rhs_hideBFT";
-											expression="_this animate ['hide_Antenna',_value,true]";
-											class Value
-											{
-												class data
-												{
-													class type
-													{
-														type[]=
-														{
-															"SCALAR"
-														};
-													};
-													value=1;
-												};
-											};
-										};
-										nAttributes=6;
-									};
-								};
-								class Item11
-								{
-									dataType="Object";
-									class PositionInfo
-									{
-										position[]={4418.9517,6.9545856,4422.9619};
-									};
-									side="Empty";
-									flags=4;
-									class Attributes
-									{
-									};
-									id=166;
-									type="rhsusf_M1083A1P2_wd_fmtv_usarmy";
-									class CustomAttributes
-									{
-										class Attribute0
-										{
-											property="ammoBox";
-											expression="[_this,_value] call bis_fnc_initAmmoBox;";
-											class Value
-											{
-												class data
-												{
-													class type
-													{
-														type[]=
-														{
-															"STRING"
-														};
-													};
-													value="[[[[""rhs_weap_M136""],[2]],[[""rhs_mag_30Rnd_556x45_M855A1_Stanag_No_Tracer"",""rhsusf_100Rnd_556x45_M200_soft_pouch"",""rhsusf_200Rnd_556x45_soft_pouch"",""rhs_mag_an_m8hc"",""ACE_HandFlare_Green"",""ACE_HandFlare_Red""],[30,10,5,10,1,1]],[[""ACE_bloodIV_500"",""ACE_CableTie"",""ACE_EarPlugs"",""ACE_epinephrine"",""ACE_microDAGR"",""ACE_morphine""],[5,5,5,5,2,10]],[[],[]]],false]";
-												};
-											};
-										};
-										nAttributes=1;
-									};
-								};
-								class Item12
-								{
-									dataType="Object";
-									class PositionInfo
-									{
-										position[]={4413.9604,6.9545856,4422.9395};
+										position[]={4419.9517,6.9545856,4432.9619};
 									};
 									side="Empty";
 									flags=4;
@@ -5715,131 +3695,12 @@ class Mission
 										nAttributes=1;
 									};
 								};
-								class Item13
+								class Item5
 								{
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={4419,6.6397104,4447.9995};
-									};
-									side="Empty";
-									flags=4;
-									class Attributes
-									{
-										textures="standard";
-									};
-									id=162;
-									type="RHS_M2A3_wd";
-									class CustomAttributes
-									{
-										class Attribute0
-										{
-											property="ammoBox";
-											expression="[_this,_value] call bis_fnc_initAmmoBox;";
-											class Value
-											{
-												class data
-												{
-													class type
-													{
-														type[]=
-														{
-															"STRING"
-														};
-													};
-													value="[[[[""rhs_weap_M136""],[2]],[[""rhs_mag_30Rnd_556x45_M855A1_Stanag_No_Tracer"",""rhsusf_100Rnd_556x45_M200_soft_pouch"",""rhsusf_200Rnd_556x45_soft_pouch"",""rhs_mag_an_m8hc"",""ACE_HandFlare_Green"",""ACE_HandFlare_Red""],[30,10,5,10,1,1]],[[""ACE_bloodIV_500"",""ACE_CableTie"",""ACE_EarPlugs"",""ACE_epinephrine"",""ACE_microDAGR"",""ACE_morphine""],[5,5,5,5,2,10]],[[],[]]],false]";
-												};
-											};
-										};
-										class Attribute1
-										{
-											property="VehicleCustomization";
-											expression="if (local _this) then {([_this] + _value) call (uinamespace getvariable 'bis_fnc_initVehicle');};";
-											class Value
-											{
-												class data
-												{
-													class type
-													{
-														type[]=
-														{
-															"ARRAY"
-														};
-													};
-													class value
-													{
-														items=2;
-														class Item0
-														{
-															class data
-															{
-																class type
-																{
-																	type[]=
-																	{
-																		"ARRAY"
-																	};
-																};
-															};
-														};
-														class Item1
-														{
-															class data
-															{
-																class type
-																{
-																	type[]=
-																	{
-																		"ARRAY"
-																	};
-																};
-																class value
-																{
-																	items=2;
-																	class Item0
-																	{
-																		class data
-																		{
-																			class type
-																			{
-																				type[]=
-																				{
-																					"STRING"
-																				};
-																			};
-																			value="IFF_Panels_Hide";
-																		};
-																	};
-																	class Item1
-																	{
-																		class data
-																		{
-																			class type
-																			{
-																				type[]=
-																				{
-																					"SCALAR"
-																				};
-																			};
-																			value=1;
-																		};
-																	};
-																};
-															};
-														};
-													};
-												};
-											};
-										};
-										nAttributes=2;
-									};
-								};
-								class Item14
-								{
-									dataType="Object";
-									class PositionInfo
-									{
-										position[]={4414,6.6397104,4447.9995};
+										position[]={4428,6.6397104,4431.9995};
 									};
 									side="Empty";
 									flags=4;
@@ -5953,12 +3814,12 @@ class Mission
 										nAttributes=2;
 									};
 								};
-								class Item15
+								class Item6
 								{
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={4512,5.8236537,4448.0195};
+										position[]={4502,5.8236537,4432.0195};
 									};
 									side="Empty";
 									flags=4;
@@ -5991,12 +3852,12 @@ class Mission
 										nAttributes=1;
 									};
 								};
-								class Item16
+								class Item7
 								{
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={4479.0029,4.9376926,4450.9004};
+										position[]={4542.0029,4.9376926,4429.9004};
 									};
 									side="Empty";
 									flags=4;
@@ -6029,12 +3890,12 @@ class Mission
 										nAttributes=1;
 									};
 								};
-								class Item17
+								class Item8
 								{
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={4479.9507,5.1135731,4420.5518};
+										position[]={4473.9507,5.1135731,4436.5518};
 									};
 									side="Empty";
 									flags=4;
@@ -9489,7 +7350,7 @@ class Mission
 					id=212;
 					atlOffset=-1.875;
 				};
-				class Item6
+				class Item5
 				{
 					dataType="Layer";
 					name="Moduli";
@@ -10810,8 +8671,8 @@ class Mission
 							dataType="Logic";
 							class PositionInfo
 							{
-								position[]={4377.8428,5,4439.8389};
-								angles[]={0,0.27975881,0};
+								position[]={4390.978,5,4433.0303};
+								angles[]={-0,0.27975881,0};
 							};
 							name="serverChat";
 							id=156;
