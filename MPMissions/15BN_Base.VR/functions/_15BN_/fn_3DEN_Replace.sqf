@@ -65,6 +65,12 @@ _merged call _fill_merged_objects;
 			"Init", "hideObject", "enableSimulation", "allowDamage",
 			"enableStamina", "presence", "presenceCondition", "ammoBox"
 		];
+
+		// Units: ammoBox doesn't always work
+		private _inv =[ _src, "init", false] call BIS_fnc_exportInventory;
+		TRACE_1("Inv: ", _inv);
+		[ _src, [_dst, "Inventory"]] call BIS_fnc_saveInventory;
+		[ _dst, [_dst, "Inventory"]] call BIS_fnc_loadInventory;
 	};
 	} forEach _merged_objects;
 
