@@ -8,7 +8,7 @@ class EditorData
 	toggles=13;
 	class ItemIDProvider
 	{
-		nextID=958;
+		nextID=1177;
 	};
 	class MarkerIDProvider
 	{
@@ -16,11 +16,11 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=109;
+		nextID=149;
 	};
 	class Camera
 	{
-		pos[]={11912.396,239.57823,12622.512};
+		pos[]={11787.547,234.39973,12767.433};
 		dir[]={0.91148376,-0.38795736,0.13673417};
 		up[]={0.38367048,0.92167515,0.057556465};
 		aside[]={0.14835468,6.3970219e-007,-0.98894012};
@@ -51,15 +51,12 @@ addons[]=
 	"mcc_sandbox",
 	"A3_Modules_F",
 	"ace_map",
-	"A3_Characters_F",
+	"rhsusf_c_troops",
 	"rhsusf_c_weapons",
 	"ace_compat_rhs_usf3",
 	"A3_Weapons_F",
-	"ace_optics",
-	"rhsusf_c_troops",
 	"ace_hearing",
 	"ace_medical",
-	"ace_maptools",
 	"ace_microdagr",
 	"ace_flashlights",
 	"rhsusf_sounds",
@@ -95,7 +92,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=56;
+		items=53;
 		class Item0
 		{
 			className="A3_Structures_F_Mil";
@@ -223,10 +220,10 @@ class AddonsMetaData
 		};
 		class Item18
 		{
-			className="A3_Characters_F";
-			name="Arma 3 Alpha - Characters and Clothing";
-			author="Bohemia Interactive";
-			url="https://www.arma3.com";
+			className="rhsusf_c_troops";
+			name="RHSUSF Infantry & Equipment";
+			author="Red Hammer Studios";
+			url="http://www.rhsmods.org/";
 		};
 		class Item19
 		{
@@ -244,239 +241,218 @@ class AddonsMetaData
 		};
 		class Item21
 		{
-			className="ace_optics";
-			name="ACE3 - Optics";
-			author="ACE-Team";
-			url="http://ace3mod.com/";
-		};
-		class Item22
-		{
-			className="rhsusf_c_troops";
-			name="RHSUSF Infantry & Equipment";
-			author="Red Hammer Studios";
-			url="http://www.rhsmods.org/";
-		};
-		class Item23
-		{
 			className="ace_hearing";
 			name="ACE3 - Hearing";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item24
+		class Item22
 		{
 			className="ace_medical";
 			name="ACE3 - Medical";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item25
-		{
-			className="ace_maptools";
-			name="ACE3 - Map Tools";
-			author="ACE-Team";
-			url="http://ace3mod.com/";
-		};
-		class Item26
+		class Item23
 		{
 			className="ace_microdagr";
 			name="ACE3 - MicroDAGR";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item27
+		class Item24
 		{
 			className="ace_flashlights";
 			name="ACE3 - Flashlights";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item28
+		class Item25
 		{
 			className="rhsusf_sounds";
 			name="USF Sounds";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item29
+		class Item26
 		{
 			className="A3_Signs_F";
 			name="Arma 3 - Signs";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item30
+		class Item27
 		{
 			className="CUP_Misc3_Config";
 			name="CUP_Misc3_Config";
 		};
-		class Item31
+		class Item28
 		{
 			className="rhsusf_vehicles";
 			name="rhsusf_vehicles";
 		};
-		class Item32
+		class Item29
 		{
 			className="rhsusf_c_fmtv";
 			name="FMTV Trucks";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item33
+		class Item30
 		{
 			className="RHS_US_A2Port_Armor";
 			name="M2 Bradley IFV";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item34
+		class Item31
 		{
 			className="rhsusf_c_statics";
 			name="RHSUSF Static Weapons";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item35
+		class Item32
 		{
 			className="rhsusf_c_ch53";
 			name="CH-53 Helicopter";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item36
+		class Item33
 		{
 			className="RHS_US_A2_AirImport";
 			name="RHSUSF A2 Air Ports";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item37
+		class Item34
 		{
 			className="A3_Soft_F";
 			name="Arma 3 Alpha - Unarmored Land Vehicles";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item38
+		class Item35
 		{
 			className="rhsusf_c_rg33";
 			name="RG-33 MRAP";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item39
+		class Item36
 		{
 			className="ace_advanced_ballistics";
 			name="ACE3 - Advanced Ballistics";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item40
+		class Item37
 		{
 			className="ace_advanced_fatigue";
 			name="ACE3 - Advanced Fatigue";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item41
+		class Item38
 		{
 			className="ace_advanced_throwing";
 			name="ACE3 - Advanced Throwing";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item42
+		class Item39
 		{
 			className="ace_captives";
 			name="ACE3 - Captives";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item43
+		class Item40
 		{
 			className="ace_cargo";
 			name="ACE3 - Cargo";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item44
+		class Item41
 		{
 			className="acre_api";
 			name="ACRE2 - API";
 			author="ACRE2Team";
 			url="https://github.com/IDI-Systems/acre2";
 		};
-		class Item45
+		class Item42
 		{
 			className="ace_fastroping";
 			name="ACE3 - Fastroping";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item46
+		class Item43
 		{
 			className="A3_Modules_F_Curator";
 			name="Arma 3 Zeus Update - Scripted Modules";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item47
+		class Item44
 		{
 			className="ace_map_gestures";
 			name="ACE3 - Map Gestures";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item48
+		class Item45
 		{
 			className="ace_mk6mortar";
 			name="ACE3 - Mk6 Mortar";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item49
+		class Item46
 		{
 			className="ace_finger";
 			name="ACE3 - Finger";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item50
+		class Item47
 		{
 			className="ace_respawn";
 			name="ACE3 - Respawn";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item51
+		class Item48
 		{
 			className="ace_spectator";
 			name="ACE3 - Spectator";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item52
+		class Item49
 		{
 			className="ace_viewdistance";
 			name="ACE3 - View Distance";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item53
+		class Item50
 		{
 			className="ace_winddeflection";
 			name="ACE3 - Wind Deflection";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item54
+		class Item51
 		{
 			className="ace_zeus";
 			name="ACE3 - Zeus";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item55
+		class Item52
 		{
 			className="A3_Data_F_Exp_A";
 			name="Arma 3 Nexus Update - Main Configuration";
@@ -3896,225 +3872,6 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={11856,159.00143,12672.05};
-										angles[]={0,3.8369842,0};
-									};
-									side="West";
-									flags=7;
-									class Attributes
-									{
-										rank="SERGEANT";
-										description="Alfa 1 - TL/SL";
-										isPlayer=1;
-										class Inventory
-										{
-											class primaryWeapon
-											{
-												name="rhs_weap_m4_carryhandle";
-												optics="rhsusf_acc_ACOG2_USMC";
-												underBarrel="rhsusf_acc_grip3";
-												class primaryMuzzleMag
-												{
-													name="rhs_mag_30Rnd_556x45_M855A1_Stanag_No_Tracer";
-													ammoLeft=30;
-												};
-											};
-											class handgun
-											{
-												name="rhsusf_weap_m9";
-												class primaryMuzzleMag
-												{
-													name="rhsusf_mag_15Rnd_9x19_JHP";
-													ammoLeft=15;
-												};
-											};
-											class binocular
-											{
-												name="Binocular";
-											};
-											class uniform
-											{
-												typeName="rhs_uniform_FROG01_wd";
-												isBackpack=0;
-												class ItemCargo
-												{
-													items=6;
-													class Item0
-													{
-														name="ACE_EarPlugs";
-														count=1;
-													};
-													class Item1
-													{
-														name="ACE_fieldDressing";
-														count=10;
-													};
-													class Item2
-													{
-														name="ACE_morphine";
-														count=3;
-													};
-													class Item3
-													{
-														name="ACE_epinephrine";
-														count=1;
-													};
-													class Item4
-													{
-														name="ACE_MapTools";
-														count=1;
-													};
-													class Item5
-													{
-														name="ACE_microDAGR";
-														count=1;
-													};
-												};
-											};
-											class vest
-											{
-												typeName="rhsusf_spc_rifleman";
-												isBackpack=0;
-												class MagazineCargo
-												{
-													items=6;
-													class Item0
-													{
-														name="rhs_mag_an_m8hc";
-														count=4;
-														ammoLeft=1;
-													};
-													class Item1
-													{
-														name="rhs_mag_m18_red";
-														count=1;
-														ammoLeft=1;
-													};
-													class Item2
-													{
-														name="rhs_mag_m18_green";
-														count=1;
-														ammoLeft=1;
-													};
-													class Item3
-													{
-														name="rhs_mag_m67";
-														count=2;
-														ammoLeft=1;
-													};
-													class Item4
-													{
-														name="rhs_mag_30Rnd_556x45_M855A1_Stanag_No_Tracer";
-														count=6;
-														ammoLeft=30;
-													};
-													class Item5
-													{
-														name="rhsusf_mag_15Rnd_9x19_JHP";
-														count=2;
-														ammoLeft=15;
-													};
-												};
-												class ItemCargo
-												{
-													items=1;
-													class Item0
-													{
-														name="ACE_Flashlight_MX991";
-														count=1;
-													};
-												};
-											};
-											class backpack
-											{
-												typeName="rhsusf_assault_eagleaiii_coy";
-												isBackpack=1;
-												class MagazineCargo
-												{
-													items=1;
-													class Item0
-													{
-														name="rhs_mag_30Rnd_556x45_M855A1_Stanag_No_Tracer";
-														count=4;
-														ammoLeft=30;
-													};
-												};
-											};
-											map="ItemMap";
-											compass="ItemCompass";
-											watch="ItemWatch";
-											headgear="rhsusf_lwh_helmet_marpatwd_headset";
-										};
-									};
-									id=6;
-									type="B_Soldier_SL_F";
-									class CustomAttributes
-									{
-										class Attribute0
-										{
-											property="ace_isHandcuffed";
-											expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
-											class Value
-											{
-												class data
-												{
-													class type
-													{
-														type[]=
-														{
-															"BOOL"
-														};
-													};
-													value=0;
-												};
-											};
-										};
-										class Attribute1
-										{
-											property="pitch";
-											expression="_this setpitch _value;";
-											class Value
-											{
-												class data
-												{
-													class type
-													{
-														type[]=
-														{
-															"SCALAR"
-														};
-													};
-													value=0.99000001;
-												};
-											};
-										};
-										class Attribute2
-										{
-											property="ace_isSurrendered";
-											expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
-											class Value
-											{
-												class data
-												{
-													class type
-													{
-														type[]=
-														{
-															"BOOL"
-														};
-													};
-													value=0;
-												};
-											};
-										};
-										nAttributes=3;
-									};
-								};
-								class Item1
-								{
-									dataType="Object";
-									class PositionInfo
-									{
 										position[]={11850.813,158.96025,12671.148};
 										angles[]={6.2698536,2.2493649,0.013332055};
 									};
@@ -4284,7 +4041,7 @@ class Mission
 										nAttributes=2;
 									};
 								};
-								class Item2
+								class Item1
 								{
 									dataType="Object";
 									class PositionInfo
@@ -4461,7 +4218,7 @@ class Mission
 										nAttributes=2;
 									};
 								};
-								class Item3
+								class Item2
 								{
 									dataType="Object";
 									class PositionInfo
@@ -4638,7 +4395,7 @@ class Mission
 										nAttributes=2;
 									};
 								};
-								class Item4
+								class Item3
 								{
 									dataType="Object";
 									class PositionInfo
@@ -4815,7 +4572,7 @@ class Mission
 										nAttributes=2;
 									};
 								};
-								class Item5
+								class Item4
 								{
 									dataType="Object";
 									class PositionInfo
@@ -5010,7 +4767,7 @@ class Mission
 										nAttributes=3;
 									};
 								};
-								class Item6
+								class Item5
 								{
 									dataType="Object";
 									class PositionInfo
@@ -5231,7 +4988,7 @@ class Mission
 										nAttributes=3;
 									};
 								};
-								class Item7
+								class Item6
 								{
 									dataType="Object";
 									class PositionInfo
@@ -5438,6 +5195,86 @@ class Mission
 										nAttributes=3;
 									};
 								};
+								class Item7
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={11856,159.00143,12672.05};
+										angles[]={0,3.8369842,0};
+									};
+									side="West";
+									flags=6;
+									class Attributes
+									{
+										rank="SERGEANT";
+										description="Alfa 1 - TL/SL";
+										isPlayer=1;
+									};
+									id=1173;
+									type="rhsusf_usmc_marpat_wd_teamleader";
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="ace_isHandcuffed";
+											expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										class Attribute1
+										{
+											property="pitch";
+											expression="_this setpitch _value;";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"SCALAR"
+														};
+													};
+													value=0.99000001;
+												};
+											};
+										};
+										class Attribute2
+										{
+											property="ace_isSurrendered";
+											expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=3;
+									};
+								};
 							};
 							class Attributes
 							{
@@ -5459,207 +5296,6 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={11856,159.00143,12640.05};
-										angles[]={0,3.1517041,0};
-									};
-									side="West";
-									flags=7;
-									class Attributes
-									{
-										rank="SERGEANT";
-										init="if (!isMultiplayer) then {this spawn {waitUntil {time > 0}; deleteVehicle _this}}";
-										description="Alfa 2 - TL/SL";
-										isPlayable=1;
-										class Inventory
-										{
-											class primaryWeapon
-											{
-												name="rhs_weap_m4_carryhandle";
-												optics="rhsusf_acc_ACOG2_USMC";
-												underBarrel="rhsusf_acc_grip3";
-												class primaryMuzzleMag
-												{
-													name="rhs_mag_30Rnd_556x45_M855A1_Stanag_No_Tracer";
-													ammoLeft=30;
-												};
-											};
-											class handgun
-											{
-												name="rhsusf_weap_m9";
-												class primaryMuzzleMag
-												{
-													name="rhsusf_mag_15Rnd_9x19_JHP";
-													ammoLeft=15;
-												};
-											};
-											class binocular
-											{
-												name="Binocular";
-											};
-											class uniform
-											{
-												typeName="rhs_uniform_FROG01_wd";
-												isBackpack=0;
-												class ItemCargo
-												{
-													items=6;
-													class Item0
-													{
-														name="ACE_EarPlugs";
-														count=1;
-													};
-													class Item1
-													{
-														name="ACE_fieldDressing";
-														count=10;
-													};
-													class Item2
-													{
-														name="ACE_morphine";
-														count=3;
-													};
-													class Item3
-													{
-														name="ACE_epinephrine";
-														count=1;
-													};
-													class Item4
-													{
-														name="ACE_MapTools";
-														count=1;
-													};
-													class Item5
-													{
-														name="ACE_microDAGR";
-														count=1;
-													};
-												};
-											};
-											class vest
-											{
-												typeName="rhsusf_spc_rifleman";
-												isBackpack=0;
-												class MagazineCargo
-												{
-													items=6;
-													class Item0
-													{
-														name="rhs_mag_an_m8hc";
-														count=4;
-														ammoLeft=1;
-													};
-													class Item1
-													{
-														name="rhs_mag_m18_red";
-														count=1;
-														ammoLeft=1;
-													};
-													class Item2
-													{
-														name="rhs_mag_m18_green";
-														count=1;
-														ammoLeft=1;
-													};
-													class Item3
-													{
-														name="rhs_mag_m67";
-														count=2;
-														ammoLeft=1;
-													};
-													class Item4
-													{
-														name="rhs_mag_30Rnd_556x45_M855A1_Stanag_No_Tracer";
-														count=6;
-														ammoLeft=30;
-													};
-													class Item5
-													{
-														name="rhsusf_mag_15Rnd_9x19_JHP";
-														count=2;
-														ammoLeft=15;
-													};
-												};
-												class ItemCargo
-												{
-													items=1;
-													class Item0
-													{
-														name="ACE_Flashlight_MX991";
-														count=1;
-													};
-												};
-											};
-											class backpack
-											{
-												typeName="rhsusf_assault_eagleaiii_coy";
-												isBackpack=1;
-												class MagazineCargo
-												{
-													items=1;
-													class Item0
-													{
-														name="rhs_mag_30Rnd_556x45_M855A1_Stanag_No_Tracer";
-														count=4;
-														ammoLeft=30;
-													};
-												};
-											};
-											map="ItemMap";
-											compass="ItemCompass";
-											watch="ItemWatch";
-											headgear="rhsusf_lwh_helmet_marpatwd_headset";
-										};
-									};
-									id=63;
-									type="B_Soldier_SL_F";
-									class CustomAttributes
-									{
-										class Attribute0
-										{
-											property="ace_isSurrendered";
-											expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
-											class Value
-											{
-												class data
-												{
-													class type
-													{
-														type[]=
-														{
-															"BOOL"
-														};
-													};
-													value=0;
-												};
-											};
-										};
-										class Attribute1
-										{
-											property="ace_isHandcuffed";
-											expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
-											class Value
-											{
-												class data
-												{
-													class type
-													{
-														type[]=
-														{
-															"BOOL"
-														};
-													};
-													value=0;
-												};
-											};
-										};
-										nAttributes=2;
-									};
-								};
-								class Item1
-								{
-									dataType="Object";
-									class PositionInfo
-									{
 										position[]={11851.99,159.00143,12636.313};
 										angles[]={0,1.5671432,0};
 									};
@@ -5668,6 +5304,7 @@ class Mission
 									class Attributes
 									{
 										init="if (!isMultiplayer) then {this spawn {waitUntil {time > 0}; deleteVehicle _this}}";
+										presenceCondition="isMultiplayer";
 										description="Alfa 2 - MG";
 										isPlayable=1;
 										class Inventory
@@ -5827,7 +5464,7 @@ class Mission
 										nAttributes=2;
 									};
 								};
-								class Item2
+								class Item1
 								{
 									dataType="Object";
 									class PositionInfo
@@ -5840,6 +5477,7 @@ class Mission
 									class Attributes
 									{
 										init="if (!isMultiplayer) then {this spawn {waitUntil {time > 0}; deleteVehicle _this}}";
+										presenceCondition="isMultiplayer";
 										description="Alfa 2 - RF";
 										isPlayable=1;
 										class Inventory
@@ -6003,7 +5641,7 @@ class Mission
 										nAttributes=2;
 									};
 								};
-								class Item3
+								class Item2
 								{
 									dataType="Object";
 									class PositionInfo
@@ -6016,6 +5654,7 @@ class Mission
 									class Attributes
 									{
 										init="if (!isMultiplayer) then {this spawn {waitUntil {time > 0}; deleteVehicle _this}}";
+										presenceCondition="isMultiplayer";
 										description="Alfa 2 - RF";
 										isPlayable=1;
 										class Inventory
@@ -6179,7 +5818,7 @@ class Mission
 										nAttributes=2;
 									};
 								};
-								class Item4
+								class Item3
 								{
 									dataType="Object";
 									class PositionInfo
@@ -6192,6 +5831,7 @@ class Mission
 									class Attributes
 									{
 										init="if (!isMultiplayer) then {this spawn {waitUntil {time > 0}; deleteVehicle _this}}";
+										presenceCondition="isMultiplayer";
 										description="Alfa 2 - RF";
 										isPlayable=1;
 										class Inventory
@@ -6355,7 +5995,7 @@ class Mission
 										nAttributes=2;
 									};
 								};
-								class Item5
+								class Item4
 								{
 									dataType="Object";
 									class PositionInfo
@@ -6368,6 +6008,7 @@ class Mission
 									class Attributes
 									{
 										init="if (!isMultiplayer) then {this spawn {waitUntil {time > 0}; deleteVehicle _this}}";
+										presenceCondition="";
 										description="Alfa 2 - AT";
 										isPlayable=1;
 										class Inventory
@@ -6530,7 +6171,7 @@ class Mission
 										nAttributes=2;
 									};
 								};
-								class Item6
+								class Item5
 								{
 									dataType="Object";
 									class PositionInfo
@@ -6544,6 +6185,7 @@ class Mission
 									{
 										rank="CORPORAL";
 										init="if (!isMultiplayer) then {this spawn {waitUntil {time > 0}; deleteVehicle _this}}";
+										presenceCondition="isMultiplayer";
 										description="Alfa 2 - Medico";
 										isPlayable=1;
 										class Inventory
@@ -6750,7 +6392,7 @@ class Mission
 										nAttributes=3;
 									};
 								};
-								class Item7
+								class Item6
 								{
 									dataType="Object";
 									class PositionInfo
@@ -6763,6 +6405,7 @@ class Mission
 									class Attributes
 									{
 										init="if (!isMultiplayer) then {this spawn {waitUntil {time > 0}; deleteVehicle _this}}";
+										presenceCondition="isMultiplayer";
 										description="Alfa 2 - GL";
 										isPlayable=1;
 										class Inventory
@@ -6937,180 +6580,24 @@ class Mission
 										nAttributes=2;
 									};
 								};
-							};
-							class Attributes
-							{
-								combatMode="BLUE";
-								behaviour="CARELESS";
-								speedMode="LIMITED";
-							};
-							id=62;
-						};
-						class Item9
-						{
-							dataType="Group";
-							side="West";
-							class Entities
-							{
-								items=8;
-								class Item0
+								class Item7
 								{
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={11856,158.72011,12608.05};
-										angles[]={0,3.1158845,0};
+										position[]={11856,159.00143,12640.05};
+										angles[]={0,3.1517041,0};
 									};
 									side="West";
-									flags=7;
+									flags=6;
 									class Attributes
 									{
 										rank="SERGEANT";
-										init="if (!isMultiplayer) then {this spawn {waitUntil {time > 0}; deleteVehicle _this}}";
-										description="Alfa 3 - TL/SL";
+										description="Alfa 2 - TL/SL";
 										isPlayable=1;
-										class Inventory
-										{
-											class primaryWeapon
-											{
-												name="rhs_weap_m4_carryhandle";
-												optics="rhsusf_acc_ACOG2_USMC";
-												underBarrel="rhsusf_acc_grip3";
-												class primaryMuzzleMag
-												{
-													name="rhs_mag_30Rnd_556x45_M855A1_Stanag_No_Tracer";
-													ammoLeft=30;
-												};
-											};
-											class handgun
-											{
-												name="rhsusf_weap_m9";
-												class primaryMuzzleMag
-												{
-													name="rhsusf_mag_15Rnd_9x19_JHP";
-													ammoLeft=15;
-												};
-											};
-											class binocular
-											{
-												name="Binocular";
-											};
-											class uniform
-											{
-												typeName="rhs_uniform_FROG01_wd";
-												isBackpack=0;
-												class ItemCargo
-												{
-													items=6;
-													class Item0
-													{
-														name="ACE_EarPlugs";
-														count=1;
-													};
-													class Item1
-													{
-														name="ACE_fieldDressing";
-														count=10;
-													};
-													class Item2
-													{
-														name="ACE_morphine";
-														count=3;
-													};
-													class Item3
-													{
-														name="ACE_epinephrine";
-														count=1;
-													};
-													class Item4
-													{
-														name="ACE_MapTools";
-														count=1;
-													};
-													class Item5
-													{
-														name="ACE_microDAGR";
-														count=1;
-													};
-												};
-											};
-											class vest
-											{
-												typeName="rhsusf_spc_rifleman";
-												isBackpack=0;
-												class MagazineCargo
-												{
-													items=6;
-													class Item0
-													{
-														name="rhs_mag_an_m8hc";
-														count=4;
-														ammoLeft=1;
-													};
-													class Item1
-													{
-														name="rhs_mag_m18_red";
-														count=1;
-														ammoLeft=1;
-													};
-													class Item2
-													{
-														name="rhs_mag_m18_green";
-														count=1;
-														ammoLeft=1;
-													};
-													class Item3
-													{
-														name="rhs_mag_m67";
-														count=2;
-														ammoLeft=1;
-													};
-													class Item4
-													{
-														name="rhs_mag_30Rnd_556x45_M855A1_Stanag_No_Tracer";
-														count=6;
-														ammoLeft=30;
-													};
-													class Item5
-													{
-														name="rhsusf_mag_15Rnd_9x19_JHP";
-														count=2;
-														ammoLeft=15;
-													};
-												};
-												class ItemCargo
-												{
-													items=1;
-													class Item0
-													{
-														name="ACE_Flashlight_MX991";
-														count=1;
-													};
-												};
-											};
-											class backpack
-											{
-												typeName="rhsusf_assault_eagleaiii_coy";
-												isBackpack=1;
-												class MagazineCargo
-												{
-													items=1;
-													class Item0
-													{
-														name="rhs_mag_30Rnd_556x45_M855A1_Stanag_No_Tracer";
-														count=4;
-														ammoLeft=30;
-													};
-												};
-											};
-											map="ItemMap";
-											compass="ItemCompass";
-											watch="ItemWatch";
-											headgear="rhsusf_lwh_helmet_marpatwd_headset";
-										};
 									};
-									id=72;
-									type="B_Soldier_SL_F";
+									id=1174;
+									type="rhsusf_usmc_marpat_wd_teamleader";
 									class CustomAttributes
 									{
 										class Attribute0
@@ -7154,7 +6641,23 @@ class Mission
 										nAttributes=2;
 									};
 								};
-								class Item1
+							};
+							class Attributes
+							{
+								combatMode="BLUE";
+								behaviour="CARELESS";
+								speedMode="LIMITED";
+							};
+							id=62;
+						};
+						class Item9
+						{
+							dataType="Group";
+							side="West";
+							class Entities
+							{
+								items=8;
+								class Item0
 								{
 									dataType="Object";
 									class PositionInfo
@@ -7167,6 +6670,7 @@ class Mission
 									class Attributes
 									{
 										init="if (!isMultiplayer) then {this spawn {waitUntil {time > 0}; deleteVehicle _this}}";
+										presenceCondition="isMultiplayer";
 										description="Alfa 3 - MG";
 										isPlayable=1;
 										class Inventory
@@ -7326,7 +6830,7 @@ class Mission
 										nAttributes=2;
 									};
 								};
-								class Item2
+								class Item1
 								{
 									dataType="Object";
 									class PositionInfo
@@ -7339,6 +6843,7 @@ class Mission
 									class Attributes
 									{
 										init="if (!isMultiplayer) then {this spawn {waitUntil {time > 0}; deleteVehicle _this}}";
+										presenceCondition="isMultiplayer";
 										description="Alfa 3 - RF";
 										isPlayable=1;
 										class Inventory
@@ -7503,7 +7008,7 @@ class Mission
 										nAttributes=2;
 									};
 								};
-								class Item3
+								class Item2
 								{
 									dataType="Object";
 									class PositionInfo
@@ -7516,6 +7021,7 @@ class Mission
 									class Attributes
 									{
 										init="if (!isMultiplayer) then {this spawn {waitUntil {time > 0}; deleteVehicle _this}}";
+										presenceCondition="isMultiplayer";
 										description="Alfa 3 - RF";
 										isPlayable=1;
 										class Inventory
@@ -7679,7 +7185,7 @@ class Mission
 										nAttributes=2;
 									};
 								};
-								class Item4
+								class Item3
 								{
 									dataType="Object";
 									class PositionInfo
@@ -7692,6 +7198,7 @@ class Mission
 									class Attributes
 									{
 										init="if (!isMultiplayer) then {this spawn {waitUntil {time > 0}; deleteVehicle _this}}";
+										presenceCondition="isMultiplayer";
 										description="Alfa 3 - RF";
 										isPlayable=1;
 										class Inventory
@@ -7855,7 +7362,7 @@ class Mission
 										nAttributes=2;
 									};
 								};
-								class Item5
+								class Item4
 								{
 									dataType="Object";
 									class PositionInfo
@@ -7868,6 +7375,7 @@ class Mission
 									class Attributes
 									{
 										init="if (!isMultiplayer) then {this spawn {waitUntil {time > 0}; deleteVehicle _this}}";
+										presenceCondition="";
 										description="Alfa 3 - AT";
 										isPlayable=1;
 										class Inventory
@@ -8030,7 +7538,7 @@ class Mission
 										nAttributes=2;
 									};
 								};
-								class Item6
+								class Item5
 								{
 									dataType="Object";
 									class PositionInfo
@@ -8044,6 +7552,7 @@ class Mission
 									{
 										rank="CORPORAL";
 										init="if (!isMultiplayer) then {this spawn {waitUntil {time > 0}; deleteVehicle _this}}";
+										presenceCondition="isMultiplayer";
 										description="Alfa 3 - Medico";
 										isPlayable=1;
 										class Inventory
@@ -8250,7 +7759,7 @@ class Mission
 										nAttributes=3;
 									};
 								};
-								class Item7
+								class Item6
 								{
 									dataType="Object";
 									class PositionInfo
@@ -8263,6 +7772,7 @@ class Mission
 									class Attributes
 									{
 										init="if (!isMultiplayer) then {this spawn {waitUntil {time > 0}; deleteVehicle _this}}";
+										presenceCondition="isMultiplayer";
 										description="Alfa 3 - GL";
 										isPlayable=1;
 										class Inventory
@@ -8437,180 +7947,24 @@ class Mission
 										nAttributes=2;
 									};
 								};
-							};
-							class Attributes
-							{
-								combatMode="BLUE";
-								behaviour="CARELESS";
-								speedMode="LIMITED";
-							};
-							id=71;
-						};
-						class Item10
-						{
-							dataType="Group";
-							side="West";
-							class Entities
-							{
-								items=8;
-								class Item0
+								class Item7
 								{
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={11824,158.90143,12672.05};
-										angles[]={0,3.12956,0};
+										position[]={11856,158.72011,12608.05};
+										angles[]={0,3.1158845,0};
 									};
 									side="West";
-									flags=7;
+									flags=6;
 									class Attributes
 									{
 										rank="SERGEANT";
-										init="if (!isMultiplayer) then {this spawn {waitUntil {time > 0}; deleteVehicle _this}}";
-										description="Bravo 1 - TL/SL";
+										description="Alfa 3 - TL/SL";
 										isPlayable=1;
-										class Inventory
-										{
-											class primaryWeapon
-											{
-												name="rhs_weap_m4_carryhandle";
-												optics="rhsusf_acc_ACOG2_USMC";
-												underBarrel="rhsusf_acc_grip3";
-												class primaryMuzzleMag
-												{
-													name="rhs_mag_30Rnd_556x45_M855A1_Stanag_No_Tracer";
-													ammoLeft=30;
-												};
-											};
-											class handgun
-											{
-												name="rhsusf_weap_m9";
-												class primaryMuzzleMag
-												{
-													name="rhsusf_mag_15Rnd_9x19_JHP";
-													ammoLeft=15;
-												};
-											};
-											class binocular
-											{
-												name="Binocular";
-											};
-											class uniform
-											{
-												typeName="rhs_uniform_FROG01_wd";
-												isBackpack=0;
-												class ItemCargo
-												{
-													items=6;
-													class Item0
-													{
-														name="ACE_EarPlugs";
-														count=1;
-													};
-													class Item1
-													{
-														name="ACE_fieldDressing";
-														count=10;
-													};
-													class Item2
-													{
-														name="ACE_morphine";
-														count=3;
-													};
-													class Item3
-													{
-														name="ACE_epinephrine";
-														count=1;
-													};
-													class Item4
-													{
-														name="ACE_MapTools";
-														count=1;
-													};
-													class Item5
-													{
-														name="ACE_microDAGR";
-														count=1;
-													};
-												};
-											};
-											class vest
-											{
-												typeName="rhsusf_spc_rifleman";
-												isBackpack=0;
-												class MagazineCargo
-												{
-													items=6;
-													class Item0
-													{
-														name="rhs_mag_an_m8hc";
-														count=4;
-														ammoLeft=1;
-													};
-													class Item1
-													{
-														name="rhs_mag_m18_red";
-														count=1;
-														ammoLeft=1;
-													};
-													class Item2
-													{
-														name="rhs_mag_m18_green";
-														count=1;
-														ammoLeft=1;
-													};
-													class Item3
-													{
-														name="rhs_mag_m67";
-														count=2;
-														ammoLeft=1;
-													};
-													class Item4
-													{
-														name="rhs_mag_30Rnd_556x45_M855A1_Stanag_No_Tracer";
-														count=6;
-														ammoLeft=30;
-													};
-													class Item5
-													{
-														name="rhsusf_mag_15Rnd_9x19_JHP";
-														count=2;
-														ammoLeft=15;
-													};
-												};
-												class ItemCargo
-												{
-													items=1;
-													class Item0
-													{
-														name="ACE_Flashlight_MX991";
-														count=1;
-													};
-												};
-											};
-											class backpack
-											{
-												typeName="rhsusf_assault_eagleaiii_coy";
-												isBackpack=1;
-												class MagazineCargo
-												{
-													items=1;
-													class Item0
-													{
-														name="rhs_mag_30Rnd_556x45_M855A1_Stanag_No_Tracer";
-														count=4;
-														ammoLeft=30;
-													};
-												};
-											};
-											map="ItemMap";
-											compass="ItemCompass";
-											watch="ItemWatch";
-											headgear="rhsusf_lwh_helmet_marpatwd_headset";
-										};
 									};
-									id=81;
-									type="B_Soldier_SL_F";
+									id=1175;
+									type="rhsusf_usmc_marpat_wd_teamleader";
 									class CustomAttributes
 									{
 										class Attribute0
@@ -8654,7 +8008,23 @@ class Mission
 										nAttributes=2;
 									};
 								};
-								class Item1
+							};
+							class Attributes
+							{
+								combatMode="BLUE";
+								behaviour="CARELESS";
+								speedMode="LIMITED";
+							};
+							id=71;
+						};
+						class Item10
+						{
+							dataType="Group";
+							side="West";
+							class Entities
+							{
+								items=8;
+								class Item0
 								{
 									dataType="Object";
 									class PositionInfo
@@ -8667,6 +8037,7 @@ class Mission
 									class Attributes
 									{
 										init="if (!isMultiplayer) then {this spawn {waitUntil {time > 0}; deleteVehicle _this}}";
+										presenceCondition="isMultiplayer";
 										description="Bravo 1 - MG";
 										isPlayable=1;
 										class Inventory
@@ -8826,7 +8197,7 @@ class Mission
 										nAttributes=2;
 									};
 								};
-								class Item2
+								class Item1
 								{
 									dataType="Object";
 									class PositionInfo
@@ -8839,6 +8210,7 @@ class Mission
 									class Attributes
 									{
 										init="if (!isMultiplayer) then {this spawn {waitUntil {time > 0}; deleteVehicle _this}}";
+										presenceCondition="isMultiplayer";
 										description="Bravo 1 - RF";
 										isPlayable=1;
 										class Inventory
@@ -9002,7 +8374,7 @@ class Mission
 										nAttributes=2;
 									};
 								};
-								class Item3
+								class Item2
 								{
 									dataType="Object";
 									class PositionInfo
@@ -9015,6 +8387,7 @@ class Mission
 									class Attributes
 									{
 										init="if (!isMultiplayer) then {this spawn {waitUntil {time > 0}; deleteVehicle _this}}";
+										presenceCondition="isMultiplayer";
 										description="Bravo 1 - RF";
 										isPlayable=1;
 										class Inventory
@@ -9178,7 +8551,7 @@ class Mission
 										nAttributes=2;
 									};
 								};
-								class Item4
+								class Item3
 								{
 									dataType="Object";
 									class PositionInfo
@@ -9191,6 +8564,7 @@ class Mission
 									class Attributes
 									{
 										init="if (!isMultiplayer) then {this spawn {waitUntil {time > 0}; deleteVehicle _this}}";
+										presenceCondition="isMultiplayer";
 										description="Bravo 1 - RF";
 										isPlayable=1;
 										class Inventory
@@ -9354,7 +8728,7 @@ class Mission
 										nAttributes=2;
 									};
 								};
-								class Item5
+								class Item4
 								{
 									dataType="Object";
 									class PositionInfo
@@ -9367,6 +8741,7 @@ class Mission
 									class Attributes
 									{
 										init="if (!isMultiplayer) then {this spawn {waitUntil {time > 0}; deleteVehicle _this}}";
+										presenceCondition="";
 										description="Bravo 1 - AT";
 										isPlayable=1;
 										class Inventory
@@ -9529,7 +8904,7 @@ class Mission
 										nAttributes=2;
 									};
 								};
-								class Item6
+								class Item5
 								{
 									dataType="Object";
 									class PositionInfo
@@ -9543,6 +8918,7 @@ class Mission
 									{
 										rank="CORPORAL";
 										init="if (!isMultiplayer) then {this spawn {waitUntil {time > 0}; deleteVehicle _this}}";
+										presenceCondition="isMultiplayer";
 										description="Bravo 1 - Medico";
 										isPlayable=1;
 										class Inventory
@@ -9749,7 +9125,7 @@ class Mission
 										nAttributes=3;
 									};
 								};
-								class Item7
+								class Item6
 								{
 									dataType="Object";
 									class PositionInfo
@@ -9762,6 +9138,7 @@ class Mission
 									class Attributes
 									{
 										init="if (!isMultiplayer) then {this spawn {waitUntil {time > 0}; deleteVehicle _this}}";
+										presenceCondition="isMultiplayer";
 										description="Bravo 1 - GL";
 										isPlayable=1;
 										class Inventory
@@ -9936,180 +9313,24 @@ class Mission
 										nAttributes=2;
 									};
 								};
-							};
-							class Attributes
-							{
-								combatMode="BLUE";
-								behaviour="CARELESS";
-								speedMode="LIMITED";
-							};
-							id=80;
-						};
-						class Item11
-						{
-							dataType="Group";
-							side="West";
-							class Entities
-							{
-								items=8;
-								class Item0
+								class Item7
 								{
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={11824,159.00143,12640.05};
-										angles[]={0,3.1339278,0};
+										position[]={11824,158.90143,12672.05};
+										angles[]={0,3.12956,0};
 									};
 									side="West";
-									flags=7;
+									flags=6;
 									class Attributes
 									{
 										rank="SERGEANT";
-										init="if (!isMultiplayer) then {this spawn {waitUntil {time > 0}; deleteVehicle _this}}";
-										description="Bravo 2 - TL/SL";
+										description="Bravo 1 - TL/SL";
 										isPlayable=1;
-										class Inventory
-										{
-											class primaryWeapon
-											{
-												name="rhs_weap_m4_carryhandle";
-												optics="rhsusf_acc_ACOG2_USMC";
-												underBarrel="rhsusf_acc_grip3";
-												class primaryMuzzleMag
-												{
-													name="rhs_mag_30Rnd_556x45_M855A1_Stanag_No_Tracer";
-													ammoLeft=30;
-												};
-											};
-											class handgun
-											{
-												name="rhsusf_weap_m9";
-												class primaryMuzzleMag
-												{
-													name="rhsusf_mag_15Rnd_9x19_JHP";
-													ammoLeft=15;
-												};
-											};
-											class binocular
-											{
-												name="Binocular";
-											};
-											class uniform
-											{
-												typeName="rhs_uniform_FROG01_wd";
-												isBackpack=0;
-												class ItemCargo
-												{
-													items=6;
-													class Item0
-													{
-														name="ACE_EarPlugs";
-														count=1;
-													};
-													class Item1
-													{
-														name="ACE_fieldDressing";
-														count=10;
-													};
-													class Item2
-													{
-														name="ACE_morphine";
-														count=3;
-													};
-													class Item3
-													{
-														name="ACE_epinephrine";
-														count=1;
-													};
-													class Item4
-													{
-														name="ACE_MapTools";
-														count=1;
-													};
-													class Item5
-													{
-														name="ACE_microDAGR";
-														count=1;
-													};
-												};
-											};
-											class vest
-											{
-												typeName="rhsusf_spc_rifleman";
-												isBackpack=0;
-												class MagazineCargo
-												{
-													items=6;
-													class Item0
-													{
-														name="rhs_mag_an_m8hc";
-														count=4;
-														ammoLeft=1;
-													};
-													class Item1
-													{
-														name="rhs_mag_m18_red";
-														count=1;
-														ammoLeft=1;
-													};
-													class Item2
-													{
-														name="rhs_mag_m18_green";
-														count=1;
-														ammoLeft=1;
-													};
-													class Item3
-													{
-														name="rhs_mag_m67";
-														count=2;
-														ammoLeft=1;
-													};
-													class Item4
-													{
-														name="rhs_mag_30Rnd_556x45_M855A1_Stanag_No_Tracer";
-														count=6;
-														ammoLeft=30;
-													};
-													class Item5
-													{
-														name="rhsusf_mag_15Rnd_9x19_JHP";
-														count=2;
-														ammoLeft=15;
-													};
-												};
-												class ItemCargo
-												{
-													items=1;
-													class Item0
-													{
-														name="ACE_Flashlight_MX991";
-														count=1;
-													};
-												};
-											};
-											class backpack
-											{
-												typeName="rhsusf_assault_eagleaiii_coy";
-												isBackpack=1;
-												class MagazineCargo
-												{
-													items=1;
-													class Item0
-													{
-														name="rhs_mag_30Rnd_556x45_M855A1_Stanag_No_Tracer";
-														count=4;
-														ammoLeft=30;
-													};
-												};
-											};
-											map="ItemMap";
-											compass="ItemCompass";
-											watch="ItemWatch";
-											headgear="rhsusf_lwh_helmet_marpatwd_headset";
-										};
 									};
-									id=90;
-									type="B_Soldier_SL_F";
+									id=1172;
+									type="rhsusf_usmc_marpat_wd_teamleader";
 									class CustomAttributes
 									{
 										class Attribute0
@@ -10153,7 +9374,23 @@ class Mission
 										nAttributes=2;
 									};
 								};
-								class Item1
+							};
+							class Attributes
+							{
+								combatMode="BLUE";
+								behaviour="CARELESS";
+								speedMode="LIMITED";
+							};
+							id=80;
+						};
+						class Item11
+						{
+							dataType="Group";
+							side="West";
+							class Entities
+							{
+								items=8;
+								class Item0
 								{
 									dataType="Object";
 									class PositionInfo
@@ -10166,6 +9403,7 @@ class Mission
 									class Attributes
 									{
 										init="if (!isMultiplayer) then {this spawn {waitUntil {time > 0}; deleteVehicle _this}}";
+										presenceCondition="isMultiplayer";
 										description="Bravo 2 - MG";
 										isPlayable=1;
 										class Inventory
@@ -10325,7 +9563,7 @@ class Mission
 										nAttributes=2;
 									};
 								};
-								class Item2
+								class Item1
 								{
 									dataType="Object";
 									class PositionInfo
@@ -10338,6 +9576,7 @@ class Mission
 									class Attributes
 									{
 										init="if (!isMultiplayer) then {this spawn {waitUntil {time > 0}; deleteVehicle _this}}";
+										presenceCondition="isMultiplayer";
 										description="Bravo 2 - RF";
 										isPlayable=1;
 										class Inventory
@@ -10501,7 +9740,7 @@ class Mission
 										nAttributes=2;
 									};
 								};
-								class Item3
+								class Item2
 								{
 									dataType="Object";
 									class PositionInfo
@@ -10514,6 +9753,7 @@ class Mission
 									class Attributes
 									{
 										init="if (!isMultiplayer) then {this spawn {waitUntil {time > 0}; deleteVehicle _this}}";
+										presenceCondition="isMultiplayer";
 										description="Bravo 2 - RF";
 										isPlayable=1;
 										class Inventory
@@ -10677,7 +9917,7 @@ class Mission
 										nAttributes=2;
 									};
 								};
-								class Item4
+								class Item3
 								{
 									dataType="Object";
 									class PositionInfo
@@ -10690,6 +9930,7 @@ class Mission
 									class Attributes
 									{
 										init="if (!isMultiplayer) then {this spawn {waitUntil {time > 0}; deleteVehicle _this}}";
+										presenceCondition="isMultiplayer";
 										description="Bravo 2 - RF";
 										isPlayable=1;
 										class Inventory
@@ -10853,7 +10094,7 @@ class Mission
 										nAttributes=2;
 									};
 								};
-								class Item5
+								class Item4
 								{
 									dataType="Object";
 									class PositionInfo
@@ -10866,6 +10107,7 @@ class Mission
 									class Attributes
 									{
 										init="if (!isMultiplayer) then {this spawn {waitUntil {time > 0}; deleteVehicle _this}}";
+										presenceCondition="";
 										description="Bravo 2 - AT";
 										isPlayable=1;
 										class Inventory
@@ -11028,7 +10270,7 @@ class Mission
 										nAttributes=2;
 									};
 								};
-								class Item6
+								class Item5
 								{
 									dataType="Object";
 									class PositionInfo
@@ -11042,6 +10284,7 @@ class Mission
 									{
 										rank="CORPORAL";
 										init="if (!isMultiplayer) then {this spawn {waitUntil {time > 0}; deleteVehicle _this}}";
+										presenceCondition="isMultiplayer";
 										description="Bravo 2 - Medico";
 										isPlayable=1;
 										class Inventory
@@ -11248,7 +10491,7 @@ class Mission
 										nAttributes=3;
 									};
 								};
-								class Item7
+								class Item6
 								{
 									dataType="Object";
 									class PositionInfo
@@ -11261,6 +10504,7 @@ class Mission
 									class Attributes
 									{
 										init="if (!isMultiplayer) then {this spawn {waitUntil {time > 0}; deleteVehicle _this}}";
+										presenceCondition="isMultiplayer";
 										description="Bravo 2 - GL";
 										isPlayable=1;
 										class Inventory
@@ -11435,180 +10679,24 @@ class Mission
 										nAttributes=2;
 									};
 								};
-							};
-							class Attributes
-							{
-								combatMode="BLUE";
-								behaviour="CARELESS";
-								speedMode="LIMITED";
-							};
-							id=89;
-						};
-						class Item12
-						{
-							dataType="Group";
-							side="West";
-							class Entities
-							{
-								items=8;
-								class Item0
+								class Item7
 								{
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={11824,158.90143,12608.05};
-										angles[]={0,3.1204162,0};
+										position[]={11824,159.00143,12640.05};
+										angles[]={0,3.1339278,0};
 									};
 									side="West";
-									flags=7;
+									flags=6;
 									class Attributes
 									{
 										rank="SERGEANT";
-										init="if (!isMultiplayer) then {this spawn {waitUntil {time > 0}; deleteVehicle _this}}";
-										description="Bravo 3 - TL/SL";
+										description="Bravo 2 - TL/SL";
 										isPlayable=1;
-										class Inventory
-										{
-											class primaryWeapon
-											{
-												name="rhs_weap_m4_carryhandle";
-												optics="rhsusf_acc_ACOG2_USMC";
-												underBarrel="rhsusf_acc_grip3";
-												class primaryMuzzleMag
-												{
-													name="rhs_mag_30Rnd_556x45_M855A1_Stanag_No_Tracer";
-													ammoLeft=30;
-												};
-											};
-											class handgun
-											{
-												name="rhsusf_weap_m9";
-												class primaryMuzzleMag
-												{
-													name="rhsusf_mag_15Rnd_9x19_JHP";
-													ammoLeft=15;
-												};
-											};
-											class binocular
-											{
-												name="Binocular";
-											};
-											class uniform
-											{
-												typeName="rhs_uniform_FROG01_wd";
-												isBackpack=0;
-												class ItemCargo
-												{
-													items=6;
-													class Item0
-													{
-														name="ACE_EarPlugs";
-														count=1;
-													};
-													class Item1
-													{
-														name="ACE_fieldDressing";
-														count=10;
-													};
-													class Item2
-													{
-														name="ACE_morphine";
-														count=3;
-													};
-													class Item3
-													{
-														name="ACE_epinephrine";
-														count=1;
-													};
-													class Item4
-													{
-														name="ACE_MapTools";
-														count=1;
-													};
-													class Item5
-													{
-														name="ACE_microDAGR";
-														count=1;
-													};
-												};
-											};
-											class vest
-											{
-												typeName="rhsusf_spc_rifleman";
-												isBackpack=0;
-												class MagazineCargo
-												{
-													items=6;
-													class Item0
-													{
-														name="rhs_mag_an_m8hc";
-														count=4;
-														ammoLeft=1;
-													};
-													class Item1
-													{
-														name="rhs_mag_m18_red";
-														count=1;
-														ammoLeft=1;
-													};
-													class Item2
-													{
-														name="rhs_mag_m18_green";
-														count=1;
-														ammoLeft=1;
-													};
-													class Item3
-													{
-														name="rhs_mag_m67";
-														count=2;
-														ammoLeft=1;
-													};
-													class Item4
-													{
-														name="rhs_mag_30Rnd_556x45_M855A1_Stanag_No_Tracer";
-														count=6;
-														ammoLeft=30;
-													};
-													class Item5
-													{
-														name="rhsusf_mag_15Rnd_9x19_JHP";
-														count=2;
-														ammoLeft=15;
-													};
-												};
-												class ItemCargo
-												{
-													items=1;
-													class Item0
-													{
-														name="ACE_Flashlight_MX991";
-														count=1;
-													};
-												};
-											};
-											class backpack
-											{
-												typeName="rhsusf_assault_eagleaiii_coy";
-												isBackpack=1;
-												class MagazineCargo
-												{
-													items=1;
-													class Item0
-													{
-														name="rhs_mag_30Rnd_556x45_M855A1_Stanag_No_Tracer";
-														count=4;
-														ammoLeft=30;
-													};
-												};
-											};
-											map="ItemMap";
-											compass="ItemCompass";
-											watch="ItemWatch";
-											headgear="rhsusf_lwh_helmet_marpatwd_headset";
-										};
 									};
-									id=99;
-									type="B_Soldier_SL_F";
+									id=1171;
+									type="rhsusf_usmc_marpat_wd_teamleader";
 									class CustomAttributes
 									{
 										class Attribute0
@@ -11652,7 +10740,23 @@ class Mission
 										nAttributes=2;
 									};
 								};
-								class Item1
+							};
+							class Attributes
+							{
+								combatMode="BLUE";
+								behaviour="CARELESS";
+								speedMode="LIMITED";
+							};
+							id=89;
+						};
+						class Item12
+						{
+							dataType="Group";
+							side="West";
+							class Entities
+							{
+								items=8;
+								class Item0
 								{
 									dataType="Object";
 									class PositionInfo
@@ -11665,6 +10769,7 @@ class Mission
 									class Attributes
 									{
 										init="if (!isMultiplayer) then {this spawn {waitUntil {time > 0}; deleteVehicle _this}}";
+										presenceCondition="isMultiplayer";
 										description="Bravo 3 - MG";
 										isPlayable=1;
 										class Inventory
@@ -11824,7 +10929,7 @@ class Mission
 										nAttributes=2;
 									};
 								};
-								class Item2
+								class Item1
 								{
 									dataType="Object";
 									class PositionInfo
@@ -11837,6 +10942,7 @@ class Mission
 									class Attributes
 									{
 										init="if (!isMultiplayer) then {this spawn {waitUntil {time > 0}; deleteVehicle _this}}";
+										presenceCondition="isMultiplayer";
 										description="Bravo 3 - RF";
 										isPlayable=1;
 										class Inventory
@@ -12001,7 +11107,7 @@ class Mission
 										nAttributes=2;
 									};
 								};
-								class Item3
+								class Item2
 								{
 									dataType="Object";
 									class PositionInfo
@@ -12014,6 +11120,7 @@ class Mission
 									class Attributes
 									{
 										init="if (!isMultiplayer) then {this spawn {waitUntil {time > 0}; deleteVehicle _this}}";
+										presenceCondition="isMultiplayer";
 										description="Bravo 3 - RF";
 										isPlayable=1;
 										class Inventory
@@ -12178,7 +11285,7 @@ class Mission
 										nAttributes=2;
 									};
 								};
-								class Item4
+								class Item3
 								{
 									dataType="Object";
 									class PositionInfo
@@ -12191,6 +11298,7 @@ class Mission
 									class Attributes
 									{
 										init="if (!isMultiplayer) then {this spawn {waitUntil {time > 0}; deleteVehicle _this}}";
+										presenceCondition="isMultiplayer";
 										description="Bravo 3 - RF";
 										isPlayable=1;
 										class Inventory
@@ -12354,7 +11462,7 @@ class Mission
 										nAttributes=2;
 									};
 								};
-								class Item5
+								class Item4
 								{
 									dataType="Object";
 									class PositionInfo
@@ -12367,6 +11475,7 @@ class Mission
 									class Attributes
 									{
 										init="if (!isMultiplayer) then {this spawn {waitUntil {time > 0}; deleteVehicle _this}}";
+										presenceCondition="";
 										description="Bravo 3 - AT";
 										isPlayable=1;
 										class Inventory
@@ -12530,7 +11639,7 @@ class Mission
 										nAttributes=2;
 									};
 								};
-								class Item6
+								class Item5
 								{
 									dataType="Object";
 									class PositionInfo
@@ -12544,6 +11653,7 @@ class Mission
 									{
 										rank="CORPORAL";
 										init="if (!isMultiplayer) then {this spawn {waitUntil {time > 0}; deleteVehicle _this}}";
+										presenceCondition="isMultiplayer";
 										description="Bravo 3 - Medico";
 										isPlayable=1;
 										class Inventory
@@ -12751,7 +11861,7 @@ class Mission
 										nAttributes=3;
 									};
 								};
-								class Item7
+								class Item6
 								{
 									dataType="Object";
 									class PositionInfo
@@ -12764,6 +11874,7 @@ class Mission
 									class Attributes
 									{
 										init="if (!isMultiplayer) then {this spawn {waitUntil {time > 0}; deleteVehicle _this}}";
+										presenceCondition="isMultiplayer";
 										description="Bravo 3 - GL";
 										isPlayable=1;
 										class Inventory
@@ -12938,6 +12049,67 @@ class Mission
 										nAttributes=2;
 									};
 								};
+								class Item7
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={11824,158.90143,12608.05};
+										angles[]={0,3.1204162,0};
+									};
+									side="West";
+									flags=6;
+									class Attributes
+									{
+										rank="SERGEANT";
+										description="Bravo 3 - TL/SL";
+										isPlayable=1;
+									};
+									id=1176;
+									type="rhsusf_usmc_marpat_wd_teamleader";
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="ace_isSurrendered";
+											expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										class Attribute1
+										{
+											property="ace_isHandcuffed";
+											expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+											class Value
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"BOOL"
+														};
+													};
+													value=0;
+												};
+											};
+										};
+										nAttributes=2;
+									};
+								};
 							};
 							class Attributes
 							{
@@ -12958,12 +12130,32 @@ class Mission
 							flags=5;
 							class Attributes
 							{
+								disableSimulation=1;
 							};
 							id=127;
 							type="SignAd_SponsorS_ARMEX_F";
 							class CustomAttributes
 							{
 								class Attribute0
+								{
+									property="allowDamage";
+									expression="_this allowdamage _value;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"BOOL"
+												};
+											};
+											value=0;
+										};
+									};
+								};
+								class Attribute1
 								{
 									property="ObjectTextureCustom0";
 									expression="_this setObjectTextureGlobal [0,_value]";
@@ -12982,7 +12174,7 @@ class Mission
 										};
 									};
 								};
-								class Attribute1
+								class Attribute2
 								{
 									property="ace_isMedicalFacility";
 									expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
@@ -13001,7 +12193,7 @@ class Mission
 										};
 									};
 								};
-								nAttributes=2;
+								nAttributes=3;
 							};
 						};
 						class Item14
@@ -13016,12 +12208,32 @@ class Mission
 							flags=5;
 							class Attributes
 							{
+								disableSimulation=1;
 							};
 							id=128;
 							type="SignAd_SponsorS_ARMEX_F";
 							class CustomAttributes
 							{
 								class Attribute0
+								{
+									property="allowDamage";
+									expression="_this allowdamage _value;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"BOOL"
+												};
+											};
+											value=0;
+										};
+									};
+								};
+								class Attribute1
 								{
 									property="ObjectTextureCustom0";
 									expression="_this setObjectTextureGlobal [0,_value]";
@@ -13040,7 +12252,7 @@ class Mission
 										};
 									};
 								};
-								class Attribute1
+								class Attribute2
 								{
 									property="ace_isMedicalFacility";
 									expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
@@ -13059,7 +12271,7 @@ class Mission
 										};
 									};
 								};
-								nAttributes=2;
+								nAttributes=3;
 							};
 						};
 						class Item15
@@ -13073,12 +12285,32 @@ class Mission
 							flags=5;
 							class Attributes
 							{
+								disableSimulation=1;
 							};
 							id=130;
 							type="SignAd_SponsorS_ARMEX_F";
 							class CustomAttributes
 							{
 								class Attribute0
+								{
+									property="allowDamage";
+									expression="_this allowdamage _value;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"BOOL"
+												};
+											};
+											value=0;
+										};
+									};
+								};
+								class Attribute1
 								{
 									property="ObjectTextureCustom0";
 									expression="_this setObjectTextureGlobal [0,_value]";
@@ -13097,7 +12329,7 @@ class Mission
 										};
 									};
 								};
-								class Attribute1
+								class Attribute2
 								{
 									property="ace_isMedicalFacility";
 									expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
@@ -13116,7 +12348,7 @@ class Mission
 										};
 									};
 								};
-								nAttributes=2;
+								nAttributes=3;
 							};
 						};
 						class Item16
@@ -13131,12 +12363,32 @@ class Mission
 							flags=5;
 							class Attributes
 							{
+								disableSimulation=1;
 							};
 							id=131;
 							type="SignAd_SponsorS_ARMEX_F";
 							class CustomAttributes
 							{
 								class Attribute0
+								{
+									property="allowDamage";
+									expression="_this allowdamage _value;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"BOOL"
+												};
+											};
+											value=0;
+										};
+									};
+								};
+								class Attribute1
 								{
 									property="ObjectTextureCustom0";
 									expression="_this setObjectTextureGlobal [0,_value]";
@@ -13155,7 +12407,7 @@ class Mission
 										};
 									};
 								};
-								class Attribute1
+								class Attribute2
 								{
 									property="ace_isMedicalFacility";
 									expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
@@ -13174,7 +12426,7 @@ class Mission
 										};
 									};
 								};
-								nAttributes=2;
+								nAttributes=3;
 							};
 						};
 						class Item17
@@ -13188,6 +12440,7 @@ class Mission
 							flags=5;
 							class Attributes
 							{
+								disableSimulation=1;
 							};
 							id=133;
 							type="SignAd_SponsorS_ARMEX_F";
@@ -13195,6 +12448,25 @@ class Mission
 							class CustomAttributes
 							{
 								class Attribute0
+								{
+									property="allowDamage";
+									expression="_this allowdamage _value;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"BOOL"
+												};
+											};
+											value=0;
+										};
+									};
+								};
+								class Attribute1
 								{
 									property="ObjectTextureCustom0";
 									expression="_this setObjectTextureGlobal [0,_value]";
@@ -13213,7 +12485,7 @@ class Mission
 										};
 									};
 								};
-								class Attribute1
+								class Attribute2
 								{
 									property="ace_isMedicalFacility";
 									expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
@@ -13232,7 +12504,7 @@ class Mission
 										};
 									};
 								};
-								nAttributes=2;
+								nAttributes=3;
 							};
 						};
 						class Item18
@@ -13247,6 +12519,7 @@ class Mission
 							flags=5;
 							class Attributes
 							{
+								disableSimulation=1;
 							};
 							id=134;
 							type="SignAd_SponsorS_ARMEX_F";
@@ -13254,6 +12527,25 @@ class Mission
 							class CustomAttributes
 							{
 								class Attribute0
+								{
+									property="allowDamage";
+									expression="_this allowdamage _value;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"BOOL"
+												};
+											};
+											value=0;
+										};
+									};
+								};
+								class Attribute1
 								{
 									property="ObjectTextureCustom0";
 									expression="_this setObjectTextureGlobal [0,_value]";
@@ -13272,7 +12564,7 @@ class Mission
 										};
 									};
 								};
-								class Attribute1
+								class Attribute2
 								{
 									property="ace_isMedicalFacility";
 									expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
@@ -13291,7 +12583,7 @@ class Mission
 										};
 									};
 								};
-								nAttributes=2;
+								nAttributes=3;
 							};
 						};
 						class Item19
@@ -13305,12 +12597,32 @@ class Mission
 							flags=5;
 							class Attributes
 							{
+								disableSimulation=1;
 							};
 							id=136;
 							type="SignAd_SponsorS_ARMEX_F";
 							class CustomAttributes
 							{
 								class Attribute0
+								{
+									property="allowDamage";
+									expression="_this allowdamage _value;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"BOOL"
+												};
+											};
+											value=0;
+										};
+									};
+								};
+								class Attribute1
 								{
 									property="ObjectTextureCustom0";
 									expression="_this setObjectTextureGlobal [0,_value]";
@@ -13329,7 +12641,7 @@ class Mission
 										};
 									};
 								};
-								class Attribute1
+								class Attribute2
 								{
 									property="ace_isMedicalFacility";
 									expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
@@ -13348,7 +12660,7 @@ class Mission
 										};
 									};
 								};
-								nAttributes=2;
+								nAttributes=3;
 							};
 						};
 						class Item20
@@ -13363,12 +12675,32 @@ class Mission
 							flags=5;
 							class Attributes
 							{
+								disableSimulation=1;
 							};
 							id=137;
 							type="SignAd_SponsorS_ARMEX_F";
 							class CustomAttributes
 							{
 								class Attribute0
+								{
+									property="allowDamage";
+									expression="_this allowdamage _value;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"BOOL"
+												};
+											};
+											value=0;
+										};
+									};
+								};
+								class Attribute1
 								{
 									property="ObjectTextureCustom0";
 									expression="_this setObjectTextureGlobal [0,_value]";
@@ -13387,7 +12719,7 @@ class Mission
 										};
 									};
 								};
-								class Attribute1
+								class Attribute2
 								{
 									property="ace_isMedicalFacility";
 									expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
@@ -13406,7 +12738,7 @@ class Mission
 										};
 									};
 								};
-								nAttributes=2;
+								nAttributes=3;
 							};
 						};
 						class Item21
@@ -13420,12 +12752,32 @@ class Mission
 							flags=5;
 							class Attributes
 							{
+								disableSimulation=1;
 							};
 							id=139;
 							type="SignAd_SponsorS_ARMEX_F";
 							class CustomAttributes
 							{
 								class Attribute0
+								{
+									property="allowDamage";
+									expression="_this allowdamage _value;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"BOOL"
+												};
+											};
+											value=0;
+										};
+									};
+								};
+								class Attribute1
 								{
 									property="ObjectTextureCustom0";
 									expression="_this setObjectTextureGlobal [0,_value]";
@@ -13444,7 +12796,7 @@ class Mission
 										};
 									};
 								};
-								class Attribute1
+								class Attribute2
 								{
 									property="ace_isMedicalFacility";
 									expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
@@ -13463,7 +12815,7 @@ class Mission
 										};
 									};
 								};
-								nAttributes=2;
+								nAttributes=3;
 							};
 						};
 						class Item22
@@ -13478,12 +12830,32 @@ class Mission
 							flags=5;
 							class Attributes
 							{
+								disableSimulation=1;
 							};
 							id=140;
 							type="SignAd_SponsorS_ARMEX_F";
 							class CustomAttributes
 							{
 								class Attribute0
+								{
+									property="allowDamage";
+									expression="_this allowdamage _value;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"BOOL"
+												};
+											};
+											value=0;
+										};
+									};
+								};
+								class Attribute1
 								{
 									property="ObjectTextureCustom0";
 									expression="_this setObjectTextureGlobal [0,_value]";
@@ -13502,7 +12874,7 @@ class Mission
 										};
 									};
 								};
-								class Attribute1
+								class Attribute2
 								{
 									property="ace_isMedicalFacility";
 									expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
@@ -13521,7 +12893,7 @@ class Mission
 										};
 									};
 								};
-								nAttributes=2;
+								nAttributes=3;
 							};
 						};
 						class Item23
@@ -13535,6 +12907,7 @@ class Mission
 							flags=5;
 							class Attributes
 							{
+								disableSimulation=1;
 							};
 							id=143;
 							type="SignAd_SponsorS_ARMEX_F";
@@ -13542,6 +12915,25 @@ class Mission
 							class CustomAttributes
 							{
 								class Attribute0
+								{
+									property="allowDamage";
+									expression="_this allowdamage _value;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"BOOL"
+												};
+											};
+											value=0;
+										};
+									};
+								};
+								class Attribute1
 								{
 									property="ObjectTextureCustom0";
 									expression="_this setObjectTextureGlobal [0,_value]";
@@ -13560,7 +12952,7 @@ class Mission
 										};
 									};
 								};
-								class Attribute1
+								class Attribute2
 								{
 									property="ace_isMedicalFacility";
 									expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
@@ -13579,7 +12971,7 @@ class Mission
 										};
 									};
 								};
-								nAttributes=2;
+								nAttributes=3;
 							};
 						};
 						class Item24
@@ -13594,6 +12986,7 @@ class Mission
 							flags=5;
 							class Attributes
 							{
+								disableSimulation=1;
 							};
 							id=144;
 							type="SignAd_SponsorS_ARMEX_F";
@@ -13601,6 +12994,25 @@ class Mission
 							class CustomAttributes
 							{
 								class Attribute0
+								{
+									property="allowDamage";
+									expression="_this allowdamage _value;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"BOOL"
+												};
+											};
+											value=0;
+										};
+									};
+								};
+								class Attribute1
 								{
 									property="ObjectTextureCustom0";
 									expression="_this setObjectTextureGlobal [0,_value]";
@@ -13619,7 +13031,7 @@ class Mission
 										};
 									};
 								};
-								class Attribute1
+								class Attribute2
 								{
 									property="ace_isMedicalFacility";
 									expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
@@ -13638,7 +13050,7 @@ class Mission
 										};
 									};
 								};
-								nAttributes=2;
+								nAttributes=3;
 							};
 						};
 						class Item25
@@ -13653,8 +13065,8 @@ class Mission
 							flags=4;
 							class Attributes
 							{
+								init="this addAction [""<t color='#218936'>Arsenale Virtuale</t>"", {[""Open"",true] call BIS_fnc_arsenal}, nil, 1.5, true, false, """", ""_this == player"", 4, false]";
 								createAsSimpleObject=1;
-								disableSimulation=1;
 							};
 							id=915;
 							type="Misc_Backpackheap";
@@ -13712,8 +13124,8 @@ class Mission
 							flags=4;
 							class Attributes
 							{
+								init="this addAction [""<t color='#218936'>Arsenale Virtuale</t>"", {[""Open"",true] call BIS_fnc_arsenal}, nil, 1.5, true, false, """", ""_this == player"", 4, false]";
 								createAsSimpleObject=1;
-								disableSimulation=1;
 							};
 							id=917;
 							type="Misc_Backpackheap";
@@ -13772,8 +13184,8 @@ class Mission
 							flags=4;
 							class Attributes
 							{
+								init="this addAction [""<t color='#218936'>Arsenale Virtuale</t>"", {[""Open"",true] call BIS_fnc_arsenal}, nil, 1.5, true, false, """", ""_this == player"", 4, false]";
 								createAsSimpleObject=1;
-								disableSimulation=1;
 							};
 							id=918;
 							type="Misc_Backpackheap";
@@ -13832,8 +13244,8 @@ class Mission
 							flags=4;
 							class Attributes
 							{
+								init="this addAction [""<t color='#218936'>Arsenale Virtuale</t>"", {[""Open"",true] call BIS_fnc_arsenal}, nil, 1.5, true, false, """", ""_this == player"", 4, false]";
 								createAsSimpleObject=1;
-								disableSimulation=1;
 							};
 							id=919;
 							type="Misc_Backpackheap";
@@ -13893,8 +13305,8 @@ class Mission
 							flags=4;
 							class Attributes
 							{
+								init="this addAction [""<t color='#218936'>Arsenale Virtuale</t>"", {[""Open"",true] call BIS_fnc_arsenal}, nil, 1.5, true, false, """", ""_this == player"", 4, false]";
 								createAsSimpleObject=1;
-								disableSimulation=1;
 							};
 							id=920;
 							type="Misc_Backpackheap";
@@ -13953,8 +13365,8 @@ class Mission
 							flags=4;
 							class Attributes
 							{
+								init="this addAction [""<t color='#218936'>Arsenale Virtuale</t>"", {[""Open"",true] call BIS_fnc_arsenal}, nil, 1.5, true, false, """", ""_this == player"", 4, false]";
 								createAsSimpleObject=1;
-								disableSimulation=1;
 							};
 							id=921;
 							type="Misc_Backpackheap";
@@ -15362,7 +14774,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="[[[[],[]],[[],[]],[[],[]],[[""ACE_NonSteerableParachute""],[1]]],false]";
+													value="[[[[],[]],[[],[]],[[],[]],[[],[]]],true]";
 												};
 											};
 										};
@@ -15636,7 +15048,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="[[[[],[]],[[],[]],[[],[]],[[],[]]],true]";
+													value="[[[[""rhs_weap_M136""],[2]],[[""rhs_mag_30Rnd_556x45_M855A1_Stanag_No_Tracer"",""rhsusf_100Rnd_556x45_M200_soft_pouch"",""rhsusf_200Rnd_556x45_soft_pouch"",""rhs_mag_an_m8hc"",""ACE_HandFlare_Green"",""ACE_HandFlare_Red""],[30,10,5,10,1,1]],[[""ACE_bloodIV_500"",""ACE_CableTie"",""ACE_EarPlugs"",""ACE_epinephrine"",""ACE_microDAGR"",""ACE_morphine""],[5,5,5,5,2,10]],[[],[]]],false]";
 												};
 											};
 										};
@@ -15781,7 +15193,7 @@ class Mission
 													"SCALAR"
 												};
 											};
-											value=0;
+											value=1;
 										};
 									};
 								};
@@ -16939,6 +16351,7 @@ class Mission
 							{
 								position[]={11712,192,12992};
 							};
+							init="0=this spawn {waitUntil {time > 0}; _this removeCuratorEditableObjects [units ALEF_15BN_equipaggiamenti, false];}";
 							id=167;
 							type="ModuleCurator_F";
 							atlOffset=25.936096;
@@ -17089,7 +16502,7 @@ class Mission
 													"BOOL"
 												};
 											};
-											value=0;
+											value=1;
 										};
 									};
 								};
@@ -17776,7 +17189,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="POPO";
+											value="PLTNET 1";
 										};
 									};
 								};
@@ -18539,7 +17952,7 @@ class Mission
 								position[]={11838,158.89999,12663};
 								angles[]={0,3.1406851,0};
 							};
-							init="if (!isMultiplayer) then {this spawn {waitUntil {time > 0}; deleteVehicle _this}}";
+							init="if (!isMultiplayer) then {deleteVehicle this}";
 							isPlayable=1;
 							id=111;
 							type="VirtualSpectator_F";
@@ -18650,7 +18063,7 @@ class Mission
 								position[]={11838,158.8999,12665};
 								angles[]={0,3.1406925,0};
 							};
-							init="if (!isMultiplayer) then {this spawn {waitUntil {time > 0}; deleteVehicle _this}}";
+							init="if (!isMultiplayer) then {deleteVehicle this}";
 							isPlayable=1;
 							id=112;
 							type="VirtualSpectator_F";
@@ -18762,7 +18175,7 @@ class Mission
 								position[]={11838,158.8999,12666};
 								angles[]={0,3.1406925,0};
 							};
-							init="if (!isMultiplayer) then {this spawn {waitUntil {time > 0}; deleteVehicle _this}}";
+							init="if (!isMultiplayer) then {deleteVehicle this}";
 							isPlayable=1;
 							id=113;
 							type="VirtualSpectator_F";
@@ -18874,7 +18287,7 @@ class Mission
 								position[]={11838,158.8999,12664};
 								angles[]={0,3.1406925,0};
 							};
-							init="if (!isMultiplayer) then {this spawn {waitUntil {time > 0}; deleteVehicle _this}}";
+							init="if (!isMultiplayer) then {deleteVehicle this}";
 							isPlayable=1;
 							id=114;
 							type="VirtualSpectator_F";
@@ -18986,7 +18399,7 @@ class Mission
 								position[]={11838,158.90356,12668};
 								angles[]={6.2698579,3.1406925,0};
 							};
-							init="if (!isMultiplayer) then {this spawn {waitUntil {time > 0}; deleteVehicle _this}}";
+							init="if (!isMultiplayer) then {deleteVehicle this}";
 							isPlayable=1;
 							id=115;
 							type="VirtualSpectator_F";
@@ -19098,7 +18511,7 @@ class Mission
 								position[]={11838,158.92065,12669};
 								angles[]={6.2698579,3.1406925,0};
 							};
-							init="if (!isMultiplayer) then {this spawn {waitUntil {time > 0}; deleteVehicle _this}}";
+							init="if (!isMultiplayer) then {deleteVehicle this}";
 							isPlayable=1;
 							id=116;
 							type="VirtualSpectator_F";
@@ -19210,7 +18623,7 @@ class Mission
 								position[]={11838,158.8999,12662};
 								angles[]={0,3.1406925,0};
 							};
-							init="if (!isMultiplayer) then {this spawn {waitUntil {time > 0}; deleteVehicle _this}}";
+							init="if (!isMultiplayer) then {deleteVehicle this}";
 							isPlayable=1;
 							id=117;
 							type="VirtualSpectator_F";
@@ -19322,7 +18735,7 @@ class Mission
 								position[]={11838,158.91528,12656};
 								angles[]={0.013332055,3.1406925,6.2698536};
 							};
-							init="if (!isMultiplayer) then {this spawn {waitUntil {time > 0}; deleteVehicle _this}}";
+							init="if (!isMultiplayer) then {deleteVehicle this}";
 							isPlayable=1;
 							id=118;
 							type="VirtualSpectator_F";
@@ -19434,7 +18847,7 @@ class Mission
 								position[]={11838,158.8999,12667};
 								angles[]={0,3.1406925,0};
 							};
-							init="if (!isMultiplayer) then {this spawn {waitUntil {time > 0}; deleteVehicle _this}}";
+							init="if (!isMultiplayer) then {deleteVehicle this}";
 							isPlayable=1;
 							id=119;
 							type="VirtualSpectator_F";
@@ -19546,7 +18959,7 @@ class Mission
 								position[]={11838,158.8999,12659};
 								angles[]={0,3.1406925,0};
 							};
-							init="if (!isMultiplayer) then {this spawn {waitUntil {time > 0}; deleteVehicle _this}}";
+							init="if (!isMultiplayer) then {deleteVehicle this}";
 							isPlayable=1;
 							id=120;
 							type="VirtualSpectator_F";
@@ -19658,7 +19071,7 @@ class Mission
 								position[]={11838,158.8999,12661};
 								angles[]={0,3.1406925,0};
 							};
-							init="if (!isMultiplayer) then {this spawn {waitUntil {time > 0}; deleteVehicle _this}}";
+							init="if (!isMultiplayer) then {deleteVehicle this}";
 							isPlayable=1;
 							id=121;
 							type="VirtualSpectator_F";
@@ -19770,7 +19183,7 @@ class Mission
 								position[]={11838,158.8999,12660};
 								angles[]={0,3.1406925,0};
 							};
-							init="if (!isMultiplayer) then {this spawn {waitUntil {time > 0}; deleteVehicle _this}}";
+							init="if (!isMultiplayer) then {deleteVehicle this}";
 							isPlayable=1;
 							id=122;
 							type="VirtualSpectator_F";
@@ -19882,7 +19295,7 @@ class Mission
 								position[]={11838,158.90063,12657};
 								angles[]={0,3.1406925,0};
 							};
-							init="if (!isMultiplayer) then {this spawn {waitUntil {time > 0}; deleteVehicle _this}}";
+							init="if (!isMultiplayer) then {deleteVehicle this}";
 							isPlayable=1;
 							id=123;
 							type="VirtualSpectator_F";
@@ -19994,7 +19407,7 @@ class Mission
 								position[]={11838,158.93848,12655};
 								angles[]={0.013332055,3.1406925,6.2698536};
 							};
-							init="if (!isMultiplayer) then {this spawn {waitUntil {time > 0}; deleteVehicle _this}}";
+							init="if (!isMultiplayer) then {deleteVehicle this}";
 							isPlayable=1;
 							id=124;
 							type="VirtualSpectator_F";
@@ -20106,7 +19519,7 @@ class Mission
 								position[]={11838,158.8999,12658};
 								angles[]={0,3.1406925,0};
 							};
-							init="if (!isMultiplayer) then {this spawn {waitUntil {time > 0}; deleteVehicle _this}}";
+							init="if (!isMultiplayer) then {deleteVehicle this}";
 							isPlayable=1;
 							id=125;
 							type="VirtualSpectator_F";
@@ -20218,7 +19631,7 @@ class Mission
 								position[]={11838,158.95142,12654};
 								angles[]={0.013332055,3.1406925,6.2698536};
 							};
-							init="if (!isMultiplayer) then {this spawn {waitUntil {time > 0}; deleteVehicle _this}}";
+							init="if (!isMultiplayer) then {deleteVehicle this}";
 							isPlayable=1;
 							id=126;
 							type="VirtualSpectator_F";
