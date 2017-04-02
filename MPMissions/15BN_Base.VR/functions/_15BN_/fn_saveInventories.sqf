@@ -1,5 +1,3 @@
-#define DEBUG_MODE_FULL
-
 /*
 	Description:
 	Save and overwrites any arsenal template having name starting with [=15BN=].
@@ -17,6 +15,7 @@
 	Nothing
 */
 
+// #define DEBUG_MODE_FULL
 #define PREFIX ALEF
 #define COMPONENT base
 #define THIS_FILE fn_saveTemplates.sqf
