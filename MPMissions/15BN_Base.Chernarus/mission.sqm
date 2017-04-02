@@ -13037,7 +13037,6 @@ class Mission
 							class Attributes
 							{
 								init="this addAction [""<t color='#218936'>Arsenale Virtuale</t>"", {[""Open"",true] call BIS_fnc_arsenal}, nil, 1.5, true, false, """", ""_this == player"", 4, false]";
-								createAsSimpleObject=1;
 							};
 							id=915;
 							type="Misc_Backpackheap";
@@ -13096,7 +13095,6 @@ class Mission
 							class Attributes
 							{
 								init="this addAction [""<t color='#218936'>Arsenale Virtuale</t>"", {[""Open"",true] call BIS_fnc_arsenal}, nil, 1.5, true, false, """", ""_this == player"", 4, false]";
-								createAsSimpleObject=1;
 							};
 							id=917;
 							type="Misc_Backpackheap";
@@ -13156,7 +13154,6 @@ class Mission
 							class Attributes
 							{
 								init="this addAction [""<t color='#218936'>Arsenale Virtuale</t>"", {[""Open"",true] call BIS_fnc_arsenal}, nil, 1.5, true, false, """", ""_this == player"", 4, false]";
-								createAsSimpleObject=1;
 							};
 							id=918;
 							type="Misc_Backpackheap";
@@ -13216,7 +13213,6 @@ class Mission
 							class Attributes
 							{
 								init="this addAction [""<t color='#218936'>Arsenale Virtuale</t>"", {[""Open"",true] call BIS_fnc_arsenal}, nil, 1.5, true, false, """", ""_this == player"", 4, false]";
-								createAsSimpleObject=1;
 							};
 							id=919;
 							type="Misc_Backpackheap";
@@ -13277,7 +13273,6 @@ class Mission
 							class Attributes
 							{
 								init="this addAction [""<t color='#218936'>Arsenale Virtuale</t>"", {[""Open"",true] call BIS_fnc_arsenal}, nil, 1.5, true, false, """", ""_this == player"", 4, false]";
-								createAsSimpleObject=1;
 							};
 							id=920;
 							type="Misc_Backpackheap";
@@ -13337,7 +13332,6 @@ class Mission
 							class Attributes
 							{
 								init="this addAction [""<t color='#218936'>Arsenale Virtuale</t>"", {[""Open"",true] call BIS_fnc_arsenal}, nil, 1.5, true, false, """", ""_this == player"", 4, false]";
-								createAsSimpleObject=1;
 							};
 							id=921;
 							type="Misc_Backpackheap";
