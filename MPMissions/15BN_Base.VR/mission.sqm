@@ -8,7 +8,7 @@ class EditorData
 	toggles=37;
 	class ItemIDProvider
 	{
-		nextID=461;
+		nextID=468;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=275;
+		nextID=297;
 	};
 	class Camera
 	{
-		pos[]={4360.0215,79.495262,4400.7529};
-		dir[]={0.39736426,-0.64462942,0.65316963};
-		up[]={0.33509684,0.76439756,0.55081403};
-		aside[]={0.85435975,-2.7741771e-007,-0.51976234};
+		pos[]={4999.4102,6.8433213,5004.9766};
+		dir[]={0.22843626,-0.24324942,-0.94269371};
+		up[]={0.057288017,0.96996158,-0.2364126};
+		aside[]={-0.97188842,-5.2968971e-008,-0.23551053};
 	};
 };
 binarizationWanted=0;
@@ -1059,7 +1059,7 @@ class Mission
 											flags=4;
 											class Attributes
 											{
-												init="if (!isMultiplayer) then {deleteVehicle this}";
+												init="if (!isMultiplayer) then {this spawn {waitUntil {time > 0}; deleteVehicle _this}}";
 												presenceCondition="isMultiplayer";
 												description="Alpha  1 - MG";
 												isPlayable=1;
@@ -1327,7 +1327,7 @@ class Mission
 											flags=4;
 											class Attributes
 											{
-												init="if (!isMultiplayer) then {deleteVehicle this}";
+												init="if (!isMultiplayer) then {this spawn {waitUntil {time > 0}; deleteVehicle _this}}";
 												presenceCondition="isMultiplayer";
 												description="Alpha  1 - RF";
 												isPlayable=1;
@@ -1590,7 +1590,7 @@ class Mission
 											flags=4;
 											class Attributes
 											{
-												init="if (!isMultiplayer) then {deleteVehicle this}";
+												init="if (!isMultiplayer) then {this spawn {waitUntil {time > 0}; deleteVehicle _this}}";
 												presenceCondition="isMultiplayer";
 												description="Alpha  1 - RF";
 												isPlayable=1;
@@ -1852,7 +1852,7 @@ class Mission
 											flags=4;
 											class Attributes
 											{
-												init="if (!isMultiplayer) then {deleteVehicle this}";
+												init="if (!isMultiplayer) then {this spawn {waitUntil {time > 0}; deleteVehicle _this}}";
 												presenceCondition="isMultiplayer";
 												description="Alpha  1 - RF";
 												isPlayable=1;
@@ -2134,7 +2134,7 @@ class Mission
 											flags=4;
 											class Attributes
 											{
-												init="if (!isMultiplayer) then {deleteVehicle this}";
+												init="if (!isMultiplayer) then {this spawn {waitUntil {time > 0}; deleteVehicle _this}}";
 												presenceCondition="";
 												description="Alpha  1 - AT";
 												isPlayable=1;
@@ -2407,7 +2407,7 @@ class Mission
 											class Attributes
 											{
 												rank="CORPORAL";
-												init="if (!isMultiplayer) then {deleteVehicle this}";
+												init="if (!isMultiplayer) then {this spawn {waitUntil {time > 0}; deleteVehicle _this}}";
 												presenceCondition="isMultiplayer";
 												description="Alpha  1 - Medico";
 												isPlayable=1;
@@ -2712,7 +2712,7 @@ class Mission
 											flags=4;
 											class Attributes
 											{
-												init="if (!isMultiplayer) then {deleteVehicle this}";
+												init="if (!isMultiplayer) then {this spawn {waitUntil {time > 0}; deleteVehicle _this}}";
 												presenceCondition="isMultiplayer";
 												description="Alpha  1 - GL";
 												isPlayable=1;
