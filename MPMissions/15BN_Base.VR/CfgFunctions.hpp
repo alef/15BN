@@ -1,6 +1,10 @@
 class ALEF {
 	tag = "ALEF";
 	class _15BN_ {
+	class 3DEN_Replace
+	{
+		description = "Replace this mission objects with merged template mission.";
+	};
 	class fixACREnuisance
 	{
 		description = "Reset ACRE desync message.";
