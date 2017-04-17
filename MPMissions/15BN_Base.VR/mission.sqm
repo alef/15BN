@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=297;
+		nextID=302;
 	};
 	class Camera
 	{
-		pos[]={4999.4102,6.8433213,5004.9766};
-		dir[]={0.22843626,-0.24324942,-0.94269371};
-		up[]={0.057288017,0.96996158,-0.2364126};
-		aside[]={-0.97188842,-5.2968971e-008,-0.23551053};
+		pos[]={4471.0166,9.8672733,4458.0571};
+		dir[]={-0.67641503,-0.3290565,-0.65897322};
+		up[]={-0.23570676,0.94430375,-0.22962819};
+		aside[]={-0.6978361,1.2619421e-007,0.71630824};
 	};
 };
 binarizationWanted=0;
@@ -69,7 +69,6 @@ addons[]=
 	"ace_advanced_ballistics",
 	"ace_advanced_throwing",
 	"ace_cargo",
-	"acre_api",
 	"ace_fastroping",
 	"A3_Modules_F_Curator_Curator",
 	"ace_map_gestures",
@@ -79,6 +78,7 @@ addons[]=
 	"ace_advanced_fatigue",
 	"A3_Modules_F",
 	"ace_mk6mortar",
+	"acre_api",
 	"ace_respawn",
 	"ace_zeus",
 	"mcc_sandbox",
@@ -347,73 +347,73 @@ class AddonsMetaData
 		};
 		class Item37
 		{
-			className="acre_api";
-			name="ACRE2 - API";
-			author="ACRE2Team";
-			url="https://github.com/IDI-Systems/acre2";
-		};
-		class Item38
-		{
 			className="ace_fastroping";
 			name="ACE3 - Fastroping";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item39
+		class Item38
 		{
 			className="A3_Modules_F_Curator";
 			name="Arma 3 Zeus Update - Scripted Modules";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item40
+		class Item39
 		{
 			className="ace_map_gestures";
 			name="ACE3 - Map Gestures";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item41
+		class Item40
 		{
 			className="ace_finger";
 			name="ACE3 - Finger";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item42
+		class Item41
 		{
 			className="ace_viewdistance";
 			name="ACE3 - View Distance";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item43
+		class Item42
 		{
 			className="ace_winddeflection";
 			name="ACE3 - Wind Deflection";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item44
+		class Item43
 		{
 			className="ace_advanced_fatigue";
 			name="ACE3 - Advanced Fatigue";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item45
+		class Item44
 		{
 			className="A3_Modules_F";
 			name="Arma 3 Alpha - Scripted Modules";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item46
+		class Item45
 		{
 			className="ace_mk6mortar";
 			name="ACE3 - Mk6 Mortar";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
+		};
+		class Item46
+		{
+			className="acre_api";
+			name="ACRE2 - API";
+			author="ACRE2Team";
+			url="https://github.com/IDI-Systems/acre2";
 		};
 		class Item47
 		{
@@ -483,6 +483,25 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
+			property="RespawnButton";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=0;
+				};
+			};
+		};
+		class Attribute1
+		{
 			property="RespawnTemplates";
 			expression="true";
 			class Value
@@ -517,10 +536,15 @@ class CustomAttributes
 				};
 			};
 		};
-		class Attribute1
+		nAttributes=2;
+	};
+	class Category1
+	{
+		name="Scenario";
+		class Attribute0
 		{
-			property="RespawnButton";
-			expression="true";
+			property="cba_settings_hash";
+			expression="false";
 			class Value
 			{
 				class data
@@ -529,19 +553,138 @@ class CustomAttributes
 					{
 						type[]=
 						{
-							"SCALAR"
+							"ARRAY"
 						};
 					};
-					value=0;
+					class value
+					{
+						items=4;
+						class Item0
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="#CBA_HASH#";
+							};
+						};
+						class Item1
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"ARRAY"
+									};
+								};
+								class value
+								{
+									items=1;
+									class Item0
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="acre_sys_core_ignoreantennadirection";
+										};
+									};
+								};
+							};
+						};
+						class Item2
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"ARRAY"
+									};
+								};
+								class value
+								{
+									items=1;
+									class Item0
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"BOOL"
+															};
+														};
+														value=1;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"BOOL"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
+								};
+							};
+						};
+						class Item3
+						{
+							class data
+							{
+								nil=1;
+								class type
+								{
+									type[]=
+									{
+										"ANY"
+									};
+								};
+							};
+						};
+					};
 				};
 			};
 		};
-		nAttributes=2;
-	};
-	class Category1
-	{
-		name="Scenario";
-		class Attribute0
+		class Attribute1
 		{
 			property="EnableDebugConsole";
 			expression="true";
@@ -560,7 +703,7 @@ class CustomAttributes
 				};
 			};
 		};
-		nAttributes=1;
+		nAttributes=2;
 	};
 };
 class Mission
@@ -3660,7 +3803,7 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={4502,5.8236537,4432.0195};
+										position[]={4502,5.8127475,4432.0195};
 									};
 									side="Empty";
 									flags=4;
@@ -3698,7 +3841,7 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={4542.0029,4.9376926,4429.9004};
+										position[]={4542.0029,5.1344991,4429.9009};
 									};
 									side="Empty";
 									flags=4;
@@ -7197,7 +7340,7 @@ class Mission
 					name="Moduli";
 					class Entities
 					{
-						items=25;
+						items=24;
 						class Item0
 						{
 							dataType="Logic";
@@ -7620,102 +7763,12 @@ class Mission
 							dataType="Logic";
 							class PositionInfo
 							{
-								position[]={4400,5,4520};
-							};
-							id=155;
-							type="acre_api_DifficultySettings";
-							class CustomAttributes
-							{
-								class Attribute0
-								{
-									property="acre_api_DifficultySettings_Interference";
-									expression="_this setVariable ['Interference',_value,true];";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"BOOL"
-												};
-											};
-											value=1;
-										};
-									};
-								};
-								class Attribute1
-								{
-									property="acre_api_DifficultySettings_SignalLoss";
-									expression="_this setVariable ['SignalLoss',_value,true];";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"BOOL"
-												};
-											};
-											value=1;
-										};
-									};
-								};
-								class Attribute2
-								{
-									property="acre_api_DifficultySettings_IgnoreAntennaDirection";
-									expression="_this setVariable ['IgnoreAntennaDirection',_value,true];";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"BOOL"
-												};
-											};
-											value=1;
-										};
-									};
-								};
-								class Attribute3
-								{
-									property="acre_api_DifficultySettings_FullDuplex";
-									expression="_this setVariable ['FullDuplex',_value,true];";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"BOOL"
-												};
-											};
-											value=0;
-										};
-									};
-								};
-								nAttributes=4;
-							};
-						};
-						class Item5
-						{
-							dataType="Logic";
-							class PositionInfo
-							{
 								position[]={4448,5,4504};
 							};
 							id=147;
 							type="ACE_moduleEquipFRIES";
 						};
-						class Item6
+						class Item5
 						{
 							dataType="Logic";
 							class PositionInfo
@@ -7825,7 +7878,7 @@ class Mission
 								nAttributes=5;
 							};
 						};
-						class Item7
+						class Item6
 						{
 							dataType="Logic";
 							class PositionInfo
@@ -7915,7 +7968,7 @@ class Mission
 								nAttributes=4;
 							};
 						};
-						class Item8
+						class Item7
 						{
 							dataType="Logic";
 							class PositionInfo
@@ -8043,7 +8096,7 @@ class Mission
 								nAttributes=6;
 							};
 						};
-						class Item9
+						class Item8
 						{
 							dataType="Logic";
 							class PositionInfo
@@ -8152,7 +8205,7 @@ class Mission
 								nAttributes=5;
 							};
 						};
-						class Item10
+						class Item9
 						{
 							dataType="Logic";
 							class PositionInfo
@@ -8204,7 +8257,7 @@ class Mission
 								nAttributes=2;
 							};
 						};
-						class Item11
+						class Item10
 						{
 							dataType="Logic";
 							class PositionInfo
@@ -8256,7 +8309,7 @@ class Mission
 								nAttributes=2;
 							};
 						};
-						class Item12
+						class Item11
 						{
 							dataType="Logic";
 							class PositionInfo
@@ -8346,7 +8399,7 @@ class Mission
 								nAttributes=4;
 							};
 						};
-						class Item13
+						class Item12
 						{
 							dataType="Logic";
 							class PositionInfo
@@ -8455,7 +8508,7 @@ class Mission
 								nAttributes=5;
 							};
 						};
-						class Item14
+						class Item13
 						{
 							dataType="Logic";
 							class PositionInfo
@@ -8507,7 +8560,7 @@ class Mission
 								nAttributes=2;
 							};
 						};
-						class Item15
+						class Item14
 						{
 							dataType="Logic";
 							class PositionInfo
@@ -8519,7 +8572,7 @@ class Mission
 							id=156;
 							type="Logic";
 						};
-						class Item16
+						class Item15
 						{
 							dataType="Logic";
 							class PositionInfo
@@ -8799,7 +8852,7 @@ class Mission
 								nAttributes=14;
 							};
 						};
-						class Item17
+						class Item16
 						{
 							dataType="Logic";
 							class PositionInfo
@@ -8889,7 +8942,7 @@ class Mission
 								nAttributes=4;
 							};
 						};
-						class Item18
+						class Item17
 						{
 							dataType="Logic";
 							class PositionInfo
@@ -9112,7 +9165,7 @@ class Mission
 								nAttributes=11;
 							};
 						};
-						class Item19
+						class Item18
 						{
 							dataType="Logic";
 							class PositionInfo
@@ -9164,7 +9217,7 @@ class Mission
 								nAttributes=2;
 							};
 						};
-						class Item20
+						class Item19
 						{
 							dataType="Logic";
 							class PositionInfo
@@ -9235,7 +9288,7 @@ class Mission
 								nAttributes=3;
 							};
 						};
-						class Item21
+						class Item20
 						{
 							dataType="Logic";
 							class PositionInfo
@@ -9363,7 +9416,7 @@ class Mission
 								nAttributes=6;
 							};
 						};
-						class Item22
+						class Item21
 						{
 							dataType="Logic";
 							class PositionInfo
@@ -9700,7 +9753,7 @@ class Mission
 								nAttributes=17;
 							};
 						};
-						class Item23
+						class Item22
 						{
 							dataType="Logic";
 							class PositionInfo
@@ -9942,7 +9995,7 @@ class Mission
 								nAttributes=12;
 							};
 						};
-						class Item24
+						class Item23
 						{
 							dataType="Logic";
 							class PositionInfo
