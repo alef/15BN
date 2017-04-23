@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={6243.6606,92.518753,11739.408};
-		dir[]={0.71751273,-0.32437214,-0.61641371};
-		up[]={0.24604689,0.94592744,-0.21137844};
-		aside[]={-0.65164858,1.0733493e-007,-0.75852531};
+		pos[]={6035.3354,102.64177,11501.112};
+		dir[]={0.34002188,-0.45763719,0.82156658};
+		up[]={0.17500773,0.88913721,0.42285672};
+		aside[]={0.92400068,1.9406434e-007,-0.3824167};
 	};
 };
 binarizationWanted=0;
@@ -52284,7 +52284,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={6031.3042,83.124191,11470.067};
+								position[]={6031.3042,85.226524,11470.067};
 								angles[]={6.2816033,0.74195462,6.2751846};
 							};
 							side="Empty";
@@ -52294,15 +52294,14 @@ class Mission
 							};
 							id=5;
 							type="rhsusf_m1025_d_s_m2";
-							atlOffset=-2.1023331;
 						};
 						class Item7
 						{
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={6040.561,82.997498,11461.992};
-								angles[]={6.278389,0.74195343,6.2687874};
+								position[]={6040.561,85.096931,11461.992};
+								angles[]={6.2751918,0.74195343,6.2687874};
 							};
 							side="Empty";
 							flags=4;
@@ -52312,7 +52311,6 @@ class Mission
 							};
 							id=7;
 							type="rhsusf_m1025_d_s_m2";
-							atlOffset=-2.0994339;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -52380,8 +52378,8 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={6037.4917,83.05365,11464.482};
-								angles[]={6.278389,0.74195343,6.2687874};
+								position[]={6037.4917,85.154449,11464.482};
+								angles[]={6.278389,0.74195343,6.2751846};
 							};
 							side="Empty";
 							flags=4;
@@ -52391,7 +52389,6 @@ class Mission
 							};
 							id=8;
 							type="rhsusf_m1025_d_s_m2";
-							atlOffset=-2.1007996;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -52459,7 +52456,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={6034.4878,83.091507,11467.287};
+								position[]={6034.4878,85.191956,11467.287};
 								angles[]={6.278389,0.74195343,6.2751846};
 							};
 							side="Empty";
@@ -52470,7 +52467,6 @@ class Mission
 							};
 							id=9;
 							type="rhsusf_m1025_d_s_m2";
-							atlOffset=-2.1004486;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -53292,11 +53288,11 @@ class Mission
 						};
 					};
 					id=933;
-					atlOffset=-0.036506653;
+					atlOffset=-0.036491394;
 				};
 			};
 			id=929;
-			atlOffset=-0.13319397;
+			atlOffset=-0.13318634;
 		};
 	};
 };
