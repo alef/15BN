@@ -16,7 +16,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=174;
+		nextID=184;
 	};
 	class Camera
 	{
@@ -730,7 +730,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=30;
+		items=29;
 		class Item0
 		{
 			dataType="Object";
@@ -23116,49 +23116,6 @@ class Mission
 			};
 			id=1281;
 			atlOffset=-0.00032043457;
-		};
-		class Item29
-		{
-			dataType="Layer";
-			name="Base_1";
-			class Entities
-			{
-				items=2;
-				class Item0
-				{
-					dataType="Layer";
-					name="BLUFOR_1";
-					class Entities
-					{
-						items=2;
-						class Item0
-						{
-							dataType="Layer";
-							name="Team";
-							id=1297;
-							atlOffset=-195.47183;
-						};
-						class Item1
-						{
-							dataType="Layer";
-							name="Veicoli_1";
-							id=1310;
-							atlOffset=-211.85542;
-						};
-					};
-					id=1296;
-					atlOffset=-200.15578;
-				};
-				class Item1
-				{
-					dataType="Layer";
-					name="Moduli_1";
-					id=1333;
-					atlOffset=-220.97086;
-				};
-			};
-			id=1292;
-			atlOffset=-200.25864;
 		};
 	};
 	class Connections
