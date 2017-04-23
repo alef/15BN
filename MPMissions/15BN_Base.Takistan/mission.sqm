@@ -632,29 +632,189 @@ randomSeed=11334868;
 class ScenarioData
 {
 	author="PasinZioCan";
+	briefing=0;
+	debriefing=0;
+	showCompass=0;
+	showGPS=0;
+	showWatch=0;
+	saving=0;
+	respawnDialog=0;
+	disabledAI=1;
+	joinUnassigned=0;
+	respawn=3;
+	enableTeamSwitch=0;
+	class Header
+	{
+		gameType="Coop";
+		minPlayers=1;
+	};
+};
+class CustomAttributes
+{
+	class Category0
+	{
+		name="Multiplayer";
+		class Attribute0
+		{
+			property="RespawnButton";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=0;
+				};
+			};
+		};
+		class Attribute1
+		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
+					class value
+					{
+						items=1;
+						class Item0
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="Spectator";
+							};
+						};
+					};
+				};
+			};
+		};
+		class Attribute2
+		{
+			property="ReviveMode";
+			expression="false";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=0;
+				};
+			};
+		};
+		class Attribute3
+		{
+			property="SharedObjectives";
+			expression="if (isMultiplayer) then {[_value] spawn bis_fnc_sharedObjectives;};";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=0;
+				};
+			};
+		};
+		nAttributes=4;
+	};
+	class Category1
+	{
+		name="Scenario";
+		class Attribute0
+		{
+			property="Init";
+			expression="if !(is3DEN) then {[] call compile _value;};";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"STRING"
+						};
+					};
+					value="";
+				};
+			};
+		};
+		class Attribute1
+		{
+			property="EnableDebugConsole";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=1;
+				};
+			};
+		};
+		nAttributes=2;
+	};
 };
 class Mission
 {
 	class Intel
 	{
-		timeOfChanges=1800.0002;
-		startWeather=0.40000001;
+		briefingName="Base";
+		overviewText="Bravo 1 = Alpha 2-1. Bravo 2 = Alpha 2-2. Bravo 3 = Alpha 2-3.";
+		timeOfChanges=0;
+		startWeather=0;
 		startWind=0.1;
 		startWaves=0.1;
-		forecastWeather=0.40000001;
+		forecastWeather=0;
 		forecastWind=0.1;
 		forecastWaves=0.1;
 		forecastLightnings=0.1;
-		rainForced=1;
-		lightningsForced=1;
 		wavesForced=1;
-		windForced=1;
 		year=2016;
+		month=02;
 		day=14;
 		hour=20;
 		minute=50;
-		startFogDecay=0.014;
-		forecastFogDecay=0.014;
+		startFogDecay=0;
+		forecastFogDecay=0;
 	};
 	class Entities
 	{
