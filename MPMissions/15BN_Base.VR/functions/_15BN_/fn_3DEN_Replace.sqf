@@ -8,7 +8,9 @@
 		Nothing
 
 	Example:
-		From 3DEN, press CTRL+D and execute [] call ALEF_fnc_3DEN_Replace;
+		From 3DEN, watch ALEF_3DEN_Replace_status, press CTRL+D and execute
+		terminate ALEF_th; ALEF_fnc_3DEN_Replace = compile preprocessFileLineNumbers "functions\_15BN_\fn_3DEN_Replace.sqf";  ALEF_th = 0 spawn ALEF_fnc_3DEN_Replace
+ [] call ALEF_fnc_3DEN_Replace;
 
 	Returns:
 		Nothing
@@ -20,7 +22,7 @@
 #define THIS_FILE fn_3DEN_Replace.sqf
 #include "\x\cba\addons\main\script_macros_common.hpp"
 LOG("Begin");
-
+ALEF_3DEN_Replace_status = "Replacing ...";
 private _base =   {if ("_Base" in get3DENLayerEntities _x) exitWith {_x}} forEach (all3DENEntities select 6);
 private _merged = {if  ("Base" in get3DENLayerEntities _x) exitWith {_x}} forEach (all3DENEntities select 6);
 private _base_objects = [];
@@ -73,4 +75,63 @@ _merged call _fill_merged_objects;
 	} forEach _merged_objects;
 
 } forEach _base_objects;
+// Scenario attributes can't be merged.
+set3DENMissionAttributes [
+	 ["Scenario", "IntelBriefingName", "Base"]
+	,["Scenario", "OverviewPicture", ""]
+	,["Scenario", "OverviewText", ""]
+	,["Scenario", "OverviewPictureLocked", ""]
+	,["Scenario", "OverviewTextLocked", ""]
+	,["Scenario", "LoadScreen", ""]
+	,["Scenario", "OnLoadMission", ""]
+	,["Scenario", "Briefing", false]
+	,["Scenario", "Debriefing", false]
+	,["Scenario", "Saving", false]
+	,["Scenario", "ShowMap", true]
+	,["Scenario", "ShowCompass", false]
+	,["Scenario", "ShowWatch", false]
+	,["Scenario", "ShowGPS", false]
+	,["Scenario", "ShowHUD", true]
+	,["Scenario", "ShowUAVFeed", true]
+	,["Scenario", "ForceRotorLibSimulation", false]
+	,["Scenario", "EnableDebugConsole", 1]
+	,["Scenario", "DoneKeys", []] // Debugger says String
+	,["Scenario", "Keys", []] // Debugger says String
+	,["Scenario", "KeysLimit", 0]
+	,["Scenario", "IntelIndepAllegiance", [1,0]]
+	,["Scenario", "SaveBinarized", false]
+	,["Scenario", "Init",""] // not on BIKI
+
+	,["Intel", "IntelDate", [2017,4,22]]
+	,["Intel", "IntelTime", 12]
+	,["Intel", "IntelTimeOfChanges", 0] // TBC, min in GUI is 1800 (30 min)
+	,["Intel", "IntelWeatherStart", 0]
+	,["Intel", "IntelWeatherForecast", 0]
+	,["Intel", "IntelFogStart", [0,0,0]] // BIKI says number
+	,["Intel", "IntelFogForecast", [0,0,0]] // BIKI says number
+	,["Intel", "IntelRainIsForced", false]
+	,["Intel", "IntelLightningIsForced", false]
+	,["Intel", "IntelWaveIsForced", false]
+	,["Intel", "IntelWindIsForced", false]
+
+	,["Multiplayer", "GameType", "Coop"]
+	,["Multiplayer", "MinPlayers", 1]
+	,["Multiplayer", "IntelOverviewText","Bravo 1 = Alpha 2-1. Bravo 2 = Alpha 2-2. Bravo 3 = Alpha 2-3."]
+	,["Multiplayer", "DisabledAI", true]
+	,["Multiplayer", "JoinUnassigned", false] // Debugger says true (TBC)
+	,["Multiplayer", "Respawn", 3] // Respawn on Custom Position
+	,["Multiplayer", "RespawnTemplates", ["Spectator"]]
+	,["Multiplayer", "RespawnDelay", 0]
+	,["Multiplayer", "RespawnVehicleDelay", 0]
+	,["Multiplayer", "RespawnDialog", false]
+	,["Multiplayer", "RespawnButton", 0]
+	,["Multiplayer", "EnableTeamSwitch", false]
+	,["Multiplayer", "AIKills", false]
+	,["Multiplayer", "SharedObjectives", 0] // not on BIKI
+	,["Multiplayer", "ReviveMode", 0] // not on BIKI
+
+	,["GarbageCollection", "CorpseManagerMode", 0]
+	,["GarbageCollection", "WreckManagerMode", 0]
+];
+ALEF_3DEN_Replace_status = "Done replacing.";
 LOG("End");
