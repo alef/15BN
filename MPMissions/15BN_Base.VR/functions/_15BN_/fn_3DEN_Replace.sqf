@@ -118,18 +118,28 @@ _merged call _fill_merged_objects;
 		 _dst set3DENAttribute  [_attr, (_src get3DENAttribute _attr) select 0];
 		} forEach ((configFile >> "CfgVehicles" >> (typeOf _src) >> "Arguments") call BIS_fnc_getCfgSubClasses);
 
-		// Units
-		{ private _attr = _x;
-		  TRACE_3("Object: ", typeOf _dst, _attr, _src get3DENAttribute _attr);
-		 _dst set3DENAttribute  [_attr, (_src get3DENAttribute _attr) select 0];
-		} forEach [
-			"Init", "hideObject", "enableSimulation", "allowDamage",
-			"enableStamina", "presence", "presenceCondition", "ammoBox"
-		];
+		// Units and Modules
+		TRACE_2("Names: ", name _src, name _dst);
+		private _a = (name _src) select [0, 8] == "[=15BN=]";
+		private _b = (name _dst) select [0, 8] == "[=15BN=]";
+		TRACE_2("[=15BN=]: ", _a, _b);
+		if ( (_a && _b) || (!_a && !_b) ) then {
+		    { private _attr = _x;
+		      TRACE_3("Object: ", typeOf _dst, _attr, _src get3DENAttribute _attr);
+		      _dst set3DENAttribute  [_attr, (_src get3DENAttribute _attr) select 0];
+		    } forEach [
+			    "Init", "hideObject", "enableSimulation", "allowDamage",
+			    "enableStamina", "presence", "presenceCondition", "ammoBox"
+		    ];
 
-		// Units: ammoBox doesn't always work
-		[ _src, [_dst, "Inventory"]] call BIS_fnc_saveInventory;
-		[ _dst, [_dst, "Inventory"]] call BIS_fnc_loadInventory;
+		    if ((_dst isKindOf "CAManBase")) then {
+			    // Units: ammoBox doesn't always work
+			    [ _src, [_dst, "Inventory"]] call BIS_fnc_saveInventory;
+			    [ _dst, [_dst, "Inventory"]] call BIS_fnc_loadInventory;
+			    LOG("Inventory saved!");
+		    };
+		};
+
 	};
 	} forEach _merged_objects;
 
