@@ -1,4 +1,4 @@
-version=52;
+version=53;
 class EditorData
 {
 	moveGridStep=2;
@@ -16,7 +16,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=187;
+		nextID=189;
 	};
 	class Camera
 	{
@@ -36,8 +36,6 @@ addons[]=
 	"A3_Ui_F",
 	"ace_map",
 	"A3_Characters_F",
-	"asr_ai3_cfgcamouflage",
-	"asr_ai3_cfgvehicles",
 	"rhsusf_c_weapons",
 	"A3_Weapons_F",
 	"ace_optics",
@@ -47,11 +45,8 @@ addons[]=
 	"ace_maptools",
 	"ace_microdagr",
 	"ace_flashlights",
-	"asr_ai3_rhs_us_c",
 	"rhsusf_sounds",
 	"rhs_c_troops",
-	"asr_ai3_rhs_ru_c",
-	"asr_ai3_rhs_ru_camo_c",
 	"rhs_c_bmp3",
 	"rhs_c_a2port_car",
 	"rhs_c_a2port_air",
@@ -72,7 +67,6 @@ addons[]=
 	"ace_interaction",
 	"ace_cargo",
 	"ace_dragging",
-	"mcc_sandbox",
 	"ace_advanced_ballistics",
 	"ace_advanced_throwing",
 	"ace_captives",
@@ -88,6 +82,7 @@ addons[]=
 	"ace_respawn",
 	"RHS_US_A2Port_Armor",
 	"A3_Weapons_F_Ammoboxes",
+	"ace_rearm",
 	"ace_mk6mortar",
 	"rhsusf_c_fmtv",
 	"A3_Structures_F_Training",
@@ -115,7 +110,7 @@ class AddonsMetaData
 			className="A3_Structures_F_Mil";
 			name="Arma 3 - Military Buildings and Structures";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item1
 		{
@@ -143,7 +138,7 @@ class AddonsMetaData
 			className="A3_Ui_F";
 			name="Arma 3 - User Interface";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item5
 		{
@@ -157,7 +152,7 @@ class AddonsMetaData
 			className="A3_Characters_F";
 			name="Arma 3 Alpha - Characters and Clothing";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item7
 		{
@@ -171,7 +166,7 @@ class AddonsMetaData
 			className="A3_Weapons_F";
 			name="Arma 3 Alpha - Weapons and Accessories";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item9
 		{
@@ -225,7 +220,9 @@ class AddonsMetaData
 		class Item16
 		{
 			className="rhsusf_sounds";
-			name="rhsusf_sounds";
+			name="USF Sounds";
+			author="Red Hammer Studios";
+			url="http://www.rhsmods.org/";
 		};
 		class Item17
 		{
@@ -236,242 +233,244 @@ class AddonsMetaData
 		};
 		class Item18
 		{
-			className="rhs_c_weapons";
-			name="AFRF Weapons Pack";
-			author="Red Hammer Studios";
-			url="http://www.rhsmods.org/";
-		};
-		class Item19
-		{
 			className="rhs_c_bmp3";
 			name="BMP-3 IFV";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item20
+		class Item19
 		{
 			className="rhs_c_a2port_car";
 			name="A2 ported cars";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item21
+		class Item20
 		{
 			className="rhs_c_a2port_air";
 			name="A2 ported air";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item22
+		class Item21
 		{
 			className="rhs_c_t72";
 			name="T-72 Series Tanks";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item23
+		class Item22
 		{
 			className="rhs_c_a2port_armor";
 			name="A2 ported armor";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item24
+		class Item23
 		{
 			className="rhsusf_vehicles";
 			name="rhsusf_vehicles";
 		};
-		class Item25
+		class Item24
 		{
 			className="rhsusf_c_rg33";
 			name="RG-33 MRAP";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item26
+		class Item25
 		{
 			className="A3_Soft_F";
 			name="Arma 3 Alpha - Unarmored Land Vehicles";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
-		class Item27
+		class Item26
 		{
 			className="rhsusf_c_statics";
 			name="RHSUSF Static Weapons";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item28
+		class Item27
 		{
 			className="A3_Structures_F";
 			name="Arma 3 - Buildings and Structures";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
-		class Item29
+		class Item28
 		{
 			className="ace_logistics_wirecutter";
 			name="ACE3 - Logistics Wire Cutter";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item30
+		class Item29
 		{
 			className="ace_concertina_wire";
 			name="ACE3 - Concertina Wire";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item31
+		class Item30
 		{
 			className="A3_Data_F_Exp_A";
 			name="Arma 3 Nexus Update - Main Configuration";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
-		class Item32
+		class Item31
 		{
 			className="A3_Signs_F";
 			name="Arma 3 - Signs";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
-		class Item33
+		class Item32
 		{
 			className="A3_Structures_F_EPA";
 			name="Arma 3 Survive Episode - Buildings and Structures";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
-		class Item34
+		class Item33
 		{
 			className="ace_interaction";
 			name="ACE3 - Interaction";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item35
+		class Item34
 		{
 			className="ace_cargo";
 			name="ACE3 - Cargo";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item36
+		class Item35
 		{
 			className="ace_dragging";
 			name="ACE3 - Dragging";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item37
-		{
-			className="mcc_sandbox";
-			name="mcc_sandbox";
-		};
-		class Item38
+		class Item36
 		{
 			className="ace_advanced_ballistics";
 			name="ACE3 - Advanced Ballistics";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item39
+		class Item37
 		{
 			className="ace_advanced_throwing";
 			name="ACE3 - Advanced Throwing";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item40
+		class Item38
 		{
 			className="ace_captives";
 			name="ACE3 - Captives";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item41
+		class Item39
 		{
 			className="ace_fastroping";
 			name="ACE3 - Fastroping";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item42
+		class Item40
 		{
 			className="ace_map_gestures";
 			name="ACE3 - Map Gestures";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item43
+		class Item41
 		{
 			className="ace_finger";
 			name="ACE3 - Finger";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item44
+		class Item42
 		{
 			className="ace_viewdistance";
 			name="ACE3 - View Distance";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item45
+		class Item43
 		{
 			className="ace_winddeflection";
 			name="ACE3 - Wind Deflection";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item46
+		class Item44
 		{
 			className="A3_Modules_F_Curator";
 			name="Arma 3 Zeus Update - Scripted Modules";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
-		class Item47
+		class Item45
 		{
 			className="acre_api";
 			name="ACRE2 - API";
 			author="ACRE2Team";
 			url="https://github.com/IDI-Systems/acre2";
 		};
-		class Item48
+		class Item46
 		{
 			className="A3_Modules_F";
 			name="Arma 3 Alpha - Scripted Modules";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
-		class Item49
+		class Item47
 		{
 			className="ace_respawn";
 			name="ACE3 - Respawn";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item50
+		class Item48
 		{
 			className="RHS_US_A2Port_Armor";
 			name="M2 Bradley IFV";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item51
+		class Item49
+		{
+			className="ace_rearm";
+			name="ACE3 - Rearm";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
+		};
+		class Item50
 		{
 			className="ace_mk6mortar";
 			name="ACE3 - Mk6 Mortar";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item52
+		class Item51
 		{
 			className="rhsusf_c_fmtv";
 			name="FMTV Trucks";
+			author="Red Hammer Studios";
+			url="http://www.rhsmods.org/";
+		};
+		class Item52
+		{
+			className="rhs_c_weapons";
+			name="AFRF Weapons Pack";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
@@ -480,42 +479,42 @@ class AddonsMetaData
 			className="A3_Structures_F_EPB";
 			name="Arma 3 Adapt Episode - Buildings and Structures";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item54
 		{
 			className="A3_Structures_F_Heli";
 			name="Arma 3 Helicopters - Buildings and Structures";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item55
 		{
 			className="A3_Structures_F_Mark";
 			name="Arma 3 Marksmen - Buildings and Structures";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item56
 		{
 			className="A3_Structures_F_EPC";
 			name="Arma 3 Win Episode - Buildings and Structures";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item57
 		{
 			className="A3_Structures_F_Wrecks";
 			name="Arma 3 - Vehicle Wrecks";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item58
 		{
 			className="A3_Structures_F_Households";
 			name="Arma 3 - Houses";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 	};
 };
@@ -621,7 +620,7 @@ class CustomAttributes
 		};
 		class Attribute3
 		{
-			property="ReviveRequiredItemsFakConsumed";
+			property="ReviveMedicSpeedMultiplier";
 			expression="false";
 			class Value
 			{
@@ -631,10 +630,10 @@ class CustomAttributes
 					{
 						type[]=
 						{
-							"BOOL"
+							"SCALAR"
 						};
 					};
-					value=1;
+					value=2;
 				};
 			};
 		};
@@ -659,25 +658,6 @@ class CustomAttributes
 		};
 		class Attribute5
 		{
-			property="ReviveMedicSpeedMultiplier";
-			expression="false";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"SCALAR"
-						};
-					};
-					value=2;
-				};
-			};
-		};
-		class Attribute6
-		{
 			property="RespawnButton";
 			expression="true";
 			class Value
@@ -695,7 +675,7 @@ class CustomAttributes
 				};
 			};
 		};
-		class Attribute7
+		class Attribute6
 		{
 			property="ReviveForceRespawnDelay";
 			expression="false";
@@ -714,7 +694,7 @@ class CustomAttributes
 				};
 			};
 		};
-		class Attribute8
+		class Attribute7
 		{
 			property="ReviveBleedOutDelay";
 			expression="false";
@@ -733,7 +713,7 @@ class CustomAttributes
 				};
 			};
 		};
-		class Attribute9
+		class Attribute8
 		{
 			property="ReviveDelay";
 			expression="false";
@@ -752,7 +732,7 @@ class CustomAttributes
 				};
 			};
 		};
-		class Attribute10
+		class Attribute9
 		{
 			property="ReviveUnconsciousStateMode";
 			expression="false";
@@ -771,7 +751,7 @@ class CustomAttributes
 				};
 			};
 		};
-		class Attribute11
+		class Attribute10
 		{
 			property="ReviveRequiredItems";
 			expression="false";
@@ -790,12 +770,31 @@ class CustomAttributes
 				};
 			};
 		};
-		nAttributes=12;
+		nAttributes=11;
 	};
 	class Category1
 	{
 		name="Scenario";
 		class Attribute0
+		{
+			property="cba_settings_hasSettingsFile";
+			expression="false";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"BOOL"
+						};
+					};
+					value=1;
+				};
+			};
+		};
+		class Attribute1
 		{
 			property="EnableDebugConsole";
 			expression="true";
@@ -814,7 +813,7 @@ class CustomAttributes
 				};
 			};
 		};
-		nAttributes=1;
+		nAttributes=2;
 	};
 };
 class Mission
@@ -959,7 +958,7 @@ class Mission
 				class Attribute3
 				{
 					property="rhs_decalNumber";
-					expression="if(parseNumber _value >= 0)then{[_this, [['Number', cCH53NumberPlaces, _this getVariable ['rhs_decalNumber_type','USMCGrey'],parseNumber _value] ] ] call rhsusf_fnc_decalsInit};";
+					expression="if( _value >= 0)then{[_this, [['Number', cCH53NumberPlaces, _this getVariable ['rhs_decalNumber_type','USMCGrey'], _value] ] ] call rhsusf_fnc_decalsInit};";
 					class Value
 					{
 						class data
@@ -993,7 +992,7 @@ class Mission
 			};
 			id=115;
 			type="RHS_C130J";
-			atlOffset=-0.0026092529;
+			atlOffset=-0.19975471;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -1033,7 +1032,7 @@ class Mission
 			};
 			id=122;
 			type="RHS_A10";
-			atlOffset=0.10199928;
+			atlOffset=0.11290932;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -2364,7 +2363,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_isMedic";
-							expression="if (_value != -1) then {_this setVariable [""ace_medical_medicClass"",_value,true];};";
+							expression="if (_value > -1) then {_this setVariable [""ace_medical_medicClass"",_value,true];};";
 							class Value
 							{
 								class data
@@ -2687,6 +2686,7 @@ class Mission
 					};
 					id=596;
 					type="rhs_msv_sergeant";
+					atlOffset=0.063081741;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -2749,6 +2749,7 @@ class Mission
 					};
 					id=597;
 					type="rhs_msv_efreitor";
+					atlOffset=0.063081741;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -2809,7 +2810,7 @@ class Mission
 					};
 					id=598;
 					type="rhs_msv_grenadier_rpg";
-					atlOffset=9.5367432e-007;
+					atlOffset=0.063083649;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -2861,7 +2862,7 @@ class Mission
 						position[]={17176.504,13.49966,13310.218};
 					};
 					side="East";
-					flags=1;
+					flags=5;
 					class Attributes
 					{
 						skill=0.40000001;
@@ -2870,7 +2871,7 @@ class Mission
 					};
 					id=599;
 					type="rhs_msv_strelok_rpg_assist";
-					atlOffset=0.95355225;
+					atlOffset=0.063081741;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -2931,6 +2932,7 @@ class Mission
 					};
 					id=600;
 					type="rhs_msv_machinegunner";
+					atlOffset=0.063081741;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -2991,6 +2993,7 @@ class Mission
 					};
 					id=601;
 					type="rhs_msv_LAT";
+					atlOffset=0.063081741;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -3051,6 +3054,7 @@ class Mission
 					};
 					id=602;
 					type="rhs_msv_strelok_rpg_assist";
+					atlOffset=0.063081741;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -3102,7 +3106,7 @@ class Mission
 						position[]={17190.893,13.489978,13307.359};
 					};
 					side="East";
-					flags=1;
+					flags=5;
 					class Attributes
 					{
 						skill=0.40000001;
@@ -3111,7 +3115,7 @@ class Mission
 					};
 					id=603;
 					type="rhs_msv_rifleman";
-					atlOffset=0.82118702;
+					atlOffset=0.060425758;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -3172,6 +3176,7 @@ class Mission
 					};
 					id=604;
 					type="rhs_msv_rifleman";
+					atlOffset=0.063081741;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -3232,6 +3237,7 @@ class Mission
 					};
 					id=605;
 					type="rhs_msv_medic";
+					atlOffset=0.063081741;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -3283,6 +3289,7 @@ class Mission
 				speedMode="LIMITED";
 			};
 			id=595;
+			atlOffset=0.063081741;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -3403,7 +3410,7 @@ class Mission
 				class Attribute4
 				{
 					property="rhs_decalNumber";
-					expression="if(parseNumber _value >= 0)then{if(parseNumber _value == 0)then{{[_this setobjectTexture [_x,'a3\data_f\clear_empty.paa']]}foreach cRHSBMP3NumberPlaces}else{[_this, [['Number', cRHSBMP3NumberPlaces, _this getVariable ['rhs_decalNumber_type','DefaultRed'],parseNumber _value] ] ] call rhs_fnc_decalsInit}};";
+					expression="if( _value >= 0)then{if( _value == 0)then{{[_this setobjectTexture [_x,'a3\data_f\clear_empty.paa']]}foreach cRHSBMP3NumberPlaces}else{[_this, [['Number', cRHSBMP3NumberPlaces, _this getVariable ['rhs_decalNumber_type','DefaultRed'], _value] ] ] call rhs_fnc_decalsInit}};";
 					class Value
 					{
 						class data
@@ -3436,7 +3443,7 @@ class Mission
 			};
 			id=628;
 			type="RHS_Ural_MSV_01";
-			atlOffset=0.31161118;
+			atlOffset=0.29168701;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -3537,7 +3544,7 @@ class Mission
 				class Attribute5
 				{
 					property="rhs_decalNumber";
-					expression="if(parseNumber _value >= 0)then{[_this,[['Number', cDecals4CarsNumberPlaces, _this getVariable ['rhs_decalNumber_type','Default'],parseNumber _value]]] call rhs_fnc_decalsInit};";
+					expression="if( _value >= 0)then{[_this,[['Number', cDecals4CarsNumberPlaces, _this getVariable ['rhs_decalNumber_type','Default'], _value]]] call rhs_fnc_decalsInit};";
 					class Value
 					{
 						class data
@@ -3589,7 +3596,7 @@ class Mission
 			};
 			id=629;
 			type="RHS_Ural_MSV_01";
-			atlOffset=0.31165218;
+			atlOffset=0.29172802;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -3690,7 +3697,7 @@ class Mission
 				class Attribute5
 				{
 					property="rhs_decalNumber";
-					expression="if(parseNumber _value >= 0)then{[_this,[['Number', cDecals4CarsNumberPlaces, _this getVariable ['rhs_decalNumber_type','Default'],parseNumber _value]]] call rhs_fnc_decalsInit};";
+					expression="if( _value >= 0)then{[_this,[['Number', cDecals4CarsNumberPlaces, _this getVariable ['rhs_decalNumber_type','Default'], _value]]] call rhs_fnc_decalsInit};";
 					class Value
 					{
 						class data
@@ -3743,7 +3750,7 @@ class Mission
 			};
 			id=636;
 			type="RHS_Mi8mt_vdv";
-			atlOffset=-1.1444092e-005;
+			atlOffset=-0.17741299;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -3787,7 +3794,7 @@ class Mission
 				class Attribute2
 				{
 					property="rhs_decalNumber";
-					expression="if(parseNumber _value >= 0)then{if(parseNumber _value == 0)then{{[_this setobjectTexture [_x,'a3\data_f\clear_empty.paa']]}foreach cRHSAIRMI8NumberPlaces}else{[_this, [['Number', cRHSAIRMI8NumberPlaces, _this getVariable ['rhs_decalNumber_type','AviaYellow'],parseNumber _value] ] ] call rhs_fnc_decalsInit}};";
+					expression="if( _value >= 0)then{if( _value == 0)then{{[_this setobjectTexture [_x,'a3\data_f\clear_empty.paa']]}foreach cRHSAIRMI8NumberPlaces}else{[_this, [['Number', cRHSAIRMI8NumberPlaces, _this getVariable ['rhs_decalNumber_type','AviaYellow'], _value] ] ] call rhs_fnc_decalsInit}};";
 					class Value
 					{
 						class data
@@ -3941,7 +3948,7 @@ class Mission
 				class Attribute6
 				{
 					property="rhs_decalNumber";
-					expression="if(parseNumber _value >= 0)then{if(parseNumber _value == 0)then{{[_this setobjectTexture [_x,'a3\data_f\clear_empty.paa']]}foreach cRHST72NumberPlaces}else{[_this, [['Number', cRHST72NumberPlaces, _this getVariable ['rhs_decalNumber_type','Default'],parseNumber _value] ] ] call rhs_fnc_decalsInit}};";
+					expression="if( _value >= 0)then{if( _value == 0)then{{[_this setobjectTexture [_x,'a3\data_f\clear_empty.paa']]}foreach cRHST72NumberPlaces}else{[_this, [['Number', cRHST72NumberPlaces, _this getVariable ['rhs_decalNumber_type','Default'], _value] ] ] call rhs_fnc_decalsInit}};";
 					class Value
 					{
 						class data
@@ -4057,7 +4064,7 @@ class Mission
 				class Attribute2
 				{
 					property="rhs_decalNumber";
-					expression="if(parseNumber _value >= 0)then{if(parseNumber _value == 0)then{{[_this setobjectTexture [_x,'a3\data_f\clear_empty.paa']]}foreach cRHSAIRKA52NumberPlaces}else{[_this, [['Number', cRHSAIRKA52NumberPlaces, _this getVariable ['rhs_decalNumber_type','AviaYellow'],parseNumber _value] ] ] call rhs_fnc_decalsInit}};";
+					expression="if( _value >= 0)then{if( _value == 0)then{{[_this setobjectTexture [_x,'a3\data_f\clear_empty.paa']]}foreach cRHSAIRKA52NumberPlaces}else{[_this, [['Number', cRHSAIRKA52NumberPlaces, _this getVariable ['rhs_decalNumber_type','AviaYellow'], _value] ] ] call rhs_fnc_decalsInit}};";
 					class Value
 					{
 						class data
@@ -4135,7 +4142,7 @@ class Mission
 				class Attribute2
 				{
 					property="rhs_decalNumber";
-					expression="if(parseNumber _value >= 0)then{if(parseNumber _value == 0)then{{[_this setobjectTexture [_x,'a3\data_f\clear_empty.paa']]}foreach cRHSZSUNumberPlaces}else{[_this, [['Number', cRHSZSUNumberPlaces, _this getVariable ['rhs_decalNumber_type','Default'],parseNumber _value] ] ] call rhs_fnc_decalsInit}};";
+					expression="if( _value >= 0)then{if( _value == 0)then{{[_this setobjectTexture [_x,'a3\data_f\clear_empty.paa']]}foreach cRHSZSUNumberPlaces}else{[_this, [['Number', cRHSZSUNumberPlaces, _this getVariable ['rhs_decalNumber_type','Default'], _value] ] ] call rhs_fnc_decalsInit}};";
 					class Value
 					{
 						class data
@@ -4169,6 +4176,7 @@ class Mission
 			};
 			id=713;
 			type="rhsusf_m1025_w_s_m2";
+			atlOffset=-2.1030436;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -4364,6 +4372,7 @@ class Mission
 			};
 			id=714;
 			type="rhsusf_m1025_w_s_m2";
+			atlOffset=-2.1031971;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -4559,6 +4568,7 @@ class Mission
 			};
 			id=715;
 			type="rhsusf_m1025_w_s_m2";
+			atlOffset=-2.1027679;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -4754,7 +4764,7 @@ class Mission
 			};
 			id=716;
 			type="rhsusf_m1025_w_s_m2";
-			atlOffset=0.0015878677;
+			atlOffset=-2.1015244;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -5414,6 +5424,7 @@ class Mission
 					};
 					id=585;
 					type="rhs_msv_sergeant";
+					atlOffset=0.050428391;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -5476,6 +5487,7 @@ class Mission
 					};
 					id=586;
 					type="rhs_msv_efreitor";
+					atlOffset=0.050424576;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -5537,7 +5549,7 @@ class Mission
 					};
 					id=587;
 					type="rhs_msv_grenadier_rpg";
-					atlOffset=1.9073486e-006;
+					atlOffset=0.050430298;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -5599,6 +5611,7 @@ class Mission
 					};
 					id=588;
 					type="rhs_msv_strelok_rpg_assist";
+					atlOffset=0.050426483;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -5660,6 +5673,7 @@ class Mission
 					};
 					id=589;
 					type="rhs_msv_machinegunner";
+					atlOffset=0.050424576;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -5721,6 +5735,7 @@ class Mission
 					};
 					id=590;
 					type="rhs_msv_LAT";
+					atlOffset=0.050426483;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -5782,7 +5797,7 @@ class Mission
 					};
 					id=591;
 					type="rhs_msv_strelok_rpg_assist";
-					atlOffset=1.9073486e-006;
+					atlOffset=0.050426483;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -5844,6 +5859,7 @@ class Mission
 					};
 					id=592;
 					type="rhs_msv_rifleman";
+					atlOffset=0.050426483;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -5905,6 +5921,7 @@ class Mission
 					};
 					id=593;
 					type="rhs_msv_rifleman";
+					atlOffset=0.050426483;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -5966,7 +5983,7 @@ class Mission
 					};
 					id=594;
 					type="rhs_msv_medic";
-					atlOffset=1.9073486e-006;
+					atlOffset=0.050428391;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -6018,6 +6035,7 @@ class Mission
 				speedMode="LIMITED";
 			};
 			id=584;
+			atlOffset=0.050428391;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -7295,7 +7313,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_isMedic";
-							expression="if (_value != -1) then {_this setVariable [""ace_medical_medicClass"",_value,true];};";
+							expression="if (_value > -1) then {_this setVariable [""ace_medical_medicClass"",_value,true];};";
 							class Value
 							{
 								class data
@@ -8826,7 +8844,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_isMedic";
-							expression="if (_value != -1) then {_this setVariable [""ace_medical_medicClass"",_value,true];};";
+							expression="if (_value > -1) then {_this setVariable [""ace_medical_medicClass"",_value,true];};";
 							class Value
 							{
 								class data
@@ -10357,7 +10375,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_isMedic";
-							expression="if (_value != -1) then {_this setVariable [""ace_medical_medicClass"",_value,true];};";
+							expression="if (_value > -1) then {_this setVariable [""ace_medical_medicClass"",_value,true];};";
 							class Value
 							{
 								class data
@@ -11888,7 +11906,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_isMedic";
-							expression="if (_value != -1) then {_this setVariable [""ace_medical_medicClass"",_value,true];};";
+							expression="if (_value > -1) then {_this setVariable [""ace_medical_medicClass"",_value,true];};";
 							class Value
 							{
 								class data
@@ -13419,7 +13437,7 @@ class Mission
 						class Attribute0
 						{
 							property="ace_isMedic";
-							expression="if (_value != -1) then {_this setVariable [""ace_medical_medicClass"",_value,true];};";
+							expression="if (_value > -1) then {_this setVariable [""ace_medical_medicClass"",_value,true];};";
 							class Value
 							{
 								class data
@@ -16667,569 +16685,8 @@ class Mission
 			name="Common";
 			class Entities
 			{
-				items=15;
+				items=13;
 				class Item0
-				{
-					dataType="Logic";
-					class PositionInfo
-					{
-						position[]={17292.328,15.508533,13162.71};
-					};
-					id=1582;
-					type="mcc_sandbox_moduleMissionSettings";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="mcc_sandbox_moduleMissionSettings_artilleryComputer";
-							expression="_this setVariable ['artilleryComputer',_value,true];";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=1;
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="mcc_sandbox_moduleMissionSettings_respawnOnGroupLeader";
-							expression="_this setVariable ['respawnOnGroupLeader',_value,true];";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=1;
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="mcc_sandbox_moduleMissionSettings_t2t";
-							expression="_this setVariable ['t2t',_value,true];";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="mcc_sandbox_moduleMissionSettings_commanderConsole";
-							expression="_this setVariable ['commanderConsole',_value,true];";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=1;
-								};
-							};
-						};
-						class Attribute4
-						{
-							property="mcc_sandbox_moduleMissionSettings_squadDialogPip";
-							expression="_this setVariable ['squadDialogPip',_value,true];";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute5
-						{
-							property="mcc_sandbox_moduleMissionSettings_allowRTS";
-							expression="_this setVariable ['allowRTS',_value,true];";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute6
-						{
-							property="mcc_sandbox_moduleMissionSettings_deleteBody";
-							expression="_this setVariable ['deleteBody',_value,true];";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute7
-						{
-							property="mcc_sandbox_moduleMissionSettings_sqlPDA";
-							expression="_this setVariable ['sqlPDA',_value,true];";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=1;
-								};
-							};
-						};
-						class Attribute8
-						{
-							property="mcc_sandbox_moduleMissionSettings_commanderConsoleShowGPS";
-							expression="_this setVariable ['commanderConsoleShowGPS',_value,true];";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute9
-						{
-							property="mcc_sandbox_moduleMissionSettings_logistics";
-							expression="_this setVariable ['logistics',_value,true];";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute10
-						{
-							property="mcc_sandbox_moduleMissionSettings_messages";
-							expression="_this setVariable ['messages',_value,true];";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute11
-						{
-							property="mcc_sandbox_moduleMissionSettings_sync";
-							expression="_this setVariable ['sync',_value,true];";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute12
-						{
-							property="mcc_sandbox_moduleMissionSettings_allowKitChange";
-							expression="_this setVariable ['allowKitChange',_value,true];";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute13
-						{
-							property="mcc_sandbox_moduleMissionSettings_saveGear";
-							expression="_this setVariable ['saveGear',_value,true];";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute14
-						{
-							property="mcc_sandbox_moduleMissionSettings_roleSelection";
-							expression="_this setVariable ['roleSelection',_value,true];";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute15
-						{
-							property="mcc_sandbox_moduleMissionSettings_timeAccel";
-							expression="_this setVariable ['timeAccel',_value,true];";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute16
-						{
-							property="mcc_sandbox_moduleMissionSettings_respawnMenu";
-							expression="_this setVariable ['respawnMenu',_value,true];";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute17
-						{
-							property="mcc_sandbox_moduleMissionSettings_squadDialog";
-							expression="_this setVariable ['squadDialog',_value,true];";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=1;
-								};
-							};
-						};
-						class Attribute18
-						{
-							property="mcc_sandbox_moduleMissionSettings_commanderConsoleAI";
-							expression="_this setVariable ['commanderConsoleAI',_value,true];";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=1;
-								};
-							};
-						};
-						class Attribute19
-						{
-							property="mcc_sandbox_moduleMissionSettings_commanderConsoleWP";
-							expression="_this setVariable ['commanderConsoleWP',_value,true];";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=1;
-								};
-							};
-						};
-						nAttributes=20;
-					};
-				};
-				class Item1
-				{
-					dataType="Logic";
-					class PositionInfo
-					{
-						position[]={17304.383,15.997487,13152.916};
-					};
-					id=1581;
-					type="mcc_sandbox_moduleCover";
-					atlOffset=0.00022697449;
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="mcc_sandbox_moduleCover_survive";
-							expression="_this setVariable ['survive',_value,true];";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="mcc_sandbox_moduleCover_coverUI";
-							expression="_this setVariable ['coverUI',_value,true];";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="mcc_sandbox_moduleCover_actionMenu";
-							expression="_this setVariable ['actionMenu',_value,true];";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="mcc_sandbox_moduleCover_interaction";
-							expression="_this setVariable ['interaction',_value,true];";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=1;
-								};
-							};
-						};
-						class Attribute4
-						{
-							property="mcc_sandbox_moduleCover_cover";
-							expression="_this setVariable ['cover',_value,true];";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute5
-						{
-							property="mcc_sandbox_moduleCover_coverVault";
-							expression="_this setVariable ['coverVault',_value,true];";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute6
-						{
-							property="mcc_sandbox_moduleCover_switchWeapons";
-							expression="_this setVariable ['switchWeapons',_value,true];";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute7
-						{
-							property="mcc_sandbox_moduleCover_interactionUI";
-							expression="_this setVariable ['interactionUI',_value,true];";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=1;
-								};
-							};
-						};
-						nAttributes=8;
-					};
-				};
-				class Item2
 				{
 					dataType="Logic";
 					class PositionInfo
@@ -17434,7 +16891,7 @@ class Mission
 						nAttributes=10;
 					};
 				};
-				class Item3
+				class Item1
 				{
 					dataType="Logic";
 					class PositionInfo
@@ -17544,7 +17001,7 @@ class Mission
 						nAttributes=5;
 					};
 				};
-				class Item4
+				class Item2
 				{
 					dataType="Logic";
 					class PositionInfo
@@ -17616,7 +17073,7 @@ class Mission
 						nAttributes=3;
 					};
 				};
-				class Item5
+				class Item3
 				{
 					dataType="Logic";
 					class PositionInfo
@@ -17650,7 +17107,7 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item6
+				class Item4
 				{
 					dataType="Logic";
 					class PositionInfo
@@ -17661,7 +17118,7 @@ class Mission
 					type="ACE_moduleEquipFRIES";
 					atlOffset=9.5367432e-007;
 				};
-				class Item7
+				class Item5
 				{
 					dataType="Logic";
 					class PositionInfo
@@ -17752,7 +17209,7 @@ class Mission
 						nAttributes=4;
 					};
 				};
-				class Item8
+				class Item6
 				{
 					dataType="Logic";
 					class PositionInfo
@@ -17881,7 +17338,7 @@ class Mission
 						nAttributes=6;
 					};
 				};
-				class Item9
+				class Item7
 				{
 					dataType="Logic";
 					class PositionInfo
@@ -17991,7 +17448,7 @@ class Mission
 						nAttributes=5;
 					};
 				};
-				class Item10
+				class Item8
 				{
 					dataType="Logic";
 					class PositionInfo
@@ -18044,7 +17501,7 @@ class Mission
 						nAttributes=2;
 					};
 				};
-				class Item11
+				class Item9
 				{
 					dataType="Logic";
 					class PositionInfo
@@ -18097,7 +17554,7 @@ class Mission
 						nAttributes=2;
 					};
 				};
-				class Item12
+				class Item10
 				{
 					dataType="Logic";
 					class PositionInfo
@@ -18188,7 +17645,7 @@ class Mission
 						nAttributes=4;
 					};
 				};
-				class Item13
+				class Item11
 				{
 					dataType="Logic";
 					class PositionInfo
@@ -18298,7 +17755,7 @@ class Mission
 						nAttributes=5;
 					};
 				};
-				class Item14
+				class Item12
 				{
 					dataType="Logic";
 					class PositionInfo
@@ -18391,7 +17848,7 @@ class Mission
 				};
 			};
 			id=1687;
-			atlOffset=0.04646492;
+			atlOffset=0.046611786;
 		};
 		class Item70
 		{
@@ -23524,12 +22981,13 @@ class Mission
 				angles[]={0,0.68466282,0};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 			};
 			id=1955;
 			type="TargetP_Inf_F";
-			atlOffset=0.58217239;
+			atlOffset=0.073589325;
 		};
 		class Item305
 		{
@@ -24339,7 +23797,7 @@ class Mission
 			};
 			id=1987;
 			type="Land_WoodenCart_F";
-			atlOffset=0.023000717;
+			atlOffset=0.02344799;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -24477,6 +23935,7 @@ class Mission
 			};
 			id=1991;
 			type="Land_WheelCart_F";
+			atlOffset=4.2915344e-005;
 			class CustomAttributes
 			{
 				class Attribute0
