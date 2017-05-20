@@ -16,7 +16,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=225;
+		nextID=229;
 	};
 	class Camera
 	{
@@ -583,6 +583,7 @@ class AddonsMetaData
 	};
 };
 randomSeed=12630307;
+assetType="Free";
 class ScenarioData
 {
 	author="alef";
