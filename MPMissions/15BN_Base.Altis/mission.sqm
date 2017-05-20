@@ -582,6 +582,10 @@ class AddonsMetaData
 		};
 	};
 };
+class DynamicSimulation
+{
+	enable=0;
+};
 randomSeed=12630307;
 assetType="Free";
 class ScenarioData
