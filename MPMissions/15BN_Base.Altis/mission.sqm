@@ -607,6 +607,7 @@ class ScenarioData
 		minPlayers=1;
 		maxPlayers=84;
 	};
+	wreckRemovalMaxTime=3600;
 	corpseLimit=68;
 	corpseRemovalMinTime=3600;
 };
@@ -911,7 +912,6 @@ class Mission
 	class Intel
 	{
 		briefingName="Base";
-		overviewText="Bravo 1 = Alpha 2-1. Bravo 2 = Alpha 2-2. Bravo 3 = Alpha 2-3.";
 		timeOfChanges=0;
 		startWeather=0;
 		startWind=0.1;
