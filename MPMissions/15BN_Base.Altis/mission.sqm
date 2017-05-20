@@ -16,7 +16,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=206;
+		nextID=210;
 	};
 	class Camera
 	{
@@ -22560,6 +22560,7 @@ class Mission
 									};
 									id=2124;
 									type="rhsusf_usmc_marpat_wd_autorifleman_m249";
+									atlOffset=-9.5367432e-007;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -24174,7 +24175,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="ALEF_15BN_equipaggiamenti";
+											value="Equipaggiamenti";
 										};
 									};
 								};
