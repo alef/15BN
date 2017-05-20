@@ -599,7 +599,6 @@ class ScenarioData
 	saving=0;
 	respawnDialog=0;
 	disabledAI=1;
-	joinUnassigned=0;
 	respawn=3;
 	enableTeamSwitch=0;
 	class Header
