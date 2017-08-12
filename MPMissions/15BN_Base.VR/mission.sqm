@@ -16,7 +16,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=352;
+		nextID=357;
 	};
 	class Camera
 	{
@@ -739,10 +739,10 @@ class CustomAttributes
 };
 class Mission
 {
+	assetType="Free";
 	class Intel
 	{
 		briefingName="Base";
-		overviewText="Bravo 1 = Alpha 2-1. Bravo 2 = Alpha 2-2. Bravo 3 = Alpha 2-3.";
 		timeOfChanges=1800.0002;
 		startWeather=0;
 		startWind=0.1;
