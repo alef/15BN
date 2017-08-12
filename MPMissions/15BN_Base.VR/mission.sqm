@@ -471,7 +471,7 @@ class ScenarioData
 };
 class CustomAttributes
 {
-	class Category0
+	class Category15
 	{
 		name="Multiplayer";
 		class Attribute0
@@ -531,7 +531,7 @@ class CustomAttributes
 		};
 		nAttributes=2;
 	};
-	class Category1
+	class Category16
 	{
 		name="Scenario";
 		class Attribute0
@@ -7655,7 +7655,7 @@ class Mission
 							{
 								position[]={4416,5,4536};
 							};
-							init="0=this spawn {waitUntil {time > 0}; _this removeCuratorEditableObjects [units ALEF_15BN_equipaggiamenti, false];}";
+							init="call{0=this spawn {waitUntil {time > 60}; _this removeCuratorEditableObjects [units ALEF_15BN_equipaggiamenti, false];}}";
 							id=154;
 							type="ModuleCurator_F";
 							class CustomAttributes

@@ -49,6 +49,7 @@ set3DENMissionAttributes [
 	,["Scenario", "IntelIndepAllegiance", [1,0]]
 	,["Scenario", "SaveBinarized", false]
 	,["Scenario", "Init",""] // not on BIKI
+	,["Scenario", "assetType", "free"] // not on BIKI
 
 	,["Intel", "IntelDate", [2017,4,22]]
 	,["Intel", "IntelTime", 12]
