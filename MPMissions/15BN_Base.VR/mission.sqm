@@ -16,7 +16,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=347;
+		nextID=352;
 	};
 	class Camera
 	{
@@ -7616,7 +7616,26 @@ class Mission
 										};
 									};
 								};
-								nAttributes=1;
+								class Attribute1
+								{
+									property="ACE_moduleCargoSettings_paradropTimeCoefficent";
+									expression="_this setVariable ['paradropTimeCoefficent',_value,true];";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="2.5";
+										};
+									};
+								};
+								nAttributes=2;
 							};
 						};
 						class Item4
