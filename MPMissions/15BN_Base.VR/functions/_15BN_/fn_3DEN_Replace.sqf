@@ -1,8 +1,8 @@
 /*
 	Description:
 		Replace all units in mission with the one coming from the template
-		The template has an empty marker named Base.
-		The map has an empty marker named _Base.
+		The template has a layer with an empty marker named Base.
+		The map has a layer with an empty marker named _Base.
 
 	Parameter(s):
 		Nothing
@@ -16,7 +16,7 @@
 		Nothing
 */
 
-#define DEBUG_MODE_FULL
+// #define DEBUG_MODE_FULL
 #define PREFIX ALEF
 #define COMPONENT base
 #define THIS_FILE fn_3DEN_Replace.sqf
@@ -65,7 +65,7 @@ set3DENMissionAttributes [
 
 	,["Multiplayer", "GameType", "Coop"]
 	,["Multiplayer", "MinPlayers", 1]
-	,["Multiplayer", "IntelOverviewText","Bravo 1 = Alpha 2-1. Bravo 2 = Alpha 2-2. Bravo 3 = Alpha 2-3."]
+	,["Multiplayer", "IntelOverviewText",""] // Shown in the lobby
 	,["Multiplayer", "DisabledAI", true]
 	,["Multiplayer", "JoinUnassigned", false] // Debugger says true (TBC)
 	,["Multiplayer", "Respawn", 3] // Respawn on Custom Position
