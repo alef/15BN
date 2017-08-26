@@ -26,5 +26,5 @@ if (hasInterface) then { player createDiaryRecord ["Log", ["Sistema medico",
 hcRemoveAllGroups player;
 ["InitializePlayer", [player, true]] call BIS_fnc_dynamicGroups;
 endLoadingScreen;
-[["_15BN_","Istruzioni"],35,"",35,"",true,false,false,true] call BIS_fnc_advHint;
+[["_15BN_Base","Istruzioni"],35,"",35,"",true,false,false,true] call BIS_fnc_advHint;
 LOG("End");

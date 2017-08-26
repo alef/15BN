@@ -1,6 +1,8 @@
-class _15BN_ {
+class _15BN_Base {
+displayName = "15° Ricognitori Bande Nere";
 class Istruzioni
 {
+	logicalOrder = 1;
 	displayName = "15° Ricognitori Bande Nere";
 	noImage = false;
 	image = "img\15logo_BW.paa";
@@ -20,6 +22,7 @@ Buon divertimento!<br/>\
 };
 class ProntoSoccorso
 {
+	logicalOrder = 2;
 	displayName = "Pronto Soccorso";
 	noImage = false;
 	image = "img\15logo_BW.paa";
@@ -42,6 +45,7 @@ class ProntoSoccorso
 };
 class Equipaggiamenti
 {
+	logicalOrder = 3;
 	displayName = "Equipaggiamenti";
 	noImage = false;
 	image = "img\15logo_BW.paa";
@@ -58,11 +62,12 @@ Puoi anche salvare, ma la prossima volta verrà sovrascritto.<br/>\
 };
 class RadioTruppa
 {
+	logicalOrder = 4;
 	displayName = "Radio Truppa";
 	noImage = false;
 	image = "img\15logo_BW.paa";
 	description = "\
-<img size='8' shadow='1' image='\idi\clients\acre\addons\sys_prc343\Data\static\prc343_icon.paa' /><br/>\
+<img size='8' shadow='1' image='\idi\acre\addons\sys_prc343\Data\static\prc343_icon.paa' /><br/>\
 AN/PRC-343, 16 canali / 800m<br/>\
 %2 Alpha-1 sul canale 1<br/>\
 %2 Alpha-2 sul canale 2<br/>\
@@ -72,17 +77,19 @@ In caso di ulteriori squadre, si decide in gioco\
 };
 class RadioComando
 {
+	logicalOrder = 5;
 	displayName = "Radio Comando";
 	noImage = false;
 	image = "img\15logo_BW.paa";
 	description = "\
-<img size='8' shadow='1' image='\idi\clients\acre\addons\sys_prc148\Data\static\prc148_icon.paa' /><br/>\
+<img size='8' shadow='1' image='\idi\acre\addons\sys_prc148\Data\static\prc148_icon.paa' /><br/>\
 AN/PRC-148, 30-152MHz / 5 km<br/>\
 %2 Comando squadra sul canale 1<br/>\
 ";
 };
 class IstruzioniRadio
 {
+	logicalOrder = 6;
 	displayName = "Istruzioni Radio";
 	noImage = false;
 	image = "img\15logo_BW.paa";
@@ -102,6 +109,7 @@ Per prima o seconda si intende l'ordine in cui sono state caricate nell'inventar
 };
 class Forum
 {
+	logicalOrder = 7;
 	displayName = "Forum";
 	noImage = false;
 	image = "img\15logo_BW.paa";
