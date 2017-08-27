@@ -1,14 +1,14 @@
 version=53;
 class EditorData
 {
-	moveGridStep=2;
+	moveGridStep=1;
 	angleGridStep=0.78539819;
 	scaleGridStep=1;
 	autoGroupingDist=10;
 	toggles=549;
 	class ItemIDProvider
 	{
-		nextID=486;
+		nextID=490;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=402;
+		nextID=417;
 	};
 	class Camera
 	{
-		pos[]={4399.8306,7.9637885,4452.0972};
-		dir[]={-0.9168483,-0.2811861,-0.28346416};
-		up[]={-0.26865759,0.95964789,-0.083062127};
-		aside[]={-0.29538256,-6.9383532e-008,0.95539439};
+		pos[]={4403.9087,13.963504,4468.1431};
+		dir[]={-0.6544013,-0.49069986,-0.57531255};
+		up[]={-0.36853957,0.87132162,-0.32399967};
+		aside[]={-0.66026741,-1.2363307e-007,0.75103575};
 	};
 };
 binarizationWanted=0;
@@ -476,25 +476,6 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
-			property="RespawnButton";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"SCALAR"
-						};
-					};
-					value=0;
-				};
-			};
-		};
-		class Attribute1
-		{
 			property="RespawnTemplates";
 			expression="true";
 			class Value
@@ -526,6 +507,25 @@ class CustomAttributes
 							};
 						};
 					};
+				};
+			};
+		};
+		class Attribute1
+		{
+			property="RespawnButton";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=0;
 				};
 			};
 		};
@@ -774,7 +774,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4388.7329,8.9768047,4433.2671};
+						position[]={4389,8.9768047,4433};
 					};
 					side="Empty";
 					flags=5;
@@ -1194,7 +1194,7 @@ class Mission
 														underBarrel="rhsusf_acc_grip3";
 														class primaryMuzzleMag
 														{
-															name="rhs_mag_30Rnd_556x45_M855A1_Stanag_No_Tracer";
+															name="rhs_mag_30Rnd_556x45_Mk318_Stanag";
 															ammoLeft=30;
 														};
 													};
@@ -1227,13 +1227,13 @@ class Mission
 															};
 															class Item4
 															{
-																name="ACE_microDAGR";
-																count=1;
+																name="ACE_CableTie";
+																count=2;
 															};
 															class Item5
 															{
-																name="ACE_CableTie";
-																count=2;
+																name="ACE_microDAGR";
+																count=1;
 															};
 															class Item6
 															{
@@ -1268,7 +1268,7 @@ class Mission
 															};
 															class Item2
 															{
-																name="rhs_mag_30Rnd_556x45_M855A1_Stanag_No_Tracer";
+																name="rhs_mag_30Rnd_556x45_Mk318_Stanag";
 																count=10;
 																ammoLeft=30;
 															};
@@ -1456,7 +1456,7 @@ class Mission
 														underBarrel="rhsusf_acc_grip3";
 														class primaryMuzzleMag
 														{
-															name="rhs_mag_30Rnd_556x45_M855A1_Stanag_No_Tracer";
+															name="rhs_mag_30Rnd_556x45_Mk318_Stanag";
 															ammoLeft=30;
 														};
 													};
@@ -1489,13 +1489,13 @@ class Mission
 															};
 															class Item4
 															{
-																name="ACE_microDAGR";
-																count=1;
+																name="ACE_CableTie";
+																count=2;
 															};
 															class Item5
 															{
-																name="ACE_CableTie";
-																count=2;
+																name="ACE_microDAGR";
+																count=1;
 															};
 															class Item6
 															{
@@ -1530,7 +1530,7 @@ class Mission
 															};
 															class Item2
 															{
-																name="rhs_mag_30Rnd_556x45_M855A1_Stanag_No_Tracer";
+																name="rhs_mag_30Rnd_556x45_Mk318_Stanag";
 																count=10;
 																ammoLeft=30;
 															};
@@ -2857,6 +2857,131 @@ class Mission
 												presenceCondition="isMultiplayer";
 												description="RF@Alpha 1";
 												isPlayable=1;
+												class Inventory
+												{
+													class primaryWeapon
+													{
+														name="rhs_weap_m4a1_carryhandle";
+														optics="rhsusf_acc_ACOG2_USMC";
+														underBarrel="rhsusf_acc_grip3";
+														class primaryMuzzleMag
+														{
+															name="rhs_mag_30Rnd_556x45_Mk318_Stanag";
+															ammoLeft=30;
+														};
+													};
+													class uniform
+													{
+														typeName="rhs_uniform_FROG01_wd";
+														isBackpack=0;
+														class ItemCargo
+														{
+															items=8;
+															class Item0
+															{
+																name="ACE_EarPlugs";
+																count=1;
+															};
+															class Item1
+															{
+																name="ACE_fieldDressing";
+																count=10;
+															};
+															class Item2
+															{
+																name="ACE_morphine";
+																count=3;
+															};
+															class Item3
+															{
+																name="ACE_epinephrine";
+																count=1;
+															};
+															class Item4
+															{
+																name="ACE_CableTie";
+																count=2;
+															};
+															class Item5
+															{
+																name="ACE_microDAGR";
+																count=1;
+															};
+															class Item6
+															{
+																name="ACE_MapTools";
+																count=1;
+															};
+															class Item7
+															{
+																name="ACRE_PRC343";
+																count=1;
+															};
+														};
+													};
+													class vest
+													{
+														typeName="rhsusf_spc_rifleman";
+														isBackpack=0;
+														class MagazineCargo
+														{
+															items=3;
+															class Item0
+															{
+																name="rhs_mag_an_m8hc";
+																count=2;
+																ammoLeft=1;
+															};
+															class Item1
+															{
+																name="rhs_mag_m67";
+																count=2;
+																ammoLeft=1;
+															};
+															class Item2
+															{
+																name="rhs_mag_30Rnd_556x45_Mk318_Stanag";
+																count=10;
+																ammoLeft=30;
+															};
+														};
+														class ItemCargo
+														{
+															items=1;
+															class Item0
+															{
+																name="ACE_Flashlight_MX991";
+																count=1;
+															};
+														};
+													};
+													class backpack
+													{
+														typeName="rhsusf_assault_eagleaiii_coy";
+														isBackpack=1;
+														class MagazineCargo
+														{
+															items=2;
+															class Item0
+															{
+																name="rhs_mag_m18_green";
+																count=2;
+																ammoLeft=1;
+															};
+															class Item1
+															{
+																name="rhs_mag_m18_red";
+																count=2;
+																ammoLeft=1;
+															};
+														};
+													};
+													map="ItemMap";
+													compass="ItemCompass";
+													watch="ItemWatch";
+													radio="ItemRadioAcreFlagged";
+													headgear="rhsusf_lwh_helmet_marpatwd";
+												};
 											};
 											id=484;
 											type="rhsusf_usmc_recon_marpat_wd_rifleman";
@@ -6777,7 +6902,7 @@ class Mission
 									flags=4;
 									class Attributes
 									{
-										init="this setVariable [""ALEF_15BN_equipaggiamento"", ""[=15BN=] Fuciliere"", true]";
+										init="call{this setVariable [""ALEF_15BN_equipaggiamento"", ""[=15BN=] Fuciliere"", true]; diag_log ""FUCILIERE""}";
 										name="Fuciliere";
 										disableSimulation=1;
 										ignoreByDynSimulGrid=1;
@@ -6800,7 +6925,7 @@ class Mission
 												isBackpack=0;
 												class ItemCargo
 												{
-													items=7;
+													items=8;
 													class Item0
 													{
 														name="ACE_EarPlugs";
@@ -6836,11 +6961,16 @@ class Mission
 														name="ACE_MapTools";
 														count=1;
 													};
+													class Item7
+													{
+														name="ACRE_PRC343";
+														count=1;
+													};
 												};
 											};
 											class vest
 											{
-												typeName="rhsusf_spc_light";
+												typeName="rhsusf_spc_rifleman";
 												isBackpack=0;
 												class MagazineCargo
 												{
@@ -6860,7 +6990,7 @@ class Mission
 													class Item2
 													{
 														name="rhs_mag_30Rnd_556x45_Mk318_Stanag";
-														count=3;
+														count=10;
 														ammoLeft=30;
 													};
 												};
@@ -7077,7 +7207,7 @@ class Mission
 						class Item3
 						{
 							dataType="Marker";
-							position[]={4379.0332,0,4444.1265};
+							position[]={4389,0,4433};
 							name="respawn_west";
 							text="Base";
 							type="b_hq";
@@ -8339,7 +8469,7 @@ class Mission
 							dataType="Logic";
 							class PositionInfo
 							{
-								position[]={4390.978,5,4433.0303};
+								position[]={4389,5,4431};
 								angles[]={0,0.27975881,0};
 							};
 							name="serverChat";
@@ -9993,7 +10123,7 @@ class Mission
 				class Item5
 				{
 					dataType="Marker";
-					position[]={4374,0,4444};
+					position[]={4389,0,4434};
 					name="Base";
 					type="Empty";
 					colorName="ColorWEST";
@@ -10005,7 +10135,7 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={4388.8774,5,4430.814};
+						position[]={4389,5,4432};
 						angles[]={0,3.1406851,0};
 					};
 					init="if (!isMultiplayer) then {deleteVehicle this}";

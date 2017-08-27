@@ -25,7 +25,7 @@ class ProntoSoccorso
 	logicalOrder = 2;
 	displayName = "Pronto Soccorso";
 	noImage = false;
-	image = "img\15logo_BW.paa";
+	image = "\z\ace\addons\medical\UI\icons\medical_cross.paa";
 	description = "\
 %2 Il medico rimane al coperto, non troppo vicino ai muri, lontano dalle finestre<br/>\
 %2 I feriti vanno bendati appena possibile da uno o più commilitoni contemporaneamente<br/>\
@@ -48,9 +48,10 @@ class Equipaggiamenti
 	logicalOrder = 3;
 	displayName = "Equipaggiamenti";
 	noImage = false;
-	image = "img\15logo_BW.paa";
+	// image = "img\15logo_BW.paa";
+	image = "\a3\ui_f\data\gui\cfg\hints\Gear_ca.paa";
 	description = "\
-Carica un equipaggiamento predefinito dall'Arsenale Virtuale.<br/>\
+Carica un equipaggiamento predefinito:<br/>\
 %2 Con la rotellina del mouse seleziona %3Arsenale Virtuale%4<br/>\
 %2 Clicca %3CARICA%4<br/>\
 %2 Seleziona un equipaggiamento marcato %3[=15BN=]%4<br/>\
@@ -65,7 +66,7 @@ class RadioTruppa
 	logicalOrder = 4;
 	displayName = "Radio Truppa";
 	noImage = false;
-	image = "img\15logo_BW.paa";
+	image = "\a3\ui_f\data\gui\cfg\hints\CallSupport_CA.paa";
 	description = "\
 <img size='8' shadow='1' image='\idi\acre\addons\sys_prc343\Data\static\prc343_icon.paa' /><br/>\
 AN/PRC-343, 16 canali / 800m<br/>\
@@ -80,7 +81,7 @@ class RadioComando
 	logicalOrder = 5;
 	displayName = "Radio Comando";
 	noImage = false;
-	image = "img\15logo_BW.paa";
+	image = "\a3\ui_f\data\gui\cfg\hints\CallSupport_CA.paa";
 	description = "\
 <img size='8' shadow='1' image='\idi\acre\addons\sys_prc148\Data\static\prc148_icon.paa' /><br/>\
 AN/PRC-148, 30-152MHz / 5 km<br/>\
@@ -92,7 +93,7 @@ class IstruzioniRadio
 	logicalOrder = 6;
 	displayName = "Istruzioni Radio";
 	noImage = false;
-	image = "img\15logo_BW.paa";
+	image = "\a3\ui_f\data\gui\cfg\hints\CallSupport_CA.paa";
 	description = "\
 Premi %3[%11]%4 per aprire la radio sullo schermo,%3[ESC]%4 per chiuderla.<br/>\
 In alternativa, apri l'inventario e fai doppio clic sulla radio.<br/>\
