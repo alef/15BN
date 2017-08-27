@@ -94,18 +94,25 @@ class IstruzioniRadio
 	noImage = false;
 	image = "img\15logo_BW.paa";
 	description = "\
-Premi %3[Ctrl+Alt+Caps Lock]%4 per aprire la radio sullo schermo,%3[ESC]%4 per chiuderla.<br/>\
+Premi %3[%11]%4 per aprire la radio sullo schermo,%3[ESC]%4 per chiuderla.<br/>\
 In alternativa, apri l'inventario e fai doppio clic sulla radio.<br/>\
 Puoi girare le manopole cliccandoci col tasto destro o sinistro.<br/>\
 Salvo tasti personalizzati, questi sono quelli più usati per le radio:<br/>\
-%2 %3[Shift+Caps Lock]%4 trasmetti dalla prima<br/>\
-%2 %3[Ctrl+Caps Lock]%4 trasmetti dalla seconda<br/>\
-%2 %3[Alt+Shift+Caps Lock]%4 seleziona un'altra radio<br/>\
-%2 %3[Caps Lock]%4 trasmetti dall'ultima selezionata<br/>\
+%2 %3[%12]%4 trasmetti dalla prima<br/>\
+%2 %3[%13]%4 trasmetti dalla seconda<br/>\
+%2 %3[%14]%4 seleziona un'altra radio<br/>\
+%2 %3[%15]%4 trasmetti dall'ultima selezionata<br/>\
 ";
 	tip = "\
 Per prima o seconda si intende l'ordine in cui sono state caricate nell'inventario personale.\
 ";
+	arguments[] = {
+		 "missionNamespace getVariable 'ALEF_15BN_Base_ACRE2_OpenRadio'"
+		,"missionNamespace getVariable 'ALEF_15BN_Base_ACRE2_AltPTTKey1'"
+		,"missionNamespace getVariable 'ALEF_15BN_Base_ACRE2_AltPTTKey2'"
+		,"missionNamespace getVariable 'ALEF_15BN_Base_ACRE2_CycleRadio'"
+		,"missionNamespace getVariable 'ALEF_15BN_Base_ACRE2_DefaultPTTKey'"
+	};
 };
 class Forum
 {
