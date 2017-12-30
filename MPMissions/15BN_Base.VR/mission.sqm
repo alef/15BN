@@ -67,7 +67,6 @@ addons[]=
 	"A3_Modules_F_Curator_Curator",
 	"ace_map",
 	"ace_map_gestures",
-	"ace_winddeflection",
 	"A3_Modules_F",
 	"A3_Data_F_Exp_A_Virtual"
 };
@@ -75,7 +74,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=37;
+		items=36;
 		class Item0
 		{
 			className="A3_Structures_F_Mil";
@@ -312,19 +311,12 @@ class AddonsMetaData
 		};
 		class Item34
 		{
-			className="ace_winddeflection";
-			name="ACE3 - Wind Deflection";
-			author="ACE-Team";
-			url="http://ace3mod.com/";
-		};
-		class Item35
-		{
 			className="A3_Modules_F";
 			name="Arma 3 Alpha - Scripted Modules";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item36
+		class Item35
 		{
 			className="A3_Data_F_Exp_A";
 			name="Arma 3 Nexus Update - Main Configuration";
@@ -2005,7 +1997,7 @@ class CustomAttributes
 								};
 								class value
 								{
-									items=41;
+									items=44;
 									class Item0
 									{
 										class data
@@ -2580,6 +2572,48 @@ class CustomAttributes
 											value="ace_mk6mortar_useammohandling";
 										};
 									};
+									class Item41
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="ace_winddeflection_enabled";
+										};
+									};
+									class Item42
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="ace_winddeflection_vehicleenabled";
+										};
+									};
+									class Item43
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="ace_winddeflection_simulationinterval";
+										};
+									};
 								};
 							};
 						};
@@ -2596,7 +2630,7 @@ class CustomAttributes
 								};
 								class value
 								{
-									items=41;
+									items=44;
 									class Item0
 									{
 										class data
@@ -4423,6 +4457,141 @@ class CustomAttributes
 															};
 														};
 														value=1;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item41
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"BOOL"
+															};
+														};
+														value=1;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item42
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"BOOL"
+															};
+														};
+														value=1;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item43
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=0.050000001;
 													};
 												};
 												class Item1
@@ -11023,7 +11192,7 @@ class Mission
 					name="Moduli";
 					class Entities
 					{
-						items=10;
+						items=9;
 						class Item0
 						{
 							dataType="Logic";
@@ -11514,77 +11683,6 @@ class Mission
 							dataType="Logic";
 							class PositionInfo
 							{
-								position[]={4464,5,4520};
-							};
-							id=153;
-							type="ace_winddeflection_ModuleSettings";
-							class CustomAttributes
-							{
-								class Attribute0
-								{
-									property="ace_winddeflection_ModuleSettings_simulationInterval";
-									expression="_this setVariable ['simulationInterval',_value,true];";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"SCALAR"
-												};
-											};
-											value=0.050000001;
-										};
-									};
-								};
-								class Attribute1
-								{
-									property="ace_winddeflection_ModuleSettings_enabled";
-									expression="_this setVariable ['enabled',_value,true];";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"BOOL"
-												};
-											};
-											value=1;
-										};
-									};
-								};
-								class Attribute2
-								{
-									property="ace_winddeflection_ModuleSettings_vehicleEnabled";
-									expression="_this setVariable ['vehicleEnabled',_value,true];";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"BOOL"
-												};
-											};
-											value=1;
-										};
-									};
-								};
-								nAttributes=3;
-							};
-						};
-						class Item6
-						{
-							dataType="Logic";
-							class PositionInfo
-							{
 								position[]={4496,5,4520};
 							};
 							id=158;
@@ -11632,7 +11730,7 @@ class Mission
 								nAttributes=2;
 							};
 						};
-						class Item7
+						class Item6
 						{
 							dataType="Logic";
 							class PositionInfo
@@ -11644,7 +11742,7 @@ class Mission
 							id=156;
 							type="Logic";
 						};
-						class Item8
+						class Item7
 						{
 							dataType="Logic";
 							class PositionInfo
@@ -11924,7 +12022,7 @@ class Mission
 								nAttributes=14;
 							};
 						};
-						class Item9
+						class Item8
 						{
 							dataType="Logic";
 							class PositionInfo
