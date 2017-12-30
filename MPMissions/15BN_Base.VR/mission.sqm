@@ -73,14 +73,13 @@ addons[]=
 	"ace_winddeflection",
 	"A3_Modules_F",
 	"ace_mk6mortar",
-	"ace_respawn",
 	"A3_Data_F_Exp_A_Virtual"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=42;
+		items=41;
 		class Item0
 		{
 			className="A3_Structures_F_Mil";
@@ -358,13 +357,6 @@ class AddonsMetaData
 			url="http://ace3mod.com/";
 		};
 		class Item40
-		{
-			className="ace_respawn";
-			name="ACE3 - Respawn";
-			author="ACE-Team";
-			url="http://ace3mod.com/";
-		};
-		class Item41
 		{
 			className="A3_Data_F_Exp_A";
 			name="Arma 3 Nexus Update - Main Configuration";
@@ -2045,7 +2037,7 @@ class CustomAttributes
 								};
 								class value
 								{
-									items=18;
+									items=20;
 									class Item0
 									{
 										class data
@@ -2298,6 +2290,34 @@ class CustomAttributes
 											value="ace_viewdistance_objectviewdistancecoeff";
 										};
 									};
+									class Item18
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="ace_respawn_savepredeathgear";
+										};
+									};
+									class Item19
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="ace_respawn_removedeadbodiesdisconnected";
+										};
+									};
 								};
 							};
 						};
@@ -2314,7 +2334,7 @@ class CustomAttributes
 								};
 								class value
 								{
-									items=18;
+									items=20;
 									class Item0
 									{
 										class data
@@ -3120,6 +3140,96 @@ class CustomAttributes
 															};
 														};
 														value=0;
+													};
+												};
+											};
+										};
+									};
+									class Item18
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"BOOL"
+															};
+														};
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item19
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"BOOL"
+															};
+														};
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"BOOL"
+															};
+														};
+														value=1;
 													};
 												};
 											};
@@ -9706,7 +9816,7 @@ class Mission
 					name="Moduli";
 					class Entities
 					{
-						items=17;
+						items=16;
 						class Item0
 						{
 							dataType="Logic";
@@ -11091,58 +11201,6 @@ class Mission
 							};
 						};
 						class Item15
-						{
-							dataType="Logic";
-							class PositionInfo
-							{
-								position[]={4496,5,4552};
-							};
-							id=160;
-							type="ACE_ModuleRespawn";
-							class CustomAttributes
-							{
-								class Attribute0
-								{
-									property="ACE_ModuleRespawn_RemoveDeadBodiesDisconnected";
-									expression="_this setVariable ['RemoveDeadBodiesDisconnected',_value,true];";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"BOOL"
-												};
-											};
-											value=0;
-										};
-									};
-								};
-								class Attribute1
-								{
-									property="ACE_ModuleRespawn_SavePreDeathGear";
-									expression="_this setVariable ['SavePreDeathGear',_value,true];";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"BOOL"
-												};
-											};
-											value=0;
-										};
-									};
-								};
-								nAttributes=2;
-							};
-						};
-						class Item16
 						{
 							dataType="Logic";
 							class PositionInfo
