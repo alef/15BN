@@ -65,7 +65,6 @@ addons[]=
 	"ace_advanced_ballistics",
 	"ace_fastroping",
 	"A3_Modules_F_Curator_Curator",
-	"ace_map_gestures",
 	"A3_Modules_F",
 	"A3_Data_F_Exp_A_Virtual"
 };
@@ -73,7 +72,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=35;
+		items=34;
 		class Item0
 		{
 			className="A3_Structures_F_Mil";
@@ -296,19 +295,12 @@ class AddonsMetaData
 		};
 		class Item32
 		{
-			className="ace_map_gestures";
-			name="ACE3 - Map Gestures";
-			author="ACE-Team";
-			url="http://ace3mod.com/";
-		};
-		class Item33
-		{
 			className="A3_Modules_F";
 			name="Arma 3 Alpha - Scripted Modules";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item34
+		class Item33
 		{
 			className="A3_Data_F_Exp_A";
 			name="Arma 3 Nexus Update - Main Configuration";
@@ -1989,7 +1981,7 @@ class CustomAttributes
 								};
 								class value
 								{
-									items=50;
+									items=53;
 									class Item0
 									{
 										class data
@@ -2690,6 +2682,48 @@ class CustomAttributes
 											value="ace_map_defaultchannel";
 										};
 									};
+									class Item50
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="ace_map_gestures_enabled";
+										};
+									};
+									class Item51
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="ace_map_gestures_maxrange";
+										};
+									};
+									class Item52
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="ace_map_gestures_interval";
+										};
+									};
 								};
 							};
 						};
@@ -2706,7 +2740,7 @@ class CustomAttributes
 								};
 								class value
 								{
-									items=50;
+									items=53;
 									class Item0
 									{
 										class data
@@ -4949,6 +4983,141 @@ class CustomAttributes
 															type[]=
 															{
 																"BOOL"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item50
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"BOOL"
+															};
+														};
+														value=1;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item51
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=7;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item52
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=0.029999999;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
 															};
 														};
 														value=1;
@@ -11538,7 +11707,7 @@ class Mission
 					name="Moduli";
 					class Entities
 					{
-						items=8;
+						items=7;
 						class Item0
 						{
 							dataType="Logic";
@@ -11792,115 +11961,6 @@ class Mission
 							dataType="Logic";
 							class PositionInfo
 							{
-								position[]={4480,5,4504};
-							};
-							id=150;
-							type="ace_map_gestures_moduleSettings";
-							class CustomAttributes
-							{
-								class Attribute0
-								{
-									property="ace_map_gestures_moduleSettings_maxRange";
-									expression="_this setVariable ['maxRange',_value,true];";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"SCALAR"
-												};
-											};
-											value=7;
-										};
-									};
-								};
-								class Attribute1
-								{
-									property="ace_map_gestures_moduleSettings_enabled";
-									expression="_this setVariable ['enabled',_value,true];";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"BOOL"
-												};
-											};
-											value=1;
-										};
-									};
-								};
-								class Attribute2
-								{
-									property="ace_map_gestures_moduleSettings_defaultLeadColor";
-									expression="_this setVariable ['defaultLeadColor',_value,true];";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="1,0.88,0,0.95";
-										};
-									};
-								};
-								class Attribute3
-								{
-									property="ace_map_gestures_moduleSettings_defaultColor";
-									expression="_this setVariable ['defaultColor',_value,true];";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="1,0.88,0,0.7";
-										};
-									};
-								};
-								class Attribute4
-								{
-									property="ace_map_gestures_moduleSettings_interval";
-									expression="_this setVariable ['interval',_value,true];";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"SCALAR"
-												};
-											};
-											value=0.029999999;
-										};
-									};
-								};
-								nAttributes=5;
-							};
-						};
-						class Item4
-						{
-							dataType="Logic";
-							class PositionInfo
-							{
 								position[]={4496,5,4520};
 							};
 							id=158;
@@ -11948,7 +12008,7 @@ class Mission
 								nAttributes=2;
 							};
 						};
-						class Item5
+						class Item4
 						{
 							dataType="Logic";
 							class PositionInfo
@@ -11960,7 +12020,7 @@ class Mission
 							id=156;
 							type="Logic";
 						};
-						class Item6
+						class Item5
 						{
 							dataType="Logic";
 							class PositionInfo
@@ -12240,7 +12300,7 @@ class Mission
 								nAttributes=14;
 							};
 						};
-						class Item7
+						class Item6
 						{
 							dataType="Logic";
 							class PositionInfo
