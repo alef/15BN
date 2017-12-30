@@ -2013,7 +2013,7 @@ class CustomAttributes
 								};
 								class value
 								{
-									items=29;
+									items=33;
 									class Item0
 									{
 										class data
@@ -2420,6 +2420,62 @@ class CustomAttributes
 											value="ace_finger_maxrange";
 										};
 									};
+									class Item29
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="ace_hearing_enablecombatdeafness";
+										};
+									};
+									class Item30
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="ace_hearing_enabledforzeusunits";
+										};
+									};
+									class Item31
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="ace_hearing_autoaddearplugstounits";
+										};
+									};
+									class Item32
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="ace_hearing_disableearringing";
+										};
+									};
 								};
 							};
 						};
@@ -2436,7 +2492,7 @@ class CustomAttributes
 								};
 								class value
 								{
-									items=29;
+									items=33;
 									class Item0
 									{
 										class data
@@ -3723,6 +3779,186 @@ class CustomAttributes
 															};
 														};
 														value=4;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item29
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"BOOL"
+															};
+														};
+														value=1;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item30
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"BOOL"
+															};
+														};
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item31
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"BOOL"
+															};
+														};
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item32
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"BOOL"
+															};
+														};
+														value=0;
 													};
 												};
 												class Item1
@@ -10323,7 +10559,7 @@ class Mission
 					name="Moduli";
 					class Entities
 					{
-						items=13;
+						items=12;
 						class Item0
 						{
 							dataType="Logic";
@@ -10667,96 +10903,6 @@ class Mission
 							dataType="Logic";
 							class PositionInfo
 							{
-								position[]={4432,5,4520};
-							};
-							id=148;
-							type="ACE_ModuleHearing";
-							class CustomAttributes
-							{
-								class Attribute0
-								{
-									property="ACE_ModuleHearing_autoAddEarplugsToUnits";
-									expression="_this setVariable ['autoAddEarplugsToUnits',_value,true];";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"BOOL"
-												};
-											};
-											value=0;
-										};
-									};
-								};
-								class Attribute1
-								{
-									property="ACE_ModuleHearing_EnableCombatDeafness";
-									expression="_this setVariable ['EnableCombatDeafness',_value,true];";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"BOOL"
-												};
-											};
-											value=1;
-										};
-									};
-								};
-								class Attribute2
-								{
-									property="ACE_ModuleHearing_enabledForZeusUnits";
-									expression="_this setVariable ['enabledForZeusUnits',_value,true];";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"BOOL"
-												};
-											};
-											value=0;
-										};
-									};
-								};
-								class Attribute3
-								{
-									property="ACE_ModuleHearing_DisableEarRinging";
-									expression="_this setVariable ['DisableEarRinging',_value,true];";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"SCALAR"
-												};
-											};
-											value=-1;
-										};
-									};
-								};
-								nAttributes=4;
-							};
-						};
-						class Item5
-						{
-							dataType="Logic";
-							class PositionInfo
-							{
 								position[]={4480,5,4520};
 							};
 							id=149;
@@ -10880,7 +11026,7 @@ class Mission
 								nAttributes=6;
 							};
 						};
-						class Item6
+						class Item5
 						{
 							dataType="Logic";
 							class PositionInfo
@@ -10989,7 +11135,7 @@ class Mission
 								nAttributes=5;
 							};
 						};
-						class Item7
+						class Item6
 						{
 							dataType="Logic";
 							class PositionInfo
@@ -11060,7 +11206,7 @@ class Mission
 								nAttributes=3;
 							};
 						};
-						class Item8
+						class Item7
 						{
 							dataType="Logic";
 							class PositionInfo
@@ -11112,7 +11258,7 @@ class Mission
 								nAttributes=2;
 							};
 						};
-						class Item9
+						class Item8
 						{
 							dataType="Logic";
 							class PositionInfo
@@ -11124,7 +11270,7 @@ class Mission
 							id=156;
 							type="Logic";
 						};
-						class Item10
+						class Item9
 						{
 							dataType="Logic";
 							class PositionInfo
@@ -11404,7 +11550,7 @@ class Mission
 								nAttributes=14;
 							};
 						};
-						class Item11
+						class Item10
 						{
 							dataType="Logic";
 							class PositionInfo
@@ -11494,7 +11640,7 @@ class Mission
 								nAttributes=4;
 							};
 						};
-						class Item12
+						class Item11
 						{
 							dataType="Logic";
 							class PositionInfo
