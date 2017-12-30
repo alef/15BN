@@ -76,14 +76,13 @@ addons[]=
 	"ace_mk6mortar",
 	"ace_respawn",
 	"ace_zeus",
-	"ace_spectator",
 	"A3_Data_F_Exp_A_Virtual"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=45;
+		items=44;
 		class Item0
 		{
 			className="A3_Structures_F_Mil";
@@ -382,13 +381,6 @@ class AddonsMetaData
 			url="http://ace3mod.com/";
 		};
 		class Item43
-		{
-			className="ace_spectator";
-			name="ACE3 - Spectator";
-			author="ACE-Team";
-			url="http://ace3mod.com/";
-		};
-		class Item44
 		{
 			className="A3_Data_F_Exp_A";
 			name="Arma 3 Nexus Update - Main Configuration";
@@ -2069,7 +2061,7 @@ class CustomAttributes
 								};
 								class value
 								{
-									items=6;
+									items=9;
 									class Item0
 									{
 										class data
@@ -2154,6 +2146,48 @@ class CustomAttributes
 											value="ace_advanced_fatigue_terraingradientfactor";
 										};
 									};
+									class Item6
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="ace_spectator_enableai";
+										};
+									};
+									class Item7
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="ace_spectator_restrictmodes";
+										};
+									};
+									class Item8
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="ace_spectator_restrictvisions";
+										};
+									};
 								};
 							};
 						};
@@ -2170,7 +2204,7 @@ class CustomAttributes
 								};
 								class value
 								{
-									items=6;
+									items=9;
 									class Item0
 									{
 										class data
@@ -2422,6 +2456,141 @@ class CustomAttributes
 															};
 														};
 														value=1;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item6
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"BOOL"
+															};
+														};
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item7
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item8
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=0;
 													};
 												};
 												class Item1
@@ -9022,7 +9191,7 @@ class Mission
 					name="Moduli";
 					class Entities
 					{
-						items=20;
+						items=19;
 						class Item0
 						{
 							dataType="Logic";
@@ -10707,77 +10876,6 @@ class Mission
 									};
 								};
 								nAttributes=6;
-							};
-						};
-						class Item19
-						{
-							dataType="Logic";
-							class PositionInfo
-							{
-								position[]={4480,5,4568};
-							};
-							id=256;
-							type="ace_spectator_moduleSettings";
-							class CustomAttributes
-							{
-								class Attribute0
-								{
-									property="ace_spectator_moduleSettings_cameraModes";
-									expression="_this setVariable ['cameraModes',_value,true];";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"SCALAR"
-												};
-											};
-											value=0;
-										};
-									};
-								};
-								class Attribute1
-								{
-									property="ace_spectator_moduleSettings_visionModes";
-									expression="_this setVariable ['visionModes',_value,true];";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"SCALAR"
-												};
-											};
-											value=0;
-										};
-									};
-								};
-								class Attribute2
-								{
-									property="ace_spectator_moduleSettings_enableAI";
-									expression="_this setVariable ['enableAI',_value,true];";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"BOOL"
-												};
-											};
-											value=0;
-										};
-									};
-								};
-								nAttributes=3;
 							};
 						};
 					};
