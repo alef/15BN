@@ -70,7 +70,6 @@ addons[]=
 	"ace_map",
 	"ace_map_gestures",
 	"ace_finger",
-	"ace_viewdistance",
 	"ace_winddeflection",
 	"A3_Modules_F",
 	"ace_mk6mortar",
@@ -81,7 +80,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=43;
+		items=42;
 		class Item0
 		{
 			className="A3_Structures_F_Mil";
@@ -339,40 +338,33 @@ class AddonsMetaData
 		};
 		class Item37
 		{
-			className="ace_viewdistance";
-			name="ACE3 - View Distance";
-			author="ACE-Team";
-			url="http://ace3mod.com/";
-		};
-		class Item38
-		{
 			className="ace_winddeflection";
 			name="ACE3 - Wind Deflection";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item39
+		class Item38
 		{
 			className="A3_Modules_F";
 			name="Arma 3 Alpha - Scripted Modules";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item40
+		class Item39
 		{
 			className="ace_mk6mortar";
 			name="ACE3 - Mk6 Mortar";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item41
+		class Item40
 		{
 			className="ace_respawn";
 			name="ACE3 - Respawn";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item42
+		class Item41
 		{
 			className="A3_Data_F_Exp_A";
 			name="Arma 3 Nexus Update - Main Configuration";
@@ -2053,7 +2045,7 @@ class CustomAttributes
 								};
 								class value
 								{
-									items=15;
+									items=18;
 									class Item0
 									{
 										class data
@@ -2264,6 +2256,48 @@ class CustomAttributes
 											value="ace_zeus_autoaddobjects";
 										};
 									};
+									class Item15
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="ace_viewdistance_enabled";
+										};
+									};
+									class Item16
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="ace_viewdistance_limitviewdistance";
+										};
+									};
+									class Item17
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="ace_viewdistance_objectviewdistancecoeff";
+										};
+									};
 								};
 							};
 						};
@@ -2280,7 +2314,7 @@ class CustomAttributes
 								};
 								class value
 								{
-									items=15;
+									items=18;
 									class Item0
 									{
 										class data
@@ -2951,6 +2985,141 @@ class CustomAttributes
 															};
 														};
 														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item15
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"BOOL"
+															};
+														};
+														value=1;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item16
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=10000;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item17
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=6;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=0;
 													};
 												};
 											};
@@ -9537,7 +9706,7 @@ class Mission
 					name="Moduli";
 					class Entities
 					{
-						items=18;
+						items=17;
 						class Item0
 						{
 							dataType="Logic";
@@ -10421,58 +10590,6 @@ class Mission
 							dataType="Logic";
 							class PositionInfo
 							{
-								position[]={4480,5,4552};
-							};
-							id=152;
-							type="ace_viewdistance_ModuleSettings";
-							class CustomAttributes
-							{
-								class Attribute0
-								{
-									property="ace_viewdistance_ModuleSettings_moduleViewDistanceLimit";
-									expression="_this setVariable ['moduleViewDistanceLimit',_value,true];";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"SCALAR"
-												};
-											};
-											value=10000;
-										};
-									};
-								};
-								class Attribute1
-								{
-									property="ace_viewdistance_ModuleSettings_moduleViewDistanceEnabled";
-									expression="_this setVariable ['moduleViewDistanceEnabled',_value,true];";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"BOOL"
-												};
-											};
-											value=1;
-										};
-									};
-								};
-								nAttributes=2;
-							};
-						};
-						class Item11
-						{
-							dataType="Logic";
-							class PositionInfo
-							{
 								position[]={4464,5,4520};
 							};
 							id=153;
@@ -10539,7 +10656,7 @@ class Mission
 								nAttributes=3;
 							};
 						};
-						class Item12
+						class Item11
 						{
 							dataType="Logic";
 							class PositionInfo
@@ -10591,7 +10708,7 @@ class Mission
 								nAttributes=2;
 							};
 						};
-						class Item13
+						class Item12
 						{
 							dataType="Logic";
 							class PositionInfo
@@ -10603,7 +10720,7 @@ class Mission
 							id=156;
 							type="Logic";
 						};
-						class Item14
+						class Item13
 						{
 							dataType="Logic";
 							class PositionInfo
@@ -10883,7 +11000,7 @@ class Mission
 								nAttributes=14;
 							};
 						};
-						class Item15
+						class Item14
 						{
 							dataType="Logic";
 							class PositionInfo
@@ -10973,7 +11090,7 @@ class Mission
 								nAttributes=4;
 							};
 						};
-						class Item16
+						class Item15
 						{
 							dataType="Logic";
 							class PositionInfo
@@ -11025,7 +11142,7 @@ class Mission
 								nAttributes=2;
 							};
 						};
-						class Item17
+						class Item16
 						{
 							dataType="Logic";
 							class PositionInfo
