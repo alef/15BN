@@ -55,7 +55,7 @@ _c = {
 	} forEach (_a select 0);
 };
 
-_t pushBack format ["Peso: %1", [_unit] call ace_movement_fnc_getWeight ];
+_t pushBack format ["Peso: %1", [_unit] call ace_common_fnc_getWeight ];
 if (uniform _unit != "") then {
 	_t pushBack format ["Uniforme: %1", getText (configFile >> "CfgWeapons" >> uniform _unit >> "displayName")];
 	_a = getItemCargo uniformContainer _unit;     [_a, "CfgWeapons"] call _c;
