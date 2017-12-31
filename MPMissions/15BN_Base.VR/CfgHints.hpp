@@ -101,10 +101,11 @@ class Forum
 Clicca per aprire il thread dal tuo browser Internet.<br/>\
 %2 <a underline='true' href='http://www.15bandenere.com/forum/index.php?threads/manuale-di-campo.2/'>Manuale di Campo</a><br/>\
 %2 <a underline='true' href='http://www.15bandenere.com/forum/index.php?threads/determinare-la-distanza-di-un-bersaglio.5/'>Distanza bersaglio</a><br/>\
+%2 <a underline='true' href='http://www.15bandenere.com/forum/threads/thread-di-riferimento-per-tfar.1105/'>TFAR</a><br/>\
 %2 <a underline='true' href='http://www.15bandenere.com/forum/index.php?threads/base-per-altis-stratis-e-bornholm.408/'>Questa missione</a><br/>\
 ";
 	tip = "\
-Premi %3[Alt+Tab]%4 per tornare al gioco.<br/>\
+Premi %3[Alt+Tab]%4 per tornare dal browser al gioco.<br/>\
 ";
 };
 };
