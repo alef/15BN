@@ -5,10 +5,10 @@ class EditorData
 	angleGridStep=0.78539819;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=549;
+	toggles=677;
 	class ItemIDProvider
 	{
-		nextID=502;
+		nextID=505;
 	};
 	class MarkerIDProvider
 	{
@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={4389.7974,19.449051,4476.7979};
-		dir[]={0.009317657,-0.62909949,-0.77732509};
-		up[]={0.007540518,0.77727365,-0.62909961};
-		aside[]={-0.99997008,5.3285476e-008,-0.011985632};
+		pos[]={4475.3037,101.71384,4553.1187};
+		dir[]={0.012603226,-0.67328,-0.73933953};
+		up[]={0.011475726,0.73933613,-0.67322129};
+		aside[]={-0.99989754,1.0016356e-007,-0.017044043};
 	};
 };
 binarizationWanted=0;
@@ -18892,7 +18892,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=2;
+		items=4;
 		class Item0
 		{
 			dataType="Layer";
@@ -25672,21 +25672,117 @@ class Mission
 				nAttributes=7;
 			};
 		};
+		class Item2
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={4407,5,4443};
+			};
+			id=502;
+			type="tfar_ModuleTaskForceRadioFrequencies";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="tfar_ModuleTaskForceRadioFrequencies_LrFreq";
+					expression="_this setVariable ['LrFreq',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[""50""]";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="tfar_ModuleTaskForceRadioFrequencies_Units";
+					expression="_this setVariable ['Units',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="2";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="tfar_ModuleTaskForceRadioFrequencies_PrFreq";
+					expression="_this setVariable ['PrFreq',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[""110.0"",""120.0"",""130.0"",""140.0"",""150.0"",""160.0"",""170.0"",""180.0""]";
+						};
+					};
+				};
+				nAttributes=3;
+			};
+		};
+		class Item3
+		{
+			dataType="Trigger";
+			position[]={4396,5.401,4429};
+			class Attributes
+			{
+				sizeA=6;
+				sizeB=6;
+				activationBy="ANYPLAYER";
+				isServerOnly=1;
+			};
+			id=504;
+			type="EmptyDetector";
+			atlOffset=0.00028276443;
+		};
 	};
 	class Connections
 	{
 		class LinkIDProvider
 		{
-			nextID=1;
+			nextID=2;
 		};
 		class Links
 		{
-			items=1;
+			items=2;
 			class Item0
 			{
 				linkID=0;
 				item0=147;
 				item1=39;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item1
+			{
+				linkID=1;
+				item0=504;
+				item1=502;
 				class CustomData
 				{
 					type="Sync";
