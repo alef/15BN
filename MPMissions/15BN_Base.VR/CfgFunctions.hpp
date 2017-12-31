@@ -9,11 +9,6 @@ class ALEF {
 	{
 		description = "Check if all medics are alive.";
 	};
-	class saveInventories
-	{
-		description = "Save 15BN inventories into players Arsenal on mission start.";
-		postInit = 1;
-	};
       	class preInit
       	{
       		description = "Things to do before mission inits.";

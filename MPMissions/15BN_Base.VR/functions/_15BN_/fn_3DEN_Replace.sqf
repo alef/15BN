@@ -134,10 +134,10 @@ _merged call _fill_merged_objects;
 		    ];
 
 		    if ((_dst isKindOf "CAManBase")) then {
-			    // Units: ammoBox doesn't always work
-			    [ _src, [_dst, "Inventory"]] call BIS_fnc_saveInventory;
-			    [ _dst, [_dst, "Inventory"]] call BIS_fnc_loadInventory;
-			    LOG("Inventory saved!");
+			    // TODO how with ACE Arsenal?
+			    // [ _src, [_dst, "Inventory"]] call BIS_fnc_saveInventory;
+			    // [ _dst, [_dst, "Inventory"]] call BIS_fnc_loadInventory;
+			    // LOG("Inventory saved!");
 		    };
 		};
 
