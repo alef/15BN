@@ -21231,7 +21231,7 @@ class Mission
 									flags=4;
 									class Attributes
 									{
-										init="call{this addAction [""<t color='#218936'>Arsenale Virtuale</t>"", {[""Open"",true] call BIS_fnc_arsenal}, nil, 1.5, true, false, """", ""_this == player"", 4, false]; [this, true] call ace_arsenal_fnc_initBox;}";
+										init="call{this addAction [""<t color='#218936'>Arsenale Virtuale</t>"", {[_this select 0, _this select 1, true] call ace_arsenal_fnc_openBox;}, nil, 1.5, true, false, """", ""_this == player"", 4, false];}";
 									};
 									id=275;
 									type="Misc_Backpackheap";
