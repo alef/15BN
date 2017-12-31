@@ -14,10 +14,6 @@ class ALEF {
       		description = "Things to do before mission inits.";
       		preInit = 1;
       	};
-	class MCC_init
-	{
-		description = "Initialize MCC.";
-	};
 	class skipBriefingScreen
 	{
 		description = "Clicks on CONTINUE";

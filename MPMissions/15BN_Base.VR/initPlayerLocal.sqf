@@ -11,8 +11,6 @@ _didJIP = param [1, false];
 
 [] call ALEF_fnc_chestpack;
 
-[] spawn ALEF_fnc_MCC_init;
-
 hcRemoveAllGroups player;
 ["InitializePlayer", [player, true]] call BIS_fnc_dynamicGroups;
 endLoadingScreen;
