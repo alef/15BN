@@ -5,10 +5,6 @@ class ALEF {
 	{
 		description = "Replace this mission objects with merged template mission.";
 	};
-	class fixACREnuisance
-	{
-		description = "Reset ACRE desync message.";
-	};
 	class medicsAvailable
 	{
 		description = "Check if all medics are alive.";
