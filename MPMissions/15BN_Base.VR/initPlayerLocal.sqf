@@ -28,9 +28,4 @@ hcRemoveAllGroups player;
 endLoadingScreen;
 [["_15BN_Base","Istruzioni"],35,"",35,"",true,false,false,true] call BIS_fnc_advHint;
 
-ALEF_15BN_Base_ACRE2_OpenRadio  = (['ACRE2', 'OpenRadio']  call CBA_fnc_getKeybind select 5) call CBA_fnc_localizeKey ;
-ALEF_15BN_Base_ACRE2_AltPTTKey1 = (['ACRE2', 'AltPTTKey1'] call CBA_fnc_getKeybind select 5) call CBA_fnc_localizeKey ;
-ALEF_15BN_Base_ACRE2_AltPTTKey2 = (['ACRE2', 'AltPTTKey2'] call CBA_fnc_getKeybind select 5) call CBA_fnc_localizeKey ;
-ALEF_15BN_Base_ACRE2_CycleRadio = (['ACRE2', 'CycleRadio'] call CBA_fnc_getKeybind select 5) call CBA_fnc_localizeKey ;
-ALEF_15BN_Base_ACRE2_DefaultPTTKey = (['ACRE2', 'DefaultPTTKey'] call CBA_fnc_getKeybind select 5) call CBA_fnc_localizeKey ;
 LOG("End");

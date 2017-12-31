@@ -53,12 +53,15 @@ class Equipaggiamenti
 	description = "\
 Carica un equipaggiamento predefinito:<br/>\
 %2 Con la rotellina del mouse seleziona %3Arsenale Virtuale%4<br/>\
-%2 Clicca %3CARICA%4<br/>\
+%2 Clicca %3EQUIPAGGIAMENTI%4<br/>\
+%2 Clicca %3EQUIPAGGIAMENTI STANDARD%4<br/>\
 %2 Seleziona un equipaggiamento marcato %3[=15BN=]%4<br/>\
 %2 Clicca %3CARICA%4<br/>\
+%2 Clicca %3CHIUDI%4<br/>\
+%2 Clicca %3CHIUDI%4<br/>\
 ";
 	tip = "\
-Puoi anche salvare, ma la prossima volta verrà sovrascritto.<br/>\
+Puoi salvare nella sezione 'I MIEI EQUIPAGGIAMENTI'<br/>\
 ";
 };
 class RadioTruppa
@@ -68,11 +71,11 @@ class RadioTruppa
 	noImage = false;
 	image = "\a3\ui_f\data\gui\cfg\hints\CallSupport_CA.paa";
 	description = "\
-<img size='8' shadow='1' image='\idi\acre\addons\sys_prc343\Data\static\prc343_icon.paa' /><br/>\
-AN/PRC-343, 16 canali / 800m<br/>\
-%2 Alpha-1 sul canale 1<br/>\
-%2 Alpha-2 sul canale 2<br/>\
-%2 Alpha-3 sul canale 3<br/>\
+<img size='8' shadow='1' image='\task_force_radio_items\rf7800str\rf7800str_icon.paa' /><br/>\
+RF-7800S-TR 30-152 MHz / 2 km<br/>\
+%2 Alpha-1 sui 110.0 MHz<br/>\
+%2 Alpha-2 sui 120.0 MHz<br/>\
+%2 Alpha-3 sui 130.0 MHz<br/>\
 In caso di ulteriori squadre, si decide in gioco\
 "; 
 };
@@ -83,37 +86,10 @@ class RadioComando
 	noImage = false;
 	image = "\a3\ui_f\data\gui\cfg\hints\CallSupport_CA.paa";
 	description = "\
-<img size='8' shadow='1' image='\idi\acre\addons\sys_prc148\Data\static\prc148_icon.paa' /><br/>\
-AN/PRC-148, 30-152MHz / 5 km<br/>\
-%2 Comando squadra sul canale 1<br/>\
+<img size='8' shadow='1' image='\task_force_radio_items\rt1523g\rt1523g_icon.paa' /><br/>\
+RT-1523G (ASIP) 30-152 MHz / 20 km<br/>\
+%2 Comando squadra sui 100.0 MHz<br/>\
 ";
-};
-class IstruzioniRadio
-{
-	logicalOrder = 6;
-	displayName = "Istruzioni Radio";
-	noImage = false;
-	image = "\a3\ui_f\data\gui\cfg\hints\CallSupport_CA.paa";
-	description = "\
-Premi %3[%11]%4 per aprire la radio sullo schermo,%3[ESC]%4 per chiuderla.<br/>\
-In alternativa, apri l'inventario e fai doppio clic sulla radio.<br/>\
-Puoi girare le manopole cliccandoci col tasto destro o sinistro.<br/>\
-Salvo tasti personalizzati, questi sono quelli più usati per le radio:<br/>\
-%2 %3[%12]%4 trasmetti dalla prima<br/>\
-%2 %3[%13]%4 trasmetti dalla seconda<br/>\
-%2 %3[%14]%4 seleziona un'altra radio<br/>\
-%2 %3[%15]%4 trasmetti dall'ultima selezionata<br/>\
-";
-	tip = "\
-Per prima o seconda si intende l'ordine in cui sono state caricate nell'inventario personale.\
-";
-	arguments[] = {
-		 "missionNamespace getVariable 'ALEF_15BN_Base_ACRE2_OpenRadio'"
-		,"missionNamespace getVariable 'ALEF_15BN_Base_ACRE2_AltPTTKey1'"
-		,"missionNamespace getVariable 'ALEF_15BN_Base_ACRE2_AltPTTKey2'"
-		,"missionNamespace getVariable 'ALEF_15BN_Base_ACRE2_CycleRadio'"
-		,"missionNamespace getVariable 'ALEF_15BN_Base_ACRE2_DefaultPTTKey'"
-	};
 };
 class Forum
 {
@@ -125,7 +101,6 @@ class Forum
 Clicca per aprire il thread dal tuo browser Internet.<br/>\
 %2 <a underline='true' href='http://www.15bandenere.com/forum/index.php?threads/manuale-di-campo.2/'>Manuale di Campo</a><br/>\
 %2 <a underline='true' href='http://www.15bandenere.com/forum/index.php?threads/determinare-la-distanza-di-un-bersaglio.5/'>Distanza bersaglio</a><br/>\
-%2 <a underline='true' href='http://www.15bandenere.com/forum/index.php?threads/installazione-ed-utilizzo-di-acre-advanced-combat-radio-enviroment.4/'>ACRE</a><br/>\
 %2 <a underline='true' href='http://www.15bandenere.com/forum/index.php?threads/base-per-altis-stratis-e-bornholm.408/'>Questa missione</a><br/>\
 ";
 	tip = "\

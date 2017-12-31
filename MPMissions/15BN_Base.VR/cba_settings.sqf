@@ -1,9 +1,0 @@
-acre_sys_core_postmixGlobalVolume = 1;
-acre_sys_core_premixGlobalVolume = 1;
-acre_sys_core_spectatorVolume = 1;
-acre_sys_core_unmuteClients = true;
-force acre_sys_core_interference = true;
-force acre_sys_core_fullDuplex = false;
-force acre_sys_core_ignoreAntennaDirection = true;
-force acre_sys_core_terrainLoss = 1;
-force acre_sys_core_revealToAI = true;
