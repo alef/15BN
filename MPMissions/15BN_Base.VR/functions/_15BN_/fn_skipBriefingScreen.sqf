@@ -23,7 +23,7 @@ LOG("Begin");
 if (hasInterface) then {
     if (!isNumber (missionConfigFile >> "briefing")) exitWith {};
     if (getNumber (missionConfigFile >> "briefing") == 1) exitWith {};
-    ["ALEF_15BN_CLICK_CONTINUE", "onEachFrame", {
+    ["ALEF_15BN_CLICK_CONTINUE", "onEachFrame", { // TODO this break TFAR
 	// "MISSION RECEIVED"
 	// "GAME LOADED"
 	// "BRIEFING SHOWN"

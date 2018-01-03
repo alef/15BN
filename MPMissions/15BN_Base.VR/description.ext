@@ -10,5 +10,5 @@ class CfgHints {
 	#include "CfgHints.hpp"
 };
 
-briefing = 0;
+briefing = 1;
 onLoadName = "Base";
