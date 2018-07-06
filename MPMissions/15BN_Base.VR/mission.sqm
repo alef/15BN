@@ -5,14 +5,14 @@ class EditorData
 	angleGridStep=0.78539819;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=549;
+	toggles=677;
 	class ItemIDProvider
 	{
-		nextID=507;
+		nextID=508;
 	};
 	class MarkerIDProvider
 	{
-		nextID=2;
+		nextID=3;
 	};
 	class LayerIndexProvider
 	{
@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={4402.2954,10.230184,4432.3936};
-		dir[]={-0.68698293,-0.72136962,0.088580787};
-		up[]={-0.71546906,0.69250208,0.092253499};
-		aside[]={0.12789588,7.9008169e-007,0.99187094};
+		pos[]={4382.0317,14.792813,4424.6431};
+		dir[]={0.77999842,-0.46067709,0.423742};
+		up[]={0.40486762,0.88751018,0.2199491};
+		aside[]={0.47740638,-5.5413693e-008,-0.87878501};
 	};
 };
 binarizationWanted=0;
@@ -21532,7 +21532,6 @@ class Mission
 									flags=4;
 									class Attributes
 									{
-										init="call{this addAction [""<t color='#218936'>Arsenale Virtuale</t>"", {[_this select 0, _this select 1, true] call ace_arsenal_fnc_openBox;}, nil, 1.5, true, false, """", ""_this == player"", 4, false];}";
 									};
 									id=275;
 									type="Misc_Backpackheap";
@@ -25988,10 +25987,13 @@ class Mission
 			position[]={4396,5.401,4429};
 			class Attributes
 			{
+				condition="call{player in thislist}";
+				onActivation="call{ALEF_15BN_arsenal_action_id = player addAction [""Arsenale ACE"", {[_this select 0, _this select 1, true] call ace_arsenal_fnc_openBox;}, nil, 1.5, true, false, """", ""_this ==player"", 4, false, """", """"]}";
+				onDeactivation="call{player removeAction ALEF_15BN_arsenal_action_id}";
 				sizeA=6;
 				sizeB=6;
+				repeatable=1;
 				activationBy="ANYPLAYER";
-				isServerOnly=1;
 			};
 			id=504;
 			type="EmptyDetector";
