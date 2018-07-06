@@ -52,7 +52,7 @@ class Equipaggiamenti
 	image = "\a3\ui_f\data\gui\cfg\hints\Gear_ca.paa";
 	description = "\
 Carica un equipaggiamento predefinito:<br/>\
-%2 Con la rotellina del mouse seleziona %3Arsenale Virtuale%4<br/>\
+%2 Con la rotellina del mouse seleziona %3Arsenale ACE%4<br/>\
 %2 Clicca %3EQUIPAGGIAMENTI%4<br/>\
 %2 Clicca %3EQUIPAGGIAMENTI STANDARD%4<br/>\
 %2 Seleziona un equipaggiamento marcato %3[=15BN=]%4<br/>\

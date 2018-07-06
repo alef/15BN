@@ -25,5 +25,8 @@ class ALEF {
 	class dumpInventory {
 		description = "Copy to clipboard a text version of the unit inventory";
 	};
+	class arsenal {
+		description = "Add or remove both BIS and ACE arsenals to or from the menu";
+	};
 	};
 };

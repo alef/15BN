@@ -16,7 +16,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=542;
+		nextID=547;
 	};
 	class Camera
 	{
@@ -14163,25 +14163,6 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
-			property="RespawnButton";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"SCALAR"
-						};
-					};
-					value=0;
-				};
-			};
-		};
-		class Attribute1
-		{
 			property="RespawnTemplates";
 			expression="true";
 			class Value
@@ -14213,6 +14194,25 @@ class CustomAttributes
 							};
 						};
 					};
+				};
+			};
+		};
+		class Attribute1
+		{
+			property="RespawnButton";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=0;
 				};
 			};
 		};
@@ -22797,8 +22797,8 @@ class Mission
 			class Attributes
 			{
 				condition="call{player in thislist}";
-				onActivation="call{ALEF_15BN_arsenal_action_id = player addAction [""Arsenale ACE"", {[_this select 0, _this select 1, true] call ace_arsenal_fnc_openBox;}, nil, 1.5, true, false, """", ""_this ==player"", 4, false, """", """"]}";
-				onDeactivation="call{player removeAction ALEF_15BN_arsenal_action_id}";
+				onActivation="call{[player, true] call ALEF_fnc_arsenal;}";
+				onDeactivation="call{[player, false] call ALEF_fnc_arsenal;}";
 				sizeA=6;
 				sizeB=6;
 				repeatable=1;
