@@ -28,5 +28,8 @@ class ALEF {
 	class arsenal {
 		description = "Add or remove both BIS and ACE arsenals to or from the menu";
 	};
+	class serverDifficulty {
+		description = "Show server difficulty settings as CBA settings";
+	};
 	};
 };
