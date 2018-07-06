@@ -5,10 +5,10 @@ class EditorData
 	angleGridStep=0.78539819;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=677;
+	toggles=549;
 	class ItemIDProvider
 	{
-		nextID=505;
+		nextID=506;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=477;
+		nextID=517;
 	};
 	class Camera
 	{
-		pos[]={4475.3037,101.71384,4553.1187};
-		dir[]={0.012603226,-0.67328,-0.73933953};
-		up[]={0.011475726,0.73933613,-0.67322129};
-		aside[]={-0.99989754,1.0016356e-007,-0.017044043};
+		pos[]={4375.9487,11.464846,4476.7573};
+		dir[]={0.59622926,-0.38676903,-0.70358217};
+		up[]={0.25009745,0.92213225,-0.29512757};
+		aside[]={-0.76295274,1.3760291e-007,-0.64653957};
 	};
 };
 binarizationWanted=0;
@@ -18882,6 +18882,8 @@ class Mission
 		forecastWind=0.1;
 		forecastWaves=0.1;
 		forecastLightnings=0.1;
+		wavesForced=1;
+		windForced=1;
 		year=2016;
 		month=02;
 		day=14;
@@ -18892,7 +18894,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=4;
+		items=2;
 		class Item0
 		{
 			dataType="Layer";
@@ -19162,7 +19164,7 @@ class Mission
 												class Attribute0
 												{
 													property="ace_isHandcuffed";
-													expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+													expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleHandcuffed}";
 													class Value
 													{
 														class data
@@ -19219,7 +19221,7 @@ class Mission
 												class Attribute3
 												{
 													property="ace_isSurrendered";
-													expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+													expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleSurrender}";
 													class Value
 													{
 														class data
@@ -19420,7 +19422,7 @@ class Mission
 												class Attribute0
 												{
 													property="ace_isHandcuffed";
-													expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+													expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleHandcuffed}";
 													class Value
 													{
 														class data
@@ -19477,7 +19479,7 @@ class Mission
 												class Attribute3
 												{
 													property="ace_isSurrendered";
-													expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+													expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleSurrender}";
 													class Value
 													{
 														class data
@@ -19677,7 +19679,7 @@ class Mission
 												class Attribute0
 												{
 													property="ace_isSurrendered";
-													expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+													expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleSurrender}";
 													class Value
 													{
 														class data
@@ -19734,7 +19736,7 @@ class Mission
 												class Attribute3
 												{
 													property="ace_isHandcuffed";
-													expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+													expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleHandcuffed}";
 													class Value
 													{
 														class data
@@ -19791,7 +19793,7 @@ class Mission
 												class Attribute6
 												{
 													property="ace_isMedic";
-													expression="if (_value > -1) then {_this setVariable [""ace_medical_medicClass"",_value,true];};";
+													expression="if (_value > -1) then {_this setVariable [""ace_medical_medicClass"", _value, true];};";
 													class Value
 													{
 														class data
@@ -19944,7 +19946,7 @@ class Mission
 												class Attribute0
 												{
 													property="ace_isHandcuffed";
-													expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+													expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleHandcuffed}";
 													class Value
 													{
 														class data
@@ -20001,7 +20003,7 @@ class Mission
 												class Attribute3
 												{
 													property="ace_isSurrendered";
-													expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+													expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleSurrender}";
 													class Value
 													{
 														class data
@@ -20227,7 +20229,7 @@ class Mission
 												class Attribute0
 												{
 													property="ace_isSurrendered";
-													expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+													expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleSurrender}";
 													class Value
 													{
 														class data
@@ -20284,7 +20286,7 @@ class Mission
 												class Attribute3
 												{
 													property="ace_isHandcuffed";
-													expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+													expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleHandcuffed}";
 													class Value
 													{
 														class data
@@ -20341,7 +20343,7 @@ class Mission
 												class Attribute6
 												{
 													property="ace_isMedic";
-													expression="if (_value > -1) then {_this setVariable [""ace_medical_medicClass"",_value,true];};";
+													expression="if (_value > -1) then {_this setVariable [""ace_medical_medicClass"", _value, true];};";
 													class Value
 													{
 														class data
@@ -20520,7 +20522,7 @@ class Mission
 												class Attribute0
 												{
 													property="ace_isHandcuffed";
-													expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+													expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleHandcuffed}";
 													class Value
 													{
 														class data
@@ -20577,7 +20579,7 @@ class Mission
 												class Attribute3
 												{
 													property="ace_isSurrendered";
-													expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+													expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleSurrender}";
 													class Value
 													{
 														class data
@@ -20802,7 +20804,7 @@ class Mission
 												class Attribute0
 												{
 													property="ace_isHandcuffed";
-													expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+													expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleHandcuffed}";
 													class Value
 													{
 														class data
@@ -20859,7 +20861,7 @@ class Mission
 												class Attribute3
 												{
 													property="ace_isSurrendered";
-													expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+													expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleSurrender}";
 													class Value
 													{
 														class data
@@ -21060,7 +21062,7 @@ class Mission
 												class Attribute0
 												{
 													property="ace_isHandcuffed";
-													expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+													expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleHandcuffed}";
 													class Value
 													{
 														class data
@@ -21117,7 +21119,7 @@ class Mission
 												class Attribute3
 												{
 													property="ace_isSurrendered";
-													expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+													expression="if (_value) then {[objNull, [_this], true] call ace_captives_fnc_moduleSurrender}";
 													class Value
 													{
 														class data
@@ -21601,7 +21603,7 @@ class Mission
 										class Attribute2
 										{
 											property="VehicleCustomization";
-											expression="if (local _this) then {if (isSimpleObject _this) then {_this setVariable ['VehicleCustomization',_value]} else {([_this] + _value) call (uinamespace getvariable 'bis_fnc_initVehicle');};};";
+											expression="if (local _this) then {if (isSimpleObject _this) then {_this setVariable ['bis_fnc_initVehicle_customization',_value]} else {([_this] + _value + [true]) call (uinamespace getvariable 'bis_fnc_initVehicle');};};";
 											class Value
 											{
 												class data
@@ -21792,6 +21794,7 @@ class Mission
 									};
 									id=163;
 									type="RHS_M2A3_wd";
+									atlOffset=-0.15499973;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -21816,7 +21819,7 @@ class Mission
 										class Attribute1
 										{
 											property="VehicleCustomization";
-											expression="if (local _this) then {if (isSimpleObject _this) then {_this setVariable ['VehicleCustomization',_value]} else {([_this] + _value) call (uinamespace getvariable 'bis_fnc_initVehicle');};};";
+											expression="if (local _this) then {if (isSimpleObject _this) then {_this setVariable ['bis_fnc_initVehicle_customization',_value]} else {([_this] + _value + [true]) call (uinamespace getvariable 'bis_fnc_initVehicle');};};";
 											class Value
 											{
 												class data
@@ -22069,7 +22072,7 @@ class Mission
 								};
 							};
 							id=198;
-							atlOffset=-0.00476408;
+							atlOffset=-0.014451504;
 						};
 						class Item2
 						{
@@ -22358,7 +22361,7 @@ class Mission
 										class Attribute6
 										{
 											property="ace_isMedic";
-											expression="if (_value > -1) then {_this setVariable [""ace_medical_medicClass"",_value,true];};";
+											expression="if (_value > -1) then {_this setVariable [""ace_medical_medicClass"", _value, true];};";
 											class Value
 											{
 												class data
@@ -24268,7 +24271,7 @@ class Mission
 										class Attribute6
 										{
 											property="ace_isMedic";
-											expression="if (_value > -1) then {_this setVariable [""ace_medical_medicClass"",_value,true];};";
+											expression="if (_value > -1) then {_this setVariable [""ace_medical_medicClass"", _value, true];};";
 											class Value
 											{
 												class data
@@ -24579,7 +24582,7 @@ class Mission
 										class Attribute6
 										{
 											property="ace_isMedic";
-											expression="if (_value > -1) then {_this setVariable [""ace_medical_medicClass"",_value,true];};";
+											expression="if (_value > -1) then {_this setVariable [""ace_medical_medicClass"", _value, true];};";
 											class Value
 											{
 												class data
@@ -24897,7 +24900,7 @@ class Mission
 										class Attribute6
 										{
 											property="ace_isMedic";
-											expression="if (_value > -1) then {_this setVariable [""ace_medical_medicClass"",_value,true];};";
+											expression="if (_value > -1) then {_this setVariable [""ace_medical_medicClass"", _value, true];};";
 											class Value
 											{
 												class data
@@ -25255,7 +25258,7 @@ class Mission
 						};
 					};
 					id=212;
-					atlOffset=-2.5005956;
+					atlOffset=-2.5018065;
 				};
 				class Item4
 				{
@@ -25263,7 +25266,7 @@ class Mission
 					name="Moduli";
 					class Entities
 					{
-						items=3;
+						items=5;
 						class Item0
 						{
 							dataType="Logic";
@@ -25396,6 +25399,224 @@ class Mission
 							id=156;
 							type="Logic";
 						};
+						class Item3
+						{
+							dataType="Logic";
+							class PositionInfo
+							{
+								position[]={4407,5,4443};
+							};
+							id=502;
+							type="tfar_ModuleTaskForceRadioFrequencies";
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="tfar_ModuleTaskForceRadioFrequencies_LrFreq";
+									expression="_this setVariable ['LrFreq',_value,true];";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="[""50""]";
+										};
+									};
+								};
+								class Attribute1
+								{
+									property="tfar_ModuleTaskForceRadioFrequencies_Units";
+									expression="_this setVariable ['Units',_value,true];";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="2";
+										};
+									};
+								};
+								class Attribute2
+								{
+									property="tfar_ModuleTaskForceRadioFrequencies_PrFreq";
+									expression="_this setVariable ['PrFreq',_value,true];";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="[""110.0"",""120.0"",""130.0"",""140.0"",""150.0"",""160.0"",""170.0"",""180.0""]";
+										};
+									};
+								};
+								nAttributes=3;
+							};
+						};
+						class Item4
+						{
+							dataType="Logic";
+							class PositionInfo
+							{
+								position[]={4419,5,4505};
+							};
+							id=499;
+							type="tfar_ModuleTaskForceRadioEnforceUsage";
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="tfar_ModuleTaskForceRadioEnforceUsage_radio_channel_password";
+									expression="_this setVariable ['radio_channel_password',_value,true];";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="";
+										};
+									};
+								};
+								class Attribute1
+								{
+									property="tfar_ModuleTaskForceRadioEnforceUsage_RiflemanRadio";
+									expression="_this setVariable ['RiflemanRadio',_value,true];";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"BOOL"
+												};
+											};
+											value=0;
+										};
+									};
+								};
+								class Attribute2
+								{
+									property="tfar_ModuleTaskForceRadioEnforceUsage_radio_channel_name";
+									expression="_this setVariable ['radio_channel_name',_value,true];";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="";
+										};
+									};
+								};
+								class Attribute3
+								{
+									property="tfar_ModuleTaskForceRadioEnforceUsage_same_sw_frequencies_for_side";
+									expression="_this setVariable ['same_sw_frequencies_for_side',_value,true];";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"BOOL"
+												};
+											};
+											value=0;
+										};
+									};
+								};
+								class Attribute4
+								{
+									property="tfar_ModuleTaskForceRadioEnforceUsage_TeamLeaderRadio";
+									expression="_this setVariable ['TeamLeaderRadio',_value,true];";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"BOOL"
+												};
+											};
+											value=0;
+										};
+									};
+								};
+								class Attribute5
+								{
+									property="tfar_ModuleTaskForceRadioEnforceUsage_same_lr_frequencies_for_side";
+									expression="_this setVariable ['same_lr_frequencies_for_side',_value,true];";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"BOOL"
+												};
+											};
+											value=0;
+										};
+									};
+								};
+								class Attribute6
+								{
+									property="tfar_ModuleTaskForceRadioEnforceUsage_terrain_interception_coefficient";
+									expression="_this setVariable ['terrain_interception_coefficient',_value,true];";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=7;
+										};
+									};
+								};
+								nAttributes=7;
+							};
+						};
 					};
 					id=194;
 				};
@@ -25523,227 +25744,9 @@ class Mission
 				};
 			};
 			id=276;
-			atlOffset=-1.4062872;
+			atlOffset=-1.406363;
 		};
 		class Item1
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={4419,5,4505};
-			};
-			id=499;
-			type="tfar_ModuleTaskForceRadioEnforceUsage";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="tfar_ModuleTaskForceRadioEnforceUsage_radio_channel_password";
-					expression="_this setVariable ['radio_channel_password',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="";
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="tfar_ModuleTaskForceRadioEnforceUsage_RiflemanRadio";
-					expression="_this setVariable ['RiflemanRadio',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute2
-				{
-					property="tfar_ModuleTaskForceRadioEnforceUsage_radio_channel_name";
-					expression="_this setVariable ['radio_channel_name',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="";
-						};
-					};
-				};
-				class Attribute3
-				{
-					property="tfar_ModuleTaskForceRadioEnforceUsage_same_sw_frequencies_for_side";
-					expression="_this setVariable ['same_sw_frequencies_for_side',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute4
-				{
-					property="tfar_ModuleTaskForceRadioEnforceUsage_TeamLeaderRadio";
-					expression="_this setVariable ['TeamLeaderRadio',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute5
-				{
-					property="tfar_ModuleTaskForceRadioEnforceUsage_same_lr_frequencies_for_side";
-					expression="_this setVariable ['same_lr_frequencies_for_side',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute6
-				{
-					property="tfar_ModuleTaskForceRadioEnforceUsage_terrain_interception_coefficient";
-					expression="_this setVariable ['terrain_interception_coefficient',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=7;
-						};
-					};
-				};
-				nAttributes=7;
-			};
-		};
-		class Item2
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={4407,5,4443};
-			};
-			id=502;
-			type="tfar_ModuleTaskForceRadioFrequencies";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="tfar_ModuleTaskForceRadioFrequencies_LrFreq";
-					expression="_this setVariable ['LrFreq',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="[""50""]";
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="tfar_ModuleTaskForceRadioFrequencies_Units";
-					expression="_this setVariable ['Units',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="2";
-						};
-					};
-				};
-				class Attribute2
-				{
-					property="tfar_ModuleTaskForceRadioFrequencies_PrFreq";
-					expression="_this setVariable ['PrFreq',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="[""110.0"",""120.0"",""130.0"",""140.0"",""150.0"",""160.0"",""170.0"",""180.0""]";
-						};
-					};
-				};
-				nAttributes=3;
-			};
-		};
-		class Item3
 		{
 			dataType="Trigger";
 			position[]={4396,5.401,4429};
