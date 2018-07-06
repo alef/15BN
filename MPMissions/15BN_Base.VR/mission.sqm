@@ -5,7 +5,7 @@ class EditorData
 	angleGridStep=0.78539819;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=677;
+	toggles=549;
 	class ItemIDProvider
 	{
 		nextID=508;
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=532;
+		nextID=542;
 	};
 	class Camera
 	{
-		pos[]={4382.0317,14.792813,4424.6431};
-		dir[]={0.77999842,-0.46067709,0.423742};
-		up[]={0.40486762,0.88751018,0.2199491};
-		aside[]={0.47740638,-5.5413693e-008,-0.87878501};
+		pos[]={4375.0161,14.792813,4409.8936};
+		dir[]={0.70052832,-0.48990646,0.51907355};
+		up[]={0.39368352,0.87171531,0.29171029};
+		aside[]={0.59540349,7.9278834e-008,-0.80354387};
 	};
 };
 binarizationWanted=0;
@@ -22303,7 +22303,7 @@ class Mission
 						};
 					};
 					id=212;
-					atlOffset=-2.5018065;
+					atlOffset=-2.503613;
 				};
 				class Item4
 				{
@@ -22329,7 +22329,6 @@ class Mission
 							{
 								position[]={4416,5,4536};
 							};
-							init="call{0=this spawn {waitUntil {time > 60}; _this removeCuratorEditableObjects [units ALEF_15BN_equipaggiamenti, false];}}";
 							id=154;
 							type="ModuleCurator_F";
 							class CustomAttributes
@@ -22789,7 +22788,7 @@ class Mission
 				};
 			};
 			id=276;
-			atlOffset=-1.406363;
+			atlOffset=-1.4064758;
 		};
 		class Item1
 		{
