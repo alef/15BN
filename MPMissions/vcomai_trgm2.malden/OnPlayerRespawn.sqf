@@ -1,0 +1,1 @@
+[] execVM "templates\loadTemplate.sqf";
