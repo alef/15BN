@@ -433,7 +433,6 @@ class ScenarioData
 {
 	author="Treendy";
 	overviewText="@STR_TRGM2_Description_overviewText";
-	overViewPicture="TRGM2OverviewPic2.jpg";
 	onLoadMission="@STR_TRGM2_Description_OnLoadIntro";
 	loadScreen="TRGM2OverviewPic2.jpg";
 	respawnDialog=0;
