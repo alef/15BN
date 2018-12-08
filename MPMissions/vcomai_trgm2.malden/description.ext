@@ -3,27 +3,8 @@
 #include "RandFramework\GUI\dialogs.hpp"
 
 
-author = "Treendy";
-OnLoadName = "TRGM 2.0 Malden";
-OnLoadmission = "TRGM 2";
-OnLoadIntro = $STR_TRGM2_Description_OnLoadIntro;
-loadScreen = "TRGM2OverviewPic2.jpg";
-overviewText = $STR_TRGM2_Description_overviewText;
-overviewPicture = "TRGM2OverviewPic2.jpg";
-
-disabledAI=0;
-joinUnassigned = 1;
 enableDebugConsole = 1;
 //forceRotorLibSimulation = 1;
-
-respawn = 3;
-
-class Header
-{
-	gameType = Coop;
-	minPlayers = 5;
-	MaxPlayers = 35;
-};
 
 
 class Params

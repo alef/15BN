@@ -19,7 +19,7 @@ class EditorData
 		pos[]={765.00714,40.469971,12110.802};
 		dir[]={0,-0.70710683,0.70710683};
 		up[]={0,0.70710677,0.70710677};
-		aside[]={0.99999994,0,-0};
+		aside[]={0.99999994,0,0};
 	};
 };
 binarizationWanted=0;
@@ -431,13 +431,18 @@ class AddonsMetaData
 randomSeed=7838675;
 class ScenarioData
 {
-	author="treendy";
+	author="Treendy";
+	overviewText="@STR_TRGM2_Description_overviewText";
+	overViewPicture="TRGM2OverviewPic2.jpg";
+	onLoadMission="@STR_TRGM2_Description_OnLoadIntro";
+	loadScreen="TRGM2OverviewPic2.jpg";
 	disabledAI=1;
 	respawn=3;
 	class Header
 	{
 		gameType="Coop";
 	};
+	wreckRemovalMaxTime=3600;
 };
 class CustomAttributes
 {
@@ -27308,8 +27313,11 @@ class CustomAttributes
 };
 class Mission
 {
+	assetType="Free";
 	class Intel
 	{
+		briefingName="TRGM 2.0 Malden + VCOMAI";
+		overviewText="TRGM 2";
 		timeOfChanges=1800.0002;
 		startWeather=0.30000001;
 		startWind=0.1;
