@@ -17,9 +17,6 @@ enableDebugConsole = 1;
 //forceRotorLibSimulation = 1;
 
 respawn = 3;
-respawnDelay = 5;
-respawnDialog = 1;
-respawnTemplates[] = {"Tickets","Spectator"};
 
 class Header
 {
@@ -214,3 +211,4 @@ class CfgFunctions {
 #include "VCOMAI\defines.hpp"
 #include "VCOMAI\DialogDefines.hpp"
 #include "VCOMAI\dialogs.hpp"
+#include "CfgRoles.hpp"
