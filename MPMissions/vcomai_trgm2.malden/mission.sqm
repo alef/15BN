@@ -436,6 +436,7 @@ class ScenarioData
 	overViewPicture="TRGM2OverviewPic2.jpg";
 	onLoadMission="@STR_TRGM2_Description_OnLoadIntro";
 	loadScreen="TRGM2OverviewPic2.jpg";
+	respawnDialog=0;
 	disabledAI=1;
 	respawn=3;
 	class Header
