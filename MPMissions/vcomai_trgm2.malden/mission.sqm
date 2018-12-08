@@ -8,18 +8,18 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=1422;
+		nextID=1423;
 	};
 	class MarkerIDProvider
 	{
-		nextID=1;
+		nextID=2;
 	};
 	class Camera
 	{
-		pos[]={781.18701,30.703186,12125.397};
-		dir[]={-0.74472892,-0.17309365,-0.64457947};
-		up[]={-0.13089149,0.98490119,-0.11328947};
-		aside[]={-0.65446246,1.5087426e-007,0.75614583};
+		pos[]={765.00714,40.469971,12110.802};
+		dir[]={0,-0.70710683,0.70710683};
+		up[]={0,0.70710677,0.70710677};
+		aside[]={0.99999994,0,-0};
 	};
 };
 binarizationWanted=0;
@@ -432,6 +432,12 @@ randomSeed=7838675;
 class ScenarioData
 {
 	author="treendy";
+	disabledAI=1;
+	respawn=3;
+	class Header
+	{
+		gameType="Coop";
+	};
 };
 class CustomAttributes
 {
@@ -441,7 +447,7 @@ class CustomAttributes
 		class Attribute0
 		{
 			property="ace_arsenal_DefaultLoadoutsListAttribute";
-			expression="if !(is3DEN) then {ace_arsenal_defaultLoadoutsList = _value};";
+			expression="if (!is3DEN) then {ace_arsenal_defaultLoadoutsList= _value}";
 			class Value
 			{
 				class data
@@ -27250,6 +27256,47 @@ class CustomAttributes
 										};
 									};
 								};
+							};
+						};
+					};
+				};
+			};
+		};
+		nAttributes=1;
+	};
+	class Category1
+	{
+		name="Multiplayer";
+		class Attribute0
+		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
+					class value
+					{
+						items=1;
+						class Item0
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="MenuInventory";
 							};
 						};
 					};
