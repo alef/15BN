@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={765.00714,40.469971,12110.802};
-		dir[]={0,-0.70710683,0.70710683};
-		up[]={0,0.70710677,0.70710677};
-		aside[]={0.99999994,0,0};
+		pos[]={788.35382,32.632942,12129.209};
+		dir[]={-0.8142339,-0.46085292,-0.35305414};
+		up[]={-0.42282054,0.88747329,-0.183336};
+		aside[]={-0.39781728,3.4226105e-008,0.9174692};
 	};
 };
 binarizationWanted=0;
@@ -34842,13 +34842,61 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{[this, true] call ace_arsenal_fnc_initBox;}";
 			};
 			id=1419;
 			type="B_supplyCrate_F";
 			class CustomAttributes
 			{
 				class Attribute0
+				{
+					property="ace_arsenal_attribute";
+					expression="if (!is3DEN) then {[_this, +_value] call ace_arsenal_fnc_attributeInit}";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"ARRAY"
+								};
+							};
+							class value
+							{
+								items=2;
+								class Item0
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"ARRAY"
+											};
+										};
+									};
+								};
+								class Item1
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"SCALAR"
+											};
+										};
+										value=1;
+									};
+								};
+							};
+						};
+					};
+				};
+				class Attribute1
 				{
 					property="ammoBox";
 					expression="[_this,_value] call bis_fnc_initAmmoBox;";
@@ -34867,7 +34915,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=1;
+				nAttributes=2;
 			};
 		};
 		class Item103
