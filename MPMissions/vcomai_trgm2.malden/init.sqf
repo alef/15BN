@@ -24,11 +24,9 @@ publicVariable "tf_no_auto_long_range_radio";
 		[(localize "STR_TRGM2_Init_Mission"), sBreifing],
 		[(localize "STR_TRGM2_Init_Credits"), (localize "STR_TRGM2_Init_ScriptsUsed"), sScriptsUsed]
 ] call FHQ_TT_addBriefing;
+[] execVM "Vcom\VcomInit.sqf";
 
 "Marker1" setMarkerTextLocal (localize "STR_TRGM2_Init_MarkerText_HQ"); //Head Quarters marker localize
 "transportChopper" setMarkerTextLocal (localize "STR_TRGM2_Init_MarkerText_TransportChopper"); //Transport Chopper marker localize
 
-
 execVM "RandFramework\mainInit.sqf";
-[] execVM "Vcom\VcomInit.sqf";
-//call compile preprocessFileLineNumbers "RandFramework\mainInit.sqf";
