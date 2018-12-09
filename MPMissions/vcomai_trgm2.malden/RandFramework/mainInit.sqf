@@ -435,8 +435,7 @@ if (isServer) then {
 	if (LoadoutData != "" || LoadoutDataDefault != "") then {
 		{
 			//_x setVariable ["UnitRole",_unitRole];
-			_handle = [_x] execVM "RandFramework\setLoadout.sqf";
-			waitUntil {scriptDone _handle};
+			[_x] call compile preprocessFileLineNumbers "RandFramework\setLoadout.sqf";
 			_x addEventHandler ["Respawn", { [_this select 0] execVM "RandFramework\setLoadout.sqf"; }];
 		} forEach (if (isMultiplayer) then {playableUnits} else {switchableUnits});
 		sleep 1;
