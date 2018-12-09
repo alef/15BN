@@ -34,6 +34,7 @@ TER_fnc_editString =
 		this = nil;
 	};
 	[_u, [profilenamespace, _name]] call BIS_fnc_saveInventory; // save into player's Arsenal slot
+	[_name, getUnitLoadout _u] call ace_arsenal_fnc_addDefaultLoadout;
 	deleteVehicle _u;
 } forEach ([(missionConfigFile >> "CfgRespawnInventory"), 0, true] call BIS_fnc_returnChildren);
 
