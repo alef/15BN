@@ -1,5 +1,4 @@
 respawnOnStart = -1;
-respawnTemplates[] = {"MenuInventory","MenuPosition"};
 
 class CfgRoles
 {

@@ -1,11 +1,5 @@
-
 #include "RandFramework\GUI\defines.hpp"
 #include "RandFramework\GUI\dialogs.hpp"
-
-
-enableDebugConsole = 1;
-//forceRotorLibSimulation = 1;
-
 
 class Params
 {
