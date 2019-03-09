@@ -16,7 +16,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=552;
+		nextID=562;
 	};
 	class Camera
 	{
@@ -45,7 +45,6 @@ addons[]=
 	"ace_captives",
 	"ace_maptools",
 	"ace_flashlights",
-	"rhsusf_sounds",
 	"ace_optics",
 	"A3_Signs_F_Signs_Ad",
 	"CUP_Misc3_Config",
@@ -66,7 +65,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=31;
+		items=30;
 		class Item0
 		{
 			className="A3_Structures_F_Mil";
@@ -174,106 +173,99 @@ class AddonsMetaData
 		};
 		class Item15
 		{
-			className="rhsusf_sounds";
-			name="USF Sounds";
-			author="Red Hammer Studios";
-			url="http://www.rhsmods.org/";
-		};
-		class Item16
-		{
 			className="ace_optics";
 			name="ACE3 - Optics";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item17
+		class Item16
 		{
 			className="A3_Signs_F";
 			name="Arma 3 - Signs";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item18
+		class Item17
 		{
 			className="CUP_Misc3_Config";
 			name="CUP_Misc3_Config";
 		};
-		class Item19
+		class Item18
 		{
 			className="rhsusf_c_rg33";
 			name="RG-33 MRAP";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item20
+		class Item19
 		{
 			className="RHS_US_A2_AirImport";
 			name="RHSUSF A2 Air Ports";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item21
+		class Item20
 		{
 			className="A3_Soft_F";
 			name="Arma 3 Alpha - Unarmored Land Vehicles";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item22
+		class Item21
 		{
 			className="rhsusf_vehicles";
 			name="rhsusf_vehicles";
 		};
-		class Item23
+		class Item22
 		{
 			className="rhsusf_c_fmtv";
 			name="FMTV Trucks";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item24
+		class Item23
 		{
 			className="RHS_US_A2Port_Armor";
 			name="M2 Bradley IFV";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item25
+		class Item24
 		{
 			className="rhsusf_c_ch53";
 			name="CH-53 Helicopter";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item26
+		class Item25
 		{
 			className="A3_Ui_F";
 			name="Arma 3 - User Interface";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item27
+		class Item26
 		{
 			className="ace_fastroping";
 			name="ACE3 - Fastroping";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item28
+		class Item27
 		{
 			className="A3_Modules_F_Curator";
 			name="Arma 3 Zeus Update - Scripted Modules";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item29
+		class Item28
 		{
 			className="A3_Modules_F";
 			name="Arma 3 Alpha - Scripted Modules";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item30
+		class Item29
 		{
 			className="A3_Data_F_Exp_A";
 			name="Arma 3 Nexus Update - Main Configuration";
@@ -315,7 +307,7 @@ class CustomAttributes
 		class Attribute0
 		{
 			property="ace_arsenal_DefaultLoadoutsListAttribute";
-			expression="if !(is3DEN) then {ace_arsenal_defaultLoadoutsList = _value};";
+			expression="if (!is3DEN) then {ace_arsenal_defaultLoadoutsList= _value}";
 			class Value
 			{
 				class data
@@ -22188,6 +22180,7 @@ class Mission
 									};
 									id=3;
 									type="RHS_A10";
+									atlOffset=-0.067995548;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -22264,6 +22257,7 @@ class Mission
 									};
 									id=1;
 									type="rhsusf_CH53E_USMC";
+									atlOffset=-0.049806595;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -22347,7 +22341,7 @@ class Mission
 								};
 							};
 							id=198;
-							atlOffset=-0.014451504;
+							atlOffset=-0.047854424;
 						};
 						class Item2
 						{
@@ -22362,7 +22356,7 @@ class Mission
 						};
 					};
 					id=212;
-					atlOffset=-2.503613;
+					atlOffset=-2.5119636;
 				};
 				class Item4
 				{
@@ -22386,7 +22380,7 @@ class Mission
 							dataType="Logic";
 							class PositionInfo
 							{
-								position[]={4416,5,4536};
+								position[]={4414,5,4443};
 							};
 							id=154;
 							type="ModuleCurator_F";
@@ -22578,7 +22572,7 @@ class Mission
 							dataType="Logic";
 							class PositionInfo
 							{
-								position[]={4419,5,4505};
+								position[]={4421,5,4443};
 							};
 							id=499;
 							type="tfar_ModuleTaskForceRadioEnforceUsage";
@@ -22847,7 +22841,7 @@ class Mission
 				};
 			};
 			id=276;
-			atlOffset=-1.4064758;
+			atlOffset=-1.4069977;
 		};
 		class Item1
 		{
