@@ -23313,7 +23313,6 @@ class Mission
 		windForced=1;
 		year=2016;
 		month=02;
-		day=14;
 		hour=20;
 		minute=50;
 		startFogBase=-1000;
