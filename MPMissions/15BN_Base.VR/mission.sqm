@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=562;
+		nextID=572;
 	};
 	class Camera
 	{
-		pos[]={4375.0161,14.792813,4409.8936};
-		dir[]={0.70052832,-0.48990646,0.51907355};
-		up[]={0.39368352,0.87171531,0.29171029};
-		aside[]={0.59540349,7.9278834e-008,-0.80354387};
+		pos[]={4355.2334,30,4404.9097};
+		dir[]={0.8007108,-0.3866441,0.45757243};
+		up[]={0.33569792,0.92222792,0.19183728};
+		aside[]={0.4961589,-7.3341653e-008,-0.86823434};
 	};
 };
 binarizationWanted=0;
@@ -14215,6 +14215,25 @@ class CustomAttributes
 		name="Scenario";
 		class Attribute0
 		{
+			property="EnableTargetDebug";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=1;
+				};
+			};
+		};
+		class Attribute1
+		{
 			property="cba_settings_hash";
 			expression="false";
 			class Value
@@ -14258,7 +14277,7 @@ class CustomAttributes
 								};
 								class value
 								{
-									items=81;
+									items=84;
 									class Item0
 									{
 										class data
@@ -15393,6 +15412,48 @@ class CustomAttributes
 											value="alef_15bn_difficulty_squadradar";
 										};
 									};
+									class Item81
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="diff_reduceddamage";
+										};
+									};
+									class Item82
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="diff_groupindicators";
+										};
+									};
+									class Item83
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="diff_mapcontentfriendly";
+										};
+									};
 								};
 							};
 						};
@@ -15409,7 +15470,7 @@ class CustomAttributes
 								};
 								class value
 								{
-									items=81;
+									items=84;
 									class Item0
 									{
 										class data
@@ -19055,6 +19116,141 @@ class CustomAttributes
 											};
 										};
 									};
+									class Item81
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"BOOL"
+															};
+														};
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item82
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
+									class Item83
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=2;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"BOOL"
+															};
+														};
+														value=0;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=1;
+													};
+												};
+											};
+										};
+									};
 								};
 							};
 						};
@@ -19076,7 +19272,7 @@ class CustomAttributes
 				};
 			};
 		};
-		class Attribute1
+		class Attribute2
 		{
 			property="EnableDebugConsole";
 			expression="true";
@@ -19095,7 +19291,7 @@ class CustomAttributes
 				};
 			};
 		};
-		class Attribute2
+		class Attribute3
 		{
 			property="Init";
 			expression="if !(is3DEN) then {[] call compile _value;};";
@@ -19114,7 +19310,7 @@ class CustomAttributes
 				};
 			};
 		};
-		class Attribute3
+		class Attribute4
 		{
 			property="cba_settings_hasSettingsFile";
 			expression="false";
@@ -19133,7 +19329,7 @@ class CustomAttributes
 				};
 			};
 		};
-		nAttributes=4;
+		nAttributes=5;
 	};
 };
 class Mission
